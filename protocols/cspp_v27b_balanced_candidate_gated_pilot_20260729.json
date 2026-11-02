@@ -1,0 +1,61 @@
+{
+  "protocol_id": "cspp_v27b_balanced_candidate_gated_pilot_v1",
+  "frozen_at": "2026-07-29",
+  "status": "frozen_before_execution",
+  "parent_protocol": "experiments/cspp_v27b_candidate_gated_verifier_pilot_20260729.json",
+  "parent_result": "experiments/cspp_v27b_candidate_gated_verifier_result_20260729.json",
+  "question": "Does class-balanced candidate-gated supervision retain low-SNR recall while reducing the false-candidate tail?",
+  "single_factor_change": {
+    "event_pos_weight_previous": 20.0,
+    "event_pos_weight_frozen": 3.0,
+    "basis": "weighted gated negative-to-positive mass ratio 2.902249 measured before threshold evaluation"
+  },
+  "held_constant": {
+    "model_class": "CSPPCausalPickerV27B",
+    "total_parameters": 329423,
+    "trainable_parameters": 17157,
+    "initializer": "work_artifacts/checkpoints/pilot_v27a_seed20261101/best.pt",
+    "initializer_sha256": "c90241c759018e87cacb10c75e46c3b99ac410f439b312801c9bbbdb9dc6e813",
+    "candidate_timing_dense_phase_trainable": false,
+    "verifier_candidate_gated_loss": true,
+    "verifier_candidate_gate_threshold": 0.1,
+    "record_selection": "identical to preceding V27 pilots",
+    "selected_indices_sha256": "72dab23b14f4da309ec04bbbcdb68c7088bbf8aba565024934c2be05c94893cd",
+    "data_seed": 20260801,
+    "optimization_seed": 20261101,
+    "epochs": 3,
+    "batch_size": 8,
+    "max_chunks": 96,
+    "snr_training_profile": "v7_operational",
+    "curriculum_epoch_offset": 0,
+    "low_snr_event_weight": 3.0,
+    "event_loss_weight": 1.0,
+    "hard_negative_loss_weight": 1.0,
+    "ranking_loss_weight": 0.5,
+    "partial_auc_loss_weight": 1.0,
+    "partial_auc_negative_fraction": 0.25,
+    "partial_auc_margin": 1.0,
+    "distillation_loss_weight": 0.0
+  },
+  "source_hashes": {
+    "model": "0516d45721a9dc71e02e64e839e227f4edf4a6474a3cf53e22c3df2c069aff27",
+    "training": "5e0572cc4c0a30d74f992fae183655c50b6d4dee25b3029a52692e8dbef30815",
+    "tests": "2156c18f6b78ed6444733585a927d503aeaf2b026ea8e982ec4db1855c6bb373"
+  },
+  "acceptance": {
+    "candidate_threshold_maximum": 0.2,
+    "noise_specificity_minimum": 0.995,
+    "native_usable_rate_minimum": 0.75,
+    "zero_db_usable_rate_minimum": 0.15,
+    "ten_db_usable_rate_minimum": 0.65,
+    "p90_availability_delay_seconds_maximum": 1.5,
+    "policy": "Advance only if one threshold pair satisfies every condition."
+  },
+  "resource_policy": {
+    "device": "mps",
+    "processes": 1,
+    "data_loader_workers": 0,
+    "parallel_mps_jobs": 0
+  },
+  "opened_test_boundary": "Only opened development cohorts are used. Fixed retrospective tests and the future GeoNet final holdout remain prohibited for selection."
+}

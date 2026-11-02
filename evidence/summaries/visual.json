@@ -1,0 +1,276 @@
+{
+  "created_at_utc": "2026-09-05T09:23:54.517850+00:00",
+  "reviewer": "Codex visual inspection; not independent human-expert annotation",
+  "review_order": "All 66 waveforms reviewed without model overlays, uncertain/early cases enlarged, visual intervals saved, then all 66 model-overlay waveforms inspected. Prior experiment context was known; this was not a fully blinded study.",
+  "visual_intervals_are": "Approximate sample-relative P-onset intervals, not sample-accurate reference picks",
+  "agreement_rule": "Estimated P is within 1.5 s of every point of the visual interval; overlap-only cases are borderline",
+  "match_tolerance_s": 1.5,
+  "records_reviewed": 66,
+  "visually_discernible_onsets": 49,
+  "uncertain_onsets": 17,
+  "records_with_original_candidate": 35,
+  "visual_agreement_records": 35,
+  "discernible_but_no_agreement": 14,
+  "borderline_records": 0,
+  "visual_subset_agreement_fraction": 0.7142857142857143,
+  "before_10_s_records": 8,
+  "before_10_s_agreement": 0,
+  "after_10_s_records": 41,
+  "after_10_s_agreement": 35,
+  "gate_disabled_recovered_records": [],
+  "uncertain_records": [
+    "AKT007",
+    "AKT015",
+    "AKT020",
+    "AOM007",
+    "FKS001",
+    "MYG003",
+    "MYG006",
+    "MYG012",
+    "MYG013",
+    "MYG015",
+    "NIG006",
+    "YMT001",
+    "YMT002",
+    "YMT006",
+    "YMT008",
+    "YMT009",
+    "YMT010"
+  ],
+  "miss_diagnostics": [
+    {
+      "station": "AKT002",
+      "visual_interval_s": [
+        12.5,
+        13.1
+      ],
+      "startup_stratum": "after_10_s",
+      "gate_disabled_comparison": "no_agreement",
+      "gate_disabled_candidates": [],
+      "local_window_definition": "packet close within [visual lower bound, visual upper bound + 2 s]; quality valid only",
+      "local_valid_packets": 6,
+      "local_supported_packets": 6,
+      "local_max_q": 0.5463967323303223,
+      "local_max_e": 0.9542944431304932,
+      "local_max_e_with_support": 0.9542944431304932
+    },
+    {
+      "station": "AKT005",
+      "visual_interval_s": [
+        4.2,
+        4.8
+      ],
+      "startup_stratum": "before_10_s",
+      "gate_disabled_comparison": "no_agreement",
+      "gate_disabled_candidates": [],
+      "local_window_definition": "packet close within [visual lower bound, visual upper bound + 2 s]; quality valid only",
+      "local_valid_packets": 5,
+      "local_supported_packets": 0,
+      "local_max_q": 0.36362332105636597,
+      "local_max_e": 0.9723477959632874,
+      "local_max_e_with_support": null
+    },
+    {
+      "station": "AKT006",
+      "visual_interval_s": [
+        2.9,
+        3.5
+      ],
+      "startup_stratum": "before_10_s",
+      "gate_disabled_comparison": "no_agreement",
+      "gate_disabled_candidates": [],
+      "local_window_definition": "packet close within [visual lower bound, visual upper bound + 2 s]; quality valid only",
+      "local_valid_packets": 6,
+      "local_supported_packets": 0,
+      "local_max_q": 0.14038768410682678,
+      "local_max_e": 0.908064603805542,
+      "local_max_e_with_support": null
+    },
+    {
+      "station": "AKT008",
+      "visual_interval_s": [
+        4.2,
+        4.9
+      ],
+      "startup_stratum": "before_10_s",
+      "gate_disabled_comparison": "no_agreement",
+      "gate_disabled_candidates": [],
+      "local_window_definition": "packet close within [visual lower bound, visual upper bound + 2 s]; quality valid only",
+      "local_valid_packets": 5,
+      "local_supported_packets": 0,
+      "local_max_q": 0.9432743787765503,
+      "local_max_e": 0.9694470763206482,
+      "local_max_e_with_support": null
+    },
+    {
+      "station": "AOM012",
+      "visual_interval_s": [
+        13.2,
+        13.7
+      ],
+      "startup_stratum": "after_10_s",
+      "gate_disabled_comparison": "no_agreement",
+      "gate_disabled_candidates": [],
+      "local_window_definition": "packet close within [visual lower bound, visual upper bound + 2 s]; quality valid only",
+      "local_valid_packets": 5,
+      "local_supported_packets": 5,
+      "local_max_q": 0.2260458916425705,
+      "local_max_e": 0.9650983810424805,
+      "local_max_e_with_support": 0.9650983810424805
+    },
+    {
+      "station": "IWT002",
+      "visual_interval_s": [
+        1.0,
+        1.5
+      ],
+      "startup_stratum": "before_10_s",
+      "gate_disabled_comparison": "no_agreement",
+      "gate_disabled_candidates": [],
+      "local_window_definition": "packet close within [visual lower bound, visual upper bound + 2 s]; quality valid only",
+      "local_valid_packets": 6,
+      "local_supported_packets": 0,
+      "local_max_q": 0.031428296118974686,
+      "local_max_e": 0.3124597370624542,
+      "local_max_e_with_support": null
+    },
+    {
+      "station": "IWT003",
+      "visual_interval_s": [
+        2.7,
+        3.2
+      ],
+      "startup_stratum": "before_10_s",
+      "gate_disabled_comparison": "no_agreement",
+      "gate_disabled_candidates": [],
+      "local_window_definition": "packet close within [visual lower bound, visual upper bound + 2 s]; quality valid only",
+      "local_valid_packets": 5,
+      "local_supported_packets": 0,
+      "local_max_q": 0.3882856070995331,
+      "local_max_e": 0.8431404829025269,
+      "local_max_e_with_support": null
+    },
+    {
+      "station": "IWT004",
+      "visual_interval_s": [
+        1.5,
+        2.1
+      ],
+      "startup_stratum": "before_10_s",
+      "gate_disabled_comparison": "no_agreement",
+      "gate_disabled_candidates": [],
+      "local_window_definition": "packet close within [visual lower bound, visual upper bound + 2 s]; quality valid only",
+      "local_valid_packets": 6,
+      "local_supported_packets": 0,
+      "local_max_q": 0.04487870633602142,
+      "local_max_e": 0.4139544367790222,
+      "local_max_e_with_support": null
+    },
+    {
+      "station": "IWT005",
+      "visual_interval_s": [
+        0.4,
+        0.9
+      ],
+      "startup_stratum": "before_10_s",
+      "gate_disabled_comparison": "no_agreement",
+      "gate_disabled_candidates": [],
+      "local_window_definition": "packet close within [visual lower bound, visual upper bound + 2 s]; quality valid only",
+      "local_valid_packets": 5,
+      "local_supported_packets": 0,
+      "local_max_q": 0.03987498953938484,
+      "local_max_e": 0.4496840536594391,
+      "local_max_e_with_support": null
+    },
+    {
+      "station": "IWT006",
+      "visual_interval_s": [
+        13.4,
+        14.2
+      ],
+      "startup_stratum": "after_10_s",
+      "gate_disabled_comparison": "no_agreement",
+      "gate_disabled_candidates": [],
+      "local_window_definition": "packet close within [visual lower bound, visual upper bound + 2 s]; quality valid only",
+      "local_valid_packets": 6,
+      "local_supported_packets": 5,
+      "local_max_q": 0.1182621568441391,
+      "local_max_e": 0.7483364939689636,
+      "local_max_e_with_support": 0.7483364939689636
+    },
+    {
+      "station": "IWT008",
+      "visual_interval_s": [
+        0.6,
+        1.2
+      ],
+      "startup_stratum": "before_10_s",
+      "gate_disabled_comparison": "no_agreement",
+      "gate_disabled_candidates": [],
+      "local_window_definition": "packet close within [visual lower bound, visual upper bound + 2 s]; quality valid only",
+      "local_valid_packets": 5,
+      "local_supported_packets": 0,
+      "local_max_q": 0.03379565477371216,
+      "local_max_e": 0.5987758636474609,
+      "local_max_e_with_support": null
+    },
+    {
+      "station": "IWT009",
+      "visual_interval_s": [
+        13.1,
+        13.6
+      ],
+      "startup_stratum": "after_10_s",
+      "gate_disabled_comparison": "no_agreement",
+      "gate_disabled_candidates": [],
+      "local_window_definition": "packet close within [visual lower bound, visual upper bound + 2 s]; quality valid only",
+      "local_valid_packets": 5,
+      "local_supported_packets": 5,
+      "local_max_q": 0.24732071161270142,
+      "local_max_e": 0.952505350112915,
+      "local_max_e_with_support": 0.952505350112915
+    },
+    {
+      "station": "IWT024",
+      "visual_interval_s": [
+        12.7,
+        13.5
+      ],
+      "startup_stratum": "after_10_s",
+      "gate_disabled_comparison": "no_agreement",
+      "gate_disabled_candidates": [],
+      "local_window_definition": "packet close within [visual lower bound, visual upper bound + 2 s]; quality valid only",
+      "local_valid_packets": 6,
+      "local_supported_packets": 5,
+      "local_max_q": 0.2831559181213379,
+      "local_max_e": 0.9203888177871704,
+      "local_max_e_with_support": 0.9203888177871704
+    },
+    {
+      "station": "MYG011",
+      "visual_interval_s": [
+        11.5,
+        12.3
+      ],
+      "startup_stratum": "after_10_s",
+      "gate_disabled_comparison": "no_agreement",
+      "gate_disabled_candidates": [],
+      "local_window_definition": "packet close within [visual lower bound, visual upper bound + 2 s]; quality valid only",
+      "local_valid_packets": 6,
+      "local_supported_packets": 4,
+      "local_max_q": 0.14811941981315613,
+      "local_max_e": 0.9504539966583252,
+      "local_max_e_with_support": 0.9504539966583252
+    }
+  ],
+  "model_thresholds_or_primary_results_changed": false,
+  "formal_precision_recall_f1_reported": false,
+  "primary_saved_candidates_exactly_reproduced": true,
+  "source_sha256": {
+    "work_artifacts/eqanomalynet_knet_full_cases_20260905/visual_review_66/visual_first_pass.csv": "c3ff8d2969ab11cabf7e33576ffc1a6ff947549a281fc8dc913438c7221674f2",
+    "work_artifacts/eqanomalynet_knet_full_cases_20260905/records.csv": "53bdd88a2dd0c498257ac74ff375a69e01a7c6ac3d8cf187ebad62665c52e77a",
+    "work_artifacts/eqanomalynet_knet_full_cases_20260905/candidates.csv": "c8883abcabb08b43b67e05595d7346459fcb9fde7fdd7a5c36b07a46d7ffc791",
+    "work_artifacts/eqanomalynet_knet_full_cases_20260905/protocol.json": "12f7259af31301ebe388979ed6d833bc5f3605b0c2da6e58c792ca205dc5c3e9",
+    "work_artifacts/eqanomalynet_knet_full_cases_20260905/result.json": "3d4135c26ffdea4fe61b391f177b6ba2265cfc7d26bf6c00baa4ddf5515d3790"
+  }
+}

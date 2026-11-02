@@ -1,0 +1,67 @@
+{
+  "result_id": "cspp_v27a_controlled_pilots_20260729",
+  "status": "completed_rejected",
+  "data_and_split_identity": {
+    "selected_indices_sha256": "72dab23b14f4da309ec04bbbcdb68c7088bbf8aba565024934c2be05c94893cd",
+    "data_seed": 20260801,
+    "optimization_seed": 20261101,
+    "epochs": 3,
+    "note": "All three pilots used identical selected indices and opened development cohorts."
+  },
+  "pilots": {
+    "v27a_supervised_baseline": {
+      "checkpoint_sha256": "c90241c759018e87cacb10c75e46c3b99ac410f439b312801c9bbbdb9dc6e813",
+      "threshold_sweep_sha256": "5e685f9eaf7fff0fe75113a7621feb20f1af8b3e54b7f3467620df7a8beff978",
+      "selected_operating_point": {
+        "candidate_threshold": 0.825,
+        "event_threshold": 0.8,
+        "native_usable_rate": 0.6225,
+        "zero_db_usable_rate": 0.048913,
+        "ten_db_usable_rate": 0.436533,
+        "noise_specificity": 0.995532
+      },
+      "diagnosis": "Candidate-only recall was high at low threshold, but candidate and noise scores overlapped strongly."
+    },
+    "v27a_low_snr_curriculum": {
+      "checkpoint_sha256": "4eea5e26a72c1d52cd4b0d3361c7e7da1d1601e024e0f22b362f2afcf41f2345",
+      "threshold_sweep_sha256": "7c5df16985f9d892fc0508715fe8241ceb8e132966f3d1cc4075d32311b933d1",
+      "selected_operating_point": {
+        "candidate_threshold": 0.95,
+        "event_threshold": 0.8,
+        "native_usable_rate": 0.51,
+        "zero_db_usable_rate": 0.0625,
+        "ten_db_usable_rate": 0.34365,
+        "noise_specificity": 0.995532
+      },
+      "diagnosis": "Increasing low-SNR exposure and weight did not repair high-specificity score separation."
+    },
+    "v27a_linear_verifier_partial_auc": {
+      "checkpoint_sha256": "849e07c9dfa1014f22fc1226694c001be9b4a6fd7087c0ac01036c2930acda04",
+      "threshold_sweep_sha256": "c2329d71669c0e4818e51bce466b6d3fb28908c13ec2dd7a4c5c819d1663ebc2",
+      "selected_operating_point": {
+        "candidate_threshold": 0.925,
+        "event_threshold": 0.0,
+        "native_usable_rate": 0.58,
+        "zero_db_usable_rate": 0.032609,
+        "ten_db_usable_rate": 0.374613,
+        "noise_specificity": 0.995532
+      },
+      "best_low_candidate_example": {
+        "candidate_threshold": 0.1,
+        "event_threshold": 0.8,
+        "native_usable_rate": 0.7375,
+        "zero_db_usable_rate": 0.133152,
+        "ten_db_usable_rate": 0.600619,
+        "noise_specificity": 0.97319,
+        "p90_availability_delay_seconds": 1.0
+      },
+      "diagnosis": "No threshold pair with candidate threshold at most 0.2 reached 0.995 noise specificity."
+    }
+  },
+  "decision": {
+    "full_v27a_training": "rejected",
+    "eqt_distillation": "deferred",
+    "next_test": "Freeze the best V27a candidate and train a small nonlinear verifier with detached multi-evidence input.",
+    "scientific_boundary": "These are opened development results and cannot be reported as independent final-test evidence."
+  }
+}

@@ -1,0 +1,139 @@
+{
+  "completed_at_utc": "2026-08-23T22:04:02.464271+00:00",
+  "paper_or_submission_files_modified": false,
+  "primary_metrics": {
+    "availability_delay_median_seconds": 0.6049997806549072,
+    "availability_delay_p95_seconds": 0.9625001192092895,
+    "available_within_0_5_seconds_fraction": 0.2222222222222222,
+    "available_within_1_0_seconds_fraction": 0.7222222222222222,
+    "available_within_2_0_seconds_fraction": 0.7777777777777778,
+    "candidate_episodes": 15,
+    "candidate_precision": 0.9333333333333333,
+    "candidate_precision_wilson95": [
+      0.7018347012621998,
+      0.9881331045067315
+    ],
+    "f1": 0.8484848484848485,
+    "false_candidate_episodes": 1,
+    "false_negative_records": 4,
+    "matched_records": 14,
+    "pick_absolute_error_median_seconds": 0.09555399417877197,
+    "pick_absolute_error_p95_seconds": 0.3058843731880188,
+    "pick_error_median_seconds": -0.06576573848724365,
+    "recall": 0.7777777777777778,
+    "recall_wilson95": [
+      0.5478541568378739,
+      0.9099907189139831
+    ],
+    "records": 18
+  },
+  "primary_model_key": "C0_seed20261101",
+  "protocol": {
+    "bytes": 5547,
+    "path": "work_artifacts/pr_pilot_20260824/protocol.json",
+    "sha256": "89864c84a4e5989682d74ef38fe3d40e0fada2eb67c6f198ce67223f38fbdf91"
+  },
+  "replication_metrics": {
+    "C0_seed20261101": {
+      "availability_delay_median_seconds": 0.6049997806549072,
+      "availability_delay_p95_seconds": 0.9625001192092895,
+      "available_within_0_5_seconds_fraction": 0.2222222222222222,
+      "available_within_1_0_seconds_fraction": 0.7222222222222222,
+      "available_within_2_0_seconds_fraction": 0.7777777777777778,
+      "candidate_episodes": 15,
+      "candidate_precision": 0.9333333333333333,
+      "candidate_precision_wilson95": [
+        0.7018347012621998,
+        0.9881331045067315
+      ],
+      "f1": 0.8484848484848485,
+      "false_candidate_episodes": 1,
+      "false_negative_records": 4,
+      "matched_records": 14,
+      "pick_absolute_error_median_seconds": 0.09555399417877197,
+      "pick_absolute_error_p95_seconds": 0.3058843731880188,
+      "pick_error_median_seconds": -0.06576573848724365,
+      "recall": 0.7777777777777778,
+      "recall_wilson95": [
+        0.5478541568378739,
+        0.9099907189139831
+      ],
+      "records": 18
+    },
+    "C0_seed20261102": {
+      "availability_delay_median_seconds": 0.6049997806549072,
+      "availability_delay_p95_seconds": 0.9625001192092895,
+      "available_within_0_5_seconds_fraction": 0.2222222222222222,
+      "available_within_1_0_seconds_fraction": 0.7222222222222222,
+      "available_within_2_0_seconds_fraction": 0.7777777777777778,
+      "candidate_episodes": 15,
+      "candidate_precision": 0.9333333333333333,
+      "candidate_precision_wilson95": [
+        0.7018347012621998,
+        0.9881331045067315
+      ],
+      "f1": 0.8484848484848485,
+      "false_candidate_episodes": 1,
+      "false_negative_records": 4,
+      "matched_records": 14,
+      "pick_absolute_error_median_seconds": 0.09555399417877197,
+      "pick_absolute_error_p95_seconds": 0.3058843731880188,
+      "pick_error_median_seconds": -0.06576573848724365,
+      "recall": 0.7777777777777778,
+      "recall_wilson95": [
+        0.5478541568378739,
+        0.9099907189139831
+      ],
+      "records": 18
+    },
+    "C0_seed20261103": {
+      "availability_delay_median_seconds": 0.6049997806549072,
+      "availability_delay_p95_seconds": 0.9625001192092895,
+      "available_within_0_5_seconds_fraction": 0.2222222222222222,
+      "available_within_1_0_seconds_fraction": 0.7222222222222222,
+      "available_within_2_0_seconds_fraction": 0.7777777777777778,
+      "candidate_episodes": 15,
+      "candidate_precision": 0.9333333333333333,
+      "candidate_precision_wilson95": [
+        0.7018347012621998,
+        0.9881331045067315
+      ],
+      "f1": 0.8484848484848485,
+      "false_candidate_episodes": 1,
+      "false_negative_records": 4,
+      "matched_records": 14,
+      "pick_absolute_error_median_seconds": 0.09555399417877197,
+      "pick_absolute_error_p95_seconds": 0.3058843731880188,
+      "pick_error_median_seconds": -0.06576573848724365,
+      "recall": 0.7777777777777778,
+      "recall_wilson95": [
+        0.5478541568378739,
+        0.9099907189139831
+      ],
+      "records": 18
+    }
+  },
+  "requested_event_station_records": 18,
+  "requested_events": 3,
+  "scope": "Diagnostic pilot only; not manuscript evidence or an independent continuous-data validation.",
+  "scorable_event_station_records": 18,
+  "summary_id": "cspp_v27_pr_event_diagnostic_pilot_v1",
+  "unscorable_event_station_records": [],
+  "waveforms": {
+    "pr2024119002": {
+      "bytes": 377344,
+      "path": "work_artifacts/pr_pilot_20260824/waveforms/pr2024119002/waveforms.mseed",
+      "sha256": "2f77d27d626f246e242cb69237c352083b74fd4cb825d84e684a71577bc5b08d"
+    },
+    "pr2024136000": {
+      "bytes": 474624,
+      "path": "work_artifacts/pr_pilot_20260824/waveforms/pr2024136000/waveforms.mseed",
+      "sha256": "732122dcca5ad91f15a7ec2bdd4e602d6c5d1616957de475bc8a071a12f1c967"
+    },
+    "pr2024239000": {
+      "bytes": 402432,
+      "path": "work_artifacts/pr_pilot_20260824/waveforms/pr2024239000/waveforms.mseed",
+      "sha256": "d17b74b9400ad75fa4990b411d2f106c2546ccc329527cc3634af9088299f8d4"
+    }
+  }
+}

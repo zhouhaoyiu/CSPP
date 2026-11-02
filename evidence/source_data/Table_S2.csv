@@ -1,0 +1,3 @@
+dataset,method,records,precision,recall,f1,matched_median_output_delay_s,source_file,source_json_pointer,threshold,threshold_source
+NCSN,EQTransformer,578,0.6997518610421837,0.48788927335640137,0.5749235474006116,24.21499991416931,sources/nc_cal.json,/results/eqtransformer_original:eqtransformer_original_geonet_calibrated,0.02,Supplementary_Information_NC.tex Table S2
+NCSN,PhaseNet,578,0.628668171557562,0.9636678200692042,0.7609289617486339,11.03000020980835,sources/nc_cal.json,/results/phasenet_instance:phasenet_instance_geonet_calibrated,0.5,Supplementary_Information_NC.tex Table S2

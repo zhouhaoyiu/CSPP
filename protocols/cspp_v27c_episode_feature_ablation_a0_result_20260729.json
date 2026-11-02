@@ -1,0 +1,51 @@
+{
+  "result_id": "cspp_v27c_episode_feature_ablation_a0_result_v1",
+  "status": "completed_rejected_family_stopped",
+  "protocol": "experiments/cspp_v27c_episode_feature_ablation_protocol_20260729.json",
+  "protocol_sha256": "e8c570125e1fef80a50c31e7ce99ffec6e29804a375f4fd2cff64301a1881a8c",
+  "executed_arm": {
+    "id": "A0",
+    "verifier_feature_mode": "none",
+    "objective": "candidate-episode balanced BCE plus top-1-percent negative-episode tail ranking",
+    "output": "work_artifacts/checkpoints/pilot_v27c_A0_seed20261101"
+  },
+  "artifacts": {
+    "best_checkpoint_sha256": "ddbee4e0ca632ee37d20e2e420037531f519c2f43218f5091e39b8d8927de152",
+    "best_threshold_sweep_sha256": "fdcedab78d0903cc96fbe9f339ada500e9a853f6fb02ab3211d1ccd686baba06",
+    "history_sha256": "ca82ff59524e86fd36ad13782b0646e61adeb25f00a1203ec77f7dfd744d3fac",
+    "selected_indices_sha256": "72dab23b14f4da309ec04bbbcdb68c7088bbf8aba565024934c2be05c94893cd"
+  },
+  "best_predeclared_low_candidate_point": {
+    "epoch": 3,
+    "candidate_threshold": 0.2,
+    "event_threshold": 0.8,
+    "native_usable_rate": 0.85,
+    "zero_db_usable_rate": 0.1983695652173913,
+    "ten_db_usable_rate": 0.7306501547987616,
+    "noise_false_traces": 42,
+    "noise_specificity": 0.9624664879356568,
+    "native_p90_availability_delay_seconds": 0.8870000012218952
+  },
+  "acceptance": {
+    "accepted_rows": 0,
+    "failed_condition": "noise_specificity",
+    "required_noise_specificity": 0.995,
+    "observed_best_low_candidate_noise_specificity": 0.9624664879356568,
+    "decision": "reject"
+  },
+  "sequential_selection_audit": {
+    "opened_development_pilots_before_this_arm": 6,
+    "estimated_epoch_operating_point_scores_before_this_arm": 4536,
+    "finding": "The accumulated DEV-A reuse creates substantial adaptive selection risk even though individual pilot files were frozen before execution.",
+    "action": "Stop the predeclared family after A0. Do not execute A1 or A2 on DEV-A. Transfer the direct-current-packet feature hypothesis to a separately frozen temporal development cohort.",
+    "unexecuted_arms": [
+      "A1_current",
+      "A2_current_delta"
+    ]
+  },
+  "interpretation": {
+    "finding": "Episode-tail supervision over the compressed candidate-connected evidence did not suppress the low-threshold false-candidate tail.",
+    "comparison_boundary": "A0 is opened DEV-A exploratory evidence. It is not an independent test and cannot support a cross-network or SOTA claim.",
+    "next_experiment": "Use a fixed-final-epoch two-arm training protocol with identical packet-level losses, differing only by current-packet direct features, and perform selection on a new temporally separated GeoNet development layer."
+  }
+}

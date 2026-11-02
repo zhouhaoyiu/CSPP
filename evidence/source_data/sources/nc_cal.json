@@ -1,0 +1,85 @@
+{
+  "created_at_utc": "2026-08-23T18:30:10.602169+00:00",
+  "interpretation": {
+    "eqtransformer_checkpoint": "original conservative EQTransformer weights",
+    "phasenet_checkpoint": "PhaseNet weights trained on INSTANCE",
+    "scope": "same records and causal visibility; released checkpoints retain their native windows, preprocessing, thresholds, and pick semantics",
+    "training": "released-model comparison, not matched retraining"
+  },
+  "protocol_sha256": "da610a3705678d57e4b68ffa8d9663f6bb30e217c0a3712f891b29474e8ec866",
+  "result_id": "cspp_v27_ncedc_causal_public_analysis_v1",
+  "results": {
+    "eqtransformer_original:eqtransformer_original_geonet_calibrated": {
+      "absolute_pick_error_median_seconds": 0.039999961853027344,
+      "absolute_pick_error_p95_seconds": 0.24899998903274514,
+      "availability_delay_median_seconds": 24.21499991416931,
+      "availability_delay_p95_seconds": 28.916000068187714,
+      "available_within_2_seconds_fraction": 0.0,
+      "candidate_episodes": 403,
+      "candidate_precision": 0.6997518610421837,
+      "candidate_precision_wilson95": [
+        0.653286116706149,
+        0.7424454305818009
+      ],
+      "event_cluster_bootstrap95": {
+        "candidate_precision": [
+          0.6220560067974308,
+          0.7897731538356538
+        ],
+        "f1": [
+          0.4950297661544545,
+          0.6474447736137856
+        ],
+        "recall": [
+          0.390907490396927,
+          0.5843531010230179
+        ]
+      },
+      "f1": 0.5749235474006116,
+      "matched_records": 282,
+      "recall": 0.48788927335640137,
+      "recall_wilson95": [
+        0.4473539774518842,
+        0.5285844851864159
+      ],
+      "records": 578,
+      "technical_failures_counted_as_misses": 0
+    },
+    "phasenet_instance:phasenet_instance_geonet_calibrated": {
+      "absolute_pick_error_median_seconds": 0.039999961853027344,
+      "absolute_pick_error_p95_seconds": 0.28200016021728447,
+      "availability_delay_median_seconds": 11.03000020980835,
+      "availability_delay_p95_seconds": 17.282000160217283,
+      "available_within_2_seconds_fraction": 0.0,
+      "candidate_episodes": 886,
+      "candidate_precision": 0.628668171557562,
+      "candidate_precision_wilson95": [
+        0.5963622457442388,
+        0.6598631725478783
+      ],
+      "event_cluster_bootstrap95": {
+        "candidate_precision": [
+          0.5470044614404079,
+          0.727278409090909
+        ],
+        "f1": [
+          0.695271757914876,
+          0.8307703383729302
+        ],
+        "recall": [
+          0.9348189648743381,
+          0.9845626072041166
+        ]
+      },
+      "f1": 0.7609289617486339,
+      "matched_records": 557,
+      "recall": 0.9636678200692042,
+      "recall_wilson95": [
+        0.9450975432223628,
+        0.976115601482712
+      ],
+      "records": 578,
+      "technical_failures_counted_as_misses": 0
+    }
+  }
+}

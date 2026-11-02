@@ -1,0 +1,218 @@
+{
+  "results": {
+    "old:original": {
+      "metrics": {
+        "records": 633,
+        "matched_records": 563,
+        "false_negative_records": 70,
+        "candidate_episodes": 602,
+        "false_candidate_episodes": 39,
+        "recall": 0.8894154818325435,
+        "recall_wilson95": [
+          0.8625960497108608,
+          0.9115369674971264
+        ],
+        "candidate_precision": 0.9352159468438538,
+        "candidate_precision_wilson95": [
+          0.9126629467192937,
+          0.9522497996285653
+        ],
+        "f1": 0.9117408906882591,
+        "pick_error_median_seconds": 0.10100078582763672,
+        "pick_absolute_error_median_seconds": 0.12520718574523926,
+        "pick_absolute_error_p95_seconds": 0.3723962306976317,
+        "availability_delay_median_seconds": 0.7452099323272705,
+        "availability_delay_p95_seconds": 1.1493242502212524,
+        "available_within_0_5_seconds_fraction": 0.16587677725118483,
+        "available_within_1_0_seconds_fraction": 0.7251184834123223,
+        "available_within_2_0_seconds_fraction": 0.8894154818325435
+      },
+      "event_bootstrap95": {
+        "recall": [
+          0.8477789507877213,
+          0.9251603360778831
+        ],
+        "candidate_precision": [
+          0.8983857526881721,
+          0.9667251062075134
+        ],
+        "f1": [
+          0.878003428906886,
+          0.9396844520940907
+        ]
+      }
+    },
+    "old:matched_noise": {
+      "metrics": {
+        "records": 633,
+        "matched_records": 563,
+        "false_negative_records": 70,
+        "candidate_episodes": 602,
+        "false_candidate_episodes": 39,
+        "recall": 0.8894154818325435,
+        "recall_wilson95": [
+          0.8625960497108608,
+          0.9115369674971264
+        ],
+        "candidate_precision": 0.9352159468438538,
+        "candidate_precision_wilson95": [
+          0.9126629467192937,
+          0.9522497996285653
+        ],
+        "f1": 0.9117408906882591,
+        "pick_error_median_seconds": 0.10100078582763672,
+        "pick_absolute_error_median_seconds": 0.12520718574523926,
+        "pick_absolute_error_p95_seconds": 0.3723962306976317,
+        "availability_delay_median_seconds": 0.7452099323272705,
+        "availability_delay_p95_seconds": 1.1493242502212524,
+        "available_within_0_5_seconds_fraction": 0.16587677725118483,
+        "available_within_1_0_seconds_fraction": 0.7251184834123223,
+        "available_within_2_0_seconds_fraction": 0.8894154818325435
+      },
+      "event_bootstrap95": {
+        "recall": [
+          0.8477789507877213,
+          0.9251603360778831
+        ],
+        "candidate_precision": [
+          0.8983857526881721,
+          0.9667251062075134
+        ],
+        "f1": [
+          0.878003428906886,
+          0.9396844520940907
+        ]
+      }
+    },
+    "old:high_recall": {
+      "metrics": {
+        "records": 633,
+        "matched_records": 577,
+        "false_negative_records": 56,
+        "candidate_episodes": 638,
+        "false_candidate_episodes": 61,
+        "recall": 0.9115323854660348,
+        "recall_wilson95": [
+          0.886855559888635,
+          0.9312444440978991
+        ],
+        "candidate_precision": 0.9043887147335423,
+        "candidate_precision_wilson95": [
+          0.8790908276248963,
+          0.9248460214345076
+        ],
+        "f1": 0.9079464988198269,
+        "pick_error_median_seconds": 0.07138204574584961,
+        "pick_absolute_error_median_seconds": 0.11546754837036133,
+        "pick_absolute_error_p95_seconds": 0.35155797004699707,
+        "availability_delay_median_seconds": 0.5139100551605225,
+        "availability_delay_p95_seconds": 1.0218430519104003,
+        "available_within_0_5_seconds_fraction": 0.42338072669826227,
+        "available_within_1_0_seconds_fraction": 0.8578199052132701,
+        "available_within_2_0_seconds_fraction": 0.9083728278041074
+      },
+      "event_bootstrap95": {
+        "recall": [
+          0.8747917810367813,
+          0.9430392610888134
+        ],
+        "candidate_precision": [
+          0.8614790015766733,
+          0.9423091900311527
+        ],
+        "f1": [
+          0.8719558896786925,
+          0.9372530943352065
+        ]
+      }
+    },
+    "expanded:original": {
+      "metrics": {
+        "records": 633,
+        "matched_records": 555,
+        "false_negative_records": 78,
+        "candidate_episodes": 596,
+        "false_candidate_episodes": 41,
+        "recall": 0.8767772511848341,
+        "recall_wilson95": [
+          0.8488752071329578,
+          0.9001338176301453
+        ],
+        "candidate_precision": 0.9312080536912751,
+        "candidate_precision_wilson95": [
+          0.9080046355655987,
+          0.9488884525022702
+        ],
+        "f1": 0.903173311635476,
+        "pick_error_median_seconds": 0.07009506225585938,
+        "pick_absolute_error_median_seconds": 0.10221481323242188,
+        "pick_absolute_error_p95_seconds": 0.2767604351043701,
+        "availability_delay_median_seconds": 0.6036951541900635,
+        "availability_delay_p95_seconds": 1.4195238113403317,
+        "available_within_0_5_seconds_fraction": 0.30173775671406006,
+        "available_within_1_0_seconds_fraction": 0.7519747235387045,
+        "available_within_2_0_seconds_fraction": 0.8767772511848341
+      },
+      "event_bootstrap95": {
+        "recall": [
+          0.835697008009933,
+          0.9098231963253346
+        ],
+        "candidate_precision": [
+          0.8924558587479936,
+          0.9660721852300242
+        ],
+        "f1": [
+          0.8707323763746387,
+          0.9310065353856737
+        ]
+      }
+    },
+    "expanded:high_recall": {
+      "metrics": {
+        "records": 633,
+        "matched_records": 582,
+        "false_negative_records": 51,
+        "candidate_episodes": 657,
+        "false_candidate_episodes": 75,
+        "recall": 0.919431279620853,
+        "recall_wilson95": [
+          0.89561182594395,
+          0.9381906733206365
+        ],
+        "candidate_precision": 0.8858447488584474,
+        "candidate_precision_wilson95": [
+          0.859253092565136,
+          0.9079505887910062
+        ],
+        "f1": 0.9023255813953488,
+        "pick_error_median_seconds": 0.044567108154296875,
+        "pick_absolute_error_median_seconds": 0.10115706920623779,
+        "pick_absolute_error_p95_seconds": 0.28754192590713495,
+        "availability_delay_median_seconds": 0.42340087890625,
+        "availability_delay_p95_seconds": 0.8399856209754939,
+        "available_within_0_5_seconds_fraction": 0.5908372827804107,
+        "available_within_1_0_seconds_fraction": 0.8878357030015798,
+        "available_within_2_0_seconds_fraction": 0.919431279620853
+      },
+      "event_bootstrap95": {
+        "recall": [
+          0.8859777279731055,
+          0.946625850340136
+        ],
+        "candidate_precision": [
+          0.8357303874479667,
+          0.9312630371297455
+        ],
+        "f1": [
+          0.8650305604735957,
+          0.9334365628129008
+        ]
+      }
+    }
+  },
+  "original_control_reproduced": true,
+  "role": "held-out-from-training network, previously opened evaluation cohort; not a new blind test",
+  "parameter_count": 329423,
+  "paper_modified": false
+}

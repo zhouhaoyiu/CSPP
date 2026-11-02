@@ -1,0 +1,90 @@
+{
+  "comparisons": {
+    "arrival_age_fraction": {
+      "finite_masks_exact": true,
+      "maximum_absolute_difference": 3.5762786865234375e-07,
+      "pass": true,
+      "shape_and_dtype_exact": true,
+      "tolerance": 1e-05
+    },
+    "candidate_allowed": {
+      "differences": 0,
+      "exact": true,
+      "pass": true,
+      "shape_and_dtype_exact": true
+    },
+    "candidate_probability": {
+      "finite_masks_exact": true,
+      "maximum_absolute_difference": 4.470348358154297e-07,
+      "pass": true,
+      "shape_and_dtype_exact": true,
+      "tolerance": 1e-05
+    },
+    "event_probability__C0_seed20261101": {
+      "finite_masks_exact": true,
+      "maximum_absolute_difference": 5.364418029785156e-07,
+      "pass": true,
+      "shape_and_dtype_exact": true,
+      "tolerance": 1e-05
+    },
+    "event_probability__C0_seed20261102": {
+      "finite_masks_exact": true,
+      "maximum_absolute_difference": 5.960464477539062e-07,
+      "pass": true,
+      "shape_and_dtype_exact": true,
+      "tolerance": 1e-05
+    },
+    "event_probability__C0_seed20261103": {
+      "finite_masks_exact": true,
+      "maximum_absolute_difference": 5.066394805908203e-07,
+      "pass": true,
+      "shape_and_dtype_exact": true,
+      "tolerance": 1e-05
+    },
+    "quality_valid": {
+      "differences": 0,
+      "exact": true,
+      "pass": true,
+      "shape_and_dtype_exact": true
+    }
+  },
+  "cpu": {
+    "elapsed_seconds": 244.28925150004216,
+    "maximum_resident_set_bytes": 2280325120,
+    "score_cache": {
+      "bytes": 2995022,
+      "path": "work_artifacts/ncedc_model_blind_20260817/evaluation/ncedc_continuous_scores_v1/station_day/2024-01-09/NC.CMC.02/scores.npz",
+      "sha256": "868ecdbac614c2072ce23cf6a0748cf7e1c374eb98886a6c3139aeaa91705a55"
+    },
+    "summary": {
+      "bytes": 4509,
+      "path": "work_artifacts/ncedc_model_blind_20260817/evaluation/ncedc_continuous_scores_v1/station_day/2024-01-09/NC.CMC.02/summary.json",
+      "sha256": "8a2b82922cee1b1de34edf6a4b8e50350670718c57ee46b193005b6d46fa0ed8"
+    }
+  },
+  "created_at_utc": "2026-08-17T14:08:24.790464+00:00",
+  "decision": "pass",
+  "hybrid": {
+    "elapsed_seconds": 13.91875962499762,
+    "maximum_resident_set_bytes": 2060550144,
+    "mps_memory": {
+      "current_allocated_bytes": 333056,
+      "driver_allocated_bytes": 40943616
+    },
+    "score_cache": {
+      "bytes": 2995034,
+      "path": "work_artifacts/ncedc_model_blind_20260817/evaluation/ncedc_continuous_scores_v2_hybrid/station_day/2024-01-09/NC.CMC.02/scores.npz",
+      "sha256": "6042aed3cd5dedce60caaf0acd858511091181d2afc37f4887091f2445aaddca"
+    },
+    "summary": {
+      "bytes": 4673,
+      "path": "work_artifacts/ncedc_model_blind_20260817/evaluation/ncedc_continuous_scores_v2_hybrid/station_day/2024-01-09/NC.CMC.02/summary.json",
+      "sha256": "6e02898aa6e07e8ff4ad14d2c421a411de29cd57353c51dbf03668721d215102"
+    }
+  },
+  "hybrid_amendment_sha256": "ce1de360a6dea2ddbdffe8ff7f5a064eefd2ce4942bba3b4d7a4d62e81238d89",
+  "reference_station_day_id": "2024-01-09__NC.CMC.02",
+  "report_id": "cspp_v27_ncedc_continuous_hybrid_equivalence_v1",
+  "result_metrics_inspected_before_decision": false,
+  "scientific_settings_changed": false
+}

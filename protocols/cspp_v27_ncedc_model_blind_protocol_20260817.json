@@ -1,0 +1,303 @@
+{
+  "access_audit": {
+    "schema_pilot": {
+      "event_id": "71338066",
+      "model_scored": false,
+      "period": "2010-01-01T00:00:00Z/2010-02-01T00:00:00Z",
+      "relation_to_target": "outside the frozen target period",
+      "scope": "event metadata and QuakeML pick-schema inspection only",
+      "waveforms_accessed": false
+    },
+    "target_period_event_metadata_accessed_before_freeze": false,
+    "target_period_model_outputs_computed_before_freeze": false,
+    "target_period_station_metadata_accessed_before_freeze": false,
+    "target_period_waveforms_accessed_before_freeze": false,
+    "target_root_absent_at_freeze": true
+  },
+  "comparators": {
+    "causal_visibility_wrapper": "Expose only samples available at each update, use each released model's documented window and threshold without target tuning, and publish a pick only when its inference window closes.",
+    "classical_baseline": "Run the frozen recursive strong-motion baseline under the same 100 Hz causal input and event/continuous manifests.",
+    "domain_exposure_disclosure": {
+      "cspp": "No NC/NCSN event or continuous source appears in the sealed CSPP training protocols. CSPP training includes InstanceGM, K-NET, opened CWA 2020 events, and Southern California/other presumed non-event continuous windows.",
+      "eqtransformer": "Report the provenance of the exact released checkpoint used; do not claim unseen-domain status without verification.",
+      "phasenet": "The released PhaseNet model was trained with Northern California seismic data; NCSN is therefore external to CSPP but not an unseen domain for this comparator."
+    },
+    "interpretation_boundary": "These are released-model architecture and window comparisons, not matched retraining on the CSPP training set.",
+    "public_models": [
+      "PhaseNet-INSTANCE",
+      "EQTransformer-original"
+    ],
+    "same_record_endpoint": "Run released pretrained models on the same acquired records and report native full-record picking metrics."
+  },
+  "continuous_cohort": {
+    "adjudication": "Review every multistation group and every single-station candidate when feasible. If the latter exceeds 500, review a frozen seeded sample of 500 plus all extreme-score candidates. Report unresolved cases separately; do not label them false alarms.",
+    "date_target": 60,
+    "event_free_screen": "Exclude dates with a cataloged M>=3.0 event within 200 km of any selected station; retain the screen manifest and catalog query.",
+    "interval": "exact Poisson 95% interval",
+    "network_rate_unit": "three-station groups per valid network-day",
+    "primary_rate_unit": "released candidates per valid station-day",
+    "selection": "Deterministic availability-only station ranking and UTC-date sampling, frozen before waveform access.",
+    "station_target": 12,
+    "target_network_days": 60,
+    "target_station_days": 720
+  },
+  "cspp_execution": {
+    "candidate_release": "Release once at the close of the first packet satisfying the frozen candidate and event thresholds; estimate P time from only the current and previous packets and bounded recurrent state.",
+    "operating_point": {
+      "all_reported_seeds": [
+        20261101,
+        20261102,
+        20261103
+      ],
+      "candidate_threshold": 0.1,
+      "event_threshold": 0.975,
+      "primary_operational_seed": 20261101,
+      "seed_selection_permitted": false,
+      "selected_arm": "C0"
+    },
+    "parameter_or_threshold_tuning_permitted": false,
+    "primary_result_seed": 20261101,
+    "replication_seeds": [
+      20261102,
+      20261103
+    ],
+    "seed_selection_permitted": false
+  },
+  "decision_chain_ablation": {
+    "label": "post-hoc mechanistic analysis",
+    "no_retraining_or_threshold_retuning": true,
+    "scope": "frozen post-training rule ablation on identical score caches",
+    "variants": [
+      "full CSPP decision chain",
+      "candidate head without event verifier",
+      "single-packet release",
+      "candidate-only release",
+      "single-station output without three-station coincidence"
+    ]
+  },
+  "event_cohort": {
+    "accepted_native_sample_rates_hz": [
+      100.0,
+      200.0
+    ],
+    "catalog_event_type": "earthquake",
+    "manifest_rule": "Freeze every requested event-station-channel unit from metadata before waveform access. Missing or unusable requests are retained in acquisition and QC accounting and are never replaced.",
+    "maximum_epicentral_distance_km": 200.0,
+    "maximum_stations_per_event": 12,
+    "minimum_preferred_magnitude": 4.0,
+    "minimum_primary_eligible_stations_per_event": 3,
+    "primary_reference_pick": "Preferred-origin-associated manual reviewed P pick at the same station with positive arrival time weight.",
+    "request_window_relative_to_preferred_origin_seconds": [
+      -60.0,
+      180.0
+    ],
+    "secondary_reference_pick_sensitivity": "All preferred-origin-associated manual reviewed P picks at the same station, irrespective of arrival weight.",
+    "station_network": "NC",
+    "station_order": "ascending epicentral distance, then network, station, location, and channel code",
+    "strong_motion_channel_patterns": [
+      "HNZ",
+      "HNN",
+      "HNE"
+    ]
+  },
+  "event_metrics": {
+    "match_tolerance_seconds": 1.5,
+    "network_confirmation": {
+      "claim_boundary": "Coincidence filtering is not event association, hypocenter location, or origin-time inversion.",
+      "maximum_estimated_p_span_seconds": 10.0,
+      "minimum_distinct_stations": 3,
+      "role": "secondary false-trigger suppression analysis"
+    },
+    "primary_metrics": [
+      "precision",
+      "recall",
+      "F1",
+      "P-arrival residual median and 95th percentile",
+      "candidate availability delay median and 95th percentile"
+    ],
+    "reference_unit": "event-station record",
+    "stratification": [
+      "magnitude",
+      "epicentral distance",
+      "local causal P-wave SNR",
+      "native sample rate",
+      "station"
+    ],
+    "uncertainty": "Wilson 95% intervals for binomial metrics and event-clustered bootstrap intervals for station-record summaries."
+  },
+  "failure_policy": "If the primary result is poor, retain it unchanged as the external test. Any later adaptation becomes a separately labeled development experiment with a new, untouched confirmation dataset.",
+  "frozen_at_utc": "2026-08-17T12:52:35.060094+00:00",
+  "locked_evidence": {
+    "code": {
+      "causal_public_baseline": {
+        "bytes": 19122,
+        "path": "workspace/scripts/evaluation/eval_v27_geonet_causal_public_baselines.py",
+        "sha256": "82ad46be66936b9adf6c023cb1156bdff1211a2f1120dca84423c3fa37db0ac4"
+      },
+      "classical_baseline": {
+        "bytes": 69667,
+        "path": "workspace/scripts/evaluation/eval_v21_matched_classical_baseline.py",
+        "sha256": "8f0504487f062b7f190999d83225627499dfceaa6d4e6d81ead9b5fd005b5b38"
+      },
+      "freeze_script": {
+        "bytes": 17707,
+        "path": "workspace/scripts/evaluation/freeze_v27_ncedc_model_blind_protocol.py",
+        "sha256": "dc49a2cd739c65749f0f9f2210df7a4b01aba8c9b550223f878c46cd0c6713b6"
+      },
+      "model": {
+        "bytes": 40530,
+        "path": "workspace/src/model_cspp_v27.py",
+        "sha256": "c2ca73f059fbdd7fcf59709ee8ed8fe47c8ba6b3de03a3f714c8effa2a1261d4"
+      },
+      "quality_gate": {
+        "bytes": 3976,
+        "path": "workspace/src/stream_quality_v5.py",
+        "sha256": "62e48deca36fd553f59d2291738f3fe1a93dddb70bef84bcf250534c54cae414"
+      }
+    },
+    "models": {
+      "20261101": {
+        "checkpoint": {
+          "bytes": 1369948,
+          "path": "work_artifacts/checkpoints/blind_v27c_C0_none_seed20261101/final.pt",
+          "sha256": "d27ce10351475dfa264b45406b601dbcfc64e15c92be7260fe54c1738d35586d"
+        },
+        "train_record_groups": {
+          "__group_mass_basis_points__": {
+            "event:cwa2020_opened_train_events": 1000,
+            "event:instancegm": 4000,
+            "event:knet": 1500,
+            "noise:ci2024_continuous_hard_train_noise": 500,
+            "noise:ci2024_continuous_train_noise": 500,
+            "noise:instancegm_prep_noise": 250,
+            "noise:knet_prep_noise": 250,
+            "noise:target_fdsn_continuous_hard_train_noise": 2000
+          },
+          "event:cwa2020_opened_train_events": 500,
+          "event:instancegm": 1000,
+          "event:knet": 1000,
+          "noise:ci2024_continuous_hard_train_noise": 22,
+          "noise:ci2024_continuous_train_noise": 500,
+          "noise:instancegm_prep_noise": 167,
+          "noise:knet_prep_noise": 333,
+          "noise:target_fdsn_continuous_hard_train_noise": 1394
+        },
+        "training_protocol": {
+          "bytes": 15771,
+          "path": "work_artifacts/checkpoints/blind_v27c_C0_none_seed20261101/protocol.json",
+          "sha256": "b0a8ddf0b5ab1a7825a446a8d89a368b87459107febe42faec6d8b886c22a3fd"
+        }
+      },
+      "20261102": {
+        "checkpoint": {
+          "bytes": 1369948,
+          "path": "work_artifacts/checkpoints/blind_v27c_C0_none_seed20261102/final.pt",
+          "sha256": "fcc9a3123765e5a78c7a210086d31768a77f37556e1c2e1efc503342b39bf2f2"
+        },
+        "train_record_groups": {
+          "__group_mass_basis_points__": {
+            "event:cwa2020_opened_train_events": 1000,
+            "event:instancegm": 4000,
+            "event:knet": 1500,
+            "noise:ci2024_continuous_hard_train_noise": 500,
+            "noise:ci2024_continuous_train_noise": 500,
+            "noise:instancegm_prep_noise": 250,
+            "noise:knet_prep_noise": 250,
+            "noise:target_fdsn_continuous_hard_train_noise": 2000
+          },
+          "event:cwa2020_opened_train_events": 500,
+          "event:instancegm": 1000,
+          "event:knet": 1000,
+          "noise:ci2024_continuous_hard_train_noise": 22,
+          "noise:ci2024_continuous_train_noise": 500,
+          "noise:instancegm_prep_noise": 167,
+          "noise:knet_prep_noise": 333,
+          "noise:target_fdsn_continuous_hard_train_noise": 1394
+        },
+        "training_protocol": {
+          "bytes": 15771,
+          "path": "work_artifacts/checkpoints/blind_v27c_C0_none_seed20261102/protocol.json",
+          "sha256": "c851ea926911e4bf2fa6d72949e20d48f4316884ef29907360047062d77fbd43"
+        }
+      },
+      "20261103": {
+        "checkpoint": {
+          "bytes": 1369948,
+          "path": "work_artifacts/checkpoints/blind_v27c_C0_none_seed20261103/final.pt",
+          "sha256": "02695f1827eac6bca218a8017ce3efb67f8ef2f693e113644d41b1423c0fea56"
+        },
+        "train_record_groups": {
+          "__group_mass_basis_points__": {
+            "event:cwa2020_opened_train_events": 1000,
+            "event:instancegm": 4000,
+            "event:knet": 1500,
+            "noise:ci2024_continuous_hard_train_noise": 500,
+            "noise:ci2024_continuous_train_noise": 500,
+            "noise:instancegm_prep_noise": 250,
+            "noise:knet_prep_noise": 250,
+            "noise:target_fdsn_continuous_hard_train_noise": 2000
+          },
+          "event:cwa2020_opened_train_events": 500,
+          "event:instancegm": 1000,
+          "event:knet": 1000,
+          "noise:ci2024_continuous_hard_train_noise": 22,
+          "noise:ci2024_continuous_train_noise": 500,
+          "noise:instancegm_prep_noise": 167,
+          "noise:knet_prep_noise": 333,
+          "noise:target_fdsn_continuous_hard_train_noise": 1394
+        },
+        "training_protocol": {
+          "bytes": 15771,
+          "path": "work_artifacts/checkpoints/blind_v27c_C0_none_seed20261103/protocol.json",
+          "sha256": "b004656de514ea476957df751a48e51d6c707a5044c451f6d467e3cad8166619"
+        }
+      }
+    },
+    "selection_freeze": {
+      "bytes": 5526,
+      "path": "workspace/experiments/cspp_v27_geonet_temporal_selection_freeze_20260729.json",
+      "sha256": "f86155159422fa1539751ed7eb2f388875f519990b4080f4e5d11af664e88f6f"
+    }
+  },
+  "next_boundary": "Target-period metadata may be queried only after the acquisition tool verifies the SHA-256 of this protocol. Freeze the exact event, station, and continuous request manifests before downloading target waveforms.",
+  "objective": "External-network evaluation of packet-level causal strong-motion P-wave candidate release without model, threshold, or rule changes.",
+  "prohibited_after_freeze": [
+    "changing model weights, seeds, thresholds, packet size, or filters",
+    "selecting stations, events, or dates from model outputs",
+    "replacing unavailable event-station requests with easier records",
+    "suppressing failed acquisitions or quality exclusions",
+    "calling unresolved continuous candidates false alarms",
+    "using target results to revise the primary analysis"
+  ],
+  "protocol_id": "cspp_v27_ncedc_model_blind_evaluation_v1",
+  "status": "frozen_before_target_period_metadata_or_waveform_access",
+  "storage": {
+    "target_root": "work_artifacts/ncedc_model_blind_20260817"
+  },
+  "target_period": {
+    "end_exclusive_utc": "2026-01-01T00:00:00Z",
+    "start_inclusive_utc": "2024-01-01T00:00:00Z"
+  },
+  "target_provider": {
+    "archive": "Northern California Earthquake Data Center (NCEDC)",
+    "dataselect_service": "https://service.ncedc.org/fdsnws/dataselect/1/",
+    "event_service": "https://service.ncedc.org/fdsnws/event/1/",
+    "network": "NC",
+    "network_name": "Northern California Seismic Network (NCSN)",
+    "network_overview": "https://ncedc.org/ncsn/ncsn.overview.html",
+    "station_service": "https://service.ncedc.org/fdsnws/station/1/"
+  },
+  "waveform_qc_and_preprocessing": {
+    "accounting": "Report metadata-eligible, successfully acquired, structurally valid, and model-scorable counts separately.",
+    "gap_policy": "Represent gaps explicitly; do not interpolate. Reset quality, normalization, and recurrent states at every invalid segment.",
+    "model_input": "Three-component acceleration in Z/N/E order, 0.5 s packets at 100 Hz, with PacketQualityGateV5 and causal EWMA normalization.",
+    "post_access_exclusions": "Only predeclared structural failures may be excluded from scored metrics; report every exclusion reason and denominator.",
+    "required_components": [
+      "Z",
+      "N",
+      "E"
+    ],
+    "response_conversion": "Convert counts to acceleration using StationXML sensitivity only; do not perform acausal response deconvolution.",
+    "sample_rate_policy": "Keep native 100 Hz channels; decimate 200 Hz channels to 100 Hz with the frozen stateful 31-tap causal FIR."
+  }
+}

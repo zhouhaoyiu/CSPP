@@ -1,0 +1,7 @@
+dataset,method,records,precision,recall,f1,matched_median_output_delay_s,source_file,source_json_pointer
+NCSN,CSPP,578,0.8074433656957929,0.8633217993079585,0.8344481605351171,0.6099996566772461,sources/nc.json,/primary
+NCSN,PhaseNet,578,0.5209090909090909,0.9913494809688581,0.6829558998808104,11.25,sources/nc_default.json,/results/phasenet_instance:phasenet_instance_default
+NCSN,EQTransformer,578,0.7320872274143302,0.40657439446366783,0.5228031145717464,24.570000171661377,sources/nc_default.json,/results/eqtransformer_original:eqtransformer_original_p_default
+TexNet,CSPP,633,0.9352159468438538,0.8894154818325435,0.9117408906882591,0.7452099323272705,sources/tx.json,/primary_metrics
+TexNet,PhaseNet,633,0.6934557979334098,0.9541864139020537,0.803191489361702,10.46696937084198,sources/evidence.json,/event_window_metrics/4
+TexNet,EQTransformer,633,0.8078078078078078,0.42496050552922593,0.556935817805383,25.43596911430359,sources/evidence.json,/event_window_metrics/5

@@ -1,0 +1,90 @@
+{
+  "status": "complete",
+  "inference_records": 119,
+  "reference_labeled_records": 26,
+  "match_tolerance_seconds": 1.5,
+  "model": "original CSPP V27C C0",
+  "operating_point": {
+    "candidate_threshold": 0.1,
+    "event_threshold": 0.975,
+    "count": 1,
+    "threshold_scan_permitted": false,
+    "provenance": "GeoNet temporal development selection freeze; no fixed-benchmark threshold or model selection"
+  },
+  "elapsed_seconds": 43.283802708028816,
+  "packet_serial_equivalence": [
+    {
+      "trace_name": "AKT0029809031658",
+      "maximum_differences": {
+        "candidate_probability": 5.960464477539063e-08,
+        "arrival_age_fraction": 1.7881393432617188e-07,
+        "quality_valid": 0.0,
+        "candidate_allowed": 0.0,
+        "event_probability__original": 1.1920928955078125e-07
+      },
+      "pass": true
+    },
+    {
+      "trace_name": "GNM0160102020810",
+      "maximum_differences": {
+        "candidate_probability": 1.1920928955078125e-07,
+        "arrival_age_fraction": 1.1920928955078125e-07,
+        "quality_valid": 0.0,
+        "candidate_allowed": 0.0,
+        "event_probability__original": 3.2782554626464844e-07
+      },
+      "pass": true
+    }
+  ],
+  "events": [
+    {
+      "event": "19980903165800",
+      "records": 66,
+      "records_emitting_candidates": 35,
+      "candidate_count": 35,
+      "reference_labeled_records": 0,
+      "unlabeled_records": 66,
+      "training_record_overlap": 0,
+      "training_event_overlap": false,
+      "all_labeled_metrics": null,
+      "labeled_records_excluding_training_and_development_record_overlap": null
+    },
+    {
+      "event": "20010202081000",
+      "records": 53,
+      "records_emitting_candidates": 25,
+      "candidate_count": 26,
+      "reference_labeled_records": 26,
+      "unlabeled_records": 27,
+      "training_record_overlap": 2,
+      "training_event_overlap": true,
+      "all_labeled_metrics": {
+        "records": 26,
+        "tp": 19,
+        "fp_extra_event_record_candidates": 1,
+        "fn": 7,
+        "precision": 0.95,
+        "recall": 0.7307692307692307,
+        "f1": 0.8260869565217391,
+        "matched_pick_mae_s": 0.09857898862738376,
+        "matched_release_latency_median_s": 0.6199999999999992,
+        "reference_p_before_10_s_records": 10,
+        "technical_failures": 0
+      },
+      "labeled_records_excluding_training_and_development_record_overlap": {
+        "records": 24,
+        "tp": 17,
+        "fp_extra_event_record_candidates": 1,
+        "fn": 7,
+        "precision": 0.9444444444444444,
+        "recall": 0.7083333333333334,
+        "f1": 0.8095238095238095,
+        "matched_pick_mae_s": 0.08928059872458975,
+        "matched_release_latency_median_s": 0.5399999999999991,
+        "reference_p_before_10_s_records": 9,
+        "technical_failures": 0
+      }
+    }
+  ],
+  "claims": "Candidate emission is not recall. Labeled-subset metrics do not describe all 119 records or reproduce the author's 93-record test."
+}

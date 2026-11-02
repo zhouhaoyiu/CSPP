@@ -1,0 +1,22 @@
+{
+  "events": {
+    "20160414212600": {
+      "magnitude": 6.5,
+      "origin_jst": "21:26:34.4",
+      "stations": 150,
+      "detected": 12
+    },
+    "20160416012500": {
+      "magnitude": 7.3,
+      "origin_jst": "01:25:05.4",
+      "stations": 151,
+      "detected": 33
+    }
+  },
+  "total_records": 45,
+  "p_reference": "three-component STA/LTA automatic onset (long 5 s, short 0.3 s, ratio 6); detection-grade, not a manual label",
+  "input": "raw NIED ASCII counts (same domain as frozen K-NET BSON counts)",
+  "component_order": "ZNE",
+  "sample_rate_hz": 100.0,
+  "max_distance_km": 200.0
+}

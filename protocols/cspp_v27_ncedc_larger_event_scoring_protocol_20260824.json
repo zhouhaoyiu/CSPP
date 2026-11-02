@@ -1,0 +1,136 @@
+{
+  "code_sha256": {
+    "scripts/evaluation/build_v27_ncedc_event_score_cache.py": "cca64be3af5af41216fbbe5969bd81434b79f454982b89cee0f183dea15c6835",
+    "scripts/evaluation/freeze_v27_ncedc_larger_event_scoring_protocol.py": "bd4393c713d68f414ea94a3729012df1b916b4f52445c913a590e49733364a79",
+    "src/causal_fir_decimator.py": "81c8a4a235b92c051ef2a9ef54936c5d6a8a3fb5df7f63c302962669fbdcc208",
+    "src/cspp_v27_reused_core_score_cache.py": "a0301fccc341f7cd95bb01b6478904cc86bb731421867da47a7017f72a6aa0d2",
+    "src/data_streaming.py": "8b81c1b194740cea28a0f99698c3698d12a1acb92661e4a5c0dff847facad66b",
+    "src/gappy_strong_motion_stream.py": "1971d336558ceac86e1d076f749749a0c185e8fa0550301c4c8f99bf6e736fa4",
+    "src/gappy_strong_motion_stream_v2.py": "cdb911a3d6c8868ce8e41c76b3359b7ff7b77e25947c29b904b9f16a7d56422f",
+    "src/model_cspp_v27.py": "c2ca73f059fbdd7fcf59709ee8ed8fe47c8ba6b3de03a3f714c8effa2a1261d4",
+    "src/oriented_gappy_strong_motion_stream.py": "9ccb3223b551b7873b5fcc31759d44b3bfeca808bd09dd716f4e1da770e1f9e0",
+    "src/resilient_mseed.py": "ec6b2960cc88ba3ea6d097d4e2998de768b87986d9e4b9ad89df4a240417a92e",
+    "src/stream_quality_v5.py": "62e48deca36fd553f59d2291738f3fe1a93dddb70bef84bcf250534c54cae414",
+    "src/v20c_event_snr.py": "c43f661713efdd1422cb3c77572b2857920ceb43b31f0da531d5e690e1a360a0"
+  },
+  "evidence_boundary": {
+    "incomplete_records_replaced": false,
+    "primary_seed": 20261101,
+    "replication_seeds": [
+      20261102,
+      20261103
+    ],
+    "target_metadata_accessed": true,
+    "target_model_outputs_computed_or_inspected": false,
+    "target_waveforms_accessed": true,
+    "threshold_or_seed_selection_permitted": false
+  },
+  "execution": {
+    "inference_device": "cpu",
+    "inference_processes": 1,
+    "model_ensemble": "one shared candidate core and three frozen C0 event heads",
+    "output_root": "work_artifacts/ncedc_larger_event_extension_20260824/evaluation/ncedc_larger_event_scores_v1",
+    "torch_threads": 4
+  },
+  "expected_units": {
+    "events": 35,
+    "requested_event_station_records": 362,
+    "scorable_event_station_records": 344,
+    "structurally_incomplete_records": 18
+  },
+  "frozen_at_utc": "2026-08-23T18:26:37.498916+00:00",
+  "inputs": {
+    "acquisition_status": {
+      "bytes": 16473,
+      "path": "work_artifacts/ncedc_larger_event_extension_20260824/waveforms/events/latest_status.csv",
+      "sha256": "57b5f9a1dc5deec2ff3b5ec09082abfed916308abf30462f5bf72fd4b150db38"
+    },
+    "acquisition_summary": {
+      "bytes": 656,
+      "path": "work_artifacts/ncedc_larger_event_extension_20260824/waveforms/events/summary.json",
+      "sha256": "7567f5cab8a34a2e7d74d603dd3a063161f2ec4085d147460961bde0ef1699e2"
+    },
+    "event_manifest_freeze": {
+      "bytes": 3535,
+      "path": "workspace/experiments/cspp_v27_ncedc_larger_event_manifest_freeze_20260824.json",
+      "sha256": "d383aa6a6b189b3d651bc92a700bc535de0a48074e09c55fb2c3f3429279f444"
+    },
+    "event_orientation_freeze": {
+      "bytes": 2336,
+      "path": "workspace/experiments/cspp_v27_ncedc_larger_event_orientation_freeze_20260824.json",
+      "sha256": "15c284712ab4ad863d8eacecef1065ab3de6e39ba031996ee58decda0371dd6a"
+    },
+    "event_station_orientations": {
+      "bytes": 173117,
+      "path": "work_artifacts/ncedc_larger_event_extension_20260824/metadata/manifests/event_station_orientations.csv",
+      "sha256": "8f8f5e4c2aeaa60ad6fe606bd9fa0d583443509d8dfbbcbe8386d5b1fabb1130"
+    },
+    "event_station_requests": {
+      "bytes": 104191,
+      "path": "work_artifacts/ncedc_larger_event_extension_20260824/metadata/manifests/event_station_requests.csv",
+      "sha256": "6cac0b709fed079b770b03d912efdb520029c11e08a78c5b593851f534b7bd5d"
+    },
+    "selection_freeze": {
+      "bytes": 5526,
+      "path": "workspace/experiments/cspp_v27_geonet_temporal_selection_freeze_20260729.json",
+      "sha256": "f86155159422fa1539751ed7eb2f388875f519990b4080f4e5d11af664e88f6f"
+    }
+  },
+  "metrics": {
+    "local_p_snr_window_seconds": 1.0,
+    "match_tolerance_seconds": 1.5,
+    "primary_label": "positive-weight manual reviewed preferred-origin P pick"
+  },
+  "models": {
+    "C0_seed20261101": {
+      "arm": "C0",
+      "bytes": 1369948,
+      "path": "work_artifacts/checkpoints/blind_v27c_C0_none_seed20261101/final.pt",
+      "seed": 20261101,
+      "sha256": "d27ce10351475dfa264b45406b601dbcfc64e15c92be7260fe54c1738d35586d",
+      "verifier_feature_mode": "none"
+    },
+    "C0_seed20261102": {
+      "arm": "C0",
+      "bytes": 1369948,
+      "path": "work_artifacts/checkpoints/blind_v27c_C0_none_seed20261102/final.pt",
+      "seed": 20261102,
+      "sha256": "fcc9a3123765e5a78c7a210086d31768a77f37556e1c2e1efc503342b39bf2f2",
+      "verifier_feature_mode": "none"
+    },
+    "C0_seed20261103": {
+      "arm": "C0",
+      "bytes": 1369948,
+      "path": "work_artifacts/checkpoints/blind_v27c_C0_none_seed20261103/final.pt",
+      "seed": 20261103,
+      "sha256": "02695f1827eac6bca218a8017ce3efb67f8ef2f693e113644d41b1423c0fea56",
+      "verifier_feature_mode": "none"
+    }
+  },
+  "operating_point": {
+    "all_reported_seeds": [
+      20261101,
+      20261102,
+      20261103
+    ],
+    "candidate_threshold": 0.1,
+    "event_threshold": 0.975,
+    "primary_operational_seed": 20261101,
+    "seed_selection_permitted": false,
+    "selected_arm": "C0"
+  },
+  "protocol_id": "cspp_v27_ncedc_event_scoring_v1",
+  "runtime": {
+    "candidate_history_packets": 4,
+    "max_arrival_age_packets": 4.0,
+    "normalization": "per-channel causal EWMA demean and scale",
+    "packet_duration_seconds": 0.5,
+    "packet_samples": 50,
+    "quality_gate": "PacketQualityGateV5 frozen defaults",
+    "recurrent_state_reset": "every quality-invalid segment boundary",
+    "sample_rate_hz": 100.0,
+    "temporal_block_packets": 4096,
+    "warmup_packets": 20
+  },
+  "status": "frozen_before_any_larger_event_model_output"
+}

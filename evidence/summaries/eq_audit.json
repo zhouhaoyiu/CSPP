@@ -1,0 +1,115 @@
+{
+  "created_at_utc": "2026-09-05T08:17:46.917295+00:00",
+  "status": "awaiting_author_record_manifest_and_reference_picks",
+  "inference_started": false,
+  "cspp_metrics": null,
+  "paper_modified": false,
+  "local_header_count": 22119,
+  "local_ready_record_count": 21141,
+  "paper_table_iv": {
+    "event_1": {
+      "magnitude": 6.1,
+      "depth_km": 10,
+      "records": 44,
+      "p_precision": 0.881,
+      "p_recall": 0.949,
+      "p_f1": 0.913,
+      "p_mae_seconds": 0.13
+    },
+    "event_2": {
+      "magnitude": 4.2,
+      "depth_km": 18,
+      "records": 49,
+      "p_precision": 0.867,
+      "p_recall": 0.907,
+      "p_f1": 0.887,
+      "p_mae_seconds": 0.13
+    }
+  },
+  "paper_match_tolerance_seconds": 0.32,
+  "paper_poor_localization_outer_tolerance_seconds": 3.2,
+  "metric_note": "The paper distinguishes poorly localized detections from complete misses. Do not equate its counts with ordinary one-to-one candidate matching without the original evaluator.",
+  "event_1_hypothesis": {
+    "event_time_jst": "1998-09-03 16:58",
+    "author_identity_confirmed": false,
+    "basis": "Figure 8 map region plus magnitude/depth; no exact event date in the paper",
+    "external_support": "https://www.jma.go.jp/jma/kishou/books/kenshin/vol63p049.pdf"
+  },
+  "local_candidates": [
+    {
+      "candidate_event_id": "0002112057",
+      "author_identity_confirmed": false,
+      "selection_basis": "event_2_parameters_and_map_region_only",
+      "origin_time_jst": "2000-02-11 20:57:00",
+      "magnitude": 4.2,
+      "depth_km": 18,
+      "latitude": 35.501,
+      "longitude": 139.045,
+      "local_headers": 18,
+      "local_ready_records": 18,
+      "source_pick_flags_true": 18,
+      "training_and_development_record_overlap": {
+        "original": {
+          "knet_train": 0,
+          "knet_noise_train": 0,
+          "knet_dev_joint": 0,
+          "knet_noise_dev": 0
+        },
+        "expanded": {
+          "knet_train": 11,
+          "knet_noise_train": 0,
+          "knet_dev_joint": 0,
+          "knet_noise_dev": 0
+        }
+      }
+    },
+    {
+      "candidate_event_id": "0102020810",
+      "author_identity_confirmed": false,
+      "selection_basis": "event_2_parameters_and_map_region_only",
+      "origin_time_jst": "2001-02-02 08:10:00",
+      "magnitude": 4.2,
+      "depth_km": 18,
+      "latitude": 35.5,
+      "longitude": 139.077,
+      "local_headers": 27,
+      "local_ready_records": 26,
+      "source_pick_flags_true": 26,
+      "training_and_development_record_overlap": {
+        "original": {
+          "knet_train": 2,
+          "knet_noise_train": 0,
+          "knet_dev_joint": 0,
+          "knet_noise_dev": 0
+        },
+        "expanded": {
+          "knet_train": 18,
+          "knet_noise_train": 0,
+          "knet_dev_joint": 0,
+          "knet_noise_dev": 0
+        }
+      }
+    }
+  ],
+  "required_inputs": [
+    "Exact event origin times and the 44+49 accepted record identifiers",
+    "The original three-component waveforms and record start times",
+    "Per-record reference P picks and their labeling provenance",
+    "Original scoring rules, including duplicate candidates and poorly localized picks"
+  ],
+  "comparison_rules": [
+    "Keep CSPP weights and development-selected thresholds unchanged",
+    "Check event and record overlap with training before interpreting generalization",
+    "Preserve the author's full record set; report distance<=200 km as a separate subset",
+    "Report P picking only, with pick error and candidate availability delay separately",
+    "Keep literature results separate from independently rerun EQAnomalyNet results"
+  ],
+  "input_sha256": {
+    "external/header.bson": "191bd5a41325c84b10ffae64b44dbe8b9eb3333b080fdaae39c31300fd1f90c7",
+    "external_data/knet_accel_causal_raw/metadata.csv": "ed32b19738ce46990201e2db837b84566a4ba50a5770615db7517e5f865d271c",
+    "workspace/paper/EQAnomalyNet_Unsupervised_Seismic_Phase_Picking_via_Transformer_Autoencoder.pdf": "854cfe26ba8cc720136f31efd90c8c93f003e92ee3b017f3152f5b59ff561565",
+    "work_artifacts/checkpoints/blind_v27c_C0_none_seed20261101/selected_indices.npz": "72dab23b14f4da309ec04bbbcdb68c7088bbf8aba565024934c2be05c94893cd",
+    "work_artifacts/expanded_data_two_thresholds_20260905/planned_selected_indices.npz": "5850adc2bf0e3c839c681a054a154d85af8f08e28466627f126a3a3c1f061ad5",
+    "workspace/scripts/evaluation/audit_eqanomalynet_knet_cohort.py": "01d1fe3cffab24acfe1872e49a83c3953eb88cebbd479c5d942603623e3ea052"
+  }
+}

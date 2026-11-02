@@ -1,0 +1,81 @@
+{
+  "protocol_id": "cspp_v27b_nonlinear_verifier_pilot_v1",
+  "frozen_at": "2026-07-29",
+  "status": "frozen_before_execution",
+  "parent_protocol": "experiments/cspp_v27_from_scratch_protocol_20260729.json",
+  "parent_protocol_sha256": "6e88807ba635ecb09f988a2feabb5139c1b8cca1d5d22fc92c983d261684f314",
+  "failed_pilot_record": "experiments/cspp_v27_pilot_results_20260729.json",
+  "question": "Can a small nonlinear verifier suppress the noise tail while preserving the frozen V27a low-threshold candidate recall?",
+  "initialization": {
+    "checkpoint": "work_artifacts/checkpoints/pilot_v27a_seed20261101/best.pt",
+    "checkpoint_sha256": "c90241c759018e87cacb10c75e46c3b99ac410f439b312801c9bbbdb9dc6e813",
+    "model_class": "CSPPCausalPickerV27",
+    "selected_indices_sha256": "72dab23b14f4da309ec04bbbcdb68c7088bbf8aba565024934c2be05c94893cd"
+  },
+  "architecture": {
+    "model_class": "CSPPCausalPickerV27B",
+    "total_parameters": 329423,
+    "trainable_parameters": 17157,
+    "frozen_parameters": 312266,
+    "verifier_input": "GRU sequence state, current packet embedding, packet embedding delta, dense phase peak, and dense phase soft mass",
+    "verifier": "LayerNorm(258), Linear(258,64), SiLU, Dropout(0.15), Linear(64,1)",
+    "candidate_timing_dense_phase_change": "none",
+    "candidate_backbone_gradient": "disabled",
+    "fixed_state_scalars": 320,
+    "cpu_single_thread_smoke_latency_ms_per_packet": 1.075952,
+    "cpu_single_thread_realtime_margin": 464.7
+  },
+  "source_hashes": {
+    "model": "0516d45721a9dc71e02e64e839e227f4edf4a6474a3cf53e22c3df2c069aff27",
+    "training": "b4cd60ee6f5fbf4a50926897f0526e86a96e25bf13d09e02f66a0b9565eb57f9",
+    "model_io": "88cad4db728956b9e9a9ad6ea54842cd8593a5998495263ffdacee50fca45d50",
+    "tests": "06ea7400ba79498d2894e7f8ee353c9d363c71fa807214b56384dcb8d9729d66"
+  },
+  "held_constant": {
+    "record_selection": "identical to the V27a supervised baseline",
+    "data_seed": 20260801,
+    "optimization_seed": 20261101,
+    "epochs": 3,
+    "batch_size": 8,
+    "max_chunks": 96,
+    "snr_training_profile": "v7_operational",
+    "curriculum_epoch_offset": 0,
+    "low_snr_event_weight": 3.0,
+    "candidate_threshold_grid": "0.1 to 0.975 in 0.025 increments",
+    "event_threshold_grid": [
+      0.0,
+      0.1,
+      0.2,
+      0.4,
+      0.6,
+      0.8,
+      0.9
+    ],
+    "distillation_loss_weight": 0.0
+  },
+  "verifier_objective": {
+    "event_loss_weight": 1.0,
+    "event_pos_weight": 20.0,
+    "hard_negative_loss_weight": 1.0,
+    "ranking_loss_weight": 0.5,
+    "partial_auc_loss_weight": 1.0,
+    "partial_auc_negative_fraction": 0.25,
+    "partial_auc_margin": 1.0
+  },
+  "acceptance": {
+    "candidate_threshold_maximum": 0.2,
+    "noise_specificity_minimum": 0.995,
+    "native_usable_rate_minimum": 0.75,
+    "zero_db_usable_rate_minimum": 0.15,
+    "ten_db_usable_rate_minimum": 0.65,
+    "p90_availability_delay_seconds_maximum": 1.5,
+    "policy": "Advance only if one threshold pair satisfies every condition and numerical probes confirm unchanged candidate, timing, and dense phase outputs."
+  },
+  "resource_policy": {
+    "device": "mps",
+    "processes": 1,
+    "data_loader_workers": 0,
+    "parallel_mps_jobs": 0
+  },
+  "opened_test_boundary": "Only opened development cohorts are used. Fixed retrospective tests and the future GeoNet final holdout remain prohibited for selection."
+}

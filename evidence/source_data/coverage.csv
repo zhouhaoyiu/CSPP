@@ -1,0 +1,19 @@
+item,status,included_files,boundary_or_gap
+Figure 1,display_values_available,Figure_1_Table_1.csv,Saved summaries support plotted values; raw provider waveforms and baseline weights remain external.
+Figure 2,display_values_available,Figure_2_waveforms.csv; Figure_2_packet_scores.csv; Figure_2_examples.csv; sources/Figure_2_source.mat; sources/Figure_2_provenance.json,"Exact archived display waveforms and packet scores; 3 cases verified against frozen primary results. Display amplitudes are normalized, not raw acceleration."
+Figure 3,restricted,,"Chinese threshold sweeps, tolerance results and delay samples withheld under owner restrictions."
+Figure 4,display_values_available,Figure_4ab_threshold_sensitivity.csv; Figure_4c_runtime_summary.csv; Figure_4c_runtime_samples.csv,Saved threshold sensitivity and all recorded CPU timings; original protocol in source JSON. Not a new performance test.
+Figure 5,display_values_available,Figure_5_training_records.csv,"Exact archived public inputs recovered; sample identities/counts, displayed means and exposure aggregation verified. Provider raw waveforms remain separately acquired."
+Figure 6,diagram_source_available,Figure_6.drawio,Architecture diagram; numerical experimental source data are not applicable.
+Table 1,display_values_available,Figure_1_Table_1.csv,All six rows independently checked against current manuscript rounding.
+Table 2,restricted,,Chinese record-level group evaluation inputs withheld.
+Table 3,display_values_available,Table_3_seed_results.csv; Table_3_componentwise_medians.csv,All 15 seed/arm summaries provided; component-wise medians reproduce table.
+Table 4,public_counts_available_restricted_chinese_inputs,Figure_5_training_records.csv; Distribution_summary_verified.csv; Figure_S5_ncsn_station_days.csv; Figure_S5_geonet_station_days.csv; sources/evidence.json,"Public cohort/exposure counts are supported. The 2416 negative-window count is reported in the manuscript/training protocol, not reconstructed here; Chinese record-level inputs remain withheld."
+Table S1,restricted,,Chinese original-threshold record-level inputs withheld.
+Table S2,display_values_available,Table_S2.csv,Public calibrated baseline metrics; threshold settings are explicitly transcribed from Table S2 and not presented as new observations.
+Table S3,restricted,,Chinese window-coverage inputs withheld.
+Figure S1,display_values_available,Figure_S1_geonet_arm_records.csv; Figure_S1_geonet_calibration_records.csv; Figure_S1_geonet_ablation_records.csv,"Exact archived public inputs recovered; sample identities/counts, displayed means and exposure aggregation verified. Provider raw waveforms remain separately acquired."
+Figure S2,display_values_available,Figure_S2_texnet_records.csv; Figure_S2_ncsn_original_records.csv,"Exact archived public inputs recovered; sample identities/counts, displayed means and exposure aggregation verified. Provider raw waveforms remain separately acquired."
+Figure S3,restricted,,Chinese event/station coordinates and record metadata withheld.
+Figure S4,display_values_available,Figure_S4_catalogue_events.csv; Figure_S4_S5_nc_stations.csv,82 eligible M>=3 catalogue events and exact 12 replay stations; station keys checked against archived event-day candidate output.
+Figure S5,display_values_available,Figure_S5_ncsn_station_days.csv; Figure_S5_ncsn_station_summary.csv; Figure_S5_geonet_station_days.csv; Figure_S5_geonet_station_summary.csv,"Exact archived public inputs recovered; sample identities/counts, displayed means and exposure aggregation verified. Provider raw waveforms remain separately acquired."

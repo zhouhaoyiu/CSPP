@@ -1,0 +1,81 @@
+{
+  "purpose": "Exploratory frozen CSPP direct-input diagnostic; no retraining or manuscript changes",
+  "split": "all existing STEAD splits: train, dev, test",
+  "full_database_records": 1265657,
+  "eligible_records": 5981,
+  "selected_records": 5981,
+  "selection": "earthquake_local AND source_magnitude >= 3 AND trace_p_arrival_sample >= 1000; no split restriction",
+  "sampling": "all eligible records",
+  "selected_by_split": {
+    "train": 5092,
+    "test": 600,
+    "dev": 289
+  },
+  "selected_unique_events": 3927,
+  "selected_label_status": {
+    "manual": 4759,
+    "automatic": 1222
+  },
+  "actual_p_offset_seconds": [
+    10.0
+  ],
+  "full_dataset_counts": {
+    "('dev', 'earthquake_local')": 51510,
+    "('dev', 'noise')": 11773,
+    "('test', 'earthquake_local')": 103040,
+    "('test', 'noise')": 23526,
+    "('train', 'earthquake_local')": 875681,
+    "('train', 'noise')": 200127
+  },
+  "checkpoint": {
+    "arm": "C0",
+    "bytes": 1369948,
+    "path": "work_artifacts/checkpoints/blind_v27c_C0_none_seed20261101/final.pt",
+    "seed": 20261101,
+    "sha256": "d27ce10351475dfa264b45406b601dbcfc64e15c92be7260fe54c1738d35586d",
+    "verifier_feature_mode": "none"
+  },
+  "candidate_threshold": 0.1,
+  "confirmation_threshold": 0.975,
+  "runtime": {
+    "candidate_history_packets": 4,
+    "max_arrival_age_packets": 4.0,
+    "normalization": "per-channel causal EWMA demean and scale",
+    "packet_duration_seconds": 0.5,
+    "packet_samples": 50,
+    "quality_gate": "PacketQualityGateV5 frozen defaults",
+    "recurrent_state_reset": "every quality-invalid segment boundary",
+    "sample_rate_hz": 100.0,
+    "temporal_block_packets": 4096,
+    "warmup_packets": 20
+  },
+  "match_tolerance_seconds": 1.5,
+  "input": "ZNE, 100 Hz, uncorrected instrument counts; no response removal, differentiation, filtering, padding, or time shifting",
+  "normalization": "unchanged normalize_packet_ewma_causal and PacketQualityGateV5",
+  "initial_state": "reset for every independent 60-second trace; retain 20-packet startup",
+  "metrics": "At most one TP per labeled event trace within +/-1.5 s; every unmatched candidate episode is FP; event traces without a match are FN; noise metrics reported separately and combined",
+  "limitations": [
+    "Direct counts input differs from the strong-motion acceleration training domain",
+    "Event/station overlap with model training sources not audited",
+    "Window test is not a continuous station-day replay",
+    "User-selected M>=3 and P-offset>=10 s cohort; all matching records have P at exactly 10 s",
+    "No noise-only windows included: event-window precision does not measure background false-alarm rate",
+    "Batched execution measures predictions, not deployment runtime"
+  ],
+  "source_sha256": {
+    "work_artifacts/tx_external_event_validation_20260824/protocol.json": "df79587c41c81f9eb85686eb2dd00504d0f6984d62d694268f64794869cdd3c3",
+    "work_artifacts/checkpoints/blind_v27c_C0_none_seed20261101/final.pt": "d27ce10351475dfa264b45406b601dbcfc64e15c92be7260fe54c1738d35586d",
+    "workspace/outputs/stead_cspp_m3_p_atleast10_20260906/run_diagnostic.py": "9152fb093a5113c86b67e4502332079b8378782163bc7e206a9908a5c9077094",
+    "workspace/src/model_cspp_v27.py": "c2ca73f059fbdd7fcf59709ee8ed8fe47c8ba6b3de03a3f714c8effa2a1261d4",
+    "workspace/src/cspp_v27_reused_core_score_cache.py": "a0301fccc341f7cd95bb01b6478904cc86bb731421867da47a7017f72a6aa0d2",
+    "workspace/src/data_streaming.py": "8b81c1b194740cea28a0f99698c3698d12a1acb92661e4a5c0dff847facad66b",
+    "workspace/src/stream_quality_v5.py": "62e48deca36fd553f59d2291738f3fe1a93dddb70bef84bcf250534c54cae414",
+    "workspace/scripts/evaluation/analyze_v27_ncedc_event_scores.py": "32fcaf0a98b15898ec02a771a33fdd9abfd8d25b7fa35cddb2fc52daf5f57f45"
+  },
+  "metadata_sha256": "9b9007406ebfef8c182060c8bb4266d29bbc433985f91f7e2dc476c8aca08efe",
+  "waveform_path": "external/waveforms.hdf5",
+  "waveform_bytes": 91127786704,
+  "waveform_mtime_ns": 1777843028860000000,
+  "device": "mps",
+  "batch_size": 32
+}

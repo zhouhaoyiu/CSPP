@@ -1,0 +1,138 @@
+{
+  "code": {
+    "bytes": 28909,
+    "path": "workspace/scripts/evaluation/pilot_pr_event_diagnostic.py",
+    "sha256": "fe2c224b783b0f07cf9833f5c554a2f6fd3e50bca1f5e8a2deda33957b61c58a"
+  },
+  "data_source": {
+    "event_products": "USGS ComCat PR phase-data products",
+    "station": "https://service.iris.edu/fdsnws/station/1/query",
+    "waveform": "https://service.iris.edu/fdsnws/dataselect/1/query"
+  },
+  "frozen_at_utc": "2026-08-23T22:03:11.600129+00:00",
+  "inputs": {
+    "event_station_orientations": {
+      "bytes": 4933,
+      "path": "work_artifacts/pr_pilot_20260824/metadata/manifests/event_station_orientations.csv",
+      "sha256": "01c8713c30ff9980de0d09c863e572215773abda71a88b12bc1c93b0ed99eaac"
+    },
+    "event_station_requests": {
+      "bytes": 4666,
+      "path": "work_artifacts/pr_pilot_20260824/metadata/manifests/event_station_requests.csv",
+      "sha256": "0000b12e4d1e202800fd5ac22c090f32c83ca89d24ddf59cdae976252ec26887"
+    },
+    "events": {
+      "bytes": 308,
+      "path": "work_artifacts/pr_pilot_20260824/metadata/manifests/events.csv",
+      "sha256": "901fd39be4170b6b1ff91fd98a942566c173409dff366b61d0a66d4dc8eebc35"
+    },
+    "locked_scoring_protocol": {
+      "bytes": 6586,
+      "path": "work_artifacts/ncedc_model_blind_20260817/event_scoring_protocol.json",
+      "sha256": "9799f12a47ca39b80a09a8e5aaa3a62611da88ba0285af34dbfa7413004854b6"
+    },
+    "phase_metadata": {
+      "pr2024119002": {
+        "bytes": 110483,
+        "path": "work_artifacts/pr_pilot_20260824/metadata/raw/pr2024119002.quakeml.xml",
+        "sha256": "ca4a1790ed638bcfd52616413328a2d0fc5c0c61176f5796b79705ffb0b2f657"
+      },
+      "pr2024136000": {
+        "bytes": 101011,
+        "path": "work_artifacts/pr_pilot_20260824/metadata/raw/pr2024136000.quakeml.xml",
+        "sha256": "5d87d486ce13ca101a06fb0b7fa754abfe43910cd6284154fcb26c8f66a3e214"
+      },
+      "pr2024239000": {
+        "bytes": 76804,
+        "path": "work_artifacts/pr_pilot_20260824/metadata/raw/pr2024239000.quakeml.xml",
+        "sha256": "af49b0cac4423b92e8a39a6057ab33f6178fd3584ae8b6c39206538663fcb9a2"
+      }
+    },
+    "station_metadata": {
+      "bytes": 9768354,
+      "path": "work_artifacts/pr_pilot_20260824/metadata/raw/PR_HN_2024_response.xml",
+      "sha256": "4ab5d2627429a8636da050c286141f2a48968c9b10ac0277fd1aa0a06b53576d"
+    }
+  },
+  "metrics": {
+    "local_p_snr_window_seconds": 1.0,
+    "match_tolerance_seconds": 1.5,
+    "primary_label": "positive-weight manual reviewed preferred-origin P pick"
+  },
+  "models": {
+    "C0_seed20261101": {
+      "arm": "C0",
+      "bytes": 1369948,
+      "path": "work_artifacts/checkpoints/blind_v27c_C0_none_seed20261101/final.pt",
+      "seed": 20261101,
+      "sha256": "d27ce10351475dfa264b45406b601dbcfc64e15c92be7260fe54c1738d35586d",
+      "verifier_feature_mode": "none"
+    },
+    "C0_seed20261102": {
+      "arm": "C0",
+      "bytes": 1369948,
+      "path": "work_artifacts/checkpoints/blind_v27c_C0_none_seed20261102/final.pt",
+      "seed": 20261102,
+      "sha256": "fcc9a3123765e5a78c7a210086d31768a77f37556e1c2e1efc503342b39bf2f2",
+      "verifier_feature_mode": "none"
+    },
+    "C0_seed20261103": {
+      "arm": "C0",
+      "bytes": 1369948,
+      "path": "work_artifacts/checkpoints/blind_v27c_C0_none_seed20261103/final.pt",
+      "seed": 20261103,
+      "sha256": "02695f1827eac6bca218a8017ce3efb67f8ef2f693e113644d41b1423c0fea56",
+      "verifier_feature_mode": "none"
+    }
+  },
+  "operating_point": {
+    "all_reported_seeds": [
+      20261101,
+      20261102,
+      20261103
+    ],
+    "candidate_threshold": 0.1,
+    "event_threshold": 0.975,
+    "primary_operational_seed": 20261101,
+    "seed_selection_permitted": false,
+    "selected_arm": "C0"
+  },
+  "overlap_disclosure": "No PR rows were found in local CSV evidence before preparation. InstanceGM provider overlap was not exhaustively resolvable; this remains diagnostic.",
+  "prohibited": [
+    "model or threshold tuning from pilot output",
+    "replacement of unavailable selected records",
+    "use as a continuous false-alarm estimate",
+    "automatic insertion into the manuscript"
+  ],
+  "protocol_id": "cspp_v27_pr_event_diagnostic_pilot_v1",
+  "runtime": {
+    "candidate_history_packets": 4,
+    "max_arrival_age_packets": 4.0,
+    "normalization": "per-channel causal EWMA demean and scale",
+    "packet_duration_seconds": 0.5,
+    "packet_samples": 50,
+    "quality_gate": "PacketQualityGateV5 frozen defaults",
+    "recurrent_state_reset": "every quality-invalid segment boundary",
+    "sample_rate_hz": 100.0,
+    "temporal_block_packets": 4096,
+    "warmup_packets": 20
+  },
+  "scope": "Diagnostic pilot only; not manuscript evidence or an independent continuous-data validation.",
+  "selection": {
+    "accepted_sample_rates_hz": [
+      100.0,
+      200.0
+    ],
+    "event_ids": [
+      "pr2024136000",
+      "pr2024119002",
+      "pr2024239000"
+    ],
+    "maximum_distance_km": 200.0,
+    "maximum_stations_per_event": 6,
+    "network": "PR",
+    "order": "ascending epicentral distance, station, and location",
+    "reference": "PR-contributed manual reviewed P arrival at the same station"
+  },
+  "status": "frozen_before_pr_waveform_access_and_model_scoring"
+}

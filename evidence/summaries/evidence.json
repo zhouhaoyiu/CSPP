@@ -1,0 +1,707 @@
+{
+  "summary_id": "cspp_evidence_summary_20260905_v1",
+  "created_at_utc": "2026-09-04T19:33:32.344970+00:00",
+  "sources": {
+    "geonet": {
+      "path": "work_artifacts/evaluation/cspp_v27_geonet_causal_public_baselines_20260730/result.json",
+      "bytes": 5585,
+      "sha256": "0336f237c02d1ecc3ae509fd494564069caab66a92374a15b9797e7720fe610f"
+    },
+    "texnet_cspp": {
+      "path": "work_artifacts/tx_external_event_validation_20260824/results/summary.json",
+      "bytes": 34926,
+      "sha256": "54fb01bb191fd74f6750da3bc6852fdd25620a8aad6d5607655693d2507914cc"
+    },
+    "texnet_public": {
+      "path": "work_artifacts/tx_external_event_validation_20260824/evaluation/tx_causal_public_analysis_v2/result.json",
+      "bytes": 18285,
+      "sha256": "ba7ad794e0ec0f0c08b9df49fdb39195008c9c59a9c38bd97c29b4d5ccb6f344"
+    },
+    "ncsn_larger": {
+      "path": "work_artifacts/ncedc_larger_event_extension_20260824/evaluation/ncedc_larger_event_analysis_v1/result.json",
+      "bytes": 7416,
+      "sha256": "76ead705a348aae7eda16cf9e400e56328723341bb970912769375ef54715be0"
+    },
+    "cspp_continuous": {
+      "path": "work_artifacts/ncedc_joint_continuous_m3_20260904/analysis_threshold_sensitivity/result.json",
+      "bytes": 8119,
+      "sha256": "0bd190ae75552875a5b478c200dc6c88b3d1be9f45c73a56a10f7d5950baa096"
+    },
+    "public_continuous": {
+      "path": "work_artifacts/ncedc_joint_continuous_m3_20260904/analysis_public_baseline_threshold_sweep/result.json",
+      "bytes": 63372,
+      "sha256": "7dabf00a382d4aee9867002d996309f7659cd73591d7481b59491be0d4e5b3d9"
+    },
+    "sta_lta_continuous": {
+      "path": "work_artifacts/ncedc_joint_continuous_m3_20260904/analysis_classical_baseline_r32/result.json",
+      "bytes": 2203,
+      "sha256": "654ba04fd5d5c0952031f5b1980c40738e956d4b233c561a5e2939f5b21c4461"
+    },
+    "serial_runtime": {
+      "path": "work_artifacts/ncedc_joint_continuous_m3_20260904/runtime_profile/serial_packet_clock_cpu1.json",
+      "bytes": 92702,
+      "sha256": "f418457f02c5fde00371ecf76231a4eaa4a55a50acd61132ccd26f158237aec1"
+    }
+  },
+  "event_window_metrics": [
+    {
+      "dataset": "GeoNet",
+      "method": "CSPP",
+      "records": 491,
+      "precision": 0.986046511627907,
+      "recall": 0.8635437881873728,
+      "f1": 0.9207383279044518,
+      "median_absolute_pick_error_seconds": 0.12201929092407227,
+      "p95_absolute_pick_error_seconds": "",
+      "median_availability_delay_seconds": 0.81369948387146,
+      "p95_availability_delay_seconds": ""
+    },
+    {
+      "dataset": "GeoNet",
+      "method": "PhaseNet",
+      "records": 491,
+      "precision": 0.7640625,
+      "recall": 0.9959266802443992,
+      "f1": 0.8647214854111406,
+      "median_absolute_pick_error_seconds": 0.1002969741821289,
+      "p95_absolute_pick_error_seconds": "",
+      "median_availability_delay_seconds": 9.288100719451904,
+      "p95_availability_delay_seconds": ""
+    },
+    {
+      "dataset": "GeoNet",
+      "method": "EQTransformer",
+      "records": 491,
+      "precision": 0.9895287958115183,
+      "recall": 0.384928716904277,
+      "f1": 0.5542521994134898,
+      "median_absolute_pick_error_seconds": 0.0939171314239502,
+      "p95_absolute_pick_error_seconds": "",
+      "median_availability_delay_seconds": 21.378000020980835,
+      "p95_availability_delay_seconds": ""
+    },
+    {
+      "dataset": "TexNet",
+      "method": "CSPP",
+      "records": 633,
+      "precision": 0.9352159468438538,
+      "recall": 0.8894154818325435,
+      "f1": 0.9117408906882591,
+      "median_absolute_pick_error_seconds": 0.12520718574523926,
+      "p95_absolute_pick_error_seconds": 0.3723962306976317,
+      "median_availability_delay_seconds": 0.7452099323272705,
+      "p95_availability_delay_seconds": 1.1493242502212524
+    },
+    {
+      "dataset": "TexNet",
+      "method": "PhaseNet",
+      "records": 633,
+      "precision": 0.6934557979334098,
+      "recall": 0.9541864139020537,
+      "f1": 0.803191489361702,
+      "median_absolute_pick_error_seconds": 0.10769438743591309,
+      "p95_absolute_pick_error_seconds": 0.3184890389442444,
+      "median_availability_delay_seconds": 10.46696937084198,
+      "p95_availability_delay_seconds": 17.534926176071167
+    },
+    {
+      "dataset": "TexNet",
+      "method": "EQTransformer",
+      "records": 633,
+      "precision": 0.8078078078078078,
+      "recall": 0.42496050552922593,
+      "f1": 0.556935817805383,
+      "median_absolute_pick_error_seconds": 0.09302186965942383,
+      "p95_absolute_pick_error_seconds": 0.25569548606872555,
+      "median_availability_delay_seconds": 25.43596911430359,
+      "p95_availability_delay_seconds": 28.6960015296936
+    },
+    {
+      "dataset": "NCSN_M4.5+",
+      "method": "CSPP",
+      "records": 344,
+      "precision": 0.9327485380116959,
+      "recall": 0.9273255813953488,
+      "f1": 0.9300291545189504,
+      "median_absolute_pick_error_seconds": 0.0950613021850586,
+      "p95_absolute_pick_error_seconds": 0.266634678840637,
+      "median_availability_delay_seconds": 0.570000171661377,
+      "p95_availability_delay_seconds": 1.0099997997283936
+    }
+  ],
+  "continuous_operating_points": [
+    {
+      "method": "CSPP",
+      "threshold": 0.975,
+      "m3_recall": 0.5487804878048781,
+      "m4_recall": 0.6153846153846154,
+      "candidate_rate_per_station_day": 2.0004292522087765,
+      "unmatched_group_rate_per_network_day": 0.016677749777774777,
+      "latency_median_seconds": 8.867993831634521,
+      "latency_p95_seconds": 23.86230864524841,
+      "evidence_role": "post-outcome sensitivity"
+    },
+    {
+      "method": "CSPP",
+      "threshold": 0.95,
+      "m3_recall": 0.5609756097560976,
+      "m4_recall": 0.6153846153846154,
+      "candidate_rate_per_station_day": 2.861606951563902,
+      "unmatched_group_rate_per_network_day": 0.06671099911109911,
+      "latency_median_seconds": 8.861800789833069,
+      "latency_p95_seconds": 23.665120601654053,
+      "evidence_role": "post-outcome sensitivity"
+    },
+    {
+      "method": "CSPP",
+      "threshold": 0.9,
+      "m3_recall": 0.5975609756097561,
+      "m4_recall": 0.6923076923076923,
+      "candidate_rate_per_station_day": 4.373988215999757,
+      "unmatched_group_rate_per_network_day": 0.06671099911109911,
+      "latency_median_seconds": 9.243771076202393,
+      "latency_p95_seconds": 23.662299489974977,
+      "evidence_role": "post-outcome sensitivity"
+    },
+    {
+      "method": "CSPP",
+      "threshold": 0.8,
+      "m3_recall": 0.6097560975609756,
+      "m4_recall": 0.7692307692307693,
+      "candidate_rate_per_station_day": 7.459756743343083,
+      "unmatched_group_rate_per_network_day": 0.08338874888887388,
+      "latency_median_seconds": 9.292722225189209,
+      "latency_p95_seconds": 24.253483974933623,
+      "evidence_role": "post-outcome sensitivity"
+    },
+    {
+      "method": "CSPP",
+      "threshold": 0.7,
+      "m3_recall": 0.6219512195121951,
+      "m4_recall": 0.7692307692307693,
+      "candidate_rate_per_station_day": 11.26199106669026,
+      "unmatched_group_rate_per_network_day": 0.10006649866664866,
+      "latency_median_seconds": 8.902650833129883,
+      "latency_p95_seconds": 24.20042383670807,
+      "evidence_role": "post-outcome sensitivity"
+    },
+    {
+      "method": "CSPP",
+      "threshold": 0.5,
+      "m3_recall": 0.6707317073170732,
+      "m4_recall": 0.7692307692307693,
+      "candidate_rate_per_station_day": 29.149517316228028,
+      "unmatched_group_rate_per_network_day": 0.36691049511104507,
+      "latency_median_seconds": 8.902650833129883,
+      "latency_p95_seconds": 25.41497972011566,
+      "evidence_role": "post-outcome sensitivity"
+    },
+    {
+      "method": "EQTransformer",
+      "threshold": 0.001,
+      "m3_recall": 0.43902439024390244,
+      "m4_recall": 0.46153846153846156,
+      "candidate_rate_per_station_day": 1.0846520606205374,
+      "unmatched_group_rate_per_network_day": 0.0,
+      "latency_median_seconds": 31.469661235809326,
+      "latency_p95_seconds": 44.917940616607666,
+      "evidence_role": "post-outcome public-checkpoint sensitivity"
+    },
+    {
+      "method": "EQTransformer",
+      "threshold": 0.002,
+      "m3_recall": 0.4146341463414634,
+      "m4_recall": 0.38461538461538464,
+      "candidate_rate_per_station_day": 0.8404633768159139,
+      "unmatched_group_rate_per_network_day": 0.0,
+      "latency_median_seconds": 30.025957465171814,
+      "latency_p95_seconds": 45.69408290386198,
+      "evidence_role": "post-outcome public-checkpoint sensitivity"
+    },
+    {
+      "method": "EQTransformer",
+      "threshold": 0.005,
+      "m3_recall": 0.3902439024390244,
+      "m4_recall": 0.38461538461538464,
+      "candidate_rate_per_station_day": 0.6516430573623386,
+      "unmatched_group_rate_per_network_day": 0.0,
+      "latency_median_seconds": 30.993833661079407,
+      "latency_p95_seconds": 46.52378675937652,
+      "evidence_role": "post-outcome public-checkpoint sensitivity"
+    },
+    {
+      "method": "EQTransformer",
+      "threshold": 0.01,
+      "m3_recall": 0.36585365853658536,
+      "m4_recall": 0.38461538461538464,
+      "candidate_rate_per_station_day": 0.5849170798110752,
+      "unmatched_group_rate_per_network_day": 0.0,
+      "latency_median_seconds": 30.993833661079407,
+      "latency_p95_seconds": 47.35349061489103,
+      "evidence_role": "post-outcome public-checkpoint sensitivity"
+    },
+    {
+      "method": "EQTransformer",
+      "threshold": 0.02,
+      "m3_recall": 0.34146341463414637,
+      "m4_recall": 0.38461538461538464,
+      "candidate_rate_per_station_day": 0.5110925940096773,
+      "unmatched_group_rate_per_network_day": 0.0,
+      "latency_median_seconds": 30.993833661079407,
+      "latency_p95_seconds": 42.39106087684631,
+      "evidence_role": "post-outcome public-checkpoint sensitivity"
+    },
+    {
+      "method": "EQTransformer",
+      "threshold": 0.03,
+      "m3_recall": 0.2926829268292683,
+      "m4_recall": 0.23076923076923078,
+      "candidate_rate_per_station_day": 0.4699212461588978,
+      "unmatched_group_rate_per_network_day": 0.0,
+      "latency_median_seconds": 33.7384614944458,
+      "latency_p95_seconds": 42.619094324111934,
+      "evidence_role": "post-outcome public-checkpoint sensitivity"
+    },
+    {
+      "method": "EQTransformer",
+      "threshold": 0.04,
+      "m3_recall": 0.2926829268292683,
+      "m4_recall": 0.23076923076923078,
+      "candidate_rate_per_station_day": 0.4543045280086021,
+      "unmatched_group_rate_per_network_day": 0.0,
+      "latency_median_seconds": 33.7384614944458,
+      "latency_p95_seconds": 42.619094324111934,
+      "evidence_role": "post-outcome public-checkpoint sensitivity"
+    },
+    {
+      "method": "EQTransformer",
+      "threshold": 0.05,
+      "m3_recall": 0.2682926829268293,
+      "m4_recall": 0.23076923076923078,
+      "candidate_rate_per_station_day": 0.43300900325819885,
+      "unmatched_group_rate_per_network_day": 0.0,
+      "latency_median_seconds": 34.19489097595215,
+      "latency_p95_seconds": 42.73311104774475,
+      "evidence_role": "post-outcome public-checkpoint sensitivity"
+    },
+    {
+      "method": "EQTransformer",
+      "threshold": 0.06,
+      "m3_recall": 0.2682926829268293,
+      "m4_recall": 0.23076923076923078,
+      "candidate_rate_per_station_day": 0.4145528818078494,
+      "unmatched_group_rate_per_network_day": 0.0,
+      "latency_median_seconds": 34.19489097595215,
+      "latency_p95_seconds": 42.73311104774475,
+      "evidence_role": "post-outcome public-checkpoint sensitivity"
+    },
+    {
+      "method": "EQTransformer",
+      "threshold": 0.07,
+      "m3_recall": 0.24390243902439024,
+      "m4_recall": 0.23076923076923078,
+      "candidate_rate_per_station_day": 0.3975164620075268,
+      "unmatched_group_rate_per_network_day": 0.016683168006163505,
+      "latency_median_seconds": 34.19489097595215,
+      "latency_p95_seconds": 41.70696053504944,
+      "evidence_role": "post-outcome public-checkpoint sensitivity"
+    },
+    {
+      "method": "EQTransformer",
+      "threshold": 0.08,
+      "m3_recall": 0.23170731707317074,
+      "m4_recall": 0.23076923076923078,
+      "candidate_rate_per_station_day": 0.3847391471572849,
+      "unmatched_group_rate_per_network_day": 0.016683168006163505,
+      "latency_median_seconds": 34.37336730957031,
+      "latency_p95_seconds": 41.76396889686584,
+      "evidence_role": "post-outcome public-checkpoint sensitivity"
+    },
+    {
+      "method": "EQTransformer",
+      "threshold": 0.09,
+      "m3_recall": 0.23170731707317074,
+      "m4_recall": 0.23076923076923078,
+      "candidate_rate_per_station_day": 0.37196183230704294,
+      "unmatched_group_rate_per_network_day": 0.0,
+      "latency_median_seconds": 34.37336730957031,
+      "latency_p95_seconds": 41.76396889686584,
+      "evidence_role": "post-outcome public-checkpoint sensitivity"
+    },
+    {
+      "method": "EQTransformer",
+      "threshold": 0.1,
+      "m3_recall": 0.23170731707317074,
+      "m4_recall": 0.23076923076923078,
+      "candidate_rate_per_station_day": 0.36344362240688166,
+      "unmatched_group_rate_per_network_day": 0.0,
+      "latency_median_seconds": 34.37336730957031,
+      "latency_p95_seconds": 41.76396889686584,
+      "evidence_role": "post-outcome public-checkpoint sensitivity"
+    },
+    {
+      "method": "EQTransformer",
+      "threshold": 0.12,
+      "m3_recall": 0.23170731707317074,
+      "m4_recall": 0.23076923076923078,
+      "candidate_rate_per_station_day": 0.34214809765647847,
+      "unmatched_group_rate_per_network_day": 0.0,
+      "latency_median_seconds": 34.37336730957031,
+      "latency_p95_seconds": 41.76396889686584,
+      "evidence_role": "post-outcome public-checkpoint sensitivity"
+    },
+    {
+      "method": "EQTransformer",
+      "threshold": 0.15,
+      "m3_recall": 0.21951219512195122,
+      "m4_recall": 0.23076923076923078,
+      "candidate_rate_per_station_day": 0.3137540646559408,
+      "unmatched_group_rate_per_network_day": 0.0,
+      "latency_median_seconds": 34.39112854003906,
+      "latency_p95_seconds": 41.82097725868225,
+      "evidence_role": "post-outcome public-checkpoint sensitivity"
+    },
+    {
+      "method": "EQTransformer",
+      "threshold": 0.2,
+      "m3_recall": 0.21951219512195122,
+      "m4_recall": 0.23076923076923078,
+      "candidate_rate_per_station_day": 0.2825206283553494,
+      "unmatched_group_rate_per_network_day": 0.0,
+      "latency_median_seconds": 34.39112854003906,
+      "latency_p95_seconds": 41.82097725868225,
+      "evidence_role": "post-outcome public-checkpoint sensitivity"
+    },
+    {
+      "method": "EQTransformer",
+      "threshold": 0.3,
+      "m3_recall": 0.18292682926829268,
+      "m4_recall": 0.15384615384615385,
+      "candidate_rate_per_station_day": 0.24986749040473116,
+      "unmatched_group_rate_per_network_day": 0.0,
+      "latency_median_seconds": 34.016414642333984,
+      "latency_p95_seconds": 41.99200234413147,
+      "evidence_role": "post-outcome public-checkpoint sensitivity"
+    },
+    {
+      "method": "EQTransformer",
+      "threshold": 0.5,
+      "m3_recall": 0.15853658536585366,
+      "m4_recall": 0.15384615384615385,
+      "candidate_rate_per_station_day": 0.2001779326537903,
+      "unmatched_group_rate_per_network_day": 0.0,
+      "latency_median_seconds": 33.46050834655762,
+      "latency_p95_seconds": 42.10601906776428,
+      "evidence_role": "post-outcome public-checkpoint sensitivity"
+    },
+    {
+      "method": "EQTransformer",
+      "threshold": 0.7,
+      "m3_recall": 0.08536585365853659,
+      "m4_recall": 0.07692307692307693,
+      "candidate_rate_per_station_day": 0.1306125518024731,
+      "unmatched_group_rate_per_network_day": 0.0,
+      "latency_median_seconds": 28.47861933708191,
+      "latency_p95_seconds": 36.48363978862762,
+      "evidence_role": "post-outcome public-checkpoint sensitivity"
+    },
+    {
+      "method": "EQTransformer",
+      "threshold": 0.9,
+      "m3_recall": 0.0,
+      "m4_recall": 0.0,
+      "candidate_rate_per_station_day": 0.00851820990016129,
+      "unmatched_group_rate_per_network_day": 0.0,
+      "latency_median_seconds": null,
+      "latency_p95_seconds": null,
+      "evidence_role": "post-outcome public-checkpoint sensitivity"
+    },
+    {
+      "method": "PhaseNet",
+      "threshold": 0.08639824281948567,
+      "m3_recall": 0.8780487804878049,
+      "m4_recall": 0.9230769230769231,
+      "candidate_rate_per_station_day": 178.43497011168358,
+      "unmatched_group_rate_per_network_day": 31.492977640077,
+      "latency_median_seconds": 26.371299147605896,
+      "latency_p95_seconds": 38.619122338294986,
+      "evidence_role": "post-outcome public-checkpoint sensitivity"
+    },
+    {
+      "method": "PhaseNet",
+      "threshold": 0.1,
+      "m3_recall": 0.8536585365853658,
+      "m4_recall": 0.9230769230769231,
+      "candidate_rate_per_station_day": 149.4437224425396,
+      "unmatched_group_rate_per_network_day": 20.46709934553733,
+      "latency_median_seconds": 25.8815678358078,
+      "latency_p95_seconds": 38.62492101192474,
+      "evidence_role": "post-outcome public-checkpoint sensitivity"
+    },
+    {
+      "method": "PhaseNet",
+      "threshold": 0.15,
+      "m3_recall": 0.8170731707317073,
+      "m4_recall": 0.9230769230769231,
+      "candidate_rate_per_station_day": 87.46762171258476,
+      "unmatched_group_rate_per_network_day": 5.821530294696437,
+      "latency_median_seconds": 25.82559823989868,
+      "latency_p95_seconds": 38.63361902236939,
+      "evidence_role": "post-outcome public-checkpoint sensitivity"
+    },
+    {
+      "method": "PhaseNet",
+      "threshold": 0.2,
+      "m3_recall": 0.7926829268292683,
+      "m4_recall": 0.9230769230769231,
+      "candidate_rate_per_station_day": 57.282833839321434,
+      "unmatched_group_rate_per_network_day": 3.0358696665752194,
+      "latency_median_seconds": 25.54004693031311,
+      "latency_p95_seconds": 38.59433603286743,
+      "evidence_role": "post-outcome public-checkpoint sensitivity"
+    },
+    {
+      "method": "PhaseNet",
+      "threshold": 0.3,
+      "m3_recall": 0.7682926829268293,
+      "m4_recall": 0.9230769230769231,
+      "candidate_rate_per_station_day": 29.68239401802165,
+      "unmatched_group_rate_per_network_day": 1.5179348332876097,
+      "latency_median_seconds": 23.99714708328247,
+      "latency_p95_seconds": 38.62267553806305,
+      "evidence_role": "post-outcome public-checkpoint sensitivity"
+    },
+    {
+      "method": "PhaseNet",
+      "threshold": 0.4,
+      "m3_recall": 0.6829268292682927,
+      "m4_recall": 0.8461538461538461,
+      "candidate_rate_per_station_day": 17.566754633280993,
+      "unmatched_group_rate_per_network_day": 1.0675585640704068,
+      "latency_median_seconds": 22.30154061317444,
+      "latency_p95_seconds": 38.901156425476074,
+      "evidence_role": "post-outcome public-checkpoint sensitivity"
+    },
+    {
+      "method": "PhaseNet",
+      "threshold": 0.5,
+      "m3_recall": 0.6341463414634146,
+      "m4_recall": 0.6923076923076923,
+      "candidate_rate_per_station_day": 10.50911440131247,
+      "unmatched_group_rate_per_network_day": 0.5337792820352034,
+      "latency_median_seconds": 21.808855414390564,
+      "latency_p95_seconds": 38.49514776468277,
+      "evidence_role": "post-outcome public-checkpoint sensitivity"
+    },
+    {
+      "method": "PhaseNet",
+      "threshold": 0.6,
+      "m3_recall": 0.6097560975609756,
+      "m4_recall": 0.6153846153846154,
+      "candidate_rate_per_station_day": 6.548150418319478,
+      "unmatched_group_rate_per_network_day": 0.38365385896280246,
+      "latency_median_seconds": 21.4884614944458,
+      "latency_p95_seconds": 38.05361109972,
+      "evidence_role": "post-outcome public-checkpoint sensitivity"
+    },
+    {
+      "method": "PhaseNet",
+      "threshold": 0.7,
+      "m3_recall": 0.573170731707317,
+      "m4_recall": 0.5384615384615384,
+      "candidate_rate_per_station_day": 4.182357885302883,
+      "unmatched_group_rate_per_network_day": 0.11676421794520074,
+      "latency_median_seconds": 19.749491214752197,
+      "latency_p95_seconds": 36.268656849861124,
+      "evidence_role": "post-outcome public-checkpoint sensitivity"
+    },
+    {
+      "method": "PhaseNet",
+      "threshold": 0.8,
+      "m3_recall": 0.4634146341463415,
+      "m4_recall": 0.46153846153846156,
+      "candidate_rate_per_station_day": 2.757489437103326,
+      "unmatched_group_rate_per_network_day": 0.05004180769080032,
+      "latency_median_seconds": 17.107923984527588,
+      "latency_p95_seconds": 30.481547224521634,
+      "evidence_role": "post-outcome public-checkpoint sensitivity"
+    },
+    {
+      "method": "PhaseNet",
+      "threshold": 0.85,
+      "m3_recall": 0.3902439024390244,
+      "m4_recall": 0.3076923076923077,
+      "candidate_rate_per_station_day": 2.181297614425019,
+      "unmatched_group_rate_per_network_day": 0.05004180769080032,
+      "latency_median_seconds": 16.834749817848206,
+      "latency_p95_seconds": 26.930520272254945,
+      "evidence_role": "post-outcome public-checkpoint sensitivity"
+    },
+    {
+      "method": "PhaseNet",
+      "threshold": 0.9,
+      "m3_recall": 0.34146341463414637,
+      "m4_recall": 0.23076923076923078,
+      "candidate_rate_per_station_day": 1.5710451913913444,
+      "unmatched_group_rate_per_network_day": 0.016680602563600107,
+      "latency_median_seconds": 16.834749817848206,
+      "latency_p95_seconds": 26.604268503189086,
+      "evidence_role": "post-outcome public-checkpoint sensitivity"
+    },
+    {
+      "method": "PhaseNet",
+      "threshold": 0.925,
+      "m3_recall": 0.3170731707317073,
+      "m4_recall": 0.15384615384615385,
+      "candidate_rate_per_station_day": 1.2630805965115595,
+      "unmatched_group_rate_per_network_day": 0.016680602563600107,
+      "latency_median_seconds": 17.107923984527588,
+      "latency_p95_seconds": 26.689520597457886,
+      "evidence_role": "post-outcome public-checkpoint sensitivity"
+    },
+    {
+      "method": "PhaseNet",
+      "threshold": 0.95,
+      "m3_recall": 0.3048780487804878,
+      "m4_recall": 0.15384615384615385,
+      "candidate_rate_per_station_day": 0.8969291426913547,
+      "unmatched_group_rate_per_network_day": 0.0,
+      "latency_median_seconds": 16.743771076202393,
+      "latency_p95_seconds": 25.948113298416136,
+      "evidence_role": "post-outcome public-checkpoint sensitivity"
+    },
+    {
+      "method": "PhaseNet",
+      "threshold": 0.975,
+      "m3_recall": 0.23170731707317074,
+      "m4_recall": 0.15384615384615385,
+      "candidate_rate_per_station_day": 0.40588882090146744,
+      "unmatched_group_rate_per_network_day": 0.0,
+      "latency_median_seconds": 17.290119409561157,
+      "latency_p95_seconds": 25.591055226325988,
+      "evidence_role": "post-outcome public-checkpoint sensitivity"
+    },
+    {
+      "method": "PhaseNet",
+      "threshold": 0.99,
+      "m3_recall": 0.0,
+      "m4_recall": 0.0,
+      "candidate_rate_per_station_day": 0.01703030017768395,
+      "unmatched_group_rate_per_network_day": 0.0,
+      "latency_median_seconds": null,
+      "latency_p95_seconds": null,
+      "evidence_role": "post-outcome public-checkpoint sensitivity"
+    },
+    {
+      "method": "PhaseNet",
+      "threshold": 0.995,
+      "m3_recall": 0.0,
+      "m4_recall": 0.0,
+      "candidate_rate_per_station_day": 0.0,
+      "unmatched_group_rate_per_network_day": 0.0,
+      "latency_median_seconds": null,
+      "latency_p95_seconds": null,
+      "evidence_role": "post-outcome public-checkpoint sensitivity"
+    },
+    {
+      "method": "PhaseNet",
+      "threshold": 0.999,
+      "m3_recall": 0.0,
+      "m4_recall": 0.0,
+      "candidate_rate_per_station_day": 0.0,
+      "unmatched_group_rate_per_network_day": 0.0,
+      "latency_median_seconds": null,
+      "latency_p95_seconds": null,
+      "evidence_role": "post-outcome public-checkpoint sensitivity"
+    },
+    {
+      "method": "PhaseNet",
+      "threshold": 0.9995,
+      "m3_recall": 0.0,
+      "m4_recall": 0.0,
+      "candidate_rate_per_station_day": 0.0,
+      "unmatched_group_rate_per_network_day": 0.0,
+      "latency_median_seconds": null,
+      "latency_p95_seconds": null,
+      "evidence_role": "post-outcome public-checkpoint sensitivity"
+    },
+    {
+      "method": "PhaseNet",
+      "threshold": 0.9999,
+      "m3_recall": 0.0,
+      "m4_recall": 0.0,
+      "candidate_rate_per_station_day": 0.0,
+      "unmatched_group_rate_per_network_day": 0.0,
+      "latency_median_seconds": null,
+      "latency_p95_seconds": null,
+      "evidence_role": "post-outcome public-checkpoint sensitivity"
+    },
+    {
+      "method": "PhaseNet",
+      "threshold": 0.99995,
+      "m3_recall": 0.0,
+      "m4_recall": 0.0,
+      "candidate_rate_per_station_day": 0.0,
+      "unmatched_group_rate_per_network_day": 0.0,
+      "latency_median_seconds": null,
+      "latency_p95_seconds": null,
+      "evidence_role": "post-outcome public-checkpoint sensitivity"
+    },
+    {
+      "method": "PhaseNet",
+      "threshold": 0.99999,
+      "m3_recall": 0.0,
+      "m4_recall": 0.0,
+      "candidate_rate_per_station_day": 0.0,
+      "unmatched_group_rate_per_network_day": 0.0,
+      "latency_median_seconds": null,
+      "latency_p95_seconds": null,
+      "evidence_role": "post-outcome public-checkpoint sensitivity"
+    },
+    {
+      "method": "STA/LTA",
+      "threshold": "r32",
+      "m3_recall": 0.3170731707317073,
+      "m4_recall": 0.3076923076923077,
+      "candidate_rate_per_station_day": 14.691095678455234,
+      "unmatched_group_rate_per_network_day": 0.2168107471110721,
+      "latency_median_seconds": 8.094999551773071,
+      "latency_p95_seconds": 10.5848548412323,
+      "evidence_role": "post-outcome sensitivity"
+    }
+  ],
+  "serial_runtime": [
+    {
+      "method": "CSPP",
+      "median_ms": 1.1696875,
+      "p95_ms": 1.4141687499999998,
+      "p99_ms": 1.52602551
+    },
+    {
+      "method": "EQTransformer",
+      "median_ms": 33.2280625,
+      "p95_ms": 38.02839579999999,
+      "p99_ms": 89.30601141999999
+    },
+    {
+      "method": "PhaseNet",
+      "median_ms": 2.8439585000000003,
+      "p95_ms": 3.3180681,
+      "p99_ms": 3.6309817499999997
+    },
+    {
+      "method": "STA/LTA",
+      "median_ms": 1.3165624999999999,
+      "p95_ms": 1.50326665,
+      "p99_ms": 1.58545491
+    }
+  ],
+  "claim_boundary": {
+    "event_window_f1_is_standard": true,
+    "continuous_event_recall_is_not_standard_f1": true,
+    "continuous_threshold_sweeps_are_post_outcome": true,
+    "public_models_use_released_weights_without_matched_retraining": true,
+    "sota_claim_permitted": false,
+    "paper_files_modified": false
+  }
+}

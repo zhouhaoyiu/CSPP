@@ -1,0 +1,157 @@
+{
+  "protocol_id": "cspp_v27a_supervised_development_v1",
+  "frozen_at": "2026-07-29",
+  "status": "frozen_before_v27a_smoke_and_development_training",
+  "research_question": "Can a compact packet-causal CNN-GRU recover strong cross-domain P-candidate recall while retaining low continuous-background false-candidate rates and sub-second packet availability?",
+  "target_population": {
+    "event_magnitude_minimum_for_training": 3.0,
+    "event_magnitude_minimum_for_primary_reporting": 4.0,
+    "distance_km_maximum": 200.0,
+    "instrument": "three-component strong-motion acceleration",
+    "sample_rate_hz": 100.0,
+    "packet_seconds": 0.5
+  },
+  "model_contract": {
+    "architecture": "v27",
+    "model_class": "CSPPCausalPickerV27",
+    "initialization": "random weights; no legacy or V25 checkpoint",
+    "parameter_target": [
+      200000,
+      400000
+    ],
+    "packet_width": 64,
+    "embedding_dim": 64,
+    "sequence_width": 128,
+    "gru_layers": 2,
+    "temporal_bins": 5,
+    "packet_kernels": [
+      3,
+      7,
+      15
+    ],
+    "raw_packet_encoder_calls_per_packet": 1,
+    "future_packet_access": false,
+    "raw_packet_replay": false,
+    "state_size_constant_with_stream_duration": true,
+    "within_packet_context": "all 50 samples of the fully received current packet",
+    "cross_packet_context": "previous packet embedding and two-layer unidirectional GRU state",
+    "packet_features": [
+      "ZNE and polarization-energy channels",
+      "causal amplitude and derivative summaries",
+      "fixed current-packet spectral shape",
+      "five-bin average and maximum morphology"
+    ],
+    "outputs": [
+      "packet P-candidate logit",
+      "auxiliary event-evidence logit",
+      "causal P-arrival-age logit",
+      "50-sample current-packet P logits"
+    ],
+    "event_gradient_boundary": "event-evidence loss trains its own head but is detached from the shared candidate backbone",
+    "dense_phase_boundary": "the target P packet receives a Gaussian sample target and every valid non-P sample receives a negative target; phase peak and soft mass enter the candidate head"
+  },
+  "source_freeze": {
+    "src/model_cspp_v27.py": "3604c86f3fa0a1d9af8bed537e1430d8d39a1b0f7e6317e5f318521031c4d612",
+    "scripts/training/train_domain_robust_v5.py": "5d64f30a7c1835fdad4e39462bd032ee02d16dab841efe4f4c27258a66769de2",
+    "src/domain_robust_v5_data.py": "02ffb2aec751d326aea1824c7804523f7af07f0f433cc51ee1a3f051664b5548",
+    "src/domain_robust_v5_metrics.py": "0b3e062214a5b11a15d77cffa1e08671afd445b01d37d6640c51a736f6c3d76a"
+  },
+  "development_data": {
+    "population_and_split_reference": "external/selected_indices.npz",
+    "population_and_split_reference_sha256": "87ceea9b0c406236fb71298df431526d3f105e8ceda829f6713939a176bfc673",
+    "source_metadata_freeze": {
+      "instancegm_metadata": "external/metadata.csv",
+      "instancegm_metadata_sha256": "f5bb4420cdaf664e8dc96fb86b5be676002694b6ec89269e2f57688b502a1580",
+      "knet_metadata": "external_data/knet_accel_causal_raw/metadata.csv",
+      "knet_metadata_sha256": "ed32b19738ce46990201e2db837b84566a4ba50a5770615db7517e5f865d271c",
+      "knet_manifest_sha256": "1fcb86887442880e3967e9455eebcf33b5b7935d4cd3bf8264ad5735f139fb2d"
+    },
+    "data_selection_seed": 20260801,
+    "event_sources": [
+      "InstanceGM provider training and development accelerometer rows",
+      "K-NET event-disjoint and station-factorized training and development rows",
+      "opened CWA 2020 training-only packet contexts"
+    ],
+    "negative_sources": [
+      "pre-P and post-response strong-motion packets",
+      "catalog-screened CI 2024 continuous windows",
+      "reviewed target-FDSN actual-trigger windows",
+      "target-FDSN continuous backgrounds"
+    ],
+    "controlled_snr_db": [
+      0.0,
+      10.0
+    ],
+    "event_sampling": {
+      "native_fraction": 0.5,
+      "synthetic_fraction": 0.5,
+      "low_snr_event_weight": 3.0,
+      "low_snr_upper_db": 8.0
+    },
+    "label": "post-P-only candidate and event-response labels; no P-pre positive packet",
+    "selection_scope": "training and DEV-A partitions only",
+    "development_layers": {
+      "dev_a": "current event-disjoint InstanceGM development rows and event-plus-station-factorized K-NET development rows; used for architecture and epoch selection with provisional thresholds",
+      "dev_b": "opened GeoNet 2022 development material; used only after checkpoint freeze for final operating-point calibration",
+      "final_threshold_boundary": "the provisional threshold stored in each training checkpoint is not the final deployment threshold"
+    }
+  },
+  "optimization": {
+    "pilot_seed": 20261101,
+    "full_seeds_if_pilot_passes": [
+      20261101,
+      20261102,
+      20261103
+    ],
+    "epochs": 8,
+    "batch_size_maximum": 12,
+    "max_chunks": 96,
+    "learning_rate": 0.0003,
+    "weight_decay": 0.0001,
+    "packet_localization_loss_weight": 0.25,
+    "packet_localization_sigma_samples": 5.0,
+    "distillation_loss_weight": 0.0,
+    "checkpoint_selection": "DEV-A gate count plus continuous gate progress; no retrospective fixed-test or DEV-B metric"
+  },
+  "development_acceptance": {
+    "native_usable_rate_minimum": 0.9,
+    "zero_db_usable_rate_minimum": 0.6,
+    "ten_db_usable_rate_minimum": 0.9,
+    "instancegm_native_usable_rate_minimum": 0.8,
+    "knet_native_usable_rate_minimum": 0.8,
+    "continuous_noise_specificity_minimum": 0.995,
+    "median_availability_delay_seconds_maximum": 0.75,
+    "p90_availability_delay_seconds_maximum": 1.5,
+    "parameter_count_maximum": 400000,
+    "stream_state_fp32_kib_maximum": 4.0,
+    "decision": "do not add teacher distillation until the supervised V27 baseline is complete and diagnosed"
+  },
+  "opened_evidence_boundary": {
+    "knet_fixed_701": "opened retrospective benchmark; prohibited for V27 architecture, loss, threshold, or checkpoint selection",
+    "instancegm_fixed_1170": "opened retrospective benchmark; prohibited for V27 architecture, loss, threshold, or checkpoint selection",
+    "geonet_v24_and_prior_cwa_runs": "opened diagnostic evidence only",
+    "legacy_cnn_gru_raw_replay": "architecture motivation only; its weights and reported score are not admissible V27 evidence"
+  },
+  "future_final_test": {
+    "required": true,
+    "source": "new GeoNet strong-motion records not used for V27 development",
+    "freeze_rule": "event, station, date range, preprocessing, thresholds, and model checksum must be frozen before first scoring",
+    "status": "not yet constructed; current GeoNet download remains untouched"
+  },
+  "distillation_contingency": {
+    "default": "disabled",
+    "allowed_only_after": "supervised V27 development baseline and error analysis are frozen",
+    "teacher_use": "training rows only",
+    "causal_target_rule": "teacher input window must end at the current packet; only newest-packet teacher outputs may supervise the student",
+    "claim_boundary": "teacher metrics and future-window availability cannot be inherited by the causal student"
+  },
+  "resource_policy": {
+    "training_processes": 1,
+    "device": "mps",
+    "data_loader_workers": 0,
+    "concurrent_mps_workers": 0,
+    "maximum_batch_size": 12,
+    "output_root": "work_artifacts",
+    "reason": "avoid the prior multiprocess MPS swap and watchdog failure"
+  }
+}

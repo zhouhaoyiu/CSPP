@@ -1,0 +1,16 @@
+arm,seed,primary_stratum,primary_event_records,primary_matched,primary_candidate_total,primary_recall,primary_precision,primary_f1,primary_median_absolute_pick_error_seconds,source_file,source_json_pointer
+A0_full,20261111,authoritative_used_p_positive_weight,491,301,302,0.6130346232179226,0.9966887417218543,0.7591424968474149,0.10398387908935547,sources/ablations.json,/0
+A0_full,20261112,authoritative_used_p_positive_weight,491,385,389,0.7841140529531568,0.9897172236503856,0.875,0.12818646430969238,sources/ablations.json,/1
+A0_full,20261113,authoritative_used_p_positive_weight,491,394,398,0.8024439918533605,0.9899497487437185,0.8863892013498312,0.10258245468139648,sources/ablations.json,/2
+A1_no_cross_packet_state,20261111,authoritative_used_p_positive_weight,491,159,159,0.32382892057026474,1.0,0.48923076923076925,0.25238990783691406,sources/ablations.json,/3
+A1_no_cross_packet_state,20261112,authoritative_used_p_positive_weight,491,222,222,0.45213849287169044,1.0,0.6227208976157083,0.24542105197906494,sources/ablations.json,/4
+A1_no_cross_packet_state,20261113,authoritative_used_p_positive_weight,491,191,191,0.3890020366598778,1.0,0.5601173020527859,0.18533849716186523,sources/ablations.json,/5
+A2_no_dense_candidate_input,20261111,authoritative_used_p_positive_weight,491,305,305,0.6211812627291242,1.0,0.7663316582914573,0.11534357070922852,sources/ablations.json,/6
+A2_no_dense_candidate_input,20261112,authoritative_used_p_positive_weight,491,364,366,0.7413441955193483,0.994535519125683,0.8494749124854143,0.1442708969116211,sources/ablations.json,/7
+A2_no_dense_candidate_input,20261113,authoritative_used_p_positive_weight,491,384,386,0.7820773930753564,0.9948186528497409,0.8757126567844926,0.12347912788391113,sources/ablations.json,/8
+A3_no_localization_supervision,20261111,authoritative_used_p_positive_weight,491,300,300,0.6109979633401222,1.0,0.7585335018963337,0.10740971565246582,sources/ablations.json,/9
+A3_no_localization_supervision,20261112,authoritative_used_p_positive_weight,491,379,381,0.7718940936863544,0.994750656167979,0.8692660550458715,0.13264822959899902,sources/ablations.json,/10
+A3_no_localization_supervision,20261113,authoritative_used_p_positive_weight,491,391,393,0.7963340122199593,0.9949109414758269,0.8846153846153846,0.10648941993713379,sources/ablations.json,/11
+A4_no_spectrum,20261111,authoritative_used_p_positive_weight,491,182,182,0.37067209775967414,1.0,0.5408618127786032,0.1427617073059082,sources/ablations.json,/12
+A4_no_spectrum,20261112,authoritative_used_p_positive_weight,491,313,314,0.6374745417515275,0.9968152866242038,0.7776397515527951,0.1531085968017578,sources/ablations.json,/13
+A4_no_spectrum,20261113,authoritative_used_p_positive_weight,491,357,360,0.7270875763747454,0.9916666666666667,0.8390129259694477,0.11570906639099121,sources/ablations.json,/14

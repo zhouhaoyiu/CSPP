@@ -1,0 +1,20 @@
+CSPP Model Card
+Prepared 2026-11-03
+
+Identity and intended use
+CSPP C0, distributed in software version 0.2.0, is a station-level causal P-wave detector and arrival-time picker for research on continuous strong-motion streams. It is not a complete network earthquake-warning system, S-wave picker or validated public-warning service. Authors: Haoyu Zhou, Qiang Ma, Jiang Wang and Shiliang Zhang. Contact: zsl@iem.ac.cn; ORCID 0000-0002-3151-1909.
+
+Architecture and input
+Packet convolutional encoder, physical descriptors, recurrent cross-packet memory, and detection, confirmation and arrival-time outputs. The model has 329423 parameters and a 320-scalar neural state. Input is prepared three-component ZNE acceleration at 100 Hz, 50 samples per component per non-overlapping 0.5-second packet. The public API does not perform telemetry, channel rotation, resampling or response correction.
+
+Operation and weights
+Default detection threshold 0.1 and confirmation threshold 0.975. Startup and invalid-data resets require 20 consecutive valid packets (10 seconds); this is not a 10-second wait after each P arrival. One picker/state is used per station. Primary checkpoint: models/cspp_seed20261101.pt; replication seeds: 20261102 and 20261103. Verify checksums against models/model_manifest.json. Expanded/full checkpoints are not substitutes.
+
+Training and evaluation data
+Positive training data: 1000 InstanceGM, 1000 K-NET and 500 CWA three-component records; the manuscript reports 2416 negative-sample windows. GeoNet development uses 97 configuration-selection and 92 threshold-calibration events, plus continuous background data. External tests: NCSN 578 records/51 events and TexNet 633 records/65 events. A temporally separate GeoNet set has 491 manually reviewed records for ablations.
+
+Results and scope
+At GeoNet-fixed thresholds, saved primary-model F1 is 83.44% for NCSN and 91.17% for TexNet; matched-record median output delay is 0.610 and 0.745 seconds, respectively. Delay excludes telemetry and computation. Relative precision/recall trade-offs and unfavorable comparisons are retained. The manuscript runtime study reports 1.414 milliseconds P95 per update under its single-thread CPU configuration. That value is not an end-to-end field-warning latency or a guarantee for another computer.
+
+Restrictions and reproduction
+Owned code and self-trained weights retain the MIT license; third-party data and models keep their own terms. No public repository URL or DOI has been created. One real public NCSN example and public numerical figure inputs are included. Other raw waveforms and baseline weights remain external. Chinese data cannot be shared with readers, editors or reviewers. Their optimized-threshold results are a same-data sensitivity analysis. The release supports packet tests, real-example replay and saved-result aggregation; it does not enable complete raw-data reproduction of every result or a fully established initializer-from-scratch lineage. See evidence/source_data/coverage.csv for item-level coverage.

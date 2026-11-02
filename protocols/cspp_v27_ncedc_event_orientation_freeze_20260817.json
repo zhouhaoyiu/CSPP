@@ -1,0 +1,46 @@
+{
+  "calibration": "StationXML sensitivity is counts per m/s^2. Components are divided by their sensitivity and multiplied by the geometric-mean sensitivity before causal normalization, preserving model amplitude convention while correcting relative component gain.",
+  "code": {
+    "bytes": 11170,
+    "path": "workspace/scripts/evaluation/freeze_v27_ncedc_event_orientations.py",
+    "sha256": "973501bb34f4820d639b157d6737492e17a648bfd44491fc2318a813f2be153c"
+  },
+  "continuous_manifest_freeze": {
+    "bytes": 5737,
+    "path": "workspace/experiments/cspp_v27_ncedc_continuous_manifest_freeze_20260817.json",
+    "sha256": "1839769549d78d0f756b2b2016a425cbe89bc6216e3a45bed1d0b16b3fcb47f6"
+  },
+  "counts": {
+    "event_station_groups": 580,
+    "maximum_orientation_condition_number": 1.0000000000000002,
+    "orientation_rows": 1740
+  },
+  "event_manifest_freeze": {
+    "bytes": 3469,
+    "path": "workspace/experiments/cspp_v27_ncedc_event_manifest_freeze_20260817.json",
+    "sha256": "e088d5b42c07c0f38be915c8c893b73cedf1bb393d3c1580f0fca78cbf868743"
+  },
+  "event_station_requests": {
+    "bytes": 169097,
+    "path": "work_artifacts/ncedc_model_blind_20260817/metadata/manifests/event_station_requests.csv",
+    "sha256": "fba5c65bd6efba0a46cb0a1244720f7a753e18c86371ee034b4c13cbb3cb7575"
+  },
+  "evidence_boundary": {
+    "model_outputs_computed": false,
+    "target_waveforms_accessed": true,
+    "waveform_amplitudes_inspected_for_orientation_selection": false
+  },
+  "freeze_id": "cspp_v27_ncedc_event_orientation_freeze_v1",
+  "frozen_at_utc": "2026-08-17T13:08:58.414000+00:00",
+  "orientation_manifest": {
+    "bytes": 275253,
+    "path": "work_artifacts/ncedc_model_blind_20260817/metadata/manifests/event_station_orientations.csv",
+    "sha256": "5fbc4235b72eb1c919612f581f054647830a4d87e00e97d5557b55f2a457c133"
+  },
+  "station_metadata": {
+    "bytes": 40299781,
+    "path": "work_artifacts/ncedc_model_blind_20260817/metadata/raw/ncsn_hn_response_2024_2025.xml",
+    "sha256": "526f2af2b50d8cbd811e6dcd410dc3edd938524dd6bf6f0200dcbc919ad4b5c1"
+  },
+  "status": "orientation_and_sensitivity_frozen_before_model_scoring"
+}

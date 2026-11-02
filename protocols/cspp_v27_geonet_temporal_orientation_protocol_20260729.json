@@ -1,0 +1,93 @@
+{
+  "artifacts": {
+    "background_station_orientations": {
+      "bytes": 2755,
+      "path": "work_artifacts/geonet_temporal_development_v1/orientation_manifest/background_station_orientations.csv",
+      "sha256": "044f08a1ca85099fdb361b94cdf131288356d63c4a7f92b64a5c7369ef4167e1"
+    },
+    "event_station_orientations": {
+      "bytes": 1169245,
+      "path": "work_artifacts/geonet_temporal_development_v1/orientation_manifest/event_station_orientations.csv",
+      "sha256": "59bc8102820bc05456c7d3e514d2da9e7dcc1c26da72f27c953af20b5cf9a49d"
+    },
+    "summary": {
+      "bytes": 465,
+      "path": "work_artifacts/geonet_temporal_development_v1/orientation_manifest/summary.json",
+      "sha256": "03bd3582ca0f5bd10e123d6d8361b77fcbc592b9e927a75b48cf67e673b4fc4f"
+    }
+  },
+  "calibration_boundary": "Native counts are divided by per-channel scale and multiplied by the station geometric-mean scale before rotation to Z/N/E. This corrects relative component gains; it is not full instrument-response removal.",
+  "claim_boundary": "This manifest contains station-response metadata only. It was created without waveform amplitude inspection, model scores, or final-holdout access.",
+  "frozen_at_utc": "2026-07-29T14:02:39.266782+00:00",
+  "inputs": {
+    "background_station_amendment_protocol": {
+      "bytes": 2854,
+      "path": "work_artifacts/geonet_temporal_development_v1/background_station_amendment_v2/protocol.json",
+      "sha256": "e5ce11408fffb62233017f190c5181a9bdd0d7dc800b1990c622263267b9bc2f"
+    },
+    "background_stations": {
+      "bytes": 1466,
+      "path": "work_artifacts/geonet_temporal_development_v1/background_station_amendment_v2/selected_stations.csv",
+      "sha256": "664662d85b253843d7f8fe54e9762a671ed9106c32d1bda5551bf2bd8691dfb6"
+    },
+    "event_stations": {
+      "bytes": 835912,
+      "path": "work_artifacts/geonet_temporal_development_v1/waveform_manifest/event_stations.csv",
+      "sha256": "dd04613b2521b0e048b5a5936b3b5a6aa5d2f5041bf10cc44390385a24d2a885"
+    },
+    "event_waveform_protocol": {
+      "bytes": 3733,
+      "path": "work_artifacts/geonet_temporal_development_v1/waveform_manifest/protocol.json",
+      "sha256": "6960dba0934cda9d37b1a7e61b54b20034ad8db9186259872622c5ed96fd723d"
+    },
+    "freeze_script": {
+      "bytes": 16680,
+      "path": "workspace/scripts/evaluation/freeze_v27_geonet_temporal_orientation_manifest.py",
+      "sha256": "828c80d81ac343edf9941379f02754905d7d033353ce04a9dbcab3b856391d97"
+    },
+    "metadata_protocol": {
+      "bytes": 6023,
+      "path": "work_artifacts/geonet_temporal_development_v1/protocol.json",
+      "sha256": "ae43b11cabf657254612bb11bc3fd79ffbedc7ba25445ab7245da533240cfd51"
+    },
+    "orientation_module": {
+      "bytes": 12306,
+      "path": "workspace/src/oriented_gappy_strong_motion_stream.py",
+      "sha256": "becd363e669fed3e85c06ad160fe44b85e3f4ea3cf460458a4c8ea774fd4a912"
+    },
+    "preprocessing_contract": {
+      "bytes": 1304,
+      "path": "work_artifacts/geonet_temporal_development_v1/preprocessing_contract.json",
+      "sha256": "e318ce5267fd0d83c4e1c9846d294dc21159db8a16022619cc3244db8143b45d"
+    },
+    "station_epochs": {
+      "bytes": 373132,
+      "path": "work_artifacts/geonet_temporal_development_v1/source_snapshots/station_hn_channels.txt",
+      "sha256": "d56d3c88329bf9628ddb6506f074364314c872f9a943c55fd07e79e1ecc08c52"
+    }
+  },
+  "protocol_id": "cspp_v27_geonet_temporal_orientation_manifest_v1",
+  "scope": {
+    "background": "all six model-blind amended stations over 2024-03-01 through 2025-12-31",
+    "events": "all waveform-promoted temporal-development event stations",
+    "final_holdout_accessed": false
+  },
+  "status": "temporal_development_orientation_and_relative_gain_frozen_before_scoring",
+  "summary": {
+    "all_channel_epochs_cover_requested_interval": true,
+    "all_channels_native_200_hz": true,
+    "all_orientation_matrices_nonsingular": true,
+    "background_orientation_rows": 18,
+    "background_scale_units": {
+      "m/s**2": 18
+    },
+    "background_station_groups": 6,
+    "event_orientation_rows": 6042,
+    "event_scale_units": {
+      "m/s**2": 6042
+    },
+    "event_station_groups": 2014,
+    "final_holdout_accessed": false,
+    "model_outputs_computed_or_inspected": false
+  }
+}

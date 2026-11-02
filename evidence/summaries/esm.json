@@ -1,0 +1,14 @@
+{
+  "source": "esm25goodcv",
+  "written": 1693,
+  "events": 115,
+  "zero_only_skipped": 0,
+  "no_onset_skipped": 124,
+  "max_distance_km": 200.0,
+  "keep_seconds": 122.0,
+  "guard_seconds": 2.0,
+  "p_reference": "energy-onset detector (background median x4 + persistence); detection-grade, not a manual label",
+  "component_order": "ZNE",
+  "sample_rate_hz": 100.0,
+  "input": "ESM-25 restituted acceleration (gal), processed, leading-zero padding removed"
+}

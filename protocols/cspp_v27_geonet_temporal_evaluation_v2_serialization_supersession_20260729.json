@@ -1,0 +1,61 @@
+{
+  "artifact_id": "cspp_v27_geonet_temporal_evaluation_v2_serialization_supersession_v1",
+  "disposition": "All V2 artifacts remain preserved for audit and are excluded from model selection and performance evidence. V3 must use a new protocol hash and output root and rerun both event and background scoring after omitting absent optional coordinates.",
+  "event_completion": {
+    "bytes": 45281,
+    "path": "work_artifacts/geonet_temporal_evaluation_v2/event_score_cache_complete.json",
+    "sha256": "adfef4ed3c0990b75bd021c78f0edfc97ae50ad616341fdccd49f14980eeeefc"
+  },
+  "failed_background_logs": [
+    {
+      "bytes": 1974,
+      "path": "work_artifacts/geonet_temporal_evaluation_v2/logs/background/shard_0.log",
+      "sha256": "d8b37f6f5593011d4b5a857e9157ac63a300935ffe2d99328ace691c3dfa5ba3"
+    },
+    {
+      "bytes": 1974,
+      "path": "work_artifacts/geonet_temporal_evaluation_v2/logs/background/shard_1.log",
+      "sha256": "d8b37f6f5593011d4b5a857e9157ac63a300935ffe2d99328ace691c3dfa5ba3"
+    },
+    {
+      "bytes": 1974,
+      "path": "work_artifacts/geonet_temporal_evaluation_v2/logs/background/shard_2.log",
+      "sha256": "d8b37f6f5593011d4b5a857e9157ac63a300935ffe2d99328ace691c3dfa5ba3"
+    },
+    {
+      "bytes": 1974,
+      "path": "work_artifacts/geonet_temporal_evaluation_v2/logs/background/shard_3.log",
+      "sha256": "d8b37f6f5593011d4b5a857e9157ac63a300935ffe2d99328ace691c3dfa5ba3"
+    }
+  ],
+  "frozen_at_utc": "2026-07-29T15:19:30.233771+00:00",
+  "observed_state": {
+    "complete_background_date_units": 0,
+    "complete_event_units": 189,
+    "development_probability_values_inspected": false,
+    "final_holdout_accessed": false,
+    "threshold_or_arm_selection_performed": false,
+    "uncommitted_background_station_caches": 24
+  },
+  "root_cause": {
+    "background_manifest": {
+      "bytes": 22922,
+      "path": "work_artifacts/geonet_temporal_development_v1/background_waveform_manifest/background_station_days.csv",
+      "sha256": "8470401d00dfa9b80941e9a4f9e1959b0e4f5f1d1f0181dffd807e86f3587a9d"
+    },
+    "category": "model_independent_metadata_serialization_error",
+    "failure": "ValueError: Out of range float values are not JSON compliant: nan",
+    "mechanism": "The background station-day manifest intentionally omits station coordinates. The scorer converted each absent coordinate to NaN and copied it into stream metadata. Waveform scoring completed for the first four dates, then strict JSON serialization rejected the NaN metadata.",
+    "waveform_or_model_math_affected": false
+  },
+  "superseded_protocol": {
+    "bytes": 14511,
+    "path": "workspace/experiments/cspp_v27_geonet_temporal_evaluation_protocol_20260729.json",
+    "sha256": "9fa55b001297d6eda74fc8a7b80d2e5e8ae837ef02b29a8dc4b70d7be9380096"
+  },
+  "supersession_script": {
+    "bytes": 7723,
+    "path": "workspace/scripts/evaluation/freeze_v27_geonet_temporal_evaluation_v2_serialization_supersession.py",
+    "sha256": "361040d55c72936b3d56fcc803b625af9bda06f9900523ffd25978b82804c1d6"
+  }
+}

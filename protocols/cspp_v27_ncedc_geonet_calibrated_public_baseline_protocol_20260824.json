@@ -1,0 +1,331 @@
+{
+  "causal_visibility": {
+    "comparison_scope": "same records, references, causal visibility, and 1.5 s match tolerance; model-specific preprocessing and candidate semantics remain unchanged",
+    "future_samples_after_publication_time": 0,
+    "native_windows_and_blinding_retained": true,
+    "packet_clock_seconds": 0.5,
+    "pre_origin_history_seconds": 60.0,
+    "publication": "Each annotation sample is published from the earliest fully received native window; a public-model pick is available after its threshold episode closes.",
+    "record_duration_seconds": 240.0,
+    "zero_prefill": false
+  },
+  "checkpoint_provenance": {
+    "eqtransformer_original": "Original conservative EQTransformer checkpoint converted by SeisBench; public P threshold 0.1 and 5 s edge blinding retained.",
+    "phasenet_instance": "SeisBench metadata states that these weights were trained on INSTANCE for 100 epochs; its default threshold was selected on in-domain INSTANCE validation."
+  },
+  "code_sha256": {
+    "scripts/evaluation/analyze_v27_ncedc_causal_public_baselines.py": "d0ee19f927f5a7014d27fe2ee91cf931e180facd769732513bf15ff72dff91bd",
+    "scripts/evaluation/build_v27_ncedc_event_score_cache.py": "cca64be3af5af41216fbbe5969bd81434b79f454982b89cee0f183dea15c6835",
+    "scripts/evaluation/eval_v27_ncedc_causal_public_baselines.py": "381087edfcf02c27807c19e48c666346065d19d39b5eb6a9dbbb52c6bcece3fd",
+    "scripts/evaluation/eval_v27c_fixed_public_baselines.py": "e5e41e9f6ef1820c4805c2ab4a143dd24040e0e2e9e8264515c512ee59db101f",
+    "scripts/evaluation/freeze_v27_ncedc_causal_public_baseline_protocol.py": "e3ad475d75e568c50f3f42fde139e39a83325a86f8c3e0ff2645f8e7e86304cb",
+    "src/oriented_gappy_strong_motion_stream.py": "9ccb3223b551b7873b5fcc31759d44b3bfeca808bd09dd716f4e1da770e1f9e0",
+    "src/resilient_mseed.py": "ec6b2960cc88ba3ea6d097d4e2998de768b87986d9e4b9ad89df4a240417a92e",
+    "src/stream_quality_v5.py": "62e48deca36fd553f59d2291738f3fe1a93dddb70bef84bcf250534c54cae414",
+    "src/v20c_public_window_baselines.py": "81cf3ae98c5313346eeaa2636e75b132e01ab0e23d0bc6713d92b8046b7db378"
+  },
+  "cohort": {
+    "event_ids": [
+      "73992726",
+      "73994586",
+      "73997816",
+      "74000441",
+      "74029551",
+      "71133194",
+      "75006996",
+      "75017417",
+      "75017972",
+      "75025237",
+      "75058606",
+      "75068161",
+      "75069176",
+      "75077996",
+      "75079016",
+      "75094936",
+      "75094976",
+      "75095651",
+      "75001903",
+      "75095671",
+      "75096156",
+      "75001648",
+      "75096691",
+      "75097076",
+      "75097271",
+      "75097711",
+      "75097986",
+      "75101006",
+      "75103356",
+      "75104216",
+      "75111126",
+      "75123321",
+      "75131617",
+      "75132032",
+      "75133062",
+      "75149826",
+      "75170586",
+      "75186201",
+      "75186621",
+      "75195021",
+      "75202001",
+      "75215702",
+      "75216737",
+      "75219857",
+      "75223077",
+      "75240492",
+      "75265261",
+      "75270551",
+      "75279971",
+      "75287861",
+      "75288851"
+    ],
+    "events": 51,
+    "records": 578,
+    "selection": "all data-bearing station records in the frozen CSPP event cohort; independent of CSPP success or public-model output"
+  },
+  "evidence_boundary": {
+    "architecture_superiority_claim_permitted": false,
+    "cspp_ncsn_results_opened_before_baseline_freeze": true,
+    "matched_retraining_claim_permitted": false,
+    "ncsn_threshold_tuning_permitted": false,
+    "public_model_outputs_on_ncsn_computed": false,
+    "technical_failures_counted_as_misses": true,
+    "ncsn_default_outputs_known_before_this_protocol": true,
+    "geonet_2024_2025_threshold_calibration_used": true,
+    "geonet_2026_final_outputs_used_for_threshold_selection": false,
+    "ncsn_outputs_used_for_threshold_selection": false
+  },
+  "execution": {
+    "analysis_output_root": "work_artifacts/ncedc_model_blind_20260817/evaluation/ncedc_causal_public_analysis_geonet_calibrated_v1",
+    "device": "mps",
+    "global_mps_lock": "work_artifacts/ncedc_model_blind_20260817/evaluation/.public_mps.lock",
+    "maximum_process_rss_bytes": 6442450944,
+    "output_root": "work_artifacts/ncedc_model_blind_20260817/evaluation/ncedc_causal_public_baselines_geonet_calibrated_v1",
+    "serial_models": true,
+    "workers": 1
+  },
+  "frozen_at_utc": "2026-08-23T18:22:49.046995+00:00",
+  "inputs": {
+    "acquisition_status": {
+      "bytes": 22359,
+      "path": "work_artifacts/ncedc_model_blind_20260817/waveforms/events/latest_status.csv",
+      "sha256": "88ad9697ea5f1141d1a40028ad56ef102387c02c2c6d505cf63f78010ec67694"
+    },
+    "cspp_event_score_completion": {
+      "bytes": 13837,
+      "path": "work_artifacts/ncedc_model_blind_20260817/evaluation/ncedc_event_scores_v1/event_score_cache_complete.json",
+      "sha256": "697062bc4c30377b4481651b854ebe73b3a6a9971b9d18c60f327c57396c682c"
+    },
+    "event_station_orientations": {
+      "bytes": 275253,
+      "path": "work_artifacts/ncedc_model_blind_20260817/metadata/manifests/event_station_orientations.csv",
+      "sha256": "5fbc4235b72eb1c919612f581f054647830a4d87e00e97d5557b55f2a457c133"
+    },
+    "event_station_requests": {
+      "bytes": 169097,
+      "path": "work_artifacts/ncedc_model_blind_20260817/metadata/manifests/event_station_requests.csv",
+      "sha256": "fba5c65bd6efba0a46cb0a1244720f7a753e18c86371ee034b4c13cbb3cb7575"
+    },
+    "source_public_model_protocol": {
+      "bytes": 530295,
+      "path": "work_artifacts/protocol_freeze/cspp_v27c_geonet_final_public_baseline_protocol_v2_20260729.json",
+      "sha256": "d66f16daf4dc16a745a23f6bc7f0a3957446e914f48b3b4fb277696f8b9ad5f7"
+    },
+    "geonet_threshold_calibration_protocol": {
+      "path": "workspace/experiments/cspp_v27_geonet_public_threshold_calibration_20260824.json",
+      "bytes": 759068,
+      "sha256": "79a8eecba52080a38ef28f0d120ef909d089cddde8a86938110007e35e12aa0c"
+    },
+    "geonet_threshold_calibration_result": {
+      "path": "work_artifacts/evaluation/cspp_v27_geonet_public_threshold_calibration_20260824/result.json",
+      "bytes": 3965,
+      "sha256": "cc4770a0d2cdc4cf0dbf434b9bf6d7f15e482289f8d9f23aafa1c6e4d2b33316"
+    }
+  },
+  "models": {
+    "eqtransformer_original": {
+      "artifacts": {
+        "metadata": {
+          "bytes": 730,
+          "path": "external/original.json.v3",
+          "sha256": "e499eeee66e3e86e19caee0f640d6d3ab26b4a99142b9d73d75b078f18df389b"
+        },
+        "weights": {
+          "bytes": 1597711,
+          "path": "external/original.pt.v3",
+          "sha256": "c363c59dfb4562ba3b1356fb03dc9c776bbcfe3384b5db22e5ee3689de0a4df9"
+        }
+      },
+      "blinding_samples": [
+        500,
+        500
+      ],
+      "blinding_source": "SeisBench public class default",
+      "class": "EQTransformer",
+      "confirmation_use": "Unchanged public weights and public operating points fixed before any V21 2023 output.",
+      "execution_batch_size": 32,
+      "in_samples": 6000,
+      "labels": "DetectionPS",
+      "loaded_state_dict_sha256": "300186feab23dd75effeab86170c19454316f42103f3ca77a239a55eed218d9f",
+      "model_name": "EQTransformer-original",
+      "native_overlap_samples": 3000,
+      "native_stride_samples": 3000,
+      "normalization": "std",
+      "operating_points": [
+        {
+          "id": "eqtransformer_original_geonet_calibrated",
+          "p_threshold": 0.02,
+          "detection_threshold": null,
+          "threshold_source": "Maximum micro F1 on the frozen GeoNet 2024-2025 threshold-calibration subset; NCSN was not used",
+          "source_method_id": "eqtransformer_original_geonet_grid_00",
+          "threshold_count": 1,
+          "holdout_tuned": false,
+          "endpoint_role": "geonet_development_selected_endpoint",
+          "official_default_endpoint": false
+        }
+      ],
+      "released_annotation_preprocessing": {
+        "annotate_calls_per_record": 1,
+        "expected_model_filter_applications_per_record": 1,
+        "external_prefilter": false,
+        "input_scope": "one_complete_180_second_record",
+        "interface": "SeisBench WaveformModel.annotate",
+        "model_filter_args": [
+          "bandpass"
+        ],
+        "model_filter_kwargs": {
+          "corners": 2,
+          "freqmax": 45.0,
+          "freqmin": 1.0,
+          "zerophase": true
+        },
+        "preprocessing_owner": "seisbench_model_annotate_stream_pre",
+        "temporal_access": "full_record_zero_phase_filter_uses_future_samples"
+      },
+      "required_weight_default_args": {},
+      "trailing_window_filter": {
+        "application": "Applied inside each fully historical native window; no samples after that window end are read.",
+        "corners": 2,
+        "freqmax_hz": 45.0,
+        "freqmin_hz": 1.0,
+        "type": "butterworth_bandpass",
+        "zerophase": true
+      },
+      "weights_name": "original",
+      "weights_version": "3"
+    },
+    "phasenet_instance": {
+      "artifacts": {
+        "metadata": {
+          "bytes": 787,
+          "path": "external/instance.json.v2",
+          "sha256": "d0f33eb054818b6eef1dcf090947f7239b68f290c2e9180d9a807df325300182"
+        },
+        "weights": {
+          "bytes": 1112615,
+          "path": "external/instance.pt.v2",
+          "sha256": "dddcc3d872106a8cd2013ce7a035c972a7f435749b5c02a015efd5ce3767da6d"
+        }
+      },
+      "blinding_samples": [
+        250,
+        250
+      ],
+      "blinding_source": "weight-specific default_args",
+      "class": "PhaseNet",
+      "confirmation_use": "Unchanged public weights and public operating points fixed before any V21 2023 output.",
+      "execution_batch_size": 256,
+      "in_samples": 3001,
+      "labels": "PSN",
+      "loaded_state_dict_sha256": "7dbb830e495daae23dc995d49b38b8258a3bbfc2bbb06eefe59e8c62d67992f9",
+      "model_name": "PhaseNet-INSTANCE",
+      "native_overlap_samples": 1500,
+      "native_stride_samples": 1501,
+      "normalization": "peak",
+      "operating_points": [
+        {
+          "id": "phasenet_instance_geonet_calibrated",
+          "p_threshold": 0.5,
+          "detection_threshold": null,
+          "threshold_source": "Maximum micro F1 on the frozen GeoNet 2024-2025 threshold-calibration subset; NCSN was not used",
+          "source_method_id": "phasenet_instance_geonet_grid_09",
+          "threshold_count": 1,
+          "holdout_tuned": false,
+          "endpoint_role": "geonet_development_selected_endpoint",
+          "official_default_endpoint": false
+        }
+      ],
+      "released_annotation_preprocessing": {
+        "annotate_calls_per_record": 1,
+        "expected_model_filter_applications_per_record": 0,
+        "external_prefilter": false,
+        "input_scope": "one_complete_180_second_record",
+        "interface": "SeisBench WaveformModel.annotate",
+        "model_filter_args": [],
+        "model_filter_kwargs": {},
+        "preprocessing_owner": "seisbench_model_annotate_stream_pre",
+        "temporal_access": "full_record_annotation"
+      },
+      "required_weight_default_args": {
+        "P_threshold": 0.08639824281948567,
+        "S_threshold": 0.1194333034644735,
+        "blinding": [
+          250,
+          250
+        ]
+      },
+      "trailing_window_filter": null,
+      "weights_name": "instance",
+      "weights_version": "2"
+    }
+  },
+  "protocol_id": "cspp_v27_ncedc_causal_public_v1",
+  "statistics": {
+    "binomial_interval": "Wilson 95 percent",
+    "bootstrap_replicates": 5000,
+    "bootstrap_seed": 20260817,
+    "bootstrap_unit": "earthquake event",
+    "match_tolerance_seconds": 1.5
+  },
+  "status": "posthoc_geonet_development_operating_points_frozen_before_ncsn_replay",
+  "threshold_calibration": {
+    "protocol": {
+      "path": "workspace/experiments/cspp_v27_geonet_public_threshold_calibration_20260824.json",
+      "bytes": 759068,
+      "sha256": "79a8eecba52080a38ef28f0d120ef909d089cddde8a86938110007e35e12aa0c"
+    },
+    "result": {
+      "path": "work_artifacts/evaluation/cspp_v27_geonet_public_threshold_calibration_20260824/result.json",
+      "bytes": 3965,
+      "sha256": "cc4770a0d2cdc4cf0dbf434b9bf6d7f15e482289f8d9f23aafa1c6e4d2b33316"
+    },
+    "selection_rule": "maximum micro F1; ties by precision, recall, then higher threshold",
+    "selected": {
+      "phasenet_instance": {
+        "method_id": "phasenet_instance_geonet_grid_09",
+        "p_threshold": 0.5,
+        "records": 701,
+        "matched_records": 685,
+        "candidate_count": 724,
+        "recall": 0.9771754636233951,
+        "candidate_precision": 0.9461325966850829,
+        "f1": 0.9614035087719298,
+        "median_absolute_pick_error_seconds": 0.0880882740020752,
+        "median_availability_delay_seconds": 10.175081253051758,
+        "technical_failure_records": 0
+      },
+      "eqtransformer_original": {
+        "method_id": "eqtransformer_original_geonet_grid_00",
+        "p_threshold": 0.02,
+        "records": 701,
+        "matched_records": 291,
+        "candidate_count": 307,
+        "recall": 0.41512125534950073,
+        "candidate_precision": 0.9478827361563518,
+        "f1": 0.5773809523809523,
+        "median_absolute_pick_error_seconds": 0.08698081970214844,
+        "median_availability_delay_seconds": 22.008647203445435,
+        "technical_failure_records": 0
+      }
+    }
+  }
+}

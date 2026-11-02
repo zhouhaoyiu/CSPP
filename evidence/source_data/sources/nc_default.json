@@ -1,0 +1,121 @@
+{
+  "created_at_utc": "2026-08-17T14:53:17.631575+00:00",
+  "interpretation": {
+    "eqtransformer_checkpoint": "original conservative EQTransformer weights",
+    "phasenet_checkpoint": "PhaseNet weights trained on INSTANCE",
+    "scope": "same records and causal visibility; released checkpoints retain their native windows, preprocessing, thresholds, and pick semantics",
+    "training": "released-model comparison, not matched retraining"
+  },
+  "protocol_sha256": "0d45b97325dff53210fb72a5b0d80f8787615c3bfc49730bea98aa7007329bf5",
+  "result_id": "cspp_v27_ncedc_causal_public_analysis_v1",
+  "results": {
+    "eqtransformer_original:eqtransformer_original_p_default": {
+      "absolute_pick_error_median_seconds": 0.039999961853027344,
+      "absolute_pick_error_p95_seconds": 0.223000121116638,
+      "availability_delay_median_seconds": 24.570000171661377,
+      "availability_delay_p95_seconds": 28.8130001783371,
+      "available_within_2_seconds_fraction": 0.0,
+      "candidate_episodes": 321,
+      "candidate_precision": 0.7320872274143302,
+      "candidate_precision_wilson95": [
+        0.681104061083524,
+        0.7775812327854614
+      ],
+      "event_cluster_bootstrap95": {
+        "candidate_precision": [
+          0.6472673796791444,
+          0.8257142857142857
+        ],
+        "f1": [
+          0.4334040513456213,
+          0.6012543340108338
+        ],
+        "recall": [
+          0.31337449437107073,
+          0.5017983272214894
+        ]
+      },
+      "f1": 0.5228031145717464,
+      "matched_records": 235,
+      "recall": 0.40657439446366783,
+      "recall_wilson95": [
+        0.3672748677696662,
+        0.4471075582972216
+      ],
+      "records": 578,
+      "technical_failures_counted_as_misses": 0
+    },
+    "eqtransformer_original:eqtransformer_original_p_det_custom": {
+      "absolute_pick_error_median_seconds": 0.03000020980834961,
+      "absolute_pick_error_p95_seconds": 0.22399978637695303,
+      "availability_delay_median_seconds": 25.55999994277954,
+      "availability_delay_p95_seconds": 28.871999979019165,
+      "available_within_2_seconds_fraction": 0.0,
+      "candidate_episodes": 184,
+      "candidate_precision": 0.7228260869565217,
+      "candidate_precision_wilson95": [
+        0.6540975233162061,
+        0.7824408240476413
+      ],
+      "event_cluster_bootstrap95": {
+        "candidate_precision": [
+          0.6209141348847231,
+          0.8292783436076118
+        ],
+        "f1": [
+          0.2616001478847203,
+          0.43041500463496163
+        ],
+        "recall": [
+          0.16271084861852797,
+          0.30085470085470084
+        ]
+      },
+      "f1": 0.34908136482939633,
+      "matched_records": 133,
+      "recall": 0.2301038062283737,
+      "recall_wilson95": [
+        0.19763952189793538,
+        0.26613193118418516
+      ],
+      "records": 578,
+      "technical_failures_counted_as_misses": 0
+    },
+    "phasenet_instance:phasenet_instance_default": {
+      "absolute_pick_error_median_seconds": 0.039999961853027344,
+      "absolute_pick_error_p95_seconds": 0.2999997138977051,
+      "availability_delay_median_seconds": 11.25,
+      "availability_delay_p95_seconds": 17.35,
+      "available_within_2_seconds_fraction": 0.0,
+      "candidate_episodes": 1100,
+      "candidate_precision": 0.5209090909090909,
+      "candidate_precision_wilson95": [
+        0.4913659277996224,
+        0.5503067233156426
+      ],
+      "event_cluster_bootstrap95": {
+        "candidate_precision": [
+          0.45153025665205754,
+          0.6063882394201543
+        ],
+        "f1": [
+          0.6201021130320493,
+          0.7531840362848522
+        ],
+        "recall": [
+          0.9812925170068028,
+          0.9983108108108109
+        ]
+      },
+      "f1": 0.6829558998808104,
+      "matched_records": 573,
+      "recall": 0.9913494809688581,
+      "recall_wilson95": [
+        0.9799114275378037,
+        0.9962995168511563
+      ],
+      "records": 578,
+      "technical_failures_counted_as_misses": 0
+    }
+  }
+}

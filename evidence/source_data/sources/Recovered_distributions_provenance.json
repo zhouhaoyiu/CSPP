@@ -1,0 +1,154 @@
+{
+  "recovery_date": "2026-11-03",
+  "archive": "04_main_project_source_and_research_history_15.tar.gz",
+  "selection": "Existing manuscript cohorts only; no resampling, new scoring or numerical-result edits.",
+  "station_count_definition": "GeoNet counts physical network.station codes; NZ.PYZ.20 and NZ.PYZ.21 are two location IDs at one station. Record-level location codes are preserved.",
+  "inputs": [
+    {
+      "source": "selected_training_records.csv",
+      "sha256": "60d5274bf823f7cebff25cb47e0a8ee092559b91652b6ba26c82393234ec59f6",
+      "selection_npz_sha256": "72dab23b14f4da309ec04bbbcdb68c7088bbf8aba565024934c2be05c94893cd"
+    },
+    {
+      "source": "selected_records.csv (public cohort rows only)",
+      "sha256_of_restricted_mixed_original": "dc9d278d6bce508aec95dd97b2ed282612e643ded9a3705b1d79ea5955f5a80c",
+      "public_cohorts_exported": [
+        "geonet_arm",
+        "geonet_calibration",
+        "geonet_ablation",
+        "texnet",
+        "ncsn_original"
+      ],
+      "restricted_rows_exported": 0
+    },
+    {
+      "source": "ncsn_station_days_input.csv",
+      "sha256": "de297dce820512dc377b712cc6e24034714457562aa069ed399e83d85d161860"
+    },
+    {
+      "source": "ncsn_station_summary.csv",
+      "sha256": "18da047da4b6cdeec5ef3519558078e69ac5e0848394272fba3a9e43a0b78c59"
+    },
+    {
+      "source": "geonet_station_days.csv",
+      "sha256": "6d50ac11be37f59722ee86218bc3afe5bd346b1b1e17574cf71d196e60aaa178"
+    },
+    {
+      "source": "geonet_station_summary.csv",
+      "sha256": "ff337352039d4fd9d505b195771a36c6f29f8f33ec19c46562721f0bfe1cc082"
+    }
+  ],
+  "checks": {
+    "recovered_supplement_data_zip_hash_verified": true,
+    "recovered_inputs_crosschecked_against_zip": 51,
+    "training": {
+      "InstanceGM": {
+        "records": 1000,
+        "events": 581,
+        "stations": 188,
+        "station_location_ids": 188,
+        "means": {
+          "magnitude": 3.4004000000000008,
+          "depth_km": 23.84926,
+          "epicentral_distance_km": 70.581027
+        }
+      },
+      "K-NET": {
+        "records": 1000,
+        "events": 612,
+        "stations": 362,
+        "station_location_ids": 362,
+        "means": {
+          "magnitude": 4.345899999999999,
+          "depth_km": 39.538,
+          "epicentral_distance_km": 55.880453
+        }
+      },
+      "CWA": {
+        "records": 500,
+        "events": 78,
+        "stations": 321,
+        "station_location_ids": 321,
+        "means": {
+          "magnitude": 5.23144,
+          "depth_km": 31.81248,
+          "epicentral_distance_km": 63.2924
+        }
+      }
+    },
+    "public_distribution_cohorts": {
+      "geonet_arm": {
+        "records": 1049,
+        "events": 97,
+        "stations": 220,
+        "station_location_ids": 221,
+        "means": {
+          "magnitude": 4.492711986907507,
+          "depth_km": 73.33823493477408,
+          "epicentral_distance_km": 81.55495696832945
+        }
+      },
+      "geonet_calibration": {
+        "records": 965,
+        "events": 92,
+        "stations": 224,
+        "station_location_ids": 225,
+        "means": {
+          "magnitude": 4.4430856957978495,
+          "depth_km": 74.9248787180043,
+          "epicentral_distance_km": 81.54997925265945
+        }
+      },
+      "geonet_ablation": {
+        "records": 491,
+        "events": 64,
+        "stations": 165,
+        "station_location_ids": 165,
+        "means": {
+          "magnitude": 4.396826526372824,
+          "depth_km": 50.76670907811091,
+          "epicentral_distance_km": 81.37643892759283
+        }
+      },
+      "texnet": {
+        "records": 633,
+        "events": 65,
+        "stations": 44,
+        "station_location_ids": 44,
+        "means": {
+          "magnitude": 4.369863075390206,
+          "depth_km": 6.637239311012639,
+          "epicentral_distance_km": 57.862559646701364
+        }
+      },
+      "ncsn_original": {
+        "records": 578,
+        "events": 51,
+        "stations": 138,
+        "station_location_ids": 138,
+        "means": {
+          "magnitude": 4.339740484429066,
+          "depth_km": 9.113598615916954,
+          "epicentral_distance_km": 72.68446810652354
+        }
+      }
+    },
+    "continuous": {
+      "ncsn_station_day_rows": 1423,
+      "eligible_station_days": {
+        "background": 701.0000173611111,
+        "event_day": 704.8487210648149
+      },
+      "quality_valid_station_days": {
+        "background": 701.1723321759259,
+        "event_day": 705.0491666666667
+      },
+      "ncsn_exposure_definition": "Archived Figure S5 bars aggregate eligible_station_days, after startup/valid-packet gating, not quality_valid_station_days.",
+      "geonet_accepted_station_days": 144,
+      "geonet_dates": 24,
+      "geonet_stations": 6,
+      "geonet_exposure_definition": "Figure bars count accepted station-days; common coverage duration is separately supplied."
+    }
+  },
+  "scope": "Only explicitly allowed public cohorts and public continuous exposure records are exported. Mixed private recovery directories are not part of any release."
+}

@@ -1,0 +1,92 @@
+{
+  "protocol_id": "cspp_v27_posthoc_decision_ablation_v1",
+  "frozen_at_utc": "2026-07-30T03:36:32.399096+00:00",
+  "status": "frozen_after_geonet_2026_final_result_opened",
+  "research_question": "How much do candidate-support memory and the detached event verifier contribute to the frozen CSPP decision chain?",
+  "evidence_boundary": {
+    "geonet_2026_status": "opened_before_this_protocol",
+    "analysis_role": "posthoc_paired_decision_chain_diagnostic",
+    "model_weights_changed": false,
+    "candidate_or_event_threshold_scan_permitted": false,
+    "primary_final_result_changed": false,
+    "claim": "The analysis isolates fixed decision-chain components on already opened scores. It is not blind confirmation, model selection, or an architectural retraining ablation."
+  },
+  "inputs": {
+    "final_protocol": {
+      "path": "work_artifacts/protocol_freeze/cspp_v27c_geonet_final_evaluation_protocol_20260729.json",
+      "bytes": 19444,
+      "sha256": "b7997a0226ac3d7fe2963b3e0957748756a859a52763fb06979620c6b130ef5e"
+    },
+    "final_result": {
+      "path": "work_artifacts/evaluation/cspp_v27c_geonet_final_analysis_a2_20260729/result.json",
+      "bytes": 170885,
+      "sha256": "0db9ce45c3ade98ee3bb22aaa392e0d76c4e7f8b89918b405a47f068a1511927"
+    },
+    "event_score_completion": {
+      "path": "work_artifacts/evaluation/cspp_v27c_geonet_final_20260729/score_cache/event_score_cache_complete.json",
+      "bytes": 17764,
+      "sha256": "e30c711d179e3bc340063e9a84f5db4173edf1403a8c2eb802271fe2b7a15943"
+    },
+    "background_score_completion": {
+      "path": "work_artifacts/evaluation/cspp_v27c_geonet_final_20260729/score_cache/background_score_cache_complete.json",
+      "bytes": 10853,
+      "sha256": "c7603a9fd7b5fcd7fb1d650b21553d2f494078bec0ec38746aaa1e24ef2db6e2"
+    }
+  },
+  "fixed_contract": {
+    "candidate_threshold": 0.1,
+    "event_threshold": 0.975,
+    "candidate_support_memory_packets": 4,
+    "packet_duration_seconds": 0.5,
+    "match_tolerance_seconds": 1.5,
+    "primary_seed": 20261101,
+    "primary_label_stratum": "authoritative_used_p_positive_weight",
+    "background_exposure": "the exact post-quarantine station exposure retained in the frozen final evaluation"
+  },
+  "arms": [
+    {
+      "id": "D0_full",
+      "candidate_support_memory_packets": 4,
+      "event_threshold": 0.975,
+      "change": "none"
+    },
+    {
+      "id": "D1_no_event_verifier",
+      "candidate_support_memory_packets": 4,
+      "event_threshold": 0.0,
+      "change": "Bypass the detached event verifier while retaining the frozen candidate threshold and four-packet support memory."
+    },
+    {
+      "id": "D2_single_packet_support",
+      "candidate_support_memory_packets": 1,
+      "event_threshold": 0.975,
+      "change": "Reduce candidate-support memory from four packets to one while retaining the detached event verifier."
+    },
+    {
+      "id": "D3_candidate_only",
+      "candidate_support_memory_packets": 1,
+      "event_threshold": 0.0,
+      "change": "Use the frozen candidate threshold with single-packet support and bypass the detached event verifier."
+    }
+  ],
+  "outputs": {
+    "root": "work_artifacts/evaluation/cspp_v27_posthoc_decision_ablation_20260730",
+    "result": "work_artifacts/evaluation/cspp_v27_posthoc_decision_ablation_20260730/result.json",
+    "event_rows": "work_artifacts/evaluation/cspp_v27_posthoc_decision_ablation_20260730/event_rows.csv",
+    "background_station_rows": "work_artifacts/evaluation/cspp_v27_posthoc_decision_ablation_20260730/background_station_rows.csv",
+    "background_network_rows": "work_artifacts/evaluation/cspp_v27_posthoc_decision_ablation_20260730/background_network_rows.csv"
+  },
+  "code_artifacts": {
+    "freeze_script": {
+      "path": "workspace/scripts/evaluation/freeze_v27_posthoc_decision_ablation_protocol.py",
+      "bytes": 6366,
+      "sha256": "7c32e5063b273cc46a0c299b4f14758766e1bf81fb7dcb08be6d542f4bac5234"
+    },
+    "analyzer": {
+      "path": "workspace/scripts/evaluation/analyze_v27_posthoc_decision_ablation.py",
+      "bytes": 9749,
+      "sha256": "1bd0219b2151012720626ceb30743f5f10e5b9db93cebd4055acda08c8202e79"
+    }
+  },
+  "command": "external/python scripts/evaluation/analyze_v27_posthoc_decision_ablation.py --protocol experiments/cspp_v27_posthoc_decision_ablation_protocol_20260730.json"
+}

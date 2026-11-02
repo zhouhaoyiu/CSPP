@@ -1,0 +1,157 @@
+{
+  "code_sha256": {
+    "scripts/evaluation/analyze_v27_ncedc_continuous_scores.py": "40b065ebf6be415fc8dfa3e6dd321a74576cb46a74955362792bdb1a9b7f1674",
+    "scripts/evaluation/analyze_v27_ncedc_event_scores.py": "32fcaf0a98b15898ec02a771a33fdd9abfd8d25b7fa35cddb2fc52daf5f57f45",
+    "scripts/evaluation/freeze_v27_ncedc_continuous_analysis_protocol.py": "8ff043cb328fdf3c94d3cbc4e26e205af9235b6aaba2f1bc56ed29e1cde86cdd",
+    "src/cspp_v27_reused_core_score_cache.py": "a0301fccc341f7cd95bb01b6478904cc86bb731421867da47a7017f72a6aa0d2"
+  },
+  "decision_chain_ablation": {
+    "candidate_support_without_event_verifier": "four-packet candidate support only",
+    "full_decision_chain": "four-packet candidate support plus frozen event threshold",
+    "scope": "post-training fixed-rule analysis; no retraining or tuning",
+    "single_packet_candidate_only": "current packet exceeds the candidate threshold",
+    "single_packet_candidate_plus_event": "current packet exceeds both thresholds"
+  },
+  "evidence_boundary": {
+    "candidate_counts_rates_or_compositions_inspected": false,
+    "one_reference_station_day_used_for_backend_equivalence": true,
+    "station_day_score_generation_in_progress_at_freeze": true,
+    "target_adaptation_permitted": false,
+    "threshold_or_seed_selection_permitted": false,
+    "unresolved_candidates_may_be_called_false_alarms": false
+  },
+  "execution": {
+    "output_root": "work_artifacts/ncedc_model_blind_20260817/evaluation/ncedc_continuous_analysis_v1",
+    "overwrite_permitted": false,
+    "score_cache_access": "read_only"
+  },
+  "expected_units": {
+    "archive_unavailable_station_days": 8,
+    "data_bearing_station_days": 712,
+    "network_dates": 60,
+    "requested_station_days": 720,
+    "stations": 12
+  },
+  "frozen_at_utc": "2026-08-17T14:14:51.974655+00:00",
+  "inputs": {
+    "continuous_manifest_freeze": {
+      "bytes": 5737,
+      "path": "workspace/experiments/cspp_v27_ncedc_continuous_manifest_freeze_20260817.json",
+      "sha256": "1839769549d78d0f756b2b2016a425cbe89bc6216e3a45bed1d0b16b3fcb47f6"
+    },
+    "date_screen": {
+      "bytes": 24216,
+      "path": "work_artifacts/ncedc_model_blind_20260817/metadata/manifests/continuous_date_screen.csv",
+      "sha256": "108d0aa144a3e868d7fcd3403b12c758df41239f0e88024d7ee92f2e846b4902"
+    },
+    "hybrid_amendment": {
+      "bytes": 7918,
+      "path": "workspace/experiments/cspp_v27_ncedc_continuous_scoring_hybrid_amendment_20260817.json",
+      "sha256": "ce1de360a6dea2ddbdffe8ff7f5a064eefd2ce4942bba3b4d7a4d62e81238d89"
+    },
+    "hybrid_equivalence_report": {
+      "bytes": 3321,
+      "path": "workspace/experiments/cspp_v27_ncedc_continuous_hybrid_equivalence_20260817.json",
+      "sha256": "d85490a53ba277b65330473c3bf1fff7d8bd5386a40bc58bae9e87c125ce464e"
+    },
+    "selected_stations": {
+      "bytes": 1938,
+      "path": "work_artifacts/ncedc_model_blind_20260817/metadata/manifests/continuous_selected_stations.csv",
+      "sha256": "8b23e5a82747a9e67b55396af78e11d8a4d22066b664dd9e0ea4a79a2a86455b"
+    },
+    "station_day_requests": {
+      "bytes": 80875,
+      "path": "work_artifacts/ncedc_model_blind_20260817/metadata/manifests/continuous_station_day_requests.csv",
+      "sha256": "2fda55727d31e80e9cddf4472964c8bd867ac8f7720218ca46d4e1bbc9398346"
+    }
+  },
+  "manual_review": {
+    "claim_gate": "No unresolved candidate is called a false alarm. Adjudicated false-candidate rates require completed review and audit.",
+    "deterministic_sample_size": 500,
+    "extreme_candidate_probability": 0.95,
+    "extreme_event_probability": 0.9999,
+    "include_all_network_group_members": true,
+    "required_labels": [
+      "earthquake_phase",
+      "anthropogenic",
+      "instrument_or_communication",
+      "environmental_or_unknown"
+    ],
+    "review_all_if_candidate_count_at_most": 500,
+    "sampling_salt": "cspp-ncsn-review-20260817-v1",
+    "scores_hidden_during_cause_labeling": true,
+    "unreviewed_label": "unresolved"
+  },
+  "models": {
+    "C0_seed20261101": {
+      "arm": "C0",
+      "bytes": 1369948,
+      "path": "work_artifacts/checkpoints/blind_v27c_C0_none_seed20261101/final.pt",
+      "seed": 20261101,
+      "sha256": "d27ce10351475dfa264b45406b601dbcfc64e15c92be7260fe54c1738d35586d",
+      "verifier_feature_mode": "none"
+    },
+    "C0_seed20261102": {
+      "arm": "C0",
+      "bytes": 1369948,
+      "path": "work_artifacts/checkpoints/blind_v27c_C0_none_seed20261102/final.pt",
+      "seed": 20261102,
+      "sha256": "fcc9a3123765e5a78c7a210086d31768a77f37556e1c2e1efc503342b39bf2f2",
+      "verifier_feature_mode": "none"
+    },
+    "C0_seed20261103": {
+      "arm": "C0",
+      "bytes": 1369948,
+      "path": "work_artifacts/checkpoints/blind_v27c_C0_none_seed20261103/final.pt",
+      "seed": 20261103,
+      "sha256": "02695f1827eac6bca218a8017ce3efb67f8ef2f693e113644d41b1423c0fea56",
+      "verifier_feature_mode": "none"
+    }
+  },
+  "network_confirmation": {
+    "claim_boundary": "not event association, hypocenter location, or cause verification",
+    "estimated_p_window_seconds": 10.0,
+    "grouping": "chronological non-overlapping groups; at most one candidate per station contributes to a group",
+    "minimum_distinct_stations": 3,
+    "network_exposure": "time with at least three selected stations simultaneously candidate-eligible",
+    "role": "secondary time-coincidence diagnostic"
+  },
+  "next_boundary": "After all 712 data-bearing station-days pass hash-verified scoring, the analyzer may read score values once at the frozen operating point.",
+  "operating_point": {
+    "candidate_threshold": 0.1,
+    "event_threshold": 0.975,
+    "primary_model_key": "C0_seed20261101",
+    "primary_operational_seed": 20261101,
+    "seed_keys": {
+      "C0_seed20261101": 20261101,
+      "C0_seed20261102": 20261102,
+      "C0_seed20261103": 20261103
+    },
+    "threshold_or_seed_selection_permitted": false
+  },
+  "protocol_id": "cspp_v27_ncedc_continuous_analysis_v1",
+  "rate_statistics": {
+    "candidate_cause_at_primary_analysis": "unresolved",
+    "candidate_rate_unit": "released episodes per eligible station-day",
+    "interval": "exact two-sided Poisson 95 percent",
+    "station_exposure": "sum of candidate-eligible 0.5 s packets"
+  },
+  "runtime": {
+    "candidate_history_packets": 4,
+    "max_arrival_age_packets": 4.0,
+    "normalization": "per-channel causal EWMA demean and scale",
+    "packet_duration_seconds": 0.5,
+    "packet_samples": 50,
+    "quality_gate": "PacketQualityGateV5 frozen defaults",
+    "recurrent_state_reset": "every quality-invalid segment boundary",
+    "sample_rate_hz": 100.0,
+    "temporal_block_packets": 16384,
+    "warmup_packets": 20
+  },
+  "scoring": {
+    "completion_path": "work_artifacts/ncedc_model_blind_20260817/evaluation/ncedc_continuous_scores_v2_hybrid/continuous_score_cache_complete.json",
+    "hybrid_amendment_sha256": "ce1de360a6dea2ddbdffe8ff7f5a064eefd2ce4942bba3b4d7a4d62e81238d89",
+    "output_root": "work_artifacts/ncedc_model_blind_20260817/evaluation/ncedc_continuous_scores_v2_hybrid"
+  },
+  "status": "frozen_during_scoring_before_candidate_rate_inspection"
+}

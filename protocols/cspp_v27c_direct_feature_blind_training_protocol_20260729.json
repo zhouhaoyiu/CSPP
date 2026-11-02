@@ -1,0 +1,123 @@
+{
+  "protocol_id": "cspp_v27c_direct_feature_blind_training_v1",
+  "frozen_at": "2026-07-29",
+  "status": "frozen_before_full_training",
+  "motivation": {
+    "source": "opened DEV-A failure diagnosis",
+    "hypothesis": "The compressed candidate representation loses current-packet component-energy and impulsiveness information needed to reject strong nonseismic transients.",
+    "evidence_boundary": "The hypothesis is development-derived. DEV-A cannot test it again."
+  },
+  "single_factor_design": {
+    "control": {
+      "id": "C0",
+      "model_class": "CSPPCausalPickerV27C",
+      "verifier_feature_mode": "none",
+      "parameters": 329423,
+      "trainable_parameters": 17157,
+      "state_scalars": 320
+    },
+    "experiment": {
+      "id": "C1",
+      "model_class": "CSPPCausalPickerV27C",
+      "verifier_feature_mode": "current",
+      "parameters": 332129,
+      "trainable_parameters": 19863,
+      "state_scalars": 320,
+      "only_change": "Append the current packet's 41 summary and fixed-spectrum features to the detached verifier input."
+    },
+    "explicit_exclusions": [
+      "no one-packet direct-feature delta",
+      "no episode loss",
+      "no change to candidate, timing, or dense phase branches",
+      "no change to event loss weights or candidate-gated packet labels",
+      "no DEV-A inference, threshold sweep, checkpoint selection, or early stopping"
+    ]
+  },
+  "frozen_candidate": {
+    "initializer": "work_artifacts/checkpoints/pilot_v27a_seed20261101/best.pt",
+    "initializer_sha256": "c90241c759018e87cacb10c75e46c3b99ac410f439b312801c9bbbdb9dc6e813",
+    "candidate_timing_dense_phase_trainable": false,
+    "initialization_probe_required": "exact zero maximum absolute difference for candidate, timing, and dense phase outputs"
+  },
+  "training_data": {
+    "selection_reference": "work_artifacts/checkpoints/pilot_v27b_balanced_gated_seed20261101/selected_indices.npz",
+    "selection_reference_sha256": "72dab23b14f4da309ec04bbbcdb68c7088bbf8aba565024934c2be05c94893cd",
+    "data_seed": 20260801,
+    "development_records_constructed_for_identity_check_only": true,
+    "development_waveform_inference": false
+  },
+  "optimization": {
+    "seeds": [
+      20261101,
+      20261102,
+      20261103
+    ],
+    "report_all_seeds": true,
+    "epochs": 3,
+    "checkpoint_rule": "Use epoch 3 for every arm and seed. final.pt must be a byte-identical copy of epoch_03.pt.",
+    "batch_size": 8,
+    "max_chunks": 96,
+    "learning_rate": 0.0003,
+    "weight_decay": 0.0001,
+    "event_pos_weight": 3.0,
+    "event_loss_weight": 1.0,
+    "verifier_hard_negative_loss_weight": 1.0,
+    "verifier_ranking_loss_weight": 0.5,
+    "verifier_partial_auc_loss_weight": 1.0,
+    "verifier_partial_auc_negative_fraction": 0.25,
+    "verifier_partial_auc_margin": 1.0,
+    "candidate_gated_loss": true,
+    "candidate_gate_threshold": 0.1,
+    "candidate_history_packets": 4,
+    "warmup_packets": 20,
+    "native_event_fraction": 0.5,
+    "low_snr_event_weight": 3.0,
+    "low_snr_weight_upper_db": 8.0,
+    "minimum_event_magnitude": 3.0,
+    "maximum_event_distance_km": 200.0
+  },
+  "resource_policy": {
+    "device": "mps",
+    "processes": 1,
+    "data_loader_workers": 0,
+    "parallel_mps_jobs": 0,
+    "output_root": "work_artifacts/checkpoints"
+  },
+  "source_hashes": {
+    "src/model_cspp_v27.py": "fec58af9e2c6ac83ee28300d56ffb88b77ce050c1a24402991a55f96047bc39c",
+    "scripts/training/train_domain_robust_v5.py": "066edb8bdf0a0579497e4341d29f176f92dc1403fc952252fdb17b42a7a3a100",
+    "tests/test_model_cspp_v27.py": "156c8b898185881dcbc9b88e626732be4aceefe48fd184bc40218ccb5eeececd",
+    "src/domain_robust_model_io.py": "758432f8f2321a9f23210bf51b93b04167cc250350b672fd742f41a66ba85b3"
+  },
+  "implementation_smoke": {
+    "output": "work_artifacts/checkpoints/smoke_v27c_no_dev_eval_v3/smoke",
+    "epoch_checkpoint_sha256": "93adc323e9cec165093bd1bf4b7d1b46aeb8d9d1569fce1905e64abd6d6fc20f",
+    "final_checkpoint_sha256": "93adc323e9cec165093bd1bf4b7d1b46aeb8d9d1569fce1905e64abd6d6fc20f",
+    "selection_artifacts_present": false,
+    "development_evaluation_logged": "disabled"
+  },
+  "external_selection_boundary": {
+    "required_before_first_score": "Freeze event, station, background-date, preprocessing, calibration, and evaluation manifests for a post-February-2024 GeoNet temporal development cohort stored outside WD_BLACK.",
+    "candidate_threshold": 0.1,
+    "event_threshold_grid": [
+      0.5,
+      0.6,
+      0.7,
+      0.8,
+      0.85,
+      0.9,
+      0.925,
+      0.95,
+      0.975,
+      0.99
+    ],
+    "seed_policy": "Evaluate all three seeds for both arms. Do not select the best seed; summarize the seed distribution and require directionally consistent C1 improvement.",
+    "model_policy": "Select C1 only if the direct feature arm reduces background station false-candidate burden without a material loss of authoritative-P station recall or availability.",
+    "prohibited": [
+      "use DEV-A metrics to select C0 versus C1",
+      "modify either arm after inspecting GeoNet temporal-development scores",
+      "select a single favorable seed",
+      "call the temporal-development comparison independent final evidence"
+    ]
+  }
+}

@@ -1,0 +1,285 @@
+{
+  "code_sha256": {
+    "scripts/evaluation/analyze_v27_geonet_temporal_selection.py": "d9f4209ead22ecb391698aa22b7eab22167d92252ea28f1ee3811975a48dd20f",
+    "scripts/evaluation/build_v27_geonet_temporal_score_cache.py": "73470bcc3e8a6c62924a5cd37e725450d082d593e641046e835d3d53d3bd341f",
+    "scripts/evaluation/freeze_v27_geonet_temporal_evaluation_protocol.py": "db6475d802619f4314589039ea5973f8804da6c6e7503b62b19e2b786bd36503",
+    "scripts/evaluation/run_v27_geonet_temporal_score_workers.py": "888d5588b7b40e4328f4cdb04c1f25266ac4c0c4ed9117d06400cde67fad3a08",
+    "src/causal_fir_decimator.py": "81c8a4a235b92c051ef2a9ef54936c5d6a8a3fb5df7f63c302962669fbdcc208",
+    "src/cspp_v27_reused_core_score_cache.py": "a0301fccc341f7cd95bb01b6478904cc86bb731421867da47a7017f72a6aa0d2",
+    "src/data_streaming.py": "8b81c1b194740cea28a0f99698c3698d12a1acb92661e4a5c0dff847facad66b",
+    "src/model_cspp_v27.py": "fec58af9e2c6ac83ee28300d56ffb88b77ce050c1a24402991a55f96047bc39c",
+    "src/oriented_gappy_strong_motion_stream.py": "9ccb3223b551b7873b5fcc31759d44b3bfeca808bd09dd716f4e1da770e1f9e0",
+    "src/resilient_mseed.py": "ec6b2960cc88ba3ea6d097d4e2998de768b87986d9e4b9ad89df4a240417a92e",
+    "src/stream_quality_v5.py": "62e48deca36fd553f59d2291738f3fe1a93dddb70bef84bcf250534c54cae414",
+    "src/v20c_event_snr.py": "c43f661713efdd1422cb3c77572b2857920ceb43b31f0da531d5e690e1a360a0"
+  },
+  "evidence_boundary": {
+    "arm_selected": false,
+    "development_scores_computed_or_inspected": false,
+    "final_holdout_accessed": false,
+    "public_baseline_outputs_computed_or_inspected": false,
+    "seed_selected": false,
+    "threshold_selected": false
+  },
+  "execution": {
+    "backend_selection": {
+      "actual_event_cpu_mps_max_absolute_difference": 2.384185791015625e-07,
+      "actual_event_quality_masks_exact": true,
+      "numerical_acceptance_tolerance": 1e-05,
+      "reason": "MPS GRU long-sequence execution required about 108 seconds for one 172800-packet station-day and did not improve when the temporal block increased from 4096 to 16384 packets. CPU permits bounded uniform-device parallelism across independent station-day shards."
+    },
+    "data_loader_workers": 0,
+    "inference_device": "cpu",
+    "inference_processes": 4,
+    "maximum_combined_worker_rss_bytes": 15032385536,
+    "output_root": "work_artifacts/geonet_temporal_evaluation_v2",
+    "parallel_mps_jobs_permitted": false,
+    "resume_unit": "one event or one UTC background date",
+    "sharding": "sorted event/date index modulo four; one persistent model ensemble per shard",
+    "torch_threads": 3
+  },
+  "expected_units": {
+    "background_dates": 24,
+    "background_source_objects": 432,
+    "background_station_days": 144,
+    "event_stations": 2014,
+    "events": 189
+  },
+  "frozen_at_utc": "2026-07-29T14:40:51.894301+00:00",
+  "inputs": {
+    "background_dates": {
+      "bytes": 2901,
+      "path": "work_artifacts/geonet_temporal_development_v1/background_waveform_manifest/background_dates.csv",
+      "sha256": "5d9a05c8d47dd5a9231a5b3d1f5d2d62e1dfe409b6c19e0c746aa37d2df94383"
+    },
+    "background_objects": {
+      "bytes": 377380,
+      "path": "work_artifacts/geonet_temporal_development_v1/background_waveform_manifest/background_objects.csv",
+      "sha256": "8b388b7ddda228a940627e77fdcf923b429244f2d21d076cdcba8e15bf33a4a9"
+    },
+    "background_station_amendment_protocol": {
+      "bytes": 2854,
+      "path": "work_artifacts/geonet_temporal_development_v1/background_station_amendment_v2/protocol.json",
+      "sha256": "e5ce11408fffb62233017f190c5181a9bdd0d7dc800b1990c622263267b9bc2f"
+    },
+    "background_station_days": {
+      "bytes": 22922,
+      "path": "work_artifacts/geonet_temporal_development_v1/background_waveform_manifest/background_station_days.csv",
+      "sha256": "8470401d00dfa9b80941e9a4f9e1959b0e4f5f1d1f0181dffd807e86f3587a9d"
+    },
+    "background_station_orientations": {
+      "bytes": 2755,
+      "path": "work_artifacts/geonet_temporal_development_v1/orientation_manifest/background_station_orientations.csv",
+      "sha256": "044f08a1ca85099fdb361b94cdf131288356d63c4a7f92b64a5c7369ef4167e1"
+    },
+    "background_waveform_deep_audit": {
+      "bytes": 2477,
+      "path": "work_artifacts/geonet_temporal_development_v1/background_waveform_manifest/deep_audit_protocol.json",
+      "sha256": "c3fe889d3b23b9fe06af50c70b3bfba742773ccab38ed16638185ca87c54458f"
+    },
+    "background_waveform_protocol": {
+      "bytes": 5411,
+      "path": "work_artifacts/geonet_temporal_development_v1/background_waveform_manifest/protocol.json",
+      "sha256": "891621c64bac07bf8b4b029b921c8a12b4d669c85e9a9d655dd40f8a71da1729"
+    },
+    "evaluation_contract": {
+      "bytes": 2247,
+      "path": "work_artifacts/geonet_temporal_development_v1/evaluation_contract.json",
+      "sha256": "7aa3bf16e4cf6e7e707114ffe8423fe511462c47a9baf38204af73e1f1a4210a"
+    },
+    "event_rows": {
+      "bytes": 70027,
+      "path": "work_artifacts/geonet_temporal_development_v1/waveform_manifest/events.csv",
+      "sha256": "91c09eedc1a5253f590f07f5eec29c27bd11fd73686b0dbad1dd38341193b4fb"
+    },
+    "event_station_orientations": {
+      "bytes": 1169245,
+      "path": "work_artifacts/geonet_temporal_development_v1/orientation_manifest/event_station_orientations.csv",
+      "sha256": "59bc8102820bc05456c7d3e514d2da9e7dcc1c26da72f27c953af20b5cf9a49d"
+    },
+    "event_station_rows": {
+      "bytes": 835912,
+      "path": "work_artifacts/geonet_temporal_development_v1/waveform_manifest/event_stations.csv",
+      "sha256": "dd04613b2521b0e048b5a5936b3b5a6aa5d2f5041bf10cc44390385a24d2a885"
+    },
+    "event_waveform_files": {
+      "bytes": 97067,
+      "path": "work_artifacts/geonet_temporal_development_v1/waveform_manifest/waveform_files.csv",
+      "sha256": "0f740574bfabf175c7ca21affbf8729da0053da21199c71bf23544085151ae1b"
+    },
+    "event_waveform_protocol": {
+      "bytes": 3733,
+      "path": "work_artifacts/geonet_temporal_development_v1/waveform_manifest/protocol.json",
+      "sha256": "6960dba0934cda9d37b1a7e61b54b20034ad8db9186259872622c5ed96fd723d"
+    },
+    "metadata_protocol": {
+      "bytes": 6023,
+      "path": "work_artifacts/geonet_temporal_development_v1/protocol.json",
+      "sha256": "ae43b11cabf657254612bb11bc3fd79ffbedc7ba25445ab7245da533240cfd51"
+    },
+    "orientation_protocol": {
+      "bytes": 4594,
+      "path": "work_artifacts/geonet_temporal_development_v1/orientation_manifest/protocol.json",
+      "sha256": "014a39043a07191ed69102af64248628fa62a227a3799eb1fd9c201d3a48fde5"
+    },
+    "preprocessing_contract": {
+      "bytes": 1304,
+      "path": "work_artifacts/geonet_temporal_development_v1/preprocessing_contract.json",
+      "sha256": "e318ce5267fd0d83c4e1c9846d294dc21159db8a16022619cc3244db8143b45d"
+    },
+    "training_protocol": {
+      "bytes": 5326,
+      "path": "workspace/experiments/cspp_v27c_direct_feature_blind_training_protocol_20260729.json",
+      "sha256": "076c33fa758c9de5383b85ba604245736b52a1c736cdcbe9453c03466d1f4b06"
+    },
+    "training_result": {
+      "bytes": 6048,
+      "path": "workspace/experiments/cspp_v27c_direct_feature_blind_training_result_20260729.json",
+      "sha256": "123bed173e1e42f3ad96ff38df3ebc988482b1a0cd6afcacb81856ba944aeab8"
+    }
+  },
+  "metrics": {
+    "event_primary_label_stratum": "GeoNet origin-associated used P pick with positive weight",
+    "local_p_snr_window_seconds": 1.0,
+    "match_tolerance_seconds": 1.5,
+    "network_confirmation": {
+      "candidate_time": "estimated P epoch",
+      "claim_boundary": "This coincidence count is not an event association, location, or origin-time solution.",
+      "estimated_p_span_seconds": 10.0,
+      "minimum_distinct_stations": 3,
+      "role": "diagnostic_false-alarm-suppression_analysis"
+    }
+  },
+  "models": {
+    "C0_seed20261101": {
+      "arm": "C0",
+      "bytes": 1369948,
+      "path": "work_artifacts/checkpoints/blind_v27c_C0_none_seed20261101/final.pt",
+      "seed": 20261101,
+      "sha256": "d27ce10351475dfa264b45406b601dbcfc64e15c92be7260fe54c1738d35586d",
+      "training_history_sha256": "fcf20a20176b703dbdf50760dd074142942e81beadfd029b681401ecdbe9ced6",
+      "training_run_protocol_sha256": "b0a8ddf0b5ab1a7825a446a8d89a368b87459107febe42faec6d8b886c22a3fd",
+      "verifier_feature_mode": "none"
+    },
+    "C0_seed20261102": {
+      "arm": "C0",
+      "bytes": 1369948,
+      "path": "work_artifacts/checkpoints/blind_v27c_C0_none_seed20261102/final.pt",
+      "seed": 20261102,
+      "sha256": "fcc9a3123765e5a78c7a210086d31768a77f37556e1c2e1efc503342b39bf2f2",
+      "training_history_sha256": "45718ecdde5947135f33f64de33ca326c213112aca40b82e6597fcb1b17ecf83",
+      "training_run_protocol_sha256": "c851ea926911e4bf2fa6d72949e20d48f4316884ef29907360047062d77fbd43",
+      "verifier_feature_mode": "none"
+    },
+    "C0_seed20261103": {
+      "arm": "C0",
+      "bytes": 1369948,
+      "path": "work_artifacts/checkpoints/blind_v27c_C0_none_seed20261103/final.pt",
+      "seed": 20261103,
+      "sha256": "02695f1827eac6bca218a8017ce3efb67f8ef2f693e113644d41b1423c0fea56",
+      "training_history_sha256": "394f41d5da5eccc421bb27312a91ff4830147cda87b6e64268e8d0a657f54094",
+      "training_run_protocol_sha256": "b004656de514ea476957df751a48e51d6c707a5044c451f6d467e3cad8166619",
+      "verifier_feature_mode": "none"
+    },
+    "C1_seed20261101": {
+      "arm": "C1",
+      "bytes": 1380700,
+      "path": "work_artifacts/checkpoints/blind_v27c_C1_current_seed20261101/final.pt",
+      "seed": 20261101,
+      "sha256": "2018666f465e35decb731218424e317b271fe14770ddec6a6790fc96e9fc3605",
+      "training_history_sha256": "9f1d439c7f4bf15726ce12b29522cbd3db6b6b1cedc2f49382bc42a40211930f",
+      "training_run_protocol_sha256": "c6ce8e5aa0a52968eeb2ef27b4f170fbc1990f896f3c5b199db5623feac2fc44",
+      "verifier_feature_mode": "current"
+    },
+    "C1_seed20261102": {
+      "arm": "C1",
+      "bytes": 1380700,
+      "path": "work_artifacts/checkpoints/blind_v27c_C1_current_seed20261102/final.pt",
+      "seed": 20261102,
+      "sha256": "b0f60a6204609c0fdd6a3e12d1ecfebc0611eddaf36412c4401ae244557b060f",
+      "training_history_sha256": "a511b8a33cccb1771e2ce245c1e4e8b59ccc6d844d06f397bf18492e1844c29f",
+      "training_run_protocol_sha256": "708e301a8cd238f1f69623b85b105361bb9dcf3bc504791f053434055ae1012a",
+      "verifier_feature_mode": "current"
+    },
+    "C1_seed20261103": {
+      "arm": "C1",
+      "bytes": 1380700,
+      "path": "work_artifacts/checkpoints/blind_v27c_C1_current_seed20261103/final.pt",
+      "seed": 20261103,
+      "sha256": "750ffaa248a08dc0800a90bc737333375874185231b8fbfa6b6b0dc8ba03ffd7",
+      "training_history_sha256": "ba3f2271f1c8b99ba5daf72b486acb235bfb6674b746b0f6ba7ab061f8536fc9",
+      "training_run_protocol_sha256": "7500bb26030ea476e5adf3adf1807fbf7e84c880d1d5ce9585dc6d39d0ca625a",
+      "verifier_feature_mode": "current"
+    }
+  },
+  "next_boundary": "Only after this protocol is frozen may the event and background development score caches be computed. The 2026 final holdout remains inaccessible until arm and threshold selection is frozen.",
+  "protocol_id": "cspp_v27_geonet_temporal_evaluation_execution_v2",
+  "runtime": {
+    "candidate_history_packets": 4,
+    "max_arrival_age_packets": 4.0,
+    "miniSEED_decode": {
+      "gap_imputation": false,
+      "maximum_quarantined_record_fraction_per_object": 0.001,
+      "policy": "whole-file decode first; on libmseed integrity failure bisect fixed-size records, quarantine only failing records, and represent them as explicit gaps",
+      "post_quarantine_background_common_availability_minimum": 0.95
+    },
+    "normalization": "per-channel causal EWMA demean and scale; state resets on quality-invalid packets",
+    "packet_duration_seconds": 0.5,
+    "packet_samples": 50,
+    "quality_gate": "PacketQualityGateV5 frozen defaults",
+    "recurrent_state_reset": "reset on every contiguous quality-valid segment boundary",
+    "sample_rate_hz": 100.0,
+    "temporal_block_packets": 4096,
+    "warmup_packets": 20
+  },
+  "selection": {
+    "arm_comparison": {
+      "development_role": "arm_comparison",
+      "otherwise": "C0",
+      "select_C1_only_if_all": [
+        "background candidate count no greater than C0 for every paired seed",
+        "mean background candidate count at least 20 percent lower than C0",
+        "mean positive-weight authoritative-P recall loss no greater than 0.02",
+        "mean median availability-delay increase no greater than 0.25 seconds"
+      ]
+    },
+    "arms": [
+      "C0",
+      "C1"
+    ],
+    "candidate_threshold": 0.1,
+    "event_threshold_grid": [
+      0.5,
+      0.6,
+      0.7,
+      0.8,
+      0.85,
+      0.9,
+      0.925,
+      0.95,
+      0.975,
+      0.99
+    ],
+    "primary_seed": 20261101,
+    "seed_selection_permitted": false,
+    "seeds": [
+      20261101,
+      20261102,
+      20261103
+    ],
+    "threshold_calibration_recall_floor": {
+      "mean": 0.9,
+      "minimum_seed": 0.85
+    },
+    "threshold_selection": "For each arm on threshold_calibration only, choose among recall-feasible thresholds by ascending mean background candidate count, ascending mean event false-candidate count, descending mean recall, ascending mean median availability delay, then descending threshold. If none is feasible, choose by descending minimum-seed recall, descending mean recall, ascending background count, ascending event false count, then ascending threshold."
+  },
+  "shared_core_integrity": {
+    "all_other_tensors_byte_identical": true,
+    "excluded_tensor_prefixes": [
+      "event_head."
+    ],
+    "execution": "one shared candidate/arrival core forward pass and six frozen event heads",
+    "tensor_digest": "4a2b4bd3e5aae3ee5b05189aad561e93f87b5e58e06637e4c6531b9e36d1272c"
+  },
+  "status": "frozen_before_any_temporal_development_score"
+}

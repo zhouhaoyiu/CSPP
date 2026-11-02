@@ -1,0 +1,142 @@
+{
+  "code_sha256": {
+    "scripts/evaluation/build_v27_ncedc_event_score_cache.py": "cca64be3af5af41216fbbe5969bd81434b79f454982b89cee0f183dea15c6835",
+    "scripts/evaluation/freeze_v27_ncedc_event_scoring_protocol.py": "2694eb025071bf456af3ec0bacd9ce3e94d0e3b150719a608f7f4f26a35ccf07",
+    "src/causal_fir_decimator.py": "81c8a4a235b92c051ef2a9ef54936c5d6a8a3fb5df7f63c302962669fbdcc208",
+    "src/cspp_v27_reused_core_score_cache.py": "a0301fccc341f7cd95bb01b6478904cc86bb731421867da47a7017f72a6aa0d2",
+    "src/data_streaming.py": "8b81c1b194740cea28a0f99698c3698d12a1acb92661e4a5c0dff847facad66b",
+    "src/gappy_strong_motion_stream.py": "1971d336558ceac86e1d076f749749a0c185e8fa0550301c4c8f99bf6e736fa4",
+    "src/gappy_strong_motion_stream_v2.py": "cdb911a3d6c8868ce8e41c76b3359b7ff7b77e25947c29b904b9f16a7d56422f",
+    "src/model_cspp_v27.py": "c2ca73f059fbdd7fcf59709ee8ed8fe47c8ba6b3de03a3f714c8effa2a1261d4",
+    "src/oriented_gappy_strong_motion_stream.py": "9ccb3223b551b7873b5fcc31759d44b3bfeca808bd09dd716f4e1da770e1f9e0",
+    "src/resilient_mseed.py": "ec6b2960cc88ba3ea6d097d4e2998de768b87986d9e4b9ad89df4a240417a92e",
+    "src/stream_quality_v5.py": "62e48deca36fd553f59d2291738f3fe1a93dddb70bef84bcf250534c54cae414",
+    "src/v20c_event_snr.py": "c43f661713efdd1422cb3c77572b2857920ceb43b31f0da531d5e690e1a360a0"
+  },
+  "evidence_boundary": {
+    "incomplete_records_replaced": false,
+    "primary_seed": 20261101,
+    "replication_seeds": [
+      20261102,
+      20261103
+    ],
+    "target_metadata_accessed": true,
+    "target_model_outputs_computed_or_inspected": false,
+    "target_waveforms_accessed": true,
+    "threshold_or_seed_selection_permitted": false
+  },
+  "execution": {
+    "inference_device": "cpu",
+    "inference_processes": 1,
+    "model_ensemble": "one shared candidate core and three frozen C0 event heads",
+    "output_root": "work_artifacts/ncedc_model_blind_20260817/evaluation/ncedc_event_scores_v1",
+    "torch_threads": 4
+  },
+  "expected_units": {
+    "events": 51,
+    "requested_event_station_records": 580,
+    "scorable_event_station_records": 578,
+    "structurally_incomplete_records": 2
+  },
+  "frozen_at_utc": "2026-08-17T13:12:22.553566+00:00",
+  "inputs": {
+    "acquisition_status": {
+      "bytes": 22359,
+      "path": "work_artifacts/ncedc_model_blind_20260817/waveforms/events/latest_status.csv",
+      "sha256": "88ad9697ea5f1141d1a40028ad56ef102387c02c2c6d505cf63f78010ec67694"
+    },
+    "acquisition_summary": {
+      "bytes": 655,
+      "path": "work_artifacts/ncedc_model_blind_20260817/waveforms/events/summary.json",
+      "sha256": "d111da11c2097ef9ca58d14395e6f758fb9e89d0e8371b54e59fa5e45b5a6ac9"
+    },
+    "continuous_manifest_freeze": {
+      "bytes": 5737,
+      "path": "workspace/experiments/cspp_v27_ncedc_continuous_manifest_freeze_20260817.json",
+      "sha256": "1839769549d78d0f756b2b2016a425cbe89bc6216e3a45bed1d0b16b3fcb47f6"
+    },
+    "event_manifest_freeze": {
+      "bytes": 3469,
+      "path": "workspace/experiments/cspp_v27_ncedc_event_manifest_freeze_20260817.json",
+      "sha256": "e088d5b42c07c0f38be915c8c893b73cedf1bb393d3c1580f0fca78cbf868743"
+    },
+    "event_orientation_freeze": {
+      "bytes": 2294,
+      "path": "workspace/experiments/cspp_v27_ncedc_event_orientation_freeze_20260817.json",
+      "sha256": "34e4dde04ed18941004f73fd209e5b84018aafcf55b1260442183f26275b3d64"
+    },
+    "event_station_orientations": {
+      "bytes": 275253,
+      "path": "work_artifacts/ncedc_model_blind_20260817/metadata/manifests/event_station_orientations.csv",
+      "sha256": "5fbc4235b72eb1c919612f581f054647830a4d87e00e97d5557b55f2a457c133"
+    },
+    "event_station_requests": {
+      "bytes": 169097,
+      "path": "work_artifacts/ncedc_model_blind_20260817/metadata/manifests/event_station_requests.csv",
+      "sha256": "fba5c65bd6efba0a46cb0a1244720f7a753e18c86371ee034b4c13cbb3cb7575"
+    },
+    "selection_freeze": {
+      "bytes": 5526,
+      "path": "workspace/experiments/cspp_v27_geonet_temporal_selection_freeze_20260729.json",
+      "sha256": "f86155159422fa1539751ed7eb2f388875f519990b4080f4e5d11af664e88f6f"
+    }
+  },
+  "metrics": {
+    "local_p_snr_window_seconds": 1.0,
+    "match_tolerance_seconds": 1.5,
+    "primary_label": "positive-weight manual reviewed preferred-origin P pick"
+  },
+  "models": {
+    "C0_seed20261101": {
+      "arm": "C0",
+      "bytes": 1369948,
+      "path": "work_artifacts/checkpoints/blind_v27c_C0_none_seed20261101/final.pt",
+      "seed": 20261101,
+      "sha256": "d27ce10351475dfa264b45406b601dbcfc64e15c92be7260fe54c1738d35586d",
+      "verifier_feature_mode": "none"
+    },
+    "C0_seed20261102": {
+      "arm": "C0",
+      "bytes": 1369948,
+      "path": "work_artifacts/checkpoints/blind_v27c_C0_none_seed20261102/final.pt",
+      "seed": 20261102,
+      "sha256": "fcc9a3123765e5a78c7a210086d31768a77f37556e1c2e1efc503342b39bf2f2",
+      "verifier_feature_mode": "none"
+    },
+    "C0_seed20261103": {
+      "arm": "C0",
+      "bytes": 1369948,
+      "path": "work_artifacts/checkpoints/blind_v27c_C0_none_seed20261103/final.pt",
+      "seed": 20261103,
+      "sha256": "02695f1827eac6bca218a8017ce3efb67f8ef2f693e113644d41b1423c0fea56",
+      "verifier_feature_mode": "none"
+    }
+  },
+  "next_boundary": "Only this hash-verified scorer may create NCSN target score caches. The primary seed, replication seeds, candidate threshold 0.1, event threshold 0.975, and all preprocessing rules remain fixed.",
+  "operating_point": {
+    "all_reported_seeds": [
+      20261101,
+      20261102,
+      20261103
+    ],
+    "candidate_threshold": 0.1,
+    "event_threshold": 0.975,
+    "primary_operational_seed": 20261101,
+    "seed_selection_permitted": false,
+    "selected_arm": "C0"
+  },
+  "protocol_id": "cspp_v27_ncedc_event_scoring_v1",
+  "runtime": {
+    "candidate_history_packets": 4,
+    "max_arrival_age_packets": 4.0,
+    "normalization": "per-channel causal EWMA demean and scale",
+    "packet_duration_seconds": 0.5,
+    "packet_samples": 50,
+    "quality_gate": "PacketQualityGateV5 frozen defaults",
+    "recurrent_state_reset": "every quality-invalid segment boundary",
+    "sample_rate_hz": 100.0,
+    "temporal_block_packets": 4096,
+    "warmup_packets": 20
+  },
+  "status": "frozen_before_any_ncedc_model_output"
+}

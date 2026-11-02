@@ -1,0 +1,1562 @@
+{
+  "catalog_matching": {
+    "catalog_origin_lookback_seconds": 1800.0,
+    "classification_priority": [
+      "official_p_associated",
+      "catalog_taup_compatible",
+      "unresolved"
+    ],
+    "manual_review_rule": "All catalog_taup_compatible and unresolved candidates remain pending until waveform cause review is completed.",
+    "official_p_station_identity": "network and station code; location/channel may differ between co-located seismic and strong-motion sensors",
+    "official_p_tolerance_seconds": 3.0,
+    "phase_list": [
+      "P",
+      "p",
+      "Pn",
+      "Pg"
+    ],
+    "taup_tolerance_seconds": 5.0,
+    "travel_time_model": "iasp91"
+  },
+  "catalog_snapshots": [
+    {
+      "bytes": 157101,
+      "path": "work_artifacts/geonet_temporal_development_v1/source_snapshots/catalog_monthly/2024-03.geojson",
+      "sha256": "035d29a9930acc29035edc2ad4afb183cd969dde75144dff8687579913ed6fc3"
+    },
+    {
+      "bytes": 173444,
+      "path": "work_artifacts/geonet_temporal_development_v1/source_snapshots/catalog_monthly/2024-04.geojson",
+      "sha256": "57e75be4e174badd8f92d8af0bc5a9a7344f9fff79ae0ce1c1b3da5e51017c9d"
+    },
+    {
+      "bytes": 163116,
+      "path": "work_artifacts/geonet_temporal_development_v1/source_snapshots/catalog_monthly/2024-05.geojson",
+      "sha256": "5c5e2927169b3ebd9cbb81f67d363857c7787e3bb407fc59ecf98a0cee75b264"
+    },
+    {
+      "bytes": 108556,
+      "path": "work_artifacts/geonet_temporal_development_v1/source_snapshots/catalog_monthly/2024-06.geojson",
+      "sha256": "bf4f53a59af8993829d4c865545374ca24998f0f17ac6ca98b3b34a3291c5837"
+    },
+    {
+      "bytes": 174701,
+      "path": "work_artifacts/geonet_temporal_development_v1/source_snapshots/catalog_monthly/2024-07.geojson",
+      "sha256": "38897c9d2eeee76ea58c7ba2974c419dda6af3b4eba97fc26eb80500c4744bea"
+    },
+    {
+      "bytes": 155545,
+      "path": "work_artifacts/geonet_temporal_development_v1/source_snapshots/catalog_monthly/2024-08.geojson",
+      "sha256": "83d2ff538d49f1d1efeb2ae9e2959974cb2356e96ea5ac828aced483e8d409cd"
+    },
+    {
+      "bytes": 186163,
+      "path": "work_artifacts/geonet_temporal_development_v1/source_snapshots/catalog_monthly/2024-09.geojson",
+      "sha256": "cb479bbc8127f8ab2fb7d4aa604dad9b16147e0c04dc5fbdf81439ca8c8c4727"
+    },
+    {
+      "bytes": 197061,
+      "path": "work_artifacts/geonet_temporal_development_v1/source_snapshots/catalog_monthly/2024-10.geojson",
+      "sha256": "47c0e400f9fc4f8a97d5da070182067a5722e50d0a547bd7260db8e0987e9860"
+    },
+    {
+      "bytes": 164810,
+      "path": "work_artifacts/geonet_temporal_development_v1/source_snapshots/catalog_monthly/2024-11.geojson",
+      "sha256": "beb35486b18fcd2b330de2f698a8123e50685c906dfe0e08b832ea87fb537220"
+    },
+    {
+      "bytes": 172598,
+      "path": "work_artifacts/geonet_temporal_development_v1/source_snapshots/catalog_monthly/2024-12.geojson",
+      "sha256": "e7a9970bc38ebc69a5f9210ecce4aad01c4525e6c98470843948da11f8dfe7e0"
+    },
+    {
+      "bytes": 191808,
+      "path": "work_artifacts/geonet_temporal_development_v1/source_snapshots/catalog_monthly/2025-01.geojson",
+      "sha256": "230b024b6af83da285052f98cedc20fbeabd350eac303e69ac5885fef8f01d18"
+    },
+    {
+      "bytes": 177841,
+      "path": "work_artifacts/geonet_temporal_development_v1/source_snapshots/catalog_monthly/2025-02.geojson",
+      "sha256": "5f686736a6c66dfcbe17449a401ed81c5806e9bc8cbe9047e8d75c1a4f26f1e9"
+    },
+    {
+      "bytes": 198742,
+      "path": "work_artifacts/geonet_temporal_development_v1/source_snapshots/catalog_monthly/2025-03.geojson",
+      "sha256": "93b25071c34fb6d816a480a421d060a76cd62dbc7c7bf037ad628797b53f776f"
+    },
+    {
+      "bytes": 204236,
+      "path": "work_artifacts/geonet_temporal_development_v1/source_snapshots/catalog_monthly/2025-04.geojson",
+      "sha256": "33ea4af069ce85a41c176bf68e7b33c9d0a390721334af134fd732c03309ba88"
+    },
+    {
+      "bytes": 197910,
+      "path": "work_artifacts/geonet_temporal_development_v1/source_snapshots/catalog_monthly/2025-05.geojson",
+      "sha256": "6d54ad2e1f5afb87ba552df7e51ab02ee0e41e062aa156c33dd30a76d3173b60"
+    },
+    {
+      "bytes": 164440,
+      "path": "work_artifacts/geonet_temporal_development_v1/source_snapshots/catalog_monthly/2025-06.geojson",
+      "sha256": "b7629fc3dc0bd3719cf975a405bac5fbd7c235754ff2ce7e24bea22cf9c94850"
+    },
+    {
+      "bytes": 203468,
+      "path": "work_artifacts/geonet_temporal_development_v1/source_snapshots/catalog_monthly/2025-07.geojson",
+      "sha256": "3134ce394bf542c433a78848ddb337bb93099cd1fc5db79b2413ad2ee977443c"
+    },
+    {
+      "bytes": 102959,
+      "path": "work_artifacts/geonet_temporal_development_v1/source_snapshots/catalog_monthly/2025-08.geojson",
+      "sha256": "b40a5d0e100fab33feda62cad07acccf73ba22696fa2eff23218cac9a24bdc18"
+    },
+    {
+      "bytes": 100910,
+      "path": "work_artifacts/geonet_temporal_development_v1/source_snapshots/catalog_monthly/2025-09.geojson",
+      "sha256": "040d256b7dd67ad619dbe8900660175561a172c38df7e82518e9cbc6093ab8d6"
+    },
+    {
+      "bytes": 181406,
+      "path": "work_artifacts/geonet_temporal_development_v1/source_snapshots/catalog_monthly/2025-10.geojson",
+      "sha256": "c54aafddb29f6684df6e9159f2af76a011b84dcb8d3696b961e41d66ff3eb3e4"
+    },
+    {
+      "bytes": 156901,
+      "path": "work_artifacts/geonet_temporal_development_v1/source_snapshots/catalog_monthly/2025-11.geojson",
+      "sha256": "ca7135ada2d9f3be2e2ba90480f6e154c573d2e36adb7e25975df3b2cb27e26c"
+    },
+    {
+      "bytes": 177503,
+      "path": "work_artifacts/geonet_temporal_development_v1/source_snapshots/catalog_monthly/2025-12.geojson",
+      "sha256": "0d5f2f030573745b7fd3a58ad493d5a1b67e9efb9a1929d3575f3fc6fabf3417"
+    },
+    {
+      "bytes": 182901,
+      "path": "work_artifacts/geonet_temporal_development_v1/source_snapshots/catalog_monthly/2026-01.geojson",
+      "sha256": "eea7f245164fa3eb3f7c692ff336fd5ab2602e5e43c7034fcb74f69aca4cf1da"
+    },
+    {
+      "bytes": 163371,
+      "path": "work_artifacts/geonet_temporal_development_v1/source_snapshots/catalog_monthly/2026-02.geojson",
+      "sha256": "99e10ee63f6c62341db11b9505452e43be2408c65597f54419b2057f83e9e9bd"
+    },
+    {
+      "bytes": 227771,
+      "path": "work_artifacts/geonet_temporal_development_v1/source_snapshots/catalog_monthly/2026-03.geojson",
+      "sha256": "aa0bc708548aea85aed823d7294a05bd5ff7076a131d7abcf7cd47cc2523e0d2"
+    },
+    {
+      "bytes": 236658,
+      "path": "work_artifacts/geonet_temporal_development_v1/source_snapshots/catalog_monthly/2026-04.geojson",
+      "sha256": "c171cfc14689b9824c6bb97870da25630457b726ff49cbfae7ffbddbbc53c8c8"
+    },
+    {
+      "bytes": 225902,
+      "path": "work_artifacts/geonet_temporal_development_v1/source_snapshots/catalog_monthly/2026-05.geojson",
+      "sha256": "751cdf6fb32859a05f1f100a489c2517e43dba3d7b66afe7d82035e71a6bd8da"
+    },
+    {
+      "bytes": 187164,
+      "path": "work_artifacts/geonet_temporal_development_v1/source_snapshots/catalog_monthly/2026-06.geojson",
+      "sha256": "9e6a952a650737fa0fb42fbf62f1bb37f55fdc818f3d885edddc3814b01bd57b"
+    }
+  ],
+  "code_sha256": {
+    "scripts/evaluation/analyze_v27_geonet_continuous_adjudication.py": "96eddb9b7a951b463d8885f24cf0867a27097995d12ac7b0f063e02b5e9561c6",
+    "scripts/evaluation/analyze_v27_geonet_temporal_selection.py": "7dfceeda5f3093004985a1d97d3897743ca59473e23662fcad81136d3b05b2d6",
+    "scripts/evaluation/build_v27_geonet_continuous_review_packet.py": "ceeef19e73a563f08ee9231742299aa31272a42e99ee889261e696a5593043ec",
+    "scripts/evaluation/freeze_v27_geonet_continuous_adjudication_protocol.py": "71a16e1994fe4e95bc2514683011bb9f8bf9d55238a027902465a97eac1a0e26"
+  },
+  "evidence_boundary": {
+    "claim": "Catalog association and a manual-review queue extend the continuous evidence; unresolved candidates are not false-alarm labels.",
+    "manual_cause_labels_available_at_freeze": false,
+    "model_or_threshold_selection_permitted": false,
+    "rescoring_permitted": false,
+    "status": "post_hoc_analysis_of_opened_score_caches"
+  },
+  "execution": {
+    "inference_required": false,
+    "output_root": "work_artifacts/evaluation/cspp_v27_geonet_continuous_adjudication_20260730",
+    "overwrite_permitted": false,
+    "score_cache_access": "read_only"
+  },
+  "frozen_at_utc": "2026-07-30T03:57:27.653388+00:00",
+  "inputs": {
+    "final_background_completion": {
+      "bytes": 10853,
+      "path": "work_artifacts/evaluation/cspp_v27c_geonet_final_20260729/score_cache/background_score_cache_complete.json",
+      "sha256": "c7603a9fd7b5fcd7fb1d650b21553d2f494078bec0ec38746aaa1e24ef2db6e2"
+    },
+    "final_background_objects": {
+      "bytes": 598595,
+      "path": "work_artifacts/geonet_final_holdout_v1/background_waveform_manifest/background_objects.csv",
+      "sha256": "67a40376dc584bcdf431977e94a6c82869d14d8ce78b2b6d62f6a1331e90dc40"
+    },
+    "final_evaluation_protocol": {
+      "bytes": 19444,
+      "path": "work_artifacts/protocol_freeze/cspp_v27c_geonet_final_evaluation_protocol_20260729.json",
+      "sha256": "b7997a0226ac3d7fe2963b3e0957748756a859a52763fb06979620c6b130ef5e"
+    },
+    "temporal_background_completion": {
+      "bytes": 6281,
+      "path": "work_artifacts/geonet_temporal_evaluation_v3/background_score_cache_complete.json",
+      "sha256": "2a23e39c9c78ac5a0a0f81083902a2107e5395781ac0d71c6e3e3fbcdd567e56"
+    },
+    "temporal_background_objects": {
+      "bytes": 377380,
+      "path": "work_artifacts/geonet_temporal_development_v1/background_waveform_manifest/background_objects.csv",
+      "sha256": "8b388b7ddda228a940627e77fdcf923b429244f2d21d076cdcba8e15bf33a4a9"
+    },
+    "temporal_evaluation_protocol": {
+      "bytes": 14853,
+      "path": "workspace/experiments/cspp_v27_geonet_temporal_evaluation_protocol_v3_20260729.json",
+      "sha256": "2b98f6833b90bc62aa44c647be5f16845b376ad7ebee7a3d308d13e67f947047"
+    },
+    "temporal_selection_result": {
+      "bytes": 23222,
+      "path": "work_artifacts/geonet_temporal_evaluation_v3/analysis/selection_result.json",
+      "sha256": "929a85565b70058d26ea18cb9f3531954244dbe6b4260fa6a9027224d5ed0786"
+    }
+  },
+  "manual_review": {
+    "catalog_evidence_hidden_by_default": true,
+    "cause_labels": [
+      "earthquake_phase",
+      "anthropogenic",
+      "instrument_or_communication",
+      "environmental_or_unknown"
+    ],
+    "claim_gate": "No unresolved candidate may be called a false alarm until the exported review CSV is complete and independently audited.",
+    "model_scores_displayed": false,
+    "post_candidate_seconds": 40.0,
+    "pre_candidate_seconds": 20.0,
+    "required_fields": [
+      "cause_label",
+      "confidence",
+      "reviewer",
+      "reviewed_at"
+    ],
+    "review_order": "sha256(candidate_id)"
+  },
+  "network_confirmation": {
+    "estimated_p_window_seconds": 10.0,
+    "minimum_distinct_stations": 3,
+    "role": "secondary_time_coincidence_diagnostic"
+  },
+  "operating_point": {
+    "candidate_threshold": 0.1,
+    "event_threshold": 0.975,
+    "model_key": "C0_seed20261101",
+    "seed": 20261101,
+    "threshold_scan_permitted": false
+  },
+  "protocol_id": "cspp_v27_geonet_continuous_adjudication_v1",
+  "quakeml_snapshots": [
+    {
+      "bytes": 409008,
+      "path": "work_artifacts/geonet_temporal_development_v1/source_snapshots/quakeml/2024p166162.xml",
+      "sha256": "16466bbe52363ca6fdcceaccaa6263fcd99af15dbe98290489684ea31cb23580"
+    },
+    {
+      "bytes": 187014,
+      "path": "work_artifacts/geonet_temporal_development_v1/source_snapshots/quakeml/2024p166893.xml",
+      "sha256": "1f4915000087218ba02ed3c7df39a60d8381816e304710a11f3414b3009a5f68"
+    },
+    {
+      "bytes": 402060,
+      "path": "work_artifacts/geonet_temporal_development_v1/source_snapshots/quakeml/2024p167137.xml",
+      "sha256": "85de55f925b117b8dfaf4f71af2ddf51221d4314f747ef941dff01e2962bf14d"
+    },
+    {
+      "bytes": 291439,
+      "path": "work_artifacts/geonet_temporal_development_v1/source_snapshots/quakeml/2024p170020.xml",
+      "sha256": "01fd077f5ec2d7a5df867b8e94028ce04e3678d39dd93890ff52cd44981c288c"
+    },
+    {
+      "bytes": 465999,
+      "path": "work_artifacts/geonet_temporal_development_v1/source_snapshots/quakeml/2024p202925.xml",
+      "sha256": "e440cf8ef93d5636177cddfdb43f346e0400802f033d384bfe569df709ae4ad1"
+    },
+    {
+      "bytes": 327615,
+      "path": "work_artifacts/geonet_temporal_development_v1/source_snapshots/quakeml/2024p220113.xml",
+      "sha256": "728b26478ab1b075df4515f1a5eb4daf3e2a8fc32d189b1bb37297c638b4c1ce"
+    },
+    {
+      "bytes": 143012,
+      "path": "work_artifacts/geonet_temporal_development_v1/source_snapshots/quakeml/2024p234231.xml",
+      "sha256": "70f9ee51a2ed7de4d06c54a2e6441a4215eda929ba7148a8a04b51b709605d92"
+    },
+    {
+      "bytes": 256077,
+      "path": "work_artifacts/geonet_temporal_development_v1/source_snapshots/quakeml/2024p249286.xml",
+      "sha256": "77db9d1703454e69142406c33b549305615d294577d12c9356d0614e45dbef3a"
+    },
+    {
+      "bytes": 321359,
+      "path": "work_artifacts/geonet_temporal_development_v1/source_snapshots/quakeml/2024p250515.xml",
+      "sha256": "5efb729384982849c2ce7527cec60a3fd3109f568deb4db238a45d0c7a1a2c1b"
+    },
+    {
+      "bytes": 450209,
+      "path": "work_artifacts/geonet_temporal_development_v1/source_snapshots/quakeml/2024p260656.xml",
+      "sha256": "0ef6fce06bf76e01d1cb0bcce2727055666c74521670c86bf94ea0353becbf82"
+    },
+    {
+      "bytes": 246127,
+      "path": "work_artifacts/geonet_temporal_development_v1/source_snapshots/quakeml/2024p268853.xml",
+      "sha256": "e7db3b2010c1f3c2592b405ebf8bfb6a65393b6374f7b54bf250ac95795d893d"
+    },
+    {
+      "bytes": 261613,
+      "path": "work_artifacts/geonet_temporal_development_v1/source_snapshots/quakeml/2024p280440.xml",
+      "sha256": "917a870c7f1dd94783152ecde2a5da2ff5ceb4830d2ba9423484b9bb963d5075"
+    },
+    {
+      "bytes": 370659,
+      "path": "work_artifacts/geonet_temporal_development_v1/source_snapshots/quakeml/2024p288570.xml",
+      "sha256": "3c6d39b154908b10a527641b084609aa5bd1bb7b1d260e5db5d5337e320fbaa6"
+    },
+    {
+      "bytes": 451328,
+      "path": "work_artifacts/geonet_temporal_development_v1/source_snapshots/quakeml/2024p305175.xml",
+      "sha256": "14f58f49059286731530a85ae3744713365c3a27f678d238fb8294db5d898317"
+    },
+    {
+      "bytes": 508986,
+      "path": "work_artifacts/geonet_temporal_development_v1/source_snapshots/quakeml/2024p314478.xml",
+      "sha256": "b6c3e8243b66b69e3382a004a305bca99f3cf837bd00594b19f2b6188bf96f7a"
+    },
+    {
+      "bytes": 445041,
+      "path": "work_artifacts/geonet_temporal_development_v1/source_snapshots/quakeml/2024p317184.xml",
+      "sha256": "9e8e2678fcfa9e6444fdc43c52195a99cde91eb0394a9776efe7e527da46eec8"
+    },
+    {
+      "bytes": 300110,
+      "path": "work_artifacts/geonet_temporal_development_v1/source_snapshots/quakeml/2024p323992.xml",
+      "sha256": "8a11a1fa264600bb1cf482dd0ea523b2a8344582398364f7b13b2a278911bf0b"
+    },
+    {
+      "bytes": 481580,
+      "path": "work_artifacts/geonet_temporal_development_v1/source_snapshots/quakeml/2024p325156.xml",
+      "sha256": "223b17bad47813f6f128f4b997644bc687e0267b0e1d342c309507f374c63309"
+    },
+    {
+      "bytes": 258592,
+      "path": "work_artifacts/geonet_temporal_development_v1/source_snapshots/quakeml/2024p333332.xml",
+      "sha256": "3f4e7f8dfa2c81e3423b4447514512292769297d79923fd5c00fb09d7f74e301"
+    },
+    {
+      "bytes": 254305,
+      "path": "work_artifacts/geonet_temporal_development_v1/source_snapshots/quakeml/2024p336893.xml",
+      "sha256": "b2467764fb3158e185ef6de50c6d34e53f4d16de70398a14f8191d854a5e879c"
+    },
+    {
+      "bytes": 456485,
+      "path": "work_artifacts/geonet_temporal_development_v1/source_snapshots/quakeml/2024p337659.xml",
+      "sha256": "5c827aad1bc819be80f07ede705e7a43e178ba03885f67c225a7dcab2a3676cc"
+    },
+    {
+      "bytes": 478615,
+      "path": "work_artifacts/geonet_temporal_development_v1/source_snapshots/quakeml/2024p363158.xml",
+      "sha256": "0cd6811b7e5ee7185b5d735f7ee599925da1f8ada38983130f0440f05c66865a"
+    },
+    {
+      "bytes": 290357,
+      "path": "work_artifacts/geonet_temporal_development_v1/source_snapshots/quakeml/2024p363447.xml",
+      "sha256": "4f4c151287b219142464f4d867e816f69cbbf6d979681dee56e594c6bfb2f7eb"
+    },
+    {
+      "bytes": 429202,
+      "path": "work_artifacts/geonet_temporal_development_v1/source_snapshots/quakeml/2024p417182.xml",
+      "sha256": "96a8cded38305e0424bcc47ef834b4e03942971bf02a29047083ad9d211875a0"
+    },
+    {
+      "bytes": 386401,
+      "path": "work_artifacts/geonet_temporal_development_v1/source_snapshots/quakeml/2024p417352.xml",
+      "sha256": "fdc2836c5cf03fac2bb0091da1920fa14f9b14c2a0456fb0ec577358e2b5a2c7"
+    },
+    {
+      "bytes": 501133,
+      "path": "work_artifacts/geonet_temporal_development_v1/source_snapshots/quakeml/2024p423234.xml",
+      "sha256": "977f62cfde613c124cef299fe9667b371bca998dffbc66667067eda93c8c8ffe"
+    },
+    {
+      "bytes": 279136,
+      "path": "work_artifacts/geonet_temporal_development_v1/source_snapshots/quakeml/2024p437975.xml",
+      "sha256": "afe06787251f12f412553982e78a4fa27057b4d95cd1f631fea9f2f229d6b2c6"
+    },
+    {
+      "bytes": 340792,
+      "path": "work_artifacts/geonet_temporal_development_v1/source_snapshots/quakeml/2024p443000.xml",
+      "sha256": "55265097b57be1be1a18cef534db8080cd65eddfcd5686436da724d7d05f9ca2"
+    },
+    {
+      "bytes": 409793,
+      "path": "work_artifacts/geonet_temporal_development_v1/source_snapshots/quakeml/2024p455682.xml",
+      "sha256": "d369f37340c1b1303ca279a9e02bee939759c07d2d548b7efc99caf3ee522843"
+    },
+    {
+      "bytes": 308197,
+      "path": "work_artifacts/geonet_temporal_development_v1/source_snapshots/quakeml/2024p486281.xml",
+      "sha256": "1505c8cb46ce39dc28b360ea588abf3072d2587d02d21f1daa56992193a060b8"
+    },
+    {
+      "bytes": 399943,
+      "path": "work_artifacts/geonet_temporal_development_v1/source_snapshots/quakeml/2024p487335.xml",
+      "sha256": "267519fa30df3b14eddacd68579c8b3ae9ed38d9b05f684fc39606e262584541"
+    },
+    {
+      "bytes": 139856,
+      "path": "work_artifacts/geonet_temporal_development_v1/source_snapshots/quakeml/2024p501227.xml",
+      "sha256": "0c66efc9c542d7a73498869c2925614813d98e7b53a945e13837059ac3b9c075"
+    },
+    {
+      "bytes": 302252,
+      "path": "work_artifacts/geonet_temporal_development_v1/source_snapshots/quakeml/2024p504198.xml",
+      "sha256": "d011d16fd4f9df14f904191f4e460461e27c9e3b370456b436202f748be22c95"
+    },
+    {
+      "bytes": 458486,
+      "path": "work_artifacts/geonet_temporal_development_v1/source_snapshots/quakeml/2024p507101.xml",
+      "sha256": "99dbac289de85bd302b66fe068429f62f01bbb08c600f3aa821eacab1e77e88a"
+    },
+    {
+      "bytes": 412698,
+      "path": "work_artifacts/geonet_temporal_development_v1/source_snapshots/quakeml/2024p521345.xml",
+      "sha256": "71ad404e262ff25922fd8a2eb0fee9465943c000f8b9799c765c2b99be47100b"
+    },
+    {
+      "bytes": 321123,
+      "path": "work_artifacts/geonet_temporal_development_v1/source_snapshots/quakeml/2024p534489.xml",
+      "sha256": "fbd8efc58777003042e1c74fc27adf67ba64c8bb1c77834250f38b4018ab6af2"
+    },
+    {
+      "bytes": 387235,
+      "path": "work_artifacts/geonet_temporal_development_v1/source_snapshots/quakeml/2024p545381.xml",
+      "sha256": "6a1019b66a1af58e662a8d351c83e8f87f3c6b6f2dc2187ea7d7108c48c7eafc"
+    },
+    {
+      "bytes": 133315,
+      "path": "work_artifacts/geonet_temporal_development_v1/source_snapshots/quakeml/2024p547378.xml",
+      "sha256": "4bbcfebcf0ffc527d30d055da06076bb07f788328957f3d799c6d0cdd3d9c4ed"
+    },
+    {
+      "bytes": 467979,
+      "path": "work_artifacts/geonet_temporal_development_v1/source_snapshots/quakeml/2024p562375.xml",
+      "sha256": "fa196b39e234c14ac57feee244dc5ffec0a73668aa749f0a5b599a886f90d8bb"
+    },
+    {
+      "bytes": 458744,
+      "path": "work_artifacts/geonet_temporal_development_v1/source_snapshots/quakeml/2024p563326.xml",
+      "sha256": "18a15d0f88b10e78ea16f3ebd62921f820ef9a3432b69c3b2aee5772f78ed113"
+    },
+    {
+      "bytes": 441580,
+      "path": "work_artifacts/geonet_temporal_development_v1/source_snapshots/quakeml/2024p586390.xml",
+      "sha256": "659ed1e5fd437db44eea6855650e68c004f19ae62ae87c1200f452f79b0d227c"
+    },
+    {
+      "bytes": 475793,
+      "path": "work_artifacts/geonet_temporal_development_v1/source_snapshots/quakeml/2024p587797.xml",
+      "sha256": "28bf0483a28ab16a7d56f16b1f1a54f46eeb3f1943d9ed0c0fd9b59d1ad99a2b"
+    },
+    {
+      "bytes": 155182,
+      "path": "work_artifacts/geonet_temporal_development_v1/source_snapshots/quakeml/2024p614654.xml",
+      "sha256": "9159164311fe5494ee4495f356c8d12e7ce67652fb1eb4e41d2b3045668088f4"
+    },
+    {
+      "bytes": 358683,
+      "path": "work_artifacts/geonet_temporal_development_v1/source_snapshots/quakeml/2024p619466.xml",
+      "sha256": "6be7d2d10b1aa8d2d2c628ab5cca26b28a1cf822e85d992c09575d677d6bb426"
+    },
+    {
+      "bytes": 333602,
+      "path": "work_artifacts/geonet_temporal_development_v1/source_snapshots/quakeml/2024p623901.xml",
+      "sha256": "9bf59352981bd5a8465373ed62c13dc460833ba4a9d6f55bf01171862fab77b8"
+    },
+    {
+      "bytes": 430918,
+      "path": "work_artifacts/geonet_temporal_development_v1/source_snapshots/quakeml/2024p671044.xml",
+      "sha256": "b510aa6b833433286d0d92b1fe271ef9c1ae502fab9836016bf88f7fda8636f4"
+    },
+    {
+      "bytes": 275252,
+      "path": "work_artifacts/geonet_temporal_development_v1/source_snapshots/quakeml/2024p682820.xml",
+      "sha256": "006fd87f71b104fcdddb850185ddc87b79f2362d52f0a2aa5662ec21474534be"
+    },
+    {
+      "bytes": 355060,
+      "path": "work_artifacts/geonet_temporal_development_v1/source_snapshots/quakeml/2024p684268.xml",
+      "sha256": "414ebc37abd8e3c56020b141dd87d7a3e1bf3086f1371cf4f8f53dd87e13b12b"
+    },
+    {
+      "bytes": 369713,
+      "path": "work_artifacts/geonet_temporal_development_v1/source_snapshots/quakeml/2024p690289.xml",
+      "sha256": "17efe210ea9bfda300eb03a0d3cd0086ba4d281863994c7b52a7cfd8f3ce85b9"
+    },
+    {
+      "bytes": 108826,
+      "path": "work_artifacts/geonet_temporal_development_v1/source_snapshots/quakeml/2024p709862.xml",
+      "sha256": "a8f04b40a243bad76c2779c9d7cb09535d3c30d5624647f4becd905f0fe8b634"
+    },
+    {
+      "bytes": 348629,
+      "path": "work_artifacts/geonet_temporal_development_v1/source_snapshots/quakeml/2024p721311.xml",
+      "sha256": "8d410cf8cf8fdbe4f73bc70a245e5c7a0808265eac40607432b813d921daa7ad"
+    },
+    {
+      "bytes": 475809,
+      "path": "work_artifacts/geonet_temporal_development_v1/source_snapshots/quakeml/2024p741084.xml",
+      "sha256": "d35d4ec7a2cb708514340cd51962f235fe0dc149f5a35072a0e094c2b6d518ad"
+    },
+    {
+      "bytes": 409303,
+      "path": "work_artifacts/geonet_temporal_development_v1/source_snapshots/quakeml/2024p747999.xml",
+      "sha256": "a657f913f88737f5420871f31587e2adcba4db0063303d596e831b0ba931a807"
+    },
+    {
+      "bytes": 538952,
+      "path": "work_artifacts/geonet_temporal_development_v1/source_snapshots/quakeml/2024p753169.xml",
+      "sha256": "3291ddb029b36bfc486e34259ef6a58dd02906938a38960d8f74c97852980096"
+    },
+    {
+      "bytes": 439707,
+      "path": "work_artifacts/geonet_temporal_development_v1/source_snapshots/quakeml/2024p755216.xml",
+      "sha256": "6ecbd2bb9a4c5dafbc28b0472537a8f755552fe33e475421e237811b758ed8eb"
+    },
+    {
+      "bytes": 61809,
+      "path": "work_artifacts/geonet_temporal_development_v1/source_snapshots/quakeml/2024p767889.xml",
+      "sha256": "130b483ceab46e7f74491698bfe8e6c9a4faf4ced091b7f405e3b3d89f474d61"
+    },
+    {
+      "bytes": 229451,
+      "path": "work_artifacts/geonet_temporal_development_v1/source_snapshots/quakeml/2024p774519.xml",
+      "sha256": "0233409698a8bbdc740756d52cfd509e1dc8c8fa9344b7bcea94be3d3570d53b"
+    },
+    {
+      "bytes": 267245,
+      "path": "work_artifacts/geonet_temporal_development_v1/source_snapshots/quakeml/2024p776722.xml",
+      "sha256": "fbab95d98229398dd1245cb5d111d574c7a4bd64a0e0451c0199e2534c9e2695"
+    },
+    {
+      "bytes": 458679,
+      "path": "work_artifacts/geonet_temporal_development_v1/source_snapshots/quakeml/2024p777480.xml",
+      "sha256": "0e07edefcbf1b12646ab53ece9c3dfe8fb606aa9fd8c6a87581575b272814fd6"
+    },
+    {
+      "bytes": 482606,
+      "path": "work_artifacts/geonet_temporal_development_v1/source_snapshots/quakeml/2024p783455.xml",
+      "sha256": "b6b494179c049cc2a93097717d2e251807bbc9a1fe359435a5caad6718683dab"
+    },
+    {
+      "bytes": 309963,
+      "path": "work_artifacts/geonet_temporal_development_v1/source_snapshots/quakeml/2024p789615.xml",
+      "sha256": "914e7b0b621859b127458b3251e8df6c31bbfee4cb479aa61416607c95733f79"
+    },
+    {
+      "bytes": 453825,
+      "path": "work_artifacts/geonet_temporal_development_v1/source_snapshots/quakeml/2024p790274.xml",
+      "sha256": "4280262785978d6541657667285e26b65623f1be6e8df75cb0e1e3df160879b4"
+    },
+    {
+      "bytes": 386159,
+      "path": "work_artifacts/geonet_temporal_development_v1/source_snapshots/quakeml/2024p826439.xml",
+      "sha256": "b239fdae5a2cdea160a750275cd45cecb981c00b2a681a96efa70760b49a94b4"
+    },
+    {
+      "bytes": 373633,
+      "path": "work_artifacts/geonet_temporal_development_v1/source_snapshots/quakeml/2024p829895.xml",
+      "sha256": "33f3b3f0e8f88ffed58b3bf2bd0d69126192cb9a67d0e7304f22a93ab7bc2fb1"
+    },
+    {
+      "bytes": 464339,
+      "path": "work_artifacts/geonet_temporal_development_v1/source_snapshots/quakeml/2024p832767.xml",
+      "sha256": "f0bf8f0c5bbbaa0edcbcfc75e434d6af0a91d258cc5de412da47fc62b3193f56"
+    },
+    {
+      "bytes": 292108,
+      "path": "work_artifacts/geonet_temporal_development_v1/source_snapshots/quakeml/2024p855080.xml",
+      "sha256": "53c96e97054facd2331c9c07332b8939961a8bfec983fff9db858c65f8cb6cb4"
+    },
+    {
+      "bytes": 161278,
+      "path": "work_artifacts/geonet_temporal_development_v1/source_snapshots/quakeml/2024p868775.xml",
+      "sha256": "dff8f36350047e0ec47b0efd195f1fa07d817294e9909f25c75851246a72795d"
+    },
+    {
+      "bytes": 380832,
+      "path": "work_artifacts/geonet_temporal_development_v1/source_snapshots/quakeml/2024p872914.xml",
+      "sha256": "068a26db47e7bb317a72fcd48033aafebe2ecd4ee1e54f71f406ba5b88671775"
+    },
+    {
+      "bytes": 430652,
+      "path": "work_artifacts/geonet_temporal_development_v1/source_snapshots/quakeml/2024p879632.xml",
+      "sha256": "4a6f63113a9fd12a5458b1868bf9800ea6558493709e2af08e623248e3c24251"
+    },
+    {
+      "bytes": 520694,
+      "path": "work_artifacts/geonet_temporal_development_v1/source_snapshots/quakeml/2024p893554.xml",
+      "sha256": "fed17521f92a29349594de481828d7cb513fe48cf40cef26c8e90a2898d71fa8"
+    },
+    {
+      "bytes": 215112,
+      "path": "work_artifacts/geonet_temporal_development_v1/source_snapshots/quakeml/2024p894425.xml",
+      "sha256": "3d0434b2ab408f55f56018d5e095496d3a72b672b4d35f6446aee0aab6fa92dd"
+    },
+    {
+      "bytes": 542306,
+      "path": "work_artifacts/geonet_temporal_development_v1/source_snapshots/quakeml/2024p897079.xml",
+      "sha256": "78cd0763c13a7393c3524ce942b361fd353e8f4f0010ba9614f3aacc9fb1ad32"
+    },
+    {
+      "bytes": 76714,
+      "path": "work_artifacts/geonet_temporal_development_v1/source_snapshots/quakeml/2024p909021.xml",
+      "sha256": "9d32776d52ad05ca0ab3631ac433e69aec05abf6dd848c60af1fb5256b90442f"
+    },
+    {
+      "bytes": 284882,
+      "path": "work_artifacts/geonet_temporal_development_v1/source_snapshots/quakeml/2024p926442.xml",
+      "sha256": "d53aee8b3556eb90e117e46d81ff660797c60f77c339fb1b52c9ce6520c49f22"
+    },
+    {
+      "bytes": 500406,
+      "path": "work_artifacts/geonet_temporal_development_v1/source_snapshots/quakeml/2024p941705.xml",
+      "sha256": "a89fcdfd75d75236e47936cfd21fc19a3443ecc801809c5f362b2ebc8f5a2ed1"
+    },
+    {
+      "bytes": 283173,
+      "path": "work_artifacts/geonet_temporal_development_v1/source_snapshots/quakeml/2024p945089.xml",
+      "sha256": "c036f011b537cbf50130b62169cf82ad9f05271f990502140673601460c9221c"
+    },
+    {
+      "bytes": 411719,
+      "path": "work_artifacts/geonet_temporal_development_v1/source_snapshots/quakeml/2024p948456.xml",
+      "sha256": "8a14402508945b14117d5d99359fcbbbe60a0d02171e5033620775e3ca54ce32"
+    },
+    {
+      "bytes": 399733,
+      "path": "work_artifacts/geonet_temporal_development_v1/source_snapshots/quakeml/2024p949173.xml",
+      "sha256": "88cdbd690750f5a635708e3a29aac2bddb96d05c160d8f64a5bfc9b456c1f8af"
+    },
+    {
+      "bytes": 479304,
+      "path": "work_artifacts/geonet_temporal_development_v1/source_snapshots/quakeml/2024p950420.xml",
+      "sha256": "c7a295f49b1a4c698ed4554417cfadd463c25e18f397c80939235acce0273736"
+    },
+    {
+      "bytes": 351891,
+      "path": "work_artifacts/geonet_temporal_development_v1/source_snapshots/quakeml/2024p954889.xml",
+      "sha256": "a8bd57e6448fe6f8dab9bf506036ec92d52a243fd443275eb3a488fe7790e1bc"
+    },
+    {
+      "bytes": 421065,
+      "path": "work_artifacts/geonet_temporal_development_v1/source_snapshots/quakeml/2024p957808.xml",
+      "sha256": "10583aefd7e4595fea75d95594f37cf5bbff632281fccbde7121964418e525ca"
+    },
+    {
+      "bytes": 138245,
+      "path": "work_artifacts/geonet_temporal_development_v1/source_snapshots/quakeml/2024p957810.xml",
+      "sha256": "14cc08496c34bb18699fc890dec232d5b99240673c06e4eaa4bab8c992252d92"
+    },
+    {
+      "bytes": 461117,
+      "path": "work_artifacts/geonet_temporal_development_v1/source_snapshots/quakeml/2024p966989.xml",
+      "sha256": "e665d12e41ad737cc2a11e23720f3998d73ee7109b679f9e30a400bf62ef034e"
+    },
+    {
+      "bytes": 428388,
+      "path": "work_artifacts/geonet_temporal_development_v1/source_snapshots/quakeml/2024p969387.xml",
+      "sha256": "ff0a784d1ef6f30a43f8c1955af7ae6c766b711c2fe9cd25d929b019638fd909"
+    },
+    {
+      "bytes": 198956,
+      "path": "work_artifacts/geonet_temporal_development_v1/source_snapshots/quakeml/2025p001858.xml",
+      "sha256": "aef1710ba4287d0c579a94dd873768b056fb58ac50a2c5a5fc685cebb73bd9d8"
+    },
+    {
+      "bytes": 419522,
+      "path": "work_artifacts/geonet_temporal_development_v1/source_snapshots/quakeml/2025p012924.xml",
+      "sha256": "0f5ae94756913f5cd19e70d45f685894ad3c58d8ac621b7178ba67bca075c7b8"
+    },
+    {
+      "bytes": 380981,
+      "path": "work_artifacts/geonet_temporal_development_v1/source_snapshots/quakeml/2025p013532.xml",
+      "sha256": "39ca76265562f402cd9bc5b0338bbf50f736794482685443d6a364051ac8a9d0"
+    },
+    {
+      "bytes": 326023,
+      "path": "work_artifacts/geonet_temporal_development_v1/source_snapshots/quakeml/2025p067268.xml",
+      "sha256": "7ed5996677cb54a4a9c62c12a3a8194b33a13afb81c91ce39d16f74814e0b0ed"
+    },
+    {
+      "bytes": 539822,
+      "path": "work_artifacts/geonet_temporal_development_v1/source_snapshots/quakeml/2025p074148.xml",
+      "sha256": "9f81eb624d2cb91b03b0546bdef97dec499e931d0ab70ebb55ae8b37369e18e9"
+    },
+    {
+      "bytes": 546529,
+      "path": "work_artifacts/geonet_temporal_development_v1/source_snapshots/quakeml/2025p084847.xml",
+      "sha256": "3cfab7363e1b9af9040d24924565e98f46b7c438dca788ebb881dc0402446acf"
+    },
+    {
+      "bytes": 235676,
+      "path": "work_artifacts/geonet_temporal_development_v1/source_snapshots/quakeml/2025p096209.xml",
+      "sha256": "f74ef13c943c8897ee7a3613eff93a786d4a1f7232b4edea9b63696a61db6347"
+    },
+    {
+      "bytes": 397044,
+      "path": "work_artifacts/geonet_temporal_development_v1/source_snapshots/quakeml/2025p100401.xml",
+      "sha256": "bc8251dd152b132ec3ed6ee1282b68d5f114ecfd280ab37cfd80f0337876a33a"
+    },
+    {
+      "bytes": 356581,
+      "path": "work_artifacts/geonet_temporal_development_v1/source_snapshots/quakeml/2025p100802.xml",
+      "sha256": "5f1db1fbc0e989dd1bc86292e5fc2a63a520e5b436a83649d305a6c27886037e"
+    },
+    {
+      "bytes": 417046,
+      "path": "work_artifacts/geonet_temporal_development_v1/source_snapshots/quakeml/2025p109380.xml",
+      "sha256": "18c1e63d02a48fabaee705c9a3d834be0a8678962d8376c9094f801a1e40285b"
+    },
+    {
+      "bytes": 478304,
+      "path": "work_artifacts/geonet_temporal_development_v1/source_snapshots/quakeml/2025p120848.xml",
+      "sha256": "76187dd8ffaf2897dd922cdf51151abcec81f3765dcc5769f7567f542997ec4b"
+    },
+    {
+      "bytes": 235968,
+      "path": "work_artifacts/geonet_temporal_development_v1/source_snapshots/quakeml/2025p128028.xml",
+      "sha256": "b9856574eb3ee5b49726bdc33e2ff774b0e82ddbea8df7ecf102526578eb1ce8"
+    },
+    {
+      "bytes": 185358,
+      "path": "work_artifacts/geonet_temporal_development_v1/source_snapshots/quakeml/2025p147831.xml",
+      "sha256": "68ef3902a899c86d70c917062913dc5cad4fdb24d7ffadd4bf2ff4d5e4ec6358"
+    },
+    {
+      "bytes": 210753,
+      "path": "work_artifacts/geonet_temporal_development_v1/source_snapshots/quakeml/2025p148017.xml",
+      "sha256": "78633cd945a8eb94276cae684e6d8954e15e5f7e243c97b3a3b7a55ba90f4ea6"
+    },
+    {
+      "bytes": 108327,
+      "path": "work_artifacts/geonet_temporal_development_v1/source_snapshots/quakeml/2025p148134.xml",
+      "sha256": "9734099e6ce349490f482120a872efa45f987d849b8d1c2bf37f47225b1a03a7"
+    },
+    {
+      "bytes": 209473,
+      "path": "work_artifacts/geonet_temporal_development_v1/source_snapshots/quakeml/2025p150730.xml",
+      "sha256": "36f85c086c684e46b2deab14d5165c393a9be9eee8562c49b73636324bc5223c"
+    },
+    {
+      "bytes": 358005,
+      "path": "work_artifacts/geonet_temporal_development_v1/source_snapshots/quakeml/2025p154105.xml",
+      "sha256": "4359a065c99738e8567d7b3298d639769319cd83ae3e5776779de99ba3f6560f"
+    },
+    {
+      "bytes": 129185,
+      "path": "work_artifacts/geonet_temporal_development_v1/source_snapshots/quakeml/2025p158445.xml",
+      "sha256": "1822b977209e30fa19d43bf2a277d49be33bfdee6b26789d70b17f49041b01a2"
+    },
+    {
+      "bytes": 144323,
+      "path": "work_artifacts/geonet_temporal_development_v1/source_snapshots/quakeml/2025p164043.xml",
+      "sha256": "0a32a8f9b3c403aca92560cd45b006fe637241431cfc81c9029e315aa58e437e"
+    },
+    {
+      "bytes": 346024,
+      "path": "work_artifacts/geonet_temporal_development_v1/source_snapshots/quakeml/2025p167893.xml",
+      "sha256": "eb37994c51c0738d92702d8fb8e7b5adb42f6cdbc4f596763dc03ded2bdd1169"
+    },
+    {
+      "bytes": 370504,
+      "path": "work_artifacts/geonet_temporal_development_v1/source_snapshots/quakeml/2025p172270.xml",
+      "sha256": "62d09635e2440da5319e2ed49212e64867047a601d59fc97136b6506b4a048c4"
+    },
+    {
+      "bytes": 212476,
+      "path": "work_artifacts/geonet_temporal_development_v1/source_snapshots/quakeml/2025p172367.xml",
+      "sha256": "ef091d4d49f9fcac05b0efac1a4360ae6c7ed86a8edb6ed6b8e30b6f8e842b01"
+    },
+    {
+      "bytes": 237749,
+      "path": "work_artifacts/geonet_temporal_development_v1/source_snapshots/quakeml/2025p172389.xml",
+      "sha256": "b04efcd931130e4c64bce56c02bff265f5ef193f1db309a63160fbfbf9e8fa6d"
+    },
+    {
+      "bytes": 452971,
+      "path": "work_artifacts/geonet_temporal_development_v1/source_snapshots/quakeml/2025p174475.xml",
+      "sha256": "aaeda767bdab02ef1811116db5f90f2da5a7902486ac4ce54767e84f3c5fe58b"
+    },
+    {
+      "bytes": 174351,
+      "path": "work_artifacts/geonet_temporal_development_v1/source_snapshots/quakeml/2025p177478.xml",
+      "sha256": "b4267dabf08c31a8561dfaa0b7f4b2fe27f2016c47e926f8104bbd11ab435b20"
+    },
+    {
+      "bytes": 334577,
+      "path": "work_artifacts/geonet_temporal_development_v1/source_snapshots/quakeml/2025p177749.xml",
+      "sha256": "08aea671980a7edfef5b96215dc86c58bde100ea85bfe9d41cfaa4e853df118d"
+    },
+    {
+      "bytes": 167318,
+      "path": "work_artifacts/geonet_temporal_development_v1/source_snapshots/quakeml/2025p186425.xml",
+      "sha256": "cd65ed181d2169d151d476104359f626493178d39a13f399b28db703df94f741"
+    },
+    {
+      "bytes": 523592,
+      "path": "work_artifacts/geonet_temporal_development_v1/source_snapshots/quakeml/2025p197049.xml",
+      "sha256": "62741a2eb7ae2b787201307dc5c5a4febd2f98bc62f1babdb4c2ddd7367a77b1"
+    },
+    {
+      "bytes": 403003,
+      "path": "work_artifacts/geonet_temporal_development_v1/source_snapshots/quakeml/2025p203023.xml",
+      "sha256": "29fb32c76367c84c8435acd3c31333de48607373d50ae119279e039aaf00cf6b"
+    },
+    {
+      "bytes": 248390,
+      "path": "work_artifacts/geonet_temporal_development_v1/source_snapshots/quakeml/2025p212997.xml",
+      "sha256": "07a0b577099bb128ee2a52cde75d49385a83016537c6d609380e90860f0b4aef"
+    },
+    {
+      "bytes": 87679,
+      "path": "work_artifacts/geonet_temporal_development_v1/source_snapshots/quakeml/2025p215587.xml",
+      "sha256": "1e23c34b14b9016e7cfabb400f287611c5dbebc82bde90510df9372e792a0da3"
+    },
+    {
+      "bytes": 533404,
+      "path": "work_artifacts/geonet_temporal_development_v1/source_snapshots/quakeml/2025p224518.xml",
+      "sha256": "06ff44cce64f9f270fa6f70c8056af5f6bbba4ec8d73101ccebf331ceacc669d"
+    },
+    {
+      "bytes": 121442,
+      "path": "work_artifacts/geonet_temporal_development_v1/source_snapshots/quakeml/2025p224561.xml",
+      "sha256": "703124e1a9b083b6bd328409b21f6fc026e0748d608557cbd66ea49b1de57362"
+    },
+    {
+      "bytes": 348417,
+      "path": "work_artifacts/geonet_temporal_development_v1/source_snapshots/quakeml/2025p224655.xml",
+      "sha256": "872107f646e540d05b9b02612a32197abaa6f7c1df1d24581925a313943bab68"
+    },
+    {
+      "bytes": 85333,
+      "path": "work_artifacts/geonet_temporal_development_v1/source_snapshots/quakeml/2025p224676.xml",
+      "sha256": "8c8f9575454eb8dfc5a1595d84c87a82cef9cb01bd6492b785046352d746b395"
+    },
+    {
+      "bytes": 120281,
+      "path": "work_artifacts/geonet_temporal_development_v1/source_snapshots/quakeml/2025p224804.xml",
+      "sha256": "0452682d6ebd49c920850fbbeade94be6751dead80bebb4f175ceaa7fe436009"
+    },
+    {
+      "bytes": 341496,
+      "path": "work_artifacts/geonet_temporal_development_v1/source_snapshots/quakeml/2025p225346.xml",
+      "sha256": "9b41b719ee5be7877bc068c40fdfb6d50781b33735d21392f753e006b7f38d32"
+    },
+    {
+      "bytes": 456251,
+      "path": "work_artifacts/geonet_temporal_development_v1/source_snapshots/quakeml/2025p226688.xml",
+      "sha256": "bb1485554d9291a8e78c8e1d33edf8249cce9990e5a5c38b06c1acd1d475f20a"
+    },
+    {
+      "bytes": 443618,
+      "path": "work_artifacts/geonet_temporal_development_v1/source_snapshots/quakeml/2025p232432.xml",
+      "sha256": "5ff46d851c11d58b31f9a9b83f3ced5b05fb59a1346a0bcb49d2cc67c7ed3078"
+    },
+    {
+      "bytes": 157144,
+      "path": "work_artifacts/geonet_temporal_development_v1/source_snapshots/quakeml/2025p234482.xml",
+      "sha256": "3484890ea46e2dcbfd3bab2a9eb8a3df24b3f5b5025d22846fcbbd0449fc5270"
+    },
+    {
+      "bytes": 130624,
+      "path": "work_artifacts/geonet_temporal_development_v1/source_snapshots/quakeml/2025p251271.xml",
+      "sha256": "de8bfe3d61395b838b8dc43d732ae75920b019b1e7d70f7c76d4da0b0c79c1a6"
+    },
+    {
+      "bytes": 507479,
+      "path": "work_artifacts/geonet_temporal_development_v1/source_snapshots/quakeml/2025p257989.xml",
+      "sha256": "a863e6f13ff498e66be895833911e03ef6c042845b457ed2d059bcda8b00d0a4"
+    },
+    {
+      "bytes": 408638,
+      "path": "work_artifacts/geonet_temporal_development_v1/source_snapshots/quakeml/2025p258138.xml",
+      "sha256": "fd8dde6e2f00535424c0e5d00bd49948bd75050046579637823fb168abcf31cb"
+    },
+    {
+      "bytes": 381438,
+      "path": "work_artifacts/geonet_temporal_development_v1/source_snapshots/quakeml/2025p259213.xml",
+      "sha256": "a90d519905e67ee467802b73e06f3d71c84dd4287323a3217b6ee7c7f06fb20f"
+    },
+    {
+      "bytes": 494519,
+      "path": "work_artifacts/geonet_temporal_development_v1/source_snapshots/quakeml/2025p278838.xml",
+      "sha256": "1b57f561096af8cd84221fff6b1d0a41d942f714ace05359e4b4195631b0ad6d"
+    },
+    {
+      "bytes": 354817,
+      "path": "work_artifacts/geonet_temporal_development_v1/source_snapshots/quakeml/2025p283258.xml",
+      "sha256": "22e772cd4156b41c7a6d448bf79c67b8f2d3a1b0b7f2cfe7503ebb6f52d01a68"
+    },
+    {
+      "bytes": 418678,
+      "path": "work_artifacts/geonet_temporal_development_v1/source_snapshots/quakeml/2025p304031.xml",
+      "sha256": "7969e63b5329ce7184dc5eeaff1576c058209f92f1b9f121d5c142fafbea0415"
+    },
+    {
+      "bytes": 451234,
+      "path": "work_artifacts/geonet_temporal_development_v1/source_snapshots/quakeml/2025p309778.xml",
+      "sha256": "6e2ac7a42e25a1681897c5620923c804119e09994beaad296c0848ba29a541e2"
+    },
+    {
+      "bytes": 430187,
+      "path": "work_artifacts/geonet_temporal_development_v1/source_snapshots/quakeml/2025p314226.xml",
+      "sha256": "39cf98d1b5926d78e3dab630a48645ab914acab8989061b300ea96ff83f2a30c"
+    },
+    {
+      "bytes": 196687,
+      "path": "work_artifacts/geonet_temporal_development_v1/source_snapshots/quakeml/2025p315610.xml",
+      "sha256": "52b06fd368f99ea58b51a858238709ee57d897aa020e6ff7c3a1fc452f50e861"
+    },
+    {
+      "bytes": 407484,
+      "path": "work_artifacts/geonet_temporal_development_v1/source_snapshots/quakeml/2025p335729.xml",
+      "sha256": "87d0cac2ad63f16785c0b19f229a5d91ce51bd2cd1fd7709036dadfe7f3631a3"
+    },
+    {
+      "bytes": 205700,
+      "path": "work_artifacts/geonet_temporal_development_v1/source_snapshots/quakeml/2025p346479.xml",
+      "sha256": "0bcc0927d1b4c12b2f09ca49bf944d1df8fb8a33b590f2fb2e7a2e3e360d8c6d"
+    },
+    {
+      "bytes": 296164,
+      "path": "work_artifacts/geonet_temporal_development_v1/source_snapshots/quakeml/2025p370403.xml",
+      "sha256": "03a6cf8ca7ba0961d31f6c4324cd04a53cb2c63fa660a921837fd4e6be20e160"
+    },
+    {
+      "bytes": 484673,
+      "path": "work_artifacts/geonet_temporal_development_v1/source_snapshots/quakeml/2025p381170.xml",
+      "sha256": "b5e73b0f010a2183683750eea15b0fe06ea15eec00a1d40d95e36200e9bdf3c5"
+    },
+    {
+      "bytes": 345356,
+      "path": "work_artifacts/geonet_temporal_development_v1/source_snapshots/quakeml/2025p403195.xml",
+      "sha256": "400f42c57796a7b73482f18f7ed22d6dfa2751c0ae31f7f7fe00abc560f880fb"
+    },
+    {
+      "bytes": 456589,
+      "path": "work_artifacts/geonet_temporal_development_v1/source_snapshots/quakeml/2025p409559.xml",
+      "sha256": "d5b370eb9b14b5eab6664cadd7b318057f76cc1db91cf50492badfc2428f0bfd"
+    },
+    {
+      "bytes": 288246,
+      "path": "work_artifacts/geonet_temporal_development_v1/source_snapshots/quakeml/2025p413627.xml",
+      "sha256": "5d4166aa23089f4ca7eba1c1e85904e0487649e0d557aa219eebede73baa2d40"
+    },
+    {
+      "bytes": 363315,
+      "path": "work_artifacts/geonet_temporal_development_v1/source_snapshots/quakeml/2025p415643.xml",
+      "sha256": "d01ca88770a8752c42686fe62184078c4946e51bf7e0b188f43d17792f5566cb"
+    },
+    {
+      "bytes": 455156,
+      "path": "work_artifacts/geonet_temporal_development_v1/source_snapshots/quakeml/2025p438696.xml",
+      "sha256": "8a61496e87591f4d37521aa7ca1ef8d95b6ca22f4b06a5e9b7868a215207c3b0"
+    },
+    {
+      "bytes": 187543,
+      "path": "work_artifacts/geonet_temporal_development_v1/source_snapshots/quakeml/2025p451683.xml",
+      "sha256": "78b2a335b51604f94560f90aa5b22c1c7800958c1c851dc6c139fb0d0e9b5657"
+    },
+    {
+      "bytes": 172368,
+      "path": "work_artifacts/geonet_temporal_development_v1/source_snapshots/quakeml/2025p462035.xml",
+      "sha256": "eb6c23e2ac2aefec636f87e56434d62ddea43a3e0683dad67a3367a2caa7ff7b"
+    },
+    {
+      "bytes": 124604,
+      "path": "work_artifacts/geonet_temporal_development_v1/source_snapshots/quakeml/2025p469890.xml",
+      "sha256": "4cea59f6454b6bd9e8eb7aa27ec98a0f8fd29deae1edf1407d9bfa3bf31ce6d7"
+    },
+    {
+      "bytes": 207230,
+      "path": "work_artifacts/geonet_temporal_development_v1/source_snapshots/quakeml/2025p491062.xml",
+      "sha256": "33ec8e38a2d42af0d5d6d510bade7282b6f74acf17a34cf2eb6cb8aaeeb42da1"
+    },
+    {
+      "bytes": 599227,
+      "path": "work_artifacts/geonet_temporal_development_v1/source_snapshots/quakeml/2025p506857.xml",
+      "sha256": "464b4d685691d0466f58a3672cba7eccdf5dcd9c11544efbf0dfa1013ef4f1b8"
+    },
+    {
+      "bytes": 84727,
+      "path": "work_artifacts/geonet_temporal_development_v1/source_snapshots/quakeml/2025p507113.xml",
+      "sha256": "4f5e590c2b1d2338051d633c2389a044d23ed1a3fc4d17b5386d92be9f12f776"
+    },
+    {
+      "bytes": 112281,
+      "path": "work_artifacts/geonet_temporal_development_v1/source_snapshots/quakeml/2025p511438.xml",
+      "sha256": "d21eee97d5775ea8bb434e60dc19167d1b75ad92b061093502036e26b6d45cad"
+    },
+    {
+      "bytes": 291754,
+      "path": "work_artifacts/geonet_temporal_development_v1/source_snapshots/quakeml/2025p513418.xml",
+      "sha256": "2e9e44bcd9f65f52a88d177ffbf7dceb57b1c56038f9640b5e4dd6dd42e18196"
+    },
+    {
+      "bytes": 313544,
+      "path": "work_artifacts/geonet_temporal_development_v1/source_snapshots/quakeml/2025p513471.xml",
+      "sha256": "0abc8ac2c29c2ca37083cf86058bbb7cc5a172e4a496b9469f834713c55a73c2"
+    },
+    {
+      "bytes": 140062,
+      "path": "work_artifacts/geonet_temporal_development_v1/source_snapshots/quakeml/2025p519931.xml",
+      "sha256": "87e5f79b777d25bbc0bc016010f1798eba8048694d6357d7ceb566a0785a5668"
+    },
+    {
+      "bytes": 98413,
+      "path": "work_artifacts/geonet_temporal_development_v1/source_snapshots/quakeml/2025p529014.xml",
+      "sha256": "cccd478978065ca72603fe3a4c7a9cc8aceca11cb9635204a2672a2f94271457"
+    },
+    {
+      "bytes": 473397,
+      "path": "work_artifacts/geonet_temporal_development_v1/source_snapshots/quakeml/2025p536375.xml",
+      "sha256": "b3fd25f714c9aca0d086cfa892a59d3bcd0995441398f7393c7f3bb4b6b10a35"
+    },
+    {
+      "bytes": 210552,
+      "path": "work_artifacts/geonet_temporal_development_v1/source_snapshots/quakeml/2025p540125.xml",
+      "sha256": "923d180efd24f7422af8b43ab2643eb9abd3d717983fda87400320b19c1b3346"
+    },
+    {
+      "bytes": 200886,
+      "path": "work_artifacts/geonet_temporal_development_v1/source_snapshots/quakeml/2025p545767.xml",
+      "sha256": "044f63276e82b7039ab23889114e02680f407cc2e461484fe574221f459d32a5"
+    },
+    {
+      "bytes": 182731,
+      "path": "work_artifacts/geonet_temporal_development_v1/source_snapshots/quakeml/2025p552868.xml",
+      "sha256": "950c7de8ab906cd295e924ebf00d6e70a272df6428cfb9efd633e7894d42e970"
+    },
+    {
+      "bytes": 344125,
+      "path": "work_artifacts/geonet_temporal_development_v1/source_snapshots/quakeml/2025p554537.xml",
+      "sha256": "6d1cfeefe5978dc107999f7867b9f8e4d1061d614b770d533bde5a0a49e12439"
+    },
+    {
+      "bytes": 370628,
+      "path": "work_artifacts/geonet_temporal_development_v1/source_snapshots/quakeml/2025p560269.xml",
+      "sha256": "09b8098ae8a28a10a422301fde6212d988ab3b80b42a32d5a83593c72a37f6ce"
+    },
+    {
+      "bytes": 370394,
+      "path": "work_artifacts/geonet_temporal_development_v1/source_snapshots/quakeml/2025p561037.xml",
+      "sha256": "e8c8e811af81d0a38176b8ee3aedc159d1d917d3d20d5f1b563f090fcb293d59"
+    },
+    {
+      "bytes": 147193,
+      "path": "work_artifacts/geonet_temporal_development_v1/source_snapshots/quakeml/2025p562289.xml",
+      "sha256": "fc0a639a65cd3cd7629d57d1cc5e805c64226a4bd1ee411eddc9e345a0d61488"
+    },
+    {
+      "bytes": 430763,
+      "path": "work_artifacts/geonet_temporal_development_v1/source_snapshots/quakeml/2025p568181.xml",
+      "sha256": "85d49850ec49dabb2caaf61ca3dd9652c0107749657305bb241060c972e47028"
+    },
+    {
+      "bytes": 343145,
+      "path": "work_artifacts/geonet_temporal_development_v1/source_snapshots/quakeml/2025p579756.xml",
+      "sha256": "829be3fb14df726237bca94837d36bb6429fac26260a8ebc7b811cd25f84ce15"
+    },
+    {
+      "bytes": 342306,
+      "path": "work_artifacts/geonet_temporal_development_v1/source_snapshots/quakeml/2025p579772.xml",
+      "sha256": "9b6780405bd74ea58cecf0695580cb0fb72bd993607f4a46d6fc9be940dd036f"
+    },
+    {
+      "bytes": 440377,
+      "path": "work_artifacts/geonet_temporal_development_v1/source_snapshots/quakeml/2025p584340.xml",
+      "sha256": "06a1d1ef8834e18b97c98a9b39af9db18af2ba1b5ba2984b96488605c82ef8ab"
+    },
+    {
+      "bytes": 332876,
+      "path": "work_artifacts/geonet_temporal_development_v1/source_snapshots/quakeml/2025p601389.xml",
+      "sha256": "691ac0c30491a751ab7e5a340723504c93523e3f8bd3c9cb72d2708aa9be1642"
+    },
+    {
+      "bytes": 555353,
+      "path": "work_artifacts/geonet_temporal_development_v1/source_snapshots/quakeml/2025p606068.xml",
+      "sha256": "29b0f0df60347bc51b240f2a84eb6b3be48dc93cad084ed61c05e038fc3c1125"
+    },
+    {
+      "bytes": 232710,
+      "path": "work_artifacts/geonet_temporal_development_v1/source_snapshots/quakeml/2025p682627.xml",
+      "sha256": "054b9f38995ca5482adf6bca5e91b9336aedaa09e09714ffd49102db43509bb8"
+    },
+    {
+      "bytes": 312660,
+      "path": "work_artifacts/geonet_temporal_development_v1/source_snapshots/quakeml/2025p687193.xml",
+      "sha256": "63dbbfa2a90ea5e58ed494f8af83a79666bb7c9eb2ef7e9a87a4e924b220d9e0"
+    },
+    {
+      "bytes": 493749,
+      "path": "work_artifacts/geonet_temporal_development_v1/source_snapshots/quakeml/2025p701487.xml",
+      "sha256": "7db709fcdf2e49869cd2dfd175cd429b41cdb28891ba3eade118216477500c76"
+    },
+    {
+      "bytes": 423762,
+      "path": "work_artifacts/geonet_temporal_development_v1/source_snapshots/quakeml/2025p708995.xml",
+      "sha256": "44cd99a3baf16ebe61c66aa6ea85e077eea1baa987e56de278f86e247157e733"
+    },
+    {
+      "bytes": 502346,
+      "path": "work_artifacts/geonet_temporal_development_v1/source_snapshots/quakeml/2025p715299.xml",
+      "sha256": "1f44901d91410ae485dc8e7d565dcc49d7feb687e0073f32628a564842f957cb"
+    },
+    {
+      "bytes": 449655,
+      "path": "work_artifacts/geonet_temporal_development_v1/source_snapshots/quakeml/2025p718850.xml",
+      "sha256": "ff073e55a8a52638f080b17d314ca2258a29f150b30147966142c8ad0dfde828"
+    },
+    {
+      "bytes": 565136,
+      "path": "work_artifacts/geonet_temporal_development_v1/source_snapshots/quakeml/2025p742596.xml",
+      "sha256": "41424940eb27c249d42c5f94995f67ea34ee85d27e607110499e654b6a59ac4e"
+    },
+    {
+      "bytes": 493077,
+      "path": "work_artifacts/geonet_temporal_development_v1/source_snapshots/quakeml/2025p793772.xml",
+      "sha256": "4ea8633e0bca8c14808c49c2cde019d445584bca8c9ee482632f6408648354a4"
+    },
+    {
+      "bytes": 431645,
+      "path": "work_artifacts/geonet_temporal_development_v1/source_snapshots/quakeml/2025p799449.xml",
+      "sha256": "969394a8387a6b527aab3115c0f415edfe9a5648ad7cc5967ef7b3f95ed30ed9"
+    },
+    {
+      "bytes": 484776,
+      "path": "work_artifacts/geonet_temporal_development_v1/source_snapshots/quakeml/2025p806773.xml",
+      "sha256": "9efe0b8793bd55bfbf49c302281ed3d19acbca15b1b1e103cc07f17576f2498e"
+    },
+    {
+      "bytes": 448488,
+      "path": "work_artifacts/geonet_temporal_development_v1/source_snapshots/quakeml/2025p821711.xml",
+      "sha256": "8d487ee2e0f207b9a3ad347e31a31d6cf0ce7e0944c00e77af8d060b9f9e1c07"
+    },
+    {
+      "bytes": 591399,
+      "path": "work_artifacts/geonet_temporal_development_v1/source_snapshots/quakeml/2025p829680.xml",
+      "sha256": "7fc897a303e7336a32d838e7930fd5b7fbd024eef8512336638f3cb913212902"
+    },
+    {
+      "bytes": 614197,
+      "path": "work_artifacts/geonet_temporal_development_v1/source_snapshots/quakeml/2025p836054.xml",
+      "sha256": "d8071e5d86068ea0ceb960b349f78fb2f3637a9c6da91830084bc37700acfa96"
+    },
+    {
+      "bytes": 500424,
+      "path": "work_artifacts/geonet_temporal_development_v1/source_snapshots/quakeml/2025p848069.xml",
+      "sha256": "44f69a8f6a84c1ccc8cfb177e7e79dad4512302b80db31172ae0f2a5816a9c8b"
+    },
+    {
+      "bytes": 498724,
+      "path": "work_artifacts/geonet_temporal_development_v1/source_snapshots/quakeml/2025p910674.xml",
+      "sha256": "f9d0868b488b2852ba3cf0d37a841824c39e078a315c14bc2674434df49d44cc"
+    },
+    {
+      "bytes": 429169,
+      "path": "work_artifacts/geonet_temporal_development_v1/source_snapshots/quakeml/2025p910731.xml",
+      "sha256": "3fe923b3cea0ba626d924848b54a02b0e5f4892f952bed016be364598c17e9e6"
+    },
+    {
+      "bytes": 500236,
+      "path": "work_artifacts/geonet_temporal_development_v1/source_snapshots/quakeml/2025p923559.xml",
+      "sha256": "b9a91328e74742fa5617d27d864b09d2a76940d6b2270132625a03388de1b278"
+    },
+    {
+      "bytes": 512968,
+      "path": "work_artifacts/geonet_temporal_development_v1/source_snapshots/quakeml/2025p941901.xml",
+      "sha256": "62f2e5d68d939b46717349e67519e2a0546a48ff8a1802328056bb4c0da11272"
+    },
+    {
+      "bytes": 369734,
+      "path": "work_artifacts/geonet_temporal_development_v1/source_snapshots/quakeml/2025p946056.xml",
+      "sha256": "09690b3e16a2a8904e3b2a53501351c7596c23ce3992a40d406fd9701d581b8c"
+    },
+    {
+      "bytes": 596369,
+      "path": "work_artifacts/geonet_temporal_development_v1/source_snapshots/quakeml/2025p969626.xml",
+      "sha256": "76a0761b8386cfab65a111ebda42566964c31d9438a7031cb1eb65c07b54415b"
+    },
+    {
+      "bytes": 594709,
+      "path": "work_artifacts/geonet_temporal_development_v1/source_snapshots/quakeml/2025p985153.xml",
+      "sha256": "c73bdd6721a7431c41f98a6fbd9b8386e17e678e35c1a84e385b009806a3b4c9"
+    },
+    {
+      "bytes": 238646,
+      "path": "work_artifacts/geonet_temporal_development_v1/source_snapshots/quakeml/2026p014588.xml",
+      "sha256": "a417b024ce5821cb27360b3921ca12650d5de14b9880b8fc462dc737bf099a61"
+    },
+    {
+      "bytes": 541280,
+      "path": "work_artifacts/geonet_temporal_development_v1/source_snapshots/quakeml/2026p020083.xml",
+      "sha256": "0c81f31b54e563b4dea4c19558316dc95f3b290766b3f30c44e85fd6e65eeddd"
+    },
+    {
+      "bytes": 644530,
+      "path": "work_artifacts/geonet_temporal_development_v1/source_snapshots/quakeml/2026p021114.xml",
+      "sha256": "9cbac6b35b894c40daa2717d0f0ef8932c03f3d875d5dde935fb3d0da6a1a0d5"
+    },
+    {
+      "bytes": 555136,
+      "path": "work_artifacts/geonet_temporal_development_v1/source_snapshots/quakeml/2026p033598.xml",
+      "sha256": "7ecc0e275db69bc1825fe976b7f97b19f9d9eb5146b63ebd566741ccad63ebc6"
+    },
+    {
+      "bytes": 108872,
+      "path": "work_artifacts/geonet_temporal_development_v1/source_snapshots/quakeml/2026p060826.xml",
+      "sha256": "55f913f8acada4469495b3fdabfe17b664db20cdff7cf7d95b3e32f950eee167"
+    },
+    {
+      "bytes": 605941,
+      "path": "work_artifacts/geonet_temporal_development_v1/source_snapshots/quakeml/2026p070370.xml",
+      "sha256": "6db757f0cc7e95cf787d60a1402bfce8640c317d44f5826f2fa7489e20d07912"
+    },
+    {
+      "bytes": 100577,
+      "path": "work_artifacts/geonet_temporal_development_v1/source_snapshots/quakeml/2026p087416.xml",
+      "sha256": "e2d2f72e8ea681d098e5ca3a0a91ddcedc3dfd9b21a6dcf78457d706c9bd1315"
+    },
+    {
+      "bytes": 376433,
+      "path": "work_artifacts/geonet_temporal_development_v1/source_snapshots/quakeml/2026p091845.xml",
+      "sha256": "904af1b34cf6a2b8c5f1621c3e9b7f714750e5ab23a1ece1f9683dd8222c7c35"
+    },
+    {
+      "bytes": 226752,
+      "path": "work_artifacts/geonet_temporal_development_v1/source_snapshots/quakeml/2026p101368.xml",
+      "sha256": "8ff7fa2182a352e32e3270182233f696c12df1e7244da555e28c086f166a961d"
+    },
+    {
+      "bytes": 493630,
+      "path": "work_artifacts/geonet_temporal_development_v1/source_snapshots/quakeml/2026p104330.xml",
+      "sha256": "2e2d3a1133006f9fff771dd51deab504bec1c4c6f34040ec180de5b440715f3d"
+    },
+    {
+      "bytes": 562715,
+      "path": "work_artifacts/geonet_temporal_development_v1/source_snapshots/quakeml/2026p125233.xml",
+      "sha256": "17204707b86a3a5f1be063b826f30c9213f86a9d6797b3d2e52125fcc600ad5c"
+    },
+    {
+      "bytes": 130153,
+      "path": "work_artifacts/geonet_temporal_development_v1/source_snapshots/quakeml/2026p125819.xml",
+      "sha256": "a0d19c121a751d408c401e25e1d3ef845fe3bbe7eaa98a36b5b6f2f208b206be"
+    },
+    {
+      "bytes": 81302,
+      "path": "work_artifacts/geonet_temporal_development_v1/source_snapshots/quakeml/2026p140531.xml",
+      "sha256": "1cf2e5746492c74e41c6e13446ce0f61ae84da68d64c7cfa4c63231f31482fc6"
+    },
+    {
+      "bytes": 215106,
+      "path": "work_artifacts/geonet_temporal_development_v1/source_snapshots/quakeml/2026p155292.xml",
+      "sha256": "f939ea2006b47b01ed4aba9f09d164d28405f022cae9a4ba924c438df1bfec7d"
+    },
+    {
+      "bytes": 355126,
+      "path": "work_artifacts/geonet_temporal_development_v1/source_snapshots/quakeml/2026p189537.xml",
+      "sha256": "3578b6601c8d82947864eb05982ecad0b68aae1b85537a01817becbd69d8146a"
+    },
+    {
+      "bytes": 288643,
+      "path": "work_artifacts/geonet_temporal_development_v1/source_snapshots/quakeml/2026p214015.xml",
+      "sha256": "323bff7f642c2ce5147e1bcba6019d2fbde4a46ffedd08eed1ef7c415b8a3b08"
+    },
+    {
+      "bytes": 472918,
+      "path": "work_artifacts/geonet_temporal_development_v1/source_snapshots/quakeml/2026p216388.xml",
+      "sha256": "ad78902e23392785bb55d260a3717be3315fea533e886277405d57b5ce1366c7"
+    },
+    {
+      "bytes": 350594,
+      "path": "work_artifacts/geonet_temporal_development_v1/source_snapshots/quakeml/2026p216882.xml",
+      "sha256": "3b6812d2f51178d64c9bc7bc1e03953455c81d483de3817f10be290671b24ce2"
+    },
+    {
+      "bytes": 274017,
+      "path": "work_artifacts/geonet_temporal_development_v1/source_snapshots/quakeml/2026p218254.xml",
+      "sha256": "b4aca49d569fda558c9b062e61e1f88b5a4f5e6dd6d635254079aac02d435b87"
+    },
+    {
+      "bytes": 420863,
+      "path": "work_artifacts/geonet_temporal_development_v1/source_snapshots/quakeml/2026p221690.xml",
+      "sha256": "d9bd8aa4ef356b4e9bb0226abb62d22c15ddd34967db7e9c6cdbd821cf4e3708"
+    },
+    {
+      "bytes": 372419,
+      "path": "work_artifacts/geonet_temporal_development_v1/source_snapshots/quakeml/2026p223345.xml",
+      "sha256": "03e624d7d29bd0db1e43acf6e790cf7a8a6fbfa1ddf00fe610ee007d4b46ab0a"
+    },
+    {
+      "bytes": 305709,
+      "path": "work_artifacts/geonet_temporal_development_v1/source_snapshots/quakeml/2026p238013.xml",
+      "sha256": "3c42a0cbd91ce4f645b48699682c9352068fdb50b856697213b92e9a5a8efe21"
+    },
+    {
+      "bytes": 507042,
+      "path": "work_artifacts/geonet_temporal_development_v1/source_snapshots/quakeml/2026p277414.xml",
+      "sha256": "567f89234eefb4f1681d0978fe4bdf1999cf9871a4b842b54ba4748e7984ff77"
+    },
+    {
+      "bytes": 365399,
+      "path": "work_artifacts/geonet_temporal_development_v1/source_snapshots/quakeml/2026p281249.xml",
+      "sha256": "b57479f1c0f1feaff2b73d412e711f5951893a58b3c2c8ce50875348fbf258f7"
+    },
+    {
+      "bytes": 203346,
+      "path": "work_artifacts/geonet_temporal_development_v1/source_snapshots/quakeml/2026p283255.xml",
+      "sha256": "48a04e0b4741a2ff1de490c70e2f7bc9388382bfac7d09a0942b2a0d67022a6e"
+    },
+    {
+      "bytes": 356762,
+      "path": "work_artifacts/geonet_temporal_development_v1/source_snapshots/quakeml/2026p301336.xml",
+      "sha256": "dd98b4fc79cc0c7c5c58fe591034cb19c448ce028c768e5c617eeae297c5a55b"
+    },
+    {
+      "bytes": 408789,
+      "path": "work_artifacts/geonet_temporal_development_v1/source_snapshots/quakeml/2026p312627.xml",
+      "sha256": "17b9f9042bfd8fbb91f373c5ffe78e22e77da5d0fdfed8ac6ae0072ef3728043"
+    },
+    {
+      "bytes": 299374,
+      "path": "work_artifacts/geonet_temporal_development_v1/source_snapshots/quakeml/2026p324207.xml",
+      "sha256": "f135dd60bc01ed453b743d40b51ada89e52faa907064a55c145f3fe5219477d1"
+    },
+    {
+      "bytes": 612901,
+      "path": "work_artifacts/geonet_temporal_development_v1/source_snapshots/quakeml/2026p329428.xml",
+      "sha256": "c14f356e2dbea98cd14d252eb6a1d3e2716ec88ae96528e046157f85f07ecbff"
+    },
+    {
+      "bytes": 440489,
+      "path": "work_artifacts/geonet_temporal_development_v1/source_snapshots/quakeml/2026p335889.xml",
+      "sha256": "36c59a38d4064661e13d86f8a0591d679e4c4382c3c4c0ba0dc3020eb71f15c9"
+    },
+    {
+      "bytes": 676549,
+      "path": "work_artifacts/geonet_temporal_development_v1/source_snapshots/quakeml/2026p336037.xml",
+      "sha256": "f2c97bdbb6747f4e6e58ae1daac88cba65cfef731c4623fa3ce87e7e5668818a"
+    },
+    {
+      "bytes": 496145,
+      "path": "work_artifacts/geonet_temporal_development_v1/source_snapshots/quakeml/2026p336118.xml",
+      "sha256": "62a10d5a584c6198580f2a633e4173d067e23171061b341849f10d904dccbaba"
+    },
+    {
+      "bytes": 346128,
+      "path": "work_artifacts/geonet_temporal_development_v1/source_snapshots/quakeml/2026p336129.xml",
+      "sha256": "e0f57465e87b189bfa767a328249587f6bde004c9873655642bc90ec119b039c"
+    },
+    {
+      "bytes": 455883,
+      "path": "work_artifacts/geonet_temporal_development_v1/source_snapshots/quakeml/2026p336219.xml",
+      "sha256": "be502caa57330e012f7bd4000bece567071a6bf875b2326c90fb701d3ff1c38e"
+    },
+    {
+      "bytes": 229941,
+      "path": "work_artifacts/geonet_temporal_development_v1/source_snapshots/quakeml/2026p336544.xml",
+      "sha256": "bf255b996a65a9895015751c04707acf8ffe8f165916ba8ca8a971d68f2198cc"
+    },
+    {
+      "bytes": 331458,
+      "path": "work_artifacts/geonet_temporal_development_v1/source_snapshots/quakeml/2026p337070.xml",
+      "sha256": "4ae6b78b40447ae86e162dc8f9e3c790368a2914c56bbae817ec69ec42063304"
+    },
+    {
+      "bytes": 360659,
+      "path": "work_artifacts/geonet_temporal_development_v1/source_snapshots/quakeml/2026p337073.xml",
+      "sha256": "4a62918e252c7355330f39fa5e95dca66262085bb7a34dd59fe348d16a25c53a"
+    },
+    {
+      "bytes": 415308,
+      "path": "work_artifacts/geonet_temporal_development_v1/source_snapshots/quakeml/2026p338701.xml",
+      "sha256": "a5e46c9bfd1b5328235d954a22eb01fd44384b23bf40fdf086ca847b47e9fb62"
+    },
+    {
+      "bytes": 376047,
+      "path": "work_artifacts/geonet_temporal_development_v1/source_snapshots/quakeml/2026p338868.xml",
+      "sha256": "25f65352701cae52e0b963e65eb35207f0dc7a8625f3bcddd89f9e06d07af258"
+    },
+    {
+      "bytes": 165102,
+      "path": "work_artifacts/geonet_temporal_development_v1/source_snapshots/quakeml/2026p345260.xml",
+      "sha256": "bfba9124d59f1288367eb58b6926d7de1574e03b33449d7f98b1b9f3952a35eb"
+    },
+    {
+      "bytes": 241678,
+      "path": "work_artifacts/geonet_temporal_development_v1/source_snapshots/quakeml/2026p345918.xml",
+      "sha256": "56d285e626be16e9ef69d96e34fca60f2a29505fd7cfc6b4b32ff03556e4b48f"
+    },
+    {
+      "bytes": 323970,
+      "path": "work_artifacts/geonet_temporal_development_v1/source_snapshots/quakeml/2026p348409.xml",
+      "sha256": "65ce18c7e81f41ae84e357e6a2dfdf5a2e8bba682b41d9a0677aa2ee275c5faf"
+    },
+    {
+      "bytes": 277478,
+      "path": "work_artifacts/geonet_temporal_development_v1/source_snapshots/quakeml/2026p348732.xml",
+      "sha256": "4070fdec458fdc36308f7fe4ba112d7dfb1ae21dac3feb818c8ec0d6e7512c5b"
+    },
+    {
+      "bytes": 368502,
+      "path": "work_artifacts/geonet_temporal_development_v1/source_snapshots/quakeml/2026p355073.xml",
+      "sha256": "fd3a045b5005bd415fa6085c1525ed03baa33389a756296ba383d8c2fb4c7501"
+    },
+    {
+      "bytes": 266918,
+      "path": "work_artifacts/geonet_temporal_development_v1/source_snapshots/quakeml/2026p357402.xml",
+      "sha256": "068b9322ae9b54a7845097ff08448120f7cc7f7597024a38afb33342b74f1f85"
+    },
+    {
+      "bytes": 347428,
+      "path": "work_artifacts/geonet_temporal_development_v1/source_snapshots/quakeml/2026p365604.xml",
+      "sha256": "b5d0f5d2d3fcdd1e0d52381e5cbd304c16d4196adbe265bb86b3e971d48190b7"
+    },
+    {
+      "bytes": 403300,
+      "path": "work_artifacts/geonet_temporal_development_v1/source_snapshots/quakeml/2026p366644.xml",
+      "sha256": "71d3d3b4c29b74868e5071cc33e548df5287aca4a08110ff20ebb16b4a352e80"
+    },
+    {
+      "bytes": 369929,
+      "path": "work_artifacts/geonet_temporal_development_v1/source_snapshots/quakeml/2026p367944.xml",
+      "sha256": "5ef24ec38eb90c80a69f451b52fbeea7d0a2d6dcf704da4057419bf2680583f1"
+    },
+    {
+      "bytes": 101610,
+      "path": "work_artifacts/geonet_temporal_development_v1/source_snapshots/quakeml/2026p368799.xml",
+      "sha256": "fe15f5c7f023700fb70e430750be77026a6c72f7c35c16b510d88cff84e5ff87"
+    },
+    {
+      "bytes": 386497,
+      "path": "work_artifacts/geonet_temporal_development_v1/source_snapshots/quakeml/2026p385521.xml",
+      "sha256": "884c3a898bf2121b09b0c05f3307effca23beceb373e39f3a5358adbb95734bb"
+    },
+    {
+      "bytes": 383114,
+      "path": "work_artifacts/geonet_temporal_development_v1/source_snapshots/quakeml/2026p395450.xml",
+      "sha256": "9a2b2687d2bc51a77293aeab0680c6bada3bea2dd1ef8925eb55b142cae95b5d"
+    },
+    {
+      "bytes": 354747,
+      "path": "work_artifacts/geonet_temporal_development_v1/source_snapshots/quakeml/2026p402583.xml",
+      "sha256": "32d3fc261d38013ebfe4b9659907eaf0952c2fa5e2e2b10687d11b52ab1ea314"
+    },
+    {
+      "bytes": 370286,
+      "path": "work_artifacts/geonet_temporal_development_v1/source_snapshots/quakeml/2026p411558.xml",
+      "sha256": "177da0aca6baf203aabacd2f70f81cf5fdd8a8348f978127d1efbdb637c80aa5"
+    },
+    {
+      "bytes": 218747,
+      "path": "work_artifacts/geonet_temporal_development_v1/source_snapshots/quakeml/2026p414535.xml",
+      "sha256": "09792799dbe93f1f8a4eda04a94aa751953469bbc60b33b1391a19028a0b684c"
+    },
+    {
+      "bytes": 87188,
+      "path": "work_artifacts/geonet_temporal_development_v1/source_snapshots/quakeml/2026p421208.xml",
+      "sha256": "7b5c162d26205dd390bfa30439b6e0d31a3963c275fc47786d45c3cbb00a3ea1"
+    },
+    {
+      "bytes": 303830,
+      "path": "work_artifacts/geonet_temporal_development_v1/source_snapshots/quakeml/2026p424590.xml",
+      "sha256": "0943c41c4e827d43bab89099b089926a56fc740654012dd246f2aba6c19fbdd8"
+    },
+    {
+      "bytes": 300488,
+      "path": "work_artifacts/geonet_temporal_development_v1/source_snapshots/quakeml/2026p428526.xml",
+      "sha256": "414ac0e439767575bf6809a985966c0dd9de42e2e852860ce06d71af76a97719"
+    },
+    {
+      "bytes": 460166,
+      "path": "work_artifacts/geonet_temporal_development_v1/source_snapshots/quakeml/2026p438052.xml",
+      "sha256": "1c471803b580fae8e3b28c03e8f527dd7f8132188cbbcc8a03a4a9b1a90c9d3a"
+    },
+    {
+      "bytes": 251250,
+      "path": "work_artifacts/geonet_temporal_development_v1/source_snapshots/quakeml/2026p439079.xml",
+      "sha256": "a1c32fb27a7aff54c25b4452a3f2ef9d253493c288788cd589725aae905260c2"
+    },
+    {
+      "bytes": 514758,
+      "path": "work_artifacts/geonet_temporal_development_v1/source_snapshots/quakeml/2026p446273.xml",
+      "sha256": "14e9188654ae0ddfcab8097ea1b301324299d79bd7f58cbf8f7fc08766487b4b"
+    },
+    {
+      "bytes": 407233,
+      "path": "work_artifacts/geonet_temporal_development_v1/source_snapshots/quakeml/2026p450287.xml",
+      "sha256": "587ee9a4d570e1caf1c25936436d92cb9f7262754bd65d6c66575af29b38b776"
+    },
+    {
+      "bytes": 175881,
+      "path": "work_artifacts/geonet_temporal_development_v1/source_snapshots/quakeml/2026p455759.xml",
+      "sha256": "dcfb6a29e3b506a28237844514463f6e865a14ed5e0878b45329ea64a422644e"
+    },
+    {
+      "bytes": 414335,
+      "path": "work_artifacts/geonet_temporal_development_v1/source_snapshots/quakeml/2026p461272.xml",
+      "sha256": "b17ef3d12320c2c4aa31ab8e9d253f53d80c92c56902de0fc288787f945f04f0"
+    },
+    {
+      "bytes": 529831,
+      "path": "work_artifacts/geonet_temporal_development_v1/source_snapshots/quakeml/2026p482327.xml",
+      "sha256": "3c0598acf96166216efe460fee352dc17484341920ffb9027584434600a69557"
+    }
+  ],
+  "runtime": {
+    "candidate_history_packets": 4,
+    "max_arrival_age_packets": 4.0,
+    "miniSEED_decode": {
+      "gap_imputation": false,
+      "maximum_quarantined_record_fraction_per_object": 0.001,
+      "policy": "whole-file decode first; on libmseed integrity failure bisect fixed-size records, quarantine only failing records, and represent them as explicit gaps",
+      "post_quarantine_background_common_availability_minimum": 0.95
+    },
+    "normalization": "per-channel causal EWMA demean and scale; state resets on quality-invalid packets",
+    "packet_duration_seconds": 0.5,
+    "packet_samples": 50,
+    "quality_gate": "PacketQualityGateV5 frozen defaults",
+    "recurrent_state_reset": "reset on every contiguous quality-valid segment boundary",
+    "sample_rate_hz": 100.0,
+    "temporal_block_packets": 4096,
+    "warmup_packets": 20
+  },
+  "station_coordinate_manifests": [
+    {
+      "bytes": 1466,
+      "path": "work_artifacts/geonet_temporal_development_v1/background_station_amendment_v2/selected_stations.csv",
+      "sha256": "664662d85b253843d7f8fe54e9762a671ed9106c32d1bda5551bf2bd8691dfb6"
+    },
+    {
+      "bytes": 1895,
+      "path": "work_artifacts/protocol_freeze/cspp_v27_geonet_final_background_station_amendment_a1_20260729/selected_stations.csv",
+      "sha256": "b74dc5be9831d713a770a2e4f5d45602de91889418e154e1975eab68697f3a1d"
+    }
+  ],
+  "waveform_object_manifests": [
+    {
+      "bytes": 377380,
+      "path": "work_artifacts/geonet_temporal_development_v1/background_waveform_manifest/background_objects.csv",
+      "sha256": "8b388b7ddda228a940627e77fdcf923b429244f2d21d076cdcba8e15bf33a4a9"
+    },
+    {
+      "bytes": 598595,
+      "path": "work_artifacts/geonet_final_holdout_v1/background_waveform_manifest/background_objects.csv",
+      "sha256": "67a40376dc584bcdf431977e94a6c82869d14d8ce78b2b6d62f6a1331e90dc40"
+    }
+  ]
+}

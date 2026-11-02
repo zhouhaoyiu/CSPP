@@ -1,0 +1,95 @@
+{
+  "amended_contract": {
+    "acquisition_stop_rule": "scan all 39 frozen quiet candidates; do not stop after the first 12 availability-complete dates",
+    "candidate_dates": 39,
+    "candidate_order": "all frozen final_holdout quiet dates in ascending quiet_rank",
+    "minimum_common_station_day_availability": 0.95,
+    "model_blind_exclusions": [
+      "waveform amplitude",
+      "signal-to-noise ratio",
+      "visual waveform appearance",
+      "CSPP score",
+      "PhaseNet score",
+      "EQTransformer score"
+    ],
+    "rejected_date_policy": "preserve every rejected candidate and its technical reason",
+    "retention_rule": "retain every candidate date for which all six frozen stations have three valid 200-Hz integer miniSEED components and at least 0.95 common component availability"
+  },
+  "evidence_boundary": {
+    "amendment_uses_only": [
+      "frozen quiet-date candidate count and order",
+      "predeclared technical availability threshold",
+      "Poisson zero-count interval precision"
+    ],
+    "development_score_values_inspected": false,
+    "final_holdout_model_outputs_computed_or_inspected": false,
+    "final_holdout_waveform_samples_downloaded_or_inspected": false
+  },
+  "frozen_at_utc": "2026-07-29T15:00:54.957961+00:00",
+  "inputs": {
+    "background_date_pool": {
+      "bytes": 142859,
+      "path": "work_artifacts/geonet_temporal_development_v1/background_date_pool.csv",
+      "sha256": "4622874673eaf503c9e480bafd77a7936c21d022265cf59946b55d2c5d983b3f"
+    },
+    "background_station_amendment": {
+      "bytes": 2854,
+      "path": "work_artifacts/geonet_temporal_development_v1/background_station_amendment_v2/protocol.json",
+      "sha256": "e5ce11408fffb62233017f190c5181a9bdd0d7dc800b1990c622263267b9bc2f"
+    },
+    "freeze_script": {
+      "bytes": 9333,
+      "path": "workspace/scripts/evaluation/freeze_v27_geonet_final_background_exposure_amendment.py",
+      "sha256": "d4f781a042780701ce37f9d8f1cd11c9ff0e12b0845e25d0de3a10197502db44"
+    },
+    "metadata_protocol": {
+      "bytes": 6023,
+      "path": "work_artifacts/geonet_temporal_development_v1/protocol.json",
+      "sha256": "ae43b11cabf657254612bb11bc3fd79ffbedc7ba25445ab7245da533240cfd51"
+    }
+  },
+  "next_boundary": "This amendment does not unlock final data. Final waveform acquisition remains prohibited until the C0/C1 arm and event threshold are frozen from temporal-development scores.",
+  "parent_contract": {
+    "selection_rule": "Download in quiet-rank order and retain the first target prefix with complete parseable three-component coverage. Availability QC must finish before any scoring.",
+    "target_complete_dates": 12,
+    "target_prefix_dates": [
+      "2026-04-20",
+      "2026-01-30",
+      "2026-03-18",
+      "2026-06-02",
+      "2026-03-02",
+      "2026-03-25",
+      "2026-04-23",
+      "2026-04-03",
+      "2026-05-16",
+      "2026-01-31",
+      "2026-06-21",
+      "2026-03-30"
+    ]
+  },
+  "protocol_id": "cspp_v27_geonet_final_background_exposure_amendment_v1",
+  "quiet_candidate_identity": {
+    "count": 39,
+    "first_date_utc": "2026-04-20",
+    "last_date_utc": "2026-03-28",
+    "ordered_selection_sha256": "e3516e8c2dba421820ca5efdb4da830858126cb7a80359d18a57b1e1f71c30cb"
+  },
+  "statistical_design": {
+    "endpoint": "three-station quiet-background network confirmations per connected network exposure day",
+    "original_12_full_days_zero_count_upper_rate_per_day": 0.24964435612949923,
+    "reason_for_amendment": "increase prospective background exposure and tighten the Poisson rate interval before any final waveform access",
+    "reporting_rule": "compute the interval from measured connected-network exposure; do not substitute retained date count for exposure",
+    "thirty_full_days_zero_count_upper_rate_per_day": 0.0998577424517997,
+    "zero_count_one_sided_95_poisson_numerator": 2.995732273553991
+  },
+  "status": "frozen_before_any_final_holdout_waveform_acquisition_or_scoring",
+  "unchanged_contracts": [
+    "64-event final holdout cohort",
+    "event and station metadata rows",
+    "six frozen background stations",
+    "C0/C1 development selection rules",
+    "primary seed",
+    "candidate and event thresholds",
+    "event waveform acquisition and scoring"
+  ]
+}

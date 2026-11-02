@@ -1,0 +1,17 @@
+name: Bug report
+description: Report an inference or reproduction problem without restricted data.
+body:
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment and checkpoint
+      description: Include Python, PyTorch, OS, CSPP version and model SHA-256.
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Synthetic reproducer
+      description: Include expected and actual behavior. Do not upload restricted waveforms.
+    validations:
+      required: true

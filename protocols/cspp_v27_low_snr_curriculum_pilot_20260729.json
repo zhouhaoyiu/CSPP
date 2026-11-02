@@ -1,0 +1,52 @@
+{
+  "protocol_id": "cspp_v27a_low_snr_curriculum_pilot_v1",
+  "frozen_at": "2026-07-29",
+  "status": "frozen_before_execution",
+  "parent_protocol": "experiments/cspp_v27_from_scratch_protocol_20260729.json",
+  "parent_protocol_sha256": "6e88807ba635ecb09f988a2feabb5139c1b8cca1d5d22fc92c983d261684f314",
+  "question": "Is the V27a low-FAR low-SNR failure primarily caused by insufficient low-SNR positive exposure during the three-epoch pilot?",
+  "control": {
+    "path": "work_artifacts/checkpoints/pilot_v27a_seed20261101",
+    "best_epoch": 2,
+    "development_operating_point": {
+      "candidate_threshold": 0.825,
+      "event_threshold": 0.8,
+      "native_usable_rate": 0.6225,
+      "zero_db_usable_rate": 0.04891304347826087,
+      "ten_db_usable_rate": 0.43653250773993807,
+      "noise_specificity": 0.9955317247542449
+    }
+  },
+  "single_factor_change": {
+    "snr_training_profile": "strong_motion_balanced",
+    "curriculum_epoch_offset": 2,
+    "low_snr_event_weight": 5.0,
+    "low_snr_weight_upper_db": 8.0
+  },
+  "held_constant": {
+    "architecture": "v27",
+    "record_limits": {
+      "instancegm": 1000,
+      "knet": 1000,
+      "cwa2020": 500,
+      "noise_per_provider": 500,
+      "development_per_event_source": 200
+    },
+    "data_seed": 20260801,
+    "optimization_seed": 20261101,
+    "epochs": 3,
+    "batch_size": 8,
+    "max_chunks": 96,
+    "native_event_fraction": 0.5,
+    "candidate_and_negative_loss_weights": "identical to control",
+    "distillation_loss_weight": 0.0
+  },
+  "acceptance_at_noise_specificity_0_995": {
+    "native_usable_rate_minimum": 0.6,
+    "zero_db_usable_rate_minimum": 0.15,
+    "ten_db_usable_rate_minimum": 0.6,
+    "zero_db_absolute_improvement_minimum": 0.1,
+    "policy": "accept the curriculum change only if every minimum is met; otherwise diagnose candidate hard-negative separation before full training"
+  },
+  "opened_test_boundary": "No K-NET 701, InstanceGM 1170, GeoNet final candidate, or prior fixed-test score may select this pilot."
+}

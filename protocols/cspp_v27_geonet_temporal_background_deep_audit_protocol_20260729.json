@@ -1,0 +1,49 @@
+{
+  "artifacts": {
+    "quarantined_records": {
+      "bytes": 7790,
+      "path": "work_artifacts/geonet_temporal_development_v1/background_waveform_manifest/deep_audit_quarantined_records.csv",
+      "sha256": "9f7250e66d105b3b784300604b53cf5a80ae1f8f527e2330afddf5cfd7f6f43c"
+    },
+    "station_days": {
+      "bytes": 15732,
+      "path": "work_artifacts/geonet_temporal_development_v1/background_waveform_manifest/deep_audit_station_days.csv",
+      "sha256": "41e048878702b25d77bee0e605f7cb07c99deea08d2abf95f34b6c2623373870"
+    }
+  },
+  "audit_script": {
+    "bytes": 15648,
+    "path": "workspace/scripts/evaluation/audit_v27_geonet_temporal_background_manifest.py",
+    "sha256": "96e8415f8c7f748bda3d7e1f502a06ddc772b0ca3725e32daf54e4db87548f91"
+  },
+  "checks": {
+    "all_post_quarantine_station_days_at_least_0p95": true,
+    "cohort_rows_added_or_removed": 0,
+    "decoded_sample_count": 7462358406,
+    "decoded_trace_count": 881,
+    "final_holdout_accessed": false,
+    "identity_matches": true,
+    "integer_decoded_samples": true,
+    "maximum_common_availability_absolute_difference": 0.00010844906171159074,
+    "maximum_quarantined_record_fraction_per_object": 0.001,
+    "miniSEED_record_count": 20099296,
+    "model_outputs_computed_or_inspected": false,
+    "objects_fully_decoded": 432,
+    "objects_rehashed": 432,
+    "quarantined_record_count": 18,
+    "quarantined_record_fraction": 8.955537547185732e-07,
+    "quarantined_records_treated_as_explicit_gaps": true,
+    "sample_rate_200_hz": true,
+    "station_days_recomputed": 144,
+    "waveform_amplitude_used_for_acceptance": false
+  },
+  "claim_boundary": "This audit establishes transport, hash, full miniSEED decode, trace identity, sample-rate, integer-sample, and three-component coverage integrity after deterministic corrupt-record quarantine. Quarantined records are explicit gaps and cannot alter the frozen cohort. This is not a model-performance result.",
+  "completed_at_utc": "2026-07-29T14:26:41.013976+00:00",
+  "input_manifest_protocol": {
+    "bytes": 5411,
+    "path": "work_artifacts/geonet_temporal_development_v1/background_waveform_manifest/protocol.json",
+    "sha256": "891621c64bac07bf8b4b029b921c8a12b4d669c85e9a9d655dd40f8a71da1729"
+  },
+  "protocol_id": "cspp_v27_geonet_temporal_background_deep_audit_v1",
+  "status": "complete_no_exclusions_or_cohort_changes"
+}

@@ -1,0 +1,6 @@
+arm,aggregation,records_per_seed,primary_precision,primary_recall,primary_f1,primary_median_absolute_pick_error_seconds
+A0_full,component-wise median across three seeds,491,0.9899497487437185,0.7841140529531568,0.875,0.10398387908935547
+A1_no_cross_packet_state,component-wise median across three seeds,491,1.0,0.3890020366598778,0.5601173020527859,0.24542105197906494
+A2_no_dense_candidate_input,component-wise median across three seeds,491,0.9948186528497409,0.7413441955193483,0.8494749124854143,0.12347912788391113
+A3_no_localization_supervision,component-wise median across three seeds,491,0.9949109414758269,0.7718940936863544,0.8692660550458715,0.10740971565246582
+A4_no_spectrum,component-wise median across three seeds,491,0.9968152866242038,0.6374745417515275,0.7776397515527951,0.1427617073059082

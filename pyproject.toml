@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "cspp"
+version = "0.2.0"
+description = "Causal streaming P-wave detection and arrival-time picking"
+readme = "README.md"
+license = {file = "LICENSE"}
+requires-python = ">=3.10"
+dependencies = ["numpy>=1.24", "torch>=2.5"]
+
+[project.scripts]
+cspp-predict = "cspp.cli:main"
+cspp-inspect = "cspp.__main__:main"
+
+[project.optional-dependencies]
+waveforms = ["obspy>=1.4", "scipy>=1.10"]
+baselines = ["obspy>=1.4", "scipy>=1.10", "seisbench>=0.11"]
+test = ["pytest>=8"]
+datasets = ["h5py>=3.10", "seisbench>=0.11", "pandas>=2"]
+training = ["h5py>=3.10", "seisbench>=0.11", "pandas>=2", "scipy>=1.10", "obspy>=1.4"]
+
+[tool.setuptools.packages.find]
+include = ["cspp", "cspp.*"]

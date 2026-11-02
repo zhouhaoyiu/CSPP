@@ -1,0 +1,47 @@
+{
+  "code_sha256": {
+    "scripts/evaluation/download_v27_ncedc_continuous_catalog.py": "f5faf701015ef5a824266b958416e56f99514d73e500118778780b598f507013",
+    "scripts/evaluation/freeze_v27_ncedc_continuous_catalog_plan.py": "ecd0323f2c6a11ae7df30ba402fe3cd5de953eff941b3c85e74aeea0221f1a57"
+  },
+  "evidence_boundary": {
+    "candidate_counts_times_or_scores_inspected": false,
+    "catalog_match_may_be_called_manual_verification": false,
+    "queries_selected_from_candidate_times": false,
+    "unmatched_candidate_may_be_called_false_alarm": false
+  },
+  "execution": {
+    "maximum_attempts_per_date": 5,
+    "maximum_concurrent_requests": 1,
+    "output_root": "work_artifacts/ncedc_model_blind_20260817/metadata/continuous_catalog_all_events",
+    "overwrite_permitted": false
+  },
+  "frozen_at_utc": "2026-08-17T14:26:33.532365+00:00",
+  "inputs": {
+    "continuous_analysis_protocol": {
+      "bytes": 7433,
+      "path": "workspace/experiments/cspp_v27_ncedc_continuous_analysis_protocol_20260817.json",
+      "sha256": "2e30580526a375f16970dcdd87759074182bc01daaf7d1bb8887e7f4ee800569"
+    },
+    "continuous_manifest_freeze": {
+      "bytes": 5737,
+      "path": "workspace/experiments/cspp_v27_ncedc_continuous_manifest_freeze_20260817.json",
+      "sha256": "1839769549d78d0f756b2b2016a425cbe89bc6216e3a45bed1d0b16b3fcb47f6"
+    },
+    "request_plan": {
+      "bytes": 5564,
+      "path": "work_artifacts/ncedc_model_blind_20260817/metadata/manifests/continuous_catalog_requests.csv",
+      "sha256": "3d8e79207fbe0684db7730ad23748b6f9693402b8b9589bef57d825bbc77cc2e"
+    }
+  },
+  "protocol_id": "cspp_v27_ncedc_continuous_catalog_plan_v1",
+  "query": {
+    "arrivals_requested": false,
+    "dates": 60,
+    "event_type_filter": null,
+    "geographic_filter": null,
+    "minimum_magnitude": null,
+    "purpose": "post-result catalog timing screen; not a manual cause label",
+    "service": "https://service.ncedc.org/fdsnws/event/1/query"
+  },
+  "status": "frozen_before_continuous_candidate_time_inspection"
+}

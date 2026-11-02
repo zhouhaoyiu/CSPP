@@ -1,0 +1,1883 @@
+[
+  {
+    "source": "workspace/cspp/__init__.py",
+    "source_sha256": "b13be7c406c35b1bac2e5d804db81d5862e54a0ab564ca6856a01f9261eced42",
+    "public_path": "cspp/__init__.py",
+    "public_sha256": "b13be7c406c35b1bac2e5d804db81d5862e54a0ab564ca6856a01f9261eced42",
+    "changed": false
+  },
+  {
+    "source": "workspace/cspp/__main__.py",
+    "source_sha256": "e1f8faa1ac1b730cfae8d03b7766a22d38cf06b6369aa12272cef4ead4d47901",
+    "public_path": "cspp/__main__.py",
+    "public_sha256": "e1f8faa1ac1b730cfae8d03b7766a22d38cf06b6369aa12272cef4ead4d47901",
+    "changed": false
+  },
+  {
+    "source": "workspace/cspp/association/__init__.py",
+    "source_sha256": "5d1aeb5d089b2a598fe8897b8f383109674819fdd225102b1864ae9a99e7f831",
+    "public_path": "cspp/association/__init__.py",
+    "public_sha256": "5d1aeb5d089b2a598fe8897b8f383109674819fdd225102b1864ae9a99e7f831",
+    "changed": false
+  },
+  {
+    "source": "workspace/cspp/association/causal_triplet.py",
+    "source_sha256": "05083525d9b9b94214b94afa167604e3eb436b8d3a8837e4b5d9ef29329c7415",
+    "public_path": "cspp/association/causal_triplet.py",
+    "public_sha256": "05083525d9b9b94214b94afa167604e3eb436b8d3a8837e4b5d9ef29329c7415",
+    "changed": false
+  },
+  {
+    "source": "workspace/cspp/association/connected_triplet.py",
+    "source_sha256": "afc33e49da976fa1ab592ea6286e02077ba26f710c875e5fb8f0b59a593dc7bf",
+    "public_path": "cspp/association/connected_triplet.py",
+    "public_sha256": "afc33e49da976fa1ab592ea6286e02077ba26f710c875e5fb8f0b59a593dc7bf",
+    "changed": false
+  },
+  {
+    "source": "workspace/cspp/association/delaunay.py",
+    "source_sha256": "f519141f1a4d7176a0de1fee016ccc5a2b6f8c69a0bcec98ebccb568224e6013",
+    "public_path": "cspp/association/delaunay.py",
+    "public_sha256": "f519141f1a4d7176a0de1fee016ccc5a2b6f8c69a0bcec98ebccb568224e6013",
+    "changed": false
+  },
+  {
+    "source": "workspace/cspp/checkpoint.py",
+    "source_sha256": "bd4eaad3b07147c2abf0569c6ebdf096af2d51d9bf2a64ca17eef4bb0dacae74",
+    "public_path": "cspp/checkpoint.py",
+    "public_sha256": "bd4eaad3b07147c2abf0569c6ebdf096af2d51d9bf2a64ca17eef4bb0dacae74",
+    "changed": false
+  },
+  {
+    "source": "workspace/cspp/evaluation/__init__.py",
+    "source_sha256": "134a8c021f4777d284302c58eeb5307cab1ccf251687f438ca31ea04d0eb2026",
+    "public_path": "cspp/evaluation/__init__.py",
+    "public_sha256": "134a8c021f4777d284302c58eeb5307cab1ccf251687f438ca31ea04d0eb2026",
+    "changed": false
+  },
+  {
+    "source": "workspace/cspp/evaluation/network_replay.py",
+    "source_sha256": "2b4ab30118da789d111c134e1b425baaee071d79eaf457acf0f1632739219bca",
+    "public_path": "cspp/evaluation/network_replay.py",
+    "public_sha256": "2b4ab30118da789d111c134e1b425baaee071d79eaf457acf0f1632739219bca",
+    "changed": false
+  },
+  {
+    "source": "workspace/cspp/evaluation/public_full_record.py",
+    "source_sha256": "7cbe423a2042a6099050a779305a858eb5b080c72e8fbddb3d74d6a405f2859f",
+    "public_path": "cspp/evaluation/public_full_record.py",
+    "public_sha256": "7cbe423a2042a6099050a779305a858eb5b080c72e8fbddb3d74d6a405f2859f",
+    "changed": false
+  },
+  {
+    "source": "workspace/cspp/evaluation/public_windows.py",
+    "source_sha256": "2cfe9440731f05e903a929870771467018117a7ab18a716bb6ce6a0296f7c3b1",
+    "public_path": "cspp/evaluation/public_windows.py",
+    "public_sha256": "2cfe9440731f05e903a929870771467018117a7ab18a716bb6ce6a0296f7c3b1",
+    "changed": false
+  },
+  {
+    "source": "workspace/cspp/evaluation/score_cache.py",
+    "source_sha256": "5885ba772a34b386fb6b66052a30bb0c3640756cf34fb6720660b99b4d21dd90",
+    "public_path": "cspp/evaluation/score_cache.py",
+    "public_sha256": "5885ba772a34b386fb6b66052a30bb0c3640756cf34fb6720660b99b4d21dd90",
+    "changed": false
+  },
+  {
+    "source": "workspace/cspp/evaluation/snr.py",
+    "source_sha256": "1f74891438713699bd0900c69e66c99d846b7554858b1b6b1977716f7f093fbe",
+    "public_path": "cspp/evaluation/snr.py",
+    "public_sha256": "1f74891438713699bd0900c69e66c99d846b7554858b1b6b1977716f7f093fbe",
+    "changed": false
+  },
+  {
+    "source": "workspace/cspp/features/__init__.py",
+    "source_sha256": "a22d71145b808a8559435fe2e0706c33508a0c0a2733445c0f127a2504cb0571",
+    "public_path": "cspp/features/__init__.py",
+    "public_sha256": "a22d71145b808a8559435fe2e0706c33508a0c0a2733445c0f127a2504cb0571",
+    "changed": false
+  },
+  {
+    "source": "workspace/cspp/features/layers.py",
+    "source_sha256": "22cef6d58fd6c7bc14f754f7fce90db91b1f740a350f8c4eb17a193db49d136e",
+    "public_path": "cspp/features/layers.py",
+    "public_sha256": "22cef6d58fd6c7bc14f754f7fce90db91b1f740a350f8c4eb17a193db49d136e",
+    "changed": false
+  },
+  {
+    "source": "workspace/cspp/features/physics.py",
+    "source_sha256": "195446c871dedec4bd73cc783729d03795f07decfbbec3159cba826468c2279b",
+    "public_path": "cspp/features/physics.py",
+    "public_sha256": "195446c871dedec4bd73cc783729d03795f07decfbbec3159cba826468c2279b",
+    "changed": false
+  },
+  {
+    "source": "workspace/cspp/features/spectrum.py",
+    "source_sha256": "07e174b4fe93b99a348e44b5366f83e12f88a144a10b577bd386d46b408309d7",
+    "public_path": "cspp/features/spectrum.py",
+    "public_sha256": "07e174b4fe93b99a348e44b5366f83e12f88a144a10b577bd386d46b408309d7",
+    "changed": false
+  },
+  {
+    "source": "workspace/cspp/io/__init__.py",
+    "source_sha256": "15522b8cd54b4310a72dcbdc14c7ed7f290900873c5bdb4cca5ba51dbab72e8f",
+    "public_path": "cspp/io/__init__.py",
+    "public_sha256": "15522b8cd54b4310a72dcbdc14c7ed7f290900873c5bdb4cca5ba51dbab72e8f",
+    "changed": false
+  },
+  {
+    "source": "workspace/cspp/io/dbt_packet.py",
+    "source_sha256": "4e85419285d0ac436b43e261a326cd855ce7349ea263e8bcd7f710d62d3138ee",
+    "public_path": "cspp/io/dbt_packet.py",
+    "public_sha256": "4e85419285d0ac436b43e261a326cd855ce7349ea263e8bcd7f710d62d3138ee",
+    "changed": false
+  },
+  {
+    "source": "workspace/cspp/io/dbt_triplet.py",
+    "source_sha256": "434e86639c8867502fe203831078883ccfec827f39ccc8303edf1e89a80c9171",
+    "public_path": "cspp/io/dbt_triplet.py",
+    "public_sha256": "434e86639c8867502fe203831078883ccfec827f39ccc8303edf1e89a80c9171",
+    "changed": false
+  },
+  {
+    "source": "workspace/cspp/io/decimation.py",
+    "source_sha256": "c2b5ce6b1eac54e9bea00e60691e267cc9f2740a28856935d16307123d259518",
+    "public_path": "cspp/io/decimation.py",
+    "public_sha256": "c2b5ce6b1eac54e9bea00e60691e267cc9f2740a28856935d16307123d259518",
+    "changed": false
+  },
+  {
+    "source": "workspace/cspp/io/gaps.py",
+    "source_sha256": "f506c4f9690be2c5f68f85e9091ad4de7aeced299a2065ce291c0fe46a29f5bb",
+    "public_path": "cspp/io/gaps.py",
+    "public_sha256": "f506c4f9690be2c5f68f85e9091ad4de7aeced299a2065ce291c0fe46a29f5bb",
+    "changed": false
+  },
+  {
+    "source": "workspace/cspp/io/miniseed.py",
+    "source_sha256": "7c7b6c40fac73502dbe5d79c042deca8ca3230226771891e7db1d4a95df43d1a",
+    "public_path": "cspp/io/miniseed.py",
+    "public_sha256": "7c7b6c40fac73502dbe5d79c042deca8ca3230226771891e7db1d4a95df43d1a",
+    "changed": false
+  },
+  {
+    "source": "workspace/cspp/io/orientation.py",
+    "source_sha256": "6458dd53831532c0b088f9286cf7eeaefc2e09aaf931d17d855bc054aca3803f",
+    "public_path": "cspp/io/orientation.py",
+    "public_sha256": "6458dd53831532c0b088f9286cf7eeaefc2e09aaf931d17d855bc054aca3803f",
+    "changed": false
+  },
+  {
+    "source": "workspace/cspp/io/strong_motion.py",
+    "source_sha256": "c4c01a0b7c90ece8d4be6df13443c61c0c09a26eaf680d8210268a305af557c3",
+    "public_path": "cspp/io/strong_motion.py",
+    "public_sha256": "c4c01a0b7c90ece8d4be6df13443c61c0c09a26eaf680d8210268a305af557c3",
+    "changed": false
+  },
+  {
+    "source": "workspace/cspp/model.py",
+    "source_sha256": "2e6a3bf06f4f3b60934680658d60e244ad445d1adb9e931d7167a67afbafdf4c",
+    "public_path": "cspp/model.py",
+    "public_sha256": "2e6a3bf06f4f3b60934680658d60e244ad445d1adb9e931d7167a67afbafdf4c",
+    "changed": false
+  },
+  {
+    "source": "workspace/cspp/streaming/__init__.py",
+    "source_sha256": "31cbede645e9903bb764ac8044c02d30ef5f9890290af0ded9feabccbf770074",
+    "public_path": "cspp/streaming/__init__.py",
+    "public_sha256": "31cbede645e9903bb764ac8044c02d30ef5f9890290af0ded9feabccbf770074",
+    "changed": false
+  },
+  {
+    "source": "workspace/cspp/streaming/candidate.py",
+    "source_sha256": "548071b86b345728b1bfe3c9b2a860bb08e5905cfa59316c268ac7ec7bcbb6e9",
+    "public_path": "cspp/streaming/candidate.py",
+    "public_sha256": "548071b86b345728b1bfe3c9b2a860bb08e5905cfa59316c268ac7ec7bcbb6e9",
+    "changed": false
+  },
+  {
+    "source": "workspace/cspp/streaming/normalization.py",
+    "source_sha256": "2f0b05e982f7314f3f30488cb4ed12ce955d77a595788d20a149c815816a26a3",
+    "public_path": "cspp/streaming/normalization.py",
+    "public_sha256": "2f0b05e982f7314f3f30488cb4ed12ce955d77a595788d20a149c815816a26a3",
+    "changed": false
+  },
+  {
+    "source": "workspace/cspp/streaming/quality.py",
+    "source_sha256": "18381bca2b57b693cc3a7b8a060819cc709dcbbd0bad320f5c7b89b0883dd5f5",
+    "public_path": "cspp/streaming/quality.py",
+    "public_sha256": "18381bca2b57b693cc3a7b8a060819cc709dcbbd0bad320f5c7b89b0883dd5f5",
+    "changed": false
+  },
+  {
+    "source": "workspace/scripts/release/review_template/.github/workflows/ci.yml",
+    "source_sha256": "d6781480b256871eabd3983c20baefaf8bd154dd4b40b7f081e813544dedd63f",
+    "public_path": ".github/workflows/ci.yml",
+    "public_sha256": "d6781480b256871eabd3983c20baefaf8bd154dd4b40b7f081e813544dedd63f",
+    "changed": false
+  },
+  {
+    "source": "workspace/scripts/release/review_template/VALIDATION.md",
+    "source_sha256": "a910f95ff87792bbff09ba269f9ffbaf90cfa7026bbf0ccbc7891e184d7f1269",
+    "public_path": "VALIDATION.md",
+    "public_sha256": "a910f95ff87792bbff09ba269f9ffbaf90cfa7026bbf0ccbc7891e184d7f1269",
+    "changed": false
+  },
+  {
+    "source": "workspace/scripts/release/review_template/tests/test_release.py",
+    "source_sha256": "5577d65b41ca8cf86cc7b6d5f1585ee4990eb608d55ce5c7acf972cd087ffeb6",
+    "public_path": "tests/test_release.py",
+    "public_sha256": "5577d65b41ca8cf86cc7b6d5f1585ee4990eb608d55ce5c7acf972cd087ffeb6",
+    "changed": false
+  },
+  {
+    "source": "workspace/scripts/release/review_template/tools/predict.py",
+    "source_sha256": "301a7d70dedabc76c05c6e044f369a34afca3445a294e8d9c7903f3498969d06",
+    "public_path": "tools/predict.py",
+    "public_sha256": "301a7d70dedabc76c05c6e044f369a34afca3445a294e8d9c7903f3498969d06",
+    "changed": false
+  },
+  {
+    "source": "workspace/scripts/release/review_template/tools/replay_stead.py",
+    "source_sha256": "c57aff968d37b8d3216ee349f68ac499574a630f94eaed15de7ca56973389040",
+    "public_path": "tools/replay_stead.py",
+    "public_sha256": "c57aff968d37b8d3216ee349f68ac499574a630f94eaed15de7ca56973389040",
+    "changed": false
+  },
+  {
+    "source": "workspace/scripts/release/review_template/tools/reproduce_metrics.py",
+    "source_sha256": "f69c88ebff4e38880f56b2b8dfc9076bd70177c9e3d2a47a5a931e55758528db",
+    "public_path": "tools/reproduce_metrics.py",
+    "public_sha256": "f69c88ebff4e38880f56b2b8dfc9076bd70177c9e3d2a47a5a931e55758528db",
+    "changed": false
+  },
+  {
+    "source": "workspace/scripts/release/review_template/tools/train_stage.py",
+    "source_sha256": "57acf988ac03d5c0e8f90d4a8fbe964bcc1d964754ef38f3c1dcc7f7d3c5b0b1",
+    "public_path": "tools/train_stage.py",
+    "public_sha256": "57acf988ac03d5c0e8f90d4a8fbe964bcc1d964754ef38f3c1dcc7f7d3c5b0b1",
+    "changed": false
+  },
+  {
+    "source": "workspace/scripts/release/review_template/tools/verify_release.py",
+    "source_sha256": "3b098b166790dc3715db12377bab3b635510f948f872805de3b1d39209b5a2dc",
+    "public_path": "tools/verify_release.py",
+    "public_sha256": "3b098b166790dc3715db12377bab3b635510f948f872805de3b1d39209b5a2dc",
+    "changed": false
+  },
+  {
+    "source": "work_artifacts/checkpoints/blind_v27c_C0_none_seed20261101/final.pt",
+    "source_sha256": "d27ce10351475dfa264b45406b601dbcfc64e15c92be7260fe54c1738d35586d",
+    "public_path": "models/cspp_seed20261101.pt",
+    "public_sha256": "53905f8707ff4e1fa75305e442d037da49eb6ba5eda5e8bf66afe18ddb928b33",
+    "tensor_state_sha256": "617b49338e4ad4b348a71aa033872635d9b1e2b6316d27353faab292e829efb6",
+    "tensors_bitwise_equal": true,
+    "removed_metadata": [
+      "training_config",
+      "protocol",
+      "provisional_dev_threshold",
+      "provisional_dev_event_threshold",
+      "dev_metrics",
+      "low_snr_dev_metrics",
+      "selection_score",
+      "checkpoint_selection_score"
+    ],
+    "seed": 20261101
+  },
+  {
+    "source": "work_artifacts/checkpoints/blind_v27c_C0_none_seed20261101/protocol.json",
+    "source_sha256": "b0a8ddf0b5ab1a7825a446a8d89a368b87459107febe42faec6d8b886c22a3fd",
+    "public_path": "reproduction/training/seed20261101/protocol.json",
+    "public_sha256": "63608c4fafb3858036745a5f1c214073568c3865bc0dbeb82b5c169de0442ab9",
+    "changed": true
+  },
+  {
+    "source": "work_artifacts/checkpoints/blind_v27c_C0_none_seed20261101/history.json",
+    "source_sha256": "fcf20a20176b703dbdf50760dd074142942e81beadfd029b681401ecdbe9ced6",
+    "public_path": "reproduction/training/seed20261101/history.json",
+    "public_sha256": "0ba0992c2e3211da1be4a6937db35cca94e5470e0f9e1af5a7eff9457fdab90f",
+    "changed": true
+  },
+  {
+    "source": "work_artifacts/checkpoints/blind_v27c_C0_none_seed20261101/selected_indices.npz",
+    "source_sha256": "72dab23b14f4da309ec04bbbcdb68c7088bbf8aba565024934c2be05c94893cd",
+    "public_path": "reproduction/training/seed20261101/selected_indices.npz",
+    "public_sha256": "72dab23b14f4da309ec04bbbcdb68c7088bbf8aba565024934c2be05c94893cd",
+    "changed": false
+  },
+  {
+    "source": "work_artifacts/checkpoints/blind_v27c_C0_none_seed20261102/final.pt",
+    "source_sha256": "fcc9a3123765e5a78c7a210086d31768a77f37556e1c2e1efc503342b39bf2f2",
+    "public_path": "models/cspp_seed20261102.pt",
+    "public_sha256": "4f23532b07c27ea24a0bdfa5015b3718dff66b33598dcf71e1bc4398e5d0f6ca",
+    "tensor_state_sha256": "e96fa5153eff9f3a5fdfa5629021ff85441ead8effbab9cb88293e265554148d",
+    "tensors_bitwise_equal": true,
+    "removed_metadata": [
+      "training_config",
+      "protocol",
+      "provisional_dev_threshold",
+      "provisional_dev_event_threshold",
+      "dev_metrics",
+      "low_snr_dev_metrics",
+      "selection_score",
+      "checkpoint_selection_score"
+    ],
+    "seed": 20261102
+  },
+  {
+    "source": "work_artifacts/checkpoints/blind_v27c_C0_none_seed20261102/protocol.json",
+    "source_sha256": "c851ea926911e4bf2fa6d72949e20d48f4316884ef29907360047062d77fbd43",
+    "public_path": "reproduction/training/seed20261102/protocol.json",
+    "public_sha256": "df475b7e4d613e2e031b0a291773e70d2d739123a8bb90997126e18324e91d1d",
+    "changed": true
+  },
+  {
+    "source": "work_artifacts/checkpoints/blind_v27c_C0_none_seed20261102/history.json",
+    "source_sha256": "45718ecdde5947135f33f64de33ca326c213112aca40b82e6597fcb1b17ecf83",
+    "public_path": "reproduction/training/seed20261102/history.json",
+    "public_sha256": "998648cbdda7868b1393205edafc09d3cf752ddadb494279428e6d97f3211d07",
+    "changed": true
+  },
+  {
+    "source": "work_artifacts/checkpoints/blind_v27c_C0_none_seed20261102/selected_indices.npz",
+    "source_sha256": "72dab23b14f4da309ec04bbbcdb68c7088bbf8aba565024934c2be05c94893cd",
+    "public_path": "reproduction/training/seed20261102/selected_indices.npz",
+    "public_sha256": "72dab23b14f4da309ec04bbbcdb68c7088bbf8aba565024934c2be05c94893cd",
+    "changed": false
+  },
+  {
+    "source": "work_artifacts/checkpoints/blind_v27c_C0_none_seed20261103/final.pt",
+    "source_sha256": "02695f1827eac6bca218a8017ce3efb67f8ef2f693e113644d41b1423c0fea56",
+    "public_path": "models/cspp_seed20261103.pt",
+    "public_sha256": "c4725c8379c53c7e1ceaeddfbc9871a9a7cccf7a9297227c15593bb629a2f9bc",
+    "tensor_state_sha256": "b93653bc13d2c841d8ad19af0dd35bc840e666d3c7114242803ab88ac7ea4ade",
+    "tensors_bitwise_equal": true,
+    "removed_metadata": [
+      "training_config",
+      "protocol",
+      "provisional_dev_threshold",
+      "provisional_dev_event_threshold",
+      "dev_metrics",
+      "low_snr_dev_metrics",
+      "selection_score",
+      "checkpoint_selection_score"
+    ],
+    "seed": 20261103
+  },
+  {
+    "source": "work_artifacts/checkpoints/blind_v27c_C0_none_seed20261103/protocol.json",
+    "source_sha256": "b004656de514ea476957df751a48e51d6c707a5044c451f6d467e3cad8166619",
+    "public_path": "reproduction/training/seed20261103/protocol.json",
+    "public_sha256": "e84d06dfa2d18ea04c6bd01abce5002edb80a9a5cf193f1143b112f152a6d761",
+    "changed": true
+  },
+  {
+    "source": "work_artifacts/checkpoints/blind_v27c_C0_none_seed20261103/history.json",
+    "source_sha256": "394f41d5da5eccc421bb27312a91ff4830147cda87b6e64268e8d0a657f54094",
+    "public_path": "reproduction/training/seed20261103/history.json",
+    "public_sha256": "e05c7d5d0f4ce279682f3994a6974159664c01003fd4416298aab262b94a0d08",
+    "changed": true
+  },
+  {
+    "source": "work_artifacts/checkpoints/blind_v27c_C0_none_seed20261103/selected_indices.npz",
+    "source_sha256": "72dab23b14f4da309ec04bbbcdb68c7088bbf8aba565024934c2be05c94893cd",
+    "public_path": "reproduction/training/seed20261103/selected_indices.npz",
+    "public_sha256": "72dab23b14f4da309ec04bbbcdb68c7088bbf8aba565024934c2be05c94893cd",
+    "changed": false
+  },
+  {
+    "source": "work_artifacts/checkpoints/pilot_v27a_seed20261101/best.pt",
+    "source_sha256": "c90241c759018e87cacb10c75e46c3b99ac410f439b312801c9bbbdb9dc6e813",
+    "public_path": "reproduction/initializer.pt",
+    "public_sha256": "a59c3a897f8fbe671ac485f5cd1dce59d6e5ec76c0d368872f9248b744a1a6dc",
+    "tensor_state_sha256": "3920875bba4889f968ed07faae5ebe6f3e64ac3c0a8be1cdf78bf29893742b91",
+    "tensors_bitwise_equal": true,
+    "removed_metadata": [
+      "training_config",
+      "protocol",
+      "provisional_dev_threshold",
+      "provisional_dev_event_threshold",
+      "dev_metrics",
+      "low_snr_dev_metrics",
+      "selection_score",
+      "checkpoint_selection_score"
+    ]
+  },
+  {
+    "source": "workspace/scripts/training/train_domain_robust_v5.py",
+    "source_sha256": "57a244203bd364628ffca0d665046046406bf1cbb9efe17b45519a3d34225823",
+    "public_path": "reproduction/training_snapshot/scripts/training/train_domain_robust_v5.py",
+    "public_sha256": "57a244203bd364628ffca0d665046046406bf1cbb9efe17b45519a3d34225823",
+    "changed": false
+  },
+  {
+    "source": "workspace/scripts/training/train_domain_robust_v4.py",
+    "source_sha256": "9168da35aa5400cc962b558665fc7c4fba4e19857e296667d2976ae867708dba",
+    "public_path": "reproduction/training_snapshot/scripts/training/train_domain_robust_v4.py",
+    "public_sha256": "9168da35aa5400cc962b558665fc7c4fba4e19857e296667d2976ae867708dba",
+    "changed": false
+  },
+  {
+    "source": "workspace/src/model_domain_robust_v4.py",
+    "source_sha256": "11bfa2c965967fcbf107ba6cd8e225b50dbb4be6565424a568322f9559f14de6",
+    "public_path": "reproduction/training_snapshot/src/model_domain_robust_v4.py",
+    "public_sha256": "11bfa2c965967fcbf107ba6cd8e225b50dbb4be6565424a568322f9559f14de6",
+    "changed": false
+  },
+  {
+    "source": "workspace/src/domain_robust_metrics.py",
+    "source_sha256": "a703b8e827f7be9663e6874b29ce6bf726d5ef92c1b8e9aa18c9bb9c2c6d3f94",
+    "public_path": "reproduction/training_snapshot/src/domain_robust_metrics.py",
+    "public_sha256": "a703b8e827f7be9663e6874b29ce6bf726d5ef92c1b8e9aa18c9bb9c2c6d3f94",
+    "changed": false
+  },
+  {
+    "source": "workspace/src/config.py",
+    "source_sha256": "7c9be2490ff6f976fb79c50bbca213c1915fe775258cfab167af33114b1f534e",
+    "public_path": "reproduction/training_snapshot/src/config.py",
+    "public_sha256": "7c9be2490ff6f976fb79c50bbca213c1915fe775258cfab167af33114b1f534e",
+    "changed": false
+  },
+  {
+    "source": "workspace/src/domain_robust_data.py",
+    "source_sha256": "941c38db8f358a777baefad96bb4d36419cff1f01eb1146d3d9d6d7cdce447b2",
+    "public_path": "reproduction/training_snapshot/src/domain_robust_data.py",
+    "public_sha256": "941c38db8f358a777baefad96bb4d36419cff1f01eb1146d3d9d6d7cdce447b2",
+    "changed": false
+  },
+  {
+    "source": "workspace/src/data_streaming.py",
+    "source_sha256": "8b81c1b194740cea28a0f99698c3698d12a1acb92661e4a5c0dff847facad66b",
+    "public_path": "reproduction/training_snapshot/src/data_streaming.py",
+    "public_sha256": "8b81c1b194740cea28a0f99698c3698d12a1acb92661e4a5c0dff847facad66b",
+    "changed": false
+  },
+  {
+    "source": "workspace/src/model_cspp_v27.py",
+    "source_sha256": "c2ca73f059fbdd7fcf59709ee8ed8fe47c8ba6b3de03a3f714c8effa2a1261d4",
+    "public_path": "reproduction/training_snapshot/src/model_cspp_v27.py",
+    "public_sha256": "c2ca73f059fbdd7fcf59709ee8ed8fe47c8ba6b3de03a3f714c8effa2a1261d4",
+    "changed": false
+  },
+  {
+    "source": "workspace/src/model_domain_robust_v9.py",
+    "source_sha256": "f9ae8dac295d9ac09158fef1dd8995f8c0ba82c22a96b4919bd69a6c807e414a",
+    "public_path": "reproduction/training_snapshot/src/model_domain_robust_v9.py",
+    "public_sha256": "f9ae8dac295d9ac09158fef1dd8995f8c0ba82c22a96b4919bd69a6c807e414a",
+    "changed": false
+  },
+  {
+    "source": "workspace/src/model_domain_robust_v8.py",
+    "source_sha256": "e64580075c5d0d7f9b89d86f5ebdf4a29a4cce861daf371a6a3af4b4d106fd61",
+    "public_path": "reproduction/training_snapshot/src/model_domain_robust_v8.py",
+    "public_sha256": "e64580075c5d0d7f9b89d86f5ebdf4a29a4cce861daf371a6a3af4b4d106fd61",
+    "changed": false
+  },
+  {
+    "source": "workspace/src/model_domain_robust_v5.py",
+    "source_sha256": "48516e0ac362d629d6fd7f6af331e22e3eeabeb4d2424dd07337d8b45620a1c7",
+    "public_path": "reproduction/training_snapshot/src/model_domain_robust_v5.py",
+    "public_sha256": "48516e0ac362d629d6fd7f6af331e22e3eeabeb4d2424dd07337d8b45620a1c7",
+    "changed": false
+  },
+  {
+    "source": "workspace/src/model_cspp_v25.py",
+    "source_sha256": "0909e162cf777f8d317aa2d4ee784c9eb326b44a4fdee82dff6b629d2185b398",
+    "public_path": "reproduction/training_snapshot/src/model_cspp_v25.py",
+    "public_sha256": "0909e162cf777f8d317aa2d4ee784c9eb326b44a4fdee82dff6b629d2185b398",
+    "changed": false
+  },
+  {
+    "source": "workspace/src/model_cspp_v26.py",
+    "source_sha256": "cf4c285f9ae3ff082415b1936d49182903c6b8eaedc7258725ac541f6c55737a",
+    "public_path": "reproduction/training_snapshot/src/model_cspp_v26.py",
+    "public_sha256": "cf4c285f9ae3ff082415b1936d49182903c6b8eaedc7258725ac541f6c55737a",
+    "changed": false
+  },
+  {
+    "source": "workspace/src/model_packet_once_v1.py",
+    "source_sha256": "6a9be3b01289a696c8cbf00a315f6e74090bddcb169e2e01e8755cc623626ee7",
+    "public_path": "reproduction/training_snapshot/src/model_packet_once_v1.py",
+    "public_sha256": "6a9be3b01289a696c8cbf00a315f6e74090bddcb169e2e01e8755cc623626ee7",
+    "changed": false
+  },
+  {
+    "source": "workspace/src/model_domain_robust_v11.py",
+    "source_sha256": "fa3ed08d993bfe7b09f3811f0346f89d6d0ebedf5cff19c3031cdbbb1feba55e",
+    "public_path": "reproduction/training_snapshot/src/model_domain_robust_v11.py",
+    "public_sha256": "fa3ed08d993bfe7b09f3811f0346f89d6d0ebedf5cff19c3031cdbbb1feba55e",
+    "changed": false
+  },
+  {
+    "source": "workspace/src/model_domain_robust_v10.py",
+    "source_sha256": "b68fe893d57a57fe3973bcf8556968059443470096b1a7c242d3c62cd71cb58b",
+    "public_path": "reproduction/training_snapshot/src/model_domain_robust_v10.py",
+    "public_sha256": "b68fe893d57a57fe3973bcf8556968059443470096b1a7c242d3c62cd71cb58b",
+    "changed": false
+  },
+  {
+    "source": "workspace/src/model_domain_robust_v7.py",
+    "source_sha256": "b288eff20e6e0c8b330f41af40ebdefd1aab78602acc99b68e1976c4009d8b46",
+    "public_path": "reproduction/training_snapshot/src/model_domain_robust_v7.py",
+    "public_sha256": "b288eff20e6e0c8b330f41af40ebdefd1aab78602acc99b68e1976c4009d8b46",
+    "changed": false
+  },
+  {
+    "source": "workspace/src/model_domain_robust_v6.py",
+    "source_sha256": "4a959d1e850acb7465489d2e7b953c9f9fa9a1959fcc6cda964593f03dfe31aa",
+    "public_path": "reproduction/training_snapshot/src/model_domain_robust_v6.py",
+    "public_sha256": "4a959d1e850acb7465489d2e7b953c9f9fa9a1959fcc6cda964593f03dfe31aa",
+    "changed": false
+  },
+  {
+    "source": "workspace/src/domain_robust_v5_metrics.py",
+    "source_sha256": "0b3e062214a5b11a15d77cffa1e08671afd445b01d37d6640c51a736f6c3d76a",
+    "public_path": "reproduction/training_snapshot/src/domain_robust_v5_metrics.py",
+    "public_sha256": "0b3e062214a5b11a15d77cffa1e08671afd445b01d37d6640c51a736f6c3d76a",
+    "changed": false
+  },
+  {
+    "source": "workspace/src/cwa_opened_packet_store.py",
+    "source_sha256": "335e4759c0a9325c38801ff0be74a67f4249119f869143dba0b08a83f37226a5",
+    "public_path": "reproduction/training_snapshot/src/cwa_opened_packet_store.py",
+    "public_sha256": "335e4759c0a9325c38801ff0be74a67f4249119f869143dba0b08a83f37226a5",
+    "changed": false
+  },
+  {
+    "source": "workspace/src/domain_robust_v5_data.py",
+    "source_sha256": "02ffb2aec751d326aea1824c7804523f7af07f0f433cc51ee1a3f051664b5548",
+    "public_path": "reproduction/training_snapshot/src/domain_robust_v5_data.py",
+    "public_sha256": "02ffb2aec751d326aea1824c7804523f7af07f0f433cc51ee1a3f051664b5548",
+    "changed": false
+  },
+  {
+    "source": "work_artifacts/tx_external_event_validation_20260824/results/summary.json",
+    "source_sha256": "54fb01bb191fd74f6750da3bc6852fdd25620a8aad6d5607655693d2507914cc",
+    "public_path": "evidence/summaries/tx.json",
+    "public_sha256": "d3a9bb75176b2ee6f77b23bdd29b89fa866d557666d4ce485e1b717b45fd819d",
+    "changed": true
+  },
+  {
+    "source": "work_artifacts/pr_pilot_20260824/results/summary.json",
+    "source_sha256": "c0d08a4cb13b2d14e6dfa98da906249658ab9b1163a3929bde97b8a088c3038b",
+    "public_path": "evidence/summaries/pr.json",
+    "public_sha256": "2bf592ba9ef0341f9a604646efe239b4f24e3e9ce950054843cadcbd5e9b62d0",
+    "changed": true
+  },
+  {
+    "source": "work_artifacts/ncedc_larger_event_extension_20260824/evaluation/ncedc_larger_event_analysis_v1/result.json",
+    "source_sha256": "76ead705a348aae7eda16cf9e400e56328723341bb970912769375ef54715be0",
+    "public_path": "evidence/summaries/nc_large.json",
+    "public_sha256": "535ce30bf471229f9c2422bb25637be57beab7bf28f7002a82f5cc3a16ed1c7e",
+    "changed": true
+  },
+  {
+    "source": "work_artifacts/ncedc_model_blind_20260817/evaluation/ncedc_event_analysis_v1/result.json",
+    "source_sha256": "84b5fabf023812caef16eb721390c8818e11335dc3e92524964053cf63589a06",
+    "public_path": "evidence/summaries/nc.json",
+    "public_sha256": "0c245a82304df1b42dfa2ba03dfe8c24e49819c4a2b76bf44ebe8ce9203c9b77",
+    "changed": true
+  },
+  {
+    "source": "work_artifacts/evaluation/cspp_v27c_geonet_final_analysis_a2_20260729/result.json",
+    "source_sha256": "0db9ce45c3ade98ee3bb22aaa392e0d76c4e7f8b89918b405a47f068a1511927",
+    "public_path": "evidence/summaries/geo.json",
+    "public_sha256": "77d3d5b99d22389e7edbcbd3ad75ddfa7855693233dc644699bd1491ebc0bd11",
+    "changed": true
+  },
+  {
+    "source": "work_artifacts/ncedc_joint_continuous_m3_20260904/evidence_summary_20260905/result.json",
+    "source_sha256": "f772ecc3dc57f9a49a0b2ad4ee698b52279ce50e70a4e29964899b9e6cccf15a",
+    "public_path": "evidence/summaries/evidence.json",
+    "public_sha256": "0e7c284ee9bdb3cc50a585a3a2b0d85a14f8194c13d22c050c1281fcf227cbd3",
+    "changed": true
+  },
+  {
+    "source": "work_artifacts/expanded_ncsn_full_replay_20260905/result.json",
+    "source_sha256": "f51e844b3a5ee68d8d16e8004b58c62d75349830b77390029738be34006f2e91",
+    "public_path": "evidence/summaries/replay.json",
+    "public_sha256": "f51e844b3a5ee68d8d16e8004b58c62d75349830b77390029738be34006f2e91",
+    "changed": false
+  },
+  {
+    "source": "work_artifacts/ncedc_joint_continuous_m3_20260904/joint_continuous_protocol.json",
+    "source_sha256": "3de642f8ad3ba9afad15e44b9043426515f59647a18a6de8a94f460f6cf5a241",
+    "public_path": "evidence/summaries/joint_protocol.json",
+    "public_sha256": "56436e6d1fe2ca0372f63041ef04f6995fca14107708122cacb85480226a27c8",
+    "changed": true
+  },
+  {
+    "source": "work_artifacts/ncedc_joint_continuous_m3_20260904/runtime_profile/serial_packet_clock_cpu1.json",
+    "source_sha256": "f418457f02c5fde00371ecf76231a4eaa4a55a50acd61132ccd26f158237aec1",
+    "public_path": "evidence/summaries/runtime.json",
+    "public_sha256": "408034d299e3918a79dfb383465fd2f51ce2eac41e233733c2202a31e532a610",
+    "changed": true
+  },
+  {
+    "source": "work_artifacts/expanded_data_two_thresholds_20260905/data_audit.json",
+    "source_sha256": "3a8d04f3379208cbf01b3931e05b0b19a430f60a48cb0634af8ea00ec4393ff3",
+    "public_path": "evidence/summaries/train.json",
+    "public_sha256": "8ac411317361b999ca599a9208f344385bfa8d4a066865be6aedecf37dab29fe",
+    "changed": true
+  },
+  {
+    "source": "work_artifacts/expanded_data_two_thresholds_20260905/baseline/result.json",
+    "source_sha256": "ffc83fc86deec29f79b0c9d30a148d0c3af0a5dbb4e448ce6c276d6ae3722f6d",
+    "public_path": "evidence/summaries/old_dev.json",
+    "public_sha256": "43205f757eee3855711c54ec4c247eafe826715c3ec6beb4fec184e492f6d2b8",
+    "changed": true
+  },
+  {
+    "source": "work_artifacts/expanded_data_two_thresholds_20260905/expanded/result.json",
+    "source_sha256": "59d01351ee532757c7ac0bbb1b29bef43a7a429411e538fac854eae4a632f004",
+    "public_path": "evidence/summaries/new_dev.json",
+    "public_sha256": "25e94e0a8b641d5c28f68b9232510d48b58ad1706956ba9e9f4e003c9cecf61b",
+    "changed": true
+  },
+  {
+    "source": "work_artifacts/expanded_data_two_thresholds_20260905/texnet_regression/result.json",
+    "source_sha256": "d7786e34df5cc6e6642fd6147db275145cff6cbca78b35da230d81f6cf87fbac",
+    "public_path": "evidence/summaries/regression.json",
+    "public_sha256": "d7786e34df5cc6e6642fd6147db275145cff6cbca78b35da230d81f6cf87fbac",
+    "changed": false
+  },
+  {
+    "source": "work_artifacts/eqanomalynet_knet_full_cases_20260905/result.json",
+    "source_sha256": "3d4135c26ffdea4fe61b391f177b6ba2265cfc7d26bf6c00baa4ddf5515d3790",
+    "public_path": "evidence/summaries/eq.json",
+    "public_sha256": "3d4135c26ffdea4fe61b391f177b6ba2265cfc7d26bf6c00baa4ddf5515d3790",
+    "changed": false
+  },
+  {
+    "source": "work_artifacts/eqanomalynet_knet_full_cases_20260905/visual_review_66/summary.json",
+    "source_sha256": "06f274e0b2ca0fc1079208e949ea6586370733ff94cf05d542c5f9ec5e6211ea",
+    "public_path": "evidence/summaries/visual.json",
+    "public_sha256": "480b917a66fd0c717442026e7e1fce761d5494fa2c6f176a5f2c701d0dc3897e",
+    "changed": true
+  },
+  {
+    "source": "work_artifacts/eqanomalynet_knet_full_cases_20260905/visual_review_66/threshold_sweep_49_20260905/result.json",
+    "source_sha256": "a68b9a0adb0019cffcb899ac0ad3eac7ff3c8b83420701dff6d10e588adbaafd",
+    "public_path": "evidence/summaries/eq_sweep.json",
+    "public_sha256": "a68b9a0adb0019cffcb899ac0ad3eac7ff3c8b83420701dff6d10e588adbaafd",
+    "changed": false
+  },
+  {
+    "source": "work_artifacts/eqanomalynet_knet_matched_20260905/audit.json",
+    "source_sha256": "46ff8032935484c5f7577347107094a930c63dfba6ad901ea127decd0dd929e1",
+    "public_path": "evidence/summaries/eq_audit.json",
+    "public_sha256": "831f0022b93e1e6f818172793409a8568de0c063f8ee5fb1692aeba36b157aa8",
+    "changed": true
+  },
+  {
+    "source": "work_artifacts/tx_external_event_validation_20260824/evaluation/tx_causal_public_analysis_v2/result.json",
+    "source_sha256": "ba7ad794e0ec0f0c08b9df49fdb39195008c9c59a9c38bd97c29b4d5ccb6f344",
+    "public_path": "evidence/summaries/tx_snr.json",
+    "public_sha256": "05abdeec17bf8a71a3c4b5330273aa698ee6ba754acd37dea106b907b382bf22",
+    "changed": true
+  },
+  {
+    "source": "work_artifacts/ncedc_joint_continuous_m3_20260904/diagnosis_m4_misses_20260905/result.json",
+    "source_sha256": "7c5f3f7027164cf97eec3c0efc11841f621ef89e310e11fc91bf01287ad435b6",
+    "public_path": "evidence/summaries/misses.json",
+    "public_sha256": "a0f6839323d6f03f9205dde42326b460df3951f28682df1e0150af59112b1e83",
+    "changed": true
+  },
+  {
+    "source": "work_artifacts/ncedc_model_blind_20260817/evaluation/ncedc_causal_public_analysis_v1/result.json",
+    "source_sha256": "8c09f185a65171690376057a19a09d0a9d760fc2dcb1b9f6eef6beb7c8ae1a83",
+    "public_path": "evidence/summaries/nc_default.json",
+    "public_sha256": "8c09f185a65171690376057a19a09d0a9d760fc2dcb1b9f6eef6beb7c8ae1a83",
+    "changed": false
+  },
+  {
+    "source": "work_artifacts/ncedc_model_blind_20260817/evaluation/ncedc_causal_public_analysis_geonet_calibrated_v1/result.json",
+    "source_sha256": "d49cccac7fe0ea536c7456a530c3ac4765e59be914bc149b91949509323cbef3",
+    "public_path": "evidence/summaries/nc_cal.json",
+    "public_sha256": "d49cccac7fe0ea536c7456a530c3ac4765e59be914bc149b91949509323cbef3",
+    "changed": false
+  },
+  {
+    "source": "work_artifacts/evaluation/cspp_v27c_fixed_retrospective_analysis_a5_20260730/result.json",
+    "source_sha256": "63f6bc52bffc9a5faa3a78956be1eb26496719e2fa50dbb6c4cbf04007553e92",
+    "public_path": "evidence/summaries/retrospective.json",
+    "public_sha256": "a199da98e021604cf1aad03f7692ca411841d26560e2507fb9a5f5264878ee74",
+    "changed": true
+  },
+  {
+    "source": "work_artifacts/evaluation/cspp_v27_key_ablation_geonet_20260805/summary_all.json",
+    "source_sha256": "778f66543e318c5810f759f7e479bd4c267a2a98540db7c21370f2276feb49c1",
+    "public_path": "evidence/summaries/ablations.json",
+    "public_sha256": "8e5b0c280af069f869613dd1290b707db07787298e8a4fcb5564876c00b00981",
+    "changed": true
+  },
+  {
+    "source": "work_artifacts/evaluation/cspp_v27_key_ablation_geonet_20260805/summary_A0_full.json",
+    "source_sha256": "c81920367f95f5e2db9ca1b1e7af799f0966282964a44aad6b11cd143e08efb6",
+    "public_path": "evidence/summaries/ablation_0.json",
+    "public_sha256": "8a5162c5aa0cd2fd84b7c93373b26b920008c54f312cce366eafcfbe21a8dd67",
+    "changed": true
+  },
+  {
+    "source": "work_artifacts/evaluation/cspp_v27_key_ablation_geonet_20260805/summary_A1_no_cross_packet_state.json",
+    "source_sha256": "16f01bbf953a71704807eaaa3524a190eb135c27172c6c44d91e6ebd0cc7241e",
+    "public_path": "evidence/summaries/ablation_1.json",
+    "public_sha256": "fa57c45f79bb99f592fb5fd51ec4711ed0b5d29dd3f9e5b34537db489c54deb0",
+    "changed": true
+  },
+  {
+    "source": "work_artifacts/evaluation/cspp_v27_key_ablation_geonet_20260805/summary_A2_no_dense_candidate_input.json",
+    "source_sha256": "d832bd5dd984499936a3ce1c3d8f324eb0734f5784a6660e5643dc6e9fba8016",
+    "public_path": "evidence/summaries/ablation_2.json",
+    "public_sha256": "9b3bf74dd79720c0c31b7b846dd97ed57398bfd425674c5d78f601b0d9300cd7",
+    "changed": true
+  },
+  {
+    "source": "work_artifacts/evaluation/cspp_v27_key_ablation_geonet_20260805/summary_A3_no_localization_supervision.json",
+    "source_sha256": "a88f64d1e7e7bf5ed1699607f7cc4bc1b077787fd7e2aa6ad371841b19c88f7b",
+    "public_path": "evidence/summaries/ablation_3.json",
+    "public_sha256": "85a6adde7847ef99e6b24f04ea636a8fa500f3a97d38002b97a5d48ee910ad59",
+    "changed": true
+  },
+  {
+    "source": "work_artifacts/evaluation/cspp_v27_key_ablation_geonet_20260805/summary_A4_no_spectrum.json",
+    "source_sha256": "a0890b7e7f99c8b53466718454e1594547b11472234b08322cfe454ef892206d",
+    "public_path": "evidence/summaries/ablation_4.json",
+    "public_sha256": "b7ddb33f950ab72dac31cb3ff8d63531da1c50ff407d28756fb1300d46dfe037",
+    "changed": true
+  },
+  {
+    "source": "work_artifacts/evaluation/cspp_v27_knet_expanded_20260807/summary_all_models.json",
+    "source_sha256": "35ccce763c493016ed707930638a8a3334b2c242014d1d2fb77685c4a33acfb8",
+    "public_path": "evidence/summaries/knet_expanded.json",
+    "public_sha256": "da2665bca6f98f41396372711b9be8e3a8b9596cb39ab233357d215daaab49f2",
+    "changed": true
+  },
+  {
+    "source": "work_artifacts/evaluation/cspp_v27_knet_expanded_20260807/analysis_C0_detectability.json",
+    "source_sha256": "b066b6d3ecaa4030ec276b6ff9091b66633dbd671fb13955dab0d17f9fe5a878",
+    "public_path": "evidence/summaries/knet_diag.json",
+    "public_sha256": "283e55a9aa87c5f684f2243db35e5ef3e3de9fbed398f8381b260f382f4a1e5d",
+    "changed": true
+  },
+  {
+    "source": "work_artifacts/evaluation/esm25_test/summary.json",
+    "source_sha256": "d753238a6a14eee74c3dc8880c1ab68bdb0f5df363c3cdd7887546a69d45a5f9",
+    "public_path": "evidence/summaries/esm.json",
+    "public_sha256": "d753238a6a14eee74c3dc8880c1ab68bdb0f5df363c3cdd7887546a69d45a5f9",
+    "changed": false
+  },
+  {
+    "source": "work_artifacts/evaluation/kumamoto_2016_test/summary.json",
+    "source_sha256": "9e85046d63f3ba72763e018fe2f11a3295dc507af9f2994d0ed9e4227170906f",
+    "public_path": "evidence/summaries/kumamoto.json",
+    "public_sha256": "9e85046d63f3ba72763e018fe2f11a3295dc507af9f2994d0ed9e4227170906f",
+    "changed": false
+  },
+  {
+    "source": "work_artifacts/tx_external_event_validation_20260824/results/event_station_results.csv",
+    "source_sha256": "09ece4a65aef16196c1bbeb3673bc122660fd68534601cbd162b6a04640779f7",
+    "public_path": "evidence/event_windows/tx.csv",
+    "public_sha256": "a161a345b201d0b7a5c4b74f62ae40ecca594ca004dfaf154beb022b6dd36f0a",
+    "changed": true
+  },
+  {
+    "source": "work_artifacts/pr_pilot_20260824/results/event_station_results.csv",
+    "source_sha256": "5ceabff9dd9dcfc7387c8262d32dd66a35a4f0f15bd525998f05c623ab74a8cb",
+    "public_path": "evidence/event_windows/pr.csv",
+    "public_sha256": "5ceabff9dd9dcfc7387c8262d32dd66a35a4f0f15bd525998f05c623ab74a8cb",
+    "changed": false
+  },
+  {
+    "source": "work_artifacts/ncedc_model_blind_20260817/evaluation/ncedc_event_analysis_v1/event_station_results.csv",
+    "source_sha256": "a01f048045ac2a374296d864861f436a27169b2dd5776a04a74c670aa8064684",
+    "public_path": "evidence/event_windows/nc.csv",
+    "public_sha256": "98d5599a7283ffa6ca70f1c298d88d3fdfbd4e8d88d1f90e0efad7517a1c5a85",
+    "changed": true
+  },
+  {
+    "source": "work_artifacts/ncedc_larger_event_extension_20260824/evaluation/ncedc_larger_event_analysis_v1/event_station_results.csv",
+    "source_sha256": "725bb55e68f8151f086794c487f82c4220abb8cb987fb8a0368a9d8f26a3f961",
+    "public_path": "evidence/event_windows/nc_large.csv",
+    "public_sha256": "e4780e8946c66039baa01a80e23e3943a3fb3df26666ff71af6148eee952823f",
+    "changed": true
+  },
+  {
+    "source": "work_artifacts/evaluation/cspp_v27c_geonet_final_analysis_a2_20260729/event_station_results.csv",
+    "source_sha256": "b118f548115999e8b569c1de9c8a03729ef03642ab699a73ea49c6bcdca40548",
+    "public_path": "evidence/event_windows/geo.csv",
+    "public_sha256": "efacf694d4dfde3dc70c79b109cbf647244b1ea9ab91b8311ae38dd6c265f8cb",
+    "changed": true
+  },
+  {
+    "source": "work_artifacts/expanded_ncsn_full_replay_20260905/event_days/analysis/old_original/candidates.csv",
+    "source_sha256": "1dc87e5d9143a57b17e185f9d85bb504b771c952c1949209d550b5811b314c0a",
+    "public_path": "evidence/continuous/event_days/old_original/candidates.csv",
+    "public_sha256": "6dbb97cc20124347ec14bdf659705e218e371a27b97264d639d9c6b066023d24",
+    "changed": true
+  },
+  {
+    "source": "work_artifacts/expanded_ncsn_full_replay_20260905/event_days/analysis/old_original/causal_delaunay_triplets_events.csv",
+    "source_sha256": "9f37dca12905929f746f5ed0ebc37bb7c76d8a6b210d932be01aa9d37827140a",
+    "public_path": "evidence/continuous/event_days/old_original/causal_delaunay_triplets_events.csv",
+    "public_sha256": "608a61b01e9d4c0c3e302bf6a9b0ae18cb4dbe852aaddb55f48829e4a065a72a",
+    "changed": true
+  },
+  {
+    "source": "work_artifacts/expanded_ncsn_full_replay_20260905/event_days/analysis/old_original/causal_delaunay_triplets_groups.csv",
+    "source_sha256": "c1a78032d9ab6a9f36fb024de445c4b4486a1c2909cd77ceb922969312b3424e",
+    "public_path": "evidence/continuous/event_days/old_original/causal_delaunay_triplets_groups.csv",
+    "public_sha256": "2fd74dba61b3f2a1ea3e75da40e74e8f6c2df229f1e87c25505b8570a4c92047",
+    "changed": true
+  },
+  {
+    "source": "work_artifacts/expanded_ncsn_full_replay_20260905/event_days/analysis/old_original/causal_delaunay_triplets_station_targets.csv",
+    "source_sha256": "75a916400e6133fa968ccafe2d89adf759c70f233e49c11f1d39c8d9fe881ced",
+    "public_path": "evidence/continuous/event_days/old_original/causal_delaunay_triplets_station_targets.csv",
+    "public_sha256": "73d91e4f4b1760956a11e19bf9b9d9c889738b8cab8927209b8d012cab51bc7e",
+    "changed": true
+  },
+  {
+    "source": "work_artifacts/expanded_ncsn_full_replay_20260905/event_days/analysis/old_original/network_exposure_by_date.csv",
+    "source_sha256": "a2d21261215fd083c022095e1915870b0db713ea1d7c18f90613e46b5c142b7b",
+    "public_path": "evidence/continuous/event_days/old_original/network_exposure_by_date.csv",
+    "public_sha256": "addb21d2e8792ccc6eb305bd070b1f8fa2fbf94a127b729d0bb4db2890fc1dfb",
+    "changed": true
+  },
+  {
+    "source": "work_artifacts/expanded_ncsn_full_replay_20260905/event_days/analysis/old_original/original_time_groups_events.csv",
+    "source_sha256": "1a5ec6e4a365caf9c9e7562f6eb0ed9607e6d72825f247c9209e5debad6dfe05",
+    "public_path": "evidence/continuous/event_days/old_original/original_time_groups_events.csv",
+    "public_sha256": "14c8e78da676558eba1aa0a7a93edb89216bc238817a1926f858dc6f70a76106",
+    "changed": true
+  },
+  {
+    "source": "work_artifacts/expanded_ncsn_full_replay_20260905/event_days/analysis/old_original/original_time_groups_groups.csv",
+    "source_sha256": "be050f8ca94b40a5cd1978105965ad4ca61a26efc96a9d4479886d70c3661968",
+    "public_path": "evidence/continuous/event_days/old_original/original_time_groups_groups.csv",
+    "public_sha256": "74fd91be8bf9730bdbf4209caaccdad8a9e45bb630f3b25e216b47477da1116f",
+    "changed": true
+  },
+  {
+    "source": "work_artifacts/expanded_ncsn_full_replay_20260905/event_days/analysis/old_original/original_time_groups_station_targets.csv",
+    "source_sha256": "75a916400e6133fa968ccafe2d89adf759c70f233e49c11f1d39c8d9fe881ced",
+    "public_path": "evidence/continuous/event_days/old_original/original_time_groups_station_targets.csv",
+    "public_sha256": "73d91e4f4b1760956a11e19bf9b9d9c889738b8cab8927209b8d012cab51bc7e",
+    "changed": true
+  },
+  {
+    "source": "work_artifacts/expanded_ncsn_full_replay_20260905/event_days/analysis/old_original/result.json",
+    "source_sha256": "990fd53481764c63405ef6eb0e813b9bdbc2e454e5e76f5a47bc4f2d38a062b5",
+    "public_path": "evidence/continuous/event_days/old_original/result.json",
+    "public_sha256": "990fd53481764c63405ef6eb0e813b9bdbc2e454e5e76f5a47bc4f2d38a062b5",
+    "changed": false
+  },
+  {
+    "source": "work_artifacts/expanded_ncsn_full_replay_20260905/event_days/analysis/old_high_recall/candidates.csv",
+    "source_sha256": "5bd85fea78e70018f5218a2b6a45ffc8421bb63d44c1eb801e5934070992d832",
+    "public_path": "evidence/continuous/event_days/old_high_recall/candidates.csv",
+    "public_sha256": "864f689f71391c77cac87f74d02dcca8ee23de5d320068c71671747a4d1b417f",
+    "changed": true
+  },
+  {
+    "source": "work_artifacts/expanded_ncsn_full_replay_20260905/event_days/analysis/old_high_recall/causal_delaunay_triplets_events.csv",
+    "source_sha256": "44d745fe74173fa5aada36c081432b338370ff987a1fb9057a00e188ed4b052a",
+    "public_path": "evidence/continuous/event_days/old_high_recall/causal_delaunay_triplets_events.csv",
+    "public_sha256": "aa744909df847823b96f90b039e386a7dc492de637a04d08aca6c0144e917011",
+    "changed": true
+  },
+  {
+    "source": "work_artifacts/expanded_ncsn_full_replay_20260905/event_days/analysis/old_high_recall/causal_delaunay_triplets_groups.csv",
+    "source_sha256": "85fcd3b4c139570c9118fcf7024b8f32d7bdd362e5c7722fef54215ab644087e",
+    "public_path": "evidence/continuous/event_days/old_high_recall/causal_delaunay_triplets_groups.csv",
+    "public_sha256": "8ff2d27e74b52f29d32b849ca4dcab08c7e41d37e429f8cfb30f63e775221f0d",
+    "changed": true
+  },
+  {
+    "source": "work_artifacts/expanded_ncsn_full_replay_20260905/event_days/analysis/old_high_recall/causal_delaunay_triplets_station_targets.csv",
+    "source_sha256": "632f388fcfb77b5c76f43eaa95c84ed29ee3140844b19c93eec3c9edc2cd9298",
+    "public_path": "evidence/continuous/event_days/old_high_recall/causal_delaunay_triplets_station_targets.csv",
+    "public_sha256": "a77f971c92f0e7bd507c9287a4ca46175b6e52dfc8c053b817ed903236209a0a",
+    "changed": true
+  },
+  {
+    "source": "work_artifacts/expanded_ncsn_full_replay_20260905/event_days/analysis/old_high_recall/network_exposure_by_date.csv",
+    "source_sha256": "a2d21261215fd083c022095e1915870b0db713ea1d7c18f90613e46b5c142b7b",
+    "public_path": "evidence/continuous/event_days/old_high_recall/network_exposure_by_date.csv",
+    "public_sha256": "addb21d2e8792ccc6eb305bd070b1f8fa2fbf94a127b729d0bb4db2890fc1dfb",
+    "changed": true
+  },
+  {
+    "source": "work_artifacts/expanded_ncsn_full_replay_20260905/event_days/analysis/old_high_recall/original_time_groups_events.csv",
+    "source_sha256": "8a45dad90cd2f917726cbb576d68d09e489a037eb88aacc650b94e8cc1c02585",
+    "public_path": "evidence/continuous/event_days/old_high_recall/original_time_groups_events.csv",
+    "public_sha256": "0c9ed14be5a1ef1e1f8822ceaf4b12c4b5bcae5286ae42de8f9e97c10d041a8b",
+    "changed": true
+  },
+  {
+    "source": "work_artifacts/expanded_ncsn_full_replay_20260905/event_days/analysis/old_high_recall/original_time_groups_groups.csv",
+    "source_sha256": "e79148fd9d47c3f381c565ca70094e2e4e6fa625074b8919814525ec58cb81b2",
+    "public_path": "evidence/continuous/event_days/old_high_recall/original_time_groups_groups.csv",
+    "public_sha256": "df004fa09afb547882064089855f4bfd568bcabd09c5110ba7a87c362ac58dd6",
+    "changed": true
+  },
+  {
+    "source": "work_artifacts/expanded_ncsn_full_replay_20260905/event_days/analysis/old_high_recall/original_time_groups_station_targets.csv",
+    "source_sha256": "632f388fcfb77b5c76f43eaa95c84ed29ee3140844b19c93eec3c9edc2cd9298",
+    "public_path": "evidence/continuous/event_days/old_high_recall/original_time_groups_station_targets.csv",
+    "public_sha256": "a77f971c92f0e7bd507c9287a4ca46175b6e52dfc8c053b817ed903236209a0a",
+    "changed": true
+  },
+  {
+    "source": "work_artifacts/expanded_ncsn_full_replay_20260905/event_days/analysis/old_high_recall/result.json",
+    "source_sha256": "cd42f52b98cbdd323925a13ca19f8604127564fdd8299f2bc137ebac565236cb",
+    "public_path": "evidence/continuous/event_days/old_high_recall/result.json",
+    "public_sha256": "cd42f52b98cbdd323925a13ca19f8604127564fdd8299f2bc137ebac565236cb",
+    "changed": false
+  },
+  {
+    "source": "work_artifacts/expanded_ncsn_full_replay_20260905/event_days/analysis/expanded_original/candidates.csv",
+    "source_sha256": "58803660eb500d96c2d33f82f9e15d15614a437e3f2388ada2b8c00d05a36baf",
+    "public_path": "evidence/continuous/event_days/expanded_original/candidates.csv",
+    "public_sha256": "a2c0acafdb4d59004a2e7a80b95a42d96b29d21e2d12cab054866667305203fd",
+    "changed": true
+  },
+  {
+    "source": "work_artifacts/expanded_ncsn_full_replay_20260905/event_days/analysis/expanded_original/causal_delaunay_triplets_events.csv",
+    "source_sha256": "be96b4ffac65ca94473bb0f2ad93a50df39ba32fc9b3b61a62fd2fff25b998b1",
+    "public_path": "evidence/continuous/event_days/expanded_original/causal_delaunay_triplets_events.csv",
+    "public_sha256": "6c87417a473658877c6010af81820103bf4d01bf2155335a68525b0536b37844",
+    "changed": true
+  },
+  {
+    "source": "work_artifacts/expanded_ncsn_full_replay_20260905/event_days/analysis/expanded_original/causal_delaunay_triplets_groups.csv",
+    "source_sha256": "1b9fadb407b2322cd76bd2fd6423891b8138be40a0c21ec9a8ac2328269ec056",
+    "public_path": "evidence/continuous/event_days/expanded_original/causal_delaunay_triplets_groups.csv",
+    "public_sha256": "b2ff2da05a1554652d65b54d9007d520608f679588dd872144050c5b5fbf0f58",
+    "changed": true
+  },
+  {
+    "source": "work_artifacts/expanded_ncsn_full_replay_20260905/event_days/analysis/expanded_original/causal_delaunay_triplets_station_targets.csv",
+    "source_sha256": "4cc6d46bd6bfad28fc8e33b2cc5e48e76372116f807619671fd0d8acf02012e5",
+    "public_path": "evidence/continuous/event_days/expanded_original/causal_delaunay_triplets_station_targets.csv",
+    "public_sha256": "880a6f88195b97f2bd6793e6aaa16e337e94b4055f391f787008d811a4cbf31c",
+    "changed": true
+  },
+  {
+    "source": "work_artifacts/expanded_ncsn_full_replay_20260905/event_days/analysis/expanded_original/network_exposure_by_date.csv",
+    "source_sha256": "a2d21261215fd083c022095e1915870b0db713ea1d7c18f90613e46b5c142b7b",
+    "public_path": "evidence/continuous/event_days/expanded_original/network_exposure_by_date.csv",
+    "public_sha256": "addb21d2e8792ccc6eb305bd070b1f8fa2fbf94a127b729d0bb4db2890fc1dfb",
+    "changed": true
+  },
+  {
+    "source": "work_artifacts/expanded_ncsn_full_replay_20260905/event_days/analysis/expanded_original/original_time_groups_events.csv",
+    "source_sha256": "db6d52ff326e882bf0b6d2a42915f4792a091ce9a86c71156b4f90ad5c938bb6",
+    "public_path": "evidence/continuous/event_days/expanded_original/original_time_groups_events.csv",
+    "public_sha256": "3a55060cec468dd8c1407f0605ae5b0ee7e178cce0648c98281b43b737e6f8fa",
+    "changed": true
+  },
+  {
+    "source": "work_artifacts/expanded_ncsn_full_replay_20260905/event_days/analysis/expanded_original/original_time_groups_groups.csv",
+    "source_sha256": "669c2cb95ee3b217e421f4d3af2b501cc94475821583ba4d3eda8b9c6e9c9368",
+    "public_path": "evidence/continuous/event_days/expanded_original/original_time_groups_groups.csv",
+    "public_sha256": "6763ce34feef67bd1e6140b272a76727470195b68686a043c598df738dc168e8",
+    "changed": true
+  },
+  {
+    "source": "work_artifacts/expanded_ncsn_full_replay_20260905/event_days/analysis/expanded_original/original_time_groups_station_targets.csv",
+    "source_sha256": "4cc6d46bd6bfad28fc8e33b2cc5e48e76372116f807619671fd0d8acf02012e5",
+    "public_path": "evidence/continuous/event_days/expanded_original/original_time_groups_station_targets.csv",
+    "public_sha256": "880a6f88195b97f2bd6793e6aaa16e337e94b4055f391f787008d811a4cbf31c",
+    "changed": true
+  },
+  {
+    "source": "work_artifacts/expanded_ncsn_full_replay_20260905/event_days/analysis/expanded_original/result.json",
+    "source_sha256": "7ff7d6897a785db0480af2ed32173f22283555216a31c20921147c8088ec28c4",
+    "public_path": "evidence/continuous/event_days/expanded_original/result.json",
+    "public_sha256": "7ff7d6897a785db0480af2ed32173f22283555216a31c20921147c8088ec28c4",
+    "changed": false
+  },
+  {
+    "source": "work_artifacts/expanded_ncsn_full_replay_20260905/event_days/analysis/expanded_high_recall/candidates.csv",
+    "source_sha256": "84beb34b9e5ab48a5dfb21aa4add6d0d09def6d6cec7298de7f0dda0ceb761e6",
+    "public_path": "evidence/continuous/event_days/expanded_high_recall/candidates.csv",
+    "public_sha256": "35e00ae46c643569056c757c726ea0df59deab94f61ebbc9aacd8f713b866ca9",
+    "changed": true
+  },
+  {
+    "source": "work_artifacts/expanded_ncsn_full_replay_20260905/event_days/analysis/expanded_high_recall/causal_delaunay_triplets_events.csv",
+    "source_sha256": "404275ae4176ae83e4ffe06679ceef37e400da400eb9f6400ddf47b7aba3bc0b",
+    "public_path": "evidence/continuous/event_days/expanded_high_recall/causal_delaunay_triplets_events.csv",
+    "public_sha256": "ad34a166fc53b87014d2bbfaa1b2358970ec7a706d1645ae8b644dc081a76d87",
+    "changed": true
+  },
+  {
+    "source": "work_artifacts/expanded_ncsn_full_replay_20260905/event_days/analysis/expanded_high_recall/causal_delaunay_triplets_groups.csv",
+    "source_sha256": "1004fd17efdc744e1844a23d5757c4c34b207facd2cb6b9a7cf1aa70131c73ce",
+    "public_path": "evidence/continuous/event_days/expanded_high_recall/causal_delaunay_triplets_groups.csv",
+    "public_sha256": "5e79eeb4ef20a694ef329e9ad8612a737ff306232b3cb892cc16c8a0e2d7a673",
+    "changed": true
+  },
+  {
+    "source": "work_artifacts/expanded_ncsn_full_replay_20260905/event_days/analysis/expanded_high_recall/causal_delaunay_triplets_station_targets.csv",
+    "source_sha256": "424da5ea5d7338dad0bfeab574c8a704672173870d56b40443e63d89d3fcdb24",
+    "public_path": "evidence/continuous/event_days/expanded_high_recall/causal_delaunay_triplets_station_targets.csv",
+    "public_sha256": "09120d7861b8d99c455e458c476b5362fa6f4fb886c23a258901a816b865c1c5",
+    "changed": true
+  },
+  {
+    "source": "work_artifacts/expanded_ncsn_full_replay_20260905/event_days/analysis/expanded_high_recall/network_exposure_by_date.csv",
+    "source_sha256": "a2d21261215fd083c022095e1915870b0db713ea1d7c18f90613e46b5c142b7b",
+    "public_path": "evidence/continuous/event_days/expanded_high_recall/network_exposure_by_date.csv",
+    "public_sha256": "addb21d2e8792ccc6eb305bd070b1f8fa2fbf94a127b729d0bb4db2890fc1dfb",
+    "changed": true
+  },
+  {
+    "source": "work_artifacts/expanded_ncsn_full_replay_20260905/event_days/analysis/expanded_high_recall/original_time_groups_events.csv",
+    "source_sha256": "fa87faac9f6712c542417d6c35b34aff15c82079e1af4ea10585cd02fe835a61",
+    "public_path": "evidence/continuous/event_days/expanded_high_recall/original_time_groups_events.csv",
+    "public_sha256": "cf37bf5ca898ec7224f1286ca390c4eb44a8102d33fe0bb8e2a86fcf86452b2b",
+    "changed": true
+  },
+  {
+    "source": "work_artifacts/expanded_ncsn_full_replay_20260905/event_days/analysis/expanded_high_recall/original_time_groups_groups.csv",
+    "source_sha256": "20d419d319e6fc84e2a866f691aaa3b3f9b056da4f48f5511eb8d287cfe05043",
+    "public_path": "evidence/continuous/event_days/expanded_high_recall/original_time_groups_groups.csv",
+    "public_sha256": "2b9517defb26f409a4c7d81ca6d5ca976eb347996fda70927ce9f73acead021a",
+    "changed": true
+  },
+  {
+    "source": "work_artifacts/expanded_ncsn_full_replay_20260905/event_days/analysis/expanded_high_recall/original_time_groups_station_targets.csv",
+    "source_sha256": "424da5ea5d7338dad0bfeab574c8a704672173870d56b40443e63d89d3fcdb24",
+    "public_path": "evidence/continuous/event_days/expanded_high_recall/original_time_groups_station_targets.csv",
+    "public_sha256": "09120d7861b8d99c455e458c476b5362fa6f4fb886c23a258901a816b865c1c5",
+    "changed": true
+  },
+  {
+    "source": "work_artifacts/expanded_ncsn_full_replay_20260905/event_days/analysis/expanded_high_recall/result.json",
+    "source_sha256": "dda9f476171056055699b2b43da595ddfc57379c88865a3631805dd17adad17e",
+    "public_path": "evidence/continuous/event_days/expanded_high_recall/result.json",
+    "public_sha256": "dda9f476171056055699b2b43da595ddfc57379c88865a3631805dd17adad17e",
+    "changed": false
+  },
+  {
+    "source": "work_artifacts/expanded_ncsn_full_replay_20260905/background_days/analysis/old_original/candidates.csv",
+    "source_sha256": "cc4fbe10a389011373632c8cac730b45381a6010dec1075d748b468ad2813a9a",
+    "public_path": "evidence/continuous/background_days/old_original/candidates.csv",
+    "public_sha256": "b4bc0f48c9b349d1db3da985f81cd368afba0fbb0efc3fadce9a6fb13cb892d5",
+    "changed": true
+  },
+  {
+    "source": "work_artifacts/expanded_ncsn_full_replay_20260905/background_days/analysis/old_original/causal_delaunay_triplets_events.csv",
+    "source_sha256": "45fd2f9df187bc411dc80df5c4c4844ac00f4dd69bc69453f1893a5d143433d6",
+    "public_path": "evidence/continuous/background_days/old_original/causal_delaunay_triplets_events.csv",
+    "public_sha256": "24526432f951ea86e61db71a2c7df058d690643d1792c6525c784823544d3c03",
+    "changed": true
+  },
+  {
+    "source": "work_artifacts/expanded_ncsn_full_replay_20260905/background_days/analysis/old_original/causal_delaunay_triplets_groups.csv",
+    "source_sha256": "3959f862bedcf1e9494ed43d955a70962184ad47f7add99d503745609916faf4",
+    "public_path": "evidence/continuous/background_days/old_original/causal_delaunay_triplets_groups.csv",
+    "public_sha256": "1a3c8097b88841fd3902ecd3d5367822c5f662dafd2a39507b3dcb016846ea6c",
+    "changed": true
+  },
+  {
+    "source": "work_artifacts/expanded_ncsn_full_replay_20260905/background_days/analysis/old_original/causal_delaunay_triplets_station_targets.csv",
+    "source_sha256": "45fd2f9df187bc411dc80df5c4c4844ac00f4dd69bc69453f1893a5d143433d6",
+    "public_path": "evidence/continuous/background_days/old_original/causal_delaunay_triplets_station_targets.csv",
+    "public_sha256": "24526432f951ea86e61db71a2c7df058d690643d1792c6525c784823544d3c03",
+    "changed": true
+  },
+  {
+    "source": "work_artifacts/expanded_ncsn_full_replay_20260905/background_days/analysis/old_original/network_exposure_by_date.csv",
+    "source_sha256": "60604e849462bbefaf9c0282a6a38bffc381d7bcb7ec9b0dba49423073e671dd",
+    "public_path": "evidence/continuous/background_days/old_original/network_exposure_by_date.csv",
+    "public_sha256": "9409b110f34c53d306f42808218e6f2b804e78761b0de5442016eccc049ec8ee",
+    "changed": true
+  },
+  {
+    "source": "work_artifacts/expanded_ncsn_full_replay_20260905/background_days/analysis/old_original/original_time_groups_events.csv",
+    "source_sha256": "45fd2f9df187bc411dc80df5c4c4844ac00f4dd69bc69453f1893a5d143433d6",
+    "public_path": "evidence/continuous/background_days/old_original/original_time_groups_events.csv",
+    "public_sha256": "24526432f951ea86e61db71a2c7df058d690643d1792c6525c784823544d3c03",
+    "changed": true
+  },
+  {
+    "source": "work_artifacts/expanded_ncsn_full_replay_20260905/background_days/analysis/old_original/original_time_groups_groups.csv",
+    "source_sha256": "f54cfe645c52136d8bf5827d65abf579da918c41b40e663e167d940521a9a281",
+    "public_path": "evidence/continuous/background_days/old_original/original_time_groups_groups.csv",
+    "public_sha256": "d610e66d7588e4b61949c4b2111921594b4d9b8a2e1aec9d8c13179641e38ea8",
+    "changed": true
+  },
+  {
+    "source": "work_artifacts/expanded_ncsn_full_replay_20260905/background_days/analysis/old_original/original_time_groups_station_targets.csv",
+    "source_sha256": "45fd2f9df187bc411dc80df5c4c4844ac00f4dd69bc69453f1893a5d143433d6",
+    "public_path": "evidence/continuous/background_days/old_original/original_time_groups_station_targets.csv",
+    "public_sha256": "24526432f951ea86e61db71a2c7df058d690643d1792c6525c784823544d3c03",
+    "changed": true
+  },
+  {
+    "source": "work_artifacts/expanded_ncsn_full_replay_20260905/background_days/analysis/old_original/result.json",
+    "source_sha256": "8ea9499608a63db5ea3a84ff10837f9dcb511b3243ae51edc93cb1c9607bbf24",
+    "public_path": "evidence/continuous/background_days/old_original/result.json",
+    "public_sha256": "8ea9499608a63db5ea3a84ff10837f9dcb511b3243ae51edc93cb1c9607bbf24",
+    "changed": false
+  },
+  {
+    "source": "work_artifacts/expanded_ncsn_full_replay_20260905/background_days/analysis/old_high_recall/candidates.csv",
+    "source_sha256": "2cf64635535f6148f91ac4bc2238a699a6bfadcc735fea6c8a4c479fef3d8fa0",
+    "public_path": "evidence/continuous/background_days/old_high_recall/candidates.csv",
+    "public_sha256": "63ac3b0c214b5073e3c4f3693c855941fbc46c4e9fb025c604fb6d595900e1d8",
+    "changed": true
+  },
+  {
+    "source": "work_artifacts/expanded_ncsn_full_replay_20260905/background_days/analysis/old_high_recall/causal_delaunay_triplets_events.csv",
+    "source_sha256": "45fd2f9df187bc411dc80df5c4c4844ac00f4dd69bc69453f1893a5d143433d6",
+    "public_path": "evidence/continuous/background_days/old_high_recall/causal_delaunay_triplets_events.csv",
+    "public_sha256": "24526432f951ea86e61db71a2c7df058d690643d1792c6525c784823544d3c03",
+    "changed": true
+  },
+  {
+    "source": "work_artifacts/expanded_ncsn_full_replay_20260905/background_days/analysis/old_high_recall/causal_delaunay_triplets_groups.csv",
+    "source_sha256": "90f5294745258fd41bf5164809f6f83dc946e696744996e41a552627c04211e5",
+    "public_path": "evidence/continuous/background_days/old_high_recall/causal_delaunay_triplets_groups.csv",
+    "public_sha256": "864eb0238349a3c55ae265ef4fabdd111be15a5f20399282ce9bad1c75afa890",
+    "changed": true
+  },
+  {
+    "source": "work_artifacts/expanded_ncsn_full_replay_20260905/background_days/analysis/old_high_recall/causal_delaunay_triplets_station_targets.csv",
+    "source_sha256": "45fd2f9df187bc411dc80df5c4c4844ac00f4dd69bc69453f1893a5d143433d6",
+    "public_path": "evidence/continuous/background_days/old_high_recall/causal_delaunay_triplets_station_targets.csv",
+    "public_sha256": "24526432f951ea86e61db71a2c7df058d690643d1792c6525c784823544d3c03",
+    "changed": true
+  },
+  {
+    "source": "work_artifacts/expanded_ncsn_full_replay_20260905/background_days/analysis/old_high_recall/network_exposure_by_date.csv",
+    "source_sha256": "60604e849462bbefaf9c0282a6a38bffc381d7bcb7ec9b0dba49423073e671dd",
+    "public_path": "evidence/continuous/background_days/old_high_recall/network_exposure_by_date.csv",
+    "public_sha256": "9409b110f34c53d306f42808218e6f2b804e78761b0de5442016eccc049ec8ee",
+    "changed": true
+  },
+  {
+    "source": "work_artifacts/expanded_ncsn_full_replay_20260905/background_days/analysis/old_high_recall/original_time_groups_events.csv",
+    "source_sha256": "45fd2f9df187bc411dc80df5c4c4844ac00f4dd69bc69453f1893a5d143433d6",
+    "public_path": "evidence/continuous/background_days/old_high_recall/original_time_groups_events.csv",
+    "public_sha256": "24526432f951ea86e61db71a2c7df058d690643d1792c6525c784823544d3c03",
+    "changed": true
+  },
+  {
+    "source": "work_artifacts/expanded_ncsn_full_replay_20260905/background_days/analysis/old_high_recall/original_time_groups_groups.csv",
+    "source_sha256": "a15b982c92eb2164602b15b54d793bd4414537037f5e19311491bc621ca61099",
+    "public_path": "evidence/continuous/background_days/old_high_recall/original_time_groups_groups.csv",
+    "public_sha256": "19ddeecd33855bb878e1298c4ec6defaa57d2e7c5bbd421a969d171188133932",
+    "changed": true
+  },
+  {
+    "source": "work_artifacts/expanded_ncsn_full_replay_20260905/background_days/analysis/old_high_recall/original_time_groups_station_targets.csv",
+    "source_sha256": "45fd2f9df187bc411dc80df5c4c4844ac00f4dd69bc69453f1893a5d143433d6",
+    "public_path": "evidence/continuous/background_days/old_high_recall/original_time_groups_station_targets.csv",
+    "public_sha256": "24526432f951ea86e61db71a2c7df058d690643d1792c6525c784823544d3c03",
+    "changed": true
+  },
+  {
+    "source": "work_artifacts/expanded_ncsn_full_replay_20260905/background_days/analysis/old_high_recall/result.json",
+    "source_sha256": "5813f8ce9a8cc79d0a0cd028d9272c175ef708608e5b0c2ee162c0f0fccad6d8",
+    "public_path": "evidence/continuous/background_days/old_high_recall/result.json",
+    "public_sha256": "5813f8ce9a8cc79d0a0cd028d9272c175ef708608e5b0c2ee162c0f0fccad6d8",
+    "changed": false
+  },
+  {
+    "source": "work_artifacts/expanded_ncsn_full_replay_20260905/background_days/analysis/expanded_original/candidates.csv",
+    "source_sha256": "85fd3b499867399e44ea186d9dd51e5e186326250a969a96ea42cc9fd3ac129c",
+    "public_path": "evidence/continuous/background_days/expanded_original/candidates.csv",
+    "public_sha256": "9ad8cc22b903611b06e7dab8c049c2410c53dee0fa455fb626ccb30ebf7528a1",
+    "changed": true
+  },
+  {
+    "source": "work_artifacts/expanded_ncsn_full_replay_20260905/background_days/analysis/expanded_original/causal_delaunay_triplets_events.csv",
+    "source_sha256": "45fd2f9df187bc411dc80df5c4c4844ac00f4dd69bc69453f1893a5d143433d6",
+    "public_path": "evidence/continuous/background_days/expanded_original/causal_delaunay_triplets_events.csv",
+    "public_sha256": "24526432f951ea86e61db71a2c7df058d690643d1792c6525c784823544d3c03",
+    "changed": true
+  },
+  {
+    "source": "work_artifacts/expanded_ncsn_full_replay_20260905/background_days/analysis/expanded_original/causal_delaunay_triplets_groups.csv",
+    "source_sha256": "1e1030080098b1b1915353cc912bd641aec4869b8cc9dac5f2ff8a33ba289e55",
+    "public_path": "evidence/continuous/background_days/expanded_original/causal_delaunay_triplets_groups.csv",
+    "public_sha256": "5f780cd532e5f91eca6243ed13e39d4eaa95315d955479ed7b491958775f8747",
+    "changed": true
+  },
+  {
+    "source": "work_artifacts/expanded_ncsn_full_replay_20260905/background_days/analysis/expanded_original/causal_delaunay_triplets_station_targets.csv",
+    "source_sha256": "45fd2f9df187bc411dc80df5c4c4844ac00f4dd69bc69453f1893a5d143433d6",
+    "public_path": "evidence/continuous/background_days/expanded_original/causal_delaunay_triplets_station_targets.csv",
+    "public_sha256": "24526432f951ea86e61db71a2c7df058d690643d1792c6525c784823544d3c03",
+    "changed": true
+  },
+  {
+    "source": "work_artifacts/expanded_ncsn_full_replay_20260905/background_days/analysis/expanded_original/network_exposure_by_date.csv",
+    "source_sha256": "60604e849462bbefaf9c0282a6a38bffc381d7bcb7ec9b0dba49423073e671dd",
+    "public_path": "evidence/continuous/background_days/expanded_original/network_exposure_by_date.csv",
+    "public_sha256": "9409b110f34c53d306f42808218e6f2b804e78761b0de5442016eccc049ec8ee",
+    "changed": true
+  },
+  {
+    "source": "work_artifacts/expanded_ncsn_full_replay_20260905/background_days/analysis/expanded_original/original_time_groups_events.csv",
+    "source_sha256": "45fd2f9df187bc411dc80df5c4c4844ac00f4dd69bc69453f1893a5d143433d6",
+    "public_path": "evidence/continuous/background_days/expanded_original/original_time_groups_events.csv",
+    "public_sha256": "24526432f951ea86e61db71a2c7df058d690643d1792c6525c784823544d3c03",
+    "changed": true
+  },
+  {
+    "source": "work_artifacts/expanded_ncsn_full_replay_20260905/background_days/analysis/expanded_original/original_time_groups_groups.csv",
+    "source_sha256": "7c902f3f318ca29361bedeca65b7193ae074208c37904c49c610a5f5a33e0360",
+    "public_path": "evidence/continuous/background_days/expanded_original/original_time_groups_groups.csv",
+    "public_sha256": "d4cbf0efb006cad4566749787e4abf64a29edb9e6bdc0fe8b55494a912bfd80c",
+    "changed": true
+  },
+  {
+    "source": "work_artifacts/expanded_ncsn_full_replay_20260905/background_days/analysis/expanded_original/original_time_groups_station_targets.csv",
+    "source_sha256": "45fd2f9df187bc411dc80df5c4c4844ac00f4dd69bc69453f1893a5d143433d6",
+    "public_path": "evidence/continuous/background_days/expanded_original/original_time_groups_station_targets.csv",
+    "public_sha256": "24526432f951ea86e61db71a2c7df058d690643d1792c6525c784823544d3c03",
+    "changed": true
+  },
+  {
+    "source": "work_artifacts/expanded_ncsn_full_replay_20260905/background_days/analysis/expanded_original/result.json",
+    "source_sha256": "df307669e53f4b4b1883f2c52be36ff627de8384bd89dc0521b8b32c93baf949",
+    "public_path": "evidence/continuous/background_days/expanded_original/result.json",
+    "public_sha256": "df307669e53f4b4b1883f2c52be36ff627de8384bd89dc0521b8b32c93baf949",
+    "changed": false
+  },
+  {
+    "source": "work_artifacts/expanded_ncsn_full_replay_20260905/background_days/analysis/expanded_high_recall/candidates.csv",
+    "source_sha256": "40afba6e4f779d090b6cd47a1efe569b1aebdd60a4399099f55d34bd6cd9668e",
+    "public_path": "evidence/continuous/background_days/expanded_high_recall/candidates.csv",
+    "public_sha256": "49fae9c5e444aa6d89cd5efb8c837206024169182377ece2abf9df0dba306d7f",
+    "changed": true
+  },
+  {
+    "source": "work_artifacts/expanded_ncsn_full_replay_20260905/background_days/analysis/expanded_high_recall/causal_delaunay_triplets_events.csv",
+    "source_sha256": "45fd2f9df187bc411dc80df5c4c4844ac00f4dd69bc69453f1893a5d143433d6",
+    "public_path": "evidence/continuous/background_days/expanded_high_recall/causal_delaunay_triplets_events.csv",
+    "public_sha256": "24526432f951ea86e61db71a2c7df058d690643d1792c6525c784823544d3c03",
+    "changed": true
+  },
+  {
+    "source": "work_artifacts/expanded_ncsn_full_replay_20260905/background_days/analysis/expanded_high_recall/causal_delaunay_triplets_groups.csv",
+    "source_sha256": "6c21d8e3a1f1fa5ba6f8c38d00c63763c020d99e37206345c48a973a664424f2",
+    "public_path": "evidence/continuous/background_days/expanded_high_recall/causal_delaunay_triplets_groups.csv",
+    "public_sha256": "608aea4423748381894009995ab2849a80631c5adcab2e425c7d711d508988fc",
+    "changed": true
+  },
+  {
+    "source": "work_artifacts/expanded_ncsn_full_replay_20260905/background_days/analysis/expanded_high_recall/causal_delaunay_triplets_station_targets.csv",
+    "source_sha256": "45fd2f9df187bc411dc80df5c4c4844ac00f4dd69bc69453f1893a5d143433d6",
+    "public_path": "evidence/continuous/background_days/expanded_high_recall/causal_delaunay_triplets_station_targets.csv",
+    "public_sha256": "24526432f951ea86e61db71a2c7df058d690643d1792c6525c784823544d3c03",
+    "changed": true
+  },
+  {
+    "source": "work_artifacts/expanded_ncsn_full_replay_20260905/background_days/analysis/expanded_high_recall/network_exposure_by_date.csv",
+    "source_sha256": "60604e849462bbefaf9c0282a6a38bffc381d7bcb7ec9b0dba49423073e671dd",
+    "public_path": "evidence/continuous/background_days/expanded_high_recall/network_exposure_by_date.csv",
+    "public_sha256": "9409b110f34c53d306f42808218e6f2b804e78761b0de5442016eccc049ec8ee",
+    "changed": true
+  },
+  {
+    "source": "work_artifacts/expanded_ncsn_full_replay_20260905/background_days/analysis/expanded_high_recall/original_time_groups_events.csv",
+    "source_sha256": "45fd2f9df187bc411dc80df5c4c4844ac00f4dd69bc69453f1893a5d143433d6",
+    "public_path": "evidence/continuous/background_days/expanded_high_recall/original_time_groups_events.csv",
+    "public_sha256": "24526432f951ea86e61db71a2c7df058d690643d1792c6525c784823544d3c03",
+    "changed": true
+  },
+  {
+    "source": "work_artifacts/expanded_ncsn_full_replay_20260905/background_days/analysis/expanded_high_recall/original_time_groups_groups.csv",
+    "source_sha256": "08e150edf3931b675ba5d487f6c06acb5918b351d4de231cfe32ea259f948084",
+    "public_path": "evidence/continuous/background_days/expanded_high_recall/original_time_groups_groups.csv",
+    "public_sha256": "2a6244b9a4cf89ffb415cb16f57232c8f52cf8bd4c492fd0d54fd68496298763",
+    "changed": true
+  },
+  {
+    "source": "work_artifacts/expanded_ncsn_full_replay_20260905/background_days/analysis/expanded_high_recall/original_time_groups_station_targets.csv",
+    "source_sha256": "45fd2f9df187bc411dc80df5c4c4844ac00f4dd69bc69453f1893a5d143433d6",
+    "public_path": "evidence/continuous/background_days/expanded_high_recall/original_time_groups_station_targets.csv",
+    "public_sha256": "24526432f951ea86e61db71a2c7df058d690643d1792c6525c784823544d3c03",
+    "changed": true
+  },
+  {
+    "source": "work_artifacts/expanded_ncsn_full_replay_20260905/background_days/analysis/expanded_high_recall/result.json",
+    "source_sha256": "d8720ae522d39025606e6d52442169116c79507423c90b70cf32b6a6d5e3cf86",
+    "public_path": "evidence/continuous/background_days/expanded_high_recall/result.json",
+    "public_sha256": "d8720ae522d39025606e6d52442169116c79507423c90b70cf32b6a6d5e3cf86",
+    "changed": false
+  },
+  {
+    "source": "workspace/outputs/stead_compare_thresholds_20260906/results/cohort.csv",
+    "source_sha256": "90ce52d34514c4876f0df055ac581b3a43bf6a0138f1c309ec0e1d587feb4fce",
+    "public_path": "evidence/stead/threshold_comparison/cohort.csv",
+    "public_sha256": "0c4a222610f6badd6291ec98eec5a861db6f2fa7e79e616f4adccc19d821fcdf",
+    "changed": true
+  },
+  {
+    "source": "workspace/outputs/stead_compare_thresholds_20260906/results/comparison.csv",
+    "source_sha256": "77b7fba15d925af516f38f17d473c7bc695dd32c7813dfd986bfc6928bca6bac",
+    "public_path": "evidence/stead/threshold_comparison/comparison.csv",
+    "public_sha256": "77b7fba15d925af516f38f17d473c7bc695dd32c7813dfd986bfc6928bca6bac",
+    "changed": false
+  },
+  {
+    "source": "workspace/outputs/stead_compare_thresholds_20260906/results/protocol.json",
+    "source_sha256": "63590f2b96ffb9dba6d5fa2302867a67bae16a1448b37704cc1ed0b371768837",
+    "public_path": "evidence/stead/threshold_comparison/protocol.json",
+    "public_sha256": "a31bd16e4068510375a09ba2f4ee9e3b3c9e09f9dbff72031188329d3285cc16",
+    "changed": true
+  },
+  {
+    "source": "workspace/outputs/stead_compare_thresholds_20260906/results/records_p067.csv",
+    "source_sha256": "b0021dd3b0be91485ce2b8fa1e8b6b2f2546d191d009d8a07f15b58b9d61216b",
+    "public_path": "evidence/stead/threshold_comparison/records_p067.csv",
+    "public_sha256": "3f8fc8cf42104bc06799c988f24c20337876759db9f6959f2291f8980415a9e3",
+    "changed": true
+  },
+  {
+    "source": "workspace/outputs/stead_compare_thresholds_20260906/results/records_p068.csv",
+    "source_sha256": "c8fff4b182d4b5dd8e7dabd849227057f5f20db31b572b43ac4600fba6b0554a",
+    "public_path": "evidence/stead/threshold_comparison/records_p068.csv",
+    "public_sha256": "3e621cf359fc5a46a1ebb7367d9aac602e62cc95c8489ff46fa76ab145039dad",
+    "changed": true
+  },
+  {
+    "source": "workspace/outputs/stead_compare_thresholds_20260906/results/records_p116.csv",
+    "source_sha256": "59ff8b6f64dd59fd3d0f4d4bfd8b45583ecb85104e0abafd5281c2fed8ca3023",
+    "public_path": "evidence/stead/threshold_comparison/records_p116.csv",
+    "public_sha256": "777f04a5e4a17debb4641470e649bdf3e1b4f3524354817c5ae697c497284fc0",
+    "changed": true
+  },
+  {
+    "source": "workspace/outputs/stead_compare_thresholds_20260906/results/records_p118.csv",
+    "source_sha256": "f574d4af42037e96eead85e090c65f39711c29f3b11610e514f3b5eafe31c272",
+    "public_path": "evidence/stead/threshold_comparison/records_p118.csv",
+    "public_sha256": "551b6b07cad1fbf8ebcad070b48dc62722a02880b9ef55f7575762a2ebd24321",
+    "changed": true
+  },
+  {
+    "source": "workspace/outputs/stead_compare_thresholds_20260906/results/records_p190.csv",
+    "source_sha256": "001417ac9e186843cc6ef1e12a1614ea3d6ba1dbe67b6255d3388ae5454cedce",
+    "public_path": "evidence/stead/threshold_comparison/records_p190.csv",
+    "public_sha256": "62999401828aa669085f6ee75bc7d61dd74d55c290772c58820d07a0827fc2e4",
+    "changed": true
+  },
+  {
+    "source": "workspace/outputs/stead_compare_thresholds_20260906/results/records_p194.csv",
+    "source_sha256": "ebfdd843d625f2511b5cd18dcaf4bb480a021254b115568ac89a05ea8591afdb",
+    "public_path": "evidence/stead/threshold_comparison/records_p194.csv",
+    "public_sha256": "50c7699dc6e91f786a4dbd733e1055f8b21207d6437ba29199f2c7875f2c5b6b",
+    "changed": true
+  },
+  {
+    "source": "workspace/outputs/stead_compare_thresholds_20260906/results/records_p214.csv",
+    "source_sha256": "48132a656ce66dbc3f8965722d131e6659b336d009a5d3e6dd4ca8fccc3f3711",
+    "public_path": "evidence/stead/threshold_comparison/records_p214.csv",
+    "public_sha256": "81a20abcb6e598eb094795a3284a26246295b99cbea62cb2d51ed4f0eefaf704",
+    "changed": true
+  },
+  {
+    "source": "workspace/outputs/stead_compare_thresholds_20260906/results/records_p217.csv",
+    "source_sha256": "c8c423f48dca3c23e05780a88ec3a05f36e66e21a04bf15b2a4227c66d4a3f62",
+    "public_path": "evidence/stead/threshold_comparison/records_p217.csv",
+    "public_sha256": "8c23a1052c2ceeb9b4ca40a88601768ca90c9e4066571b63e30b45007b6003ad",
+    "changed": true
+  },
+  {
+    "source": "workspace/outputs/stead_compare_thresholds_20260906/results/records_p218.csv",
+    "source_sha256": "f48444d997f74b7fe19d7566c2ae889ffe8b9df0e8f8f90400c63a8bbdf4eca0",
+    "public_path": "evidence/stead/threshold_comparison/records_p218.csv",
+    "public_sha256": "b35f084b8444245fbf26717124c95a63bfa6d1989bd32642e12b20c3ebd4dd0f",
+    "changed": true
+  },
+  {
+    "source": "workspace/outputs/stead_compare_thresholds_20260906/results/result.json",
+    "source_sha256": "899013b017e517e4e96423810243673ef773068a1ff170ae0158935ab151aba2",
+    "public_path": "evidence/stead/threshold_comparison/result.json",
+    "public_sha256": "899013b017e517e4e96423810243673ef773068a1ff170ae0158935ab151aba2",
+    "changed": false
+  },
+  {
+    "source": "workspace/outputs/stead_compare_thresholds_20260906/results/threshold_grid.csv",
+    "source_sha256": "32273d04f3e2b1b65c2d066ce7f1980b2d75805ed96891cc798b56e1aa4bde52",
+    "public_path": "evidence/stead/threshold_comparison/threshold_grid.csv",
+    "public_sha256": "32273d04f3e2b1b65c2d066ce7f1980b2d75805ed96891cc798b56e1aa4bde52",
+    "changed": false
+  },
+  {
+    "source": "workspace/outputs/stead_compare_thresholds_20260906/results/threshold_grid.json",
+    "source_sha256": "a0ea3a77b80fe8e6013549462772e1c1956268ef0e4b0aaa7b103bef567ee4e7",
+    "public_path": "evidence/stead/threshold_comparison/threshold_grid.json",
+    "public_sha256": "a0ea3a77b80fe8e6013549462772e1c1956268ef0e4b0aaa7b103bef567ee4e7",
+    "changed": false
+  },
+  {
+    "source": "workspace/outputs/stead_cspp_diagnostic_20260906/full_test/records.csv",
+    "source_sha256": "a49de682f879ba3a14bb97c075dbd62954a56aa56b61e3f4675df873e62b8cee",
+    "public_path": "evidence/stead/full_test/records.csv",
+    "public_sha256": "a49de682f879ba3a14bb97c075dbd62954a56aa56b61e3f4675df873e62b8cee",
+    "changed": false
+  },
+  {
+    "source": "workspace/outputs/stead_cspp_diagnostic_20260906/full_test/candidates.csv",
+    "source_sha256": "9a762f0584e89ed01b95f23908f4f7766c05f0e96be9de78265c3d8ce42c1790",
+    "public_path": "evidence/stead/full_test/candidates.csv",
+    "public_sha256": "9a762f0584e89ed01b95f23908f4f7766c05f0e96be9de78265c3d8ce42c1790",
+    "changed": false
+  },
+  {
+    "source": "workspace/outputs/stead_cspp_diagnostic_20260906/full_test/result.json",
+    "source_sha256": "2926bbc0049e27680f82ed37b4a6e0693adacb8536aebce0835683f07584f943",
+    "public_path": "evidence/stead/full_test/result.json",
+    "public_sha256": "2926bbc0049e27680f82ed37b4a6e0693adacb8536aebce0835683f07584f943",
+    "changed": false
+  },
+  {
+    "source": "workspace/outputs/stead_cspp_diagnostic_20260906/full_test/protocol.json",
+    "source_sha256": "6f20e8f1991ac160c9e60d299b020816a60fae59b917125b9e70f4d87a6a3984",
+    "public_path": "evidence/stead/full_test/protocol.json",
+    "public_sha256": "cad947251ec95b6071ee8cbdadf60d6c3f3aa2341cf8c5244a4c159d9470b43f",
+    "changed": true
+  },
+  {
+    "source": "workspace/outputs/stead_cspp_m3_p_atleast10_20260906/results/records.csv",
+    "source_sha256": "6ec58f027f0834c6b96d3a6e05c949a337e7ce19eea1c13cf978f3c560821cf4",
+    "public_path": "evidence/stead/m3_p10/records.csv",
+    "public_sha256": "6ec58f027f0834c6b96d3a6e05c949a337e7ce19eea1c13cf978f3c560821cf4",
+    "changed": false
+  },
+  {
+    "source": "workspace/outputs/stead_cspp_m3_p_atleast10_20260906/results/candidates.csv",
+    "source_sha256": "ed7c287d7258348eb80811d5e0cbc2038e82bb3d01811b25f26dc25c2d63390f",
+    "public_path": "evidence/stead/m3_p10/candidates.csv",
+    "public_sha256": "ed7c287d7258348eb80811d5e0cbc2038e82bb3d01811b25f26dc25c2d63390f",
+    "changed": false
+  },
+  {
+    "source": "workspace/outputs/stead_cspp_m3_p_atleast10_20260906/results/result.json",
+    "source_sha256": "e7a29364daef4869ca6a2b47e4f40240bf9aeb677959110ec9a4afd23ac74c81",
+    "public_path": "evidence/stead/m3_p10/result.json",
+    "public_sha256": "e7a29364daef4869ca6a2b47e4f40240bf9aeb677959110ec9a4afd23ac74c81",
+    "changed": false
+  },
+  {
+    "source": "workspace/outputs/stead_cspp_m3_p_atleast10_20260906/results/protocol.json",
+    "source_sha256": "e2f236f4564e675fe3c8da1e698b5eca2035899f50ad9df69ad1b32ec5dad89f",
+    "public_path": "evidence/stead/m3_p10/protocol.json",
+    "public_sha256": "68058c0a3e8bebf5f6084d5b2488ae1bb4f6e2cbced3516fb2481133ce511eff",
+    "changed": true
+  },
+  {
+    "source": "workspace/experiments/cspp_v27_geonet_temporal_selection_freeze_20260729.json",
+    "source_sha256": "f86155159422fa1539751ed7eb2f388875f519990b4080f4e5d11af664e88f6f",
+    "public_path": "protocols/cspp_v27_geonet_temporal_selection_freeze_20260729.json",
+    "public_sha256": "ef184e442bcc17b9e32b1ba7a90f6e78fb2af3521e24cd19f5cea314b32ade76",
+    "changed": true
+  },
+  {
+    "source": "workspace/experiments/cspp_v27_ncedc_causal_public_baseline_protocol_20260817.json",
+    "source_sha256": "0d45b97325dff53210fb72a5b0d80f8787615c3bfc49730bea98aa7007329bf5",
+    "public_path": "protocols/cspp_v27_ncedc_causal_public_baseline_protocol_20260817.json",
+    "public_sha256": "e366855b7728c1c29021f9fffc7d7e725c67e14321d90ab7e78d21e970b3bbbc",
+    "changed": true
+  },
+  {
+    "source": "work_artifacts/tx_external_event_validation_20260824/protocol.json",
+    "source_sha256": "df79587c41c81f9eb85686eb2dd00504d0f6984d62d694268f64794869cdd3c3",
+    "public_path": "protocols/tx_external_event_validation_20260824_protocol.json",
+    "public_sha256": "71da95aa2137aaca39acd177a14abc1a8c80356e362356442dbb3929775f9479",
+    "changed": true
+  },
+  {
+    "source": "work_artifacts/pr_pilot_20260824/protocol.json",
+    "source_sha256": "89864c84a4e5989682d74ef38fe3d40e0fada2eb67c6f198ce67223f38fbdf91",
+    "public_path": "protocols/pr_pilot_20260824_protocol.json",
+    "public_sha256": "63e5c889705f1aa4ab4f8aecc6c03471bfa08b4731ec2183db831be0343d1b88",
+    "changed": true
+  },
+  {
+    "source": "work_artifacts/ncedc_joint_continuous_m3_20260904/joint_continuous_protocol.json",
+    "source_sha256": "3de642f8ad3ba9afad15e44b9043426515f59647a18a6de8a94f460f6cf5a241",
+    "public_path": "protocols/joint_continuous_protocol.json",
+    "public_sha256": "56436e6d1fe2ca0372f63041ef04f6995fca14107708122cacb85480226a27c8",
+    "changed": true
+  },
+  {
+    "source": "workspace/experiments/cspp_v27_from_scratch_protocol_20260729.json",
+    "source_sha256": "6e88807ba635ecb09f988a2feabb5139c1b8cca1d5d22fc92c983d261684f314",
+    "public_path": "protocols/cspp_v27_from_scratch_protocol_20260729.json",
+    "public_sha256": "ac8af97664fb9b6c240aa7f768852d30e93cf9324f307d2bbc9417e46ac20abc",
+    "changed": true
+  },
+  {
+    "source": "workspace/experiments/cspp_v27_geonet_background_station_amendment_protocol_20260729.json",
+    "source_sha256": "e5ce11408fffb62233017f190c5181a9bdd0d7dc800b1990c622263267b9bc2f",
+    "public_path": "protocols/cspp_v27_geonet_background_station_amendment_protocol_20260729.json",
+    "public_sha256": "8b9131eccc26cfb969723d6c77b7aa1bbd83e6e461d7cc3fb8ed92e3a24dee4d",
+    "changed": true
+  },
+  {
+    "source": "workspace/experiments/cspp_v27_geonet_causal_public_baseline_protocol_20260730.json",
+    "source_sha256": "3fc1b8e9b011d41e8f9808c9c8849804fdd92132153caa5de39ec0c06b8c29ac",
+    "public_path": "protocols/cspp_v27_geonet_causal_public_baseline_protocol_20260730.json",
+    "public_sha256": "7dd91a88c43abcf63388c8208d312bbfe5feb1ffdb8ff7bfeae4c087ca540498",
+    "changed": true
+  },
+  {
+    "source": "workspace/experiments/cspp_v27_geonet_continuous_adjudication_protocol_20260730.json",
+    "source_sha256": "e8326017278cc9b30927c79e7921e76b80ef113753a98dabbb65cb6e593433cb",
+    "public_path": "protocols/cspp_v27_geonet_continuous_adjudication_protocol_20260730.json",
+    "public_sha256": "ec72b99cc61855dc70a24c392e98f0bfd8d3b95d99a386ca18a437f145ea20d6",
+    "changed": true
+  },
+  {
+    "source": "workspace/experiments/cspp_v27_geonet_final_background_exposure_amendment_20260729.json",
+    "source_sha256": "8ed15628a61767563b263c90d337270414d8243b51338c4f76dd92ed80c4f4d9",
+    "public_path": "protocols/cspp_v27_geonet_final_background_exposure_amendment_20260729.json",
+    "public_sha256": "f3dde4c855ea025614158e43331af2231fc5cd7b7265bca0a4e1646415e16c48",
+    "changed": true
+  },
+  {
+    "source": "workspace/experiments/cspp_v27_geonet_public_threshold_calibration_20260824.json",
+    "source_sha256": "79a8eecba52080a38ef28f0d120ef909d089cddde8a86938110007e35e12aa0c",
+    "public_path": "protocols/cspp_v27_geonet_public_threshold_calibration_20260824.json",
+    "public_sha256": "965e1f1c3580b01ba232b4d43b3efdf5948666a14a549f8eb039645d281a5b3d",
+    "changed": true
+  },
+  {
+    "source": "workspace/experiments/cspp_v27_geonet_temporal_background_deep_audit_protocol_20260729.json",
+    "source_sha256": "c3fe889d3b23b9fe06af50c70b3bfba742773ccab38ed16638185ca87c54458f",
+    "public_path": "protocols/cspp_v27_geonet_temporal_background_deep_audit_protocol_20260729.json",
+    "public_sha256": "991867f67b7f1d1ea3cf982b0cbe32991d93cdccae78bc4318b0f3ee11d64181",
+    "changed": true
+  },
+  {
+    "source": "workspace/experiments/cspp_v27_geonet_temporal_background_waveform_protocol_20260729.json",
+    "source_sha256": "891621c64bac07bf8b4b029b921c8a12b4d669c85e9a9d655dd40f8a71da1729",
+    "public_path": "protocols/cspp_v27_geonet_temporal_background_waveform_protocol_20260729.json",
+    "public_sha256": "cc8c1f18b9d0146c0e7d6f4681c605aa86d1880086e1c1b030b0f3b1615e2ccf",
+    "changed": true
+  },
+  {
+    "source": "workspace/experiments/cspp_v27_geonet_temporal_development_protocol_20260729.json",
+    "source_sha256": "ae43b11cabf657254612bb11bc3fd79ffbedc7ba25445ab7245da533240cfd51",
+    "public_path": "protocols/cspp_v27_geonet_temporal_development_protocol_20260729.json",
+    "public_sha256": "7994bd568695c7f6b77739e551ee39997d433369378679c219759690fb606bd6",
+    "changed": true
+  },
+  {
+    "source": "workspace/experiments/cspp_v27_geonet_temporal_evaluation_protocol_20260729.json",
+    "source_sha256": "9fa55b001297d6eda74fc8a7b80d2e5e8ae837ef02b29a8dc4b70d7be9380096",
+    "public_path": "protocols/cspp_v27_geonet_temporal_evaluation_protocol_20260729.json",
+    "public_sha256": "51d8d11552a5dc7331380c674abf41ad336b2325412b12333b58d08133d54e68",
+    "changed": true
+  },
+  {
+    "source": "workspace/experiments/cspp_v27_geonet_temporal_evaluation_protocol_v3_20260729.json",
+    "source_sha256": "2b98f6833b90bc62aa44c647be5f16845b376ad7ebee7a3d308d13e67f947047",
+    "public_path": "protocols/cspp_v27_geonet_temporal_evaluation_protocol_v3_20260729.json",
+    "public_sha256": "658bdf82320b40153ca3f3b6dc8ca8abe1f626d98f7fe918e256670b9f1abada",
+    "changed": true
+  },
+  {
+    "source": "workspace/experiments/cspp_v27_geonet_temporal_evaluation_v2_serialization_supersession_20260729.json",
+    "source_sha256": "bd31e0cfd615e94e7bff0b60734c08881b74554c8fc1eeebdb9a75dfe96eefb5",
+    "public_path": "protocols/cspp_v27_geonet_temporal_evaluation_v2_serialization_supersession_20260729.json",
+    "public_sha256": "6465456f13d24eb96870e97c3ebe462c57cfc054fd76ed301559f377ce3b57ba",
+    "changed": true
+  },
+  {
+    "source": "workspace/experiments/cspp_v27_geonet_temporal_orientation_protocol_20260729.json",
+    "source_sha256": "014a39043a07191ed69102af64248628fa62a227a3799eb1fd9c201d3a48fde5",
+    "public_path": "protocols/cspp_v27_geonet_temporal_orientation_protocol_20260729.json",
+    "public_sha256": "260305221aba90b65a22f2fe6572f2e4dcd6bffeafd827edadf951442fe78f53",
+    "changed": true
+  },
+  {
+    "source": "workspace/experiments/cspp_v27_key_ablation_protocol_20260730.json",
+    "source_sha256": "0c2dc6ab77a4c02b8463235ec8ec8e4bdafdda444b6c8f5bd2751dc6961b7275",
+    "public_path": "protocols/cspp_v27_key_ablation_protocol_20260730.json",
+    "public_sha256": "eab6afcb9a5584dd6964fa075fd25ea8e54751c4afaed745ca08670402a301e8",
+    "changed": true
+  },
+  {
+    "source": "workspace/experiments/cspp_v27_low_snr_curriculum_pilot_20260729.json",
+    "source_sha256": "6104def8308413267a94e907bdd3dc53b937ae3af73a7f3bdd0a2245e49b8184",
+    "public_path": "protocols/cspp_v27_low_snr_curriculum_pilot_20260729.json",
+    "public_sha256": "021569f94a9adc14bb29458f08764dd5f6f14f9403b865c1ce9a7cfc73ba28ac",
+    "changed": true
+  },
+  {
+    "source": "workspace/experiments/cspp_v27_ncedc_causal_classical_protocol_20260817.json",
+    "source_sha256": "852b67d79d25ad9af464b01806548fd31ab7c40ba04253728e2a75a38be26de7",
+    "public_path": "protocols/cspp_v27_ncedc_causal_classical_protocol_20260817.json",
+    "public_sha256": "7abdb8192bb0b4b43423efc8e85630ee97b0feb93c71e23b9761890bfe33063b",
+    "changed": true
+  },
+  {
+    "source": "workspace/experiments/cspp_v27_ncedc_continuous_analysis_protocol_20260817.json",
+    "source_sha256": "2e30580526a375f16970dcdd87759074182bc01daaf7d1bb8887e7f4ee800569",
+    "public_path": "protocols/cspp_v27_ncedc_continuous_analysis_protocol_20260817.json",
+    "public_sha256": "236bd1fda44dcc2fe103b215b0795d7bca0b39ab80dc394ea063c198ff72d2e1",
+    "changed": true
+  },
+  {
+    "source": "workspace/experiments/cspp_v27_ncedc_continuous_catalog_adjudication_protocol_20260817.json",
+    "source_sha256": "b196b7b317d9bd01167fe04f6fb2e7cc335c88b604e32530dda355e8671eef4f",
+    "public_path": "protocols/cspp_v27_ncedc_continuous_catalog_adjudication_protocol_20260817.json",
+    "public_sha256": "8fc93a2ab95597910e2b462b1e8e9e0e547f1f9236f49481d9f68eff2a70f2e5",
+    "changed": true
+  },
+  {
+    "source": "workspace/experiments/cspp_v27_ncedc_continuous_catalog_plan_20260817.json",
+    "source_sha256": "b4c2c6281018fe415081559a0b1a0c89d53d8a51b51690049cb306d0844002a8",
+    "public_path": "protocols/cspp_v27_ncedc_continuous_catalog_plan_20260817.json",
+    "public_sha256": "6f1934473081844aa581504c6faf6a4fcfe6bd86d531ae420a2abb022fba112e",
+    "changed": true
+  },
+  {
+    "source": "workspace/experiments/cspp_v27_ncedc_continuous_catalog_transport_a1_20260817.json",
+    "source_sha256": "6218df918b8d0f163cb5ff311f8869f1f3bdb32c1d15971fdea215e75ddb8d4a",
+    "public_path": "protocols/cspp_v27_ncedc_continuous_catalog_transport_a1_20260817.json",
+    "public_sha256": "2f01e7391b6c39dc624e30d45fd2607cb914cfd4fc0a2523c200f1483c086f18",
+    "changed": true
+  },
+  {
+    "source": "workspace/experiments/cspp_v27_ncedc_continuous_hybrid_equivalence_20260817.json",
+    "source_sha256": "d85490a53ba277b65330473c3bf1fff7d8bd5386a40bc58bae9e87c125ce464e",
+    "public_path": "protocols/cspp_v27_ncedc_continuous_hybrid_equivalence_20260817.json",
+    "public_sha256": "0f888828b55ecf496698e0310eb7a0798265fff3e57e9209f6b4cac4fa498eec",
+    "changed": true
+  },
+  {
+    "source": "workspace/experiments/cspp_v27_ncedc_continuous_manifest_freeze_20260817.json",
+    "source_sha256": "1839769549d78d0f756b2b2016a425cbe89bc6216e3a45bed1d0b16b3fcb47f6",
+    "public_path": "protocols/cspp_v27_ncedc_continuous_manifest_freeze_20260817.json",
+    "public_sha256": "9c6ec6ba1779fde47a10b2dfb9f7fb79319ec3816615c2ff1d2142a3e34bd8ce",
+    "changed": true
+  },
+  {
+    "source": "workspace/experiments/cspp_v27_ncedc_continuous_orientation_freeze_20260817.json",
+    "source_sha256": "1ecf49ac6671fc0338122c3c7497cf96e5dd25f181694d95f3aa0401f9f005bc",
+    "public_path": "protocols/cspp_v27_ncedc_continuous_orientation_freeze_20260817.json",
+    "public_sha256": "ab0ce70908d4720455e9f4535f94bd62d1a103ab40bbb22f3ef326f26b4c706e",
+    "changed": true
+  },
+  {
+    "source": "workspace/experiments/cspp_v27_ncedc_continuous_review_protocol_20260824.json",
+    "source_sha256": "ad3b31a1b541fcfcd833277b21c9965d5b25ac37e9e2b1aafbe5de7f0f53c016",
+    "public_path": "protocols/cspp_v27_ncedc_continuous_review_protocol_20260824.json",
+    "public_sha256": "0e0b18e098b7e3d927c2ecf82d37f839c9bde540370e2d5fac20552a9e1a3180",
+    "changed": true
+  },
+  {
+    "source": "workspace/experiments/cspp_v27_ncedc_continuous_scoring_hybrid_amendment_20260817.json",
+    "source_sha256": "ce1de360a6dea2ddbdffe8ff7f5a064eefd2ce4942bba3b4d7a4d62e81238d89",
+    "public_path": "protocols/cspp_v27_ncedc_continuous_scoring_hybrid_amendment_20260817.json",
+    "public_sha256": "06aa4d243499596ac1bb77d3cd6a4e8c89cb468a5cd0af3f80a27a90cc0e7899",
+    "changed": true
+  },
+  {
+    "source": "workspace/experiments/cspp_v27_ncedc_continuous_scoring_protocol_20260817.json",
+    "source_sha256": "c64d21080e3754d70ee186b48581d9b79ba2d01641b88c3601597b54b2c599fd",
+    "public_path": "protocols/cspp_v27_ncedc_continuous_scoring_protocol_20260817.json",
+    "public_sha256": "3b7286bd821098d1d2f476b4f8d3a9ffd6a56c8b1dedac8a22179589b6264b7c",
+    "changed": true
+  },
+  {
+    "source": "workspace/experiments/cspp_v27_ncedc_event_analysis_protocol_20260817.json",
+    "source_sha256": "6091059bf40ddc7db2f8a8e0ae64fe839ec24159a98a1f5c3f66a3179c0a9192",
+    "public_path": "protocols/cspp_v27_ncedc_event_analysis_protocol_20260817.json",
+    "public_sha256": "a4a9a403e73271cf108a3fa49cb517af73e910504df03eb18adc0bd31cb8f74e",
+    "changed": true
+  },
+  {
+    "source": "workspace/experiments/cspp_v27_ncedc_event_manifest_freeze_20260817.json",
+    "source_sha256": "e088d5b42c07c0f38be915c8c893b73cedf1bb393d3c1580f0fca78cbf868743",
+    "public_path": "protocols/cspp_v27_ncedc_event_manifest_freeze_20260817.json",
+    "public_sha256": "e6cdc60698315352bd4777c7a51b5e92d332e965b2064e85cc22e0d923ed93db",
+    "changed": true
+  },
+  {
+    "source": "workspace/experiments/cspp_v27_ncedc_event_orientation_freeze_20260817.json",
+    "source_sha256": "34e4dde04ed18941004f73fd209e5b84018aafcf55b1260442183f26275b3d64",
+    "public_path": "protocols/cspp_v27_ncedc_event_orientation_freeze_20260817.json",
+    "public_sha256": "120850dd31062895f6b804f6b683a0fe1c3622288cfbee960e5238a60a4675c4",
+    "changed": true
+  },
+  {
+    "source": "workspace/experiments/cspp_v27_ncedc_event_scoring_protocol_20260817.json",
+    "source_sha256": "9799f12a47ca39b80a09a8e5aaa3a62611da88ba0285af34dbfa7413004854b6",
+    "public_path": "protocols/cspp_v27_ncedc_event_scoring_protocol_20260817.json",
+    "public_sha256": "d4b9a7cc1207c5c75601a6596a46f3ce3cce7b08a4095db942810b9b62ba8e6c",
+    "changed": true
+  },
+  {
+    "source": "workspace/experiments/cspp_v27_ncedc_geonet_calibrated_public_baseline_protocol_20260824.json",
+    "source_sha256": "da610a3705678d57e4b68ffa8d9663f6bb30e217c0a3712f891b29474e8ec866",
+    "public_path": "protocols/cspp_v27_ncedc_geonet_calibrated_public_baseline_protocol_20260824.json",
+    "public_sha256": "21c601cd2ec4b442ed55e0b222165fe17c41205c63985bf11d33f6bb7aee022d",
+    "changed": true
+  },
+  {
+    "source": "workspace/experiments/cspp_v27_ncedc_global_catalog_screen_20260824.json",
+    "source_sha256": "d1bc601719c271add74365d71eb688a8dcb9401a5ce34b240926f05fe477eee6",
+    "public_path": "protocols/cspp_v27_ncedc_global_catalog_screen_20260824.json",
+    "public_sha256": "17529615e2b26dfec842ab0a1fb98fdc239521396fdb9b83eed595403186a234",
+    "changed": true
+  },
+  {
+    "source": "workspace/experiments/cspp_v27_ncedc_larger_event_analysis_20260824.json",
+    "source_sha256": "ad666881bc81bb6a3ae807dbcfb08bdcdd64a84fe86739db0997024fa4d6f442",
+    "public_path": "protocols/cspp_v27_ncedc_larger_event_analysis_20260824.json",
+    "public_sha256": "496cc1380d10b4540b97d098bcf3594a9f7228323d30ba455d830a9dae30afb6",
+    "changed": true
+  },
+  {
+    "source": "workspace/experiments/cspp_v27_ncedc_larger_event_manifest_freeze_20260824.json",
+    "source_sha256": "d383aa6a6b189b3d651bc92a700bc535de0a48074e09c55fb2c3f3429279f444",
+    "public_path": "protocols/cspp_v27_ncedc_larger_event_manifest_freeze_20260824.json",
+    "public_sha256": "f2db3fbbf889574d91298ea6d17c9d9946cef7b88f23a2e5a64846fd88547aae",
+    "changed": true
+  },
+  {
+    "source": "workspace/experiments/cspp_v27_ncedc_larger_event_orientation_freeze_20260824.json",
+    "source_sha256": "15c284712ab4ad863d8eacecef1065ab3de6e39ba031996ee58decda0371dd6a",
+    "public_path": "protocols/cspp_v27_ncedc_larger_event_orientation_freeze_20260824.json",
+    "public_sha256": "149e31441a773a698b81cea12297c0a4186be242ff0d946ccffc1fe9bef80ad9",
+    "changed": true
+  },
+  {
+    "source": "workspace/experiments/cspp_v27_ncedc_larger_event_protocol_20260824.json",
+    "source_sha256": "e22a7d9fa89358b760dcd3b6efc8ee9e2e424dd155c393b31561ec5f5eec7f73",
+    "public_path": "protocols/cspp_v27_ncedc_larger_event_protocol_20260824.json",
+    "public_sha256": "7fba6e8a3c1ea9bee17ea4da72ea58ea852fe7d39e4ba0b9eb0b970a89076a76",
+    "changed": true
+  },
+  {
+    "source": "workspace/experiments/cspp_v27_ncedc_larger_event_scoring_protocol_20260824.json",
+    "source_sha256": "45c27fbecf6a664cf4510c1669df386c4c30ddaf0ee47411174a576649673caa",
+    "public_path": "protocols/cspp_v27_ncedc_larger_event_scoring_protocol_20260824.json",
+    "public_sha256": "671bdf1dd68ac06d22cc859f9fe6621547074b36bed5a159d1cbcc833e64d24f",
+    "changed": true
+  },
+  {
+    "source": "workspace/experiments/cspp_v27_ncedc_model_blind_protocol_20260817.json",
+    "source_sha256": "c27b64b7b336e6e96b2f6c61c3a5f8795d7ce3daf0a4ac3c4cd5ccd2df5631ce",
+    "public_path": "protocols/cspp_v27_ncedc_model_blind_protocol_20260817.json",
+    "public_sha256": "4d22a8cdde89d93d42b9a09ce3937c68d023756a3504cde4d389670005a44c61",
+    "changed": true
+  },
+  {
+    "source": "workspace/experiments/cspp_v27_ncedc_paired_method_protocol_20260817.json",
+    "source_sha256": "c520f17e4ede68fb7907fc840d12f9762ab626b79c6ae9808d85eaa57d96ec26",
+    "public_path": "protocols/cspp_v27_ncedc_paired_method_protocol_20260817.json",
+    "public_sha256": "1488b28555a4cca8958e58a9d6818cdebb760370ab59b55be6074b7cd71e0188",
+    "changed": true
+  },
+  {
+    "source": "workspace/experiments/cspp_v27_pilot_results_20260729.json",
+    "source_sha256": "57ba4816c46861ab675e741249bf8e1ace973af0191f52046bcc305f29935b27",
+    "public_path": "protocols/cspp_v27_pilot_results_20260729.json",
+    "public_sha256": "57ba4816c46861ab675e741249bf8e1ace973af0191f52046bcc305f29935b27",
+    "changed": false
+  },
+  {
+    "source": "workspace/experiments/cspp_v27_posthoc_decision_ablation_protocol_20260730.json",
+    "source_sha256": "45027473eb86c60ad81539788e04f95f79bd6a9221e3140ff50b42419312a99c",
+    "public_path": "protocols/cspp_v27_posthoc_decision_ablation_protocol_20260730.json",
+    "public_sha256": "58a16124caaf071e6400f09cff641556b7f03f6df252a1a1b352fb51e1ef9d64",
+    "changed": true
+  },
+  {
+    "source": "workspace/experiments/cspp_v27_verifier_partial_auc_pilot_20260729.json",
+    "source_sha256": "b8944aa82c0f33dd515d26a06fa35a24f4290dd53649091b6f6e3fd6d7579a34",
+    "public_path": "protocols/cspp_v27_verifier_partial_auc_pilot_20260729.json",
+    "public_sha256": "253ca2af80a096f81f2e16988c507cb9dbb33ea5afd4732e71c0e4f0f44cdac5",
+    "changed": true
+  },
+  {
+    "source": "workspace/experiments/cspp_v27b_balanced_candidate_gated_pilot_20260729.json",
+    "source_sha256": "25412122c04e7d4d547216136f0f1ef4260b482d38bb934d5df2e1b7c0280ce3",
+    "public_path": "protocols/cspp_v27b_balanced_candidate_gated_pilot_20260729.json",
+    "public_sha256": "5368d419405ba3f4a2940e7b0f429945bae7f982a7248589d7c664512ce3fd4b",
+    "changed": true
+  },
+  {
+    "source": "workspace/experiments/cspp_v27b_balanced_candidate_gated_result_20260729.json",
+    "source_sha256": "85659b3a17f6fee9025e16f97d964317595fc8a32de3b82248a1da5c23bef9d2",
+    "public_path": "protocols/cspp_v27b_balanced_candidate_gated_result_20260729.json",
+    "public_sha256": "b8c03d0e451eeab1f5447ccabe332dfc911f7cc7a3f32f718a7f37337beb3650",
+    "changed": true
+  },
+  {
+    "source": "workspace/experiments/cspp_v27b_candidate_gated_verifier_pilot_20260729.json",
+    "source_sha256": "63310a99b2a0740ca8a144bd791c7282a1d4a54f69b2636b95b639362872c084",
+    "public_path": "protocols/cspp_v27b_candidate_gated_verifier_pilot_20260729.json",
+    "public_sha256": "2e71030f54fc794b9f2d4ea37280694840bbd0b97b197b55c7b3bd5a33ce72b9",
+    "changed": true
+  },
+  {
+    "source": "workspace/experiments/cspp_v27b_candidate_gated_verifier_result_20260729.json",
+    "source_sha256": "fb249698701efc8e7f6e50f28b41f7e698fa98803115f859e6e1402469aefdc2",
+    "public_path": "protocols/cspp_v27b_candidate_gated_verifier_result_20260729.json",
+    "public_sha256": "fb249698701efc8e7f6e50f28b41f7e698fa98803115f859e6e1402469aefdc2",
+    "changed": false
+  },
+  {
+    "source": "workspace/experiments/cspp_v27b_nonlinear_verifier_pilot_20260729.json",
+    "source_sha256": "f76aa895433660ef16987db9f7073232994d8e4b49ef60dfd04589a27057e64a",
+    "public_path": "protocols/cspp_v27b_nonlinear_verifier_pilot_20260729.json",
+    "public_sha256": "eb16e860940bd62b82bdc49d54a4110d83285ae7d4a3103875c5a770bbb0c32a",
+    "changed": true
+  },
+  {
+    "source": "workspace/experiments/cspp_v27b_nonlinear_verifier_result_20260729.json",
+    "source_sha256": "5e00572cabb1bdb60e88aecaae22e43639348a9fbaef76c8ada865a3e21266bb",
+    "public_path": "protocols/cspp_v27b_nonlinear_verifier_result_20260729.json",
+    "public_sha256": "5e00572cabb1bdb60e88aecaae22e43639348a9fbaef76c8ada865a3e21266bb",
+    "changed": false
+  },
+  {
+    "source": "workspace/experiments/cspp_v27c_direct_feature_blind_training_protocol_20260729.json",
+    "source_sha256": "076c33fa758c9de5383b85ba604245736b52a1c736cdcbe9453c03466d1f4b06",
+    "public_path": "protocols/cspp_v27c_direct_feature_blind_training_protocol_20260729.json",
+    "public_sha256": "980e8c743368fa87585fc15380967c626af113a65f83deed7b90606ce6935672",
+    "changed": true
+  },
+  {
+    "source": "workspace/experiments/cspp_v27c_direct_feature_blind_training_result_20260729.json",
+    "source_sha256": "123bed173e1e42f3ad96ff38df3ebc988482b1a0cd6afcacb81856ba944aeab8",
+    "public_path": "protocols/cspp_v27c_direct_feature_blind_training_result_20260729.json",
+    "public_sha256": "508b19bb42cb1159fa29ac37f2abe187e59fce907e41b39cec8fdaf89a22f1dd",
+    "changed": true
+  },
+  {
+    "source": "workspace/experiments/cspp_v27c_episode_feature_ablation_a0_result_20260729.json",
+    "source_sha256": "48d6cb1993220412604d54b526791afa0052c9d7427ef510972c45b30779326d",
+    "public_path": "protocols/cspp_v27c_episode_feature_ablation_a0_result_20260729.json",
+    "public_sha256": "ba0fc2d7769c060334dce6ca081a61142b568fccb98f6e7a0316c27090ebc6e5",
+    "changed": true
+  },
+  {
+    "source": "workspace/experiments/cspp_v27c_episode_feature_ablation_protocol_20260729.json",
+    "source_sha256": "e8c570125e1fef80a50c31e7ce99ffec6e29804a375f4fd2cff64301a1881a8c",
+    "public_path": "protocols/cspp_v27c_episode_feature_ablation_protocol_20260729.json",
+    "public_sha256": "dd9975d4226c5e2e1ae03f13be5b2f4a1007923dddff62da522fc0678494796b",
+    "changed": true
+  },
+  {
+    "source": "workspace/outputs/source_cleanup_20260907/equivalence.json",
+    "source_sha256": "9d1a0473136e1a751f069ff5ef9a42112bc6312cd7436614c597afa0c9b097e2",
+    "public_path": "provenance/source_reorganization.json",
+    "public_sha256": "a96d7673be3886fe4d5ec1619b8e92a35326ee0a12a7a14b290dc903574a2d80",
+    "changed": true
+  }
+]

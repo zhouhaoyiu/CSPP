@@ -1,0 +1,44 @@
+{
+  "result_id": "cspp_v27b_nonlinear_verifier_pilot_result_v1",
+  "status": "completed_rejected",
+  "protocol": "experiments/cspp_v27b_nonlinear_verifier_pilot_20260729.json",
+  "protocol_sha256": "f76aa895433660ef16987db9f7073232994d8e4b49ef60dfd04589a27057e64a",
+  "artifacts": {
+    "best_checkpoint_sha256": "be6f3cb8875fca1cb70599974626d1c5353b7308c405dcdbee4c84b11e6c1f92",
+    "best_threshold_sweep_sha256": "adddc58118fb99057ce77586db0d3a38e9c73030475f84b0047fe00484ed0ed1",
+    "epoch_3_threshold_sweep_sha256": "2baacfbe9b3c004acab820a815bbd62886c75486ec24a1333f9255698c0c8b1a",
+    "selected_indices_sha256": "72dab23b14f4da309ec04bbbcdb68c7088bbf8aba565024934c2be05c94893cd"
+  },
+  "frozen_candidate_probe_max_abs_difference": {
+    "candidate": 0.0,
+    "timing": 0.0,
+    "dense_phase": 0.0
+  },
+  "best_checkpoint_operating_point": {
+    "candidate_threshold": 0.925,
+    "event_threshold": 0.0,
+    "native_usable_rate": 0.54,
+    "zero_db_usable_rate": 0.027174,
+    "ten_db_usable_rate": 0.328173,
+    "noise_specificity": 0.996425,
+    "p90_availability_delay_seconds": 0.5
+  },
+  "closest_low_candidate_point": {
+    "epoch": 3,
+    "candidate_threshold": 0.1,
+    "event_threshold": 0.9,
+    "native_usable_rate": 0.8175,
+    "zero_db_usable_rate": 0.157609,
+    "ten_db_usable_rate": 0.631579,
+    "noise_specificity": 0.99017,
+    "p90_availability_delay_seconds": 1.0
+  },
+  "acceptance": {
+    "accepted_rows": 0,
+    "decision": "reject",
+    "reason": "No candidate threshold at most 0.2 reached both 0.995 specificity and the predeclared native, 0 dB, and 10 dB usable-rate gates."
+  },
+  "diagnosis": "All valid packets supervised the verifier, so abundant easy non-candidate packets diluted the operational false-candidate tail.",
+  "next_test": "Keep the same frozen model and losses, but supervise the verifier only on detached candidate support, all positive verifier labels, and reviewed hard-negative masks.",
+  "scientific_boundary": "Opened development result only; not independent final-test evidence."
+}

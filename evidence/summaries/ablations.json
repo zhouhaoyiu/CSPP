@@ -1,0 +1,707 @@
+[
+  {
+    "arm": "A0_full",
+    "seed": 20261111,
+    "primary_stratum": "authoritative_used_p_positive_weight",
+    "primary_event_records": 491,
+    "primary_matched": 301,
+    "primary_candidate_total": 302,
+    "primary_recall": 0.6130346232179226,
+    "primary_precision": 0.9966887417218543,
+    "primary_f1": 0.7591424968474149,
+    "primary_median_absolute_pick_error_seconds": 0.10398387908935547,
+    "all_event_records": 640,
+    "all_matched": 336,
+    "all_recall": 0.525,
+    "strata": {
+      "authoritative_p_zero_weight": {
+        "records": 14,
+        "matched": 8,
+        "candidate_total": 8,
+        "recall": 0.5714285714285714,
+        "precision": 1.0,
+        "f1": 0.7272727272727273,
+        "median_absolute_pick_error_seconds": 0.09813904762268066
+      },
+      "authoritative_used_p_positive_weight": {
+        "records": 491,
+        "matched": 301,
+        "candidate_total": 302,
+        "recall": 0.6130346232179226,
+        "precision": 0.9966887417218543,
+        "f1": 0.7591424968474149,
+        "median_absolute_pick_error_seconds": 0.10398387908935547
+      },
+      "taup_iasp91_fallback": {
+        "records": 135,
+        "matched": 27,
+        "candidate_total": 40,
+        "recall": 0.2,
+        "precision": 0.675,
+        "f1": 0.30857142857142855,
+        "median_absolute_pick_error_seconds": 0.7592134475708008
+      }
+    },
+    "background_station_days": 222,
+    "background_candidates": 23,
+    "triggers_per_station_day": 0.1036036036036036
+  },
+  {
+    "arm": "A0_full",
+    "seed": 20261112,
+    "primary_stratum": "authoritative_used_p_positive_weight",
+    "primary_event_records": 491,
+    "primary_matched": 385,
+    "primary_candidate_total": 389,
+    "primary_recall": 0.7841140529531568,
+    "primary_precision": 0.9897172236503856,
+    "primary_f1": 0.875,
+    "primary_median_absolute_pick_error_seconds": 0.12818646430969238,
+    "all_event_records": 640,
+    "all_matched": 438,
+    "all_recall": 0.684375,
+    "strata": {
+      "authoritative_p_zero_weight": {
+        "records": 14,
+        "matched": 9,
+        "candidate_total": 9,
+        "recall": 0.6428571428571429,
+        "precision": 1.0,
+        "f1": 0.782608695652174,
+        "median_absolute_pick_error_seconds": 0.05269956588745117
+      },
+      "authoritative_used_p_positive_weight": {
+        "records": 491,
+        "matched": 385,
+        "candidate_total": 389,
+        "recall": 0.7841140529531568,
+        "precision": 0.9897172236503856,
+        "f1": 0.875,
+        "median_absolute_pick_error_seconds": 0.12818646430969238
+      },
+      "taup_iasp91_fallback": {
+        "records": 135,
+        "matched": 44,
+        "candidate_total": 66,
+        "recall": 0.32592592592592595,
+        "precision": 0.6666666666666666,
+        "f1": 0.43781094527363185,
+        "median_absolute_pick_error_seconds": 0.6207695007324219
+      }
+    },
+    "background_station_days": 222,
+    "background_candidates": 130,
+    "triggers_per_station_day": 0.5855855855855856
+  },
+  {
+    "arm": "A0_full",
+    "seed": 20261113,
+    "primary_stratum": "authoritative_used_p_positive_weight",
+    "primary_event_records": 491,
+    "primary_matched": 394,
+    "primary_candidate_total": 398,
+    "primary_recall": 0.8024439918533605,
+    "primary_precision": 0.9899497487437185,
+    "primary_f1": 0.8863892013498312,
+    "primary_median_absolute_pick_error_seconds": 0.10258245468139648,
+    "all_event_records": 640,
+    "all_matched": 459,
+    "all_recall": 0.7171875,
+    "strata": {
+      "authoritative_p_zero_weight": {
+        "records": 14,
+        "matched": 11,
+        "candidate_total": 11,
+        "recall": 0.7857142857142857,
+        "precision": 1.0,
+        "f1": 0.88,
+        "median_absolute_pick_error_seconds": 0.08386516571044922
+      },
+      "authoritative_used_p_positive_weight": {
+        "records": 491,
+        "matched": 394,
+        "candidate_total": 398,
+        "recall": 0.8024439918533605,
+        "precision": 0.9899497487437185,
+        "f1": 0.8863892013498312,
+        "median_absolute_pick_error_seconds": 0.10258245468139648
+      },
+      "taup_iasp91_fallback": {
+        "records": 135,
+        "matched": 54,
+        "candidate_total": 74,
+        "recall": 0.4,
+        "precision": 0.7297297297297297,
+        "f1": 0.5167464114832536,
+        "median_absolute_pick_error_seconds": 0.8371164798736572
+      }
+    },
+    "background_station_days": 222,
+    "background_candidates": 90,
+    "triggers_per_station_day": 0.40540540540540543
+  },
+  {
+    "arm": "A1_no_cross_packet_state",
+    "seed": 20261111,
+    "primary_stratum": "authoritative_used_p_positive_weight",
+    "primary_event_records": 491,
+    "primary_matched": 159,
+    "primary_candidate_total": 159,
+    "primary_recall": 0.32382892057026474,
+    "primary_precision": 1.0,
+    "primary_f1": 0.48923076923076925,
+    "primary_median_absolute_pick_error_seconds": 0.25238990783691406,
+    "all_event_records": 640,
+    "all_matched": 174,
+    "all_recall": 0.271875,
+    "strata": {
+      "authoritative_p_zero_weight": {
+        "records": 14,
+        "matched": 4,
+        "candidate_total": 4,
+        "recall": 0.2857142857142857,
+        "precision": 1.0,
+        "f1": 0.4444444444444444,
+        "median_absolute_pick_error_seconds": 0.20024967193603516
+      },
+      "authoritative_used_p_positive_weight": {
+        "records": 491,
+        "matched": 159,
+        "candidate_total": 159,
+        "recall": 0.32382892057026474,
+        "precision": 1.0,
+        "f1": 0.48923076923076925,
+        "median_absolute_pick_error_seconds": 0.25238990783691406
+      },
+      "taup_iasp91_fallback": {
+        "records": 135,
+        "matched": 11,
+        "candidate_total": 19,
+        "recall": 0.08148148148148149,
+        "precision": 0.5789473684210527,
+        "f1": 0.14285714285714285,
+        "median_absolute_pick_error_seconds": 0.9676876068115234
+      }
+    },
+    "background_station_days": 222,
+    "background_candidates": 5,
+    "triggers_per_station_day": 0.02252252252252252
+  },
+  {
+    "arm": "A1_no_cross_packet_state",
+    "seed": 20261112,
+    "primary_stratum": "authoritative_used_p_positive_weight",
+    "primary_event_records": 491,
+    "primary_matched": 222,
+    "primary_candidate_total": 222,
+    "primary_recall": 0.45213849287169044,
+    "primary_precision": 1.0,
+    "primary_f1": 0.6227208976157083,
+    "primary_median_absolute_pick_error_seconds": 0.24542105197906494,
+    "all_event_records": 640,
+    "all_matched": 246,
+    "all_recall": 0.384375,
+    "strata": {
+      "authoritative_p_zero_weight": {
+        "records": 14,
+        "matched": 6,
+        "candidate_total": 6,
+        "recall": 0.42857142857142855,
+        "precision": 1.0,
+        "f1": 0.6,
+        "median_absolute_pick_error_seconds": 0.22418272495269775
+      },
+      "authoritative_used_p_positive_weight": {
+        "records": 491,
+        "matched": 222,
+        "candidate_total": 222,
+        "recall": 0.45213849287169044,
+        "precision": 1.0,
+        "f1": 0.6227208976157083,
+        "median_absolute_pick_error_seconds": 0.24542105197906494
+      },
+      "taup_iasp91_fallback": {
+        "records": 135,
+        "matched": 18,
+        "candidate_total": 30,
+        "recall": 0.13333333333333333,
+        "precision": 0.6,
+        "f1": 0.21818181818181817,
+        "median_absolute_pick_error_seconds": 0.989915132522583
+      }
+    },
+    "background_station_days": 222,
+    "background_candidates": 9,
+    "triggers_per_station_day": 0.04054054054054054
+  },
+  {
+    "arm": "A1_no_cross_packet_state",
+    "seed": 20261113,
+    "primary_stratum": "authoritative_used_p_positive_weight",
+    "primary_event_records": 491,
+    "primary_matched": 191,
+    "primary_candidate_total": 191,
+    "primary_recall": 0.3890020366598778,
+    "primary_precision": 1.0,
+    "primary_f1": 0.5601173020527859,
+    "primary_median_absolute_pick_error_seconds": 0.18533849716186523,
+    "all_event_records": 640,
+    "all_matched": 215,
+    "all_recall": 0.3359375,
+    "strata": {
+      "authoritative_p_zero_weight": {
+        "records": 14,
+        "matched": 4,
+        "candidate_total": 4,
+        "recall": 0.2857142857142857,
+        "precision": 1.0,
+        "f1": 0.4444444444444444,
+        "median_absolute_pick_error_seconds": 0.12547063827514648
+      },
+      "authoritative_used_p_positive_weight": {
+        "records": 491,
+        "matched": 191,
+        "candidate_total": 191,
+        "recall": 0.3890020366598778,
+        "precision": 1.0,
+        "f1": 0.5601173020527859,
+        "median_absolute_pick_error_seconds": 0.18533849716186523
+      },
+      "taup_iasp91_fallback": {
+        "records": 135,
+        "matched": 20,
+        "candidate_total": 32,
+        "recall": 0.14814814814814814,
+        "precision": 0.625,
+        "f1": 0.23952095808383234,
+        "median_absolute_pick_error_seconds": 0.9694290161132812
+      }
+    },
+    "background_station_days": 222,
+    "background_candidates": 9,
+    "triggers_per_station_day": 0.04054054054054054
+  },
+  {
+    "arm": "A2_no_dense_candidate_input",
+    "seed": 20261111,
+    "primary_stratum": "authoritative_used_p_positive_weight",
+    "primary_event_records": 491,
+    "primary_matched": 305,
+    "primary_candidate_total": 305,
+    "primary_recall": 0.6211812627291242,
+    "primary_precision": 1.0,
+    "primary_f1": 0.7663316582914573,
+    "primary_median_absolute_pick_error_seconds": 0.11534357070922852,
+    "all_event_records": 640,
+    "all_matched": 339,
+    "all_recall": 0.5296875,
+    "strata": {
+      "authoritative_p_zero_weight": {
+        "records": 14,
+        "matched": 7,
+        "candidate_total": 7,
+        "recall": 0.5,
+        "precision": 1.0,
+        "f1": 0.6666666666666666,
+        "median_absolute_pick_error_seconds": 0.07196378707885742
+      },
+      "authoritative_used_p_positive_weight": {
+        "records": 491,
+        "matched": 305,
+        "candidate_total": 305,
+        "recall": 0.6211812627291242,
+        "precision": 1.0,
+        "f1": 0.7663316582914573,
+        "median_absolute_pick_error_seconds": 0.11534357070922852
+      },
+      "taup_iasp91_fallback": {
+        "records": 135,
+        "matched": 27,
+        "candidate_total": 39,
+        "recall": 0.2,
+        "precision": 0.6923076923076923,
+        "f1": 0.3103448275862069,
+        "median_absolute_pick_error_seconds": 0.6154134273529053
+      }
+    },
+    "background_station_days": 222,
+    "background_candidates": 21,
+    "triggers_per_station_day": 0.0945945945945946
+  },
+  {
+    "arm": "A2_no_dense_candidate_input",
+    "seed": 20261112,
+    "primary_stratum": "authoritative_used_p_positive_weight",
+    "primary_event_records": 491,
+    "primary_matched": 364,
+    "primary_candidate_total": 366,
+    "primary_recall": 0.7413441955193483,
+    "primary_precision": 0.994535519125683,
+    "primary_f1": 0.8494749124854143,
+    "primary_median_absolute_pick_error_seconds": 0.1442708969116211,
+    "all_event_records": 640,
+    "all_matched": 405,
+    "all_recall": 0.6328125,
+    "strata": {
+      "authoritative_p_zero_weight": {
+        "records": 14,
+        "matched": 9,
+        "candidate_total": 9,
+        "recall": 0.6428571428571429,
+        "precision": 1.0,
+        "f1": 0.782608695652174,
+        "median_absolute_pick_error_seconds": 0.038043975830078125
+      },
+      "authoritative_used_p_positive_weight": {
+        "records": 491,
+        "matched": 364,
+        "candidate_total": 366,
+        "recall": 0.7413441955193483,
+        "precision": 0.994535519125683,
+        "f1": 0.8494749124854143,
+        "median_absolute_pick_error_seconds": 0.1442708969116211
+      },
+      "taup_iasp91_fallback": {
+        "records": 135,
+        "matched": 32,
+        "candidate_total": 50,
+        "recall": 0.23703703703703705,
+        "precision": 0.64,
+        "f1": 0.34594594594594597,
+        "median_absolute_pick_error_seconds": 0.6171659231185913
+      }
+    },
+    "background_station_days": 222,
+    "background_candidates": 94,
+    "triggers_per_station_day": 0.42342342342342343
+  },
+  {
+    "arm": "A2_no_dense_candidate_input",
+    "seed": 20261113,
+    "primary_stratum": "authoritative_used_p_positive_weight",
+    "primary_event_records": 491,
+    "primary_matched": 384,
+    "primary_candidate_total": 386,
+    "primary_recall": 0.7820773930753564,
+    "primary_precision": 0.9948186528497409,
+    "primary_f1": 0.8757126567844926,
+    "primary_median_absolute_pick_error_seconds": 0.12347912788391113,
+    "all_event_records": 640,
+    "all_matched": 438,
+    "all_recall": 0.684375,
+    "strata": {
+      "authoritative_p_zero_weight": {
+        "records": 14,
+        "matched": 10,
+        "candidate_total": 10,
+        "recall": 0.7142857142857143,
+        "precision": 1.0,
+        "f1": 0.8333333333333334,
+        "median_absolute_pick_error_seconds": 0.11300575733184814
+      },
+      "authoritative_used_p_positive_weight": {
+        "records": 491,
+        "matched": 384,
+        "candidate_total": 386,
+        "recall": 0.7820773930753564,
+        "precision": 0.9948186528497409,
+        "f1": 0.8757126567844926,
+        "median_absolute_pick_error_seconds": 0.12347912788391113
+      },
+      "taup_iasp91_fallback": {
+        "records": 135,
+        "matched": 44,
+        "candidate_total": 65,
+        "recall": 0.32592592592592595,
+        "precision": 0.676923076923077,
+        "f1": 0.44,
+        "median_absolute_pick_error_seconds": 0.7052086591720581
+      }
+    },
+    "background_station_days": 222,
+    "background_candidates": 82,
+    "triggers_per_station_day": 0.36936936936936937
+  },
+  {
+    "arm": "A3_no_localization_supervision",
+    "seed": 20261111,
+    "primary_stratum": "authoritative_used_p_positive_weight",
+    "primary_event_records": 491,
+    "primary_matched": 300,
+    "primary_candidate_total": 300,
+    "primary_recall": 0.6109979633401222,
+    "primary_precision": 1.0,
+    "primary_f1": 0.7585335018963337,
+    "primary_median_absolute_pick_error_seconds": 0.10740971565246582,
+    "all_event_records": 640,
+    "all_matched": 337,
+    "all_recall": 0.5265625,
+    "strata": {
+      "authoritative_p_zero_weight": {
+        "records": 14,
+        "matched": 8,
+        "candidate_total": 8,
+        "recall": 0.5714285714285714,
+        "precision": 1.0,
+        "f1": 0.7272727272727273,
+        "median_absolute_pick_error_seconds": 0.09591245651245117
+      },
+      "authoritative_used_p_positive_weight": {
+        "records": 491,
+        "matched": 300,
+        "candidate_total": 300,
+        "recall": 0.6109979633401222,
+        "precision": 1.0,
+        "f1": 0.7585335018963337,
+        "median_absolute_pick_error_seconds": 0.10740971565246582
+      },
+      "taup_iasp91_fallback": {
+        "records": 135,
+        "matched": 29,
+        "candidate_total": 43,
+        "recall": 0.21481481481481482,
+        "precision": 0.6744186046511628,
+        "f1": 0.3258426966292135,
+        "median_absolute_pick_error_seconds": 0.589724063873291
+      }
+    },
+    "background_station_days": 222,
+    "background_candidates": 21,
+    "triggers_per_station_day": 0.0945945945945946
+  },
+  {
+    "arm": "A3_no_localization_supervision",
+    "seed": 20261112,
+    "primary_stratum": "authoritative_used_p_positive_weight",
+    "primary_event_records": 491,
+    "primary_matched": 379,
+    "primary_candidate_total": 381,
+    "primary_recall": 0.7718940936863544,
+    "primary_precision": 0.994750656167979,
+    "primary_f1": 0.8692660550458715,
+    "primary_median_absolute_pick_error_seconds": 0.13264822959899902,
+    "all_event_records": 640,
+    "all_matched": 429,
+    "all_recall": 0.6703125,
+    "strata": {
+      "authoritative_p_zero_weight": {
+        "records": 14,
+        "matched": 9,
+        "candidate_total": 9,
+        "recall": 0.6428571428571429,
+        "precision": 1.0,
+        "f1": 0.782608695652174,
+        "median_absolute_pick_error_seconds": 0.06082320213317871
+      },
+      "authoritative_used_p_positive_weight": {
+        "records": 491,
+        "matched": 379,
+        "candidate_total": 381,
+        "recall": 0.7718940936863544,
+        "precision": 0.994750656167979,
+        "f1": 0.8692660550458715,
+        "median_absolute_pick_error_seconds": 0.13264822959899902
+      },
+      "taup_iasp91_fallback": {
+        "records": 135,
+        "matched": 41,
+        "candidate_total": 61,
+        "recall": 0.3037037037037037,
+        "precision": 0.6721311475409836,
+        "f1": 0.41836734693877553,
+        "median_absolute_pick_error_seconds": 0.6062970161437988
+      }
+    },
+    "background_station_days": 222,
+    "background_candidates": 101,
+    "triggers_per_station_day": 0.45495495495495497
+  },
+  {
+    "arm": "A3_no_localization_supervision",
+    "seed": 20261113,
+    "primary_stratum": "authoritative_used_p_positive_weight",
+    "primary_event_records": 491,
+    "primary_matched": 391,
+    "primary_candidate_total": 393,
+    "primary_recall": 0.7963340122199593,
+    "primary_precision": 0.9949109414758269,
+    "primary_f1": 0.8846153846153846,
+    "primary_median_absolute_pick_error_seconds": 0.10648941993713379,
+    "all_event_records": 640,
+    "all_matched": 453,
+    "all_recall": 0.7078125,
+    "strata": {
+      "authoritative_p_zero_weight": {
+        "records": 14,
+        "matched": 12,
+        "candidate_total": 12,
+        "recall": 0.8571428571428571,
+        "precision": 1.0,
+        "f1": 0.9230769230769231,
+        "median_absolute_pick_error_seconds": 0.07287538051605225
+      },
+      "authoritative_used_p_positive_weight": {
+        "records": 491,
+        "matched": 391,
+        "candidate_total": 393,
+        "recall": 0.7963340122199593,
+        "precision": 0.9949109414758269,
+        "f1": 0.8846153846153846,
+        "median_absolute_pick_error_seconds": 0.10648941993713379
+      },
+      "taup_iasp91_fallback": {
+        "records": 135,
+        "matched": 50,
+        "candidate_total": 69,
+        "recall": 0.37037037037037035,
+        "precision": 0.7246376811594203,
+        "f1": 0.49019607843137253,
+        "median_absolute_pick_error_seconds": 0.7931618690490723
+      }
+    },
+    "background_station_days": 222,
+    "background_candidates": 80,
+    "triggers_per_station_day": 0.36036036036036034
+  },
+  {
+    "arm": "A4_no_spectrum",
+    "seed": 20261111,
+    "primary_stratum": "authoritative_used_p_positive_weight",
+    "primary_event_records": 491,
+    "primary_matched": 182,
+    "primary_candidate_total": 182,
+    "primary_recall": 0.37067209775967414,
+    "primary_precision": 1.0,
+    "primary_f1": 0.5408618127786032,
+    "primary_median_absolute_pick_error_seconds": 0.1427617073059082,
+    "all_event_records": 640,
+    "all_matched": 202,
+    "all_recall": 0.315625,
+    "strata": {
+      "authoritative_p_zero_weight": {
+        "records": 14,
+        "matched": 3,
+        "candidate_total": 3,
+        "recall": 0.21428571428571427,
+        "precision": 1.0,
+        "f1": 0.35294117647058826,
+        "median_absolute_pick_error_seconds": 0.4207901954650879
+      },
+      "authoritative_used_p_positive_weight": {
+        "records": 491,
+        "matched": 182,
+        "candidate_total": 182,
+        "recall": 0.37067209775967414,
+        "precision": 1.0,
+        "f1": 0.5408618127786032,
+        "median_absolute_pick_error_seconds": 0.1427617073059082
+      },
+      "taup_iasp91_fallback": {
+        "records": 135,
+        "matched": 17,
+        "candidate_total": 28,
+        "recall": 0.1259259259259259,
+        "precision": 0.6071428571428571,
+        "f1": 0.2085889570552147,
+        "median_absolute_pick_error_seconds": 0.5789957046508789
+      }
+    },
+    "background_station_days": 222,
+    "background_candidates": 18,
+    "triggers_per_station_day": 0.08108108108108109
+  },
+  {
+    "arm": "A4_no_spectrum",
+    "seed": 20261112,
+    "primary_stratum": "authoritative_used_p_positive_weight",
+    "primary_event_records": 491,
+    "primary_matched": 313,
+    "primary_candidate_total": 314,
+    "primary_recall": 0.6374745417515275,
+    "primary_precision": 0.9968152866242038,
+    "primary_f1": 0.7776397515527951,
+    "primary_median_absolute_pick_error_seconds": 0.1531085968017578,
+    "all_event_records": 640,
+    "all_matched": 344,
+    "all_recall": 0.5375,
+    "strata": {
+      "authoritative_p_zero_weight": {
+        "records": 14,
+        "matched": 7,
+        "candidate_total": 7,
+        "recall": 0.5,
+        "precision": 1.0,
+        "f1": 0.6666666666666666,
+        "median_absolute_pick_error_seconds": 0.06555938720703125
+      },
+      "authoritative_used_p_positive_weight": {
+        "records": 491,
+        "matched": 313,
+        "candidate_total": 314,
+        "recall": 0.6374745417515275,
+        "precision": 0.9968152866242038,
+        "f1": 0.7776397515527951,
+        "median_absolute_pick_error_seconds": 0.1531085968017578
+      },
+      "taup_iasp91_fallback": {
+        "records": 135,
+        "matched": 24,
+        "candidate_total": 41,
+        "recall": 0.17777777777777778,
+        "precision": 0.5853658536585366,
+        "f1": 0.2727272727272727,
+        "median_absolute_pick_error_seconds": 0.548957347869873
+      }
+    },
+    "background_station_days": 222,
+    "background_candidates": 66,
+    "triggers_per_station_day": 0.2972972972972973
+  },
+  {
+    "arm": "A4_no_spectrum",
+    "seed": 20261113,
+    "primary_stratum": "authoritative_used_p_positive_weight",
+    "primary_event_records": 491,
+    "primary_matched": 357,
+    "primary_candidate_total": 360,
+    "primary_recall": 0.7270875763747454,
+    "primary_precision": 0.9916666666666667,
+    "primary_f1": 0.8390129259694477,
+    "primary_median_absolute_pick_error_seconds": 0.11570906639099121,
+    "all_event_records": 640,
+    "all_matched": 407,
+    "all_recall": 0.6359375,
+    "strata": {
+      "authoritative_p_zero_weight": {
+        "records": 14,
+        "matched": 12,
+        "candidate_total": 12,
+        "recall": 0.8571428571428571,
+        "precision": 1.0,
+        "f1": 0.9230769230769231,
+        "median_absolute_pick_error_seconds": 0.07112443447113037
+      },
+      "authoritative_used_p_positive_weight": {
+        "records": 491,
+        "matched": 357,
+        "candidate_total": 360,
+        "recall": 0.7270875763747454,
+        "precision": 0.9916666666666667,
+        "f1": 0.8390129259694477,
+        "median_absolute_pick_error_seconds": 0.11570906639099121
+      },
+      "taup_iasp91_fallback": {
+        "records": 135,
+        "matched": 38,
+        "candidate_total": 57,
+        "recall": 0.2814814814814815,
+        "precision": 0.6666666666666666,
+        "f1": 0.3958333333333333,
+        "median_absolute_pick_error_seconds": 0.7031775712966919
+      }
+    },
+    "background_station_days": 222,
+    "background_candidates": 29,
+    "triggers_per_station_day": 0.13063063063063063
+  }
+]

@@ -1,0 +1,4 @@
+method,max_ms,mean_ms,median_ms,p95_ms,p95_realtime_margin,p99_ms,repetitions,timed_updates_per_repetition,updates,source_file,source_json_pointer
+CSPP,1.778,1.2069448383333332,1.1696875,1.4141687499999998,353.56459404155277,1.52602551,5,240,1200,sources/runtime.json,/results/CSPP
+PhaseNet,4.784625,2.8696823841666665,2.8439585000000003,3.3180681,150.69009584221612,3.6309817499999997,5,240,1200,sources/runtime.json,/results/PhaseNet
+EQTransformer,179.824542,34.7442344025,33.2280625,38.02839579999999,13.14806973792989,89.30601141999999,5,240,1200,sources/runtime.json,/results/EQTransformer

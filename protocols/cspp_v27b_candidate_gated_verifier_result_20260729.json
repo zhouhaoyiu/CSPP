@@ -1,0 +1,44 @@
+{
+  "result_id": "cspp_v27b_candidate_gated_verifier_result_v1",
+  "status": "completed_rejected",
+  "protocol": "experiments/cspp_v27b_candidate_gated_verifier_pilot_20260729.json",
+  "protocol_sha256": "63310a99b2a0740ca8a144bd791c7282a1d4a54f69b2636b95b639362872c084",
+  "artifacts": {
+    "best_checkpoint_sha256": "c4c7ad53a8c113f3d2981440ddbe7ea6dfc6c5e38f1d596dc6c98189633f057c",
+    "best_threshold_sweep_sha256": "cba8ce54ff1dd8a4f4283daf4a472dd2285e031c76ab2bcc70a19d5a8e601c00",
+    "selected_indices_sha256": "72dab23b14f4da309ec04bbbcdb68c7088bbf8aba565024934c2be05c94893cd"
+  },
+  "verifier_supervision_fraction": {
+    "epoch_1": 0.140076,
+    "epoch_2": 0.138905,
+    "epoch_3": 0.13806
+  },
+  "closest_low_candidate_point": {
+    "epoch": 1,
+    "candidate_threshold": 0.2,
+    "event_threshold": 0.9,
+    "native_usable_rate": 0.855,
+    "zero_db_usable_rate": 0.209239,
+    "ten_db_usable_rate": 0.755418,
+    "noise_false_traces": 49,
+    "noise_specificity": 0.956211,
+    "p90_availability_delay_seconds": 0.706
+  },
+  "acceptance": {
+    "accepted_rows": 0,
+    "decision": "reject",
+    "reason": "Recall gates passed, but no low-candidate row approached 0.995 specificity."
+  },
+  "class_balance_diagnostic": {
+    "supervised_packets": 4017,
+    "positive_packets": 980,
+    "negative_packets": 3037,
+    "weighted_positive_mass": 1156,
+    "weighted_negative_mass": 3355,
+    "weighted_negative_to_positive_ratio": 2.902249,
+    "configured_event_pos_weight": 20.0,
+    "diagnosis": "The all-packet positive weight over-weighted gated positives by about 6.9 times relative to the measured weighted class balance."
+  },
+  "next_test": "Keep candidate gating and set event_pos_weight to the frozen measured balance value 3.0.",
+  "scientific_boundary": "Opened development result only; not independent final-test evidence."
+}

@@ -1,0 +1,532 @@
+{
+  "analysis_id": "cspp_v27_tx_causal_public_analysis_v1",
+  "analysis_protocol": {
+    "bytes": 2021,
+    "path": "work_artifacts/tx_external_event_validation_20260824/causal_public_analysis_protocol_v2.json",
+    "sha256": "d6778ceb16ff99b30131293a83623ccc275d31621015a3122abb180fa6919aa4"
+  },
+  "artifacts": {
+    "low_snr_record_diagnosis": {
+      "bytes": 5812,
+      "path": "work_artifacts/tx_external_event_validation_20260824/evaluation/tx_causal_public_analysis_v2/cspp_low_snr_diagnosis.csv",
+      "sha256": "aaba1e6d9c6177318220cbf61f901e6a7c179d08ee76538e40b6365367058b32"
+    }
+  },
+  "created_at_utc": "2026-08-23T23:54:28.076807+00:00",
+  "cspp_low_snr_diagnosis": {
+    "diagnostic_window": "four 0.5-s packets before through four after the reference packet",
+    "failure_stage_counts": {
+      "candidate_evidence_below_threshold": 23,
+      "event_confirmation_below_threshold": 13,
+      "matched": 2
+    },
+    "interpretation": "The reference-pick SNR uses post-arrival samples and is diagnostic; it is unavailable to a live trigger and cannot serve as an online gate.",
+    "left_censored_at_minus_120_db": 16,
+    "matched_records": 2,
+    "records": 38,
+    "station_counts": {
+      "TX.MB12.00": 2,
+      "TX.MB22.00": 3,
+      "TX.PB03.00": 1,
+      "TX.PB06.00": 3,
+      "TX.PB16.00": 1,
+      "TX.PB21.00": 1,
+      "TX.PCOS.00": 27
+    }
+  },
+  "interpretation": {
+    "paper_or_submission_files_modified": false,
+    "scope": "All methods use the same 633 TexNet records and strict causal publication; public checkpoints retain native preprocessing, windowing, blinding, and previously fixed thresholds.",
+    "snr": "SNR strata are posthoc diagnostics and were not used for record selection, threshold tuning, or online decisions.",
+    "training": "released-model comparison, not matched retraining"
+  },
+  "protocol_sha256": "fd0187279e572d564eda923a36416f9b0594e2a908e15ca6172894cf5ff7b696",
+  "same_record_causal_public_baselines": {
+    "eqtransformer_original:eqtransformer_original_p_default": {
+      "absolute_pick_error_median_seconds": 0.09302186965942383,
+      "absolute_pick_error_p95_seconds": 0.25569548606872555,
+      "availability_delay_median_seconds": 25.43596911430359,
+      "availability_delay_p95_seconds": 28.6960015296936,
+      "available_within_2_seconds_fraction": 0.0,
+      "candidate_episodes": 333,
+      "candidate_precision": 0.8078078078078078,
+      "candidate_precision_wilson95": [
+        0.7620730825752747,
+        0.8465218353950951
+      ],
+      "event_cluster_bootstrap95": {
+        "candidate_precision": [
+          0.7630837852961433,
+          0.8566775244299675
+        ],
+        "f1": [
+          0.5069738632295023,
+          0.60431654676259
+        ],
+        "recall": [
+          0.37036892361111107,
+          0.4803963498307565
+        ]
+      },
+      "f1": 0.556935817805383,
+      "matched_records": 269,
+      "recall": 0.42496050552922593,
+      "recall_wilson95": [
+        0.3870171699035377,
+        0.4638091249549639
+      ],
+      "records": 633,
+      "technical_failures_counted_as_misses": 0
+    },
+    "eqtransformer_original:eqtransformer_original_p_det_custom": {
+      "absolute_pick_error_median_seconds": 0.08901691436767578,
+      "absolute_pick_error_p95_seconds": 0.2370791673660277,
+      "availability_delay_median_seconds": 26.518638014793396,
+      "availability_delay_p95_seconds": 28.67254722118377,
+      "available_within_2_seconds_fraction": 0.0,
+      "candidate_episodes": 194,
+      "candidate_precision": 0.7731958762886598,
+      "candidate_precision_wilson95": [
+        0.7092981291157209,
+        0.8264844142998581
+      ],
+      "event_cluster_bootstrap95": {
+        "candidate_precision": [
+          0.7091725282345948,
+          0.8385503472222221
+        ],
+        "f1": [
+          0.3071335295453569,
+          0.41917574585072803
+        ],
+        "recall": [
+          0.19344146303742654,
+          0.28526657918398096
+        ]
+      },
+      "f1": 0.36275695284159615,
+      "matched_records": 150,
+      "recall": 0.23696682464454977,
+      "recall_wilson95": [
+        0.2054899759042076,
+        0.271616931336645
+      ],
+      "records": 633,
+      "technical_failures_counted_as_misses": 0
+    },
+    "phasenet_instance:phasenet_instance_default": {
+      "absolute_pick_error_median_seconds": 0.10769438743591309,
+      "absolute_pick_error_p95_seconds": 0.3184890389442444,
+      "availability_delay_median_seconds": 10.46696937084198,
+      "availability_delay_p95_seconds": 17.534926176071167,
+      "available_within_2_seconds_fraction": 0.0,
+      "candidate_episodes": 871,
+      "candidate_precision": 0.6934557979334098,
+      "candidate_precision_wilson95": [
+        0.6620425399979026,
+        0.7231701137945725
+      ],
+      "event_cluster_bootstrap95": {
+        "candidate_precision": [
+          0.6506010856613266,
+          0.738443290286356
+        ],
+        "f1": [
+          0.7740291119820437,
+          0.8326477399576814
+        ],
+        "recall": [
+          0.9422143985754414,
+          0.9667232608291317
+        ]
+      },
+      "f1": 0.803191489361702,
+      "matched_records": 604,
+      "recall": 0.9541864139020537,
+      "recall_wilson95": [
+        0.9349787389447709,
+        0.9679147395432465
+      ],
+      "records": 633,
+      "technical_failures_counted_as_misses": 0
+    }
+  },
+  "snr_stratified_cspp": {
+    "0_to_lt_10": {
+      "availability_delay_median_seconds": 1.073559045791626,
+      "availability_delay_p95_seconds": 1.285570764541626,
+      "available_within_0_5_seconds_fraction": 0.0,
+      "available_within_1_0_seconds_fraction": 0.3333333333333333,
+      "available_within_2_0_seconds_fraction": 0.7647058823529411,
+      "candidate_episodes": 40,
+      "candidate_precision": 0.975,
+      "candidate_precision_wilson95": [
+        0.8711863103652591,
+        0.9955731684973186
+      ],
+      "f1": 0.857142857142857,
+      "false_candidate_episodes": 1,
+      "false_negative_records": 12,
+      "matched_records": 39,
+      "pick_absolute_error_median_seconds": 0.2013397216796875,
+      "pick_absolute_error_p95_seconds": 0.4202049493789673,
+      "pick_error_median_seconds": 0.2013397216796875,
+      "recall": 0.7647058823529411,
+      "recall_wilson95": [
+        0.632377748398347,
+        0.8599505116553716
+      ],
+      "records": 51
+    },
+    "ge_10": {
+      "availability_delay_median_seconds": 0.7218290567398071,
+      "availability_delay_p95_seconds": 1.1177586078643797,
+      "available_within_0_5_seconds_fraction": 0.1937269372693727,
+      "available_within_1_0_seconds_fraction": 0.8118081180811808,
+      "available_within_2_0_seconds_fraction": 0.9630996309963099,
+      "candidate_episodes": 560,
+      "candidate_precision": 0.9321428571428572,
+      "candidate_precision_wilson95": [
+        0.9082318150462441,
+        0.9501655099967088
+      ],
+      "f1": 0.9473684210526316,
+      "false_candidate_episodes": 38,
+      "false_negative_records": 20,
+      "matched_records": 522,
+      "pick_absolute_error_median_seconds": 0.12040770053863525,
+      "pick_absolute_error_p95_seconds": 0.35632425546646107,
+      "pick_error_median_seconds": 0.0938955545425415,
+      "recall": 0.9630996309963099,
+      "recall_wilson95": [
+        0.9436932740475527,
+        0.9759876917123315
+      ],
+      "records": 542
+    },
+    "invalid": {
+      "availability_delay_median_seconds": null,
+      "availability_delay_p95_seconds": null,
+      "available_within_0_5_seconds_fraction": 0.0,
+      "available_within_1_0_seconds_fraction": 0.0,
+      "available_within_2_0_seconds_fraction": 0.0,
+      "candidate_episodes": 0,
+      "candidate_precision": 0.0,
+      "candidate_precision_wilson95": [
+        null,
+        null
+      ],
+      "f1": 0.0,
+      "false_candidate_episodes": 0,
+      "false_negative_records": 2,
+      "matched_records": 0,
+      "pick_absolute_error_median_seconds": null,
+      "pick_absolute_error_p95_seconds": null,
+      "pick_error_median_seconds": null,
+      "recall": 0.0,
+      "recall_wilson95": [
+        0.0,
+        0.6576197724933469
+      ],
+      "records": 2
+    },
+    "lt_0": {
+      "availability_delay_median_seconds": 0.9109169244766235,
+      "availability_delay_p95_seconds": 0.9305244088172913,
+      "available_within_0_5_seconds_fraction": 0.0,
+      "available_within_1_0_seconds_fraction": 0.05263157894736842,
+      "available_within_2_0_seconds_fraction": 0.05263157894736842,
+      "candidate_episodes": 2,
+      "candidate_precision": 1.0,
+      "candidate_precision_wilson95": [
+        0.34238022750665303,
+        1.0
+      ],
+      "f1": 0.1,
+      "false_candidate_episodes": 0,
+      "false_negative_records": 36,
+      "matched_records": 2,
+      "pick_absolute_error_median_seconds": 0.2818591594696045,
+      "pick_absolute_error_p95_seconds": 0.43266217708587645,
+      "pick_error_median_seconds": 0.16755890846252441,
+      "recall": 0.05263157894736842,
+      "recall_wilson95": [
+        0.014554208147292413,
+        0.17285462131770377
+      ],
+      "records": 38
+    }
+  },
+  "snr_stratified_public_baselines": {
+    "eqtransformer_original:eqtransformer_original_p_default": {
+      "0_to_lt_10": {
+        "absolute_pick_error_median_seconds": 0.18329083919525146,
+        "absolute_pick_error_p95_seconds": 0.5069300293922423,
+        "availability_delay_median_seconds": 30.30169653892517,
+        "availability_delay_p95_seconds": 34.25310959815979,
+        "available_within_2_seconds_fraction": 0.0,
+        "candidate_episodes": 5,
+        "candidate_precision": 0.8,
+        "candidate_precision_wilson95": [
+          0.37553462976252533,
+          0.9637758913675698
+        ],
+        "f1": 0.14285714285714285,
+        "matched_records": 4,
+        "recall": 0.0784313725490196,
+        "recall_wilson95": [
+          0.03092219678848919,
+          0.18499946312595889
+        ],
+        "records": 51,
+        "technical_failures_counted_as_misses": 0
+      },
+      "ge_10": {
+        "absolute_pick_error_median_seconds": 0.09293293952941895,
+        "absolute_pick_error_p95_seconds": 0.2500768184661864,
+        "availability_delay_median_seconds": 25.388643980026245,
+        "availability_delay_p95_seconds": 28.22852210998535,
+        "available_within_2_seconds_fraction": 0.0,
+        "candidate_episodes": 327,
+        "candidate_precision": 0.8103975535168195,
+        "candidate_precision_wilson95": [
+          0.7644014239102279,
+          0.8491855210984378
+        ],
+        "f1": 0.6098964326812428,
+        "matched_records": 265,
+        "recall": 0.488929889298893,
+        "recall_wilson95": [
+          0.4470725588538152,
+          0.5309430355901716
+        ],
+        "records": 542,
+        "technical_failures_counted_as_misses": 0
+      },
+      "invalid": {
+        "absolute_pick_error_median_seconds": null,
+        "absolute_pick_error_p95_seconds": null,
+        "availability_delay_median_seconds": null,
+        "availability_delay_p95_seconds": null,
+        "available_within_2_seconds_fraction": 0.0,
+        "candidate_episodes": 0,
+        "candidate_precision": 0.0,
+        "candidate_precision_wilson95": [
+          0.0,
+          0.0
+        ],
+        "f1": 0.0,
+        "matched_records": 0,
+        "recall": 0.0,
+        "recall_wilson95": [
+          0.0,
+          0.6576197724933469
+        ],
+        "records": 2,
+        "technical_failures_counted_as_misses": 0
+      },
+      "lt_0": {
+        "absolute_pick_error_median_seconds": null,
+        "absolute_pick_error_p95_seconds": null,
+        "availability_delay_median_seconds": null,
+        "availability_delay_p95_seconds": null,
+        "available_within_2_seconds_fraction": 0.0,
+        "candidate_episodes": 1,
+        "candidate_precision": 0.0,
+        "candidate_precision_wilson95": [
+          0.0,
+          0.7934506856227626
+        ],
+        "f1": 0.0,
+        "matched_records": 0,
+        "recall": 0.0,
+        "recall_wilson95": [
+          0.0,
+          0.09180986822558396
+        ],
+        "records": 38,
+        "technical_failures_counted_as_misses": 0
+      }
+    },
+    "eqtransformer_original:eqtransformer_original_p_det_custom": {
+      "0_to_lt_10": {
+        "absolute_pick_error_median_seconds": 0.21631574630737305,
+        "absolute_pick_error_p95_seconds": 0.5240249872207641,
+        "availability_delay_median_seconds": 27.501785039901733,
+        "availability_delay_p95_seconds": 33.76086268424988,
+        "available_within_2_seconds_fraction": 0.0,
+        "candidate_episodes": 3,
+        "candidate_precision": 1.0,
+        "candidate_precision_wilson95": [
+          0.4385029682449546,
+          1.0
+        ],
+        "f1": 0.1111111111111111,
+        "matched_records": 3,
+        "recall": 0.058823529411764705,
+        "recall_wilson95": [
+          0.020206639422464673,
+          0.15924626048800425
+        ],
+        "records": 51,
+        "technical_failures_counted_as_misses": 0
+      },
+      "ge_10": {
+        "absolute_pick_error_median_seconds": 0.08854389190673828,
+        "absolute_pick_error_p95_seconds": 0.22363300323486296,
+        "availability_delay_median_seconds": 26.512622117996216,
+        "availability_delay_p95_seconds": 28.292748069763178,
+        "available_within_2_seconds_fraction": 0.0,
+        "candidate_episodes": 191,
+        "candidate_precision": 0.7696335078534031,
+        "candidate_precision_wilson95": [
+          0.7049555976830102,
+          0.8236793274680447
+        ],
+        "f1": 0.40109140518417463,
+        "matched_records": 147,
+        "recall": 0.27121771217712176,
+        "recall_wilson95": [
+          0.2354961696401658,
+          0.3101594488688955
+        ],
+        "records": 542,
+        "technical_failures_counted_as_misses": 0
+      },
+      "invalid": {
+        "absolute_pick_error_median_seconds": null,
+        "absolute_pick_error_p95_seconds": null,
+        "availability_delay_median_seconds": null,
+        "availability_delay_p95_seconds": null,
+        "available_within_2_seconds_fraction": 0.0,
+        "candidate_episodes": 0,
+        "candidate_precision": 0.0,
+        "candidate_precision_wilson95": [
+          0.0,
+          0.0
+        ],
+        "f1": 0.0,
+        "matched_records": 0,
+        "recall": 0.0,
+        "recall_wilson95": [
+          0.0,
+          0.6576197724933469
+        ],
+        "records": 2,
+        "technical_failures_counted_as_misses": 0
+      },
+      "lt_0": {
+        "absolute_pick_error_median_seconds": null,
+        "absolute_pick_error_p95_seconds": null,
+        "availability_delay_median_seconds": null,
+        "availability_delay_p95_seconds": null,
+        "available_within_2_seconds_fraction": 0.0,
+        "candidate_episodes": 0,
+        "candidate_precision": 0.0,
+        "candidate_precision_wilson95": [
+          0.0,
+          0.0
+        ],
+        "f1": 0.0,
+        "matched_records": 0,
+        "recall": 0.0,
+        "recall_wilson95": [
+          0.0,
+          0.09180986822558396
+        ],
+        "records": 38,
+        "technical_failures_counted_as_misses": 0
+      }
+    },
+    "phasenet_instance:phasenet_instance_default": {
+      "0_to_lt_10": {
+        "absolute_pick_error_median_seconds": 0.14963722229003906,
+        "absolute_pick_error_p95_seconds": 0.357120156288147,
+        "availability_delay_median_seconds": 9.09746503829956,
+        "availability_delay_p95_seconds": 16.889776825904846,
+        "available_within_2_seconds_fraction": 0.0,
+        "candidate_episodes": 70,
+        "candidate_precision": 0.7285714285714285,
+        "candidate_precision_wilson95": [
+          0.6145568826371893,
+          0.8188040031181171
+        ],
+        "f1": 0.8429752066115702,
+        "matched_records": 51,
+        "recall": 1.0,
+        "recall_wilson95": [
+          0.9299533801014687,
+          1.0
+        ],
+        "records": 51,
+        "technical_failures_counted_as_misses": 0
+      },
+      "ge_10": {
+        "absolute_pick_error_median_seconds": 0.10414910316467285,
+        "absolute_pick_error_p95_seconds": 0.30414049625396716,
+        "availability_delay_median_seconds": 10.46696937084198,
+        "availability_delay_p95_seconds": 17.538926577568056,
+        "available_within_2_seconds_fraction": 0.0,
+        "candidate_episodes": 783,
+        "candidate_precision": 0.6922094508301405,
+        "candidate_precision_wilson95": [
+          0.6590058402177102,
+          0.7235362800858313
+        ],
+        "f1": 0.8181132075471699,
+        "matched_records": 542,
+        "recall": 1.0,
+        "recall_wilson95": [
+          0.9929623176132615,
+          1.0
+        ],
+        "records": 542,
+        "technical_failures_counted_as_misses": 0
+      },
+      "invalid": {
+        "absolute_pick_error_median_seconds": null,
+        "absolute_pick_error_p95_seconds": null,
+        "availability_delay_median_seconds": null,
+        "availability_delay_p95_seconds": null,
+        "available_within_2_seconds_fraction": 0.0,
+        "candidate_episodes": 0,
+        "candidate_precision": 0.0,
+        "candidate_precision_wilson95": [
+          0.0,
+          0.0
+        ],
+        "f1": 0.0,
+        "matched_records": 0,
+        "recall": 0.0,
+        "recall_wilson95": [
+          0.0,
+          0.6576197724933469
+        ],
+        "records": 2,
+        "technical_failures_counted_as_misses": 0
+      },
+      "lt_0": {
+        "absolute_pick_error_median_seconds": 0.17783284187316895,
+        "absolute_pick_error_p95_seconds": 0.4945211410522461,
+        "availability_delay_median_seconds": 12.360913038253784,
+        "availability_delay_p95_seconds": 14.331337332725525,
+        "available_within_2_seconds_fraction": 0.0,
+        "candidate_episodes": 18,
+        "candidate_precision": 0.6111111111111112,
+        "candidate_precision_wilson95": [
+          0.3861904160223791,
+          0.7969475342783638
+        ],
+        "f1": 0.3928571428571429,
+        "matched_records": 11,
+        "recall": 0.2894736842105263,
+        "recall_wilson95": [
+          0.17003277828483065,
+          0.44757137675752057
+        ],
+        "records": 38,
+        "technical_failures_counted_as_misses": 0
+      }
+    }
+  }
+}

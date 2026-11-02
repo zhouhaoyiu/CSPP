@@ -1,0 +1,2110 @@
+{
+  "created_utc": "2026-09-06T08:21:35.425652+00:00",
+  "records": 5981,
+  "events": 3927,
+  "selection": "All STEAD splits; M>=3 and P offset>=10 s; all selected P labels equal 10 s",
+  "by_original_split": {
+    "train": 5092,
+    "test": 600,
+    "dev": 289
+  },
+  "input_waveforms": "Same raw ZNE counts at 100 Hz; each record contains 60 s; no synthetic prefill",
+  "cspp": {
+    "arm": "C0",
+    "bytes": 1369948,
+    "path": "work_artifacts/checkpoints/blind_v27c_C0_none_seed20261101/final.pt",
+    "seed": 20261101,
+    "sha256": "d27ce10351475dfa264b45406b601dbcfc64e15c92be7260fe54c1738d35586d",
+    "verifier_feature_mode": "none"
+  },
+  "runtime": {
+    "candidate_history_packets": 4,
+    "max_arrival_age_packets": 4.0,
+    "normalization": "per-channel causal EWMA demean and scale",
+    "packet_duration_seconds": 0.5,
+    "packet_samples": 50,
+    "quality_gate": "PacketQualityGateV5 frozen defaults",
+    "recurrent_state_reset": "every quality-invalid segment boundary",
+    "sample_rate_hz": 100.0,
+    "temporal_block_packets": 4096,
+    "warmup_packets": 20
+  },
+  "public_models": {
+    "eqtransformer_original": {
+      "artifacts": {
+        "metadata": {
+          "bytes": 730,
+          "path": "external/original.json.v3",
+          "sha256": "e499eeee66e3e86e19caee0f640d6d3ab26b4a99142b9d73d75b078f18df389b"
+        },
+        "weights": {
+          "bytes": 1597711,
+          "path": "external/original.pt.v3",
+          "sha256": "c363c59dfb4562ba3b1356fb03dc9c776bbcfe3384b5db22e5ee3689de0a4df9"
+        }
+      },
+      "blinding_samples": [
+        500,
+        500
+      ],
+      "blinding_source": "SeisBench public class default",
+      "class": "EQTransformer",
+      "confirmation_use": "Unchanged public weights and public operating points fixed before any V21 2023 output.",
+      "execution_batch_size": 32,
+      "in_samples": 6000,
+      "labels": "DetectionPS",
+      "loaded_state_dict_sha256": "300186feab23dd75effeab86170c19454316f42103f3ca77a239a55eed218d9f",
+      "model_name": "EQTransformer-original",
+      "native_overlap_samples": 3000,
+      "native_stride_samples": 3000,
+      "normalization": "std",
+      "operating_points": [
+        {
+          "detection_threshold": null,
+          "endpoint_role": "released_p_pick_endpoint",
+          "holdout_tuned": false,
+          "id": "eqtransformer_original_p_default",
+          "official_default_endpoint": true,
+          "p_threshold": 0.1,
+          "source_method_id": "eqtransformer_original_p_default",
+          "threshold_count": 1,
+          "threshold_source": "SeisBench public P default; not tuned on V17"
+        },
+        {
+          "detection_threshold": 0.3,
+          "endpoint_role": "custom_p_peak_detection_score_gate_diagnostic",
+          "holdout_tuned": false,
+          "id": "eqtransformer_original_p_det_custom",
+          "official_default_endpoint": false,
+          "p_threshold": 0.1,
+          "source_method_id": "eqtransformer_original_p_det_default",
+          "threshold_count": 1,
+          "threshold_source": "Public P and detection defaults, with detection support required at the P-episode peak; not tuned on V17"
+        }
+      ],
+      "released_annotation_preprocessing": {
+        "annotate_calls_per_record": 1,
+        "expected_model_filter_applications_per_record": 1,
+        "external_prefilter": false,
+        "input_scope": "one_complete_180_second_record",
+        "interface": "SeisBench WaveformModel.annotate",
+        "model_filter_args": [
+          "bandpass"
+        ],
+        "model_filter_kwargs": {
+          "corners": 2,
+          "freqmax": 45.0,
+          "freqmin": 1.0,
+          "zerophase": true
+        },
+        "preprocessing_owner": "seisbench_model_annotate_stream_pre",
+        "temporal_access": "full_record_zero_phase_filter_uses_future_samples"
+      },
+      "required_weight_default_args": {},
+      "trailing_window_filter": {
+        "application": "Applied inside each fully historical native window; no samples after that window end are read.",
+        "corners": 2,
+        "freqmax_hz": 45.0,
+        "freqmin_hz": 1.0,
+        "type": "butterworth_bandpass",
+        "zerophase": true
+      },
+      "weights_name": "original",
+      "weights_version": "3"
+    },
+    "phasenet_instance": {
+      "artifacts": {
+        "metadata": {
+          "bytes": 787,
+          "path": "external/instance.json.v2",
+          "sha256": "d0f33eb054818b6eef1dcf090947f7239b68f290c2e9180d9a807df325300182"
+        },
+        "weights": {
+          "bytes": 1112615,
+          "path": "external/instance.pt.v2",
+          "sha256": "dddcc3d872106a8cd2013ce7a035c972a7f435749b5c02a015efd5ce3767da6d"
+        }
+      },
+      "blinding_samples": [
+        250,
+        250
+      ],
+      "blinding_source": "weight-specific default_args",
+      "class": "PhaseNet",
+      "confirmation_use": "Unchanged public weights and public operating points fixed before any V21 2023 output.",
+      "execution_batch_size": 256,
+      "in_samples": 3001,
+      "labels": "PSN",
+      "loaded_state_dict_sha256": "7dbb830e495daae23dc995d49b38b8258a3bbfc2bbb06eefe59e8c62d67992f9",
+      "model_name": "PhaseNet-INSTANCE",
+      "native_overlap_samples": 1500,
+      "native_stride_samples": 1501,
+      "normalization": "peak",
+      "operating_points": [
+        {
+          "detection_threshold": null,
+          "endpoint_role": "released_p_pick_endpoint",
+          "holdout_tuned": false,
+          "id": "phasenet_instance_default",
+          "official_default_endpoint": true,
+          "p_threshold": 0.08639824281948567,
+          "source_method_id": "phasenet_instance_default",
+          "threshold_count": 1,
+          "threshold_source": "INSTANCE weight-specific public default selected for in-domain F1; not tuned on V17"
+        }
+      ],
+      "released_annotation_preprocessing": {
+        "annotate_calls_per_record": 1,
+        "expected_model_filter_applications_per_record": 0,
+        "external_prefilter": false,
+        "input_scope": "one_complete_180_second_record",
+        "interface": "SeisBench WaveformModel.annotate",
+        "model_filter_args": [],
+        "model_filter_kwargs": {},
+        "preprocessing_owner": "seisbench_model_annotate_stream_pre",
+        "temporal_access": "full_record_annotation"
+      },
+      "required_weight_default_args": {
+        "P_threshold": 0.08639824281948567,
+        "S_threshold": 0.1194333034644735,
+        "blinding": [
+          250,
+          250
+        ]
+      },
+      "trailing_window_filter": null,
+      "weights_name": "instance",
+      "weights_version": "2"
+    }
+  },
+  "points": [
+    {
+      "model": "cspp",
+      "candidate_threshold": 0.001,
+      "confirmation_threshold": 0.01,
+      "p_threshold": null,
+      "default": false,
+      "id": "p000"
+    },
+    {
+      "model": "cspp",
+      "candidate_threshold": 0.001,
+      "confirmation_threshold": 0.05,
+      "p_threshold": null,
+      "default": false,
+      "id": "p001"
+    },
+    {
+      "model": "cspp",
+      "candidate_threshold": 0.001,
+      "confirmation_threshold": 0.1,
+      "p_threshold": null,
+      "default": false,
+      "id": "p002"
+    },
+    {
+      "model": "cspp",
+      "candidate_threshold": 0.001,
+      "confirmation_threshold": 0.2,
+      "p_threshold": null,
+      "default": false,
+      "id": "p003"
+    },
+    {
+      "model": "cspp",
+      "candidate_threshold": 0.001,
+      "confirmation_threshold": 0.3,
+      "p_threshold": null,
+      "default": false,
+      "id": "p004"
+    },
+    {
+      "model": "cspp",
+      "candidate_threshold": 0.001,
+      "confirmation_threshold": 0.4,
+      "p_threshold": null,
+      "default": false,
+      "id": "p005"
+    },
+    {
+      "model": "cspp",
+      "candidate_threshold": 0.001,
+      "confirmation_threshold": 0.5,
+      "p_threshold": null,
+      "default": false,
+      "id": "p006"
+    },
+    {
+      "model": "cspp",
+      "candidate_threshold": 0.001,
+      "confirmation_threshold": 0.6,
+      "p_threshold": null,
+      "default": false,
+      "id": "p007"
+    },
+    {
+      "model": "cspp",
+      "candidate_threshold": 0.001,
+      "confirmation_threshold": 0.7,
+      "p_threshold": null,
+      "default": false,
+      "id": "p008"
+    },
+    {
+      "model": "cspp",
+      "candidate_threshold": 0.001,
+      "confirmation_threshold": 0.8,
+      "p_threshold": null,
+      "default": false,
+      "id": "p009"
+    },
+    {
+      "model": "cspp",
+      "candidate_threshold": 0.001,
+      "confirmation_threshold": 0.85,
+      "p_threshold": null,
+      "default": false,
+      "id": "p010"
+    },
+    {
+      "model": "cspp",
+      "candidate_threshold": 0.001,
+      "confirmation_threshold": 0.9,
+      "p_threshold": null,
+      "default": false,
+      "id": "p011"
+    },
+    {
+      "model": "cspp",
+      "candidate_threshold": 0.001,
+      "confirmation_threshold": 0.95,
+      "p_threshold": null,
+      "default": false,
+      "id": "p012"
+    },
+    {
+      "model": "cspp",
+      "candidate_threshold": 0.001,
+      "confirmation_threshold": 0.975,
+      "p_threshold": null,
+      "default": false,
+      "id": "p013"
+    },
+    {
+      "model": "cspp",
+      "candidate_threshold": 0.001,
+      "confirmation_threshold": 0.99,
+      "p_threshold": null,
+      "default": false,
+      "id": "p014"
+    },
+    {
+      "model": "cspp",
+      "candidate_threshold": 0.005,
+      "confirmation_threshold": 0.01,
+      "p_threshold": null,
+      "default": false,
+      "id": "p015"
+    },
+    {
+      "model": "cspp",
+      "candidate_threshold": 0.005,
+      "confirmation_threshold": 0.05,
+      "p_threshold": null,
+      "default": false,
+      "id": "p016"
+    },
+    {
+      "model": "cspp",
+      "candidate_threshold": 0.005,
+      "confirmation_threshold": 0.1,
+      "p_threshold": null,
+      "default": false,
+      "id": "p017"
+    },
+    {
+      "model": "cspp",
+      "candidate_threshold": 0.005,
+      "confirmation_threshold": 0.2,
+      "p_threshold": null,
+      "default": false,
+      "id": "p018"
+    },
+    {
+      "model": "cspp",
+      "candidate_threshold": 0.005,
+      "confirmation_threshold": 0.3,
+      "p_threshold": null,
+      "default": false,
+      "id": "p019"
+    },
+    {
+      "model": "cspp",
+      "candidate_threshold": 0.005,
+      "confirmation_threshold": 0.4,
+      "p_threshold": null,
+      "default": false,
+      "id": "p020"
+    },
+    {
+      "model": "cspp",
+      "candidate_threshold": 0.005,
+      "confirmation_threshold": 0.5,
+      "p_threshold": null,
+      "default": false,
+      "id": "p021"
+    },
+    {
+      "model": "cspp",
+      "candidate_threshold": 0.005,
+      "confirmation_threshold": 0.6,
+      "p_threshold": null,
+      "default": false,
+      "id": "p022"
+    },
+    {
+      "model": "cspp",
+      "candidate_threshold": 0.005,
+      "confirmation_threshold": 0.7,
+      "p_threshold": null,
+      "default": false,
+      "id": "p023"
+    },
+    {
+      "model": "cspp",
+      "candidate_threshold": 0.005,
+      "confirmation_threshold": 0.8,
+      "p_threshold": null,
+      "default": false,
+      "id": "p024"
+    },
+    {
+      "model": "cspp",
+      "candidate_threshold": 0.005,
+      "confirmation_threshold": 0.85,
+      "p_threshold": null,
+      "default": false,
+      "id": "p025"
+    },
+    {
+      "model": "cspp",
+      "candidate_threshold": 0.005,
+      "confirmation_threshold": 0.9,
+      "p_threshold": null,
+      "default": false,
+      "id": "p026"
+    },
+    {
+      "model": "cspp",
+      "candidate_threshold": 0.005,
+      "confirmation_threshold": 0.95,
+      "p_threshold": null,
+      "default": false,
+      "id": "p027"
+    },
+    {
+      "model": "cspp",
+      "candidate_threshold": 0.005,
+      "confirmation_threshold": 0.975,
+      "p_threshold": null,
+      "default": false,
+      "id": "p028"
+    },
+    {
+      "model": "cspp",
+      "candidate_threshold": 0.005,
+      "confirmation_threshold": 0.99,
+      "p_threshold": null,
+      "default": false,
+      "id": "p029"
+    },
+    {
+      "model": "cspp",
+      "candidate_threshold": 0.01,
+      "confirmation_threshold": 0.01,
+      "p_threshold": null,
+      "default": false,
+      "id": "p030"
+    },
+    {
+      "model": "cspp",
+      "candidate_threshold": 0.01,
+      "confirmation_threshold": 0.05,
+      "p_threshold": null,
+      "default": false,
+      "id": "p031"
+    },
+    {
+      "model": "cspp",
+      "candidate_threshold": 0.01,
+      "confirmation_threshold": 0.1,
+      "p_threshold": null,
+      "default": false,
+      "id": "p032"
+    },
+    {
+      "model": "cspp",
+      "candidate_threshold": 0.01,
+      "confirmation_threshold": 0.2,
+      "p_threshold": null,
+      "default": false,
+      "id": "p033"
+    },
+    {
+      "model": "cspp",
+      "candidate_threshold": 0.01,
+      "confirmation_threshold": 0.3,
+      "p_threshold": null,
+      "default": false,
+      "id": "p034"
+    },
+    {
+      "model": "cspp",
+      "candidate_threshold": 0.01,
+      "confirmation_threshold": 0.4,
+      "p_threshold": null,
+      "default": false,
+      "id": "p035"
+    },
+    {
+      "model": "cspp",
+      "candidate_threshold": 0.01,
+      "confirmation_threshold": 0.5,
+      "p_threshold": null,
+      "default": false,
+      "id": "p036"
+    },
+    {
+      "model": "cspp",
+      "candidate_threshold": 0.01,
+      "confirmation_threshold": 0.6,
+      "p_threshold": null,
+      "default": false,
+      "id": "p037"
+    },
+    {
+      "model": "cspp",
+      "candidate_threshold": 0.01,
+      "confirmation_threshold": 0.7,
+      "p_threshold": null,
+      "default": false,
+      "id": "p038"
+    },
+    {
+      "model": "cspp",
+      "candidate_threshold": 0.01,
+      "confirmation_threshold": 0.8,
+      "p_threshold": null,
+      "default": false,
+      "id": "p039"
+    },
+    {
+      "model": "cspp",
+      "candidate_threshold": 0.01,
+      "confirmation_threshold": 0.85,
+      "p_threshold": null,
+      "default": false,
+      "id": "p040"
+    },
+    {
+      "model": "cspp",
+      "candidate_threshold": 0.01,
+      "confirmation_threshold": 0.9,
+      "p_threshold": null,
+      "default": false,
+      "id": "p041"
+    },
+    {
+      "model": "cspp",
+      "candidate_threshold": 0.01,
+      "confirmation_threshold": 0.95,
+      "p_threshold": null,
+      "default": false,
+      "id": "p042"
+    },
+    {
+      "model": "cspp",
+      "candidate_threshold": 0.01,
+      "confirmation_threshold": 0.975,
+      "p_threshold": null,
+      "default": false,
+      "id": "p043"
+    },
+    {
+      "model": "cspp",
+      "candidate_threshold": 0.01,
+      "confirmation_threshold": 0.99,
+      "p_threshold": null,
+      "default": false,
+      "id": "p044"
+    },
+    {
+      "model": "cspp",
+      "candidate_threshold": 0.02,
+      "confirmation_threshold": 0.01,
+      "p_threshold": null,
+      "default": false,
+      "id": "p045"
+    },
+    {
+      "model": "cspp",
+      "candidate_threshold": 0.02,
+      "confirmation_threshold": 0.05,
+      "p_threshold": null,
+      "default": false,
+      "id": "p046"
+    },
+    {
+      "model": "cspp",
+      "candidate_threshold": 0.02,
+      "confirmation_threshold": 0.1,
+      "p_threshold": null,
+      "default": false,
+      "id": "p047"
+    },
+    {
+      "model": "cspp",
+      "candidate_threshold": 0.02,
+      "confirmation_threshold": 0.2,
+      "p_threshold": null,
+      "default": false,
+      "id": "p048"
+    },
+    {
+      "model": "cspp",
+      "candidate_threshold": 0.02,
+      "confirmation_threshold": 0.3,
+      "p_threshold": null,
+      "default": false,
+      "id": "p049"
+    },
+    {
+      "model": "cspp",
+      "candidate_threshold": 0.02,
+      "confirmation_threshold": 0.4,
+      "p_threshold": null,
+      "default": false,
+      "id": "p050"
+    },
+    {
+      "model": "cspp",
+      "candidate_threshold": 0.02,
+      "confirmation_threshold": 0.5,
+      "p_threshold": null,
+      "default": false,
+      "id": "p051"
+    },
+    {
+      "model": "cspp",
+      "candidate_threshold": 0.02,
+      "confirmation_threshold": 0.6,
+      "p_threshold": null,
+      "default": false,
+      "id": "p052"
+    },
+    {
+      "model": "cspp",
+      "candidate_threshold": 0.02,
+      "confirmation_threshold": 0.7,
+      "p_threshold": null,
+      "default": false,
+      "id": "p053"
+    },
+    {
+      "model": "cspp",
+      "candidate_threshold": 0.02,
+      "confirmation_threshold": 0.8,
+      "p_threshold": null,
+      "default": false,
+      "id": "p054"
+    },
+    {
+      "model": "cspp",
+      "candidate_threshold": 0.02,
+      "confirmation_threshold": 0.85,
+      "p_threshold": null,
+      "default": false,
+      "id": "p055"
+    },
+    {
+      "model": "cspp",
+      "candidate_threshold": 0.02,
+      "confirmation_threshold": 0.9,
+      "p_threshold": null,
+      "default": false,
+      "id": "p056"
+    },
+    {
+      "model": "cspp",
+      "candidate_threshold": 0.02,
+      "confirmation_threshold": 0.95,
+      "p_threshold": null,
+      "default": false,
+      "id": "p057"
+    },
+    {
+      "model": "cspp",
+      "candidate_threshold": 0.02,
+      "confirmation_threshold": 0.975,
+      "p_threshold": null,
+      "default": false,
+      "id": "p058"
+    },
+    {
+      "model": "cspp",
+      "candidate_threshold": 0.02,
+      "confirmation_threshold": 0.99,
+      "p_threshold": null,
+      "default": false,
+      "id": "p059"
+    },
+    {
+      "model": "cspp",
+      "candidate_threshold": 0.03,
+      "confirmation_threshold": 0.01,
+      "p_threshold": null,
+      "default": false,
+      "id": "p060"
+    },
+    {
+      "model": "cspp",
+      "candidate_threshold": 0.03,
+      "confirmation_threshold": 0.05,
+      "p_threshold": null,
+      "default": false,
+      "id": "p061"
+    },
+    {
+      "model": "cspp",
+      "candidate_threshold": 0.03,
+      "confirmation_threshold": 0.1,
+      "p_threshold": null,
+      "default": false,
+      "id": "p062"
+    },
+    {
+      "model": "cspp",
+      "candidate_threshold": 0.03,
+      "confirmation_threshold": 0.2,
+      "p_threshold": null,
+      "default": false,
+      "id": "p063"
+    },
+    {
+      "model": "cspp",
+      "candidate_threshold": 0.03,
+      "confirmation_threshold": 0.3,
+      "p_threshold": null,
+      "default": false,
+      "id": "p064"
+    },
+    {
+      "model": "cspp",
+      "candidate_threshold": 0.03,
+      "confirmation_threshold": 0.4,
+      "p_threshold": null,
+      "default": false,
+      "id": "p065"
+    },
+    {
+      "model": "cspp",
+      "candidate_threshold": 0.03,
+      "confirmation_threshold": 0.5,
+      "p_threshold": null,
+      "default": false,
+      "id": "p066"
+    },
+    {
+      "model": "cspp",
+      "candidate_threshold": 0.03,
+      "confirmation_threshold": 0.6,
+      "p_threshold": null,
+      "default": false,
+      "id": "p067"
+    },
+    {
+      "model": "cspp",
+      "candidate_threshold": 0.03,
+      "confirmation_threshold": 0.7,
+      "p_threshold": null,
+      "default": false,
+      "id": "p068"
+    },
+    {
+      "model": "cspp",
+      "candidate_threshold": 0.03,
+      "confirmation_threshold": 0.8,
+      "p_threshold": null,
+      "default": false,
+      "id": "p069"
+    },
+    {
+      "model": "cspp",
+      "candidate_threshold": 0.03,
+      "confirmation_threshold": 0.85,
+      "p_threshold": null,
+      "default": false,
+      "id": "p070"
+    },
+    {
+      "model": "cspp",
+      "candidate_threshold": 0.03,
+      "confirmation_threshold": 0.9,
+      "p_threshold": null,
+      "default": false,
+      "id": "p071"
+    },
+    {
+      "model": "cspp",
+      "candidate_threshold": 0.03,
+      "confirmation_threshold": 0.95,
+      "p_threshold": null,
+      "default": false,
+      "id": "p072"
+    },
+    {
+      "model": "cspp",
+      "candidate_threshold": 0.03,
+      "confirmation_threshold": 0.975,
+      "p_threshold": null,
+      "default": false,
+      "id": "p073"
+    },
+    {
+      "model": "cspp",
+      "candidate_threshold": 0.03,
+      "confirmation_threshold": 0.99,
+      "p_threshold": null,
+      "default": false,
+      "id": "p074"
+    },
+    {
+      "model": "cspp",
+      "candidate_threshold": 0.05,
+      "confirmation_threshold": 0.01,
+      "p_threshold": null,
+      "default": false,
+      "id": "p075"
+    },
+    {
+      "model": "cspp",
+      "candidate_threshold": 0.05,
+      "confirmation_threshold": 0.05,
+      "p_threshold": null,
+      "default": false,
+      "id": "p076"
+    },
+    {
+      "model": "cspp",
+      "candidate_threshold": 0.05,
+      "confirmation_threshold": 0.1,
+      "p_threshold": null,
+      "default": false,
+      "id": "p077"
+    },
+    {
+      "model": "cspp",
+      "candidate_threshold": 0.05,
+      "confirmation_threshold": 0.2,
+      "p_threshold": null,
+      "default": false,
+      "id": "p078"
+    },
+    {
+      "model": "cspp",
+      "candidate_threshold": 0.05,
+      "confirmation_threshold": 0.3,
+      "p_threshold": null,
+      "default": false,
+      "id": "p079"
+    },
+    {
+      "model": "cspp",
+      "candidate_threshold": 0.05,
+      "confirmation_threshold": 0.4,
+      "p_threshold": null,
+      "default": false,
+      "id": "p080"
+    },
+    {
+      "model": "cspp",
+      "candidate_threshold": 0.05,
+      "confirmation_threshold": 0.5,
+      "p_threshold": null,
+      "default": false,
+      "id": "p081"
+    },
+    {
+      "model": "cspp",
+      "candidate_threshold": 0.05,
+      "confirmation_threshold": 0.6,
+      "p_threshold": null,
+      "default": false,
+      "id": "p082"
+    },
+    {
+      "model": "cspp",
+      "candidate_threshold": 0.05,
+      "confirmation_threshold": 0.7,
+      "p_threshold": null,
+      "default": false,
+      "id": "p083"
+    },
+    {
+      "model": "cspp",
+      "candidate_threshold": 0.05,
+      "confirmation_threshold": 0.8,
+      "p_threshold": null,
+      "default": false,
+      "id": "p084"
+    },
+    {
+      "model": "cspp",
+      "candidate_threshold": 0.05,
+      "confirmation_threshold": 0.85,
+      "p_threshold": null,
+      "default": false,
+      "id": "p085"
+    },
+    {
+      "model": "cspp",
+      "candidate_threshold": 0.05,
+      "confirmation_threshold": 0.9,
+      "p_threshold": null,
+      "default": false,
+      "id": "p086"
+    },
+    {
+      "model": "cspp",
+      "candidate_threshold": 0.05,
+      "confirmation_threshold": 0.95,
+      "p_threshold": null,
+      "default": false,
+      "id": "p087"
+    },
+    {
+      "model": "cspp",
+      "candidate_threshold": 0.05,
+      "confirmation_threshold": 0.975,
+      "p_threshold": null,
+      "default": false,
+      "id": "p088"
+    },
+    {
+      "model": "cspp",
+      "candidate_threshold": 0.05,
+      "confirmation_threshold": 0.99,
+      "p_threshold": null,
+      "default": false,
+      "id": "p089"
+    },
+    {
+      "model": "cspp",
+      "candidate_threshold": 0.075,
+      "confirmation_threshold": 0.01,
+      "p_threshold": null,
+      "default": false,
+      "id": "p090"
+    },
+    {
+      "model": "cspp",
+      "candidate_threshold": 0.075,
+      "confirmation_threshold": 0.05,
+      "p_threshold": null,
+      "default": false,
+      "id": "p091"
+    },
+    {
+      "model": "cspp",
+      "candidate_threshold": 0.075,
+      "confirmation_threshold": 0.1,
+      "p_threshold": null,
+      "default": false,
+      "id": "p092"
+    },
+    {
+      "model": "cspp",
+      "candidate_threshold": 0.075,
+      "confirmation_threshold": 0.2,
+      "p_threshold": null,
+      "default": false,
+      "id": "p093"
+    },
+    {
+      "model": "cspp",
+      "candidate_threshold": 0.075,
+      "confirmation_threshold": 0.3,
+      "p_threshold": null,
+      "default": false,
+      "id": "p094"
+    },
+    {
+      "model": "cspp",
+      "candidate_threshold": 0.075,
+      "confirmation_threshold": 0.4,
+      "p_threshold": null,
+      "default": false,
+      "id": "p095"
+    },
+    {
+      "model": "cspp",
+      "candidate_threshold": 0.075,
+      "confirmation_threshold": 0.5,
+      "p_threshold": null,
+      "default": false,
+      "id": "p096"
+    },
+    {
+      "model": "cspp",
+      "candidate_threshold": 0.075,
+      "confirmation_threshold": 0.6,
+      "p_threshold": null,
+      "default": false,
+      "id": "p097"
+    },
+    {
+      "model": "cspp",
+      "candidate_threshold": 0.075,
+      "confirmation_threshold": 0.7,
+      "p_threshold": null,
+      "default": false,
+      "id": "p098"
+    },
+    {
+      "model": "cspp",
+      "candidate_threshold": 0.075,
+      "confirmation_threshold": 0.8,
+      "p_threshold": null,
+      "default": false,
+      "id": "p099"
+    },
+    {
+      "model": "cspp",
+      "candidate_threshold": 0.075,
+      "confirmation_threshold": 0.85,
+      "p_threshold": null,
+      "default": false,
+      "id": "p100"
+    },
+    {
+      "model": "cspp",
+      "candidate_threshold": 0.075,
+      "confirmation_threshold": 0.9,
+      "p_threshold": null,
+      "default": false,
+      "id": "p101"
+    },
+    {
+      "model": "cspp",
+      "candidate_threshold": 0.075,
+      "confirmation_threshold": 0.95,
+      "p_threshold": null,
+      "default": false,
+      "id": "p102"
+    },
+    {
+      "model": "cspp",
+      "candidate_threshold": 0.075,
+      "confirmation_threshold": 0.975,
+      "p_threshold": null,
+      "default": false,
+      "id": "p103"
+    },
+    {
+      "model": "cspp",
+      "candidate_threshold": 0.075,
+      "confirmation_threshold": 0.99,
+      "p_threshold": null,
+      "default": false,
+      "id": "p104"
+    },
+    {
+      "model": "cspp",
+      "candidate_threshold": 0.1,
+      "confirmation_threshold": 0.01,
+      "p_threshold": null,
+      "default": false,
+      "id": "p105"
+    },
+    {
+      "model": "cspp",
+      "candidate_threshold": 0.1,
+      "confirmation_threshold": 0.05,
+      "p_threshold": null,
+      "default": false,
+      "id": "p106"
+    },
+    {
+      "model": "cspp",
+      "candidate_threshold": 0.1,
+      "confirmation_threshold": 0.1,
+      "p_threshold": null,
+      "default": false,
+      "id": "p107"
+    },
+    {
+      "model": "cspp",
+      "candidate_threshold": 0.1,
+      "confirmation_threshold": 0.2,
+      "p_threshold": null,
+      "default": false,
+      "id": "p108"
+    },
+    {
+      "model": "cspp",
+      "candidate_threshold": 0.1,
+      "confirmation_threshold": 0.3,
+      "p_threshold": null,
+      "default": false,
+      "id": "p109"
+    },
+    {
+      "model": "cspp",
+      "candidate_threshold": 0.1,
+      "confirmation_threshold": 0.4,
+      "p_threshold": null,
+      "default": false,
+      "id": "p110"
+    },
+    {
+      "model": "cspp",
+      "candidate_threshold": 0.1,
+      "confirmation_threshold": 0.5,
+      "p_threshold": null,
+      "default": false,
+      "id": "p111"
+    },
+    {
+      "model": "cspp",
+      "candidate_threshold": 0.1,
+      "confirmation_threshold": 0.6,
+      "p_threshold": null,
+      "default": false,
+      "id": "p112"
+    },
+    {
+      "model": "cspp",
+      "candidate_threshold": 0.1,
+      "confirmation_threshold": 0.7,
+      "p_threshold": null,
+      "default": false,
+      "id": "p113"
+    },
+    {
+      "model": "cspp",
+      "candidate_threshold": 0.1,
+      "confirmation_threshold": 0.8,
+      "p_threshold": null,
+      "default": false,
+      "id": "p114"
+    },
+    {
+      "model": "cspp",
+      "candidate_threshold": 0.1,
+      "confirmation_threshold": 0.85,
+      "p_threshold": null,
+      "default": false,
+      "id": "p115"
+    },
+    {
+      "model": "cspp",
+      "candidate_threshold": 0.1,
+      "confirmation_threshold": 0.9,
+      "p_threshold": null,
+      "default": false,
+      "id": "p116"
+    },
+    {
+      "model": "cspp",
+      "candidate_threshold": 0.1,
+      "confirmation_threshold": 0.95,
+      "p_threshold": null,
+      "default": false,
+      "id": "p117"
+    },
+    {
+      "model": "cspp",
+      "candidate_threshold": 0.1,
+      "confirmation_threshold": 0.975,
+      "p_threshold": null,
+      "default": true,
+      "id": "p118"
+    },
+    {
+      "model": "cspp",
+      "candidate_threshold": 0.1,
+      "confirmation_threshold": 0.99,
+      "p_threshold": null,
+      "default": false,
+      "id": "p119"
+    },
+    {
+      "model": "cspp",
+      "candidate_threshold": 0.15,
+      "confirmation_threshold": 0.01,
+      "p_threshold": null,
+      "default": false,
+      "id": "p120"
+    },
+    {
+      "model": "cspp",
+      "candidate_threshold": 0.15,
+      "confirmation_threshold": 0.05,
+      "p_threshold": null,
+      "default": false,
+      "id": "p121"
+    },
+    {
+      "model": "cspp",
+      "candidate_threshold": 0.15,
+      "confirmation_threshold": 0.1,
+      "p_threshold": null,
+      "default": false,
+      "id": "p122"
+    },
+    {
+      "model": "cspp",
+      "candidate_threshold": 0.15,
+      "confirmation_threshold": 0.2,
+      "p_threshold": null,
+      "default": false,
+      "id": "p123"
+    },
+    {
+      "model": "cspp",
+      "candidate_threshold": 0.15,
+      "confirmation_threshold": 0.3,
+      "p_threshold": null,
+      "default": false,
+      "id": "p124"
+    },
+    {
+      "model": "cspp",
+      "candidate_threshold": 0.15,
+      "confirmation_threshold": 0.4,
+      "p_threshold": null,
+      "default": false,
+      "id": "p125"
+    },
+    {
+      "model": "cspp",
+      "candidate_threshold": 0.15,
+      "confirmation_threshold": 0.5,
+      "p_threshold": null,
+      "default": false,
+      "id": "p126"
+    },
+    {
+      "model": "cspp",
+      "candidate_threshold": 0.15,
+      "confirmation_threshold": 0.6,
+      "p_threshold": null,
+      "default": false,
+      "id": "p127"
+    },
+    {
+      "model": "cspp",
+      "candidate_threshold": 0.15,
+      "confirmation_threshold": 0.7,
+      "p_threshold": null,
+      "default": false,
+      "id": "p128"
+    },
+    {
+      "model": "cspp",
+      "candidate_threshold": 0.15,
+      "confirmation_threshold": 0.8,
+      "p_threshold": null,
+      "default": false,
+      "id": "p129"
+    },
+    {
+      "model": "cspp",
+      "candidate_threshold": 0.15,
+      "confirmation_threshold": 0.85,
+      "p_threshold": null,
+      "default": false,
+      "id": "p130"
+    },
+    {
+      "model": "cspp",
+      "candidate_threshold": 0.15,
+      "confirmation_threshold": 0.9,
+      "p_threshold": null,
+      "default": false,
+      "id": "p131"
+    },
+    {
+      "model": "cspp",
+      "candidate_threshold": 0.15,
+      "confirmation_threshold": 0.95,
+      "p_threshold": null,
+      "default": false,
+      "id": "p132"
+    },
+    {
+      "model": "cspp",
+      "candidate_threshold": 0.15,
+      "confirmation_threshold": 0.975,
+      "p_threshold": null,
+      "default": false,
+      "id": "p133"
+    },
+    {
+      "model": "cspp",
+      "candidate_threshold": 0.15,
+      "confirmation_threshold": 0.99,
+      "p_threshold": null,
+      "default": false,
+      "id": "p134"
+    },
+    {
+      "model": "cspp",
+      "candidate_threshold": 0.2,
+      "confirmation_threshold": 0.01,
+      "p_threshold": null,
+      "default": false,
+      "id": "p135"
+    },
+    {
+      "model": "cspp",
+      "candidate_threshold": 0.2,
+      "confirmation_threshold": 0.05,
+      "p_threshold": null,
+      "default": false,
+      "id": "p136"
+    },
+    {
+      "model": "cspp",
+      "candidate_threshold": 0.2,
+      "confirmation_threshold": 0.1,
+      "p_threshold": null,
+      "default": false,
+      "id": "p137"
+    },
+    {
+      "model": "cspp",
+      "candidate_threshold": 0.2,
+      "confirmation_threshold": 0.2,
+      "p_threshold": null,
+      "default": false,
+      "id": "p138"
+    },
+    {
+      "model": "cspp",
+      "candidate_threshold": 0.2,
+      "confirmation_threshold": 0.3,
+      "p_threshold": null,
+      "default": false,
+      "id": "p139"
+    },
+    {
+      "model": "cspp",
+      "candidate_threshold": 0.2,
+      "confirmation_threshold": 0.4,
+      "p_threshold": null,
+      "default": false,
+      "id": "p140"
+    },
+    {
+      "model": "cspp",
+      "candidate_threshold": 0.2,
+      "confirmation_threshold": 0.5,
+      "p_threshold": null,
+      "default": false,
+      "id": "p141"
+    },
+    {
+      "model": "cspp",
+      "candidate_threshold": 0.2,
+      "confirmation_threshold": 0.6,
+      "p_threshold": null,
+      "default": false,
+      "id": "p142"
+    },
+    {
+      "model": "cspp",
+      "candidate_threshold": 0.2,
+      "confirmation_threshold": 0.7,
+      "p_threshold": null,
+      "default": false,
+      "id": "p143"
+    },
+    {
+      "model": "cspp",
+      "candidate_threshold": 0.2,
+      "confirmation_threshold": 0.8,
+      "p_threshold": null,
+      "default": false,
+      "id": "p144"
+    },
+    {
+      "model": "cspp",
+      "candidate_threshold": 0.2,
+      "confirmation_threshold": 0.85,
+      "p_threshold": null,
+      "default": false,
+      "id": "p145"
+    },
+    {
+      "model": "cspp",
+      "candidate_threshold": 0.2,
+      "confirmation_threshold": 0.9,
+      "p_threshold": null,
+      "default": false,
+      "id": "p146"
+    },
+    {
+      "model": "cspp",
+      "candidate_threshold": 0.2,
+      "confirmation_threshold": 0.95,
+      "p_threshold": null,
+      "default": false,
+      "id": "p147"
+    },
+    {
+      "model": "cspp",
+      "candidate_threshold": 0.2,
+      "confirmation_threshold": 0.975,
+      "p_threshold": null,
+      "default": false,
+      "id": "p148"
+    },
+    {
+      "model": "cspp",
+      "candidate_threshold": 0.2,
+      "confirmation_threshold": 0.99,
+      "p_threshold": null,
+      "default": false,
+      "id": "p149"
+    },
+    {
+      "model": "cspp",
+      "candidate_threshold": 0.3,
+      "confirmation_threshold": 0.01,
+      "p_threshold": null,
+      "default": false,
+      "id": "p150"
+    },
+    {
+      "model": "cspp",
+      "candidate_threshold": 0.3,
+      "confirmation_threshold": 0.05,
+      "p_threshold": null,
+      "default": false,
+      "id": "p151"
+    },
+    {
+      "model": "cspp",
+      "candidate_threshold": 0.3,
+      "confirmation_threshold": 0.1,
+      "p_threshold": null,
+      "default": false,
+      "id": "p152"
+    },
+    {
+      "model": "cspp",
+      "candidate_threshold": 0.3,
+      "confirmation_threshold": 0.2,
+      "p_threshold": null,
+      "default": false,
+      "id": "p153"
+    },
+    {
+      "model": "cspp",
+      "candidate_threshold": 0.3,
+      "confirmation_threshold": 0.3,
+      "p_threshold": null,
+      "default": false,
+      "id": "p154"
+    },
+    {
+      "model": "cspp",
+      "candidate_threshold": 0.3,
+      "confirmation_threshold": 0.4,
+      "p_threshold": null,
+      "default": false,
+      "id": "p155"
+    },
+    {
+      "model": "cspp",
+      "candidate_threshold": 0.3,
+      "confirmation_threshold": 0.5,
+      "p_threshold": null,
+      "default": false,
+      "id": "p156"
+    },
+    {
+      "model": "cspp",
+      "candidate_threshold": 0.3,
+      "confirmation_threshold": 0.6,
+      "p_threshold": null,
+      "default": false,
+      "id": "p157"
+    },
+    {
+      "model": "cspp",
+      "candidate_threshold": 0.3,
+      "confirmation_threshold": 0.7,
+      "p_threshold": null,
+      "default": false,
+      "id": "p158"
+    },
+    {
+      "model": "cspp",
+      "candidate_threshold": 0.3,
+      "confirmation_threshold": 0.8,
+      "p_threshold": null,
+      "default": false,
+      "id": "p159"
+    },
+    {
+      "model": "cspp",
+      "candidate_threshold": 0.3,
+      "confirmation_threshold": 0.85,
+      "p_threshold": null,
+      "default": false,
+      "id": "p160"
+    },
+    {
+      "model": "cspp",
+      "candidate_threshold": 0.3,
+      "confirmation_threshold": 0.9,
+      "p_threshold": null,
+      "default": false,
+      "id": "p161"
+    },
+    {
+      "model": "cspp",
+      "candidate_threshold": 0.3,
+      "confirmation_threshold": 0.95,
+      "p_threshold": null,
+      "default": false,
+      "id": "p162"
+    },
+    {
+      "model": "cspp",
+      "candidate_threshold": 0.3,
+      "confirmation_threshold": 0.975,
+      "p_threshold": null,
+      "default": false,
+      "id": "p163"
+    },
+    {
+      "model": "cspp",
+      "candidate_threshold": 0.3,
+      "confirmation_threshold": 0.99,
+      "p_threshold": null,
+      "default": false,
+      "id": "p164"
+    },
+    {
+      "model": "cspp",
+      "candidate_threshold": 0.5,
+      "confirmation_threshold": 0.01,
+      "p_threshold": null,
+      "default": false,
+      "id": "p165"
+    },
+    {
+      "model": "cspp",
+      "candidate_threshold": 0.5,
+      "confirmation_threshold": 0.05,
+      "p_threshold": null,
+      "default": false,
+      "id": "p166"
+    },
+    {
+      "model": "cspp",
+      "candidate_threshold": 0.5,
+      "confirmation_threshold": 0.1,
+      "p_threshold": null,
+      "default": false,
+      "id": "p167"
+    },
+    {
+      "model": "cspp",
+      "candidate_threshold": 0.5,
+      "confirmation_threshold": 0.2,
+      "p_threshold": null,
+      "default": false,
+      "id": "p168"
+    },
+    {
+      "model": "cspp",
+      "candidate_threshold": 0.5,
+      "confirmation_threshold": 0.3,
+      "p_threshold": null,
+      "default": false,
+      "id": "p169"
+    },
+    {
+      "model": "cspp",
+      "candidate_threshold": 0.5,
+      "confirmation_threshold": 0.4,
+      "p_threshold": null,
+      "default": false,
+      "id": "p170"
+    },
+    {
+      "model": "cspp",
+      "candidate_threshold": 0.5,
+      "confirmation_threshold": 0.5,
+      "p_threshold": null,
+      "default": false,
+      "id": "p171"
+    },
+    {
+      "model": "cspp",
+      "candidate_threshold": 0.5,
+      "confirmation_threshold": 0.6,
+      "p_threshold": null,
+      "default": false,
+      "id": "p172"
+    },
+    {
+      "model": "cspp",
+      "candidate_threshold": 0.5,
+      "confirmation_threshold": 0.7,
+      "p_threshold": null,
+      "default": false,
+      "id": "p173"
+    },
+    {
+      "model": "cspp",
+      "candidate_threshold": 0.5,
+      "confirmation_threshold": 0.8,
+      "p_threshold": null,
+      "default": false,
+      "id": "p174"
+    },
+    {
+      "model": "cspp",
+      "candidate_threshold": 0.5,
+      "confirmation_threshold": 0.85,
+      "p_threshold": null,
+      "default": false,
+      "id": "p175"
+    },
+    {
+      "model": "cspp",
+      "candidate_threshold": 0.5,
+      "confirmation_threshold": 0.9,
+      "p_threshold": null,
+      "default": false,
+      "id": "p176"
+    },
+    {
+      "model": "cspp",
+      "candidate_threshold": 0.5,
+      "confirmation_threshold": 0.95,
+      "p_threshold": null,
+      "default": false,
+      "id": "p177"
+    },
+    {
+      "model": "cspp",
+      "candidate_threshold": 0.5,
+      "confirmation_threshold": 0.975,
+      "p_threshold": null,
+      "default": false,
+      "id": "p178"
+    },
+    {
+      "model": "cspp",
+      "candidate_threshold": 0.5,
+      "confirmation_threshold": 0.99,
+      "p_threshold": null,
+      "default": false,
+      "id": "p179"
+    },
+    {
+      "model": "phasenet_instance",
+      "candidate_threshold": null,
+      "confirmation_threshold": null,
+      "p_threshold": 0.0001,
+      "default": false,
+      "id": "p180"
+    },
+    {
+      "model": "phasenet_instance",
+      "candidate_threshold": null,
+      "confirmation_threshold": null,
+      "p_threshold": 0.0003,
+      "default": false,
+      "id": "p181"
+    },
+    {
+      "model": "phasenet_instance",
+      "candidate_threshold": null,
+      "confirmation_threshold": null,
+      "p_threshold": 0.001,
+      "default": false,
+      "id": "p182"
+    },
+    {
+      "model": "phasenet_instance",
+      "candidate_threshold": null,
+      "confirmation_threshold": null,
+      "p_threshold": 0.003,
+      "default": false,
+      "id": "p183"
+    },
+    {
+      "model": "phasenet_instance",
+      "candidate_threshold": null,
+      "confirmation_threshold": null,
+      "p_threshold": 0.005,
+      "default": false,
+      "id": "p184"
+    },
+    {
+      "model": "phasenet_instance",
+      "candidate_threshold": null,
+      "confirmation_threshold": null,
+      "p_threshold": 0.01,
+      "default": false,
+      "id": "p185"
+    },
+    {
+      "model": "phasenet_instance",
+      "candidate_threshold": null,
+      "confirmation_threshold": null,
+      "p_threshold": 0.02,
+      "default": false,
+      "id": "p186"
+    },
+    {
+      "model": "phasenet_instance",
+      "candidate_threshold": null,
+      "confirmation_threshold": null,
+      "p_threshold": 0.03,
+      "default": false,
+      "id": "p187"
+    },
+    {
+      "model": "phasenet_instance",
+      "candidate_threshold": null,
+      "confirmation_threshold": null,
+      "p_threshold": 0.05,
+      "default": false,
+      "id": "p188"
+    },
+    {
+      "model": "phasenet_instance",
+      "candidate_threshold": null,
+      "confirmation_threshold": null,
+      "p_threshold": 0.075,
+      "default": false,
+      "id": "p189"
+    },
+    {
+      "model": "phasenet_instance",
+      "candidate_threshold": null,
+      "confirmation_threshold": null,
+      "p_threshold": 0.08639824281948567,
+      "default": true,
+      "id": "p190"
+    },
+    {
+      "model": "phasenet_instance",
+      "candidate_threshold": null,
+      "confirmation_threshold": null,
+      "p_threshold": 0.1,
+      "default": false,
+      "id": "p191"
+    },
+    {
+      "model": "phasenet_instance",
+      "candidate_threshold": null,
+      "confirmation_threshold": null,
+      "p_threshold": 0.15,
+      "default": false,
+      "id": "p192"
+    },
+    {
+      "model": "phasenet_instance",
+      "candidate_threshold": null,
+      "confirmation_threshold": null,
+      "p_threshold": 0.2,
+      "default": false,
+      "id": "p193"
+    },
+    {
+      "model": "phasenet_instance",
+      "candidate_threshold": null,
+      "confirmation_threshold": null,
+      "p_threshold": 0.3,
+      "default": false,
+      "id": "p194"
+    },
+    {
+      "model": "phasenet_instance",
+      "candidate_threshold": null,
+      "confirmation_threshold": null,
+      "p_threshold": 0.4,
+      "default": false,
+      "id": "p195"
+    },
+    {
+      "model": "phasenet_instance",
+      "candidate_threshold": null,
+      "confirmation_threshold": null,
+      "p_threshold": 0.5,
+      "default": false,
+      "id": "p196"
+    },
+    {
+      "model": "phasenet_instance",
+      "candidate_threshold": null,
+      "confirmation_threshold": null,
+      "p_threshold": 0.6,
+      "default": false,
+      "id": "p197"
+    },
+    {
+      "model": "phasenet_instance",
+      "candidate_threshold": null,
+      "confirmation_threshold": null,
+      "p_threshold": 0.7,
+      "default": false,
+      "id": "p198"
+    },
+    {
+      "model": "phasenet_instance",
+      "candidate_threshold": null,
+      "confirmation_threshold": null,
+      "p_threshold": 0.8,
+      "default": false,
+      "id": "p199"
+    },
+    {
+      "model": "phasenet_instance",
+      "candidate_threshold": null,
+      "confirmation_threshold": null,
+      "p_threshold": 0.9,
+      "default": false,
+      "id": "p200"
+    },
+    {
+      "model": "phasenet_instance",
+      "candidate_threshold": null,
+      "confirmation_threshold": null,
+      "p_threshold": 0.95,
+      "default": false,
+      "id": "p201"
+    },
+    {
+      "model": "phasenet_instance",
+      "candidate_threshold": null,
+      "confirmation_threshold": null,
+      "p_threshold": 0.975,
+      "default": false,
+      "id": "p202"
+    },
+    {
+      "model": "phasenet_instance",
+      "candidate_threshold": null,
+      "confirmation_threshold": null,
+      "p_threshold": 0.99,
+      "default": false,
+      "id": "p203"
+    },
+    {
+      "model": "eqtransformer_original",
+      "candidate_threshold": null,
+      "confirmation_threshold": null,
+      "p_threshold": 0.0001,
+      "default": false,
+      "id": "p204"
+    },
+    {
+      "model": "eqtransformer_original",
+      "candidate_threshold": null,
+      "confirmation_threshold": null,
+      "p_threshold": 0.0003,
+      "default": false,
+      "id": "p205"
+    },
+    {
+      "model": "eqtransformer_original",
+      "candidate_threshold": null,
+      "confirmation_threshold": null,
+      "p_threshold": 0.001,
+      "default": false,
+      "id": "p206"
+    },
+    {
+      "model": "eqtransformer_original",
+      "candidate_threshold": null,
+      "confirmation_threshold": null,
+      "p_threshold": 0.003,
+      "default": false,
+      "id": "p207"
+    },
+    {
+      "model": "eqtransformer_original",
+      "candidate_threshold": null,
+      "confirmation_threshold": null,
+      "p_threshold": 0.005,
+      "default": false,
+      "id": "p208"
+    },
+    {
+      "model": "eqtransformer_original",
+      "candidate_threshold": null,
+      "confirmation_threshold": null,
+      "p_threshold": 0.01,
+      "default": false,
+      "id": "p209"
+    },
+    {
+      "model": "eqtransformer_original",
+      "candidate_threshold": null,
+      "confirmation_threshold": null,
+      "p_threshold": 0.02,
+      "default": false,
+      "id": "p210"
+    },
+    {
+      "model": "eqtransformer_original",
+      "candidate_threshold": null,
+      "confirmation_threshold": null,
+      "p_threshold": 0.03,
+      "default": false,
+      "id": "p211"
+    },
+    {
+      "model": "eqtransformer_original",
+      "candidate_threshold": null,
+      "confirmation_threshold": null,
+      "p_threshold": 0.05,
+      "default": false,
+      "id": "p212"
+    },
+    {
+      "model": "eqtransformer_original",
+      "candidate_threshold": null,
+      "confirmation_threshold": null,
+      "p_threshold": 0.075,
+      "default": false,
+      "id": "p213"
+    },
+    {
+      "model": "eqtransformer_original",
+      "candidate_threshold": null,
+      "confirmation_threshold": null,
+      "p_threshold": 0.1,
+      "default": true,
+      "id": "p214"
+    },
+    {
+      "model": "eqtransformer_original",
+      "candidate_threshold": null,
+      "confirmation_threshold": null,
+      "p_threshold": 0.15,
+      "default": false,
+      "id": "p215"
+    },
+    {
+      "model": "eqtransformer_original",
+      "candidate_threshold": null,
+      "confirmation_threshold": null,
+      "p_threshold": 0.2,
+      "default": false,
+      "id": "p216"
+    },
+    {
+      "model": "eqtransformer_original",
+      "candidate_threshold": null,
+      "confirmation_threshold": null,
+      "p_threshold": 0.3,
+      "default": false,
+      "id": "p217"
+    },
+    {
+      "model": "eqtransformer_original",
+      "candidate_threshold": null,
+      "confirmation_threshold": null,
+      "p_threshold": 0.4,
+      "default": false,
+      "id": "p218"
+    },
+    {
+      "model": "eqtransformer_original",
+      "candidate_threshold": null,
+      "confirmation_threshold": null,
+      "p_threshold": 0.5,
+      "default": false,
+      "id": "p219"
+    },
+    {
+      "model": "eqtransformer_original",
+      "candidate_threshold": null,
+      "confirmation_threshold": null,
+      "p_threshold": 0.6,
+      "default": false,
+      "id": "p220"
+    },
+    {
+      "model": "eqtransformer_original",
+      "candidate_threshold": null,
+      "confirmation_threshold": null,
+      "p_threshold": 0.7,
+      "default": false,
+      "id": "p221"
+    },
+    {
+      "model": "eqtransformer_original",
+      "candidate_threshold": null,
+      "confirmation_threshold": null,
+      "p_threshold": 0.8,
+      "default": false,
+      "id": "p222"
+    },
+    {
+      "model": "eqtransformer_original",
+      "candidate_threshold": null,
+      "confirmation_threshold": null,
+      "p_threshold": 0.9,
+      "default": false,
+      "id": "p223"
+    },
+    {
+      "model": "eqtransformer_original",
+      "candidate_threshold": null,
+      "confirmation_threshold": null,
+      "p_threshold": 0.95,
+      "default": false,
+      "id": "p224"
+    },
+    {
+      "model": "eqtransformer_original",
+      "candidate_threshold": null,
+      "confirmation_threshold": null,
+      "p_threshold": 0.975,
+      "default": false,
+      "id": "p225"
+    },
+    {
+      "model": "eqtransformer_original",
+      "candidate_threshold": null,
+      "confirmation_threshold": null,
+      "p_threshold": 0.99,
+      "default": false,
+      "id": "p226"
+    }
+  ],
+  "matching": "One TP per event record within +/-1.5 s; all additional candidate episodes count as FP",
+  "public_endpoint": "P-only; released half-threshold hysteresis, episode closure, blinding, native stride and first publication semantics",
+  "publication_clock": "0.5 s packet clock; window-based model predictions are available only after their complete native window arrives; wall-clock compute time excluded",
+  "normalization": "CSPP retains packet EWMA; public models retain their released native-window preprocessing; EQTransformer 1-45 Hz zero-phase filter is restricted to the fully received 60 s window",
+  "scan_role": "Exploratory evaluation-cohort scan, not an untouched test or a deployment-threshold update",
+  "threshold_selection": "Highest F1, then recall, then precision, then higher thresholds; report all-record selection separately from dev-selected points on the original 600 test records",
+  "limitations": [
+    "No noise-only windows: candidate precision is conditional on event windows",
+    "No matched retraining; released checkpoints have different training sources",
+    "STEAD is a training source for original EQTransformer; full-cohort results include original train/dev splits",
+    "Original test split is record-level; event/station overlap has not been audited",
+    "P is fixed at the 10 s packet boundary; this is not arbitrary-onset continuous replay",
+    "Window fill delay depends on cold start and native-window policy, not only neural inference speed",
+    "Source magnitude and P labels are used only to define and score the cohort"
+  ],
+  "inputs": {
+    "cohort": {
+      "path": "workspace/outputs/stead_cspp_m3_p_atleast10_20260906/results/selected_metadata.csv",
+      "bytes": 2027073,
+      "sha256": "90ce52d34514c4876f0df055ac581b3a43bf6a0138f1c309ec0e1d587feb4fce"
+    },
+    "previous_records": {
+      "path": "workspace/outputs/stead_cspp_m3_p_atleast10_20260906/results/records.csv",
+      "bytes": 910002,
+      "sha256": "6ec58f027f0834c6b96d3a6e05c949a337e7ce19eea1c13cf978f3c560821cf4"
+    },
+    "previous_result": {
+      "path": "workspace/outputs/stead_cspp_m3_p_atleast10_20260906/results/result.json",
+      "bytes": 15898,
+      "sha256": "e7a29364daef4869ca6a2b47e4f40240bf9aeb677959110ec9a4afd23ac74c81"
+    },
+    "previous_protocol": {
+      "path": "workspace/outputs/stead_cspp_m3_p_atleast10_20260906/results/protocol.json",
+      "bytes": 4291,
+      "sha256": "e2f236f4564e675fe3c8da1e698b5eca2035899f50ad9df69ad1b32ec5dad89f"
+    },
+    "public_protocol": {
+      "path": "workspace/experiments/cspp_v27_ncedc_causal_public_baseline_protocol_20260817.json",
+      "bytes": 11648,
+      "sha256": "0d45b97325dff53210fb72a5b0d80f8787615c3bfc49730bea98aa7007329bf5"
+    },
+    "runner": {
+      "path": "workspace/outputs/stead_compare_thresholds_20260906/run_comparison.py",
+      "bytes": 21854,
+      "sha256": "922a09f38ad1b5a6b0e1e6f41c4187d322ee3b98e004368ee28602f959d5d44e"
+    },
+    "previous_runner": {
+      "path": "workspace/outputs/stead_cspp_m3_p_atleast10_20260906/run_diagnostic.py",
+      "bytes": 16303,
+      "sha256": "9152fb093a5113c86b67e4502332079b8378782163bc7e206a9908a5c9077094"
+    },
+    "cspp_checkpoint": {
+      "path": "work_artifacts/checkpoints/blind_v27c_C0_none_seed20261101/final.pt",
+      "bytes": 1369948,
+      "sha256": "d27ce10351475dfa264b45406b601dbcfc64e15c92be7260fe54c1738d35586d"
+    },
+    "src/model_cspp_v27.py": {
+      "path": "workspace/src/model_cspp_v27.py",
+      "bytes": 40530,
+      "sha256": "c2ca73f059fbdd7fcf59709ee8ed8fe47c8ba6b3de03a3f714c8effa2a1261d4"
+    },
+    "src/data_streaming.py": {
+      "path": "workspace/src/data_streaming.py",
+      "bytes": 11032,
+      "sha256": "8b81c1b194740cea28a0f99698c3698d12a1acb92661e4a5c0dff847facad66b"
+    },
+    "src/stream_quality_v5.py": {
+      "path": "workspace/src/stream_quality_v5.py",
+      "bytes": 3976,
+      "sha256": "62e48deca36fd553f59d2291738f3fe1a93dddb70bef84bcf250534c54cae414"
+    },
+    "src/cspp_v27_reused_core_score_cache.py": {
+      "path": "workspace/src/cspp_v27_reused_core_score_cache.py",
+      "bytes": 12926,
+      "sha256": "a0301fccc341f7cd95bb01b6478904cc86bb731421867da47a7017f72a6aa0d2"
+    },
+    "src/v20c_public_window_baselines.py": {
+      "path": "workspace/src/v20c_public_window_baselines.py",
+      "bytes": 18667,
+      "sha256": "81cf3ae98c5313346eeaa2636e75b132e01ab0e23d0bc6713d92b8046b7db378"
+    },
+    "scripts/evaluation/analyze_v27_ncedc_event_scores.py": {
+      "path": "workspace/scripts/evaluation/analyze_v27_ncedc_event_scores.py",
+      "bytes": 22040,
+      "sha256": "32fcaf0a98b15898ec02a771a33fdd9abfd8d25b7fa35cddb2fc52daf5f57f45"
+    },
+    "scripts/evaluation/eval_v27c_fixed_public_baselines.py": {
+      "path": "workspace/scripts/evaluation/eval_v27c_fixed_public_baselines.py",
+      "bytes": 17088,
+      "sha256": "e5e41e9f6ef1820c4805c2ab4a143dd24040e0e2e9e8264515c512ee59db101f"
+    },
+    "eqtransformer_original_metadata": {
+      "path": "external/original.json.v3",
+      "bytes": 730,
+      "sha256": "e499eeee66e3e86e19caee0f640d6d3ab26b4a99142b9d73d75b078f18df389b"
+    },
+    "eqtransformer_original_weights": {
+      "path": "external/original.pt.v3",
+      "bytes": 1597711,
+      "sha256": "c363c59dfb4562ba3b1356fb03dc9c776bbcfe3384b5db22e5ee3689de0a4df9"
+    },
+    "phasenet_instance_metadata": {
+      "path": "external/instance.json.v2",
+      "bytes": 787,
+      "sha256": "d0f33eb054818b6eef1dcf090947f7239b68f290c2e9180d9a807df325300182"
+    },
+    "phasenet_instance_weights": {
+      "path": "external/instance.pt.v2",
+      "bytes": 1112615,
+      "sha256": "dddcc3d872106a8cd2013ce7a035c972a7f435749b5c02a015efd5ce3767da6d"
+    }
+  }
+}

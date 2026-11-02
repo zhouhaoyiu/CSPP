@@ -1,0 +1,63 @@
+{
+  "artifacts": {
+    "availability_probes": {
+      "bytes": 1760,
+      "path": "work_artifacts/geonet_temporal_development_v1/background_station_amendment_v2/availability_probes.csv",
+      "sha256": "66a2f377c54fdf0e330943280fdf61b3905869f610abc03527e184d28dfc0bb1"
+    },
+    "selected_stations": {
+      "bytes": 1466,
+      "path": "work_artifacts/geonet_temporal_development_v1/background_station_amendment_v2/selected_stations.csv",
+      "sha256": "664662d85b253843d7f8fe54e9762a671ed9106c32d1bda5551bf2bd8691dfb6"
+    }
+  },
+  "claim_boundary": "This amendment uses archive object existence only and precedes all CSPP and public-baseline scoring. It does not erase or reinterpret the original rank-1 transport failure.",
+  "frozen_at_utc": "2026-07-29T03:32:45.808854+00:00",
+  "inputs": {
+    "failed_date_results": {
+      "bytes": 677,
+      "path": "work_artifacts/geonet_temporal_development_v1/background_transport/date_results.csv",
+      "sha256": "3b8575b8fa75efa7f5a58cdf399ee8bf9befdc758851623bab8ffd6be17bf88e"
+    },
+    "freeze_script": {
+      "bytes": 13239,
+      "path": "workspace/scripts/evaluation/amend_v27_geonet_background_stations.py",
+      "sha256": "b1c703195b2c4d81fbca5cd5aa0ef7a6df3fffe1fe3f2a0c0ee10ebfb1d077a5"
+    },
+    "original_protocol": {
+      "bytes": 6023,
+      "path": "work_artifacts/geonet_temporal_development_v1/protocol.json",
+      "sha256": "ae43b11cabf657254612bb11bc3fd79ffbedc7ba25445ab7245da533240cfd51"
+    },
+    "station_epochs": {
+      "bytes": 373132,
+      "path": "work_artifacts/geonet_temporal_development_v1/source_snapshots/station_hn_channels.txt",
+      "sha256": "d56d3c88329bf9628ddb6506f074364314c872f9a943c55fd07e79e1ecc08c52"
+    }
+  },
+  "protocol_id": "cspp_v27_geonet_background_station_availability_amendment_v2",
+  "reason": "The original metadata-only selection included JSCB.21 and RIZ.20, whose three frozen daily HN objects returned HTTP 404 on quiet-rank 1. No complete six-station date was possible.",
+  "selected_station_keys": [
+    "NZ.GOVS.20",
+    "NZ.OUZ.21",
+    "NZ.CTZ.21",
+    "NZ.HNPS.21",
+    "NZ.RLNS.20",
+    "NZ.TSFS.20"
+  ],
+  "selection_contract": {
+    "availability_probe_quiet_ranks": [
+      1,
+      8,
+      16,
+      24
+    ],
+    "availability_requirement": "All three frozen HN component objects return HTTP 200 on all four deterministic development probe dates.",
+    "final_holdout_accessed": false,
+    "geographic_farthest_point_rule_unchanged": true,
+    "selection_uses_model_outputs": false,
+    "selection_uses_waveform_content": false,
+    "stable_period_and_channel_rules_unchanged": true
+  },
+  "status": "model_blind_station_availability_amendment_before_scoring"
+}

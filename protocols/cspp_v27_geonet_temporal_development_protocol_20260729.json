@@ -1,0 +1,163 @@
+{
+  "artifacts": {
+    "background_date_pool": {
+      "bytes": 142859,
+      "path": "background_date_pool.csv",
+      "sha256": "4622874673eaf503c9e480bafd77a7936c21d022265cf59946b55d2c5d983b3f"
+    },
+    "background_stations": {
+      "bytes": 1127,
+      "path": "background_stations.csv",
+      "sha256": "9822f08541fc58113264856057a066277caff693426c3c33ebb867659424543d"
+    },
+    "catalog_snapshot": {
+      "bytes": 7132026,
+      "path": "source_snapshots/catalog_snapshot.geojson",
+      "sha256": "e0f46d5c96534a795bfa216f5918f906d53515972631c5ffd78d709ffa058add"
+    },
+    "evaluation_contract": {
+      "bytes": 2247,
+      "path": "evaluation_contract.json",
+      "sha256": "7aa3bf16e4cf6e7e707114ffe8423fe511462c47a9baf38204af73e1f1a4210a"
+    },
+    "event_stations": {
+      "bytes": 1095340,
+      "path": "event_stations.csv",
+      "sha256": "80d53efb03c688936f05978dd21181e70616188d29d9a05ea7c22213d79f5e83"
+    },
+    "events": {
+      "bytes": 92922,
+      "path": "events.csv",
+      "sha256": "20a188fbfafd86a88767c28eaf11f0b4c03bffe30de6fa2c9f381614c89248c4"
+    },
+    "excluded_events": {
+      "bytes": 74489,
+      "path": "excluded_events.csv",
+      "sha256": "f80f692402ba6cbdb94921369c809ca9e51eb2e7b939495043e05b3e1de225d4"
+    },
+    "preprocessing_contract": {
+      "bytes": 1304,
+      "path": "preprocessing_contract.json",
+      "sha256": "e318ce5267fd0d83c4e1c9846d294dc21159db8a16022619cc3244db8143b45d"
+    },
+    "source_requests": {
+      "bytes": 255588,
+      "path": "source_requests.json",
+      "sha256": "361966a25bc3ce377964009a9f199a8c825add3d1c3442bcc1051bfda5171945"
+    },
+    "station_hn_channels": {
+      "bytes": 373132,
+      "path": "source_snapshots/station_hn_channels.txt",
+      "sha256": "d56d3c88329bf9628ddb6506f074364314c872f9a943c55fd07e79e1ecc08c52"
+    },
+    "summary": {
+      "bytes": 911,
+      "path": "summary.json",
+      "sha256": "04c2c84a99be32c43acdee0d0c745526ae25fa518b1114e59157352e57e91882"
+    }
+  },
+  "background_contract": {
+    "availability_stop_rule": "Download in quiet-rank order and retain the first target prefix with complete parseable three-component coverage. Availability QC must finish before any scoring.",
+    "catalog_exclusion_maximum_distance_km": 200.0,
+    "catalog_exclusion_minimum_magnitude": 3.0,
+    "date_order": "SHA-256 in period-specific namespaces",
+    "development_target_complete_dates": 24,
+    "event_influence_lead_seconds": 300.0,
+    "event_influence_trail_seconds": 1800.0,
+    "holdout_target_complete_dates": 12,
+    "station_selection": "full-period stable 200-Hz three-component HN sites; deterministic hash seed followed by farthest-point geographic coverage",
+    "stations": 6
+  },
+  "counts": {
+    "background_stations": 6,
+    "catalog_earthquakes_m4plus": 840,
+    "catalog_features_m3plus": 7606,
+    "events_by_period": {
+      "final_holdout": 64,
+      "temporal_development": 189
+    },
+    "events_by_role": {
+      "arm_comparison": 97,
+      "final_holdout": 64,
+      "threshold_calibration": 92
+    },
+    "excluded_events": 587,
+    "quiet_background_dates_by_period": {
+      "final_holdout": 39,
+      "temporal_development": 208
+    },
+    "retained_event_stations": 2654,
+    "retained_events": 253,
+    "station_labels": {
+      "geonet_origin_associated_used_p_pick": 1995,
+      "geonet_origin_associated_zero_weight_p_pick": 89,
+      "taup_iasp91_fallback": 570
+    },
+    "target_background_dates_by_period": {
+      "final_holdout": 12,
+      "temporal_development": 24
+    }
+  },
+  "event_contract": {
+    "development_role": "SHA-256 parity of event ID in a fixed namespace",
+    "event_type": "earthquake",
+    "maximum_event_station_distance_km": 200.0,
+    "maximum_selected_sites": 12,
+    "minimum_active_processed_hn_sites": 3,
+    "minimum_magnitude": 4.0,
+    "station_order": "epicentral distance, network, station, location"
+  },
+  "evidence_boundary": {
+    "model_outputs_computed_or_inspected": false,
+    "public_baseline_outputs_computed_or_inspected": false,
+    "selection_excludes": [
+      "PGA",
+      "PGV",
+      "MMI",
+      "waveform amplitude",
+      "visual waveform appearance",
+      "CSPP scores",
+      "PhaseNet scores",
+      "EQTransformer scores"
+    ],
+    "selection_uses_only": [
+      "GeoNet WFS event metadata",
+      "GeoNet FDSN HN channel epochs",
+      "event-station epicentral distance",
+      "processed strong-motion station identity and availability",
+      "preferred-origin P picks",
+      "deterministic SHA-256 ordering"
+    ],
+    "waveform_samples_downloaded_or_inspected": false
+  },
+  "frozen_at_utc": "2026-07-29T00:02:30.237039+00:00",
+  "inputs": {
+    "blind_training_result": {
+      "path": "workspace/experiments/cspp_v27c_direct_feature_blind_training_result_20260729.json",
+      "sha256": "123bed173e1e42f3ad96ff38df3ebc988482b1a0cd6afcacb81856ba944aeab8"
+    },
+    "freeze_script": {
+      "path": "workspace/scripts/evaluation/freeze_v27_geonet_temporal_development.py",
+      "sha256": "6399b1e6006b57c554695fef7c5640af538f6276e99af426f8ce7fdd09318f04"
+    }
+  },
+  "next_boundary": "Acquire raw event windows and quiet station-days strictly from these rows, freeze waveform hashes and availability-QC promotion manifests, and only then compute C0/C1 scores.",
+  "periods": {
+    "final_holdout": {
+      "end_utc_exclusive": "2026-07-01T00:00:00.000000Z",
+      "role": "final_holdout",
+      "score_access": "prohibited until the arm and operating threshold are frozen from temporal development",
+      "start_utc_inclusive": "2026-01-01T00:00:00.000000Z"
+    },
+    "temporal_development": {
+      "end_utc_exclusive": "2026-01-01T00:00:00.000000Z",
+      "roles": [
+        "threshold_calibration",
+        "arm_comparison"
+      ],
+      "start_utc_inclusive": "2024-03-01T00:00:00.000000Z"
+    }
+  },
+  "protocol_id": "cspp_v27_geonet_temporal_development_v1",
+  "status": "model_blind_metadata_and_acquisition_manifest_frozen"
+}

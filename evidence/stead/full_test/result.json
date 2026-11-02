@@ -1,0 +1,386 @@
+{
+  "processed_records": 126566,
+  "event_window_metrics": {
+    "records": 103040,
+    "matched_records": 5399,
+    "false_negative_records": 97641,
+    "candidate_episodes": 5506,
+    "false_candidate_episodes": 107,
+    "recall": 0.05239712732919255,
+    "recall_wilson95": [
+      0.05105319450558953,
+      0.05377443328755153
+    ],
+    "candidate_precision": 0.9805666545586633,
+    "candidate_precision_wilson95": [
+      0.9765712926168536,
+      0.9838919148186432
+    ],
+    "f1": 0.09947856208427763,
+    "pick_error_median_seconds": 0.09431564807891846,
+    "pick_absolute_error_median_seconds": 0.1477606987953184,
+    "pick_absolute_error_p95_seconds": 0.37836146354675293,
+    "availability_delay_median_seconds": 1.0,
+    "availability_delay_p95_seconds": 1.017999999999999,
+    "available_within_0_5_seconds_fraction": 0.0031638198757763976,
+    "available_within_1_0_seconds_fraction": 0.04653532608695652,
+    "available_within_2_0_seconds_fraction": 0.05239712732919255
+  },
+  "event_metrics_p_at_or_after_10s": {
+    "records": 1649,
+    "matched_records": 948,
+    "false_negative_records": 701,
+    "candidate_episodes": 948,
+    "false_candidate_episodes": 0,
+    "recall": 0.5748938750758035,
+    "recall_wilson95": [
+      0.550886377488083,
+      0.5985532427984477
+    ],
+    "candidate_precision": 1.0,
+    "candidate_precision_wilson95": [
+      0.9959641820756017,
+      1.0
+    ],
+    "f1": 0.7300731613400077,
+    "pick_error_median_seconds": -0.07521367835998483,
+    "pick_absolute_error_median_seconds": 0.1752575933933258,
+    "pick_absolute_error_p95_seconds": 0.6000995397567745,
+    "availability_delay_median_seconds": 1.0,
+    "availability_delay_p95_seconds": 1.0079000000000002,
+    "available_within_0_5_seconds_fraction": 0.19648271679805943,
+    "available_within_1_0_seconds_fraction": 0.5445724681625227,
+    "available_within_2_0_seconds_fraction": 0.5748938750758035
+  },
+  "noise": {
+    "records": 23526,
+    "records_with_candidates": 86,
+    "false_candidate_episodes": 90,
+    "false_window_fraction": 0.0036555300518575193
+  },
+  "combined_selected_event_and_noise_windows": {
+    "tp": 5399,
+    "fp": 197,
+    "fn": 97641,
+    "precision": 0.9647962830593281,
+    "recall": 0.05239712732919255,
+    "f1": 0.09939614860635516
+  },
+  "event_metrics_by_channel": {
+    "BH": {
+      "records": 25894,
+      "matched_records": 1628,
+      "false_negative_records": 24266,
+      "candidate_episodes": 1634,
+      "false_candidate_episodes": 6,
+      "recall": 0.06287170773152082,
+      "recall_wilson95": [
+        0.059979570859761897,
+        0.06589352416261905
+      ],
+      "candidate_precision": 0.996328029375765,
+      "candidate_precision_wilson95": [
+        0.9920117941255407,
+        0.9983160494301474
+      ],
+      "f1": 0.11827956989247311,
+      "pick_error_median_seconds": 0.014574808120727312,
+      "pick_absolute_error_median_seconds": 0.11729501509666385,
+      "pick_absolute_error_p95_seconds": 0.3929193377494806,
+      "availability_delay_median_seconds": 1.0,
+      "availability_delay_p95_seconds": 1.017999999999999,
+      "available_within_0_5_seconds_fraction": 0.006179037614891481,
+      "available_within_1_0_seconds_fraction": 0.05549548157874411,
+      "available_within_2_0_seconds_fraction": 0.06287170773152082
+    },
+    "BL": {
+      "records": 7,
+      "matched_records": 0,
+      "false_negative_records": 7,
+      "candidate_episodes": 0,
+      "false_candidate_episodes": 0,
+      "recall": 0.0,
+      "recall_wilson95": [
+        5.551115123125783e-17,
+        0.35433043506668743
+      ],
+      "candidate_precision": 0.0,
+      "candidate_precision_wilson95": [
+        null,
+        null
+      ],
+      "f1": 0.0,
+      "pick_error_median_seconds": null,
+      "pick_absolute_error_median_seconds": null,
+      "pick_absolute_error_p95_seconds": null,
+      "availability_delay_median_seconds": null,
+      "availability_delay_p95_seconds": null,
+      "available_within_0_5_seconds_fraction": 0.0,
+      "available_within_1_0_seconds_fraction": 0.0,
+      "available_within_2_0_seconds_fraction": 0.0
+    },
+    "EH": {
+      "records": 25532,
+      "matched_records": 819,
+      "false_negative_records": 24713,
+      "candidate_episodes": 871,
+      "false_candidate_episodes": 52,
+      "recall": 0.03207739307535642,
+      "recall_wilson95": [
+        0.029985448973763203,
+        0.0343101201175605
+      ],
+      "candidate_precision": 0.9402985074626866,
+      "candidate_precision_wilson95": [
+        0.9225462169226035,
+        0.9541840663380152
+      ],
+      "f1": 0.06203840472673561,
+      "pick_error_median_seconds": 0.17531538009643555,
+      "pick_absolute_error_median_seconds": 0.19712749242782657,
+      "pick_absolute_error_p95_seconds": 0.4107391595840454,
+      "availability_delay_median_seconds": 1.0,
+      "availability_delay_p95_seconds": 1.0,
+      "available_within_0_5_seconds_fraction": 0.0021149929500235,
+      "available_within_1_0_seconds_fraction": 0.0306282312392292,
+      "available_within_2_0_seconds_fraction": 0.03207739307535642
+    },
+    "EL": {
+      "records": 127,
+      "matched_records": 5,
+      "false_negative_records": 122,
+      "candidate_episodes": 5,
+      "false_candidate_episodes": 0,
+      "recall": 0.03937007874015748,
+      "recall_wilson95": [
+        0.016931797475218995,
+        0.08885622220486222
+      ],
+      "candidate_precision": 1.0,
+      "candidate_precision_wilson95": [
+        0.5655175352168251,
+        1.0
+      ],
+      "f1": 0.07575757575757576,
+      "pick_error_median_seconds": 0.14672881364822388,
+      "pick_absolute_error_median_seconds": 0.14672881364822388,
+      "pick_absolute_error_p95_seconds": 0.26235753297805786,
+      "availability_delay_median_seconds": 1.0,
+      "availability_delay_p95_seconds": 1.0079999999999998,
+      "available_within_0_5_seconds_fraction": 0.0,
+      "available_within_1_0_seconds_fraction": 0.031496062992125984,
+      "available_within_2_0_seconds_fraction": 0.03937007874015748
+    },
+    "HH": {
+      "records": 51196,
+      "matched_records": 2936,
+      "false_negative_records": 48260,
+      "candidate_episodes": 2985,
+      "false_candidate_episodes": 49,
+      "recall": 0.05734823033049457,
+      "recall_wilson95": [
+        0.05536721461421125,
+        0.05939566924250049
+      ],
+      "candidate_precision": 0.9835845896147404,
+      "candidate_precision_wilson95": [
+        0.9783654296227787,
+        0.9875606791307857
+      ],
+      "f1": 0.10837747549879108,
+      "pick_error_median_seconds": 0.1189667284488678,
+      "pick_absolute_error_median_seconds": 0.15410742163658142,
+      "pick_absolute_error_p95_seconds": 0.35762007534503937,
+      "availability_delay_median_seconds": 1.0,
+      "availability_delay_p95_seconds": 1.0199999999999996,
+      "available_within_0_5_seconds_fraction": 0.0021681381357918587,
+      "available_within_1_0_seconds_fraction": 0.05002343933119775,
+      "available_within_2_0_seconds_fraction": 0.05734823033049457
+    },
+    "HL": {
+      "records": 29,
+      "matched_records": 2,
+      "false_negative_records": 27,
+      "candidate_episodes": 2,
+      "false_candidate_episodes": 0,
+      "recall": 0.06896551724137931,
+      "recall_wilson95": [
+        0.019121266169433354,
+        0.21964580150275695
+      ],
+      "candidate_precision": 1.0,
+      "candidate_precision_wilson95": [
+        0.34238022750665303,
+        1.0
+      ],
+      "f1": 0.12903225806451613,
+      "pick_error_median_seconds": -0.34617334604263306,
+      "pick_absolute_error_median_seconds": 0.34617334604263306,
+      "pick_absolute_error_p95_seconds": 0.3972249567508698,
+      "availability_delay_median_seconds": 0.75,
+      "availability_delay_p95_seconds": 0.975,
+      "available_within_0_5_seconds_fraction": 0.034482758620689655,
+      "available_within_1_0_seconds_fraction": 0.06896551724137931,
+      "available_within_2_0_seconds_fraction": 0.06896551724137931
+    },
+    "LH": {
+      "records": 1,
+      "matched_records": 0,
+      "false_negative_records": 1,
+      "candidate_episodes": 0,
+      "false_candidate_episodes": 0,
+      "recall": 0.0,
+      "recall_wilson95": [
+        0.0,
+        0.7934506856227626
+      ],
+      "candidate_precision": 0.0,
+      "candidate_precision_wilson95": [
+        null,
+        null
+      ],
+      "f1": 0.0,
+      "pick_error_median_seconds": null,
+      "pick_absolute_error_median_seconds": null,
+      "pick_absolute_error_p95_seconds": null,
+      "availability_delay_median_seconds": null,
+      "availability_delay_p95_seconds": null,
+      "available_within_0_5_seconds_fraction": 0.0,
+      "available_within_1_0_seconds_fraction": 0.0,
+      "available_within_2_0_seconds_fraction": 0.0
+    },
+    "SH": {
+      "records": 254,
+      "matched_records": 9,
+      "false_negative_records": 245,
+      "candidate_episodes": 9,
+      "false_candidate_episodes": 0,
+      "recall": 0.03543307086614173,
+      "recall_wilson95": [
+        0.018751451916752846,
+        0.06595741887769502
+      ],
+      "candidate_precision": 1.0,
+      "candidate_precision_wilson95": [
+        0.7008549515804559,
+        1.0
+      ],
+      "f1": 0.06844106463878327,
+      "pick_error_median_seconds": 0.2079839625358595,
+      "pick_absolute_error_median_seconds": 0.2079839625358595,
+      "pick_absolute_error_p95_seconds": 0.3502838850021362,
+      "availability_delay_median_seconds": 1.0,
+      "availability_delay_p95_seconds": 1.0,
+      "available_within_0_5_seconds_fraction": 0.0,
+      "available_within_1_0_seconds_fraction": 0.03543307086614173,
+      "available_within_2_0_seconds_fraction": 0.03543307086614173
+    }
+  },
+  "event_metrics_by_p_offset": {
+    "before_6_5s": {
+      "records": 49183,
+      "matched_records": 0,
+      "false_negative_records": 49183,
+      "candidate_episodes": 45,
+      "false_candidate_episodes": 45,
+      "recall": 0.0,
+      "recall_wilson95": [
+        6.776263578034403e-21,
+        7.809931897965436e-05
+      ],
+      "candidate_precision": 0.0,
+      "candidate_precision_wilson95": [
+        0.0,
+        0.07865159873288836
+      ],
+      "f1": 0.0,
+      "pick_error_median_seconds": null,
+      "pick_absolute_error_median_seconds": null,
+      "pick_absolute_error_p95_seconds": null,
+      "availability_delay_median_seconds": null,
+      "availability_delay_p95_seconds": null,
+      "available_within_0_5_seconds_fraction": 0.0,
+      "available_within_1_0_seconds_fraction": 0.0,
+      "available_within_2_0_seconds_fraction": 0.0
+    },
+    "6_5_to_10s": {
+      "records": 52208,
+      "matched_records": 4451,
+      "false_negative_records": 47757,
+      "candidate_episodes": 4513,
+      "false_candidate_episodes": 62,
+      "recall": 0.08525513331290224,
+      "recall_wilson95": [
+        0.08289007675993237,
+        0.08768121913746865
+      ],
+      "candidate_precision": 0.9862619100376689,
+      "candidate_precision_wilson95": [
+        0.9824286478554873,
+        0.9892680654371522
+      ],
+      "f1": 0.1569436363956912,
+      "pick_error_median_seconds": 0.11737030744552612,
+      "pick_absolute_error_median_seconds": 0.1431349515914917,
+      "pick_absolute_error_p95_seconds": 0.3508233428001404,
+      "availability_delay_median_seconds": 1.0,
+      "availability_delay_p95_seconds": 1.017999999999999,
+      "available_within_0_5_seconds_fraction": 3.8308305240576155e-05,
+      "available_within_1_0_seconds_fraction": 0.07464373276126264,
+      "available_within_2_0_seconds_fraction": 0.08525513331290224
+    },
+    "at_least_10s": {
+      "records": 1649,
+      "matched_records": 948,
+      "false_negative_records": 701,
+      "candidate_episodes": 948,
+      "false_candidate_episodes": 0,
+      "recall": 0.5748938750758035,
+      "recall_wilson95": [
+        0.550886377488083,
+        0.5985532427984477
+      ],
+      "candidate_precision": 1.0,
+      "candidate_precision_wilson95": [
+        0.9959641820756017,
+        1.0
+      ],
+      "f1": 0.7300731613400077,
+      "pick_error_median_seconds": -0.07521367835998483,
+      "pick_absolute_error_median_seconds": 0.1752575933933258,
+      "pick_absolute_error_p95_seconds": 0.6000995397567745,
+      "availability_delay_median_seconds": 1.0,
+      "availability_delay_p95_seconds": 1.0079000000000002,
+      "available_within_0_5_seconds_fraction": 0.19648271679805943,
+      "available_within_1_0_seconds_fraction": 0.5445724681625227,
+      "available_within_2_0_seconds_fraction": 0.5748938750758035
+    }
+  },
+  "records_with_invalid_packets": 489,
+  "zero_valid_packet_records": 472,
+  "quality_reason_counts": {
+    "constant_component": 57442,
+    "duplicate_packet": 7
+  },
+  "quality_flag_counts": {
+    "isolated_impulse": 14,
+    "possible_clipping": 206459
+  },
+  "packet_serial_equivalence_checks": [
+    {
+      "trace_name": "bucket1000$0,:3,:6000",
+      "max_probability_or_age_difference": 2.086162567138672e-07
+    },
+    {
+      "trace_name": "bucket1000$1,:3,:6000",
+      "max_probability_or_age_difference": 2.980232238769531e-07
+    },
+    {
+      "trace_name": "bucket1000$10,:3,:6000",
+      "max_probability_or_age_difference": 2.682209014892578e-07
+    }
+  ],
+  "wall_seconds": 235.44453501701355,
+  "source_code_and_checkpoint_unchanged": true,
+  "status": "complete"
+}

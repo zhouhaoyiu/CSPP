@@ -1,0 +1,137 @@
+[
+  {
+    "epoch": 1,
+    "seconds": 86.51850295066833,
+    "lr": 0.00023249999999999996,
+    "learning_rates": {
+      "group_0": 0.00023249999999999996
+    },
+    "loss": {
+      "loss": 1.8163210488189527,
+      "onset": 0.683828128510859,
+      "event": 0.8415844154551746,
+      "event_outside": 0.15095779727387235,
+      "noise_topk": 0.08201891874394766,
+      "verifier_hard_negative": 0.20442486939936633,
+      "verifier_ranking": 0.5350605610750494,
+      "verifier_partial_auc": 0.5027814805060928,
+      "verifier_episode_bce": 0.0,
+      "verifier_episode_tail": 0.0,
+      "ranking": 0.6884035953911157,
+      "offset": 0.09566934539111165,
+      "packet_localization": 0.6044168633658712,
+      "distillation": 0.0
+    },
+    "snr_counts": {
+      "native": 1682,
+      "-10_0": 0,
+      "0_10": 400,
+      "10_20": 748,
+      "20_30": 388
+    },
+    "verifier_supervision": {
+      "eligible_packets": 363124.0,
+      "supervised_packets": 50865.0,
+      "positive_packets": 12872.0,
+      "negative_packets": 37993.0,
+      "weighted_positive_mass": 14816.0,
+      "weighted_negative_mass": 41347.0,
+      "positive_episodes": 0.0,
+      "negative_episodes": 0.0,
+      "fraction": 0.14007611724920413,
+      "raw_negative_to_positive_ratio": 2.951600372902424,
+      "weighted_negative_to_positive_ratio": 2.790699244060475
+    },
+    "development_evaluation": "disabled"
+  },
+  {
+    "epoch": 2,
+    "seconds": 84.24173092842102,
+    "lr": 9.750000000000001e-05,
+    "learning_rates": {
+      "group_0": 9.750000000000001e-05
+    },
+    "loss": {
+      "loss": 2.149966199950474,
+      "onset": 0.8572619514978999,
+      "event": 0.8885909670009846,
+      "event_outside": 0.1495744005209062,
+      "noise_topk": 0.08185927381784451,
+      "verifier_hard_negative": 0.2806949007801893,
+      "verifier_ranking": 0.6600374958996578,
+      "verifier_partial_auc": 0.6506615849355675,
+      "verifier_episode_bce": 0.0,
+      "verifier_episode_tail": 0.0,
+      "ranking": 0.8660333377846736,
+      "offset": 0.11089772659891504,
+      "packet_localization": 0.6215087768508167,
+      "distillation": 0.0
+    },
+    "snr_counts": {
+      "native": 1659,
+      "-10_0": 0,
+      "0_10": 995,
+      "10_20": 505,
+      "20_30": 0
+    },
+    "verifier_supervision": {
+      "eligible_packets": 360634.0,
+      "supervised_packets": 50094.0,
+      "positive_packets": 12636.0,
+      "negative_packets": 37458.0,
+      "weighted_positive_mass": 19108.0,
+      "weighted_negative_mass": 49048.0,
+      "positive_episodes": 0.0,
+      "negative_episodes": 0.0,
+      "fraction": 0.13890537220561566,
+      "raw_negative_to_positive_ratio": 2.9643874643874644,
+      "weighted_negative_to_positive_ratio": 2.5668829809503872
+    },
+    "development_evaluation": "disabled"
+  },
+  {
+    "epoch": 3,
+    "seconds": 84.30973100662231,
+    "lr": 2.9999999999999997e-05,
+    "learning_rates": {
+      "group_0": 2.9999999999999997e-05
+    },
+    "loss": {
+      "loss": 2.223863898932449,
+      "onset": 0.9189307539080217,
+      "event": 0.9264539181701537,
+      "event_outside": 0.15176682742388267,
+      "noise_topk": 0.08027108152646845,
+      "verifier_hard_negative": 0.2900752635718119,
+      "verifier_ranking": 0.7175867730206469,
+      "verifier_partial_auc": 0.6485413278417086,
+      "verifier_episode_bce": 0.0,
+      "verifier_episode_tail": 0.0,
+      "ranking": 0.9384988835808344,
+      "offset": 0.11553931160549807,
+      "packet_localization": 0.6255960590471097,
+      "distillation": 0.0
+    },
+    "snr_counts": {
+      "native": 1687,
+      "-10_0": 71,
+      "0_10": 1083,
+      "10_20": 296,
+      "20_30": 62
+    },
+    "verifier_supervision": {
+      "eligible_packets": 363068.0,
+      "supervised_packets": 50125.0,
+      "positive_packets": 12796.0,
+      "negative_packets": 37329.0,
+      "weighted_positive_mass": 20820.0,
+      "weighted_negative_mass": 52017.0,
+      "positive_episodes": 0.0,
+      "negative_episodes": 0.0,
+      "fraction": 0.13805953705641918,
+      "raw_negative_to_positive_ratio": 2.917239762425758,
+      "weighted_negative_to_positive_ratio": 2.4984149855907782
+    },
+    "development_evaluation": "disabled"
+  }
+]

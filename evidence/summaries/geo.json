@@ -1,0 +1,4828 @@
+{
+  "all_seed_results": {
+    "20261101": {
+      "diagnostic_label_strata": {
+        "authoritative_p_zero_weight": {
+          "descriptive_metrics": {
+            "availability_aware_station_recall_descriptive_wilson": {
+              "confidence": 0.95,
+              "estimate": 0.9285714285714286,
+              "lower": 0.6853129557584889,
+              "method": "Wilson score",
+              "successes": 13,
+              "trials": 14,
+              "upper": 0.9872777847521093
+            },
+            "candidate_precision_on_this_reference_stratum_descriptive_wilson": {
+              "confidence": 0.95,
+              "estimate": 1.0,
+              "lower": 0.7719046276458016,
+              "method": "Wilson score",
+              "successes": 13,
+              "trials": 13,
+              "upper": 0.9999999999999999
+            },
+            "median_absolute_pick_error_seconds": 0.18199658393859863,
+            "stations": 14,
+            "technical_availability": {
+              "confidence": 0.95,
+              "estimate": 1.0,
+              "lower": 0.7846891972623643,
+              "method": "Wilson score",
+              "successes": 14,
+              "trials": 14,
+              "upper": 1.0
+            },
+            "technical_station_recall_descriptive_wilson": {
+              "confidence": 0.95,
+              "estimate": 0.9285714285714286,
+              "lower": 0.6853129557584889,
+              "method": "Wilson score",
+              "successes": 13,
+              "trials": 14,
+              "upper": 0.9872777847521093
+            },
+            "technically_available_stations": 14
+          },
+          "event_cluster_bootstrap": {
+            "cluster": "event_id",
+            "confidence": 0.95,
+            "event_clusters": 9,
+            "intervals": {
+              "availability_aware_station_recall": {
+                "lower": 0.75,
+                "upper": 1.0,
+                "valid_replicates": 5000
+              },
+              "candidate_precision": {
+                "lower": 1.0,
+                "upper": 1.0,
+                "valid_replicates": 5000
+              },
+              "technical_availability": {
+                "lower": 1.0,
+                "upper": 1.0,
+                "valid_replicates": 5000
+              },
+              "technical_station_recall": {
+                "lower": 0.75,
+                "upper": 1.0,
+                "valid_replicates": 5000
+              }
+            },
+            "replicates": 5000,
+            "seed": 40531830
+          }
+        },
+        "taup_iasp91_fallback": {
+          "descriptive_metrics": {
+            "availability_aware_station_recall_descriptive_wilson": {
+              "confidence": 0.95,
+              "estimate": 0.4148148148148148,
+              "lower": 0.3351853128153392,
+              "method": "Wilson score",
+              "successes": 56,
+              "trials": 135,
+              "upper": 0.4991581160469058
+            },
+            "candidate_precision_on_this_reference_stratum_descriptive_wilson": {
+              "confidence": 0.95,
+              "estimate": 0.7,
+              "lower": 0.5923184607866026,
+              "method": "Wilson score",
+              "successes": 56,
+              "trials": 80,
+              "upper": 0.7893542873991866
+            },
+            "median_absolute_pick_error_seconds": 0.7555902004241943,
+            "stations": 135,
+            "technical_availability": {
+              "confidence": 0.95,
+              "estimate": 1.0,
+              "lower": 0.9723320479824751,
+              "method": "Wilson score",
+              "successes": 135,
+              "trials": 135,
+              "upper": 1.0
+            },
+            "technical_station_recall_descriptive_wilson": {
+              "confidence": 0.95,
+              "estimate": 0.4148148148148148,
+              "lower": 0.3351853128153392,
+              "method": "Wilson score",
+              "successes": 56,
+              "trials": 135,
+              "upper": 0.4991581160469058
+            },
+            "technically_available_stations": 135
+          },
+          "event_cluster_bootstrap": {
+            "cluster": "event_id",
+            "confidence": 0.95,
+            "event_clusters": 38,
+            "intervals": {
+              "availability_aware_station_recall": {
+                "lower": 0.30275229357798167,
+                "upper": 0.5111111111111111,
+                "valid_replicates": 5000
+              },
+              "candidate_precision": {
+                "lower": 0.5405327741534639,
+                "upper": 0.8600116279069766,
+                "valid_replicates": 5000
+              },
+              "technical_availability": {
+                "lower": 1.0,
+                "upper": 1.0,
+                "valid_replicates": 5000
+              },
+              "technical_station_recall": {
+                "lower": 0.30275229357798167,
+                "upper": 0.5111111111111111,
+                "valid_replicates": 5000
+              }
+            },
+            "replicates": 5000,
+            "seed": 40531831
+          }
+        }
+      },
+      "event_and_station_metrics": {
+        "availability_aware_station_recall_descriptive_wilson": {
+          "confidence": 0.95,
+          "estimate": 0.8635437881873728,
+          "lower": 0.8303451879554513,
+          "method": "Wilson score",
+          "successes": 424,
+          "trials": 491,
+          "upper": 0.8910980008404152
+        },
+        "candidate_precision_on_positive_weight_reference_stations_descriptive_wilson": {
+          "confidence": 0.95,
+          "estimate": 0.986046511627907,
+          "lower": 0.9698958861758306,
+          "method": "Wilson score",
+          "successes": 424,
+          "trials": 430,
+          "upper": 0.9935897178423844
+        },
+        "catalog_event_any_positive_weight_reference_station_hit_descriptive_wilson": {
+          "confidence": 0.95,
+          "estimate": 1.0,
+          "lower": 0.9433759402071946,
+          "method": "Wilson score",
+          "successes": 64,
+          "trials": 64,
+          "upper": 1.0
+        },
+        "catalog_event_any_station_hit_when_technically_available": {
+          "confidence": 0.95,
+          "estimate": 1.0,
+          "lower": 0.9433759402071946,
+          "method": "Wilson score",
+          "successes": 64,
+          "trials": 64,
+          "upper": 1.0
+        },
+        "event_availability": {
+          "confidence": 0.95,
+          "estimate": 1.0,
+          "lower": 0.9433759402071946,
+          "method": "Wilson score",
+          "successes": 64,
+          "trials": 64,
+          "upper": 1.0
+        },
+        "false_candidate_count": 6,
+        "median_absolute_pick_error_seconds": 0.12201929092407227,
+        "median_availability_delay_seconds": 0.81369948387146,
+        "model_recall_on_technically_available_stations_descriptive_wilson": {
+          "confidence": 0.95,
+          "estimate": 0.8635437881873728,
+          "lower": 0.8303451879554513,
+          "method": "Wilson score",
+          "successes": 424,
+          "trials": 491,
+          "upper": 0.8910980008404152
+        },
+        "nested_hit_windows": {
+          "within_0.5_seconds": {
+            "availability_aware_descriptive_wilson": {
+              "confidence": 0.95,
+              "estimate": 0.8289205702647657,
+              "lower": 0.7930895062147462,
+              "method": "Wilson score",
+              "successes": 407,
+              "trials": 491,
+              "upper": 0.8596448074577042
+            },
+            "technically_available_descriptive_wilson": {
+              "confidence": 0.95,
+              "estimate": 0.8289205702647657,
+              "lower": 0.7930895062147462,
+              "method": "Wilson score",
+              "successes": 407,
+              "trials": 491,
+              "upper": 0.8596448074577042
+            }
+          },
+          "within_1.0_seconds": {
+            "availability_aware_descriptive_wilson": {
+              "confidence": 0.95,
+              "estimate": 0.8594704684317719,
+              "lower": 0.8259323564809706,
+              "method": "Wilson score",
+              "successes": 422,
+              "trials": 491,
+              "upper": 0.8874274352415528
+            },
+            "technically_available_descriptive_wilson": {
+              "confidence": 0.95,
+              "estimate": 0.8594704684317719,
+              "lower": 0.8259323564809706,
+              "method": "Wilson score",
+              "successes": 422,
+              "trials": 491,
+              "upper": 0.8874274352415528
+            }
+          },
+          "within_1.5_seconds": {
+            "availability_aware_descriptive_wilson": {
+              "confidence": 0.95,
+              "estimate": 0.8635437881873728,
+              "lower": 0.8303451879554513,
+              "method": "Wilson score",
+              "successes": 424,
+              "trials": 491,
+              "upper": 0.8910980008404152
+            },
+            "technically_available_descriptive_wilson": {
+              "confidence": 0.95,
+              "estimate": 0.8635437881873728,
+              "lower": 0.8303451879554513,
+              "method": "Wilson score",
+              "successes": 424,
+              "trials": 491,
+              "upper": 0.8910980008404152
+            }
+          }
+        },
+        "positive_weight_reference_candidate_count": 430,
+        "primary_reference_stations": 491,
+        "station_f1_on_technically_available_stations": 0.9207383279044518,
+        "technical_station_availability": {
+          "confidence": 0.95,
+          "estimate": 1.0,
+          "lower": 0.9922369907528583,
+          "method": "Wilson score",
+          "successes": 491,
+          "trials": 491,
+          "upper": 1.0
+        },
+        "technically_available_primary_stations": 491
+      },
+      "event_cluster_bootstrap": {
+        "cluster": "event_id",
+        "confidence": 0.95,
+        "intervals": {
+          "availability_aware_station_recall": {
+            "lower": 0.8179959100204499,
+            "upper": 0.902834008097166,
+            "valid_replicates": 5000
+          },
+          "candidate_precision_on_positive_weight_reference_stations": {
+            "lower": 0.9705144348894349,
+            "upper": 0.9977220956719818,
+            "valid_replicates": 5000
+          },
+          "median_absolute_pick_error_seconds": {
+            "lower": 0.1121213436126709,
+            "upper": 0.13762688636779785,
+            "valid_replicates": 5000
+          },
+          "median_availability_delay_seconds": {
+            "lower": 0.7638999223709106,
+            "upper": 0.8615968227386475,
+            "valid_replicates": 5000
+          },
+          "technical_station_recall": {
+            "lower": 0.8179959100204499,
+            "upper": 0.902834008097166,
+            "valid_replicates": 5000
+          }
+        },
+        "nested_hit_windows": {
+          "cluster": "event_id",
+          "confidence": 0.95,
+          "intervals": {
+            "availability_aware_within_0.5_seconds": {
+              "lower": 0.7815827830061362,
+              "upper": 0.8704062939955133,
+              "valid_replicates": 5000
+            },
+            "availability_aware_within_1.0_seconds": {
+              "lower": 0.8137239678480088,
+              "upper": 0.8996064892226309,
+              "valid_replicates": 5000
+            },
+            "availability_aware_within_1.5_seconds": {
+              "lower": 0.8170961755454798,
+              "upper": 0.9031672373400612,
+              "valid_replicates": 5000
+            },
+            "technically_available_within_0.5_seconds": {
+              "lower": 0.7815827830061362,
+              "upper": 0.8704062939955133,
+              "valid_replicates": 5000
+            },
+            "technically_available_within_1.0_seconds": {
+              "lower": 0.8137239678480088,
+              "upper": 0.8996064892226309,
+              "valid_replicates": 5000
+            },
+            "technically_available_within_1.5_seconds": {
+              "lower": 0.8170961755454798,
+              "upper": 0.9031672373400612,
+              "valid_replicates": 5000
+            }
+          },
+          "replicates": 5000,
+          "seed": 41021830
+        },
+        "replicates": 5000,
+        "scope": "station-record and matched-record metrics; catalog-event hit uses an event-level Wilson score interval",
+        "seed": 40521830
+      },
+      "model_key": "C0_seed20261101",
+      "primary_seed": true,
+      "primary_station_strata": {
+        "distance": {
+          "0_to_50": {
+            "descriptive_wilson": {
+              "availability_aware_recall": {
+                "confidence": 0.95,
+                "estimate": 0.9197860962566845,
+                "lower": 0.8718835002843848,
+                "method": "Wilson score",
+                "successes": 172,
+                "trials": 187,
+                "upper": 0.950788894750648
+              },
+              "technical_recall": {
+                "confidence": 0.95,
+                "estimate": 0.9197860962566845,
+                "lower": 0.8718835002843848,
+                "method": "Wilson score",
+                "successes": 172,
+                "trials": 187,
+                "upper": 0.950788894750648
+              }
+            },
+            "event_cluster_bootstrap": {
+              "cluster": "event_id",
+              "confidence": 0.95,
+              "event_clusters": 32,
+              "intervals": {
+                "availability_aware_station_recall": {
+                  "lower": 0.8900403109241,
+                  "upper": 0.951223746612466,
+                  "valid_replicates": 5000
+                },
+                "candidate_precision": {
+                  "lower": 1.0,
+                  "upper": 1.0,
+                  "valid_replicates": 5000
+                },
+                "technical_availability": {
+                  "lower": 1.0,
+                  "upper": 1.0,
+                  "valid_replicates": 5000
+                },
+                "technical_station_recall": {
+                  "lower": 0.8900403109241,
+                  "upper": 0.951223746612466,
+                  "valid_replicates": 5000
+                }
+              },
+              "replicates": 5000,
+              "seed": 40524830
+            },
+            "stations": 187,
+            "technically_available": 187
+          },
+          "gt_100_to_200": {
+            "descriptive_wilson": {
+              "availability_aware_recall": {
+                "confidence": 0.95,
+                "estimate": 0.810126582278481,
+                "lower": 0.7418943920774485,
+                "method": "Wilson score",
+                "successes": 128,
+                "trials": 158,
+                "upper": 0.863636481866139
+              },
+              "technical_recall": {
+                "confidence": 0.95,
+                "estimate": 0.810126582278481,
+                "lower": 0.7418943920774485,
+                "method": "Wilson score",
+                "successes": 128,
+                "trials": 158,
+                "upper": 0.863636481866139
+              }
+            },
+            "event_cluster_bootstrap": {
+              "cluster": "event_id",
+              "confidence": 0.95,
+              "event_clusters": 37,
+              "intervals": {
+                "availability_aware_station_recall": {
+                  "lower": 0.722883793237466,
+                  "upper": 0.8888888888888888,
+                  "valid_replicates": 5000
+                },
+                "candidate_precision": {
+                  "lower": 0.9166666666666666,
+                  "upper": 1.0,
+                  "valid_replicates": 5000
+                },
+                "technical_availability": {
+                  "lower": 1.0,
+                  "upper": 1.0,
+                  "valid_replicates": 5000
+                },
+                "technical_station_recall": {
+                  "lower": 0.722883793237466,
+                  "upper": 0.8888888888888888,
+                  "valid_replicates": 5000
+                }
+              },
+              "replicates": 5000,
+              "seed": 40524830
+            },
+            "stations": 158,
+            "technically_available": 158
+          },
+          "gt_50_to_100": {
+            "descriptive_wilson": {
+              "availability_aware_recall": {
+                "confidence": 0.95,
+                "estimate": 0.8493150684931506,
+                "lower": 0.7823841219064486,
+                "method": "Wilson score",
+                "successes": 124,
+                "trials": 146,
+                "upper": 0.8983353585549435
+              },
+              "technical_recall": {
+                "confidence": 0.95,
+                "estimate": 0.8493150684931506,
+                "lower": 0.7823841219064486,
+                "method": "Wilson score",
+                "successes": 124,
+                "trials": 146,
+                "upper": 0.8983353585549435
+              }
+            },
+            "event_cluster_bootstrap": {
+              "cluster": "event_id",
+              "confidence": 0.95,
+              "event_clusters": 36,
+              "intervals": {
+                "availability_aware_station_recall": {
+                  "lower": 0.7371621621621622,
+                  "upper": 0.9371069182389937,
+                  "valid_replicates": 5000
+                },
+                "candidate_precision": {
+                  "lower": 0.9754047554531906,
+                  "upper": 1.0,
+                  "valid_replicates": 5000
+                },
+                "technical_availability": {
+                  "lower": 1.0,
+                  "upper": 1.0,
+                  "valid_replicates": 5000
+                },
+                "technical_station_recall": {
+                  "lower": 0.7371621621621622,
+                  "upper": 0.9371069182389937,
+                  "valid_replicates": 5000
+                }
+              },
+              "replicates": 5000,
+              "seed": 40524830
+            },
+            "stations": 146,
+            "technically_available": 146
+          }
+        },
+        "magnitude": {
+          "4_to_lt_5": {
+            "descriptive_wilson": {
+              "availability_aware_recall": {
+                "confidence": 0.95,
+                "estimate": 0.8622222222222222,
+                "lower": 0.8272984578559772,
+                "method": "Wilson score",
+                "successes": 388,
+                "trials": 450,
+                "upper": 0.8910140578121819
+              },
+              "technical_recall": {
+                "confidence": 0.95,
+                "estimate": 0.8622222222222222,
+                "lower": 0.8272984578559772,
+                "method": "Wilson score",
+                "successes": 388,
+                "trials": 450,
+                "upper": 0.8910140578121819
+              }
+            },
+            "event_cluster_bootstrap": {
+              "cluster": "event_id",
+              "confidence": 0.95,
+              "event_clusters": 59,
+              "intervals": {
+                "availability_aware_station_recall": {
+                  "lower": 0.811490987460815,
+                  "upper": 0.9038482532751091,
+                  "valid_replicates": 5000
+                },
+                "candidate_precision": {
+                  "lower": 0.9702970297029703,
+                  "upper": 1.0,
+                  "valid_replicates": 5000
+                },
+                "technical_availability": {
+                  "lower": 1.0,
+                  "upper": 1.0,
+                  "valid_replicates": 5000
+                },
+                "technical_station_recall": {
+                  "lower": 0.811490987460815,
+                  "upper": 0.9038482532751091,
+                  "valid_replicates": 5000
+                }
+              },
+              "replicates": 5000,
+              "seed": 40523830
+            },
+            "stations": 450,
+            "technically_available": 450
+          },
+          "ge_5": {
+            "descriptive_wilson": {
+              "availability_aware_recall": {
+                "confidence": 0.95,
+                "estimate": 0.8780487804878049,
+                "lower": 0.7445578847902312,
+                "method": "Wilson score",
+                "successes": 36,
+                "trials": 41,
+                "upper": 0.9467666353142228
+              },
+              "technical_recall": {
+                "confidence": 0.95,
+                "estimate": 0.8780487804878049,
+                "lower": 0.7445578847902312,
+                "method": "Wilson score",
+                "successes": 36,
+                "trials": 41,
+                "upper": 0.9467666353142228
+              }
+            },
+            "event_cluster_bootstrap": {
+              "cluster": "event_id",
+              "confidence": 0.95,
+              "event_clusters": 5,
+              "intervals": {
+                "availability_aware_station_recall": {
+                  "lower": 0.8076923076923077,
+                  "upper": 0.96875,
+                  "valid_replicates": 5000
+                },
+                "candidate_precision": {
+                  "lower": 0.9333333333333333,
+                  "upper": 1.0,
+                  "valid_replicates": 5000
+                },
+                "technical_availability": {
+                  "lower": 1.0,
+                  "upper": 1.0,
+                  "valid_replicates": 5000
+                },
+                "technical_station_recall": {
+                  "lower": 0.8076923076923077,
+                  "upper": 0.96875,
+                  "valid_replicates": 5000
+                }
+              },
+              "replicates": 5000,
+              "seed": 40523830
+            },
+            "stations": 41,
+            "technically_available": 41
+          }
+        },
+        "snr": {
+          "0_to_lt_10_db": {
+            "descriptive_wilson": {
+              "availability_aware_recall": {
+                "confidence": 0.95,
+                "estimate": 0.5576923076923077,
+                "lower": 0.42339761787202884,
+                "method": "Wilson score",
+                "successes": 29,
+                "trials": 52,
+                "upper": 0.6840494318059871
+              },
+              "technical_recall": {
+                "confidence": 0.95,
+                "estimate": 0.5576923076923077,
+                "lower": 0.42339761787202884,
+                "method": "Wilson score",
+                "successes": 29,
+                "trials": 52,
+                "upper": 0.6840494318059871
+              }
+            },
+            "event_cluster_bootstrap": {
+              "cluster": "event_id",
+              "confidence": 0.95,
+              "event_clusters": 29,
+              "intervals": {
+                "availability_aware_station_recall": {
+                  "lower": 0.3548387096774194,
+                  "upper": 0.7547169811320755,
+                  "valid_replicates": 5000
+                },
+                "candidate_precision": {
+                  "lower": 0.9032258064516129,
+                  "upper": 1.0,
+                  "valid_replicates": 5000
+                },
+                "technical_availability": {
+                  "lower": 1.0,
+                  "upper": 1.0,
+                  "valid_replicates": 5000
+                },
+                "technical_station_recall": {
+                  "lower": 0.3548387096774194,
+                  "upper": 0.7547169811320755,
+                  "valid_replicates": 5000
+                }
+              },
+              "replicates": 5000,
+              "seed": 40522830
+            },
+            "stations": 52,
+            "technically_available": 52
+          },
+          "ge_10_db": {
+            "descriptive_wilson": {
+              "availability_aware_recall": {
+                "confidence": 0.95,
+                "estimate": 0.9253012048192771,
+                "lower": 0.8959221101130037,
+                "method": "Wilson score",
+                "successes": 384,
+                "trials": 415,
+                "upper": 0.9468788890858821
+              },
+              "technical_recall": {
+                "confidence": 0.95,
+                "estimate": 0.9253012048192771,
+                "lower": 0.8959221101130037,
+                "method": "Wilson score",
+                "successes": 384,
+                "trials": 415,
+                "upper": 0.9468788890858821
+              }
+            },
+            "event_cluster_bootstrap": {
+              "cluster": "event_id",
+              "confidence": 0.95,
+              "event_clusters": 63,
+              "intervals": {
+                "availability_aware_station_recall": {
+                  "lower": 0.8974358974358975,
+                  "upper": 0.9511002444987775,
+                  "valid_replicates": 5000
+                },
+                "candidate_precision": {
+                  "lower": 0.9865951742627346,
+                  "upper": 1.0,
+                  "valid_replicates": 5000
+                },
+                "technical_availability": {
+                  "lower": 1.0,
+                  "upper": 1.0,
+                  "valid_replicates": 5000
+                },
+                "technical_station_recall": {
+                  "lower": 0.8974358974358975,
+                  "upper": 0.9511002444987775,
+                  "valid_replicates": 5000
+                }
+              },
+              "replicates": 5000,
+              "seed": 40522830
+            },
+            "stations": 415,
+            "technically_available": 415
+          },
+          "lt_0_db": {
+            "descriptive_wilson": {
+              "availability_aware_recall": {
+                "confidence": 0.95,
+                "estimate": 0.4583333333333333,
+                "lower": 0.2789133373121099,
+                "method": "Wilson score",
+                "successes": 11,
+                "trials": 24,
+                "upper": 0.6492513464108051
+              },
+              "technical_recall": {
+                "confidence": 0.95,
+                "estimate": 0.4583333333333333,
+                "lower": 0.2789133373121099,
+                "method": "Wilson score",
+                "successes": 11,
+                "trials": 24,
+                "upper": 0.6492513464108051
+              }
+            },
+            "event_cluster_bootstrap": {
+              "cluster": "event_id",
+              "confidence": 0.95,
+              "event_clusters": 18,
+              "intervals": {
+                "availability_aware_station_recall": {
+                  "lower": 0.19047619047619047,
+                  "upper": 0.7037037037037037,
+                  "valid_replicates": 5000
+                },
+                "candidate_precision": {
+                  "lower": 0.5,
+                  "upper": 1.0,
+                  "valid_replicates": 5000
+                },
+                "technical_availability": {
+                  "lower": 1.0,
+                  "upper": 1.0,
+                  "valid_replicates": 5000
+                },
+                "technical_station_recall": {
+                  "lower": 0.19047619047619047,
+                  "upper": 0.7037037037037037,
+                  "valid_replicates": 5000
+                }
+              },
+              "replicates": 5000,
+              "seed": 40522830
+            },
+            "stations": 24,
+            "technically_available": 24
+          }
+        }
+      },
+      "quiet_background_date_cluster_bootstrap": {
+        "cluster": "date_utc",
+        "confidence": 0.95,
+        "intervals": {
+          "candidate_rate_per_station_day": {
+            "lower": 1.3153488911971853,
+            "upper": 2.1353386194036204,
+            "valid_replicates": 5000
+          },
+          "network_confirmation_rate_per_minimum_three_station_day": {
+            "lower": 0.0,
+            "upper": 0.0,
+            "valid_replicates": 5000
+          }
+        },
+        "replicates": 5000,
+        "seed": 40621830
+      },
+      "quiet_background_metrics": {
+        "minimum_three_station_exposure_days": 36.99932969388035,
+        "quiet_background_candidate_rate_per_station_day": {
+          "confidence": 0.95,
+          "count": 377,
+          "exposure": 221.9944139824504,
+          "lower": 1.531120540110532,
+          "method": "exact Poisson chi-square",
+          "rate": 1.6982409297461127,
+          "upper": 1.8786246921472873
+        },
+        "quiet_background_network_confirmation_rate_per_minimum_three_station_day": {
+          "confidence": 0.95,
+          "count": 0,
+          "exposure": 36.99932969388035,
+          "lower": 0.0,
+          "method": "exact Poisson chi-square",
+          "rate": 0.0,
+          "upper": 0.09970125093169115
+        },
+        "scoring_dates": 37,
+        "station_date_records": 222,
+        "station_exposure_days": 221.9944139824504
+      },
+      "quiet_background_panel_diagnostics": {
+        "date_count": 37,
+        "leave_one_station_out": [
+          {
+            "candidate_count": 359,
+            "candidate_rate_per_station_day": 1.9405795951804128,
+            "omitted_station_key": "NZ.CTZ.21",
+            "station_exposure_days": 184.99627682966764
+          },
+          {
+            "candidate_count": 312,
+            "candidate_rate_per_station_day": 1.6865298870832817,
+            "omitted_station_key": "NZ.GOVS.20",
+            "station_exposure_days": 184.99523927179197
+          },
+          {
+            "candidate_count": 288,
+            "candidate_rate_per_station_day": 1.5567982827649738,
+            "omitted_station_key": "NZ.HNPS.21",
+            "station_exposure_days": 184.99506531346725
+          },
+          {
+            "candidate_count": 188,
+            "candidate_rate_per_station_day": 1.0162437367448234,
+            "omitted_station_key": "NZ.ORPS.20",
+            "station_exposure_days": 184.99499008199683
+          },
+          {
+            "candidate_count": 375,
+            "candidate_rate_per_station_day": 2.0270806338131084,
+            "omitted_station_key": "NZ.OUZ.21",
+            "station_exposure_days": 184.99510761670768
+          },
+          {
+            "candidate_count": 363,
+            "candidate_rate_per_station_day": 1.9622110498696097,
+            "omitted_station_key": "NZ.TSFS.20",
+            "station_exposure_days": 184.99539079862058
+          }
+        ],
+        "maximum_date_candidate_share": 0.10079575596816977,
+        "maximum_station_candidate_share": 0.5013262599469496,
+        "per_date": [
+          {
+            "candidate_count": 19,
+            "candidate_rate_per_station_day": 3.166737086127747,
+            "date_utc": "2026-01-05",
+            "station_exposure_days": 5.999866576619723
+          },
+          {
+            "candidate_count": 9,
+            "candidate_rate_per_station_day": 1.500029348019319,
+            "date_utc": "2026-01-09",
+            "station_exposure_days": 5.999882610219496
+          },
+          {
+            "candidate_count": 6,
+            "candidate_rate_per_station_day": 1.0000186939279203,
+            "date_utc": "2026-01-16",
+            "station_exposure_days": 5.999887838529216
+          },
+          {
+            "candidate_count": 7,
+            "candidate_rate_per_station_day": 1.166689775554658,
+            "date_utc": "2026-01-27",
+            "station_exposure_days": 5.999881156644335
+          },
+          {
+            "candidate_count": 8,
+            "candidate_rate_per_station_day": 1.3333484165930016,
+            "date_utc": "2026-01-30",
+            "station_exposure_days": 5.999932126099313
+          },
+          {
+            "candidate_count": 5,
+            "candidate_rate_per_station_day": 0.8333492731240534,
+            "date_utc": "2026-01-31",
+            "station_exposure_days": 5.999885235701998
+          },
+          {
+            "candidate_count": 5,
+            "candidate_rate_per_station_day": 0.8333518152617589,
+            "date_utc": "2026-02-01",
+            "station_exposure_days": 5.999866933066536
+          },
+          {
+            "candidate_count": 10,
+            "candidate_rate_per_station_day": 1.666700097305906,
+            "date_utc": "2026-02-12",
+            "station_exposure_days": 5.999879652112722
+          },
+          {
+            "candidate_count": 10,
+            "candidate_rate_per_station_day": 1.6667023862621568,
+            "date_utc": "2026-02-24",
+            "station_exposure_days": 5.999871412212098
+          },
+          {
+            "candidate_count": 5,
+            "candidate_rate_per_station_day": 0.8333471138707063,
+            "date_utc": "2026-03-02",
+            "station_exposure_days": 5.999900781771651
+          },
+          {
+            "candidate_count": 4,
+            "candidate_rate_per_station_day": 0.6666798898008615,
+            "date_utc": "2026-03-06",
+            "station_exposure_days": 5.999880994152692
+          },
+          {
+            "candidate_count": 10,
+            "candidate_rate_per_station_day": 1.6666979207612038,
+            "date_utc": "2026-03-07",
+            "station_exposure_days": 5.999887487369555
+          },
+          {
+            "candidate_count": 14,
+            "candidate_rate_per_station_day": 2.333899618952934,
+            "date_utc": "2026-03-10",
+            "station_exposure_days": 5.998544190294213
+          },
+          {
+            "candidate_count": 1,
+            "candidate_rate_per_station_day": 0.16666989401690266,
+            "date_utc": "2026-03-14",
+            "station_exposure_days": 5.999883817641272
+          },
+          {
+            "candidate_count": 3,
+            "candidate_rate_per_station_day": 0.500011311237768,
+            "date_utc": "2026-03-17",
+            "station_exposure_days": 5.999864268217373
+          },
+          {
+            "candidate_count": 8,
+            "candidate_rate_per_station_day": 1.3333517039899923,
+            "date_utc": "2026-03-18",
+            "station_exposure_days": 5.999917333184017
+          },
+          {
+            "candidate_count": 15,
+            "candidate_rate_per_station_day": 2.5000412554308893,
+            "date_utc": "2026-03-25",
+            "station_exposure_days": 5.9999009885997685
+          },
+          {
+            "candidate_count": 21,
+            "candidate_rate_per_station_day": 3.5000559030443,
+            "date_utc": "2026-03-27",
+            "station_exposure_days": 5.999904167740433
+          },
+          {
+            "candidate_count": 38,
+            "candidate_rate_per_station_day": 6.333458159044649,
+            "date_utc": "2026-03-28",
+            "station_exposure_days": 5.999881746393663
+          },
+          {
+            "candidate_count": 5,
+            "candidate_rate_per_station_day": 0.8333473089682043,
+            "date_utc": "2026-03-30",
+            "station_exposure_days": 5.999899377116451
+          },
+          {
+            "candidate_count": 11,
+            "candidate_rate_per_station_day": 1.833364248929304,
+            "date_utc": "2026-04-03",
+            "station_exposure_days": 5.99989882339206
+          },
+          {
+            "candidate_count": 15,
+            "candidate_rate_per_station_day": 2.5000422400947935,
+            "date_utc": "2026-04-18",
+            "station_exposure_days": 5.999898625485323
+          },
+          {
+            "candidate_count": 3,
+            "candidate_rate_per_station_day": 0.5000090696445159,
+            "date_utc": "2026-04-20",
+            "station_exposure_days": 5.999891166239977
+          },
+          {
+            "candidate_count": 5,
+            "candidate_rate_per_station_day": 0.833353128129308,
+            "date_utc": "2026-04-23",
+            "station_exposure_days": 5.999857480854348
+          },
+          {
+            "candidate_count": 4,
+            "candidate_rate_per_station_day": 0.66668047096051,
+            "date_utc": "2026-04-25",
+            "station_exposure_days": 5.999875763927897
+          },
+          {
+            "candidate_count": 2,
+            "candidate_rate_per_station_day": 0.33333985155063717,
+            "date_utc": "2026-05-01",
+            "station_exposure_days": 5.999882674382793
+          },
+          {
+            "candidate_count": 30,
+            "candidate_rate_per_station_day": 5.000118336598684,
+            "date_utc": "2026-05-16",
+            "station_exposure_days": 5.999857999442352
+          },
+          {
+            "candidate_count": 5,
+            "candidate_rate_per_station_day": 0.8333499205645354,
+            "date_utc": "2026-05-19",
+            "station_exposure_days": 5.999880574312475
+          },
+          {
+            "candidate_count": 7,
+            "candidate_rate_per_station_day": 1.1666913790021116,
+            "date_utc": "2026-05-26",
+            "station_exposure_days": 5.999872910681146
+          },
+          {
+            "candidate_count": 13,
+            "candidate_rate_per_station_day": 2.166705392291861,
+            "date_utc": "2026-05-28",
+            "station_exposure_days": 5.999892761723863
+          },
+          {
+            "candidate_count": 14,
+            "candidate_rate_per_station_day": 2.3333766661147792,
+            "date_utc": "2026-06-02",
+            "station_exposure_days": 5.999888574917008
+          },
+          {
+            "candidate_count": 14,
+            "candidate_rate_per_station_day": 2.333382762740142,
+            "date_utc": "2026-06-04",
+            "station_exposure_days": 5.999872898503586
+          },
+          {
+            "candidate_count": 7,
+            "candidate_rate_per_station_day": 1.1666886936642014,
+            "date_utc": "2026-06-20",
+            "station_exposure_days": 5.999886720437143
+          },
+          {
+            "candidate_count": 11,
+            "candidate_rate_per_station_day": 1.8333697555577282,
+            "date_utc": "2026-06-21",
+            "station_exposure_days": 5.999880802360949
+          },
+          {
+            "candidate_count": 14,
+            "candidate_rate_per_station_day": 2.3333737661813925,
+            "date_utc": "2026-06-23",
+            "station_exposure_days": 5.999896031620878
+          },
+          {
+            "candidate_count": 4,
+            "candidate_rate_per_station_day": 0.6666805204120343,
+            "date_utc": "2026-06-25",
+            "station_exposure_days": 5.999875318882642
+          },
+          {
+            "candidate_count": 15,
+            "candidate_rate_per_station_day": 2.500047433566858,
+            "date_utc": "2026-06-30",
+            "station_exposure_days": 5.999886161599446
+          }
+        ],
+        "per_station": [
+          {
+            "candidate_count": 18,
+            "candidate_rate_per_station_day": 0.48651098096289325,
+            "station_exposure_days": 36.998137152782746,
+            "station_key": "NZ.CTZ.21"
+          },
+          {
+            "candidate_count": 65,
+            "candidate_rate_per_station_day": 1.7567959422963924,
+            "station_exposure_days": 36.999174710658416,
+            "station_key": "NZ.GOVS.20"
+          },
+          {
+            "candidate_count": 89,
+            "candidate_rate_per_station_day": 2.4054477498034834,
+            "station_exposure_days": 36.99934866898314,
+            "station_key": "NZ.HNPS.21"
+          },
+          {
+            "candidate_count": 189,
+            "candidate_rate_per_station_day": 5.108187643907694,
+            "station_exposure_days": 36.99942390045358,
+            "station_key": "NZ.ORPS.20"
+          },
+          {
+            "candidate_count": 2,
+            "candidate_rate_per_station_day": 0.054055067417474054,
+            "station_exposure_days": 36.999306365742726,
+            "station_key": "NZ.OUZ.21"
+          },
+          {
+            "candidate_count": 14,
+            "candidate_rate_per_station_day": 0.3783883679966614,
+            "station_exposure_days": 36.999023183829806,
+            "station_key": "NZ.TSFS.20"
+          }
+        ],
+        "scope": "conditional_on_fixed_station_panel",
+        "station_count": 6
+      },
+      "seed": 20261101,
+      "snr_diagnostic": {
+        "invalid_or_unavailable": 0,
+        "left_censored_at_minus_120_db": 6
+      },
+      "station_cluster_sensitivity": {
+        "cluster": "station_key",
+        "confidence": 0.95,
+        "intervals": {
+          "event_record_candidate_precision": {
+            "lower": 0.973037559618442,
+            "upper": 0.9973121873382784,
+            "valid_replicates": 5000
+          },
+          "overall_station_record_recall": {
+            "lower": 0.8256483179124207,
+            "upper": 0.8972332015810277,
+            "valid_replicates": 5000
+          },
+          "technical_station_record_recall": {
+            "lower": 0.8256483179124207,
+            "upper": 0.8972332015810277,
+            "valid_replicates": 5000
+          }
+        },
+        "replicates": 5000,
+        "role": "secondary_dependence_sensitivity",
+        "seed": 41121830,
+        "station_clusters": 165
+      }
+    },
+    "20261102": {
+      "diagnostic_label_strata": {
+        "authoritative_p_zero_weight": {
+          "descriptive_metrics": {
+            "availability_aware_station_recall_descriptive_wilson": {
+              "confidence": 0.95,
+              "estimate": 0.8571428571428571,
+              "lower": 0.6005862050302965,
+              "method": "Wilson score",
+              "successes": 12,
+              "trials": 14,
+              "upper": 0.9599060787285351
+            },
+            "candidate_precision_on_this_reference_stratum_descriptive_wilson": {
+              "confidence": 0.95,
+              "estimate": 1.0,
+              "lower": 0.7575059933447592,
+              "method": "Wilson score",
+              "successes": 12,
+              "trials": 12,
+              "upper": 1.0
+            },
+            "median_absolute_pick_error_seconds": 0.13361942768096924,
+            "stations": 14,
+            "technical_availability": {
+              "confidence": 0.95,
+              "estimate": 1.0,
+              "lower": 0.7846891972623643,
+              "method": "Wilson score",
+              "successes": 14,
+              "trials": 14,
+              "upper": 1.0
+            },
+            "technical_station_recall_descriptive_wilson": {
+              "confidence": 0.95,
+              "estimate": 0.8571428571428571,
+              "lower": 0.6005862050302965,
+              "method": "Wilson score",
+              "successes": 12,
+              "trials": 14,
+              "upper": 0.9599060787285351
+            },
+            "technically_available_stations": 14
+          },
+          "event_cluster_bootstrap": {
+            "cluster": "event_id",
+            "confidence": 0.95,
+            "event_clusters": 9,
+            "intervals": {
+              "availability_aware_station_recall": {
+                "lower": 0.5833333333333334,
+                "upper": 1.0,
+                "valid_replicates": 5000
+              },
+              "candidate_precision": {
+                "lower": 1.0,
+                "upper": 1.0,
+                "valid_replicates": 5000
+              },
+              "technical_availability": {
+                "lower": 1.0,
+                "upper": 1.0,
+                "valid_replicates": 5000
+              },
+              "technical_station_recall": {
+                "lower": 0.5833333333333334,
+                "upper": 1.0,
+                "valid_replicates": 5000
+              }
+            },
+            "replicates": 5000,
+            "seed": 40531831
+          }
+        },
+        "taup_iasp91_fallback": {
+          "descriptive_metrics": {
+            "availability_aware_station_recall_descriptive_wilson": {
+              "confidence": 0.95,
+              "estimate": 0.4,
+              "lower": 0.32123174973114266,
+              "method": "Wilson score",
+              "successes": 54,
+              "trials": 135,
+              "upper": 0.48430184067236237
+            },
+            "candidate_precision_on_this_reference_stratum_descriptive_wilson": {
+              "confidence": 0.95,
+              "estimate": 0.7105263157894737,
+              "lower": 0.600404448228802,
+              "method": "Wilson score",
+              "successes": 54,
+              "trials": 76,
+              "upper": 0.8003898317437719
+            },
+            "median_absolute_pick_error_seconds": 0.7253605127334595,
+            "stations": 135,
+            "technical_availability": {
+              "confidence": 0.95,
+              "estimate": 1.0,
+              "lower": 0.9723320479824751,
+              "method": "Wilson score",
+              "successes": 135,
+              "trials": 135,
+              "upper": 1.0
+            },
+            "technical_station_recall_descriptive_wilson": {
+              "confidence": 0.95,
+              "estimate": 0.4,
+              "lower": 0.32123174973114266,
+              "method": "Wilson score",
+              "successes": 54,
+              "trials": 135,
+              "upper": 0.48430184067236237
+            },
+            "technically_available_stations": 135
+          },
+          "event_cluster_bootstrap": {
+            "cluster": "event_id",
+            "confidence": 0.95,
+            "event_clusters": 38,
+            "intervals": {
+              "availability_aware_station_recall": {
+                "lower": 0.30251612272816103,
+                "upper": 0.49305793378995433,
+                "valid_replicates": 5000
+              },
+              "candidate_precision": {
+                "lower": 0.5651827012025903,
+                "upper": 0.8732394366197183,
+                "valid_replicates": 5000
+              },
+              "technical_availability": {
+                "lower": 1.0,
+                "upper": 1.0,
+                "valid_replicates": 5000
+              },
+              "technical_station_recall": {
+                "lower": 0.30251612272816103,
+                "upper": 0.49305793378995433,
+                "valid_replicates": 5000
+              }
+            },
+            "replicates": 5000,
+            "seed": 40531832
+          }
+        }
+      },
+      "event_and_station_metrics": {
+        "availability_aware_station_recall_descriptive_wilson": {
+          "confidence": 0.95,
+          "estimate": 0.8492871690427699,
+          "lower": 0.8149369758455512,
+          "method": "Wilson score",
+          "successes": 417,
+          "trials": 491,
+          "upper": 0.8782143231936147
+        },
+        "candidate_precision_on_positive_weight_reference_stations_descriptive_wilson": {
+          "confidence": 0.95,
+          "estimate": 0.9904988123515439,
+          "lower": 0.9758282009723145,
+          "method": "Wilson score",
+          "successes": 417,
+          "trials": 421,
+          "upper": 0.9962991454181143
+        },
+        "catalog_event_any_positive_weight_reference_station_hit_descriptive_wilson": {
+          "confidence": 0.95,
+          "estimate": 1.0,
+          "lower": 0.9433759402071946,
+          "method": "Wilson score",
+          "successes": 64,
+          "trials": 64,
+          "upper": 1.0
+        },
+        "catalog_event_any_station_hit_when_technically_available": {
+          "confidence": 0.95,
+          "estimate": 1.0,
+          "lower": 0.9433759402071946,
+          "method": "Wilson score",
+          "successes": 64,
+          "trials": 64,
+          "upper": 1.0
+        },
+        "event_availability": {
+          "confidence": 0.95,
+          "estimate": 1.0,
+          "lower": 0.9433759402071946,
+          "method": "Wilson score",
+          "successes": 64,
+          "trials": 64,
+          "upper": 1.0
+        },
+        "false_candidate_count": 4,
+        "median_absolute_pick_error_seconds": 0.12948250770568848,
+        "median_availability_delay_seconds": 0.9145901203155518,
+        "model_recall_on_technically_available_stations_descriptive_wilson": {
+          "confidence": 0.95,
+          "estimate": 0.8492871690427699,
+          "lower": 0.8149369758455512,
+          "method": "Wilson score",
+          "successes": 417,
+          "trials": 491,
+          "upper": 0.8782143231936147
+        },
+        "nested_hit_windows": {
+          "within_0.5_seconds": {
+            "availability_aware_descriptive_wilson": {
+              "confidence": 0.95,
+              "estimate": 0.8167006109979633,
+              "lower": 0.7800635217038342,
+              "method": "Wilson score",
+              "successes": 401,
+              "trials": 491,
+              "upper": 0.8484206007485872
+            },
+            "technically_available_descriptive_wilson": {
+              "confidence": 0.95,
+              "estimate": 0.8167006109979633,
+              "lower": 0.7800635217038342,
+              "method": "Wilson score",
+              "successes": 401,
+              "trials": 491,
+              "upper": 0.8484206007485872
+            }
+          },
+          "within_1.0_seconds": {
+            "availability_aware_descriptive_wilson": {
+              "confidence": 0.95,
+              "estimate": 0.845213849287169,
+              "lower": 0.8105527665552571,
+              "method": "Wilson score",
+              "successes": 415,
+              "trials": 491,
+              "upper": 0.8745151354105657
+            },
+            "technically_available_descriptive_wilson": {
+              "confidence": 0.95,
+              "estimate": 0.845213849287169,
+              "lower": 0.8105527665552571,
+              "method": "Wilson score",
+              "successes": 415,
+              "trials": 491,
+              "upper": 0.8745151354105657
+            }
+          },
+          "within_1.5_seconds": {
+            "availability_aware_descriptive_wilson": {
+              "confidence": 0.95,
+              "estimate": 0.8492871690427699,
+              "lower": 0.8149369758455512,
+              "method": "Wilson score",
+              "successes": 417,
+              "trials": 491,
+              "upper": 0.8782143231936147
+            },
+            "technically_available_descriptive_wilson": {
+              "confidence": 0.95,
+              "estimate": 0.8492871690427699,
+              "lower": 0.8149369758455512,
+              "method": "Wilson score",
+              "successes": 417,
+              "trials": 491,
+              "upper": 0.8782143231936147
+            }
+          }
+        },
+        "positive_weight_reference_candidate_count": 421,
+        "primary_reference_stations": 491,
+        "station_f1_on_technically_available_stations": 0.9144736842105263,
+        "technical_station_availability": {
+          "confidence": 0.95,
+          "estimate": 1.0,
+          "lower": 0.9922369907528583,
+          "method": "Wilson score",
+          "successes": 491,
+          "trials": 491,
+          "upper": 1.0
+        },
+        "technically_available_primary_stations": 491
+      },
+      "event_cluster_bootstrap": {
+        "cluster": "event_id",
+        "confidence": 0.95,
+        "intervals": {
+          "availability_aware_station_recall": {
+            "lower": 0.8034021469364592,
+            "upper": 0.8882113821138211,
+            "valid_replicates": 5000
+          },
+          "candidate_precision_on_positive_weight_reference_stations": {
+            "lower": 0.977776402640264,
+            "upper": 1.0,
+            "valid_replicates": 5000
+          },
+          "median_absolute_pick_error_seconds": {
+            "lower": 0.11779141426086426,
+            "upper": 0.1487112045288086,
+            "valid_replicates": 5000
+          },
+          "median_availability_delay_seconds": {
+            "lower": 0.8724319934844971,
+            "upper": 0.9443372011184691,
+            "valid_replicates": 5000
+          },
+          "technical_station_recall": {
+            "lower": 0.8034021469364592,
+            "upper": 0.8882113821138211,
+            "valid_replicates": 5000
+          }
+        },
+        "nested_hit_windows": {
+          "cluster": "event_id",
+          "confidence": 0.95,
+          "intervals": {
+            "availability_aware_within_0.5_seconds": {
+              "lower": 0.7664543524416136,
+              "upper": 0.8607068607068608,
+              "valid_replicates": 5000
+            },
+            "availability_aware_within_1.0_seconds": {
+              "lower": 0.7979787566385504,
+              "upper": 0.8859657894736842,
+              "valid_replicates": 5000
+            },
+            "availability_aware_within_1.5_seconds": {
+              "lower": 0.8024193548387096,
+              "upper": 0.8891050583657587,
+              "valid_replicates": 5000
+            },
+            "technically_available_within_0.5_seconds": {
+              "lower": 0.7664543524416136,
+              "upper": 0.8607068607068608,
+              "valid_replicates": 5000
+            },
+            "technically_available_within_1.0_seconds": {
+              "lower": 0.7979787566385504,
+              "upper": 0.8859657894736842,
+              "valid_replicates": 5000
+            },
+            "technically_available_within_1.5_seconds": {
+              "lower": 0.8024193548387096,
+              "upper": 0.8891050583657587,
+              "valid_replicates": 5000
+            }
+          },
+          "replicates": 5000,
+          "seed": 41021831
+        },
+        "replicates": 5000,
+        "scope": "station-record and matched-record metrics; catalog-event hit uses an event-level Wilson score interval",
+        "seed": 40521831
+      },
+      "model_key": "C0_seed20261102",
+      "primary_seed": false,
+      "primary_station_strata": {
+        "distance": {
+          "0_to_50": {
+            "descriptive_wilson": {
+              "availability_aware_recall": {
+                "confidence": 0.95,
+                "estimate": 0.8983957219251337,
+                "lower": 0.8467678235848759,
+                "method": "Wilson score",
+                "successes": 168,
+                "trials": 187,
+                "upper": 0.9339849589642952
+              },
+              "technical_recall": {
+                "confidence": 0.95,
+                "estimate": 0.8983957219251337,
+                "lower": 0.8467678235848759,
+                "method": "Wilson score",
+                "successes": 168,
+                "trials": 187,
+                "upper": 0.9339849589642952
+              }
+            },
+            "event_cluster_bootstrap": {
+              "cluster": "event_id",
+              "confidence": 0.95,
+              "event_clusters": 32,
+              "intervals": {
+                "availability_aware_station_recall": {
+                  "lower": 0.8596491228070176,
+                  "upper": 0.9353273952816561,
+                  "valid_replicates": 5000
+                },
+                "candidate_precision": {
+                  "lower": 1.0,
+                  "upper": 1.0,
+                  "valid_replicates": 5000
+                },
+                "technical_availability": {
+                  "lower": 1.0,
+                  "upper": 1.0,
+                  "valid_replicates": 5000
+                },
+                "technical_station_recall": {
+                  "lower": 0.8596491228070176,
+                  "upper": 0.9353273952816561,
+                  "valid_replicates": 5000
+                }
+              },
+              "replicates": 5000,
+              "seed": 40524831
+            },
+            "stations": 187,
+            "technically_available": 187
+          },
+          "gt_100_to_200": {
+            "descriptive_wilson": {
+              "availability_aware_recall": {
+                "confidence": 0.95,
+                "estimate": 0.8037974683544303,
+                "lower": 0.7349803557625183,
+                "method": "Wilson score",
+                "successes": 127,
+                "trials": 158,
+                "upper": 0.8581927452434448
+              },
+              "technical_recall": {
+                "confidence": 0.95,
+                "estimate": 0.8037974683544303,
+                "lower": 0.7349803557625183,
+                "method": "Wilson score",
+                "successes": 127,
+                "trials": 158,
+                "upper": 0.8581927452434448
+              }
+            },
+            "event_cluster_bootstrap": {
+              "cluster": "event_id",
+              "confidence": 0.95,
+              "event_clusters": 37,
+              "intervals": {
+                "availability_aware_station_recall": {
+                  "lower": 0.7213089915548933,
+                  "upper": 0.8767148104030176,
+                  "valid_replicates": 5000
+                },
+                "candidate_precision": {
+                  "lower": 0.9385931174089069,
+                  "upper": 1.0,
+                  "valid_replicates": 5000
+                },
+                "technical_availability": {
+                  "lower": 1.0,
+                  "upper": 1.0,
+                  "valid_replicates": 5000
+                },
+                "technical_station_recall": {
+                  "lower": 0.7213089915548933,
+                  "upper": 0.8767148104030176,
+                  "valid_replicates": 5000
+                }
+              },
+              "replicates": 5000,
+              "seed": 40524831
+            },
+            "stations": 158,
+            "technically_available": 158
+          },
+          "gt_50_to_100": {
+            "descriptive_wilson": {
+              "availability_aware_recall": {
+                "confidence": 0.95,
+                "estimate": 0.8356164383561644,
+                "lower": 0.7670494253514148,
+                "method": "Wilson score",
+                "successes": 122,
+                "trials": 146,
+                "upper": 0.886975173523256
+              },
+              "technical_recall": {
+                "confidence": 0.95,
+                "estimate": 0.8356164383561644,
+                "lower": 0.7670494253514148,
+                "method": "Wilson score",
+                "successes": 122,
+                "trials": 146,
+                "upper": 0.886975173523256
+              }
+            },
+            "event_cluster_bootstrap": {
+              "cluster": "event_id",
+              "confidence": 0.95,
+              "event_clusters": 36,
+              "intervals": {
+                "availability_aware_station_recall": {
+                  "lower": 0.7304924695194837,
+                  "upper": 0.9302376137512638,
+                  "valid_replicates": 5000
+                },
+                "candidate_precision": {
+                  "lower": 0.9736842105263158,
+                  "upper": 1.0,
+                  "valid_replicates": 5000
+                },
+                "technical_availability": {
+                  "lower": 1.0,
+                  "upper": 1.0,
+                  "valid_replicates": 5000
+                },
+                "technical_station_recall": {
+                  "lower": 0.7304924695194837,
+                  "upper": 0.9302376137512638,
+                  "valid_replicates": 5000
+                }
+              },
+              "replicates": 5000,
+              "seed": 40524831
+            },
+            "stations": 146,
+            "technically_available": 146
+          }
+        },
+        "magnitude": {
+          "4_to_lt_5": {
+            "descriptive_wilson": {
+              "availability_aware_recall": {
+                "confidence": 0.95,
+                "estimate": 0.8488888888888889,
+                "lower": 0.8128526382785087,
+                "method": "Wilson score",
+                "successes": 382,
+                "trials": 450,
+                "upper": 0.879018925892663
+              },
+              "technical_recall": {
+                "confidence": 0.95,
+                "estimate": 0.8488888888888889,
+                "lower": 0.8128526382785087,
+                "method": "Wilson score",
+                "successes": 382,
+                "trials": 450,
+                "upper": 0.879018925892663
+              }
+            },
+            "event_cluster_bootstrap": {
+              "cluster": "event_id",
+              "confidence": 0.95,
+              "event_clusters": 59,
+              "intervals": {
+                "availability_aware_station_recall": {
+                  "lower": 0.8,
+                  "upper": 0.8904696383948584,
+                  "valid_replicates": 5000
+                },
+                "candidate_precision": {
+                  "lower": 0.9787784299339691,
+                  "upper": 1.0,
+                  "valid_replicates": 5000
+                },
+                "technical_availability": {
+                  "lower": 1.0,
+                  "upper": 1.0,
+                  "valid_replicates": 5000
+                },
+                "technical_station_recall": {
+                  "lower": 0.8,
+                  "upper": 0.8904696383948584,
+                  "valid_replicates": 5000
+                }
+              },
+              "replicates": 5000,
+              "seed": 40523831
+            },
+            "stations": 450,
+            "technically_available": 450
+          },
+          "ge_5": {
+            "descriptive_wilson": {
+              "availability_aware_recall": {
+                "confidence": 0.95,
+                "estimate": 0.8536585365853658,
+                "lower": 0.7155654195751904,
+                "method": "Wilson score",
+                "successes": 35,
+                "trials": 41,
+                "upper": 0.9311575185870407
+              },
+              "technical_recall": {
+                "confidence": 0.95,
+                "estimate": 0.8536585365853658,
+                "lower": 0.7155654195751904,
+                "method": "Wilson score",
+                "successes": 35,
+                "trials": 41,
+                "upper": 0.9311575185870407
+              }
+            },
+            "event_cluster_bootstrap": {
+              "cluster": "event_id",
+              "confidence": 0.95,
+              "event_clusters": 5,
+              "intervals": {
+                "availability_aware_station_recall": {
+                  "lower": 0.7727272727272727,
+                  "upper": 0.9655172413793104,
+                  "valid_replicates": 5000
+                },
+                "candidate_precision": {
+                  "lower": 0.9285278745644602,
+                  "upper": 1.0,
+                  "valid_replicates": 5000
+                },
+                "technical_availability": {
+                  "lower": 1.0,
+                  "upper": 1.0,
+                  "valid_replicates": 5000
+                },
+                "technical_station_recall": {
+                  "lower": 0.7727272727272727,
+                  "upper": 0.9655172413793104,
+                  "valid_replicates": 5000
+                }
+              },
+              "replicates": 5000,
+              "seed": 40523831
+            },
+            "stations": 41,
+            "technically_available": 41
+          }
+        },
+        "snr": {
+          "0_to_lt_10_db": {
+            "descriptive_wilson": {
+              "availability_aware_recall": {
+                "confidence": 0.95,
+                "estimate": 0.5576923076923077,
+                "lower": 0.42339761787202884,
+                "method": "Wilson score",
+                "successes": 29,
+                "trials": 52,
+                "upper": 0.6840494318059871
+              },
+              "technical_recall": {
+                "confidence": 0.95,
+                "estimate": 0.5576923076923077,
+                "lower": 0.42339761787202884,
+                "method": "Wilson score",
+                "successes": 29,
+                "trials": 52,
+                "upper": 0.6840494318059871
+              }
+            },
+            "event_cluster_bootstrap": {
+              "cluster": "event_id",
+              "confidence": 0.95,
+              "event_clusters": 29,
+              "intervals": {
+                "availability_aware_station_recall": {
+                  "lower": 0.3673469387755102,
+                  "upper": 0.7454545454545455,
+                  "valid_replicates": 5000
+                },
+                "candidate_precision": {
+                  "lower": 0.9032258064516129,
+                  "upper": 1.0,
+                  "valid_replicates": 5000
+                },
+                "technical_availability": {
+                  "lower": 1.0,
+                  "upper": 1.0,
+                  "valid_replicates": 5000
+                },
+                "technical_station_recall": {
+                  "lower": 0.3673469387755102,
+                  "upper": 0.7454545454545455,
+                  "valid_replicates": 5000
+                }
+              },
+              "replicates": 5000,
+              "seed": 40522831
+            },
+            "stations": 52,
+            "technically_available": 52
+          },
+          "ge_10_db": {
+            "descriptive_wilson": {
+              "availability_aware_recall": {
+                "confidence": 0.95,
+                "estimate": 0.908433734939759,
+                "lower": 0.8768139810071994,
+                "method": "Wilson score",
+                "successes": 377,
+                "trials": 415,
+                "upper": 0.9325614828126937
+              },
+              "technical_recall": {
+                "confidence": 0.95,
+                "estimate": 0.908433734939759,
+                "lower": 0.8768139810071994,
+                "method": "Wilson score",
+                "successes": 377,
+                "trials": 415,
+                "upper": 0.9325614828126937
+              }
+            },
+            "event_cluster_bootstrap": {
+              "cluster": "event_id",
+              "confidence": 0.95,
+              "event_clusters": 63,
+              "intervals": {
+                "availability_aware_station_recall": {
+                  "lower": 0.8787791909924938,
+                  "upper": 0.9366756057655747,
+                  "valid_replicates": 5000
+                },
+                "candidate_precision": {
+                  "lower": 0.9866310160427807,
+                  "upper": 1.0,
+                  "valid_replicates": 5000
+                },
+                "technical_availability": {
+                  "lower": 1.0,
+                  "upper": 1.0,
+                  "valid_replicates": 5000
+                },
+                "technical_station_recall": {
+                  "lower": 0.8787791909924938,
+                  "upper": 0.9366756057655747,
+                  "valid_replicates": 5000
+                }
+              },
+              "replicates": 5000,
+              "seed": 40522831
+            },
+            "stations": 415,
+            "technically_available": 415
+          },
+          "lt_0_db": {
+            "descriptive_wilson": {
+              "availability_aware_recall": {
+                "confidence": 0.95,
+                "estimate": 0.4583333333333333,
+                "lower": 0.2789133373121099,
+                "method": "Wilson score",
+                "successes": 11,
+                "trials": 24,
+                "upper": 0.6492513464108051
+              },
+              "technical_recall": {
+                "confidence": 0.95,
+                "estimate": 0.4583333333333333,
+                "lower": 0.2789133373121099,
+                "method": "Wilson score",
+                "successes": 11,
+                "trials": 24,
+                "upper": 0.6492513464108051
+              }
+            },
+            "event_cluster_bootstrap": {
+              "cluster": "event_id",
+              "confidence": 0.95,
+              "event_clusters": 18,
+              "intervals": {
+                "availability_aware_station_recall": {
+                  "lower": 0.19047619047619047,
+                  "upper": 0.7000925925925912,
+                  "valid_replicates": 5000
+                },
+                "candidate_precision": {
+                  "lower": 0.6666666666666666,
+                  "upper": 1.0,
+                  "valid_replicates": 5000
+                },
+                "technical_availability": {
+                  "lower": 1.0,
+                  "upper": 1.0,
+                  "valid_replicates": 5000
+                },
+                "technical_station_recall": {
+                  "lower": 0.19047619047619047,
+                  "upper": 0.7000925925925912,
+                  "valid_replicates": 5000
+                }
+              },
+              "replicates": 5000,
+              "seed": 40522831
+            },
+            "stations": 24,
+            "technically_available": 24
+          }
+        }
+      },
+      "quiet_background_date_cluster_bootstrap": {
+        "cluster": "date_utc",
+        "confidence": 0.95,
+        "intervals": {
+          "candidate_rate_per_station_day": {
+            "lower": 0.6982112084032953,
+            "upper": 1.292818120165651,
+            "valid_replicates": 5000
+          },
+          "network_confirmation_rate_per_minimum_three_station_day": {
+            "lower": 0.0,
+            "upper": 0.0,
+            "valid_replicates": 5000
+          }
+        },
+        "replicates": 5000,
+        "seed": 40621831
+      },
+      "quiet_background_metrics": {
+        "minimum_three_station_exposure_days": 36.99932969388035,
+        "quiet_background_candidate_rate_per_station_day": {
+          "confidence": 0.95,
+          "count": 215,
+          "exposure": 221.9944139824504,
+          "lower": 0.8433538290028646,
+          "method": "exact Poisson chi-square",
+          "rate": 0.9684928379188706,
+          "upper": 1.1069675724707297
+        },
+        "quiet_background_network_confirmation_rate_per_minimum_three_station_day": {
+          "confidence": 0.95,
+          "count": 0,
+          "exposure": 36.99932969388035,
+          "lower": 0.0,
+          "method": "exact Poisson chi-square",
+          "rate": 0.0,
+          "upper": 0.09970125093169115
+        },
+        "scoring_dates": 37,
+        "station_date_records": 222,
+        "station_exposure_days": 221.9944139824504
+      },
+      "quiet_background_panel_diagnostics": {
+        "date_count": 37,
+        "leave_one_station_out": [
+          {
+            "candidate_count": 208,
+            "candidate_rate_per_station_day": 1.1243469520822447,
+            "omitted_station_key": "NZ.CTZ.21",
+            "station_exposure_days": 184.99627682966764
+          },
+          {
+            "candidate_count": 174,
+            "candidate_rate_per_station_day": 0.9405647447195224,
+            "omitted_station_key": "NZ.GOVS.20",
+            "station_exposure_days": 184.99523927179197
+          },
+          {
+            "candidate_count": 187,
+            "candidate_rate_per_station_day": 1.0108377738786463,
+            "omitted_station_key": "NZ.HNPS.21",
+            "station_exposure_days": 184.99506531346725
+          },
+          {
+            "candidate_count": 88,
+            "candidate_rate_per_station_day": 0.4756885576252365,
+            "omitted_station_key": "NZ.ORPS.20",
+            "station_exposure_days": 184.99499008199683
+          },
+          {
+            "candidate_count": 214,
+            "candidate_rate_per_station_day": 1.1567873483626805,
+            "omitted_station_key": "NZ.OUZ.21",
+            "station_exposure_days": 184.99510761670768
+          },
+          {
+            "candidate_count": 204,
+            "candidate_rate_per_station_day": 1.102730176786227,
+            "omitted_station_key": "NZ.TSFS.20",
+            "station_exposure_days": 184.99539079862058
+          }
+        ],
+        "maximum_date_candidate_share": 0.13023255813953488,
+        "maximum_station_candidate_share": 0.5906976744186047,
+        "per_date": [
+          {
+            "candidate_count": 11,
+            "candidate_rate_per_station_day": 1.8333741024950114,
+            "date_utc": "2026-01-05",
+            "station_exposure_days": 5.999866576619723
+          },
+          {
+            "candidate_count": 6,
+            "candidate_rate_per_station_day": 1.0000195653462127,
+            "date_utc": "2026-01-09",
+            "station_exposure_days": 5.999882610219496
+          },
+          {
+            "candidate_count": 2,
+            "candidate_rate_per_station_day": 0.33333956464264014,
+            "date_utc": "2026-01-16",
+            "station_exposure_days": 5.999887838529216
+          },
+          {
+            "candidate_count": 4,
+            "candidate_rate_per_station_day": 0.6666798717455188,
+            "date_utc": "2026-01-27",
+            "station_exposure_days": 5.999881156644335
+          },
+          {
+            "candidate_count": 4,
+            "candidate_rate_per_station_day": 0.6666742082965008,
+            "date_utc": "2026-01-30",
+            "station_exposure_days": 5.999932126099313
+          },
+          {
+            "candidate_count": 1,
+            "candidate_rate_per_station_day": 0.16666985462481068,
+            "date_utc": "2026-01-31",
+            "station_exposure_days": 5.999885235701998
+          },
+          {
+            "candidate_count": 2,
+            "candidate_rate_per_station_day": 0.33334072610470356,
+            "date_utc": "2026-02-01",
+            "station_exposure_days": 5.999866933066536
+          },
+          {
+            "candidate_count": 5,
+            "candidate_rate_per_station_day": 0.833350048652953,
+            "date_utc": "2026-02-12",
+            "station_exposure_days": 5.999879652112722
+          },
+          {
+            "candidate_count": 6,
+            "candidate_rate_per_station_day": 1.000021431757294,
+            "date_utc": "2026-02-24",
+            "station_exposure_days": 5.999871412212098
+          },
+          {
+            "candidate_count": 4,
+            "candidate_rate_per_station_day": 0.666677691096565,
+            "date_utc": "2026-03-02",
+            "station_exposure_days": 5.999900781771651
+          },
+          {
+            "candidate_count": 2,
+            "candidate_rate_per_station_day": 0.33333994490043073,
+            "date_utc": "2026-03-06",
+            "station_exposure_days": 5.999880994152692
+          },
+          {
+            "candidate_count": 3,
+            "candidate_rate_per_station_day": 0.5000093762283612,
+            "date_utc": "2026-03-07",
+            "station_exposure_days": 5.999887487369555
+          },
+          {
+            "candidate_count": 8,
+            "candidate_rate_per_station_day": 1.3336569251159622,
+            "date_utc": "2026-03-10",
+            "station_exposure_days": 5.998544190294213
+          },
+          {
+            "candidate_count": 1,
+            "candidate_rate_per_station_day": 0.16666989401690266,
+            "date_utc": "2026-03-14",
+            "station_exposure_days": 5.999883817641272
+          },
+          {
+            "candidate_count": 1,
+            "candidate_rate_per_station_day": 0.166670437079256,
+            "date_utc": "2026-03-17",
+            "station_exposure_days": 5.999864268217373
+          },
+          {
+            "candidate_count": 7,
+            "candidate_rate_per_station_day": 1.1666827409912433,
+            "date_utc": "2026-03-18",
+            "station_exposure_days": 5.999917333184017
+          },
+          {
+            "candidate_count": 9,
+            "candidate_rate_per_station_day": 1.5000247532585336,
+            "date_utc": "2026-03-25",
+            "station_exposure_days": 5.9999009885997685
+          },
+          {
+            "candidate_count": 13,
+            "candidate_rate_per_station_day": 2.166701273313138,
+            "date_utc": "2026-03-27",
+            "station_exposure_days": 5.999904167740433
+          },
+          {
+            "candidate_count": 28,
+            "candidate_rate_per_station_day": 4.666758643506584,
+            "date_utc": "2026-03-28",
+            "station_exposure_days": 5.999881746393663
+          },
+          {
+            "candidate_count": 5,
+            "candidate_rate_per_station_day": 0.8333473089682043,
+            "date_utc": "2026-03-30",
+            "station_exposure_days": 5.999899377116451
+          },
+          {
+            "candidate_count": 6,
+            "candidate_rate_per_station_day": 1.0000168630523476,
+            "date_utc": "2026-04-03",
+            "station_exposure_days": 5.99989882339206
+          },
+          {
+            "candidate_count": 12,
+            "candidate_rate_per_station_day": 2.000033792075835,
+            "date_utc": "2026-04-18",
+            "station_exposure_days": 5.999898625485323
+          },
+          {
+            "candidate_count": 1,
+            "candidate_rate_per_station_day": 0.16666968988150527,
+            "date_utc": "2026-04-20",
+            "station_exposure_days": 5.999891166239977
+          },
+          {
+            "candidate_count": 4,
+            "candidate_rate_per_station_day": 0.6666825025034463,
+            "date_utc": "2026-04-23",
+            "station_exposure_days": 5.999857480854348
+          },
+          {
+            "candidate_count": 0,
+            "candidate_rate_per_station_day": 0.0,
+            "date_utc": "2026-04-25",
+            "station_exposure_days": 5.999875763927897
+          },
+          {
+            "candidate_count": 1,
+            "candidate_rate_per_station_day": 0.16666992577531858,
+            "date_utc": "2026-05-01",
+            "station_exposure_days": 5.999882674382793
+          },
+          {
+            "candidate_count": 20,
+            "candidate_rate_per_station_day": 3.3334122243991224,
+            "date_utc": "2026-05-16",
+            "station_exposure_days": 5.999857999442352
+          },
+          {
+            "candidate_count": 1,
+            "candidate_rate_per_station_day": 0.16666998411290707,
+            "date_utc": "2026-05-19",
+            "station_exposure_days": 5.999880574312475
+          },
+          {
+            "candidate_count": 4,
+            "candidate_rate_per_station_day": 0.6666807880012067,
+            "date_utc": "2026-05-26",
+            "station_exposure_days": 5.999872910681146
+          },
+          {
+            "candidate_count": 5,
+            "candidate_rate_per_station_day": 0.833348227804562,
+            "date_utc": "2026-05-28",
+            "station_exposure_days": 5.999892761723863
+          },
+          {
+            "candidate_count": 10,
+            "candidate_rate_per_station_day": 1.6666976186534137,
+            "date_utc": "2026-06-02",
+            "station_exposure_days": 5.999888574917008
+          },
+          {
+            "candidate_count": 8,
+            "candidate_rate_per_station_day": 1.3333615787086524,
+            "date_utc": "2026-06-04",
+            "station_exposure_days": 5.999872898503586
+          },
+          {
+            "candidate_count": 3,
+            "candidate_rate_per_station_day": 0.5000094401418006,
+            "date_utc": "2026-06-20",
+            "station_exposure_days": 5.999886720437143
+          },
+          {
+            "candidate_count": 4,
+            "candidate_rate_per_station_day": 0.6666799111119012,
+            "date_utc": "2026-06-21",
+            "station_exposure_days": 5.999880802360949
+          },
+          {
+            "candidate_count": 5,
+            "candidate_rate_per_station_day": 0.8333477736362116,
+            "date_utc": "2026-06-23",
+            "station_exposure_days": 5.999896031620878
+          },
+          {
+            "candidate_count": 1,
+            "candidate_rate_per_station_day": 0.16667013010300857,
+            "date_utc": "2026-06-25",
+            "station_exposure_days": 5.999875318882642
+          },
+          {
+            "candidate_count": 8,
+            "candidate_rate_per_station_day": 1.3333586312356576,
+            "date_utc": "2026-06-30",
+            "station_exposure_days": 5.999886161599446
+          }
+        ],
+        "per_station": [
+          {
+            "candidate_count": 7,
+            "candidate_rate_per_station_day": 0.18919871481890294,
+            "station_exposure_days": 36.998137152782746,
+            "station_key": "NZ.CTZ.21"
+          },
+          {
+            "candidate_count": 41,
+            "candidate_rate_per_station_day": 1.1081328251408014,
+            "station_exposure_days": 36.999174710658416,
+            "station_key": "NZ.GOVS.20"
+          },
+          {
+            "candidate_count": 28,
+            "candidate_rate_per_station_day": 0.75677007858986,
+            "station_exposure_days": 36.99934866898314,
+            "station_key": "NZ.HNPS.21"
+          },
+          {
+            "candidate_count": 127,
+            "candidate_rate_per_station_day": 3.4324858771231597,
+            "station_exposure_days": 36.99942390045358,
+            "station_key": "NZ.ORPS.20"
+          },
+          {
+            "candidate_count": 1,
+            "candidate_rate_per_station_day": 0.027027533708737027,
+            "station_exposure_days": 36.999306365742726,
+            "station_key": "NZ.OUZ.21"
+          },
+          {
+            "candidate_count": 11,
+            "candidate_rate_per_station_day": 0.2973051462830911,
+            "station_exposure_days": 36.999023183829806,
+            "station_key": "NZ.TSFS.20"
+          }
+        ],
+        "scope": "conditional_on_fixed_station_panel",
+        "station_count": 6
+      },
+      "seed": 20261102,
+      "snr_diagnostic": {
+        "invalid_or_unavailable": 0,
+        "left_censored_at_minus_120_db": 6
+      },
+      "station_cluster_sensitivity": {
+        "cluster": "station_key",
+        "confidence": 0.95,
+        "intervals": {
+          "event_record_candidate_precision": {
+            "lower": 0.9778391646084358,
+            "upper": 1.0,
+            "valid_replicates": 5000
+          },
+          "overall_station_record_recall": {
+            "lower": 0.8099333039272352,
+            "upper": 0.884313725490196,
+            "valid_replicates": 5000
+          },
+          "technical_station_record_recall": {
+            "lower": 0.8099333039272352,
+            "upper": 0.884313725490196,
+            "valid_replicates": 5000
+          }
+        },
+        "replicates": 5000,
+        "role": "secondary_dependence_sensitivity",
+        "seed": 41121831,
+        "station_clusters": 165
+      }
+    },
+    "20261103": {
+      "diagnostic_label_strata": {
+        "authoritative_p_zero_weight": {
+          "descriptive_metrics": {
+            "availability_aware_station_recall_descriptive_wilson": {
+              "confidence": 0.95,
+              "estimate": 0.9285714285714286,
+              "lower": 0.6853129557584889,
+              "method": "Wilson score",
+              "successes": 13,
+              "trials": 14,
+              "upper": 0.9872777847521093
+            },
+            "candidate_precision_on_this_reference_stratum_descriptive_wilson": {
+              "confidence": 0.95,
+              "estimate": 1.0,
+              "lower": 0.7719046276458016,
+              "method": "Wilson score",
+              "successes": 13,
+              "trials": 13,
+              "upper": 0.9999999999999999
+            },
+            "median_absolute_pick_error_seconds": 0.18199658393859863,
+            "stations": 14,
+            "technical_availability": {
+              "confidence": 0.95,
+              "estimate": 1.0,
+              "lower": 0.7846891972623643,
+              "method": "Wilson score",
+              "successes": 14,
+              "trials": 14,
+              "upper": 1.0
+            },
+            "technical_station_recall_descriptive_wilson": {
+              "confidence": 0.95,
+              "estimate": 0.9285714285714286,
+              "lower": 0.6853129557584889,
+              "method": "Wilson score",
+              "successes": 13,
+              "trials": 14,
+              "upper": 0.9872777847521093
+            },
+            "technically_available_stations": 14
+          },
+          "event_cluster_bootstrap": {
+            "cluster": "event_id",
+            "confidence": 0.95,
+            "event_clusters": 9,
+            "intervals": {
+              "availability_aware_station_recall": {
+                "lower": 0.75,
+                "upper": 1.0,
+                "valid_replicates": 5000
+              },
+              "candidate_precision": {
+                "lower": 1.0,
+                "upper": 1.0,
+                "valid_replicates": 5000
+              },
+              "technical_availability": {
+                "lower": 1.0,
+                "upper": 1.0,
+                "valid_replicates": 5000
+              },
+              "technical_station_recall": {
+                "lower": 0.75,
+                "upper": 1.0,
+                "valid_replicates": 5000
+              }
+            },
+            "replicates": 5000,
+            "seed": 40531832
+          }
+        },
+        "taup_iasp91_fallback": {
+          "descriptive_metrics": {
+            "availability_aware_station_recall_descriptive_wilson": {
+              "confidence": 0.95,
+              "estimate": 0.42962962962962964,
+              "lower": 0.3492130043432204,
+              "method": "Wilson score",
+              "successes": 58,
+              "trials": 135,
+              "upper": 0.5139402629777645
+            },
+            "candidate_precision_on_this_reference_stratum_descriptive_wilson": {
+              "confidence": 0.95,
+              "estimate": 0.725,
+              "lower": 0.6185594135898548,
+              "method": "Wilson score",
+              "successes": 58,
+              "trials": 80,
+              "upper": 0.810822428119158
+            },
+            "median_absolute_pick_error_seconds": 0.7555902004241943,
+            "stations": 135,
+            "technical_availability": {
+              "confidence": 0.95,
+              "estimate": 1.0,
+              "lower": 0.9723320479824751,
+              "method": "Wilson score",
+              "successes": 135,
+              "trials": 135,
+              "upper": 1.0
+            },
+            "technical_station_recall_descriptive_wilson": {
+              "confidence": 0.95,
+              "estimate": 0.42962962962962964,
+              "lower": 0.3492130043432204,
+              "method": "Wilson score",
+              "successes": 58,
+              "trials": 135,
+              "upper": 0.5139402629777645
+            },
+            "technically_available_stations": 135
+          },
+          "event_cluster_bootstrap": {
+            "cluster": "event_id",
+            "confidence": 0.95,
+            "event_clusters": 38,
+            "intervals": {
+              "availability_aware_station_recall": {
+                "lower": 0.32406746031746037,
+                "upper": 0.5222953702823462,
+                "valid_replicates": 5000
+              },
+              "candidate_precision": {
+                "lower": 0.5769117647058823,
+                "upper": 0.875,
+                "valid_replicates": 5000
+              },
+              "technical_availability": {
+                "lower": 1.0,
+                "upper": 1.0,
+                "valid_replicates": 5000
+              },
+              "technical_station_recall": {
+                "lower": 0.32406746031746037,
+                "upper": 0.5222953702823462,
+                "valid_replicates": 5000
+              }
+            },
+            "replicates": 5000,
+            "seed": 40531833
+          }
+        }
+      },
+      "event_and_station_metrics": {
+        "availability_aware_station_recall_descriptive_wilson": {
+          "confidence": 0.95,
+          "estimate": 0.8574338085539714,
+          "lower": 0.8237291600726251,
+          "method": "Wilson score",
+          "successes": 421,
+          "trials": 491,
+          "upper": 0.8855889331132267
+        },
+        "candidate_precision_on_positive_weight_reference_stations_descriptive_wilson": {
+          "confidence": 0.95,
+          "estimate": 0.9905882352941177,
+          "lower": 0.9760532939596669,
+          "method": "Wilson score",
+          "successes": 421,
+          "trials": 425,
+          "upper": 0.9963340333914295
+        },
+        "catalog_event_any_positive_weight_reference_station_hit_descriptive_wilson": {
+          "confidence": 0.95,
+          "estimate": 1.0,
+          "lower": 0.9433759402071946,
+          "method": "Wilson score",
+          "successes": 64,
+          "trials": 64,
+          "upper": 1.0
+        },
+        "catalog_event_any_station_hit_when_technically_available": {
+          "confidence": 0.95,
+          "estimate": 1.0,
+          "lower": 0.9433759402071946,
+          "method": "Wilson score",
+          "successes": 64,
+          "trials": 64,
+          "upper": 1.0
+        },
+        "event_availability": {
+          "confidence": 0.95,
+          "estimate": 1.0,
+          "lower": 0.9433759402071946,
+          "method": "Wilson score",
+          "successes": 64,
+          "trials": 64,
+          "upper": 1.0
+        },
+        "false_candidate_count": 4,
+        "median_absolute_pick_error_seconds": 0.12655425071716309,
+        "median_availability_delay_seconds": 0.8669998645782471,
+        "model_recall_on_technically_available_stations_descriptive_wilson": {
+          "confidence": 0.95,
+          "estimate": 0.8574338085539714,
+          "lower": 0.8237291600726251,
+          "method": "Wilson score",
+          "successes": 421,
+          "trials": 491,
+          "upper": 0.8855889331132267
+        },
+        "nested_hit_windows": {
+          "within_0.5_seconds": {
+            "availability_aware_descriptive_wilson": {
+              "confidence": 0.95,
+              "estimate": 0.8228105906313645,
+              "lower": 0.7865692439804133,
+              "method": "Wilson score",
+              "successes": 404,
+              "trials": 491,
+              "upper": 0.8540399740820226
+            },
+            "technically_available_descriptive_wilson": {
+              "confidence": 0.95,
+              "estimate": 0.8228105906313645,
+              "lower": 0.7865692439804133,
+              "method": "Wilson score",
+              "successes": 404,
+              "trials": 491,
+              "upper": 0.8540399740820226
+            }
+          },
+          "within_1.0_seconds": {
+            "availability_aware_descriptive_wilson": {
+              "confidence": 0.95,
+              "estimate": 0.8533604887983707,
+              "lower": 0.8193290182919549,
+              "method": "Wilson score",
+              "successes": 419,
+              "trials": 491,
+              "upper": 0.881905677820554
+            },
+            "technically_available_descriptive_wilson": {
+              "confidence": 0.95,
+              "estimate": 0.8533604887983707,
+              "lower": 0.8193290182919549,
+              "method": "Wilson score",
+              "successes": 419,
+              "trials": 491,
+              "upper": 0.881905677820554
+            }
+          },
+          "within_1.5_seconds": {
+            "availability_aware_descriptive_wilson": {
+              "confidence": 0.95,
+              "estimate": 0.8574338085539714,
+              "lower": 0.8237291600726251,
+              "method": "Wilson score",
+              "successes": 421,
+              "trials": 491,
+              "upper": 0.8855889331132267
+            },
+            "technically_available_descriptive_wilson": {
+              "confidence": 0.95,
+              "estimate": 0.8574338085539714,
+              "lower": 0.8237291600726251,
+              "method": "Wilson score",
+              "successes": 421,
+              "trials": 491,
+              "upper": 0.8855889331132267
+            }
+          }
+        },
+        "positive_weight_reference_candidate_count": 425,
+        "primary_reference_stations": 491,
+        "station_f1_on_technically_available_stations": 0.9192139737991266,
+        "technical_station_availability": {
+          "confidence": 0.95,
+          "estimate": 1.0,
+          "lower": 0.9922369907528583,
+          "method": "Wilson score",
+          "successes": 491,
+          "trials": 491,
+          "upper": 1.0
+        },
+        "technically_available_primary_stations": 491
+      },
+      "event_cluster_bootstrap": {
+        "cluster": "event_id",
+        "confidence": 0.95,
+        "intervals": {
+          "availability_aware_station_recall": {
+            "lower": 0.8118932683024398,
+            "upper": 0.8958360890652557,
+            "valid_replicates": 5000
+          },
+          "candidate_precision_on_positive_weight_reference_stations": {
+            "lower": 0.9777200014777597,
+            "upper": 1.0,
+            "valid_replicates": 5000
+          },
+          "median_absolute_pick_error_seconds": {
+            "lower": 0.11468148231506348,
+            "upper": 0.14288973808288574,
+            "valid_replicates": 5000
+          },
+          "median_availability_delay_seconds": {
+            "lower": 0.8274794340133668,
+            "upper": 0.9191629886627197,
+            "valid_replicates": 5000
+          },
+          "technical_station_recall": {
+            "lower": 0.8118932683024398,
+            "upper": 0.8958360890652557,
+            "valid_replicates": 5000
+          }
+        },
+        "nested_hit_windows": {
+          "cluster": "event_id",
+          "confidence": 0.95,
+          "intervals": {
+            "availability_aware_within_0.5_seconds": {
+              "lower": 0.773331983805668,
+              "upper": 0.8651458109935195,
+              "valid_replicates": 5000
+            },
+            "availability_aware_within_1.0_seconds": {
+              "lower": 0.8069395696982674,
+              "upper": 0.8932043818903133,
+              "valid_replicates": 5000
+            },
+            "availability_aware_within_1.5_seconds": {
+              "lower": 0.8124969777562863,
+              "upper": 0.8957480269534315,
+              "valid_replicates": 5000
+            },
+            "technically_available_within_0.5_seconds": {
+              "lower": 0.773331983805668,
+              "upper": 0.8651458109935195,
+              "valid_replicates": 5000
+            },
+            "technically_available_within_1.0_seconds": {
+              "lower": 0.8069395696982674,
+              "upper": 0.8932043818903133,
+              "valid_replicates": 5000
+            },
+            "technically_available_within_1.5_seconds": {
+              "lower": 0.8124969777562863,
+              "upper": 0.8957480269534315,
+              "valid_replicates": 5000
+            }
+          },
+          "replicates": 5000,
+          "seed": 41021832
+        },
+        "replicates": 5000,
+        "scope": "station-record and matched-record metrics; catalog-event hit uses an event-level Wilson score interval",
+        "seed": 40521832
+      },
+      "model_key": "C0_seed20261103",
+      "primary_seed": false,
+      "primary_station_strata": {
+        "distance": {
+          "0_to_50": {
+            "descriptive_wilson": {
+              "availability_aware_recall": {
+                "confidence": 0.95,
+                "estimate": 0.9090909090909091,
+                "lower": 0.8592465911600684,
+                "method": "Wilson score",
+                "successes": 170,
+                "trials": 187,
+                "upper": 0.9424659976320335
+              },
+              "technical_recall": {
+                "confidence": 0.95,
+                "estimate": 0.9090909090909091,
+                "lower": 0.8592465911600684,
+                "method": "Wilson score",
+                "successes": 170,
+                "trials": 187,
+                "upper": 0.9424659976320335
+              }
+            },
+            "event_cluster_bootstrap": {
+              "cluster": "event_id",
+              "confidence": 0.95,
+              "event_clusters": 32,
+              "intervals": {
+                "availability_aware_station_recall": {
+                  "lower": 0.8698217147435897,
+                  "upper": 0.9455782312925171,
+                  "valid_replicates": 5000
+                },
+                "candidate_precision": {
+                  "lower": 1.0,
+                  "upper": 1.0,
+                  "valid_replicates": 5000
+                },
+                "technical_availability": {
+                  "lower": 1.0,
+                  "upper": 1.0,
+                  "valid_replicates": 5000
+                },
+                "technical_station_recall": {
+                  "lower": 0.8698217147435897,
+                  "upper": 0.9455782312925171,
+                  "valid_replicates": 5000
+                }
+              },
+              "replicates": 5000,
+              "seed": 40524832
+            },
+            "stations": 187,
+            "technically_available": 187
+          },
+          "gt_100_to_200": {
+            "descriptive_wilson": {
+              "availability_aware_recall": {
+                "confidence": 0.95,
+                "estimate": 0.810126582278481,
+                "lower": 0.7418943920774485,
+                "method": "Wilson score",
+                "successes": 128,
+                "trials": 158,
+                "upper": 0.863636481866139
+              },
+              "technical_recall": {
+                "confidence": 0.95,
+                "estimate": 0.810126582278481,
+                "lower": 0.7418943920774485,
+                "method": "Wilson score",
+                "successes": 128,
+                "trials": 158,
+                "upper": 0.863636481866139
+              }
+            },
+            "event_cluster_bootstrap": {
+              "cluster": "event_id",
+              "confidence": 0.95,
+              "event_clusters": 37,
+              "intervals": {
+                "availability_aware_station_recall": {
+                  "lower": 0.7315751879699249,
+                  "upper": 0.8790363173847152,
+                  "valid_replicates": 5000
+                },
+                "candidate_precision": {
+                  "lower": 0.9391877203290246,
+                  "upper": 1.0,
+                  "valid_replicates": 5000
+                },
+                "technical_availability": {
+                  "lower": 1.0,
+                  "upper": 1.0,
+                  "valid_replicates": 5000
+                },
+                "technical_station_recall": {
+                  "lower": 0.7315751879699249,
+                  "upper": 0.8790363173847152,
+                  "valid_replicates": 5000
+                }
+              },
+              "replicates": 5000,
+              "seed": 40524832
+            },
+            "stations": 158,
+            "technically_available": 158
+          },
+          "gt_50_to_100": {
+            "descriptive_wilson": {
+              "availability_aware_recall": {
+                "confidence": 0.95,
+                "estimate": 0.8424657534246576,
+                "lower": 0.7746984689092298,
+                "method": "Wilson score",
+                "successes": 123,
+                "trials": 146,
+                "upper": 0.8926735707588018
+              },
+              "technical_recall": {
+                "confidence": 0.95,
+                "estimate": 0.8424657534246576,
+                "lower": 0.7746984689092298,
+                "method": "Wilson score",
+                "successes": 123,
+                "trials": 146,
+                "upper": 0.8926735707588018
+              }
+            },
+            "event_cluster_bootstrap": {
+              "cluster": "event_id",
+              "confidence": 0.95,
+              "event_clusters": 36,
+              "intervals": {
+                "availability_aware_station_recall": {
+                  "lower": 0.7318796394485685,
+                  "upper": 0.9313759065269943,
+                  "valid_replicates": 5000
+                },
+                "candidate_precision": {
+                  "lower": 0.975,
+                  "upper": 1.0,
+                  "valid_replicates": 5000
+                },
+                "technical_availability": {
+                  "lower": 1.0,
+                  "upper": 1.0,
+                  "valid_replicates": 5000
+                },
+                "technical_station_recall": {
+                  "lower": 0.7318796394485685,
+                  "upper": 0.9313759065269943,
+                  "valid_replicates": 5000
+                }
+              },
+              "replicates": 5000,
+              "seed": 40524832
+            },
+            "stations": 146,
+            "technically_available": 146
+          }
+        },
+        "magnitude": {
+          "4_to_lt_5": {
+            "descriptive_wilson": {
+              "availability_aware_recall": {
+                "confidence": 0.95,
+                "estimate": 0.8555555555555555,
+                "lower": 0.820064026185695,
+                "method": "Wilson score",
+                "successes": 385,
+                "trials": 450,
+                "upper": 0.8850280137339702
+              },
+              "technical_recall": {
+                "confidence": 0.95,
+                "estimate": 0.8555555555555555,
+                "lower": 0.820064026185695,
+                "method": "Wilson score",
+                "successes": 385,
+                "trials": 450,
+                "upper": 0.8850280137339702
+              }
+            },
+            "event_cluster_bootstrap": {
+              "cluster": "event_id",
+              "confidence": 0.95,
+              "event_clusters": 59,
+              "intervals": {
+                "availability_aware_station_recall": {
+                  "lower": 0.8061668801616314,
+                  "upper": 0.8981675820884519,
+                  "valid_replicates": 5000
+                },
+                "candidate_precision": {
+                  "lower": 0.9791033054622177,
+                  "upper": 1.0,
+                  "valid_replicates": 5000
+                },
+                "technical_availability": {
+                  "lower": 1.0,
+                  "upper": 1.0,
+                  "valid_replicates": 5000
+                },
+                "technical_station_recall": {
+                  "lower": 0.8061668801616314,
+                  "upper": 0.8981675820884519,
+                  "valid_replicates": 5000
+                }
+              },
+              "replicates": 5000,
+              "seed": 40523832
+            },
+            "stations": 450,
+            "technically_available": 450
+          },
+          "ge_5": {
+            "descriptive_wilson": {
+              "availability_aware_recall": {
+                "confidence": 0.95,
+                "estimate": 0.8780487804878049,
+                "lower": 0.7445578847902312,
+                "method": "Wilson score",
+                "successes": 36,
+                "trials": 41,
+                "upper": 0.9467666353142228
+              },
+              "technical_recall": {
+                "confidence": 0.95,
+                "estimate": 0.8780487804878049,
+                "lower": 0.7445578847902312,
+                "method": "Wilson score",
+                "successes": 36,
+                "trials": 41,
+                "upper": 0.9467666353142228
+              }
+            },
+            "event_cluster_bootstrap": {
+              "cluster": "event_id",
+              "confidence": 0.95,
+              "event_clusters": 5,
+              "intervals": {
+                "availability_aware_station_recall": {
+                  "lower": 0.813953488372093,
+                  "upper": 0.9655172413793104,
+                  "valid_replicates": 5000
+                },
+                "candidate_precision": {
+                  "lower": 0.9347826086956522,
+                  "upper": 1.0,
+                  "valid_replicates": 5000
+                },
+                "technical_availability": {
+                  "lower": 1.0,
+                  "upper": 1.0,
+                  "valid_replicates": 5000
+                },
+                "technical_station_recall": {
+                  "lower": 0.813953488372093,
+                  "upper": 0.9655172413793104,
+                  "valid_replicates": 5000
+                }
+              },
+              "replicates": 5000,
+              "seed": 40523832
+            },
+            "stations": 41,
+            "technically_available": 41
+          }
+        },
+        "snr": {
+          "0_to_lt_10_db": {
+            "descriptive_wilson": {
+              "availability_aware_recall": {
+                "confidence": 0.95,
+                "estimate": 0.5769230769230769,
+                "lower": 0.4419432537390302,
+                "method": "Wilson score",
+                "successes": 30,
+                "trials": 52,
+                "upper": 0.7013194791649908
+              },
+              "technical_recall": {
+                "confidence": 0.95,
+                "estimate": 0.5769230769230769,
+                "lower": 0.4419432537390302,
+                "method": "Wilson score",
+                "successes": 30,
+                "trials": 52,
+                "upper": 0.7013194791649908
+              }
+            },
+            "event_cluster_bootstrap": {
+              "cluster": "event_id",
+              "confidence": 0.95,
+              "event_clusters": 29,
+              "intervals": {
+                "availability_aware_station_recall": {
+                  "lower": 0.38095238095238093,
+                  "upper": 0.7636363636363637,
+                  "valid_replicates": 5000
+                },
+                "candidate_precision": {
+                  "lower": 0.90625,
+                  "upper": 1.0,
+                  "valid_replicates": 5000
+                },
+                "technical_availability": {
+                  "lower": 1.0,
+                  "upper": 1.0,
+                  "valid_replicates": 5000
+                },
+                "technical_station_recall": {
+                  "lower": 0.38095238095238093,
+                  "upper": 0.7636363636363637,
+                  "valid_replicates": 5000
+                }
+              },
+              "replicates": 5000,
+              "seed": 40522832
+            },
+            "stations": 52,
+            "technically_available": 52
+          },
+          "ge_10_db": {
+            "descriptive_wilson": {
+              "availability_aware_recall": {
+                "confidence": 0.95,
+                "estimate": 0.9156626506024096,
+                "lower": 0.8849652439116164,
+                "method": "Wilson score",
+                "successes": 380,
+                "trials": 415,
+                "upper": 0.9387354493564165
+              },
+              "technical_recall": {
+                "confidence": 0.95,
+                "estimate": 0.9156626506024096,
+                "lower": 0.8849652439116164,
+                "method": "Wilson score",
+                "successes": 380,
+                "trials": 415,
+                "upper": 0.9387354493564165
+              }
+            },
+            "event_cluster_bootstrap": {
+              "cluster": "event_id",
+              "confidence": 0.95,
+              "event_clusters": 63,
+              "intervals": {
+                "availability_aware_station_recall": {
+                  "lower": 0.8855140186915887,
+                  "upper": 0.9439040159798149,
+                  "valid_replicates": 5000
+                },
+                "candidate_precision": {
+                  "lower": 0.9863378621154278,
+                  "upper": 1.0,
+                  "valid_replicates": 5000
+                },
+                "technical_availability": {
+                  "lower": 1.0,
+                  "upper": 1.0,
+                  "valid_replicates": 5000
+                },
+                "technical_station_recall": {
+                  "lower": 0.8855140186915887,
+                  "upper": 0.9439040159798149,
+                  "valid_replicates": 5000
+                }
+              },
+              "replicates": 5000,
+              "seed": 40522832
+            },
+            "stations": 415,
+            "technically_available": 415
+          },
+          "lt_0_db": {
+            "descriptive_wilson": {
+              "availability_aware_recall": {
+                "confidence": 0.95,
+                "estimate": 0.4583333333333333,
+                "lower": 0.2789133373121099,
+                "method": "Wilson score",
+                "successes": 11,
+                "trials": 24,
+                "upper": 0.6492513464108051
+              },
+              "technical_recall": {
+                "confidence": 0.95,
+                "estimate": 0.4583333333333333,
+                "lower": 0.2789133373121099,
+                "method": "Wilson score",
+                "successes": 11,
+                "trials": 24,
+                "upper": 0.6492513464108051
+              }
+            },
+            "event_cluster_bootstrap": {
+              "cluster": "event_id",
+              "confidence": 0.95,
+              "event_clusters": 18,
+              "intervals": {
+                "availability_aware_station_recall": {
+                  "lower": 0.19047619047619047,
+                  "upper": 0.7037037037037037,
+                  "valid_replicates": 5000
+                },
+                "candidate_precision": {
+                  "lower": 0.6666666666666666,
+                  "upper": 1.0,
+                  "valid_replicates": 4998
+                },
+                "technical_availability": {
+                  "lower": 1.0,
+                  "upper": 1.0,
+                  "valid_replicates": 5000
+                },
+                "technical_station_recall": {
+                  "lower": 0.19047619047619047,
+                  "upper": 0.7037037037037037,
+                  "valid_replicates": 5000
+                }
+              },
+              "replicates": 5000,
+              "seed": 40522832
+            },
+            "stations": 24,
+            "technically_available": 24
+          }
+        }
+      },
+      "quiet_background_date_cluster_bootstrap": {
+        "cluster": "date_utc",
+        "confidence": 0.95,
+        "intervals": {
+          "candidate_rate_per_station_day": {
+            "lower": 0.9639826346388007,
+            "upper": 1.576606834920737,
+            "valid_replicates": 5000
+          },
+          "network_confirmation_rate_per_minimum_three_station_day": {
+            "lower": 0.0,
+            "upper": 0.0,
+            "valid_replicates": 5000
+          }
+        },
+        "replicates": 5000,
+        "seed": 40621832
+      },
+      "quiet_background_metrics": {
+        "minimum_three_station_exposure_days": 36.99932969388035,
+        "quiet_background_candidate_rate_per_station_day": {
+          "confidence": 0.95,
+          "count": 277,
+          "exposure": 221.9944139824504,
+          "lower": 1.1051491126290363,
+          "method": "exact Poisson chi-square",
+          "rate": 1.2477791446675681,
+          "upper": 1.403709787783978
+        },
+        "quiet_background_network_confirmation_rate_per_minimum_three_station_day": {
+          "confidence": 0.95,
+          "count": 0,
+          "exposure": 36.99932969388035,
+          "lower": 0.0,
+          "method": "exact Poisson chi-square",
+          "rate": 0.0,
+          "upper": 0.09970125093169115
+        },
+        "scoring_dates": 37,
+        "station_date_records": 222,
+        "station_exposure_days": 221.9944139824504
+      },
+      "quiet_background_panel_diagnostics": {
+        "date_count": 37,
+        "leave_one_station_out": [
+          {
+            "candidate_count": 266,
+            "candidate_rate_per_station_day": 1.4378667752590246,
+            "omitted_station_key": "NZ.CTZ.21",
+            "station_exposure_days": 184.99627682966764
+          },
+          {
+            "candidate_count": 231,
+            "candidate_rate_per_station_day": 1.2486807817828143,
+            "omitted_station_key": "NZ.GOVS.20",
+            "station_exposure_days": 184.99523927179197
+          },
+          {
+            "candidate_count": 209,
+            "candidate_rate_per_station_day": 1.1297598649231928,
+            "omitted_station_key": "NZ.HNPS.21",
+            "station_exposure_days": 184.99506531346725
+          },
+          {
+            "candidate_count": 137,
+            "candidate_rate_per_station_day": 0.740560595393834,
+            "omitted_station_key": "NZ.ORPS.20",
+            "station_exposure_days": 184.99499008199683
+          },
+          {
+            "candidate_count": 276,
+            "candidate_rate_per_station_day": 1.4919313464864477,
+            "omitted_station_key": "NZ.OUZ.21",
+            "station_exposure_days": 184.99510761670768
+          },
+          {
+            "candidate_count": 266,
+            "candidate_rate_per_station_day": 1.4378736618879233,
+            "omitted_station_key": "NZ.TSFS.20",
+            "station_exposure_days": 184.99539079862058
+          }
+        ],
+        "maximum_date_candidate_share": 0.10469314079422383,
+        "maximum_station_candidate_share": 0.5054151624548736,
+        "per_date": [
+          {
+            "candidate_count": 14,
+            "candidate_rate_per_station_day": 2.333385221357287,
+            "date_utc": "2026-01-05",
+            "station_exposure_days": 5.999866576619723
+          },
+          {
+            "candidate_count": 8,
+            "candidate_rate_per_station_day": 1.3333594204616168,
+            "date_utc": "2026-01-09",
+            "station_exposure_days": 5.999882610219496
+          },
+          {
+            "candidate_count": 5,
+            "candidate_rate_per_station_day": 0.8333489116066003,
+            "date_utc": "2026-01-16",
+            "station_exposure_days": 5.999887838529216
+          },
+          {
+            "candidate_count": 5,
+            "candidate_rate_per_station_day": 0.8333498396818985,
+            "date_utc": "2026-01-27",
+            "station_exposure_days": 5.999881156644335
+          },
+          {
+            "candidate_count": 5,
+            "candidate_rate_per_station_day": 0.833342760370626,
+            "date_utc": "2026-01-30",
+            "station_exposure_days": 5.999932126099313
+          },
+          {
+            "candidate_count": 3,
+            "candidate_rate_per_station_day": 0.5000095638744321,
+            "date_utc": "2026-01-31",
+            "station_exposure_days": 5.999885235701998
+          },
+          {
+            "candidate_count": 3,
+            "candidate_rate_per_station_day": 0.5000110891570554,
+            "date_utc": "2026-02-01",
+            "station_exposure_days": 5.999866933066536
+          },
+          {
+            "candidate_count": 7,
+            "candidate_rate_per_station_day": 1.1666900681141343,
+            "date_utc": "2026-02-12",
+            "station_exposure_days": 5.999879652112722
+          },
+          {
+            "candidate_count": 7,
+            "candidate_rate_per_station_day": 1.1666916703835097,
+            "date_utc": "2026-02-24",
+            "station_exposure_days": 5.999871412212098
+          },
+          {
+            "candidate_count": 5,
+            "candidate_rate_per_station_day": 0.8333471138707063,
+            "date_utc": "2026-03-02",
+            "station_exposure_days": 5.999900781771651
+          },
+          {
+            "candidate_count": 3,
+            "candidate_rate_per_station_day": 0.5000099173506461,
+            "date_utc": "2026-03-06",
+            "station_exposure_days": 5.999880994152692
+          },
+          {
+            "candidate_count": 5,
+            "candidate_rate_per_station_day": 0.8333489603806019,
+            "date_utc": "2026-03-07",
+            "station_exposure_days": 5.999887487369555
+          },
+          {
+            "candidate_count": 11,
+            "candidate_rate_per_station_day": 1.8337782720344482,
+            "date_utc": "2026-03-10",
+            "station_exposure_days": 5.998544190294213
+          },
+          {
+            "candidate_count": 1,
+            "candidate_rate_per_station_day": 0.16666989401690266,
+            "date_utc": "2026-03-14",
+            "station_exposure_days": 5.999883817641272
+          },
+          {
+            "candidate_count": 1,
+            "candidate_rate_per_station_day": 0.166670437079256,
+            "date_utc": "2026-03-17",
+            "station_exposure_days": 5.999864268217373
+          },
+          {
+            "candidate_count": 7,
+            "candidate_rate_per_station_day": 1.1666827409912433,
+            "date_utc": "2026-03-18",
+            "station_exposure_days": 5.999917333184017
+          },
+          {
+            "candidate_count": 13,
+            "candidate_rate_per_station_day": 2.1667024213734374,
+            "date_utc": "2026-03-25",
+            "station_exposure_days": 5.9999009885997685
+          },
+          {
+            "candidate_count": 16,
+            "candidate_rate_per_station_day": 2.6667092594623236,
+            "date_utc": "2026-03-27",
+            "station_exposure_days": 5.999904167740433
+          },
+          {
+            "candidate_count": 29,
+            "candidate_rate_per_station_day": 4.83342859506039,
+            "date_utc": "2026-03-28",
+            "station_exposure_days": 5.999881746393663
+          },
+          {
+            "candidate_count": 6,
+            "candidate_rate_per_station_day": 1.0000167707618453,
+            "date_utc": "2026-03-30",
+            "station_exposure_days": 5.999899377116451
+          },
+          {
+            "candidate_count": 7,
+            "candidate_rate_per_station_day": 1.166686340227739,
+            "date_utc": "2026-04-03",
+            "station_exposure_days": 5.99989882339206
+          },
+          {
+            "candidate_count": 13,
+            "candidate_rate_per_station_day": 2.166703274748821,
+            "date_utc": "2026-04-18",
+            "station_exposure_days": 5.999898625485323
+          },
+          {
+            "candidate_count": 2,
+            "candidate_rate_per_station_day": 0.33333937976301053,
+            "date_utc": "2026-04-20",
+            "station_exposure_days": 5.999891166239977
+          },
+          {
+            "candidate_count": 4,
+            "candidate_rate_per_station_day": 0.6666825025034463,
+            "date_utc": "2026-04-23",
+            "station_exposure_days": 5.999857480854348
+          },
+          {
+            "candidate_count": 2,
+            "candidate_rate_per_station_day": 0.333340235480255,
+            "date_utc": "2026-04-25",
+            "station_exposure_days": 5.999875763927897
+          },
+          {
+            "candidate_count": 1,
+            "candidate_rate_per_station_day": 0.16666992577531858,
+            "date_utc": "2026-05-01",
+            "station_exposure_days": 5.999882674382793
+          },
+          {
+            "candidate_count": 21,
+            "candidate_rate_per_station_day": 3.5000828356190783,
+            "date_utc": "2026-05-16",
+            "station_exposure_days": 5.999857999442352
+          },
+          {
+            "candidate_count": 3,
+            "candidate_rate_per_station_day": 0.5000099523387213,
+            "date_utc": "2026-05-19",
+            "station_exposure_days": 5.999880574312475
+          },
+          {
+            "candidate_count": 7,
+            "candidate_rate_per_station_day": 1.1666913790021116,
+            "date_utc": "2026-05-26",
+            "station_exposure_days": 5.999872910681146
+          },
+          {
+            "candidate_count": 6,
+            "candidate_rate_per_station_day": 1.0000178733654743,
+            "date_utc": "2026-05-28",
+            "station_exposure_days": 5.999892761723863
+          },
+          {
+            "candidate_count": 10,
+            "candidate_rate_per_station_day": 1.6666976186534137,
+            "date_utc": "2026-06-02",
+            "station_exposure_days": 5.999888574917008
+          },
+          {
+            "candidate_count": 9,
+            "candidate_rate_per_station_day": 1.500031776047234,
+            "date_utc": "2026-06-04",
+            "station_exposure_days": 5.999872898503586
+          },
+          {
+            "candidate_count": 6,
+            "candidate_rate_per_station_day": 1.0000188802836012,
+            "date_utc": "2026-06-20",
+            "station_exposure_days": 5.999886720437143
+          },
+          {
+            "candidate_count": 7,
+            "candidate_rate_per_station_day": 1.1666898444458271,
+            "date_utc": "2026-06-21",
+            "station_exposure_days": 5.999880802360949
+          },
+          {
+            "candidate_count": 8,
+            "candidate_rate_per_station_day": 1.3333564378179386,
+            "date_utc": "2026-06-23",
+            "station_exposure_days": 5.999896031620878
+          },
+          {
+            "candidate_count": 3,
+            "candidate_rate_per_station_day": 0.5000103903090257,
+            "date_utc": "2026-06-25",
+            "station_exposure_days": 5.999875318882642
+          },
+          {
+            "candidate_count": 14,
+            "candidate_rate_per_station_day": 2.3333776046624006,
+            "date_utc": "2026-06-30",
+            "station_exposure_days": 5.999886161599446
+          }
+        ],
+        "per_station": [
+          {
+            "candidate_count": 11,
+            "candidate_rate_per_station_day": 0.2973122661439903,
+            "station_exposure_days": 36.998137152782746,
+            "station_key": "NZ.CTZ.21"
+          },
+          {
+            "candidate_count": 46,
+            "candidate_rate_per_station_day": 1.243270974548216,
+            "station_exposure_days": 36.999174710658416,
+            "station_key": "NZ.GOVS.20"
+          },
+          {
+            "candidate_count": 68,
+            "candidate_rate_per_station_day": 1.8378701908610884,
+            "station_exposure_days": 36.99934866898314,
+            "station_key": "NZ.HNPS.21"
+          },
+          {
+            "candidate_count": 140,
+            "candidate_rate_per_station_day": 3.7838426991908847,
+            "station_exposure_days": 36.99942390045358,
+            "station_key": "NZ.ORPS.20"
+          },
+          {
+            "candidate_count": 1,
+            "candidate_rate_per_station_day": 0.027027533708737027,
+            "station_exposure_days": 36.999306365742726,
+            "station_key": "NZ.OUZ.21"
+          },
+          {
+            "candidate_count": 11,
+            "candidate_rate_per_station_day": 0.2973051462830911,
+            "station_exposure_days": 36.999023183829806,
+            "station_key": "NZ.TSFS.20"
+          }
+        ],
+        "scope": "conditional_on_fixed_station_panel",
+        "station_count": 6
+      },
+      "seed": 20261103,
+      "snr_diagnostic": {
+        "invalid_or_unavailable": 0,
+        "left_censored_at_minus_120_db": 6
+      },
+      "station_cluster_sensitivity": {
+        "cluster": "station_key",
+        "confidence": 0.95,
+        "intervals": {
+          "event_record_candidate_precision": {
+            "lower": 0.9782082324455206,
+            "upper": 1.0,
+            "valid_replicates": 5000
+          },
+          "overall_station_record_recall": {
+            "lower": 0.8170448499680784,
+            "upper": 0.8907271757150752,
+            "valid_replicates": 5000
+          },
+          "technical_station_record_recall": {
+            "lower": 0.8170448499680784,
+            "upper": 0.8907271757150752,
+            "valid_replicates": 5000
+          }
+        },
+        "replicates": 5000,
+        "role": "secondary_dependence_sensitivity",
+        "seed": 41121832,
+        "station_clusters": 165
+      }
+    }
+  },
+  "analysis_amendment_disclosure": {
+    "claim_boundary": "A2 is reported as a transparent post hoc statistical correction, not as a blinded or fully prespecified analysis.",
+    "prespecification_status": "post_hoc_statistical_amendment_after_provisional_event_metric_inspection",
+    "reason": "The review identified that nonparametric event resampling gives a degenerate [1, 1] interval when every catalog event is hit. A2 replaces that interval with event-level Wilson uncertainty and adds dependence and panel diagnostics.",
+    "timing": "Provisional event-derived aggregate metrics were inspected during internal statistical review before A2 was frozen. The complete event-plus-continuous-background final analysis did not yet exist.",
+    "unchanged": [
+      "model parameters and seed identities",
+      "candidate and confirmation thresholds",
+      "event and continuous-waveform cohorts",
+      "waveform score caches",
+      "candidate matching and point estimates",
+      "primary station-record and continuous-rate estimands"
+    ]
+  },
+  "analysis_corrections": {
+    "catalog_event_hit_interval": {
+      "estimand": "Fraction of catalog events with at least one matched positive-time-weight P-reference station.",
+      "excluded_from_event_cluster_bootstrap": true,
+      "method": "event-level Wilson score interval",
+      "reason": "A nonparametric event bootstrap degenerates to [1, 1] when every observed event is hit and would incorrectly express zero binomial uncertainty."
+    },
+    "continuous_panel_sensitivity": {
+      "interpretation": "All date-resampling intervals are conditional on the fixed six-station panel.",
+      "outputs": [
+        "per-station candidate count, exposure, and rate",
+        "per-date candidate count, exposure, and rate",
+        "leave-one-station-out candidate rates",
+        "maximum station and date candidate shares"
+      ],
+      "role": "secondary_fixed_panel_diagnostic"
+    },
+    "hit_windows": {
+      "denominator": "Every frozen positive-weight station reference, with pre-scoring technical unavailability retained as a miss. A scoring exception aborts the evaluation instead of being converted to a record-level miss.",
+      "rule": "Select the nearest candidate within the frozen +/-1.5 s endpoint once, then report nested absolute pick-error indicators at 0.5, 1.0, and 1.5 s.",
+      "seconds": [
+        0.5,
+        1.0,
+        1.5
+      ]
+    },
+    "network_confirmation": {
+      "candidate_grouping": "Sort all station candidates by estimated P epoch. Starting at the earliest remaining candidate, form an inclusive 10 s estimated-P window. Count at most one confirmation and skip the whole window when it contains at least three distinct stations; otherwise advance one candidate.",
+      "contributing_station_rule": "Within a qualifying group, retain each station's earliest-available candidate and choose the first three by available epoch, station key, then estimated P epoch.",
+      "denominator": "The original post-quarantine exact time with at least three stations simultaneously available.",
+      "estimated_p_window_seconds": 10.0,
+      "exposure_alignment": "Retain a grouped confirmation in the rate numerator only when the three stations contributing the selected candidates all have quality-valid masks at its release epoch. Other valid stations cannot substitute for a contributing station. Report the unrestricted grouped count as a diagnostic.",
+      "minimum_distinct_stations": 3,
+      "release_epoch": "Available epoch of the third selected distinct-station candidate.",
+      "role": "secondary_candidate_suppression_diagnostic"
+    },
+    "seed_robustness": "Report the availability-aware primary-station recall range in addition to event hit and background candidate ranges.",
+    "snr_strata": {
+      "left_censor_reporting": "Report the count left-censored at -120 dB when post-P excess power is nonpositive.",
+      "technical_unavailability": "Map pre-scoring technical unavailability to the declared invalid-or-unavailable stratum."
+    },
+    "station_cluster_sensitivity": {
+      "interpretation": "Complements the primary event-cluster analysis by measuring sensitivity to repeated stations; neither interval is a claim of network-population sampling.",
+      "method": "Resample station keys with replacement and retain all primary P-reference rows for each sampled station.",
+      "role": "secondary_dependence_sensitivity"
+    }
+  },
+  "analysis_protocol": {
+    "bytes": 7559,
+    "path": "work_artifacts/protocol_freeze/cspp_v27c_geonet_final_analysis_protocol_a2_20260729.json",
+    "sha256": "08475cf9416a113ed7aeb2022549cee97e38e9d9669fadedb7c727c88a7fe36d"
+  },
+  "analysis_protocol_sha256": "08475cf9416a113ed7aeb2022549cee97e38e9d9669fadedb7c727c88a7fe36d",
+  "artifacts": {
+    "background_network_results": {
+      "bytes": 7470,
+      "path": "work_artifacts/evaluation/cspp_v27c_geonet_final_analysis_a2_20260729/background_network_results.csv",
+      "sha256": "8fd88ee206e80fb47bbb8756a3b4925d204334882b7b01772cb5cf2a0c6e736b"
+    },
+    "background_score_completion": {
+      "bytes": 10853,
+      "path": "work_artifacts/evaluation/cspp_v27c_geonet_final_20260729/score_cache/background_score_cache_complete.json",
+      "sha256": "c7603a9fd7b5fcd7fb1d650b21553d2f494078bec0ec38746aaa1e24ef2db6e2"
+    },
+    "background_station_results": {
+      "bytes": 48257,
+      "path": "work_artifacts/evaluation/cspp_v27c_geonet_final_analysis_a2_20260729/background_station_results.csv",
+      "sha256": "619bdde73a6543941069e2e658397e0f94be0f6d6c0a19561230842d2b4c5dde"
+    },
+    "event_level_results": {
+      "bytes": 13264,
+      "path": "work_artifacts/evaluation/cspp_v27c_geonet_final_analysis_a2_20260729/event_level_results.csv",
+      "sha256": "9751857a1c8fa98db26b2b13432bd85efa5f042d738530dcc3cf80a492a8aa10"
+    },
+    "event_score_completion": {
+      "bytes": 17764,
+      "path": "work_artifacts/evaluation/cspp_v27c_geonet_final_20260729/score_cache/event_score_cache_complete.json",
+      "sha256": "e30c711d179e3bc340063e9a84f5db4173edf1403a8c2eb802271fe2b7a15943"
+    },
+    "event_station_results": {
+      "bytes": 456954,
+      "path": "work_artifacts/evaluation/cspp_v27c_geonet_final_analysis_a2_20260729/event_station_results.csv",
+      "sha256": "b118f548115999e8b569c1de9c8a03729ef03642ab699a73ea49c6bcdca40548"
+    }
+  },
+  "claim_boundary": {
+    "background": "Quiet-background records estimate candidate and network-confirmation rates over measured station/network exposure.",
+    "final_holdout": "The 2026 GeoNet period is accessed only after development arm, threshold, and primary seed were sealed.",
+    "network_confirmation": "Three-station temporal confirmation is secondary and does not define the primary record-level picker result.",
+    "technical_availability": "Model performance on technically scorable stations and availability-aware operational performance use separate denominators."
+  },
+  "completed_at_utc": "2026-07-29T23:46:39.100178+00:00",
+  "evidence_counts": {
+    "event_level_rows": 192,
+    "event_station_rows": 1920,
+    "quiet_background_network_rows": 111,
+    "quiet_background_station_rows": 666
+  },
+  "operating_point": {
+    "candidate_threshold": 0.1,
+    "count": 1,
+    "event_threshold": 0.975,
+    "model_or_threshold_selection_on_final_holdout": false,
+    "selected_arm": "C0",
+    "threshold_scan_permitted": false
+  },
+  "primary_seed_headline": {
+    "diagnostic_label_strata": {
+      "authoritative_p_zero_weight": {
+        "descriptive_metrics": {
+          "availability_aware_station_recall_descriptive_wilson": {
+            "confidence": 0.95,
+            "estimate": 0.9285714285714286,
+            "lower": 0.6853129557584889,
+            "method": "Wilson score",
+            "successes": 13,
+            "trials": 14,
+            "upper": 0.9872777847521093
+          },
+          "candidate_precision_on_this_reference_stratum_descriptive_wilson": {
+            "confidence": 0.95,
+            "estimate": 1.0,
+            "lower": 0.7719046276458016,
+            "method": "Wilson score",
+            "successes": 13,
+            "trials": 13,
+            "upper": 0.9999999999999999
+          },
+          "median_absolute_pick_error_seconds": 0.18199658393859863,
+          "stations": 14,
+          "technical_availability": {
+            "confidence": 0.95,
+            "estimate": 1.0,
+            "lower": 0.7846891972623643,
+            "method": "Wilson score",
+            "successes": 14,
+            "trials": 14,
+            "upper": 1.0
+          },
+          "technical_station_recall_descriptive_wilson": {
+            "confidence": 0.95,
+            "estimate": 0.9285714285714286,
+            "lower": 0.6853129557584889,
+            "method": "Wilson score",
+            "successes": 13,
+            "trials": 14,
+            "upper": 0.9872777847521093
+          },
+          "technically_available_stations": 14
+        },
+        "event_cluster_bootstrap": {
+          "cluster": "event_id",
+          "confidence": 0.95,
+          "event_clusters": 9,
+          "intervals": {
+            "availability_aware_station_recall": {
+              "lower": 0.75,
+              "upper": 1.0,
+              "valid_replicates": 5000
+            },
+            "candidate_precision": {
+              "lower": 1.0,
+              "upper": 1.0,
+              "valid_replicates": 5000
+            },
+            "technical_availability": {
+              "lower": 1.0,
+              "upper": 1.0,
+              "valid_replicates": 5000
+            },
+            "technical_station_recall": {
+              "lower": 0.75,
+              "upper": 1.0,
+              "valid_replicates": 5000
+            }
+          },
+          "replicates": 5000,
+          "seed": 40531830
+        }
+      },
+      "taup_iasp91_fallback": {
+        "descriptive_metrics": {
+          "availability_aware_station_recall_descriptive_wilson": {
+            "confidence": 0.95,
+            "estimate": 0.4148148148148148,
+            "lower": 0.3351853128153392,
+            "method": "Wilson score",
+            "successes": 56,
+            "trials": 135,
+            "upper": 0.4991581160469058
+          },
+          "candidate_precision_on_this_reference_stratum_descriptive_wilson": {
+            "confidence": 0.95,
+            "estimate": 0.7,
+            "lower": 0.5923184607866026,
+            "method": "Wilson score",
+            "successes": 56,
+            "trials": 80,
+            "upper": 0.7893542873991866
+          },
+          "median_absolute_pick_error_seconds": 0.7555902004241943,
+          "stations": 135,
+          "technical_availability": {
+            "confidence": 0.95,
+            "estimate": 1.0,
+            "lower": 0.9723320479824751,
+            "method": "Wilson score",
+            "successes": 135,
+            "trials": 135,
+            "upper": 1.0
+          },
+          "technical_station_recall_descriptive_wilson": {
+            "confidence": 0.95,
+            "estimate": 0.4148148148148148,
+            "lower": 0.3351853128153392,
+            "method": "Wilson score",
+            "successes": 56,
+            "trials": 135,
+            "upper": 0.4991581160469058
+          },
+          "technically_available_stations": 135
+        },
+        "event_cluster_bootstrap": {
+          "cluster": "event_id",
+          "confidence": 0.95,
+          "event_clusters": 38,
+          "intervals": {
+            "availability_aware_station_recall": {
+              "lower": 0.30275229357798167,
+              "upper": 0.5111111111111111,
+              "valid_replicates": 5000
+            },
+            "candidate_precision": {
+              "lower": 0.5405327741534639,
+              "upper": 0.8600116279069766,
+              "valid_replicates": 5000
+            },
+            "technical_availability": {
+              "lower": 1.0,
+              "upper": 1.0,
+              "valid_replicates": 5000
+            },
+            "technical_station_recall": {
+              "lower": 0.30275229357798167,
+              "upper": 0.5111111111111111,
+              "valid_replicates": 5000
+            }
+          },
+          "replicates": 5000,
+          "seed": 40531831
+        }
+      }
+    },
+    "event_and_station_metrics": {
+      "availability_aware_station_recall_descriptive_wilson": {
+        "confidence": 0.95,
+        "estimate": 0.8635437881873728,
+        "lower": 0.8303451879554513,
+        "method": "Wilson score",
+        "successes": 424,
+        "trials": 491,
+        "upper": 0.8910980008404152
+      },
+      "candidate_precision_on_positive_weight_reference_stations_descriptive_wilson": {
+        "confidence": 0.95,
+        "estimate": 0.986046511627907,
+        "lower": 0.9698958861758306,
+        "method": "Wilson score",
+        "successes": 424,
+        "trials": 430,
+        "upper": 0.9935897178423844
+      },
+      "catalog_event_any_positive_weight_reference_station_hit_descriptive_wilson": {
+        "confidence": 0.95,
+        "estimate": 1.0,
+        "lower": 0.9433759402071946,
+        "method": "Wilson score",
+        "successes": 64,
+        "trials": 64,
+        "upper": 1.0
+      },
+      "catalog_event_any_station_hit_when_technically_available": {
+        "confidence": 0.95,
+        "estimate": 1.0,
+        "lower": 0.9433759402071946,
+        "method": "Wilson score",
+        "successes": 64,
+        "trials": 64,
+        "upper": 1.0
+      },
+      "event_availability": {
+        "confidence": 0.95,
+        "estimate": 1.0,
+        "lower": 0.9433759402071946,
+        "method": "Wilson score",
+        "successes": 64,
+        "trials": 64,
+        "upper": 1.0
+      },
+      "false_candidate_count": 6,
+      "median_absolute_pick_error_seconds": 0.12201929092407227,
+      "median_availability_delay_seconds": 0.81369948387146,
+      "model_recall_on_technically_available_stations_descriptive_wilson": {
+        "confidence": 0.95,
+        "estimate": 0.8635437881873728,
+        "lower": 0.8303451879554513,
+        "method": "Wilson score",
+        "successes": 424,
+        "trials": 491,
+        "upper": 0.8910980008404152
+      },
+      "nested_hit_windows": {
+        "within_0.5_seconds": {
+          "availability_aware_descriptive_wilson": {
+            "confidence": 0.95,
+            "estimate": 0.8289205702647657,
+            "lower": 0.7930895062147462,
+            "method": "Wilson score",
+            "successes": 407,
+            "trials": 491,
+            "upper": 0.8596448074577042
+          },
+          "technically_available_descriptive_wilson": {
+            "confidence": 0.95,
+            "estimate": 0.8289205702647657,
+            "lower": 0.7930895062147462,
+            "method": "Wilson score",
+            "successes": 407,
+            "trials": 491,
+            "upper": 0.8596448074577042
+          }
+        },
+        "within_1.0_seconds": {
+          "availability_aware_descriptive_wilson": {
+            "confidence": 0.95,
+            "estimate": 0.8594704684317719,
+            "lower": 0.8259323564809706,
+            "method": "Wilson score",
+            "successes": 422,
+            "trials": 491,
+            "upper": 0.8874274352415528
+          },
+          "technically_available_descriptive_wilson": {
+            "confidence": 0.95,
+            "estimate": 0.8594704684317719,
+            "lower": 0.8259323564809706,
+            "method": "Wilson score",
+            "successes": 422,
+            "trials": 491,
+            "upper": 0.8874274352415528
+          }
+        },
+        "within_1.5_seconds": {
+          "availability_aware_descriptive_wilson": {
+            "confidence": 0.95,
+            "estimate": 0.8635437881873728,
+            "lower": 0.8303451879554513,
+            "method": "Wilson score",
+            "successes": 424,
+            "trials": 491,
+            "upper": 0.8910980008404152
+          },
+          "technically_available_descriptive_wilson": {
+            "confidence": 0.95,
+            "estimate": 0.8635437881873728,
+            "lower": 0.8303451879554513,
+            "method": "Wilson score",
+            "successes": 424,
+            "trials": 491,
+            "upper": 0.8910980008404152
+          }
+        }
+      },
+      "positive_weight_reference_candidate_count": 430,
+      "primary_reference_stations": 491,
+      "station_f1_on_technically_available_stations": 0.9207383279044518,
+      "technical_station_availability": {
+        "confidence": 0.95,
+        "estimate": 1.0,
+        "lower": 0.9922369907528583,
+        "method": "Wilson score",
+        "successes": 491,
+        "trials": 491,
+        "upper": 1.0
+      },
+      "technically_available_primary_stations": 491
+    },
+    "event_cluster_bootstrap": {
+      "cluster": "event_id",
+      "confidence": 0.95,
+      "intervals": {
+        "availability_aware_station_recall": {
+          "lower": 0.8179959100204499,
+          "upper": 0.902834008097166,
+          "valid_replicates": 5000
+        },
+        "candidate_precision_on_positive_weight_reference_stations": {
+          "lower": 0.9705144348894349,
+          "upper": 0.9977220956719818,
+          "valid_replicates": 5000
+        },
+        "median_absolute_pick_error_seconds": {
+          "lower": 0.1121213436126709,
+          "upper": 0.13762688636779785,
+          "valid_replicates": 5000
+        },
+        "median_availability_delay_seconds": {
+          "lower": 0.7638999223709106,
+          "upper": 0.8615968227386475,
+          "valid_replicates": 5000
+        },
+        "technical_station_recall": {
+          "lower": 0.8179959100204499,
+          "upper": 0.902834008097166,
+          "valid_replicates": 5000
+        }
+      },
+      "nested_hit_windows": {
+        "cluster": "event_id",
+        "confidence": 0.95,
+        "intervals": {
+          "availability_aware_within_0.5_seconds": {
+            "lower": 0.7815827830061362,
+            "upper": 0.8704062939955133,
+            "valid_replicates": 5000
+          },
+          "availability_aware_within_1.0_seconds": {
+            "lower": 0.8137239678480088,
+            "upper": 0.8996064892226309,
+            "valid_replicates": 5000
+          },
+          "availability_aware_within_1.5_seconds": {
+            "lower": 0.8170961755454798,
+            "upper": 0.9031672373400612,
+            "valid_replicates": 5000
+          },
+          "technically_available_within_0.5_seconds": {
+            "lower": 0.7815827830061362,
+            "upper": 0.8704062939955133,
+            "valid_replicates": 5000
+          },
+          "technically_available_within_1.0_seconds": {
+            "lower": 0.8137239678480088,
+            "upper": 0.8996064892226309,
+            "valid_replicates": 5000
+          },
+          "technically_available_within_1.5_seconds": {
+            "lower": 0.8170961755454798,
+            "upper": 0.9031672373400612,
+            "valid_replicates": 5000
+          }
+        },
+        "replicates": 5000,
+        "seed": 41021830
+      },
+      "replicates": 5000,
+      "scope": "station-record and matched-record metrics; catalog-event hit uses an event-level Wilson score interval",
+      "seed": 40521830
+    },
+    "model_key": "C0_seed20261101",
+    "primary_seed": true,
+    "primary_station_strata": {
+      "distance": {
+        "0_to_50": {
+          "descriptive_wilson": {
+            "availability_aware_recall": {
+              "confidence": 0.95,
+              "estimate": 0.9197860962566845,
+              "lower": 0.8718835002843848,
+              "method": "Wilson score",
+              "successes": 172,
+              "trials": 187,
+              "upper": 0.950788894750648
+            },
+            "technical_recall": {
+              "confidence": 0.95,
+              "estimate": 0.9197860962566845,
+              "lower": 0.8718835002843848,
+              "method": "Wilson score",
+              "successes": 172,
+              "trials": 187,
+              "upper": 0.950788894750648
+            }
+          },
+          "event_cluster_bootstrap": {
+            "cluster": "event_id",
+            "confidence": 0.95,
+            "event_clusters": 32,
+            "intervals": {
+              "availability_aware_station_recall": {
+                "lower": 0.8900403109241,
+                "upper": 0.951223746612466,
+                "valid_replicates": 5000
+              },
+              "candidate_precision": {
+                "lower": 1.0,
+                "upper": 1.0,
+                "valid_replicates": 5000
+              },
+              "technical_availability": {
+                "lower": 1.0,
+                "upper": 1.0,
+                "valid_replicates": 5000
+              },
+              "technical_station_recall": {
+                "lower": 0.8900403109241,
+                "upper": 0.951223746612466,
+                "valid_replicates": 5000
+              }
+            },
+            "replicates": 5000,
+            "seed": 40524830
+          },
+          "stations": 187,
+          "technically_available": 187
+        },
+        "gt_100_to_200": {
+          "descriptive_wilson": {
+            "availability_aware_recall": {
+              "confidence": 0.95,
+              "estimate": 0.810126582278481,
+              "lower": 0.7418943920774485,
+              "method": "Wilson score",
+              "successes": 128,
+              "trials": 158,
+              "upper": 0.863636481866139
+            },
+            "technical_recall": {
+              "confidence": 0.95,
+              "estimate": 0.810126582278481,
+              "lower": 0.7418943920774485,
+              "method": "Wilson score",
+              "successes": 128,
+              "trials": 158,
+              "upper": 0.863636481866139
+            }
+          },
+          "event_cluster_bootstrap": {
+            "cluster": "event_id",
+            "confidence": 0.95,
+            "event_clusters": 37,
+            "intervals": {
+              "availability_aware_station_recall": {
+                "lower": 0.722883793237466,
+                "upper": 0.8888888888888888,
+                "valid_replicates": 5000
+              },
+              "candidate_precision": {
+                "lower": 0.9166666666666666,
+                "upper": 1.0,
+                "valid_replicates": 5000
+              },
+              "technical_availability": {
+                "lower": 1.0,
+                "upper": 1.0,
+                "valid_replicates": 5000
+              },
+              "technical_station_recall": {
+                "lower": 0.722883793237466,
+                "upper": 0.8888888888888888,
+                "valid_replicates": 5000
+              }
+            },
+            "replicates": 5000,
+            "seed": 40524830
+          },
+          "stations": 158,
+          "technically_available": 158
+        },
+        "gt_50_to_100": {
+          "descriptive_wilson": {
+            "availability_aware_recall": {
+              "confidence": 0.95,
+              "estimate": 0.8493150684931506,
+              "lower": 0.7823841219064486,
+              "method": "Wilson score",
+              "successes": 124,
+              "trials": 146,
+              "upper": 0.8983353585549435
+            },
+            "technical_recall": {
+              "confidence": 0.95,
+              "estimate": 0.8493150684931506,
+              "lower": 0.7823841219064486,
+              "method": "Wilson score",
+              "successes": 124,
+              "trials": 146,
+              "upper": 0.8983353585549435
+            }
+          },
+          "event_cluster_bootstrap": {
+            "cluster": "event_id",
+            "confidence": 0.95,
+            "event_clusters": 36,
+            "intervals": {
+              "availability_aware_station_recall": {
+                "lower": 0.7371621621621622,
+                "upper": 0.9371069182389937,
+                "valid_replicates": 5000
+              },
+              "candidate_precision": {
+                "lower": 0.9754047554531906,
+                "upper": 1.0,
+                "valid_replicates": 5000
+              },
+              "technical_availability": {
+                "lower": 1.0,
+                "upper": 1.0,
+                "valid_replicates": 5000
+              },
+              "technical_station_recall": {
+                "lower": 0.7371621621621622,
+                "upper": 0.9371069182389937,
+                "valid_replicates": 5000
+              }
+            },
+            "replicates": 5000,
+            "seed": 40524830
+          },
+          "stations": 146,
+          "technically_available": 146
+        }
+      },
+      "magnitude": {
+        "4_to_lt_5": {
+          "descriptive_wilson": {
+            "availability_aware_recall": {
+              "confidence": 0.95,
+              "estimate": 0.8622222222222222,
+              "lower": 0.8272984578559772,
+              "method": "Wilson score",
+              "successes": 388,
+              "trials": 450,
+              "upper": 0.8910140578121819
+            },
+            "technical_recall": {
+              "confidence": 0.95,
+              "estimate": 0.8622222222222222,
+              "lower": 0.8272984578559772,
+              "method": "Wilson score",
+              "successes": 388,
+              "trials": 450,
+              "upper": 0.8910140578121819
+            }
+          },
+          "event_cluster_bootstrap": {
+            "cluster": "event_id",
+            "confidence": 0.95,
+            "event_clusters": 59,
+            "intervals": {
+              "availability_aware_station_recall": {
+                "lower": 0.811490987460815,
+                "upper": 0.9038482532751091,
+                "valid_replicates": 5000
+              },
+              "candidate_precision": {
+                "lower": 0.9702970297029703,
+                "upper": 1.0,
+                "valid_replicates": 5000
+              },
+              "technical_availability": {
+                "lower": 1.0,
+                "upper": 1.0,
+                "valid_replicates": 5000
+              },
+              "technical_station_recall": {
+                "lower": 0.811490987460815,
+                "upper": 0.9038482532751091,
+                "valid_replicates": 5000
+              }
+            },
+            "replicates": 5000,
+            "seed": 40523830
+          },
+          "stations": 450,
+          "technically_available": 450
+        },
+        "ge_5": {
+          "descriptive_wilson": {
+            "availability_aware_recall": {
+              "confidence": 0.95,
+              "estimate": 0.8780487804878049,
+              "lower": 0.7445578847902312,
+              "method": "Wilson score",
+              "successes": 36,
+              "trials": 41,
+              "upper": 0.9467666353142228
+            },
+            "technical_recall": {
+              "confidence": 0.95,
+              "estimate": 0.8780487804878049,
+              "lower": 0.7445578847902312,
+              "method": "Wilson score",
+              "successes": 36,
+              "trials": 41,
+              "upper": 0.9467666353142228
+            }
+          },
+          "event_cluster_bootstrap": {
+            "cluster": "event_id",
+            "confidence": 0.95,
+            "event_clusters": 5,
+            "intervals": {
+              "availability_aware_station_recall": {
+                "lower": 0.8076923076923077,
+                "upper": 0.96875,
+                "valid_replicates": 5000
+              },
+              "candidate_precision": {
+                "lower": 0.9333333333333333,
+                "upper": 1.0,
+                "valid_replicates": 5000
+              },
+              "technical_availability": {
+                "lower": 1.0,
+                "upper": 1.0,
+                "valid_replicates": 5000
+              },
+              "technical_station_recall": {
+                "lower": 0.8076923076923077,
+                "upper": 0.96875,
+                "valid_replicates": 5000
+              }
+            },
+            "replicates": 5000,
+            "seed": 40523830
+          },
+          "stations": 41,
+          "technically_available": 41
+        }
+      },
+      "snr": {
+        "0_to_lt_10_db": {
+          "descriptive_wilson": {
+            "availability_aware_recall": {
+              "confidence": 0.95,
+              "estimate": 0.5576923076923077,
+              "lower": 0.42339761787202884,
+              "method": "Wilson score",
+              "successes": 29,
+              "trials": 52,
+              "upper": 0.6840494318059871
+            },
+            "technical_recall": {
+              "confidence": 0.95,
+              "estimate": 0.5576923076923077,
+              "lower": 0.42339761787202884,
+              "method": "Wilson score",
+              "successes": 29,
+              "trials": 52,
+              "upper": 0.6840494318059871
+            }
+          },
+          "event_cluster_bootstrap": {
+            "cluster": "event_id",
+            "confidence": 0.95,
+            "event_clusters": 29,
+            "intervals": {
+              "availability_aware_station_recall": {
+                "lower": 0.3548387096774194,
+                "upper": 0.7547169811320755,
+                "valid_replicates": 5000
+              },
+              "candidate_precision": {
+                "lower": 0.9032258064516129,
+                "upper": 1.0,
+                "valid_replicates": 5000
+              },
+              "technical_availability": {
+                "lower": 1.0,
+                "upper": 1.0,
+                "valid_replicates": 5000
+              },
+              "technical_station_recall": {
+                "lower": 0.3548387096774194,
+                "upper": 0.7547169811320755,
+                "valid_replicates": 5000
+              }
+            },
+            "replicates": 5000,
+            "seed": 40522830
+          },
+          "stations": 52,
+          "technically_available": 52
+        },
+        "ge_10_db": {
+          "descriptive_wilson": {
+            "availability_aware_recall": {
+              "confidence": 0.95,
+              "estimate": 0.9253012048192771,
+              "lower": 0.8959221101130037,
+              "method": "Wilson score",
+              "successes": 384,
+              "trials": 415,
+              "upper": 0.9468788890858821
+            },
+            "technical_recall": {
+              "confidence": 0.95,
+              "estimate": 0.9253012048192771,
+              "lower": 0.8959221101130037,
+              "method": "Wilson score",
+              "successes": 384,
+              "trials": 415,
+              "upper": 0.9468788890858821
+            }
+          },
+          "event_cluster_bootstrap": {
+            "cluster": "event_id",
+            "confidence": 0.95,
+            "event_clusters": 63,
+            "intervals": {
+              "availability_aware_station_recall": {
+                "lower": 0.8974358974358975,
+                "upper": 0.9511002444987775,
+                "valid_replicates": 5000
+              },
+              "candidate_precision": {
+                "lower": 0.9865951742627346,
+                "upper": 1.0,
+                "valid_replicates": 5000
+              },
+              "technical_availability": {
+                "lower": 1.0,
+                "upper": 1.0,
+                "valid_replicates": 5000
+              },
+              "technical_station_recall": {
+                "lower": 0.8974358974358975,
+                "upper": 0.9511002444987775,
+                "valid_replicates": 5000
+              }
+            },
+            "replicates": 5000,
+            "seed": 40522830
+          },
+          "stations": 415,
+          "technically_available": 415
+        },
+        "lt_0_db": {
+          "descriptive_wilson": {
+            "availability_aware_recall": {
+              "confidence": 0.95,
+              "estimate": 0.4583333333333333,
+              "lower": 0.2789133373121099,
+              "method": "Wilson score",
+              "successes": 11,
+              "trials": 24,
+              "upper": 0.6492513464108051
+            },
+            "technical_recall": {
+              "confidence": 0.95,
+              "estimate": 0.4583333333333333,
+              "lower": 0.2789133373121099,
+              "method": "Wilson score",
+              "successes": 11,
+              "trials": 24,
+              "upper": 0.6492513464108051
+            }
+          },
+          "event_cluster_bootstrap": {
+            "cluster": "event_id",
+            "confidence": 0.95,
+            "event_clusters": 18,
+            "intervals": {
+              "availability_aware_station_recall": {
+                "lower": 0.19047619047619047,
+                "upper": 0.7037037037037037,
+                "valid_replicates": 5000
+              },
+              "candidate_precision": {
+                "lower": 0.5,
+                "upper": 1.0,
+                "valid_replicates": 5000
+              },
+              "technical_availability": {
+                "lower": 1.0,
+                "upper": 1.0,
+                "valid_replicates": 5000
+              },
+              "technical_station_recall": {
+                "lower": 0.19047619047619047,
+                "upper": 0.7037037037037037,
+                "valid_replicates": 5000
+              }
+            },
+            "replicates": 5000,
+            "seed": 40522830
+          },
+          "stations": 24,
+          "technically_available": 24
+        }
+      }
+    },
+    "quiet_background_date_cluster_bootstrap": {
+      "cluster": "date_utc",
+      "confidence": 0.95,
+      "intervals": {
+        "candidate_rate_per_station_day": {
+          "lower": 1.3153488911971853,
+          "upper": 2.1353386194036204,
+          "valid_replicates": 5000
+        },
+        "network_confirmation_rate_per_minimum_three_station_day": {
+          "lower": 0.0,
+          "upper": 0.0,
+          "valid_replicates": 5000
+        }
+      },
+      "replicates": 5000,
+      "seed": 40621830
+    },
+    "quiet_background_metrics": {
+      "minimum_three_station_exposure_days": 36.99932969388035,
+      "quiet_background_candidate_rate_per_station_day": {
+        "confidence": 0.95,
+        "count": 377,
+        "exposure": 221.9944139824504,
+        "lower": 1.531120540110532,
+        "method": "exact Poisson chi-square",
+        "rate": 1.6982409297461127,
+        "upper": 1.8786246921472873
+      },
+      "quiet_background_network_confirmation_rate_per_minimum_three_station_day": {
+        "confidence": 0.95,
+        "count": 0,
+        "exposure": 36.99932969388035,
+        "lower": 0.0,
+        "method": "exact Poisson chi-square",
+        "rate": 0.0,
+        "upper": 0.09970125093169115
+      },
+      "scoring_dates": 37,
+      "station_date_records": 222,
+      "station_exposure_days": 221.9944139824504
+    },
+    "quiet_background_panel_diagnostics": {
+      "date_count": 37,
+      "leave_one_station_out": [
+        {
+          "candidate_count": 359,
+          "candidate_rate_per_station_day": 1.9405795951804128,
+          "omitted_station_key": "NZ.CTZ.21",
+          "station_exposure_days": 184.99627682966764
+        },
+        {
+          "candidate_count": 312,
+          "candidate_rate_per_station_day": 1.6865298870832817,
+          "omitted_station_key": "NZ.GOVS.20",
+          "station_exposure_days": 184.99523927179197
+        },
+        {
+          "candidate_count": 288,
+          "candidate_rate_per_station_day": 1.5567982827649738,
+          "omitted_station_key": "NZ.HNPS.21",
+          "station_exposure_days": 184.99506531346725
+        },
+        {
+          "candidate_count": 188,
+          "candidate_rate_per_station_day": 1.0162437367448234,
+          "omitted_station_key": "NZ.ORPS.20",
+          "station_exposure_days": 184.99499008199683
+        },
+        {
+          "candidate_count": 375,
+          "candidate_rate_per_station_day": 2.0270806338131084,
+          "omitted_station_key": "NZ.OUZ.21",
+          "station_exposure_days": 184.99510761670768
+        },
+        {
+          "candidate_count": 363,
+          "candidate_rate_per_station_day": 1.9622110498696097,
+          "omitted_station_key": "NZ.TSFS.20",
+          "station_exposure_days": 184.99539079862058
+        }
+      ],
+      "maximum_date_candidate_share": 0.10079575596816977,
+      "maximum_station_candidate_share": 0.5013262599469496,
+      "per_date": [
+        {
+          "candidate_count": 19,
+          "candidate_rate_per_station_day": 3.166737086127747,
+          "date_utc": "2026-01-05",
+          "station_exposure_days": 5.999866576619723
+        },
+        {
+          "candidate_count": 9,
+          "candidate_rate_per_station_day": 1.500029348019319,
+          "date_utc": "2026-01-09",
+          "station_exposure_days": 5.999882610219496
+        },
+        {
+          "candidate_count": 6,
+          "candidate_rate_per_station_day": 1.0000186939279203,
+          "date_utc": "2026-01-16",
+          "station_exposure_days": 5.999887838529216
+        },
+        {
+          "candidate_count": 7,
+          "candidate_rate_per_station_day": 1.166689775554658,
+          "date_utc": "2026-01-27",
+          "station_exposure_days": 5.999881156644335
+        },
+        {
+          "candidate_count": 8,
+          "candidate_rate_per_station_day": 1.3333484165930016,
+          "date_utc": "2026-01-30",
+          "station_exposure_days": 5.999932126099313
+        },
+        {
+          "candidate_count": 5,
+          "candidate_rate_per_station_day": 0.8333492731240534,
+          "date_utc": "2026-01-31",
+          "station_exposure_days": 5.999885235701998
+        },
+        {
+          "candidate_count": 5,
+          "candidate_rate_per_station_day": 0.8333518152617589,
+          "date_utc": "2026-02-01",
+          "station_exposure_days": 5.999866933066536
+        },
+        {
+          "candidate_count": 10,
+          "candidate_rate_per_station_day": 1.666700097305906,
+          "date_utc": "2026-02-12",
+          "station_exposure_days": 5.999879652112722
+        },
+        {
+          "candidate_count": 10,
+          "candidate_rate_per_station_day": 1.6667023862621568,
+          "date_utc": "2026-02-24",
+          "station_exposure_days": 5.999871412212098
+        },
+        {
+          "candidate_count": 5,
+          "candidate_rate_per_station_day": 0.8333471138707063,
+          "date_utc": "2026-03-02",
+          "station_exposure_days": 5.999900781771651
+        },
+        {
+          "candidate_count": 4,
+          "candidate_rate_per_station_day": 0.6666798898008615,
+          "date_utc": "2026-03-06",
+          "station_exposure_days": 5.999880994152692
+        },
+        {
+          "candidate_count": 10,
+          "candidate_rate_per_station_day": 1.6666979207612038,
+          "date_utc": "2026-03-07",
+          "station_exposure_days": 5.999887487369555
+        },
+        {
+          "candidate_count": 14,
+          "candidate_rate_per_station_day": 2.333899618952934,
+          "date_utc": "2026-03-10",
+          "station_exposure_days": 5.998544190294213
+        },
+        {
+          "candidate_count": 1,
+          "candidate_rate_per_station_day": 0.16666989401690266,
+          "date_utc": "2026-03-14",
+          "station_exposure_days": 5.999883817641272
+        },
+        {
+          "candidate_count": 3,
+          "candidate_rate_per_station_day": 0.500011311237768,
+          "date_utc": "2026-03-17",
+          "station_exposure_days": 5.999864268217373
+        },
+        {
+          "candidate_count": 8,
+          "candidate_rate_per_station_day": 1.3333517039899923,
+          "date_utc": "2026-03-18",
+          "station_exposure_days": 5.999917333184017
+        },
+        {
+          "candidate_count": 15,
+          "candidate_rate_per_station_day": 2.5000412554308893,
+          "date_utc": "2026-03-25",
+          "station_exposure_days": 5.9999009885997685
+        },
+        {
+          "candidate_count": 21,
+          "candidate_rate_per_station_day": 3.5000559030443,
+          "date_utc": "2026-03-27",
+          "station_exposure_days": 5.999904167740433
+        },
+        {
+          "candidate_count": 38,
+          "candidate_rate_per_station_day": 6.333458159044649,
+          "date_utc": "2026-03-28",
+          "station_exposure_days": 5.999881746393663
+        },
+        {
+          "candidate_count": 5,
+          "candidate_rate_per_station_day": 0.8333473089682043,
+          "date_utc": "2026-03-30",
+          "station_exposure_days": 5.999899377116451
+        },
+        {
+          "candidate_count": 11,
+          "candidate_rate_per_station_day": 1.833364248929304,
+          "date_utc": "2026-04-03",
+          "station_exposure_days": 5.99989882339206
+        },
+        {
+          "candidate_count": 15,
+          "candidate_rate_per_station_day": 2.5000422400947935,
+          "date_utc": "2026-04-18",
+          "station_exposure_days": 5.999898625485323
+        },
+        {
+          "candidate_count": 3,
+          "candidate_rate_per_station_day": 0.5000090696445159,
+          "date_utc": "2026-04-20",
+          "station_exposure_days": 5.999891166239977
+        },
+        {
+          "candidate_count": 5,
+          "candidate_rate_per_station_day": 0.833353128129308,
+          "date_utc": "2026-04-23",
+          "station_exposure_days": 5.999857480854348
+        },
+        {
+          "candidate_count": 4,
+          "candidate_rate_per_station_day": 0.66668047096051,
+          "date_utc": "2026-04-25",
+          "station_exposure_days": 5.999875763927897
+        },
+        {
+          "candidate_count": 2,
+          "candidate_rate_per_station_day": 0.33333985155063717,
+          "date_utc": "2026-05-01",
+          "station_exposure_days": 5.999882674382793
+        },
+        {
+          "candidate_count": 30,
+          "candidate_rate_per_station_day": 5.000118336598684,
+          "date_utc": "2026-05-16",
+          "station_exposure_days": 5.999857999442352
+        },
+        {
+          "candidate_count": 5,
+          "candidate_rate_per_station_day": 0.8333499205645354,
+          "date_utc": "2026-05-19",
+          "station_exposure_days": 5.999880574312475
+        },
+        {
+          "candidate_count": 7,
+          "candidate_rate_per_station_day": 1.1666913790021116,
+          "date_utc": "2026-05-26",
+          "station_exposure_days": 5.999872910681146
+        },
+        {
+          "candidate_count": 13,
+          "candidate_rate_per_station_day": 2.166705392291861,
+          "date_utc": "2026-05-28",
+          "station_exposure_days": 5.999892761723863
+        },
+        {
+          "candidate_count": 14,
+          "candidate_rate_per_station_day": 2.3333766661147792,
+          "date_utc": "2026-06-02",
+          "station_exposure_days": 5.999888574917008
+        },
+        {
+          "candidate_count": 14,
+          "candidate_rate_per_station_day": 2.333382762740142,
+          "date_utc": "2026-06-04",
+          "station_exposure_days": 5.999872898503586
+        },
+        {
+          "candidate_count": 7,
+          "candidate_rate_per_station_day": 1.1666886936642014,
+          "date_utc": "2026-06-20",
+          "station_exposure_days": 5.999886720437143
+        },
+        {
+          "candidate_count": 11,
+          "candidate_rate_per_station_day": 1.8333697555577282,
+          "date_utc": "2026-06-21",
+          "station_exposure_days": 5.999880802360949
+        },
+        {
+          "candidate_count": 14,
+          "candidate_rate_per_station_day": 2.3333737661813925,
+          "date_utc": "2026-06-23",
+          "station_exposure_days": 5.999896031620878
+        },
+        {
+          "candidate_count": 4,
+          "candidate_rate_per_station_day": 0.6666805204120343,
+          "date_utc": "2026-06-25",
+          "station_exposure_days": 5.999875318882642
+        },
+        {
+          "candidate_count": 15,
+          "candidate_rate_per_station_day": 2.500047433566858,
+          "date_utc": "2026-06-30",
+          "station_exposure_days": 5.999886161599446
+        }
+      ],
+      "per_station": [
+        {
+          "candidate_count": 18,
+          "candidate_rate_per_station_day": 0.48651098096289325,
+          "station_exposure_days": 36.998137152782746,
+          "station_key": "NZ.CTZ.21"
+        },
+        {
+          "candidate_count": 65,
+          "candidate_rate_per_station_day": 1.7567959422963924,
+          "station_exposure_days": 36.999174710658416,
+          "station_key": "NZ.GOVS.20"
+        },
+        {
+          "candidate_count": 89,
+          "candidate_rate_per_station_day": 2.4054477498034834,
+          "station_exposure_days": 36.99934866898314,
+          "station_key": "NZ.HNPS.21"
+        },
+        {
+          "candidate_count": 189,
+          "candidate_rate_per_station_day": 5.108187643907694,
+          "station_exposure_days": 36.99942390045358,
+          "station_key": "NZ.ORPS.20"
+        },
+        {
+          "candidate_count": 2,
+          "candidate_rate_per_station_day": 0.054055067417474054,
+          "station_exposure_days": 36.999306365742726,
+          "station_key": "NZ.OUZ.21"
+        },
+        {
+          "candidate_count": 14,
+          "candidate_rate_per_station_day": 0.3783883679966614,
+          "station_exposure_days": 36.999023183829806,
+          "station_key": "NZ.TSFS.20"
+        }
+      ],
+      "scope": "conditional_on_fixed_station_panel",
+      "station_count": 6
+    },
+    "seed": 20261101,
+    "snr_diagnostic": {
+      "invalid_or_unavailable": 0,
+      "left_censored_at_minus_120_db": 6
+    },
+    "station_cluster_sensitivity": {
+      "cluster": "station_key",
+      "confidence": 0.95,
+      "intervals": {
+        "event_record_candidate_precision": {
+          "lower": 0.973037559618442,
+          "upper": 0.9973121873382784,
+          "valid_replicates": 5000
+        },
+        "overall_station_record_recall": {
+          "lower": 0.8256483179124207,
+          "upper": 0.8972332015810277,
+          "valid_replicates": 5000
+        },
+        "technical_station_record_recall": {
+          "lower": 0.8256483179124207,
+          "upper": 0.8972332015810277,
+          "valid_replicates": 5000
+        }
+      },
+      "replicates": 5000,
+      "role": "secondary_dependence_sensitivity",
+      "seed": 41121830,
+      "station_clusters": 165
+    }
+  },
+  "protocol": {
+    "bytes": 19444,
+    "path": "work_artifacts/protocol_freeze/cspp_v27c_geonet_final_evaluation_protocol_20260729.json",
+    "sha256": "b7997a0226ac3d7fe2963b3e0957748756a859a52763fb06979620c6b130ef5e"
+  },
+  "result_id": "cspp_v27c_geonet_final_evaluation_result_a2",
+  "seed_policy": {
+    "other_seeds_report_robustness": true,
+    "primary_operational_seed": 20261101,
+    "primary_seed_drives_headline_metrics": true,
+    "reported_seeds": [
+      20261101,
+      20261102,
+      20261103
+    ],
+    "seed_selection_permitted": false
+  },
+  "seed_robustness": {
+    "availability_aware_station_recall_point_estimate_range": [
+      0.8492871690427699,
+      0.8635437881873728
+    ],
+    "catalog_event_any_positive_weight_reference_station_hit_range": [
+      1.0,
+      1.0
+    ],
+    "quiet_background_candidate_rate_range": [
+      0.9684928379188706,
+      1.6982409297461127
+    ],
+    "seed_selection_performed": false,
+    "technical_station_recall_point_estimate_range": [
+      0.8492871690427699,
+      0.8635437881873728
+    ]
+  }
+}

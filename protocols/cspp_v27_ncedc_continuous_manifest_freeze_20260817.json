@@ -1,0 +1,151 @@
+{
+  "code": {
+    "bytes": 22597,
+    "path": "workspace/scripts/evaluation/build_v27_ncedc_continuous_manifest.py",
+    "sha256": "15311c404e0f599d2cd8359f2bf4edf2dbdd8ed3e48025ccbca71b4cfcb1ce91"
+  },
+  "counts": {
+    "availability_rows": 924,
+    "calendar_dates": 731,
+    "catalog_events_m3_or_greater": 1252,
+    "dates_excluded_by_nearby_event_screen": 105,
+    "eligible_dates": 626,
+    "selected_dates": 60,
+    "selected_stations": 12,
+    "station_day_requests": 720
+  },
+  "event_manifest_freeze": {
+    "bytes": 3469,
+    "path": "workspace/experiments/cspp_v27_ncedc_event_manifest_freeze_20260817.json",
+    "sha256": "e088d5b42c07c0f38be915c8c893b73cedf1bb393d3c1580f0fca78cbf868743"
+  },
+  "evidence_boundary": {
+    "model_outputs_computed": false,
+    "station_or_date_selection_uses_model_output": false,
+    "station_or_date_selection_uses_waveform_amplitude": false,
+    "target_metadata_accessed_after_protocol_freeze": true,
+    "target_waveforms_accessed": false,
+    "unavailable_station_days_may_be_replaced": false
+  },
+  "freeze_id": "cspp_v27_ncedc_continuous_manifest_freeze_v1",
+  "frozen_at_utc": "2026-08-17T13:02:59.975580+00:00",
+  "manifests": {
+    "date_screen": {
+      "bytes": 24216,
+      "path": "work_artifacts/ncedc_model_blind_20260817/metadata/manifests/continuous_date_screen.csv",
+      "sha256": "108d0aa144a3e868d7fcd3403b12c758df41239f0e88024d7ee92f2e846b4902"
+    },
+    "selected_stations": {
+      "bytes": 1938,
+      "path": "work_artifacts/ncedc_model_blind_20260817/metadata/manifests/continuous_selected_stations.csv",
+      "sha256": "8b23e5a82747a9e67b55396af78e11d8a4d22066b664dd9e0ea4a79a2a86455b"
+    },
+    "station_day_requests": {
+      "bytes": 80875,
+      "path": "work_artifacts/ncedc_model_blind_20260817/metadata/manifests/continuous_station_day_requests.csv",
+      "sha256": "2fda55727d31e80e9cddf4472964c8bd867ac8f7720218ca46d4e1bbc9398346"
+    }
+  },
+  "next_boundary": "Event and continuous waveform acquisition may begin only after each downloader verifies this freeze and the event manifest freeze. Missing and partial requests remain in denominator accounting.",
+  "protocol": {
+    "bytes": 14842,
+    "path": "workspace/experiments/cspp_v27_ncedc_model_blind_protocol_20260817.json",
+    "sha256": "c27b64b7b336e6e96b2f6c61c3a5f8795d7ce3daf0a4ac3c4cd5ccd2df5631ce"
+  },
+  "selection": {
+    "date_ranking": "ascending SHA-256 of fixed salt and ISO date, then chronological ordering after the first 60 eligible dates are selected",
+    "date_screen": "exclude each UTC date containing a cataloged M>=3 event within 200 km of any selected station",
+    "date_selection_salt": "cspp-ncsn-continuous-20260817-v1",
+    "selected_dates": [
+      "2024-01-09",
+      "2024-01-29",
+      "2024-01-30",
+      "2024-02-07",
+      "2024-02-14",
+      "2024-02-27",
+      "2024-03-10",
+      "2024-03-21",
+      "2024-03-26",
+      "2024-05-02",
+      "2024-05-11",
+      "2024-05-12",
+      "2024-05-23",
+      "2024-05-27",
+      "2024-05-29",
+      "2024-06-26",
+      "2024-07-11",
+      "2024-07-15",
+      "2024-07-22",
+      "2024-07-26",
+      "2024-08-27",
+      "2024-10-07",
+      "2024-10-21",
+      "2024-11-04",
+      "2024-11-05",
+      "2024-11-13",
+      "2024-11-14",
+      "2024-11-18",
+      "2024-12-02",
+      "2024-12-13",
+      "2024-12-16",
+      "2024-12-23",
+      "2024-12-30",
+      "2025-01-04",
+      "2025-01-13",
+      "2025-02-04",
+      "2025-02-17",
+      "2025-03-03",
+      "2025-03-06",
+      "2025-03-09",
+      "2025-03-13",
+      "2025-03-22",
+      "2025-04-13",
+      "2025-05-05",
+      "2025-05-06",
+      "2025-05-29",
+      "2025-06-13",
+      "2025-07-03",
+      "2025-07-14",
+      "2025-07-19",
+      "2025-07-29",
+      "2025-08-10",
+      "2025-08-23",
+      "2025-08-24",
+      "2025-08-31",
+      "2025-09-12",
+      "2025-11-07",
+      "2025-11-16",
+      "2025-11-17",
+      "2025-12-10"
+    ],
+    "station_ranking": "descending common three-component availability extent, then station, location, and sample rate; one location per station"
+  },
+  "source_metadata": {
+    "availability_extent": {
+      "bytes": 235142,
+      "path": "work_artifacts/ncedc_model_blind_20260817/metadata/raw/ncsn_hn_availability_extent_2024_2025.json",
+      "sha256": "5b54fed2c89136cb1479e22bf97e63fa52a4beac8595531fd21970832d7935a8"
+    },
+    "availability_request": {
+      "bytes": 1248,
+      "path": "work_artifacts/ncedc_model_blind_20260817/metadata/raw/ncsn_hn_availability_extent_2024_2025.request.json",
+      "sha256": "ac2a080e13a56aaa4f5606124ce7b98253ecafe0d55c3668a75a831c35aee769"
+    },
+    "event_screen_catalog": {
+      "bytes": 3340329,
+      "path": "work_artifacts/ncedc_model_blind_20260817/metadata/raw/ncedc_events_2024_2025_m3_screen.xml",
+      "sha256": "b9ff2948fe1a2f9ab2f1687e6965b60cc5b6ff0222fe0bc2e4c73d526e8e51cf"
+    },
+    "event_screen_request": {
+      "bytes": 1225,
+      "path": "work_artifacts/ncedc_model_blind_20260817/metadata/raw/ncedc_events_2024_2025_m3_screen.request.json",
+      "sha256": "bb9059d8753609320e1ba3db90b5bec5c927321b5c6986ee8c2bb03f847c53b3"
+    },
+    "station_metadata": {
+      "bytes": 40299781,
+      "path": "work_artifacts/ncedc_model_blind_20260817/metadata/raw/ncsn_hn_response_2024_2025.xml",
+      "sha256": "526f2af2b50d8cbd811e6dcd410dc3edd938524dd6bf6f0200dcbc919ad4b5c1"
+    }
+  },
+  "status": "continuous_station_day_requests_frozen_before_waveform_access"
+}

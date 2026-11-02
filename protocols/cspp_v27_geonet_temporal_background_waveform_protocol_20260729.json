@@ -1,0 +1,115 @@
+{
+  "artifacts": {
+    "background_dates": {
+      "bytes": 2901,
+      "path": "work_artifacts/geonet_temporal_development_v1/background_waveform_manifest/background_dates.csv",
+      "sha256": "5d9a05c8d47dd5a9231a5b3d1f5d2d62e1dfe409b6c19e0c746aa37d2df94383"
+    },
+    "background_objects": {
+      "bytes": 377380,
+      "path": "work_artifacts/geonet_temporal_development_v1/background_waveform_manifest/background_objects.csv",
+      "sha256": "8b388b7ddda228a940627e77fdcf923b429244f2d21d076cdcba8e15bf33a4a9"
+    },
+    "background_station_days": {
+      "bytes": 22922,
+      "path": "work_artifacts/geonet_temporal_development_v1/background_waveform_manifest/background_station_days.csv",
+      "sha256": "8470401d00dfa9b80941e9a4f9e1959b0e4f5f1d1f0181dffd807e86f3587a9d"
+    },
+    "processed_date_prefix": {
+      "bytes": 4647,
+      "path": "work_artifacts/geonet_temporal_development_v1/background_waveform_manifest/processed_date_prefix.csv",
+      "sha256": "69e1af14c9692dbd717c9164b7ac723f001d9fe7a36a4ff32b62f772cb457207"
+    },
+    "rejected_dates_in_prefix": {
+      "bytes": 1900,
+      "path": "work_artifacts/geonet_temporal_development_v1/background_waveform_manifest/rejected_dates_in_prefix.csv",
+      "sha256": "dc16879ed8b7772cf1efb44f5099a27dcd949d6099494f151268b777499c3014"
+    },
+    "summary": {
+      "bytes": 584,
+      "path": "work_artifacts/geonet_temporal_development_v1/background_waveform_manifest/summary.json",
+      "sha256": "f46bfb2a66ab087722315295b7957bbc196af29a2c12fc649ad401c52da2d0f7"
+    }
+  },
+  "claim_boundary": "This manifest fixes exact quiet continuous waveform identities and valid exposure before C0, C1, or public-baseline scoring. It contains no false-candidate, recall, or latency result.",
+  "cohort_contract": {
+    "accepted_dates": 24.0,
+    "accepted_source_objects": 432,
+    "accepted_station_days": 144,
+    "all_source_objects_etag_verified": true,
+    "all_source_objects_sha256_verified": true,
+    "all_source_objects_version_locked": true,
+    "all_station_days_pass_common_coverage": true,
+    "connected_network_exposure_days": 23.947377706305296,
+    "final_holdout_accessed": false,
+    "model_outputs_computed_or_inspected": false,
+    "processed_quiet_rank_prefix": [
+      1,
+      31
+    ],
+    "rejected_dates_in_prefix": 7,
+    "source_bytes": 10290839552,
+    "station_exposure_days": 143.94540569362266
+  },
+  "frozen_at_utc": "2026-07-29T14:21:14.410725+00:00",
+  "inputs": {
+    "background_station_amendment_protocol": {
+      "bytes": 2854,
+      "path": "work_artifacts/geonet_temporal_development_v1/background_station_amendment_v2/protocol.json",
+      "sha256": "e5ce11408fffb62233017f190c5181a9bdd0d7dc800b1990c622263267b9bc2f"
+    },
+    "downloader": {
+      "bytes": 19147,
+      "path": "workspace/scripts/evaluation/download_v27_geonet_temporal_background.py",
+      "sha256": "ec10ac2cb2bf768d76944dce4afc4f02f0f60e288d8881377c06a3973a74b966"
+    },
+    "freeze_script": {
+      "bytes": 14766,
+      "path": "workspace/scripts/evaluation/freeze_v27_geonet_temporal_background_manifest.py",
+      "sha256": "03409d44ab89804f1075ccf5f1ebfdeaa12bdf5a4aa7793f181c0a743055a37b"
+    },
+    "metadata_protocol": {
+      "bytes": 6023,
+      "path": "work_artifacts/geonet_temporal_development_v1/protocol.json",
+      "sha256": "ae43b11cabf657254612bb11bc3fd79ffbedc7ba25445ab7245da533240cfd51"
+    },
+    "reused_transport_core": {
+      "bytes": 35385,
+      "path": "workspace/scripts/evaluation/download_v20c_geonet_background_stationdays.py",
+      "sha256": "9b23990f42b8fff8b7db1521c22684cc7dea0e294426d4e5f684720558012dfd"
+    },
+    "transport_completion": {
+      "bytes": 2421,
+      "path": "work_artifacts/geonet_temporal_development_v1/background_transport_v2/transport_complete.json",
+      "sha256": "abfc145343ce957ef178833dbd4c3dea63bb5f581fd55997f5abaf94dea877a4"
+    }
+  },
+  "model_blind_freeze": {
+    "cspp_outputs_computed_or_inspected": false,
+    "final_holdout_accessed": false,
+    "forbidden_acceptance_variables": [
+      "waveform amplitude or visual appearance",
+      "noise statistics or signal-to-noise ratio",
+      "C0 or C1 model scores and candidate counts",
+      "public picker outputs"
+    ],
+    "permitted_acceptance_variables": [
+      "S3 object existence and immutable version identity",
+      "miniSEED parseability and trace metadata",
+      "network, station, location, and channel identity",
+      "200 Hz sampling rate",
+      "integer miniSEED encoding",
+      "three-component common time coverage",
+      "payload byte count, ETag, and SHA-256"
+    ],
+    "public_baseline_outputs_computed_or_inspected": false
+  },
+  "protocol_id": "cspp_v27_geonet_temporal_background_waveform_manifest_v1",
+  "source_identity": {
+    "bucket": "geonet-open-data",
+    "canonical_https_root": "https://geonet-open-data.s3.amazonaws.com",
+    "source_objects_are_s3_version_locked": true,
+    "transport_https_root": "https://geonet-open-data.s3.dualstack.ap-southeast-2.amazonaws.com"
+  },
+  "status": "exact_temporal_development_background_frozen_before_scoring"
+}

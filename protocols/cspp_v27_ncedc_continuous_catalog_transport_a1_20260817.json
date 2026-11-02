@@ -1,0 +1,59 @@
+{
+  "change": {
+    "dates_events_filters_and_output_format_changed": false,
+    "failed_request_error": "No type defined or unknown query parameter: includeallorigins",
+    "failed_request_status": 400,
+    "reason": "NCEDC fdsnws-event 1.2.0 returned HTTP 400 and its WADL does not define includeallorigins",
+    "removed_query_parameter": "includeallorigins=false"
+  },
+  "code_sha256": {
+    "scripts/evaluation/download_v27_ncedc_continuous_catalog_a1.py": "b087eb01484675af7f7d6155a2a0f041241bc41a56136c19e183b4c1f10d8d32",
+    "scripts/evaluation/freeze_v27_ncedc_continuous_catalog_transport_amendment.py": "d883fd1855996ac97837e02036362650d08dfa9f3f7889faa95208562e3cd76b"
+  },
+  "evidence_boundary": {
+    "candidate_counts_times_or_scores_inspected": false,
+    "catalog_match_may_be_called_manual_verification": false,
+    "queries_selected_from_candidate_times": false,
+    "unmatched_candidate_may_be_called_false_alarm": false
+  },
+  "execution": {
+    "maximum_attempts_per_date": 5,
+    "maximum_concurrent_requests": 1,
+    "output_root": "work_artifacts/ncedc_model_blind_20260817/metadata/continuous_catalog_all_events",
+    "overwrite_permitted": false
+  },
+  "frozen_at_utc": "2026-08-17T14:30:07.527543+00:00",
+  "inputs": {
+    "amended_request_plan": {
+      "bytes": 5186,
+      "path": "work_artifacts/ncedc_model_blind_20260817/metadata/manifests/continuous_catalog_requests_a1.csv",
+      "sha256": "2df42c30fb273ad9fc523b49a0528cdde042183f369c8270f506622c95a05ffc"
+    },
+    "official_event_service_wadl": {
+      "bytes": 9395,
+      "path": "work_artifacts/ncedc_model_blind_20260817/metadata/raw/ncedc_event_application_20260817.wadl",
+      "sha256": "d41cbd6b7a42a965baf5f242401aa4d5e0ae30eae32713116243f9360161eef8"
+    },
+    "original_request_plan": {
+      "bytes": 5564,
+      "path": "work_artifacts/ncedc_model_blind_20260817/metadata/manifests/continuous_catalog_requests.csv",
+      "sha256": "3d8e79207fbe0684db7730ad23748b6f9693402b8b9589bef57d825bbc77cc2e"
+    }
+  },
+  "protocol_id": "cspp_v27_ncedc_continuous_catalog_transport_a1",
+  "query": {
+    "arrivals_requested": false,
+    "dates": 60,
+    "event_type_filter": null,
+    "geographic_filter": null,
+    "minimum_magnitude": null,
+    "purpose": "post-result catalog timing screen; not a manual cause label",
+    "service": "https://service.ncedc.org/fdsnws/event/1/query"
+  },
+  "status": "transport_only_amendment_before_successful_catalog_response",
+  "supersedes_execution_only": {
+    "bytes": 2124,
+    "path": "workspace/experiments/cspp_v27_ncedc_continuous_catalog_plan_20260817.json",
+    "sha256": "b4c2c6281018fe415081559a0b1a0c89d53d8a51b51690049cb306d0844002a8"
+  }
+}

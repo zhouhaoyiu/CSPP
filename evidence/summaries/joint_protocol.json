@@ -1,0 +1,73 @@
+{
+  "artifacts": {
+    "selected_dates": {
+      "bytes": 4621,
+      "path": "work_artifacts/ncedc_joint_continuous_m3_20260904/metadata/selected_event_dates.csv",
+      "sha256": "91842d47f82545c721d8f7c6ce60a6da61b737fe70fef822d6a7f6694130a616"
+    },
+    "station_day_orientations": {
+      "bytes": 345644,
+      "path": "work_artifacts/ncedc_joint_continuous_m3_20260904/metadata/station_day_orientations.csv",
+      "sha256": "8720ffaeb6281524cca73edc3d269a8291c5d18529bd4df16aa821a82521e125"
+    },
+    "station_day_requests": {
+      "bytes": 80875,
+      "path": "work_artifacts/ncedc_joint_continuous_m3_20260904/metadata/station_day_requests.csv",
+      "sha256": "310510e46c84071ac18afa05347a887208a85ff9a180cf665a6b3484ff67ac7d"
+    }
+  },
+  "claim_boundary": "Waveform-blind prospective extension using previously opened catalog and station metadata; not an independent blind network test.",
+  "counts": {
+    "m4_or_greater_dates": 13,
+    "nearby_catalog_events_listed": 82,
+    "selected_dates": 60,
+    "station_day_requests": 720
+  },
+  "frozen_at_utc": "2026-09-04T04:06:51.297121+00:00",
+  "inputs": {
+    "date_screen": {
+      "bytes": 24216,
+      "path": "work_artifacts/ncedc_model_blind_20260817/metadata/manifests/continuous_date_screen.csv",
+      "sha256": "108d0aa144a3e868d7fcd3403b12c758df41239f0e88024d7ee92f2e846b4902"
+    },
+    "selected_stations": {
+      "bytes": 1938,
+      "path": "work_artifacts/ncedc_model_blind_20260817/metadata/manifests/continuous_selected_stations.csv",
+      "sha256": "8b23e5a82747a9e67b55396af78e11d8a4d22066b664dd9e0ea4a79a2a86455b"
+    },
+    "station_metadata": {
+      "bytes": 40299781,
+      "path": "work_artifacts/ncedc_model_blind_20260817/metadata/raw/ncsn_hn_response_2024_2025.xml",
+      "sha256": "526f2af2b50d8cbd811e6dcd410dc3edd938524dd6bf6f0200dcbc919ad4b5c1"
+    }
+  },
+  "metrics": {
+    "event_recall": "catalog events detected by at least one three-station group",
+    "latency": "group availability time minus earliest theoretical P arrival",
+    "reported_magnitude_thresholds": [
+      3.0,
+      4.0
+    ],
+    "unmatched_group_rate": "three-station groups without catalog timing support per network-day"
+  },
+  "operating_point": {
+    "association_minimum_stations": 3,
+    "association_window_seconds": 10.0,
+    "candidate_history_packets": 4,
+    "candidate_threshold": 0.1,
+    "event_threshold": 0.975,
+    "model_seed": 20261101
+  },
+  "protocol_id": "cspp_v27_ncedc_joint_continuous_m3_v1",
+  "selection": {
+    "date_count": 60,
+    "event_distance_limit_km": 200.0,
+    "event_magnitude_minimum": 3.0,
+    "fixed_station_count": 12,
+    "include_all_dates_with_maximum_nearby_magnitude_ge_4": true,
+    "network": "NCSN",
+    "remaining_dates": "SHA-256 ranked M>=3 event-bearing dates",
+    "selection_salt": "cspp-ncsn-joint-continuous-m3-20260904-v1"
+  },
+  "status": "frozen_before_event-bearing continuous waveform access"
+}

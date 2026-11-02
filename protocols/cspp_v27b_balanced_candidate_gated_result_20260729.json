@@ -1,0 +1,90 @@
+{
+  "result_id": "cspp_v27b_balanced_candidate_gated_result_v1",
+  "status": "completed_rejected",
+  "protocol": "experiments/cspp_v27b_balanced_candidate_gated_pilot_20260729.json",
+  "protocol_sha256": "25412122c04e7d4d547216136f0f1ef4260b482d38bb934d5df2e1b7c0280ce3",
+  "artifacts": {
+    "best_checkpoint_sha256": "d48e71e3eba9899cc6629258a13e2ac5d38b3c8a5d472d2efe29fa4999a042ac",
+    "best_threshold_sweep_sha256": "e97d2383a9c4513037658e830325efe01c02fb99d882bed37c9dd3de44b8be77",
+    "history_sha256": "1ef04e7005ad6f0a144996910e9c4d8f3ecb9a8c90609a45e46baf87330d5b1b",
+    "selected_indices_sha256": "72dab23b14f4da309ec04bbbcdb68c7088bbf8aba565024934c2be05c94893cd"
+  },
+  "measured_weighted_negative_to_positive_ratio": {
+    "epoch_1": 2.790699,
+    "epoch_2": 2.566883,
+    "epoch_3": 2.498415
+  },
+  "best_low_candidate_points": [
+    {
+      "epoch": 1,
+      "candidate_threshold": 0.1,
+      "event_threshold": 0.8,
+      "native_usable_rate": 0.835,
+      "zero_db_usable_rate": 0.160326,
+      "ten_db_usable_rate": 0.678019,
+      "noise_false_traces": 21,
+      "noise_specificity": 0.981233,
+      "p90_availability_delay_seconds": 0.964
+    },
+    {
+      "epoch": 2,
+      "candidate_threshold": 0.2,
+      "event_threshold": 0.8,
+      "native_usable_rate": 0.8375,
+      "zero_db_usable_rate": 0.179348,
+      "ten_db_usable_rate": 0.71517,
+      "noise_false_traces": 25,
+      "noise_specificity": 0.977659,
+      "p90_availability_delay_seconds": 0.796
+    },
+    {
+      "epoch": 3,
+      "candidate_threshold": 0.2,
+      "event_threshold": 0.8,
+      "native_usable_rate": 0.8375,
+      "zero_db_usable_rate": 0.173913,
+      "ten_db_usable_rate": 0.69969,
+      "noise_false_traces": 19,
+      "noise_specificity": 0.983021,
+      "p90_availability_delay_seconds": 0.893
+    }
+  ],
+  "acceptance": {
+    "accepted_rows": 0,
+    "decision": "reject",
+    "reason": "Class balancing preserved usable-rate gates near event threshold 0.8, but the residual false-candidate tail remained far above 0.5%."
+  },
+  "opened_tail_diagnostic": {
+    "checkpoint": "work_artifacts/checkpoints/pilot_v27b_verifier_seed20261101/epoch_03.pt",
+    "candidate_threshold": 0.1,
+    "event_threshold": 0.9,
+    "false_noise_records": 11,
+    "false_noise_source": {
+      "target_fdsn_continuous_hard_dev_noise": 11
+    },
+    "event_vs_false_noise_median_examples": {
+      "max_component_energy_fraction": [
+        0.41104,
+        0.801905
+      ],
+      "z_energy_fraction": [
+        0.402903,
+        0.801905
+      ],
+      "crest_factor": [
+        1.529409,
+        3.178435
+      ],
+      "candidate_age_packets": [
+        0.0,
+        1.0
+      ]
+    },
+    "boundary": "Exploratory opened-development diagnosis only."
+  },
+  "decision": {
+    "more_weight_or_threshold_tuning": "rejected",
+    "next_test": "Freeze a three-part ablation separating episode-tail supervision, direct uncompressed packet evidence, and one-packet evidence deltas.",
+    "scientific_boundary": "No result in this file is independent final-test evidence."
+  }
+}

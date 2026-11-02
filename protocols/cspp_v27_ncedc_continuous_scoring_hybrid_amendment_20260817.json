@@ -1,0 +1,157 @@
+{
+  "audit_note": "After the original protocol was frozen, one CPU reference cache was persisted. Two transient timing/equivalence probes were then run on that same station-day without deriving candidate rates or changing scientific settings. This amendment records the optimized backend before any hybrid score cache is persisted.",
+  "code_sha256": {
+    "scripts/evaluation/build_v27_ncedc_continuous_score_cache.py": "1ca363a2b047935dbf572a322cfdf8121a7ecfdefb1e1495c156fa426b910497",
+    "scripts/evaluation/build_v27_ncedc_continuous_score_cache_hybrid.py": "256ee8f8880bb2321277363b321932b5da562e2c146411b8e829ca83fdb8aa8f",
+    "scripts/evaluation/freeze_v27_ncedc_continuous_hybrid_amendment.py": "f86ac1c6281ddb1f4c6ca489c5925496d0ca24d4110df684db8ce3d0123b675a",
+    "scripts/evaluation/verify_v27_ncedc_continuous_hybrid_equivalence.py": "1114b11225a4b583fb97164fa9660c2caebaf70c078e4fab0213b4fd07f1b72d",
+    "src/cspp_v27_hybrid_score_cache.py": "80544dd400d61f6b800b7eef8190bc61adc9de1c3ac1d0fd05c690870f0cab12",
+    "src/cspp_v27_reused_core_score_cache.py": "a0301fccc341f7cd95bb01b6478904cc86bb731421867da47a7017f72a6aa0d2",
+    "src/data_streaming.py": "8b81c1b194740cea28a0f99698c3698d12a1acb92661e4a5c0dff847facad66b",
+    "src/model_cspp_v27.py": "c2ca73f059fbdd7fcf59709ee8ed8fe47c8ba6b3de03a3f714c8effa2a1261d4",
+    "src/oriented_gappy_strong_motion_stream.py": "9ccb3223b551b7873b5fcc31759d44b3bfeca808bd09dd716f4e1da770e1f9e0",
+    "src/resilient_mseed.py": "ec6b2960cc88ba3ea6d097d4e2998de768b87986d9e4b9ad89df4a240417a92e",
+    "src/stream_quality_v5.py": "62e48deca36fd553f59d2291738f3fe1a93dddb70bef84bcf250534c54cae414"
+  },
+  "equivalence_gate": {
+    "full_campaign_requires_frozen_pass_report": true,
+    "maximum_absolute_float_difference": 1e-05,
+    "permitted_output_before_gate_passes": "reference station-day only",
+    "reference_score_cache": {
+      "bytes": 2995022,
+      "path": "work_artifacts/ncedc_model_blind_20260817/evaluation/ncedc_continuous_scores_v1/station_day/2024-01-09/NC.CMC.02/scores.npz",
+      "sha256": "868ecdbac614c2072ce23cf6a0748cf7e1c374eb98886a6c3139aeaa91705a55"
+    },
+    "reference_station_day_id": "2024-01-09__NC.CMC.02",
+    "reference_summary": {
+      "bytes": 4509,
+      "path": "work_artifacts/ncedc_model_blind_20260817/evaluation/ncedc_continuous_scores_v1/station_day/2024-01-09/NC.CMC.02/summary.json",
+      "sha256": "8a2b82922cee1b1de34edf6a4b8e50350670718c57ee46b193005b6d46fa0ed8"
+    },
+    "required_boolean_arrays_exact": true,
+    "required_finite_masks_exact": true
+  },
+  "execution": {
+    "backend": "single_process_mps_packet_encoder_cpu_gru_and_heads",
+    "inference_processes": 1,
+    "memory_guard": {
+      "maximum_mps_driver_allocated_bytes": 4294967296,
+      "maximum_process_rss_bytes": 6442450944
+    },
+    "output_root": "work_artifacts/ncedc_model_blind_20260817/evaluation/ncedc_continuous_scores_v2_hybrid",
+    "parallel_mps_jobs_permitted": false,
+    "resume_unit": "one station-day",
+    "torch_threads_per_process": 3
+  },
+  "expected_units": {
+    "archive_unavailable_station_days": 8,
+    "data_bearing_station_days": 712,
+    "network_dates": 60,
+    "requested_station_days": 720,
+    "stations": 12
+  },
+  "frozen_at_utc": "2026-08-17T14:07:47.338370+00:00",
+  "inputs": {
+    "acquisition_status": {
+      "bytes": 356518,
+      "path": "work_artifacts/ncedc_model_blind_20260817/waveforms/continuous/latest_status.csv",
+      "sha256": "346f030a623532a1745ca6fc3fd587e8d7f17d913d6866ee32eba244fd982293"
+    },
+    "acquisition_summary": {
+      "bytes": 720,
+      "path": "work_artifacts/ncedc_model_blind_20260817/waveforms/continuous/summary.json",
+      "sha256": "5aaefc90238b5d8d09983964d20109cd45d1e67dc40b6bf3aa8475d042161b19"
+    },
+    "continuous_manifest_freeze": {
+      "bytes": 5737,
+      "path": "workspace/experiments/cspp_v27_ncedc_continuous_manifest_freeze_20260817.json",
+      "sha256": "1839769549d78d0f756b2b2016a425cbe89bc6216e3a45bed1d0b16b3fcb47f6"
+    },
+    "continuous_orientation_freeze": {
+      "bytes": 1791,
+      "path": "workspace/experiments/cspp_v27_ncedc_continuous_orientation_freeze_20260817.json",
+      "sha256": "1ecf49ac6671fc0338122c3c7497cf96e5dd25f181694d95f3aa0401f9f005bc"
+    },
+    "selection_freeze": {
+      "bytes": 5526,
+      "path": "workspace/experiments/cspp_v27_geonet_temporal_selection_freeze_20260729.json",
+      "sha256": "f86155159422fa1539751ed7eb2f388875f519990b4080f4e5d11af664e88f6f"
+    },
+    "station_day_orientations": {
+      "bytes": 345644,
+      "path": "work_artifacts/ncedc_model_blind_20260817/metadata/manifests/continuous_station_day_orientations.csv",
+      "sha256": "6d62f4d6ce6617d75423a5a1d0e57f3078f782d46143a6aadd406b58d6d02a14"
+    },
+    "station_day_requests": {
+      "bytes": 80875,
+      "path": "work_artifacts/ncedc_model_blind_20260817/metadata/manifests/continuous_station_day_requests.csv",
+      "sha256": "2fda55727d31e80e9cddf4472964c8bd867ac8f7720218ca46d4e1bbc9398346"
+    }
+  },
+  "models": {
+    "C0_seed20261101": {
+      "arm": "C0",
+      "bytes": 1369948,
+      "path": "work_artifacts/checkpoints/blind_v27c_C0_none_seed20261101/final.pt",
+      "seed": 20261101,
+      "sha256": "d27ce10351475dfa264b45406b601dbcfc64e15c92be7260fe54c1738d35586d",
+      "verifier_feature_mode": "none"
+    },
+    "C0_seed20261102": {
+      "arm": "C0",
+      "bytes": 1369948,
+      "path": "work_artifacts/checkpoints/blind_v27c_C0_none_seed20261102/final.pt",
+      "seed": 20261102,
+      "sha256": "fcc9a3123765e5a78c7a210086d31768a77f37556e1c2e1efc503342b39bf2f2",
+      "verifier_feature_mode": "none"
+    },
+    "C0_seed20261103": {
+      "arm": "C0",
+      "bytes": 1369948,
+      "path": "work_artifacts/checkpoints/blind_v27c_C0_none_seed20261103/final.pt",
+      "seed": 20261103,
+      "sha256": "02695f1827eac6bca218a8017ce3efb67f8ef2f693e113644d41b1423c0fea56",
+      "verifier_feature_mode": "none"
+    }
+  },
+  "operating_point": {
+    "all_reported_seeds": [
+      20261101,
+      20261102,
+      20261103
+    ],
+    "candidate_threshold": 0.1,
+    "event_threshold": 0.975,
+    "primary_operational_seed": 20261101,
+    "seed_selection_permitted": false,
+    "selected_arm": "C0"
+  },
+  "protocol_id": "cspp_v27_ncedc_continuous_hybrid_v2",
+  "rationale": "Profiling showed that the MPS packet encoder is fast while the MPS GRU is slow. The hybrid backend places the stateless packet encoder on MPS and preserves the causal recurrent state and heads on CPU.",
+  "runtime": {
+    "candidate_history_packets": 4,
+    "max_arrival_age_packets": 4.0,
+    "normalization": "per-channel causal EWMA demean and scale",
+    "packet_duration_seconds": 0.5,
+    "packet_samples": 50,
+    "quality_gate": "PacketQualityGateV5 frozen defaults",
+    "recurrent_state_reset": "every quality-invalid segment boundary",
+    "sample_rate_hz": 100.0,
+    "temporal_block_packets": 16384,
+    "warmup_packets": 20
+  },
+  "scientific_invariants": {
+    "model_weights_changed": false,
+    "normalization_or_quality_gate_changed": false,
+    "packet_clock_changed": false,
+    "recurrent_segment_boundaries_changed": false,
+    "station_days_or_denominator_changed": false,
+    "thresholds_or_seed_selection_changed": false
+  },
+  "status": "implementation_only_amendment_before_persisted_hybrid_output",
+  "supersedes_execution_only": {
+    "bytes": 6366,
+    "path": "workspace/experiments/cspp_v27_ncedc_continuous_scoring_protocol_20260817.json",
+    "sha256": "c64d21080e3754d70ee186b48581d9b79ba2d01641b88c3601597b54b2c599fd"
+  }
+}

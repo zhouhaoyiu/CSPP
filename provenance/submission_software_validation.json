@@ -1,0 +1,53 @@
+{
+  "installation_includes": "Fresh virtual environment, empty dedicated uv cache; timed install includes network dependency downloads, build and editable install.",
+  "os": "macOS-27.2-arm64-arm-64bit",
+  "machine": "arm64",
+  "venv_creation_seconds": 0.010556583001744002,
+  "install_seconds": 55.63497520900273,
+  "versions": {
+    "python": "3.12.14",
+    "numpy": "2.2.6",
+    "torch": "2.13.0",
+    "pytest": "9.1.1"
+  },
+  "public_demo": {
+    "wall_seconds_including_startup": [
+      1.54393883299781,
+      0.9032652090027113,
+      0.9049760839989176
+    ],
+    "median_seconds": 0.9049760839989176,
+    "outputs_identical": true,
+    "output": {
+      "event_id": "75079016",
+      "station_key": "NC.KSM.03",
+      "checkpoint": "cspp_seed20261101.pt",
+      "packets": 480,
+      "valid_packets": 480,
+      "candidate_allowed_packets": 461,
+      "candidate_count": 1,
+      "reference_p_seconds": 80.02,
+      "picks": [
+        {
+          "episode_index": 1,
+          "episode_start_packet": 161,
+          "available_epoch": 81.0,
+          "estimated_p_epoch": 80.25799804925919,
+          "pick_error_seconds": 0.23799804925918977,
+          "output_delay_seconds": 0.980000000000004
+        }
+      ]
+    }
+  },
+  "pytest_seconds": 24.379432499998074,
+  "hardware": {
+    "cpu": "Apple M4 Max",
+    "ram_gib": 36,
+    "gpu_required": false
+  },
+  "optional_rebuild": {
+    "samples_equal": 72000,
+    "obspy": "1.5.0",
+    "separate_existing_scientific_environment": true
+  }
+}

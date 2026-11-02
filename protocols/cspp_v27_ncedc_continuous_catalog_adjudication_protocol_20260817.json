@@ -1,0 +1,52 @@
+{
+  "claim_boundary": {
+    "catalog_taup_compatible": "provisional catalog timing support; manual waveform review pending",
+    "network_group": "shared catalog timing support is not a location solution",
+    "unresolved": "no false-alarm label is permitted"
+  },
+  "code_sha256": {
+    "scripts/evaluation/adjudicate_v27_ncedc_continuous_catalog.py": "4d780e224b6c9b786278fd82e7367e31108dab702f98587ad170779b514013bf",
+    "scripts/evaluation/freeze_v27_ncedc_continuous_catalog_adjudication_protocol.py": "4215c327bf8bc242b8fc0720dd1729c63f51b32e579c63d5686ca683cc538c0f"
+  },
+  "evidence_boundary": {
+    "candidate_counts_times_scores_or_causes_inspected": false,
+    "matching_tolerance_selected_on_candidates": false,
+    "model_or_threshold_adaptation_permitted": false
+  },
+  "execution": {
+    "output_root": "work_artifacts/ncedc_model_blind_20260817/evaluation/ncedc_continuous_catalog_adjudication_v1",
+    "overwrite_permitted": false
+  },
+  "frozen_at_utc": "2026-08-17T14:32:51.117171+00:00",
+  "inputs": {
+    "catalog_completion_path": "work_artifacts/ncedc_model_blind_20260817/metadata/continuous_catalog_all_events/summary.json",
+    "catalog_transport_amendment": {
+      "bytes": 2817,
+      "path": "workspace/experiments/cspp_v27_ncedc_continuous_catalog_transport_a1_20260817.json",
+      "sha256": "6218df918b8d0f163cb5ff311f8869f1f3bdb32c1d15971fdea215e75ddb8d4a"
+    },
+    "catalog_transport_sha256": "6218df918b8d0f163cb5ff311f8869f1f3bdb32c1d15971fdea215e75ddb8d4a",
+    "continuous_analysis_protocol": {
+      "bytes": 7433,
+      "path": "workspace/experiments/cspp_v27_ncedc_continuous_analysis_protocol_20260817.json",
+      "sha256": "2e30580526a375f16970dcdd87759074182bc01daaf7d1bb8887e7f4ee800569"
+    },
+    "continuous_analysis_sha256": "2e30580526a375f16970dcdd87759074182bc01daaf7d1bb8887e7f4ee800569",
+    "continuous_result_path": "work_artifacts/ncedc_model_blind_20260817/evaluation/ncedc_continuous_analysis_v1/result.json"
+  },
+  "matching": {
+    "candidate_rule": "choose the catalog event with the smallest absolute theoretical P residual within the frozen tolerance",
+    "minimum_shared_event_stations": 3,
+    "origin_lookback_seconds": 1800.0,
+    "phase_list": [
+      "P",
+      "p",
+      "Pn",
+      "Pg"
+    ],
+    "taup_tolerance_seconds": 5.0,
+    "travel_time_model": "iasp91"
+  },
+  "protocol_id": "cspp_v27_ncedc_continuous_catalog_adjudication_v1",
+  "status": "frozen_before_continuous_candidate_inspection"
+}

@@ -1,0 +1,300 @@
+{
+  "protocol_id": "cspp_v27_geonet_causal_public_baselines_v1",
+  "frozen_at_utc": "2026-07-30T03:40:32.627837+00:00",
+  "status": "posthoc_same_record_causal_visibility_protocol_frozen",
+  "evidence_boundary": {
+    "geonet_2026_status": "opened_before_this_protocol",
+    "analysis_role": "posthoc_same_record_causal_visibility_comparison_using_released_weights",
+    "matched_training_claim_permitted": false,
+    "architecture_superiority_claim_permitted": false,
+    "threshold_tuning_on_geonet_2026_permitted": false,
+    "primary_final_result_changed": false
+  },
+  "inputs": {
+    "source_public_protocol": {
+      "path": "work_artifacts/protocol_freeze/cspp_v27c_geonet_final_public_baseline_protocol_v2_20260729.json",
+      "bytes": 530295,
+      "sha256": "d66f16daf4dc16a745a23f6bc7f0a3957446e914f48b3b4fb277696f8b9ad5f7"
+    },
+    "cspp_final_result": {
+      "path": "work_artifacts/evaluation/cspp_v27c_geonet_final_analysis_a2_20260729/result.json",
+      "bytes": 170885,
+      "sha256": "0db9ce45c3ade98ee3bb22aaa392e0d76c4e7f8b89918b405a47f068a1511927"
+    },
+    "cspp_event_rows": {
+      "path": "work_artifacts/evaluation/cspp_v27c_geonet_final_analysis_a2_20260729/event_station_results.csv",
+      "bytes": 456954,
+      "sha256": "b118f548115999e8b569c1de9c8a03729ef03642ab699a73ea49c6bcdca40548"
+    }
+  },
+  "cohort": {
+    "records": 491,
+    "events": 64,
+    "label_stratum": "authoritative_used_p_positive_weight",
+    "record_manifest_sha256": "de8261297af764611ab94104d910a340e2f315c7232d03684befa08cea7273a1",
+    "event_ids": [
+      "2026p014588",
+      "2026p020083",
+      "2026p021114",
+      "2026p033598",
+      "2026p060826",
+      "2026p070370",
+      "2026p087416",
+      "2026p091845",
+      "2026p101368",
+      "2026p104330",
+      "2026p125233",
+      "2026p125819",
+      "2026p140531",
+      "2026p155292",
+      "2026p189537",
+      "2026p214015",
+      "2026p216388",
+      "2026p216882",
+      "2026p218254",
+      "2026p221690",
+      "2026p223345",
+      "2026p238013",
+      "2026p277414",
+      "2026p281249",
+      "2026p283255",
+      "2026p301336",
+      "2026p312627",
+      "2026p324207",
+      "2026p329428",
+      "2026p335889",
+      "2026p336037",
+      "2026p336118",
+      "2026p336129",
+      "2026p336219",
+      "2026p336544",
+      "2026p337070",
+      "2026p337073",
+      "2026p338701",
+      "2026p338868",
+      "2026p345260",
+      "2026p345918",
+      "2026p348409",
+      "2026p348732",
+      "2026p355073",
+      "2026p357402",
+      "2026p365604",
+      "2026p366644",
+      "2026p367944",
+      "2026p368799",
+      "2026p385521",
+      "2026p395450",
+      "2026p402583",
+      "2026p411558",
+      "2026p414535",
+      "2026p421208",
+      "2026p424590",
+      "2026p428526",
+      "2026p438052",
+      "2026p439079",
+      "2026p446273",
+      "2026p450287",
+      "2026p455759",
+      "2026p461272",
+      "2026p482327"
+    ]
+  },
+  "causal_visibility_contract": {
+    "shared_record_duration_seconds": 180.0,
+    "shared_pre_origin_history_seconds": 60.0,
+    "shared_packet_clock_seconds": 0.5,
+    "future_samples_after_publication_time": 0,
+    "zero_prefill": false,
+    "public_model_native_windows_retained": true,
+    "publication": "Each annotation sample is published once from the earliest fully received native window after the frozen model-specific blinding interval. A candidate is available only after its probability episode is observed to close.",
+    "comparison_scope": "Same records, references, causal visibility, release clock, and match tolerance; training data, native context length, normalization, and candidate semantics remain model-specific."
+  },
+  "model_interfaces": {
+    "eqtransformer_original": {
+      "class": "EQTransformer",
+      "weights_name": "original",
+      "weights_version": "3",
+      "in_samples": 6000,
+      "native_stride_samples": 3000,
+      "blinding_samples": [
+        500,
+        500
+      ],
+      "trailing_window_filter": {
+        "type": "butterworth_bandpass",
+        "freqmin_hz": 1.0,
+        "freqmax_hz": 45.0,
+        "corners": 2,
+        "zerophase": true,
+        "application": "Applied inside each fully historical native window; no samples after that window end are read."
+      },
+      "operating_points": [
+        {
+          "id": "eqtransformer_original_p_default",
+          "p_threshold": 0.1,
+          "detection_threshold": null,
+          "threshold_source": "SeisBench public P default; not tuned on V17",
+          "source_method_id": "eqtransformer_original_p_default",
+          "threshold_count": 1,
+          "holdout_tuned": false,
+          "endpoint_role": "released_p_pick_endpoint",
+          "official_default_endpoint": true
+        },
+        {
+          "id": "eqtransformer_original_p_det_custom",
+          "p_threshold": 0.1,
+          "detection_threshold": 0.3,
+          "threshold_source": "Public P and detection defaults, with detection support required at the P-episode peak; not tuned on V17",
+          "source_method_id": "eqtransformer_original_p_det_default",
+          "threshold_count": 1,
+          "holdout_tuned": false,
+          "endpoint_role": "custom_p_peak_detection_score_gate_diagnostic",
+          "official_default_endpoint": false
+        }
+      ],
+      "artifacts": {
+        "metadata": {
+          "path": "external/original.json.v3",
+          "bytes": 730,
+          "sha256": "e499eeee66e3e86e19caee0f640d6d3ab26b4a99142b9d73d75b078f18df389b"
+        },
+        "weights": {
+          "path": "external/original.pt.v3",
+          "bytes": 1597711,
+          "sha256": "c363c59dfb4562ba3b1356fb03dc9c776bbcfe3384b5db22e5ee3689de0a4df9"
+        }
+      }
+    },
+    "phasenet_instance": {
+      "class": "PhaseNet",
+      "weights_name": "instance",
+      "weights_version": "2",
+      "in_samples": 3001,
+      "native_stride_samples": 1501,
+      "blinding_samples": [
+        250,
+        250
+      ],
+      "trailing_window_filter": null,
+      "operating_points": [
+        {
+          "id": "phasenet_instance_default",
+          "p_threshold": 0.08639824281948567,
+          "detection_threshold": null,
+          "threshold_source": "INSTANCE weight-specific public default selected for in-domain F1; not tuned on V17",
+          "source_method_id": "phasenet_instance_default",
+          "threshold_count": 1,
+          "holdout_tuned": false,
+          "endpoint_role": "released_p_pick_endpoint",
+          "official_default_endpoint": true
+        }
+      ],
+      "artifacts": {
+        "metadata": {
+          "path": "external/instance.json.v2",
+          "bytes": 787,
+          "sha256": "d0f33eb054818b6eef1dcf090947f7239b68f290c2e9180d9a807df325300182"
+        },
+        "weights": {
+          "path": "external/instance.pt.v2",
+          "bytes": 1112615,
+          "sha256": "dddcc3d872106a8cd2013ce7a035c972a7f435749b5c02a015efd5ce3767da6d"
+        }
+      }
+    }
+  },
+  "endpoints": {
+    "match_tolerance_seconds": 1.5,
+    "availability_cutoffs_after_reference_p_seconds": [
+      0.5,
+      1.0,
+      2.0,
+      5.0,
+      10.0
+    ],
+    "primary": [
+      "station-record recall",
+      "candidate precision on positive-reference records",
+      "station-record F1",
+      "median absolute P-pick residual",
+      "median candidate availability delay"
+    ],
+    "statistics": "Paired event-cluster bootstrap with 5000 replicates; station-key cluster sensitivity is reported separately.",
+    "bootstrap_seed": 20260730,
+    "bootstrap_replicates": 5000
+  },
+  "execution": {
+    "device": "mps",
+    "workers": 1,
+    "torch_threads": 1,
+    "serial_models": true,
+    "event_atomic_resume": true,
+    "maximum_swap_used_gib_before_launch": 3.5,
+    "maximum_worker_resident_set_gib": 8.0,
+    "output_root": "work_artifacts/evaluation/cspp_v27_geonet_causal_public_baselines_20260730",
+    "lock_path": "work_artifacts/evaluation/.causal_public_mps.lock"
+  },
+  "software_versions": {
+    "numpy": "2.4.4",
+    "obspy": "1.5.0",
+    "seisbench": "0.11.5",
+    "torch": "2.5.1"
+  },
+  "code_artifacts": {
+    "scripts/evaluation/freeze_v27_geonet_causal_public_baseline_protocol.py": {
+      "path": "workspace/scripts/evaluation/freeze_v27_geonet_causal_public_baseline_protocol.py",
+      "bytes": 8428,
+      "sha256": "f04192a364bbd3e2d7054ab25de8f5ef9278a313a2457733d69c4a4ee02c3281"
+    },
+    "scripts/evaluation/eval_v27_geonet_causal_public_baselines.py": {
+      "path": "workspace/scripts/evaluation/eval_v27_geonet_causal_public_baselines.py",
+      "bytes": 19122,
+      "sha256": "82ad46be66936b9adf6c023cb1156bdff1211a2f1120dca84423c3fa37db0ac4"
+    },
+    "scripts/evaluation/analyze_v27_geonet_causal_public_baselines.py": {
+      "path": "workspace/scripts/evaluation/analyze_v27_geonet_causal_public_baselines.py",
+      "bytes": 11576,
+      "sha256": "6b5696f42340d901a6464fee82749adfa2a7bec6f3c566d06b6495515629b90e"
+    },
+    "src/v20c_public_window_baselines.py": {
+      "path": "workspace/src/v20c_public_window_baselines.py",
+      "bytes": 18667,
+      "sha256": "81cf3ae98c5313346eeaa2636e75b132e01ab0e23d0bc6713d92b8046b7db378"
+    },
+    "src/oriented_gappy_strong_motion_stream.py": {
+      "path": "workspace/src/oriented_gappy_strong_motion_stream.py",
+      "bytes": 12675,
+      "sha256": "9ccb3223b551b7873b5fcc31759d44b3bfeca808bd09dd716f4e1da770e1f9e0"
+    },
+    "src/resilient_mseed.py": {
+      "path": "workspace/src/resilient_mseed.py",
+      "bytes": 6008,
+      "sha256": "ec6b2960cc88ba3ea6d097d4e2998de768b87986d9e4b9ad89df4a240417a92e"
+    },
+    "src/stream_quality_v5.py": {
+      "path": "workspace/src/stream_quality_v5.py",
+      "bytes": 3976,
+      "sha256": "62e48deca36fd553f59d2291738f3fe1a93dddb70bef84bcf250534c54cae414"
+    },
+    "scripts/evaluation/eval_v27_geonet_final_public_baselines.py": {
+      "path": "workspace/scripts/evaluation/eval_v27_geonet_final_public_baselines.py",
+      "bytes": 23858,
+      "sha256": "1a3812cb20f2887dfa679889a8bca1bba6b85d85fcf5699af2ab1322bbc18a34"
+    },
+    "scripts/evaluation/eval_v27c_fixed_public_baselines.py": {
+      "path": "workspace/scripts/evaluation/eval_v27c_fixed_public_baselines.py",
+      "bytes": 17088,
+      "sha256": "e5e41e9f6ef1820c4805c2ab4a143dd24040e0e2e9e8264515c512ee59db101f"
+    },
+    "scripts/evaluation/freeze_v27_geonet_final_public_baseline_protocol.py": {
+      "path": "workspace/scripts/evaluation/freeze_v27_geonet_final_public_baseline_protocol.py",
+      "bytes": 40489,
+      "sha256": "e99a393c25d4c9ae0cffa8dbeea89f1035c0d3fbac250acbf68e3a383f379358"
+    }
+  },
+  "commands": {
+    "phasenet": "external/python scripts/evaluation/eval_v27_geonet_causal_public_baselines.py --model phasenet_instance",
+    "eqtransformer": "external/python scripts/evaluation/eval_v27_geonet_causal_public_baselines.py --model eqtransformer_original",
+    "analysis": "external/python scripts/evaluation/analyze_v27_geonet_causal_public_baselines.py"
+  }
+}

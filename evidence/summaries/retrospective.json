@@ -1,0 +1,1249 @@
+{
+  "analysis_id": "cspp_v27c_fixed_retrospective_analysis_a5",
+  "analysis_protocol_id": "cspp_v27c_fixed_retrospective_analysis_a5",
+  "analysis_protocol_sha256": "74c33e5450d4b5829c09ff01641f9564598a521f49ee6f2c387bb32bb0957ae6",
+  "retrospective_protocol_sha256": "acaf702a8cbfa7f19f6fe2b94762342aafb271cd3ce7d21ea515d5cf932ba196",
+  "public_baseline_protocol_sha256": "5f94073ede971bcac5ff6ff31f5147f825b1778eef748b42c8e45933c5f44c47",
+  "superseded_public_evidence": {
+    "analysis_protocol": {
+      "path": "work_artifacts/protocol_freeze/cspp_v27c_fixed_retrospective_analysis_protocol_a3_20260729.json",
+      "bytes": 16110,
+      "mtime_ns": 1785351426400000000,
+      "sha256": "ed1632c931b00b555436d606d0f767aa24cd67eacf828b6a62df53f1f54bf35c"
+    },
+    "result": {
+      "path": "work_artifacts/evaluation/cspp_v27c_fixed_retrospective_analysis_a3_20260729/result.json",
+      "bytes": 46404,
+      "mtime_ns": 1785351432240000000,
+      "sha256": "c38dda6fd856a9fec27bf4c49dbbad8cbdca490796836d3ae011344b0be3daf7"
+    },
+    "status": "scientifically_superseded_do_not_use",
+    "reason": "The V1 EQTransformer path externally applied the released 1-45 Hz zero-phase bandpass before model.annotate, while SeisBench applied the same weight-owned filter again inside annotate_stream_pre. PhaseNet V1 was unaffected, but the complete V1 comparison bundle is superseded."
+  },
+  "model": {
+    "model_class": "CSPPCausalPickerV27C",
+    "selected_arm": "C0",
+    "primary_seed": 20261101,
+    "checkpoint": {
+      "arm": "C0",
+      "bytes": 1369948,
+      "path": "work_artifacts/checkpoints/blind_v27c_C0_none_seed20261101/final.pt",
+      "seed": 20261101,
+      "sha256": "d27ce10351475dfa264b45406b601dbcfc64e15c92be7260fe54c1738d35586d",
+      "training_history_sha256": "fcf20a20176b703dbdf50760dd074142942e81beadfd029b681401ecdbe9ced6",
+      "training_run_protocol_sha256": "b0a8ddf0b5ab1a7825a446a8d89a368b87459107febe42faec6d8b886c22a3fd",
+      "verifier_feature_mode": "none",
+      "mtime_ns": 1785279668700000000
+    },
+    "training_selection_reference": {
+      "path": "work_artifacts/checkpoints/pilot_v27b_balanced_gated_seed20261101/selected_indices.npz",
+      "bytes": 25664,
+      "mtime_ns": 1785274399150000000,
+      "sha256": "72dab23b14f4da309ec04bbbcdb68c7088bbf8aba565024934c2be05c94893cd"
+    },
+    "ensemble_members": 1
+  },
+  "operating_point": {
+    "candidate_threshold": 0.1,
+    "event_threshold": 0.975,
+    "count": 1,
+    "threshold_scan_permitted": false,
+    "provenance": "GeoNet temporal development selection freeze; no fixed-benchmark threshold or model selection"
+  },
+  "metrics": {
+    "knet": {
+      "records": 701,
+      "events": 36,
+      "stations": 357,
+      "true_positive": 421,
+      "false_positive": 1,
+      "false_negative": 280,
+      "event_record_candidate_precision": 0.9976303317535545,
+      "record_recall": 0.6005706134094151,
+      "event_record_candidate_f1": 0.7497773820124666,
+      "records_with_any_candidate": 421,
+      "mean_candidates_per_record": 0.6019971469329529,
+      "within_0p5_rate_all_records": 0.5848787446504993,
+      "within_1p0_rate_all_records": 0.5991440798858774,
+      "within_1p5_rate_all_records": 0.6005706134094151,
+      "median_signed_pick_error_seconds_hits": -0.0230922603607179,
+      "median_abs_pick_error_seconds_hits": 0.0951249575614934,
+      "p90_abs_pick_error_seconds_hits": 0.2315195322036736,
+      "median_availability_latency_seconds_hits": 0.5999999999999996,
+      "p90_availability_latency_seconds_hits": 0.8900000000000006,
+      "technical_failures": 0,
+      "snr_invalid_records": 0,
+      "event_cluster_bootstrap_95": {
+        "replicates": 5000,
+        "seed": 20260729,
+        "cluster": "event_id",
+        "event_clusters": 36,
+        "event_record_candidate_precision": {
+          "estimate": 0.9976303317535545,
+          "lower_95": 0.9914529914529915,
+          "upper_95": 1.0,
+          "valid_replicates": 5000
+        },
+        "record_recall": {
+          "estimate": 0.6005706134094151,
+          "lower_95": 0.5086859020655785,
+          "upper_95": 0.6830144669134242,
+          "valid_replicates": 5000
+        },
+        "event_record_candidate_f1": {
+          "estimate": 0.7497773820124666,
+          "lower_95": 0.6735713368809223,
+          "upper_95": 0.8110416275706763,
+          "valid_replicates": 5000
+        },
+        "median_abs_pick_error_seconds_hits": {
+          "estimate": 0.0951249575614934,
+          "lower_95": 0.0863411068916324,
+          "upper_95": 0.10619254100322753,
+          "valid_replicates": 5000
+        },
+        "median_availability_latency_seconds_hits": {
+          "estimate": 0.5999999999999996,
+          "lower_95": 0.5600000000000005,
+          "upper_95": 0.6199999999999992,
+          "valid_replicates": 5000
+        },
+        "within_0p5_rate_all_records": {
+          "estimate": 0.5848787446504993,
+          "lower_95": 0.5007473284636411,
+          "upper_95": 0.6628931529070263,
+          "valid_replicates": 5000
+        },
+        "within_1p0_rate_all_records": {
+          "estimate": 0.5991440798858774,
+          "lower_95": 0.5078233352596017,
+          "upper_95": 0.6810181901012006,
+          "valid_replicates": 5000
+        },
+        "within_1p5_rate_all_records": {
+          "estimate": 0.6005706134094151,
+          "lower_95": 0.5086859020655785,
+          "upper_95": 0.6830144669134242,
+          "valid_replicates": 5000
+        }
+      }
+    },
+    "instancegm": {
+      "records": 1170,
+      "events": 71,
+      "stations": 195,
+      "true_positive": 605,
+      "false_positive": 96,
+      "false_negative": 565,
+      "event_record_candidate_precision": 0.8630527817403709,
+      "record_recall": 0.5170940170940171,
+      "event_record_candidate_f1": 0.6467129877071085,
+      "records_with_any_candidate": 657,
+      "mean_candidates_per_record": 0.5991452991452991,
+      "within_0p5_rate_all_records": 0.4829059829059829,
+      "within_1p0_rate_all_records": 0.5076923076923077,
+      "within_1p5_rate_all_records": 0.5170940170940171,
+      "median_signed_pick_error_seconds_hits": 0.0203329658508302,
+      "median_abs_pick_error_seconds_hits": 0.1370581865310676,
+      "p90_abs_pick_error_seconds_hits": 0.377596023559569,
+      "median_availability_latency_seconds_hits": 0.8099999999999987,
+      "p90_availability_latency_seconds_hits": 1.16,
+      "technical_failures": 0,
+      "snr_invalid_records": 0,
+      "event_cluster_bootstrap_95": {
+        "replicates": 5000,
+        "seed": 20260730,
+        "cluster": "event_id",
+        "event_clusters": 71,
+        "event_record_candidate_precision": {
+          "estimate": 0.8630527817403709,
+          "lower_95": 0.7822760352399527,
+          "upper_95": 0.9387152432031535,
+          "valid_replicates": 5000
+        },
+        "record_recall": {
+          "estimate": 0.5170940170940171,
+          "lower_95": 0.4369182697002246,
+          "upper_95": 0.5929136761867049,
+          "valid_replicates": 5000
+        },
+        "event_record_candidate_f1": {
+          "estimate": 0.6467129877071085,
+          "lower_95": 0.5716302144651723,
+          "upper_95": 0.7146768491962915,
+          "valid_replicates": 5000
+        },
+        "median_abs_pick_error_seconds_hits": {
+          "estimate": 0.1370581865310676,
+          "lower_95": 0.1214920210838315,
+          "upper_95": 0.1570201444625851,
+          "valid_replicates": 5000
+        },
+        "median_availability_latency_seconds_hits": {
+          "estimate": 0.8099999999999987,
+          "lower_95": 0.7699999999999996,
+          "upper_95": 0.8599999999999994,
+          "valid_replicates": 5000
+        },
+        "within_0p5_rate_all_records": {
+          "estimate": 0.4829059829059829,
+          "lower_95": 0.40322328629032256,
+          "upper_95": 0.5592055553380574,
+          "valid_replicates": 5000
+        },
+        "within_1p0_rate_all_records": {
+          "estimate": 0.5076923076923077,
+          "lower_95": 0.42807353715338575,
+          "upper_95": 0.5847834654664259,
+          "valid_replicates": 5000
+        },
+        "within_1p5_rate_all_records": {
+          "estimate": 0.5170940170940171,
+          "lower_95": 0.4369182697002246,
+          "upper_95": 0.5929136761867049,
+          "valid_replicates": 5000
+        }
+      }
+    }
+  },
+  "stratified_metrics": {
+    "knet": {
+      "snr": {
+        "0_to_lt_10_db": {
+          "records": 2,
+          "events": 2,
+          "stations": 2,
+          "true_positive": 0,
+          "false_positive": 0,
+          "false_negative": 2,
+          "event_record_candidate_precision": null,
+          "record_recall": 0.0,
+          "event_record_candidate_f1": 0.0,
+          "records_with_any_candidate": 0,
+          "mean_candidates_per_record": 0.0,
+          "within_0p5_rate_all_records": 0.0,
+          "within_1p0_rate_all_records": 0.0,
+          "within_1p5_rate_all_records": 0.0,
+          "median_signed_pick_error_seconds_hits": null,
+          "median_abs_pick_error_seconds_hits": null,
+          "p90_abs_pick_error_seconds_hits": null,
+          "median_availability_latency_seconds_hits": null,
+          "p90_availability_latency_seconds_hits": null,
+          "technical_failures": 0,
+          "snr_invalid_records": 0
+        },
+        "ge_10_db": {
+          "records": 699,
+          "events": 36,
+          "stations": 357,
+          "true_positive": 421,
+          "false_positive": 1,
+          "false_negative": 278,
+          "event_record_candidate_precision": 0.9976303317535545,
+          "record_recall": 0.6022889842632332,
+          "event_record_candidate_f1": 0.7511150758251561,
+          "records_with_any_candidate": 421,
+          "mean_candidates_per_record": 0.6037195994277539,
+          "within_0p5_rate_all_records": 0.586552217453505,
+          "within_1p0_rate_all_records": 0.6008583690987125,
+          "within_1p5_rate_all_records": 0.6022889842632332,
+          "median_signed_pick_error_seconds_hits": -0.0230922603607179,
+          "median_abs_pick_error_seconds_hits": 0.0951249575614934,
+          "p90_abs_pick_error_seconds_hits": 0.2315195322036736,
+          "median_availability_latency_seconds_hits": 0.5999999999999996,
+          "p90_availability_latency_seconds_hits": 0.8900000000000006,
+          "technical_failures": 0,
+          "snr_invalid_records": 0
+        }
+      },
+      "p_precontext": {
+        "lt_10_seconds": {
+          "records": 301,
+          "events": 36,
+          "stations": 223,
+          "true_positive": 29,
+          "false_positive": 0,
+          "false_negative": 272,
+          "event_record_candidate_precision": 1.0,
+          "record_recall": 0.09634551495016612,
+          "event_record_candidate_f1": 0.17575757575757575,
+          "records_with_any_candidate": 29,
+          "mean_candidates_per_record": 0.09634551495016612,
+          "within_0p5_rate_all_records": 0.09634551495016612,
+          "within_1p0_rate_all_records": 0.09634551495016612,
+          "within_1p5_rate_all_records": 0.09634551495016612,
+          "median_signed_pick_error_seconds_hits": 0.0076604843139644,
+          "median_abs_pick_error_seconds_hits": 0.063519723415375,
+          "p90_abs_pick_error_seconds_hits": 0.19648236751556347,
+          "median_availability_latency_seconds_hits": 0.7200000000000006,
+          "p90_availability_latency_seconds_hits": 0.924,
+          "technical_failures": 0,
+          "snr_invalid_records": 0
+        },
+        "ge_10_seconds": {
+          "records": 400,
+          "events": 35,
+          "stations": 244,
+          "true_positive": 392,
+          "false_positive": 1,
+          "false_negative": 8,
+          "event_record_candidate_precision": 0.9974554707379135,
+          "record_recall": 0.98,
+          "event_record_candidate_f1": 0.9886506935687264,
+          "records_with_any_candidate": 392,
+          "mean_candidates_per_record": 0.9825,
+          "within_0p5_rate_all_records": 0.9525,
+          "within_1p0_rate_all_records": 0.9775,
+          "within_1p5_rate_all_records": 0.98,
+          "median_signed_pick_error_seconds_hits": -0.0275317579507827,
+          "median_abs_pick_error_seconds_hits": 0.09694431245327,
+          "p90_abs_pick_error_seconds_hits": 0.23862008762359627,
+          "median_availability_latency_seconds_hits": 0.5800000000000001,
+          "p90_availability_latency_seconds_hits": 0.8900000000000006,
+          "technical_failures": 0,
+          "snr_invalid_records": 0
+        }
+      }
+    },
+    "instancegm": {
+      "snr": {
+        "lt_0_db": {
+          "records": 145,
+          "events": 44,
+          "stations": 90,
+          "true_positive": 11,
+          "false_positive": 2,
+          "false_negative": 134,
+          "event_record_candidate_precision": 0.8461538461538461,
+          "record_recall": 0.07586206896551724,
+          "event_record_candidate_f1": 0.13924050632911392,
+          "records_with_any_candidate": 13,
+          "mean_candidates_per_record": 0.0896551724137931,
+          "within_0p5_rate_all_records": 0.0,
+          "within_1p0_rate_all_records": 0.05517241379310345,
+          "within_1p5_rate_all_records": 0.07586206896551724,
+          "median_signed_pick_error_seconds_hits": 0.7572516393661495,
+          "median_abs_pick_error_seconds_hits": 0.7572516393661495,
+          "p90_abs_pick_error_seconds_hits": 1.204739623069763,
+          "median_availability_latency_seconds_hits": 2.0199999999999996,
+          "p90_availability_latency_seconds_hits": 2.3299999999999983,
+          "technical_failures": 0,
+          "snr_invalid_records": 0
+        },
+        "0_to_lt_10_db": {
+          "records": 268,
+          "events": 59,
+          "stations": 125,
+          "true_positive": 47,
+          "false_positive": 21,
+          "false_negative": 221,
+          "event_record_candidate_precision": 0.6911764705882353,
+          "record_recall": 0.17537313432835822,
+          "event_record_candidate_f1": 0.27976190476190477,
+          "records_with_any_candidate": 66,
+          "mean_candidates_per_record": 0.2537313432835821,
+          "within_0p5_rate_all_records": 0.13805970149253732,
+          "within_1p0_rate_all_records": 0.16044776119402984,
+          "within_1p5_rate_all_records": 0.17537313432835822,
+          "median_signed_pick_error_seconds_hits": 0.1491320848464958,
+          "median_abs_pick_error_seconds_hits": 0.262940154075622,
+          "p90_abs_pick_error_seconds_hits": 0.9175009560585018,
+          "median_availability_latency_seconds_hits": 1.0,
+          "p90_availability_latency_seconds_hits": 1.5619999999999996,
+          "technical_failures": 0,
+          "snr_invalid_records": 0
+        },
+        "ge_10_db": {
+          "records": 757,
+          "events": 61,
+          "stations": 160,
+          "true_positive": 547,
+          "false_positive": 73,
+          "false_negative": 210,
+          "event_record_candidate_precision": 0.882258064516129,
+          "record_recall": 0.7225891677675033,
+          "event_record_candidate_f1": 0.794480755265069,
+          "records_with_any_candidate": 578,
+          "mean_candidates_per_record": 0.8190224570673712,
+          "within_0p5_rate_all_records": 0.6974900924702774,
+          "within_1p0_rate_all_records": 0.7173051519154557,
+          "within_1p5_rate_all_records": 0.7225891677675033,
+          "median_signed_pick_error_seconds_hits": 0.0035108280181876,
+          "median_abs_pick_error_seconds_hits": 0.1289424610137928,
+          "p90_abs_pick_error_seconds_hits": 0.3098642673492435,
+          "median_availability_latency_seconds_hits": 0.7899999999999991,
+          "p90_availability_latency_seconds_hits": 1.1099999999999994,
+          "technical_failures": 0,
+          "snr_invalid_records": 0
+        }
+      }
+    }
+  },
+  "statistics": {
+    "bootstrap_seed": 20260729,
+    "bootstrap_replicates": 5000,
+    "bootstrap_cluster": "event_id",
+    "snr_bins_db": [
+      "<0",
+      "0-<10",
+      ">=10",
+      "invalid"
+    ],
+    "knet_p_precontext_bins_seconds": [
+      "<10",
+      ">=10"
+    ]
+  },
+  "run_summaries": {
+    "knet": {
+      "summary_id": "cspp_v27c_fixed_retrospective_score_v1",
+      "protocol_id": "cspp_v27c_fixed_retrospective_benchmark_v1",
+      "protocol_sha256": "acaf702a8cbfa7f19f6fe2b94762342aafb271cd3ce7d21ea515d5cf932ba196",
+      "dataset": "knet",
+      "model_key": "cspp_v27c_primary",
+      "selected_arm": "C0",
+      "primary_seed": 20261101,
+      "operating_point": {
+        "candidate_threshold": 0.1,
+        "event_threshold": 0.975,
+        "count": 1,
+        "threshold_scan_permitted": false,
+        "provenance": "GeoNet temporal development selection freeze; no fixed-benchmark threshold or model selection"
+      },
+      "checkpoint": {
+        "arm": "C0",
+        "bytes": 1369948,
+        "path": "work_artifacts/checkpoints/blind_v27c_C0_none_seed20261101/final.pt",
+        "seed": 20261101,
+        "sha256": "d27ce10351475dfa264b45406b601dbcfc64e15c92be7260fe54c1738d35586d",
+        "training_history_sha256": "fcf20a20176b703dbdf50760dd074142942e81beadfd029b681401ecdbe9ced6",
+        "training_run_protocol_sha256": "b0a8ddf0b5ab1a7825a446a8d89a368b87459107febe42faec6d8b886c22a3fd",
+        "verifier_feature_mode": "none",
+        "mtime_ns": 1785279668700000000
+      },
+      "fixed_test_manifest": {
+        "path": "workspace/outputs/evaluation/domain_robust_v24_fixed_test_manifest_20260728/knet_test_m4_r200_100hz.csv",
+        "bytes": 104592,
+        "mtime_ns": 1785213125504466806,
+        "sha256": "88957e0fd383c43c8f920405ded060e44a89ef239f2b4fdb69736c75c61a6ca7"
+      },
+      "source_store": {
+        "path": "external_data/knet_accel_causal_raw/waveforms.hdf5",
+        "bytes": 1671278821,
+        "mtime_ns": 1784103568150000000,
+        "sha256": null,
+        "identity_note": "Bound by path, byte count, mtime, fixed record manifest, and a per-waveform SHA-256 emitted during scoring."
+      },
+      "waveform_hash_reference": {
+        "path": "external/records.csv",
+        "bytes": 565070,
+        "mtime_ns": 1785260855110000000,
+        "sha256": "89d9669c722987066d8b8a78b259826f534cf5261b261a706afe0d2618d73af4",
+        "records": 701,
+        "used_columns": [
+          "dataset",
+          "source_index",
+          "trace_name",
+          "event_id",
+          "waveform_sha256"
+        ],
+        "ignored_columns": [
+          "absolute_pick_error_seconds",
+          "availability_latency_seconds",
+          "candidate_count",
+          "epicentral_distance_km",
+          "false_negative",
+          "false_positive",
+          "local_p_excess_power_snr_db",
+          "magnitude",
+          "matched_candidate_count",
+          "model_key",
+          "n_samples",
+          "operating_point",
+          "p_arrival_sample",
+          "pick_error_seconds",
+          "sample_rate_hz",
+          "selected_available_seconds",
+          "selected_estimated_p_seconds",
+          "station_id",
+          "technical_error",
+          "true_positive",
+          "within_0p5_seconds",
+          "within_1p0_seconds",
+          "within_1p5_seconds"
+        ],
+        "evidence_role": "pre-V27C selected-waveform content identity only; all prior model outputs and metrics are ignored"
+      },
+      "records_requested": 701,
+      "records_emitted": 701,
+      "technical_failures": 0,
+      "waveform_identity_unverified_technical_failures": 0,
+      "device": "cpu",
+      "torch_threads": 1,
+      "workers": 1,
+      "output_fields": [
+        "dataset",
+        "model_key",
+        "selected_arm",
+        "primary_seed",
+        "source_index",
+        "trace_name",
+        "event_id",
+        "station_id",
+        "magnitude",
+        "epicentral_distance_km",
+        "p_arrival_sample",
+        "p_precontext_seconds",
+        "p_precontext_stratum",
+        "sample_rate_hz",
+        "manifest_n_samples",
+        "evaluated_n_samples",
+        "waveform_sha256",
+        "snr_definition_id",
+        "snr_valid",
+        "local_p_excess_power_snr_db",
+        "snr_bin",
+        "packet_count",
+        "quality_valid_packets",
+        "quality_invalid_packets",
+        "candidate_allowed_packets",
+        "candidate_count",
+        "matched_candidate_count",
+        "true_positive",
+        "false_positive",
+        "false_negative",
+        "within_0p5_seconds",
+        "within_1p0_seconds",
+        "within_1p5_seconds",
+        "selected_estimated_p_seconds",
+        "selected_available_seconds",
+        "pick_error_seconds",
+        "absolute_pick_error_seconds",
+        "availability_latency_seconds",
+        "technical_failure",
+        "technical_error"
+      ],
+      "runtime_seconds": 249.22534704208374,
+      "worker_max_resident_set_bytes": 634322944,
+      "records_artifact": {
+        "path": "work_artifacts/evaluation/cspp_v27c_fixed_retrospective_a1_20260729/runs/knet/records.csv",
+        "bytes": 239843,
+        "mtime_ns": 1785349889020000000,
+        "sha256": "5e74ce57c727f96cf523754d0037a91710544a99a07dd948bd85c82ef4328f58"
+      },
+      "claim_boundary": {
+        "historical_status": "K-NET and InstanceGM are historically inspected fixed retrospective benchmark partitions, not new blind tests.",
+        "supported_generalization": "The benchmark reports held-out record-level performance on the frozen partitions. Event-level independence from training has not been established.",
+        "station_boundary": "Training and fixed cohorts share stations; results do not establish unseen-station generalization.",
+        "false_alarm_boundary": "Event-centered records do not estimate continuous-stream false-alarm rates or false alarms per station-day.",
+        "public_baseline_boundary": "Optional public-model endpoint CSVs remain user-supplied same-manifest comparisons unless a separate generation provenance seal binds weights, code, preprocessing, and output. Unsealed CSVs cannot support a formal SOTA claim. Released offline interfaces are not used for causal availability-latency comparison.",
+        "input_identity_boundary": "The large source stores are bound by path, byte count, and mtime. Every successfully decoded selected waveform must also match a pre-V27C per-record SHA-256 reference; old model outputs in those reference CSVs are ignored."
+      }
+    },
+    "instancegm": {
+      "summary_id": "cspp_v27c_fixed_retrospective_score_v1",
+      "protocol_id": "cspp_v27c_fixed_retrospective_benchmark_v1",
+      "protocol_sha256": "acaf702a8cbfa7f19f6fe2b94762342aafb271cd3ce7d21ea515d5cf932ba196",
+      "dataset": "instancegm",
+      "model_key": "cspp_v27c_primary",
+      "selected_arm": "C0",
+      "primary_seed": 20261101,
+      "operating_point": {
+        "candidate_threshold": 0.1,
+        "event_threshold": 0.975,
+        "count": 1,
+        "threshold_scan_permitted": false,
+        "provenance": "GeoNet temporal development selection freeze; no fixed-benchmark threshold or model selection"
+      },
+      "checkpoint": {
+        "arm": "C0",
+        "bytes": 1369948,
+        "path": "work_artifacts/checkpoints/blind_v27c_C0_none_seed20261101/final.pt",
+        "seed": 20261101,
+        "sha256": "d27ce10351475dfa264b45406b601dbcfc64e15c92be7260fe54c1738d35586d",
+        "training_history_sha256": "fcf20a20176b703dbdf50760dd074142942e81beadfd029b681401ecdbe9ced6",
+        "training_run_protocol_sha256": "b0a8ddf0b5ab1a7825a446a8d89a368b87459107febe42faec6d8b886c22a3fd",
+        "verifier_feature_mode": "none",
+        "mtime_ns": 1785279668700000000
+      },
+      "fixed_test_manifest": {
+        "path": "workspace/outputs/evaluation/domain_robust_v24_fixed_test_manifest_20260728/instancegm_test_accel_m4_r200.csv",
+        "bytes": 110018,
+        "mtime_ns": 1785213125507466337,
+        "sha256": "a52e8f71447ec4b38bf4a96b1e2b579de3a43f28f095acd11e092094629dc185"
+      },
+      "source_store": {
+        "path": "external/waveforms.hdf5",
+        "bytes": 166932302160,
+        "mtime_ns": 1775000083364098645,
+        "sha256": null,
+        "identity_note": "Bound by path, byte count, mtime, fixed record manifest, and a per-waveform SHA-256 emitted during scoring."
+      },
+      "waveform_hash_reference": {
+        "path": "external/records.csv",
+        "bytes": 1026539,
+        "mtime_ns": 1785261865740000000,
+        "sha256": "7c7fc9b1033906e037d74e537b677987a8049692e3638adceafdfa2713a2a56b",
+        "records": 1170,
+        "used_columns": [
+          "dataset",
+          "source_index",
+          "trace_name",
+          "event_id",
+          "waveform_sha256"
+        ],
+        "ignored_columns": [
+          "absolute_pick_error_seconds",
+          "availability_latency_seconds",
+          "candidate_count",
+          "epicentral_distance_km",
+          "false_negative",
+          "false_positive",
+          "local_p_excess_power_snr_db",
+          "magnitude",
+          "matched_candidate_count",
+          "model_key",
+          "n_samples",
+          "operating_point",
+          "p_arrival_sample",
+          "pick_error_seconds",
+          "sample_rate_hz",
+          "selected_available_seconds",
+          "selected_estimated_p_seconds",
+          "station_id",
+          "technical_error",
+          "true_positive",
+          "within_0p5_seconds",
+          "within_1p0_seconds",
+          "within_1p5_seconds"
+        ],
+        "evidence_role": "pre-V27C selected-waveform content identity only; all prior model outputs and metrics are ignored"
+      },
+      "records_requested": 1170,
+      "records_emitted": 1170,
+      "technical_failures": 0,
+      "waveform_identity_unverified_technical_failures": 0,
+      "device": "cpu",
+      "torch_threads": 1,
+      "workers": 1,
+      "output_fields": [
+        "dataset",
+        "model_key",
+        "selected_arm",
+        "primary_seed",
+        "source_index",
+        "trace_name",
+        "event_id",
+        "station_id",
+        "magnitude",
+        "epicentral_distance_km",
+        "p_arrival_sample",
+        "p_precontext_seconds",
+        "p_precontext_stratum",
+        "sample_rate_hz",
+        "manifest_n_samples",
+        "evaluated_n_samples",
+        "waveform_sha256",
+        "snr_definition_id",
+        "snr_valid",
+        "local_p_excess_power_snr_db",
+        "snr_bin",
+        "packet_count",
+        "quality_valid_packets",
+        "quality_invalid_packets",
+        "candidate_allowed_packets",
+        "candidate_count",
+        "matched_candidate_count",
+        "true_positive",
+        "false_positive",
+        "false_negative",
+        "within_0p5_seconds",
+        "within_1p0_seconds",
+        "within_1p5_seconds",
+        "selected_estimated_p_seconds",
+        "selected_available_seconds",
+        "pick_error_seconds",
+        "absolute_pick_error_seconds",
+        "availability_latency_seconds",
+        "technical_failure",
+        "technical_error"
+      ],
+      "runtime_seconds": 460.48766684532166,
+      "worker_max_resident_set_bytes": 524533760,
+      "records_artifact": {
+        "path": "work_artifacts/evaluation/cspp_v27c_fixed_retrospective_a1_20260729/runs/instancegm/records.csv",
+        "bytes": 414961,
+        "mtime_ns": 1785350350470000000,
+        "sha256": "3b0caf424932d297e4e44f97c5f74a83b613fa46d2c6adb9a756b66c79b35966"
+      },
+      "claim_boundary": {
+        "historical_status": "K-NET and InstanceGM are historically inspected fixed retrospective benchmark partitions, not new blind tests.",
+        "supported_generalization": "The benchmark reports held-out record-level performance on the frozen partitions. Event-level independence from training has not been established.",
+        "station_boundary": "Training and fixed cohorts share stations; results do not establish unseen-station generalization.",
+        "false_alarm_boundary": "Event-centered records do not estimate continuous-stream false-alarm rates or false alarms per station-day.",
+        "public_baseline_boundary": "Optional public-model endpoint CSVs remain user-supplied same-manifest comparisons unless a separate generation provenance seal binds weights, code, preprocessing, and output. Unsealed CSVs cannot support a formal SOTA claim. Released offline interfaces are not used for causal availability-latency comparison.",
+        "input_identity_boundary": "The large source stores are bound by path, byte count, and mtime. Every successfully decoded selected waveform must also match a pre-V27C per-record SHA-256 reference; old model outputs in those reference CSVs are ignored."
+      }
+    }
+  },
+  "run_summary_artifacts": {
+    "knet": {
+      "summary": {
+        "path": "work_artifacts/evaluation/cspp_v27c_fixed_retrospective_a1_20260729/runs/knet/summary.json",
+        "bytes": 5824,
+        "mtime_ns": 1785349889030000000,
+        "sha256": "de8a851c7d38d211d22786511b9aeab208548749d18308cc6870bb0fef6d10c1"
+      },
+      "execution_audit": {
+        "path": "work_artifacts/evaluation/cspp_v27c_fixed_retrospective_a1_20260729/runs/knet/execution_audit.json",
+        "bytes": 1952,
+        "mtime_ns": 1785349889220000000,
+        "sha256": "ab7010ec135648103729a290f5a47a88979c408107255f7541666a1f6591e87c"
+      }
+    },
+    "instancegm": {
+      "summary": {
+        "path": "work_artifacts/evaluation/cspp_v27c_fixed_retrospective_a1_20260729/runs/instancegm/summary.json",
+        "bytes": 5830,
+        "mtime_ns": 1785350350480000000,
+        "sha256": "5d9ee95df7fc053aecc5219659b59dc48d954670664ea089493a1d49e291d9a6"
+      },
+      "execution_audit": {
+        "path": "work_artifacts/evaluation/cspp_v27c_fixed_retrospective_a1_20260729/runs/instancegm/execution_audit.json",
+        "bytes": 1989,
+        "mtime_ns": 1785350350720000000,
+        "sha256": "64060dda5f1a143f33ff583b370d9c2b0cbe4a6cf7a1dc8112a7191f026bc2a5"
+      }
+    }
+  },
+  "public_baseline_endpoint_comparisons": {
+    "instancegm:eqtransformer_original_p_default": {
+      "dataset": "instancegm",
+      "method_id": "eqtransformer_original_p_default",
+      "records": 1170,
+      "cspp_v27c_recall": 0.5170940170940171,
+      "baseline_recall": 0.8282051282051283,
+      "recall_difference_cspp_v27c_minus_baseline": -0.3111111111111111,
+      "cspp_v27c_only_hits": 19,
+      "baseline_only_hits": 383,
+      "record_level_mcnemar_exact_two_sided_p_descriptive": 3.2847927999864194e-89,
+      "endpoint_only": true,
+      "availability_latency_compared": false,
+      "paired_recall_difference_event_cluster_bootstrap_95": {
+        "estimate": -0.3111111111111111,
+        "lower_95": -0.3785951443518547,
+        "upper_95": -0.24291384251467044,
+        "replicates": 5000,
+        "valid_replicates": 5000,
+        "cluster": "event_id",
+        "seed": 20270729
+      },
+      "baseline_endpoint_metrics": {
+        "records": 1170,
+        "true_positive": 969,
+        "extra_event_record_candidates": 348,
+        "false_negative": 201,
+        "event_record_candidate_precision": 0.7357630979498861,
+        "record_recall": 0.8282051282051283,
+        "event_record_candidate_f1": 0.7792521109770808,
+        "continuous_false_alarm_interpretation_permitted": false
+      },
+      "technical_failure_records": 0
+    },
+    "instancegm:eqtransformer_original_p_det_default": {
+      "dataset": "instancegm",
+      "method_id": "eqtransformer_original_p_det_default",
+      "records": 1170,
+      "cspp_v27c_recall": 0.5170940170940171,
+      "baseline_recall": 0.7717948717948718,
+      "recall_difference_cspp_v27c_minus_baseline": -0.2547008547008547,
+      "cspp_v27c_only_hits": 64,
+      "baseline_only_hits": 362,
+      "record_level_mcnemar_exact_two_sided_p_descriptive": 1.4427297297605968e-51,
+      "endpoint_only": true,
+      "availability_latency_compared": false,
+      "paired_recall_difference_event_cluster_bootstrap_95": {
+        "estimate": -0.2547008547008547,
+        "lower_95": -0.3262673894326627,
+        "upper_95": -0.1842535043639249,
+        "replicates": 5000,
+        "valid_replicates": 5000,
+        "cluster": "event_id",
+        "seed": 20270730
+      },
+      "baseline_endpoint_metrics": {
+        "records": 1170,
+        "true_positive": 903,
+        "extra_event_record_candidates": 252,
+        "false_negative": 267,
+        "event_record_candidate_precision": 0.7818181818181819,
+        "record_recall": 0.7717948717948718,
+        "event_record_candidate_f1": 0.7767741935483871,
+        "continuous_false_alarm_interpretation_permitted": false
+      },
+      "technical_failure_records": 0
+    },
+    "instancegm:phasenet_instance_default": {
+      "dataset": "instancegm",
+      "method_id": "phasenet_instance_default",
+      "records": 1170,
+      "cspp_v27c_recall": 0.5170940170940171,
+      "baseline_recall": 0.9418803418803419,
+      "recall_difference_cspp_v27c_minus_baseline": -0.4247863247863248,
+      "cspp_v27c_only_hits": 0,
+      "baseline_only_hits": 497,
+      "record_level_mcnemar_exact_two_sided_p_descriptive": 4.887898181599368e-150,
+      "endpoint_only": true,
+      "availability_latency_compared": false,
+      "paired_recall_difference_event_cluster_bootstrap_95": {
+        "estimate": -0.4247863247863248,
+        "lower_95": -0.49490769323112277,
+        "upper_95": -0.3558602293991268,
+        "replicates": 5000,
+        "valid_replicates": 5000,
+        "cluster": "event_id",
+        "seed": 20270731
+      },
+      "baseline_endpoint_metrics": {
+        "records": 1170,
+        "true_positive": 1102,
+        "extra_event_record_candidates": 510,
+        "false_negative": 68,
+        "event_record_candidate_precision": 0.6836228287841191,
+        "record_recall": 0.9418803418803419,
+        "event_record_candidate_f1": 0.792235801581596,
+        "continuous_false_alarm_interpretation_permitted": false
+      },
+      "technical_failure_records": 0
+    },
+    "knet:eqtransformer_original_p_default": {
+      "dataset": "knet",
+      "method_id": "eqtransformer_original_p_default",
+      "records": 701,
+      "cspp_v27c_recall": 0.6005706134094151,
+      "baseline_recall": 0.8174037089871612,
+      "recall_difference_cspp_v27c_minus_baseline": -0.21683309557774608,
+      "cspp_v27c_only_hits": 21,
+      "baseline_only_hits": 173,
+      "record_level_mcnemar_exact_two_sided_p_descriptive": 6.375720047443095e-31,
+      "endpoint_only": true,
+      "availability_latency_compared": false,
+      "paired_recall_difference_event_cluster_bootstrap_95": {
+        "estimate": -0.21683309557774608,
+        "lower_95": -0.3207922732362822,
+        "upper_95": -0.11077066622103422,
+        "replicates": 5000,
+        "valid_replicates": 5000,
+        "cluster": "event_id",
+        "seed": 20270732
+      },
+      "baseline_endpoint_metrics": {
+        "records": 701,
+        "true_positive": 573,
+        "extra_event_record_candidates": 54,
+        "false_negative": 128,
+        "event_record_candidate_precision": 0.9138755980861244,
+        "record_recall": 0.8174037089871612,
+        "event_record_candidate_f1": 0.8629518072289156,
+        "continuous_false_alarm_interpretation_permitted": false
+      },
+      "technical_failure_records": 40,
+      "technical_failure_classification": "input_length_technical_unavailability",
+      "released_model_input_samples": 6000,
+      "affected_record_samples": 5900,
+      "technically_available_endpoint_metrics": {
+        "records": 661,
+        "excluded_input_length_unavailable_records": 40,
+        "true_positive": 573,
+        "extra_event_record_candidates": 54,
+        "false_negative": 88,
+        "event_record_candidate_precision": 0.9138755980861244,
+        "record_recall": 0.8668683812405447,
+        "event_record_candidate_f1": 0.889751552795031,
+        "scope": "descriptive_conditioned_on_released_model_input_length"
+      }
+    },
+    "knet:eqtransformer_original_p_det_default": {
+      "dataset": "knet",
+      "method_id": "eqtransformer_original_p_det_default",
+      "records": 701,
+      "cspp_v27c_recall": 0.6005706134094151,
+      "baseline_recall": 0.7161198288159771,
+      "recall_difference_cspp_v27c_minus_baseline": -0.11554921540656206,
+      "cspp_v27c_only_hits": 61,
+      "baseline_only_hits": 142,
+      "record_level_mcnemar_exact_two_sided_p_descriptive": 1.2737071470603654e-08,
+      "endpoint_only": true,
+      "availability_latency_compared": false,
+      "paired_recall_difference_event_cluster_bootstrap_95": {
+        "estimate": -0.11554921540656206,
+        "lower_95": -0.2063792991458543,
+        "upper_95": -0.01804861111111121,
+        "replicates": 5000,
+        "valid_replicates": 5000,
+        "cluster": "event_id",
+        "seed": 20270733
+      },
+      "baseline_endpoint_metrics": {
+        "records": 701,
+        "true_positive": 502,
+        "extra_event_record_candidates": 26,
+        "false_negative": 199,
+        "event_record_candidate_precision": 0.9507575757575758,
+        "record_recall": 0.7161198288159771,
+        "event_record_candidate_f1": 0.8169243287225386,
+        "continuous_false_alarm_interpretation_permitted": false
+      },
+      "technical_failure_records": 40,
+      "technical_failure_classification": "input_length_technical_unavailability",
+      "released_model_input_samples": 6000,
+      "affected_record_samples": 5900,
+      "technically_available_endpoint_metrics": {
+        "records": 661,
+        "excluded_input_length_unavailable_records": 40,
+        "true_positive": 502,
+        "extra_event_record_candidates": 26,
+        "false_negative": 159,
+        "event_record_candidate_precision": 0.9507575757575758,
+        "record_recall": 0.7594553706505295,
+        "event_record_candidate_f1": 0.8444070647603028,
+        "scope": "descriptive_conditioned_on_released_model_input_length"
+      }
+    },
+    "knet:phasenet_instance_default": {
+      "dataset": "knet",
+      "method_id": "phasenet_instance_default",
+      "records": 701,
+      "cspp_v27c_recall": 0.6005706134094151,
+      "baseline_recall": 0.9971469329529244,
+      "recall_difference_cspp_v27c_minus_baseline": -0.39657631954350925,
+      "cspp_v27c_only_hits": 0,
+      "baseline_only_hits": 278,
+      "record_level_mcnemar_exact_two_sided_p_descriptive": 4.118046071574423e-84,
+      "endpoint_only": true,
+      "availability_latency_compared": false,
+      "paired_recall_difference_event_cluster_bootstrap_95": {
+        "estimate": -0.39657631954350925,
+        "lower_95": -0.48662706437478936,
+        "upper_95": -0.3110929951690824,
+        "replicates": 5000,
+        "valid_replicates": 5000,
+        "cluster": "event_id",
+        "seed": 20270734
+      },
+      "baseline_endpoint_metrics": {
+        "records": 701,
+        "true_positive": 699,
+        "extra_event_record_candidates": 61,
+        "false_negative": 2,
+        "event_record_candidate_precision": 0.9197368421052632,
+        "record_recall": 0.9971469329529244,
+        "event_record_candidate_f1": 0.9568788501026694,
+        "continuous_false_alarm_interpretation_permitted": false
+      },
+      "technical_failure_records": 0
+    }
+  },
+  "public_baseline_artifacts": [
+    {
+      "dataset": "instancegm",
+      "model_key": "eqtransformer_original",
+      "summary": {
+        "path": "work_artifacts/evaluation/cspp_v27c_fixed_public_baselines_v6_20260730/runs/instancegm/eqtransformer_original/summary.json",
+        "bytes": 2498,
+        "mtime_ns": 1785370184060000000,
+        "sha256": "5d29a36cb36c3d7d82a102ccf59841ffa56d92881b43debee7a73609aa2dcca6"
+      },
+      "records": {
+        "path": "work_artifacts/evaluation/cspp_v27c_fixed_public_baselines_v6_20260730/runs/instancegm/eqtransformer_original/records.csv",
+        "bytes": 770349,
+        "mtime_ns": 1785370184050000000,
+        "sha256": "edca3401a25199d04c5bedd57fe7be09b5edc7cc1a7701fb356de40851f29011"
+      },
+      "execution_audit": {
+        "path": "work_artifacts/evaluation/cspp_v27c_fixed_public_baselines_v6_20260730/runs/instancegm/eqtransformer_original/execution_audit.json",
+        "bytes": 2219,
+        "mtime_ns": 1785370184570000000,
+        "sha256": "9433ad59e96fdd04ffa009afa869344d21a0de2e660ef59e79a9a0492e3352ed"
+      },
+      "observed_peak_process_tree_rss_bytes": 544587776,
+      "technical_failure_records": 0
+    },
+    {
+      "dataset": "instancegm",
+      "model_key": "phasenet_instance",
+      "summary": {
+        "path": "work_artifacts/evaluation/cspp_v27c_fixed_public_baselines_v6_20260730/runs/instancegm/phasenet_instance/summary.json",
+        "bytes": 2284,
+        "mtime_ns": 1785369964690000000,
+        "sha256": "2259799d8c7494628cecbed116c378a55f926dafd169cb8c8b80b93b7ada2488"
+      },
+      "records": {
+        "path": "work_artifacts/evaluation/cspp_v27c_fixed_public_baselines_v6_20260730/runs/instancegm/phasenet_instance/records.csv",
+        "bytes": 374884,
+        "mtime_ns": 1785369964680000000,
+        "sha256": "0421fe4858962fd6c4ff9cc66d703b79f8cd7f9ecb76edd6573cd1f9b056c3e2"
+      },
+      "execution_audit": {
+        "path": "work_artifacts/evaluation/cspp_v27c_fixed_public_baselines_v6_20260730/runs/instancegm/phasenet_instance/execution_audit.json",
+        "bytes": 2188,
+        "mtime_ns": 1785369965170000000,
+        "sha256": "a3622e00d6b02fa5f8d8fc5ea1d023bceed9dd16d8acddfa21622f3ffbaeb354"
+      },
+      "observed_peak_process_tree_rss_bytes": 455704576,
+      "technical_failure_records": 0
+    },
+    {
+      "dataset": "knet",
+      "model_key": "eqtransformer_original",
+      "summary": {
+        "path": "work_artifacts/evaluation/cspp_v27c_fixed_public_baselines_v6_20260730/runs/knet/eqtransformer_original/summary.json",
+        "bytes": 2485,
+        "mtime_ns": 1785369951300000000,
+        "sha256": "fdacce44aee992f374b27376123800054290ee7ef24ddf4eda3f002935161ce4"
+      },
+      "records": {
+        "path": "work_artifacts/evaluation/cspp_v27c_fixed_public_baselines_v6_20260730/runs/knet/eqtransformer_original/records.csv",
+        "bytes": 440829,
+        "mtime_ns": 1785369951290000000,
+        "sha256": "6493022d8936456d0f1051c5907b3aee956b3a4d8e0e620e96ec1d51b06100b1"
+      },
+      "execution_audit": {
+        "path": "work_artifacts/evaluation/cspp_v27c_fixed_public_baselines_v6_20260730/runs/knet/eqtransformer_original/execution_audit.json",
+        "bytes": 2183,
+        "mtime_ns": 1785369951840000000,
+        "sha256": "7b92d2e8812f84105f499381afcbdf2e62c3baa09d7d857aa50842d983ba1f20"
+      },
+      "observed_peak_process_tree_rss_bytes": 965951488,
+      "technical_failure_records": 40
+    },
+    {
+      "dataset": "knet",
+      "model_key": "phasenet_instance",
+      "summary": {
+        "path": "work_artifacts/evaluation/cspp_v27c_fixed_public_baselines_v6_20260730/runs/knet/phasenet_instance/summary.json",
+        "bytes": 2267,
+        "mtime_ns": 1785369815790000000,
+        "sha256": "eb06783ea8747dcfd6291f10927b7abedd71fb06f25d076da43024d0a9e0fad5"
+      },
+      "records": {
+        "path": "work_artifacts/evaluation/cspp_v27c_fixed_public_baselines_v6_20260730/runs/knet/phasenet_instance/records.csv",
+        "bytes": 213556,
+        "mtime_ns": 1785369815780000000,
+        "sha256": "e5d1b2cf5331efa9ad720188cf4afceb7d6a7c606a234c228fb01a169e95f3bc"
+      },
+      "execution_audit": {
+        "path": "work_artifacts/evaluation/cspp_v27c_fixed_public_baselines_v6_20260730/runs/knet/phasenet_instance/execution_audit.json",
+        "bytes": 2150,
+        "mtime_ns": 1785369816140000000,
+        "sha256": "db2c78a7862435a6f55fe07af9e2e6177072ae9e763e69c8f1d679e5c43ce74a"
+      },
+      "observed_peak_process_tree_rss_bytes": 876773376,
+      "technical_failure_records": 0
+    }
+  ],
+  "public_baseline_provenance": {
+    "status": "provenance_sealed_same_manifest_public_baselines_input_length_unavailability_audited_and_retained_as_misses",
+    "protocol_sha256": "5f94073ede971bcac5ff6ff31f5147f825b1778eef748b42c8e45933c5f44c47",
+    "retrospective_protocol_sha256": "acaf702a8cbfa7f19f6fe2b94762342aafb271cd3ce7d21ea515d5cf932ba196",
+    "public_model_artifacts": {
+      "eqtransformer_original": {
+        "metadata": {
+          "path": "external/original.json.v3",
+          "bytes": 730,
+          "sha256": "e499eeee66e3e86e19caee0f640d6d3ab26b4a99142b9d73d75b078f18df389b"
+        },
+        "weights": {
+          "path": "external/original.pt.v3",
+          "bytes": 1597711,
+          "sha256": "c363c59dfb4562ba3b1356fb03dc9c776bbcfe3384b5db22e5ee3689de0a4df9"
+        }
+      },
+      "phasenet_instance": {
+        "metadata": {
+          "path": "external/instance.json.v2",
+          "bytes": 787,
+          "sha256": "d0f33eb054818b6eef1dcf090947f7239b68f290c2e9180d9a807df325300182"
+        },
+        "weights": {
+          "path": "external/instance.pt.v2",
+          "bytes": 1112615,
+          "sha256": "dddcc3d872106a8cd2013ce7a035c972a7f435749b5c02a015efd5ce3767da6d"
+        }
+      }
+    },
+    "software_versions": {
+      "numpy": "2.4.4",
+      "obspy": "1.5.0",
+      "seisbench": "0.11.5",
+      "torch": "2.5.1"
+    },
+    "endpoint": {
+      "evaluation_unit": "one labeled three-component event record",
+      "interface": "released SeisBench full-record annotation",
+      "match_tolerance_seconds": 1.5,
+      "hit_windows_seconds": [
+        0.5,
+        1.0,
+        1.5
+      ],
+      "candidate_accounting": "One candidate within +/-1.5 s is a hit; additional candidates are extra candidates within the event record.",
+      "availability_latency_comparison_permitted": false,
+      "technical_failure_policy": "count_as_miss",
+      "test_set_threshold_tuning_permitted": false,
+      "preprocessing": "Raw selected three-component records enter the released SeisBench annotate interface once. Weight-specific filtering is owned by annotate_stream_pre; external prefiltering is forbidden."
+    },
+    "released_annotation_preprocessing": {
+      "eqtransformer_original": {
+        "interface": "SeisBench WaveformModel.annotate",
+        "input_scope": "one_complete_180_second_record",
+        "preprocessing_owner": "seisbench_model_annotate_stream_pre",
+        "external_prefilter": false,
+        "annotate_calls_per_record": 1,
+        "model_filter_args": [
+          "bandpass"
+        ],
+        "model_filter_kwargs": {
+          "freqmin": 1.0,
+          "freqmax": 45.0,
+          "corners": 2,
+          "zerophase": true
+        },
+        "expected_model_filter_applications_per_record": 1,
+        "temporal_access": "full_record_zero_phase_filter_uses_future_samples"
+      },
+      "phasenet_instance": {
+        "interface": "SeisBench WaveformModel.annotate",
+        "input_scope": "one_complete_180_second_record",
+        "preprocessing_owner": "seisbench_model_annotate_stream_pre",
+        "external_prefilter": false,
+        "annotate_calls_per_record": 1,
+        "model_filter_args": [],
+        "model_filter_kwargs": {},
+        "expected_model_filter_applications_per_record": 0,
+        "temporal_access": "full_record_annotation"
+      }
+    },
+    "technical_failure_records_by_method": {
+      "instancegm:eqtransformer_original_p_default": 0,
+      "instancegm:eqtransformer_original_p_det_default": 0,
+      "instancegm:phasenet_instance_default": 0,
+      "knet:eqtransformer_original_p_default": 40,
+      "knet:eqtransformer_original_p_det_default": 40,
+      "knet:phasenet_instance_default": 0
+    },
+    "claim_boundary": {
+      "comparison": "Same fixed K-NET/InstanceGM record manifests and released public weights/operating points; no fixed-test tuning.",
+      "causality": "The public models use their released full-record annotation interfaces. Their endpoint accuracy is comparable, but their availability latency is not compared with CSPP.",
+      "test_status": "K-NET and InstanceGM are historically inspected fixed retrospective partitions, not new blind tests.",
+      "correction": "Only corrected V2 public-model outputs may be used. V1/A3 EQTransformer metrics are invalid because preprocessing was applied twice.",
+      "execution_revision": "V3 changes only post-publication artifact bookkeeping. The V2 single-owner preprocessing contract, fixed records, public weights, operating points, and endpoint definitions are unchanged.",
+      "execution_revision_v4": "V4 corrects the description of the already full-record public-model interface. It does not alter preprocessing, predictions, weights, operating points, records, matching, or endpoints. Released-model output remains offline and is not a causal-availability comparison.",
+      "execution_revision_v5": "V5 updates only the code identity after an unused GeoNet input-adapter function was added to the shared helper. Fixed-record waveforms, preprocessing, predictions, weights, operating points, matching, and endpoints remain identical to V4.",
+      "execution_revision_v6": "V6 changes only runner provenance and post-rename artifact path handling. Fixed-record inputs, evaluator, preprocessing, predictions, weights, thresholds, matching, and endpoints are unchanged."
+    },
+    "technical_availability_audit": {
+      "affected_records": 40,
+      "affected_method_rows": 80,
+      "affected_record_samples": 5900,
+      "minimum_successful_record_samples": 6000,
+      "affected_record_identity_sha256": "483220b2f1db140f6c466fb094e2eb77c3a94495304c9207e6d235601271699e",
+      "technical_error": "RuntimeError: Expected one public P annotation, got 0",
+      "methods": [
+        "eqtransformer_original_p_default",
+        "eqtransformer_original_p_det_default"
+      ],
+      "released_model": "eqtransformer_original",
+      "released_model_input_samples": 6000,
+      "classification": "input_length_technical_unavailability",
+      "overall_metric_policy": "Retain affected records as misses in the full frozen denominator; all A4 point estimates remain unchanged.",
+      "conditional_metric_policy": "Additionally report descriptive metrics among records with at least the released model's 6000-sample input length.",
+      "timing": "Post hoc audit amendment frozen after inspection of the A4 technical-error rows; no model output was regenerated."
+    }
+  },
+  "analysis_contract": {
+    "fixed_record_unit": "one labeled three-component event record",
+    "match_tolerance_seconds": 1.5,
+    "technical_failure_policy": "Retain every frozen record. A technical failure contributes true_positive=0, false_positive=0, false_negative=1.",
+    "public_technical_failure_interpretation": "The 40 K-NET records with 5900 samples are shorter than the released EQTransformer 6000-sample input and therefore produce no annotation stream under strict grouping. They are reported as input-length technical unavailability and retained as misses in the full denominator. A score trace with no threshold crossing remains an ordinary miss.",
+    "public_preprocessing": "Each complete 180-second selected record enters released annotate once; weight-specific filtering is applied only by SeisBench annotate_stream_pre. Zero-phase filtering uses future samples within that complete record.",
+    "test_set_tuning_permitted": false,
+    "availability_latency_comparison_permitted": false,
+    "continuous_false_alarm_interpretation_permitted": false,
+    "predictions_changed": false,
+    "weights_or_thresholds_changed": false,
+    "record_cohort_changed": false,
+    "full_denominator_metrics_changed": false,
+    "technical_taxonomy_changed": true,
+    "technical_taxonomy": "An empty annotation stream is technical input unavailability when the complete record is shorter than the released model's fixed input length. A scorable record with a P score trace but no threshold crossing is an ordinary miss."
+  },
+  "claim_boundary": {
+    "test_status": "K-NET and InstanceGM are historically inspected fixed retrospective partitions, not new blind tests.",
+    "comparison": "PhaseNet and EQTransformer use released full-record annotation interfaces on identical frozen records and waveform identities under the corrected single-owner preprocessing contract. Only record-level accuracy metrics are compared.",
+    "false_alarms": "Extra candidates within labeled event records are not a continuous-background false-alarm rate.",
+    "technical_failures": "The 40 K-NET EQTransformer input-length technical unavailabilities are retained as misses in the primary full-denominator metrics. Conditional metrics are descriptive.",
+    "a5_post_hoc_audit": "A5 is a transparent post hoc technical-taxonomy audit of already frozen A4 outputs."
+  },
+  "source_a4_result": {
+    "path": "work_artifacts/evaluation/cspp_v27c_fixed_retrospective_analysis_a4_20260729/result.json",
+    "bytes": 50331,
+    "mtime_ns": 1785370401080000000,
+    "sha256": "af904fc86133c521a556475500742290037eb0f544e9851695c8dc3084a3141b"
+  },
+  "source_a4_result_sha256": "af904fc86133c521a556475500742290037eb0f544e9851695c8dc3084a3141b",
+  "source_a4_protocol": {
+    "path": "work_artifacts/protocol_freeze/cspp_v27c_fixed_retrospective_analysis_protocol_a4_20260729.json",
+    "bytes": 17967,
+    "mtime_ns": 1785370394560000000,
+    "sha256": "0c8978875c7aa96c2577013567f5463979d9212bff96419f8b1e7e2f1338a07a"
+  },
+  "source_a4_protocol_sha256": "0c8978875c7aa96c2577013567f5463979d9212bff96419f8b1e7e2f1338a07a",
+  "technical_availability_audit": {
+    "affected_records": 40,
+    "affected_method_rows": 80,
+    "affected_record_samples": 5900,
+    "minimum_successful_record_samples": 6000,
+    "affected_record_identity_sha256": "483220b2f1db140f6c466fb094e2eb77c3a94495304c9207e6d235601271699e",
+    "technical_error": "RuntimeError: Expected one public P annotation, got 0",
+    "methods": [
+      "eqtransformer_original_p_default",
+      "eqtransformer_original_p_det_default"
+    ],
+    "released_model": "eqtransformer_original",
+    "released_model_input_samples": 6000,
+    "classification": "input_length_technical_unavailability",
+    "overall_metric_policy": "Retain affected records as misses in the full frozen denominator; all A4 point estimates remain unchanged.",
+    "conditional_metric_policy": "Additionally report descriptive metrics among records with at least the released model's 6000-sample input length.",
+    "timing": "Post hoc audit amendment frozen after inspection of the A4 technical-error rows; no model output was regenerated.",
+    "seisbench_eqtransformer_source": {
+      "path": "external/eqtransformer.py",
+      "bytes": 25293,
+      "mtime_ns": 1775733773994619641,
+      "sha256": "d22ace21a9da89df1f4baadeb6b38a13eed05f5b2793b186ee33d54d847e3b1f"
+    },
+    "technically_available_endpoint_metrics": {
+      "knet:eqtransformer_original_p_default": {
+        "records": 661,
+        "excluded_input_length_unavailable_records": 40,
+        "true_positive": 573,
+        "extra_event_record_candidates": 54,
+        "false_negative": 88,
+        "event_record_candidate_precision": 0.9138755980861244,
+        "record_recall": 0.8668683812405447,
+        "event_record_candidate_f1": 0.889751552795031,
+        "scope": "descriptive_conditioned_on_released_model_input_length"
+      },
+      "knet:eqtransformer_original_p_det_default": {
+        "records": 661,
+        "excluded_input_length_unavailable_records": 40,
+        "true_positive": 502,
+        "extra_event_record_candidates": 26,
+        "false_negative": 159,
+        "event_record_candidate_precision": 0.9507575757575758,
+        "record_recall": 0.7594553706505295,
+        "event_record_candidate_f1": 0.8444070647603028,
+        "scope": "descriptive_conditioned_on_released_model_input_length"
+      }
+    }
+  }
+}

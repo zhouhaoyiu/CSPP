@@ -1,0 +1,146 @@
+{
+  "result_id": "cspp_v27c_direct_feature_blind_training_result_v1",
+  "status": "training_complete_external_temporal_evaluation_pending",
+  "completed_at": "2026-07-29",
+  "protocol": "experiments/cspp_v27c_direct_feature_blind_training_protocol_20260729.json",
+  "protocol_sha256": "076c33fa758c9de5383b85ba604245736b52a1c736cdcbe9453c03466d1f4b06",
+  "evidence_boundary": {
+    "development_waveform_inference": false,
+    "threshold_sweep": false,
+    "checkpoint_selection": false,
+    "seed_selection": false,
+    "comparative_performance_result": false,
+    "statement": "This artifact records fixed-epoch training completion and integrity only. C0 versus C1 remains unevaluated until the separately frozen post-February-2024 GeoNet temporal-development cohort is available."
+  },
+  "shared_integrity": {
+    "selection_reference_sha256": "72dab23b14f4da309ec04bbbcdb68c7088bbf8aba565024934c2be05c94893cd",
+    "all_runs_match_selection_reference": true,
+    "all_final_checkpoints_byte_identical_to_epoch_03": true,
+    "all_history_development_evaluation_values": [
+      "disabled"
+    ],
+    "selection_artifacts_present": false,
+    "source_hashes_match_frozen_protocol": true
+  },
+  "arms": [
+    {
+      "id": "C0",
+      "verifier_feature_mode": "none",
+      "runs": [
+        {
+          "seed": 20261101,
+          "output": "work_artifacts/checkpoints/blind_v27c_C0_none_seed20261101",
+          "final_checkpoint_sha256": "d27ce10351475dfa264b45406b601dbcfc64e15c92be7260fe54c1738d35586d",
+          "history_sha256": "fcf20a20176b703dbdf50760dd074142942e81beadfd029b681401ecdbe9ced6",
+          "run_protocol_sha256": "b0a8ddf0b5ab1a7825a446a8d89a368b87459107febe42faec6d8b886c22a3fd",
+          "epoch_loss": [
+            1.8163210488189527,
+            2.149966199950474,
+            2.223863898932449
+          ],
+          "epoch_seconds": [
+            86.51850295066833,
+            84.24173092842102,
+            84.30973100662231
+          ]
+        },
+        {
+          "seed": 20261102,
+          "output": "work_artifacts/checkpoints/blind_v27c_C0_none_seed20261102",
+          "final_checkpoint_sha256": "fcc9a3123765e5a78c7a210086d31768a77f37556e1c2e1efc503342b39bf2f2",
+          "history_sha256": "45718ecdde5947135f33f64de33ca326c213112aca40b82e6597fcb1b17ecf83",
+          "run_protocol_sha256": "c851ea926911e4bf2fa6d72949e20d48f4316884ef29907360047062d77fbd43",
+          "epoch_loss": [
+            1.8362507541974387,
+            2.1371804789799014,
+            2.2489445444045026
+          ],
+          "epoch_seconds": [
+            88.3628830909729,
+            87.51732206344604,
+            86.63235306739807
+          ]
+        },
+        {
+          "seed": 20261103,
+          "output": "work_artifacts/checkpoints/blind_v27c_C0_none_seed20261103",
+          "final_checkpoint_sha256": "02695f1827eac6bca218a8017ce3efb67f8ef2f693e113644d41b1423c0fea56",
+          "history_sha256": "394f41d5da5eccc421bb27312a91ff4830147cda87b6e64268e8d0a657f54094",
+          "run_protocol_sha256": "b004656de514ea476957df751a48e51d6c707a5044c451f6d467e3cad8166619",
+          "epoch_loss": [
+            1.814895874164938,
+            2.09029107200421,
+            2.1153133567755784
+          ],
+          "epoch_seconds": [
+            87.36585283279419,
+            86.17079591751099,
+            85.9969711303711
+          ]
+        }
+      ]
+    },
+    {
+      "id": "C1",
+      "verifier_feature_mode": "current",
+      "runs": [
+        {
+          "seed": 20261101,
+          "output": "work_artifacts/checkpoints/blind_v27c_C1_current_seed20261101",
+          "final_checkpoint_sha256": "2018666f465e35decb731218424e317b271fe14770ddec6a6790fc96e9fc3605",
+          "history_sha256": "9f1d439c7f4bf15726ce12b29522cbd3db6b6b1cedc2f49382bc42a40211930f",
+          "run_protocol_sha256": "c6ce8e5aa0a52968eeb2ef27b4f170fbc1990f896f3c5b199db5623feac2fc44",
+          "epoch_loss": [
+            1.9497715058123193,
+            2.1933716350939214,
+            2.2272005882205033
+          ],
+          "epoch_seconds": [
+            83.70543098449707,
+            82.28535318374634,
+            82.2715802192688
+          ]
+        },
+        {
+          "seed": 20261102,
+          "output": "work_artifacts/checkpoints/blind_v27c_C1_current_seed20261102",
+          "final_checkpoint_sha256": "b0f60a6204609c0fdd6a3e12d1ecfebc0611eddaf36412c4401ae244557b060f",
+          "history_sha256": "a511b8a33cccb1771e2ce245c1e4e8b59ccc6d844d06f397bf18492e1844c29f",
+          "run_protocol_sha256": "708e301a8cd238f1f69623b85b105361bb9dcf3bc504791f053434055ae1012a",
+          "epoch_loss": [
+            1.987726992223321,
+            2.171386176832323,
+            2.245453610071322
+          ],
+          "epoch_seconds": [
+            89.79047989845276,
+            88.29966187477112,
+            87.59202194213867
+          ]
+        },
+        {
+          "seed": 20261103,
+          "output": "work_artifacts/checkpoints/blind_v27c_C1_current_seed20261103",
+          "final_checkpoint_sha256": "750ffaa248a08dc0800a90bc737333375874185231b8fbfa6b6b0dc8ba03ffd7",
+          "history_sha256": "ba3f2271f1c8b99ba5daf72b486acb235bfb6674b746b0f6ba7ab061f8536fc9",
+          "run_protocol_sha256": "7500bb26030ea476e5adf3adf1807fbf7e84c880d1d5ce9585dc6d39d0ca625a",
+          "epoch_loss": [
+            1.939771609286952,
+            2.1350864954595643,
+            2.136495573346208
+          ],
+          "epoch_seconds": [
+            89.18599891662598,
+            87.0682430267334,
+            87.13469123840332
+          ]
+        }
+      ]
+    }
+  ],
+  "decision": {
+    "selected_arm": null,
+    "selected_seed": null,
+    "next_required_action": "Freeze and acquire the post-February-2024 GeoNet temporal-development event, station, background-date, preprocessing, calibration, and evaluation manifests before any model score is computed."
+  }
+}

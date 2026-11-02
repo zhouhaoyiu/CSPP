@@ -1,0 +1,106 @@
+{
+  "protocol_sha256": "1b59c260aa844fa3c31130c9148b3229ccbf06994d513e8c4e67de68ead4b617",
+  "candidate_count": 2395,
+  "station_days": 701.0000173611111,
+  "candidate_rate_per_station_day": 3.416547704258111,
+  "network_days": 59.68489004629626,
+  "candidate_catalog_supported": 848,
+  "decision_chain_counts": {
+    "full_decision_chain": 2395,
+    "candidate_support_without_event_verifier": 270368,
+    "single_packet_candidate_plus_event": 1861,
+    "single_packet_candidate_only": 283017
+  },
+  "operating_point": {
+    "q": 0.1,
+    "e": 0.9
+  },
+  "associations": {
+    "original_time_groups": {
+      "group_count": 103,
+      "catalog_supported": 103,
+      "unmatched_groups": 0,
+      "unmatched_groups_per_network_day": 0.0,
+      "unmatched_rate_poisson95": [
+        0.0,
+        0.061805918570890434
+      ],
+      "event_metrics": {
+        "m3": {
+          "minimum_magnitude": 3.0,
+          "eligible_events": 0,
+          "detected_events": 0,
+          "missed_events": 0,
+          "recall": null,
+          "recall_wilson95": [
+            null,
+            null
+          ],
+          "all_target_events": 0,
+          "fewer_than_three_eligible_stations_within_200_km": 0,
+          "station_records_within_200_km": 0,
+          "station_records_detected_within_200_km": 0
+        },
+        "m4": {
+          "minimum_magnitude": 4.0,
+          "eligible_events": 0,
+          "detected_events": 0,
+          "missed_events": 0,
+          "recall": null,
+          "recall_wilson95": [
+            null,
+            null
+          ],
+          "all_target_events": 0,
+          "fewer_than_three_eligible_stations_within_200_km": 0,
+          "station_records_within_200_km": 0,
+          "station_records_detected_within_200_km": 0
+        }
+      },
+      "latency_median_seconds": null
+    },
+    "causal_delaunay_triplets": {
+      "group_count": 92,
+      "catalog_supported": 91,
+      "unmatched_groups": 1,
+      "unmatched_groups_per_network_day": 0.016754659332107708,
+      "unmatched_rate_poisson95": [
+        0.0004241912478124934,
+        0.09335098693517063
+      ],
+      "event_metrics": {
+        "m3": {
+          "minimum_magnitude": 3.0,
+          "eligible_events": 0,
+          "detected_events": 0,
+          "missed_events": 0,
+          "recall": null,
+          "recall_wilson95": [
+            null,
+            null
+          ],
+          "all_target_events": 0,
+          "fewer_than_three_eligible_stations_within_200_km": 0,
+          "station_records_within_200_km": 0,
+          "station_records_detected_within_200_km": 0
+        },
+        "m4": {
+          "minimum_magnitude": 4.0,
+          "eligible_events": 0,
+          "detected_events": 0,
+          "missed_events": 0,
+          "recall": null,
+          "recall_wilson95": [
+            null,
+            null
+          ],
+          "all_target_events": 0,
+          "fewer_than_three_eligible_stations_within_200_km": 0,
+          "station_records_within_200_km": 0,
+          "station_records_detected_within_200_km": 0
+        }
+      },
+      "latency_median_seconds": null
+    }
+  }
+}

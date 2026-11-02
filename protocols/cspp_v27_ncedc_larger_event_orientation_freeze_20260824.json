@@ -1,0 +1,46 @@
+{
+  "calibration": "StationXML sensitivity is counts per m/s^2. Components are divided by their sensitivity and multiplied by the geometric-mean sensitivity before causal normalization, preserving model amplitude convention while correcting relative component gain.",
+  "code": {
+    "bytes": 11170,
+    "path": "workspace/scripts/evaluation/freeze_v27_ncedc_event_orientations.py",
+    "sha256": "973501bb34f4820d639b157d6737492e17a648bfd44491fc2318a813f2be153c"
+  },
+  "continuous_manifest_freeze": {
+    "bytes": 3535,
+    "path": "workspace/experiments/cspp_v27_ncedc_larger_event_manifest_freeze_20260824.json",
+    "sha256": "d383aa6a6b189b3d651bc92a700bc535de0a48074e09c55fb2c3f3429279f444"
+  },
+  "counts": {
+    "event_station_groups": 362,
+    "maximum_orientation_condition_number": 1.0000000000000002,
+    "orientation_rows": 1086
+  },
+  "event_manifest_freeze": {
+    "bytes": 3535,
+    "path": "workspace/experiments/cspp_v27_ncedc_larger_event_manifest_freeze_20260824.json",
+    "sha256": "d383aa6a6b189b3d651bc92a700bc535de0a48074e09c55fb2c3f3429279f444"
+  },
+  "event_station_requests": {
+    "bytes": 104191,
+    "path": "work_artifacts/ncedc_larger_event_extension_20260824/metadata/manifests/event_station_requests.csv",
+    "sha256": "6cac0b709fed079b770b03d912efdb520029c11e08a78c5b593851f534b7bd5d"
+  },
+  "evidence_boundary": {
+    "model_outputs_computed": false,
+    "target_waveforms_accessed": true,
+    "waveform_amplitudes_inspected_for_orientation_selection": false
+  },
+  "freeze_id": "cspp_v27_ncedc_event_orientation_freeze_v1",
+  "frozen_at_utc": "2026-08-23T18:25:30.620777+00:00",
+  "orientation_manifest": {
+    "bytes": 173117,
+    "path": "work_artifacts/ncedc_larger_event_extension_20260824/metadata/manifests/event_station_orientations.csv",
+    "sha256": "8f8f5e4c2aeaa60ad6fe606bd9fa0d583443509d8dfbbcbe8386d5b1fabb1130"
+  },
+  "station_metadata": {
+    "bytes": 42575954,
+    "path": "work_artifacts/ncedc_larger_event_extension_20260824/metadata/raw/ncsn_hn_response_2024_2025.xml",
+    "sha256": "5129cc8352f0360559551d206fb57b215e6ac802722ba4da95ebc1be34720587"
+  },
+  "status": "orientation_and_sensitivity_frozen_before_model_scoring"
+}

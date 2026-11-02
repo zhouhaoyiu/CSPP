@@ -1,0 +1,4 @@
+example,event_id,station_key,selection_role,matched,snr_db,magnitude,distance_km,pick_error_seconds,release_delay_seconds,detection_threshold,confirmation_threshold
+1,75079016,NC.KSM.03,high,True,35.76680018390464,4.15,129.23490196388738,0.23799824714660645,0.9800000190734863,0.1,0.975
+2,75094936,NC.KBU.01,intermediate,True,7.4320024265071405,4.36,182.84177861831898,0.21489286422729492,1.0,0.1,0.975
+3,75097076,NC.KMR.,low,False,-6.111011049351052,4.4,91.93057717517965,,,0.1,0.975

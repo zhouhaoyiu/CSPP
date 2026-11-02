@@ -1,0 +1,115 @@
+{
+  "code": {
+    "freeze_script": {
+      "bytes": 10905,
+      "path": "workspace/scripts/evaluation/freeze_v27_geonet_temporal_selection_result.py",
+      "sha256": "490b492e5436aa002ac4657d53300849aa40612befa56233bb14fc0d65ed956d"
+    },
+    "selection_analyzer": {
+      "bytes": 38995,
+      "path": "workspace/scripts/evaluation/analyze_v27_geonet_temporal_selection.py",
+      "sha256": "7dfceeda5f3093004985a1d97d3897743ca59473e23662fcad81136d3b05b2d6"
+    }
+  },
+  "evidence_boundary": {
+    "arm_selected_once": true,
+    "development_background_date_units": 24,
+    "development_event_units": 189,
+    "final_holdout_root_absent_at_freeze": true,
+    "final_holdout_waveforms_accessed_before_freeze": false,
+    "primary_seed_was_predeclared": true,
+    "seed_selected": false,
+    "threshold_selected_once": true
+  },
+  "frozen_at_utc": "2026-07-29T18:18:12.584389+00:00",
+  "next_boundary": "Final GeoNet waveform acquisition may begin only when the downloader verifies the SHA-256 of this exact selection freeze. The selected arm, candidate threshold, event threshold, and primary seed cannot change after final-holdout access.",
+  "operating_point": {
+    "all_reported_seeds": [
+      20261101,
+      20261102,
+      20261103
+    ],
+    "candidate_threshold": 0.1,
+    "event_threshold": 0.975,
+    "primary_operational_seed": 20261101,
+    "seed_selection_permitted": false,
+    "selected_arm": "C0"
+  },
+  "protocol_id": "cspp_v27_geonet_temporal_selection_freeze_v1",
+  "selected_models": {
+    "C0_seed20261101": {
+      "arm": "C0",
+      "bytes": 1369948,
+      "path": "work_artifacts/checkpoints/blind_v27c_C0_none_seed20261101/final.pt",
+      "seed": 20261101,
+      "sha256": "d27ce10351475dfa264b45406b601dbcfc64e15c92be7260fe54c1738d35586d",
+      "training_history_sha256": "fcf20a20176b703dbdf50760dd074142942e81beadfd029b681401ecdbe9ced6",
+      "training_run_protocol_sha256": "b0a8ddf0b5ab1a7825a446a8d89a368b87459107febe42faec6d8b886c22a3fd",
+      "verifier_feature_mode": "none"
+    },
+    "C0_seed20261102": {
+      "arm": "C0",
+      "bytes": 1369948,
+      "path": "work_artifacts/checkpoints/blind_v27c_C0_none_seed20261102/final.pt",
+      "seed": 20261102,
+      "sha256": "fcc9a3123765e5a78c7a210086d31768a77f37556e1c2e1efc503342b39bf2f2",
+      "training_history_sha256": "45718ecdde5947135f33f64de33ca326c213112aca40b82e6597fcb1b17ecf83",
+      "training_run_protocol_sha256": "c851ea926911e4bf2fa6d72949e20d48f4316884ef29907360047062d77fbd43",
+      "verifier_feature_mode": "none"
+    },
+    "C0_seed20261103": {
+      "arm": "C0",
+      "bytes": 1369948,
+      "path": "work_artifacts/checkpoints/blind_v27c_C0_none_seed20261103/final.pt",
+      "seed": 20261103,
+      "sha256": "02695f1827eac6bca218a8017ce3efb67f8ef2f693e113644d41b1423c0fea56",
+      "training_history_sha256": "394f41d5da5eccc421bb27312a91ff4830147cda87b6e64268e8d0a657f54094",
+      "training_run_protocol_sha256": "b004656de514ea476957df751a48e51d6c707a5044c451f6d467e3cad8166619",
+      "verifier_feature_mode": "none"
+    }
+  },
+  "selection_inputs": {
+    "background_completion": {
+      "bytes": 6281,
+      "path": "work_artifacts/geonet_temporal_evaluation_v3/background_score_cache_complete.json",
+      "sha256": "2a23e39c9c78ac5a0a0f81083902a2107e5395781ac0d71c6e3e3fbcdd567e56"
+    },
+    "background_station_thresholds": {
+      "bytes": 838786,
+      "path": "work_artifacts/geonet_temporal_evaluation_v3/analysis/background_station_thresholds.csv",
+      "sha256": "175ac4c4dba954cf7d606a7f27a93f1bbe17f5e08d68fd18a6b01320af581532"
+    },
+    "background_threshold_summary": {
+      "bytes": 12887,
+      "path": "work_artifacts/geonet_temporal_evaluation_v3/analysis/background_threshold_summary.csv",
+      "sha256": "3ba821ecb96fc5ea783de02dfaa403c12b11b9c0829d12d3331ab1bb2a3b4b62"
+    },
+    "evaluation_protocol": {
+      "bytes": 14853,
+      "path": "workspace/experiments/cspp_v27_geonet_temporal_evaluation_protocol_v3_20260729.json",
+      "sha256": "2b98f6833b90bc62aa44c647be5f16845b376ad7ebee7a3d308d13e67f947047"
+    },
+    "event_completion": {
+      "bytes": 45281,
+      "path": "work_artifacts/geonet_temporal_evaluation_v3/event_score_cache_complete.json",
+      "sha256": "53c87179d5a07f0fbf2b93c043be044a7671f0db63ad9bb06677c2070d9e71b7"
+    },
+    "event_station_thresholds": {
+      "bytes": 24795575,
+      "path": "work_artifacts/geonet_temporal_evaluation_v3/analysis/event_station_thresholds.csv",
+      "sha256": "ada2a4de49948cf19c2f7894a16073aacb962d8cc4fb5e4316224dc3cbd4626c"
+    },
+    "event_threshold_summary": {
+      "bytes": 197792,
+      "path": "work_artifacts/geonet_temporal_evaluation_v3/analysis/event_threshold_summary.csv",
+      "sha256": "604dfef1e5da3021908d8bae3a365ed20826df73fceb04de9288f8b326005a4c"
+    },
+    "selection_result": {
+      "bytes": 23222,
+      "path": "work_artifacts/geonet_temporal_evaluation_v3/analysis/selection_result.json",
+      "sha256": "929a85565b70058d26ea18cb9f3531954244dbe6b4260fa6a9027224d5ed0786"
+    }
+  },
+  "status": "development_arm_threshold_and_primary_seed_irrevocably_frozen",
+  "unlock_token": "acda95a371430fe75c1dbead774ae1ac6e6768d3e0c76c443a778c47eeca763a"
+}

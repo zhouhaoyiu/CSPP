@@ -1,0 +1,51 @@
+{
+  "protocol_id": "cspp_v27_ncedc_global_catalog_screen_v1",
+  "status": "posthoc_protocol_frozen_before_usgs_catalog_retrieval",
+  "frozen_at_utc": "2026-08-23T18:16:42Z",
+  "code_sha256": {
+    "scripts/evaluation/screen_v27_ncedc_continuous_global_catalog.py": "89a15d3e3c364a861e9a9a8352210a630996592768c95d6686ddcd188598e6c4"
+  },
+  "inputs": {
+    "regional_screened_candidates": {
+      "path": "work_artifacts/ncedc_model_blind_20260817/evaluation/ncedc_continuous_catalog_adjudication_v1/candidates_catalog_screened.csv",
+      "bytes": 449526,
+      "sha256": "2c993993cdf0e277c7cc91c94a6bff02e0a096d4e6a41d46cf4f63d0e63e4399"
+    }
+  },
+  "selection": {
+    "input_class": "unresolved",
+    "expected_unresolved_candidates": 294,
+    "candidate_times_used_to_change_query_parameters": false
+  },
+  "query": {
+    "service": "https://earthquake.usgs.gov/fdsnws/event/1/query",
+    "catalog_scope": "global",
+    "minimum_magnitude": 4.5,
+    "daily_query_start": "UTC day start minus the frozen origin lookback",
+    "daily_query_end": "next UTC day start"
+  },
+  "matching": {
+    "travel_time_model": "iasp91",
+    "phase_list": [
+      "P",
+      "p",
+      "Pdiff",
+      "PKP",
+      "PKIKP"
+    ],
+    "origin_lookback_seconds": 7200.0,
+    "taup_tolerance_seconds": 15.0,
+    "candidate_rule": "smallest absolute theoretical P residual within the frozen tolerance"
+  },
+  "execution": {
+    "maximum_attempts_per_date": 4,
+    "output_root": "work_artifacts/ncedc_model_blind_20260817/evaluation/ncedc_continuous_global_catalog_screen_v1",
+    "overwrite_permitted": false
+  },
+  "evidence_boundary": {
+    "model_or_threshold_adaptation_permitted": false,
+    "regional_candidate_outputs_were_known_before_this_protocol": true,
+    "global_catalog_timing_compatibility_is_not_a_definitive_cause_label": true,
+    "manual_waveform_review_remains_required": true
+  }
+}

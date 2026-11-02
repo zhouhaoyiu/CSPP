@@ -1,0 +1,318 @@
+{
+  "status": "development_training_before_blind_cwa_2021",
+  "focus": "strong_motion_acceleration",
+  "instancegm_filter": "HN/EN channels with mps2 units",
+  "negative_data": "pre-P acceleration windows",
+  "seed": 20260801,
+  "sample_rate_hz": 100.0,
+  "packet_samples": 50,
+  "max_chunks": 96,
+  "low_snr_training_db": [
+    -10.0,
+    20.0
+  ],
+  "threshold_selection": "epoch checkpoints jointly score native, 0 dB, +10 dB, and short-noise development cohorts; the operating threshold must be frozen later with the opened 2024 continuous stream",
+  "knet_station_buckets": {
+    "train": [
+      0,
+      69
+    ],
+    "dev": [
+      70,
+      84
+    ],
+    "test": [
+      85,
+      99
+    ]
+  },
+  "counts": {
+    "train_instancegm_event": 1000,
+    "train_knet_event": 1000,
+    "train_cwa2020_event": 500,
+    "development_instancegm_event": 200,
+    "development_knet_joint_event": 200,
+    "train_noise": 2416,
+    "development_noise": 1119
+  },
+  "station_counts": {
+    "knet_train": 604,
+    "knet_station_dev": 142
+  },
+  "v25_population_first_selection": {
+    "enabled": true,
+    "order": "construct complete provider split and K-NET joint event/station partition; apply target-population metadata filters; apply deterministic record limits last",
+    "knet_development_partition": "provider event dev AND independently hashed station dev",
+    "pre_limit_knet_joint_development_records": 504,
+    "post_scope_pre_limit_event_counts": {
+      "train": {
+        "instancegm": 22784,
+        "knet": 11910
+      },
+      "development": {
+        "instancegm": 3524,
+        "knet": 500
+      }
+    },
+    "record_limits": {
+      "train_instancegm": 1000,
+      "train_knet": 1000,
+      "development_per_event_source": 200
+    },
+    "selected_event_counts": {
+      "train_instancegm": 1000,
+      "train_knet": 1000,
+      "development_instancegm": 200,
+      "development_knet_joint": 200
+    }
+  },
+  "instancegm_training_quality_filter": {
+    "enabled": false,
+    "policy": "retain every labeled acceleration event in the target population; official component SNR is used for weighting and stratified reporting, never record deletion"
+  },
+  "cwa2020_opened_event_context_training": {
+    "store": "external_data/domain_robust_v10_10_cwa2020_packet_contexts/events.hdf5",
+    "store_sha256": "37c2a1f362a159b028c0928efe67afbb278c9f322523b8aa6fb5c8b1a729bab8",
+    "metadata": "external_data/domain_robust_v10_10_cwa2020_packet_contexts/events.csv",
+    "metadata_sha256": "85315aa844ad8e6ef0d5c202aeec88f6a56f18a30bac391b2cbbe01d8c26842b",
+    "population_records": 4076,
+    "training_records": 500,
+    "deterministic_limit": 500,
+    "excluded_midstream_quality_reset_records": 5,
+    "excluded_midstream_quality_reset_store_indices": [
+      2139,
+      2622,
+      3225,
+      3474,
+      4389
+    ],
+    "events": 112,
+    "split": "event-disjoint prospective split stored in the packet-store metadata; development rows are not added to generic training or controlled-SNR loaders",
+    "preprocessing": "frozen 200-to-100 Hz causal FIR, PacketQualityGateV5, packet EWMA normalization, and candidate-enabled mask",
+    "supervision": "native long pre-P context with P+0 through P+3 verifier labels; no synthetic relocation or waveform mixing",
+    "quality_reset_boundary": "Rows containing a quality-invalid packet inside the stored context are explicitly excluded because the generic batched trainer cannot reset model state within one sequence.",
+    "evidence_boundary": "CWA 2020 is already-opened development data and cannot become independent confirmation evidence"
+  },
+  "event_target_scope": {
+    "train": {
+      "enabled": true,
+      "minimum_magnitude": 3.0,
+      "maximum_distance_km": 200.0,
+      "role": "training_and_opened_development_population_only_not_model_input",
+      "by_source": {
+        "instancegm": {
+          "total": 199294,
+          "metadata_known": 199294,
+          "eligible": 22784
+        },
+        "knet": {
+          "total": 11967,
+          "metadata_known": 11967,
+          "eligible": 11910
+        },
+        "cwa2020_opened_train_events": {
+          "total": 500,
+          "metadata_known": 500,
+          "eligible": 500
+        }
+      }
+    },
+    "development": {
+      "enabled": true,
+      "minimum_magnitude": 3.0,
+      "maximum_distance_km": 200.0,
+      "role": "training_and_opened_development_population_only_not_model_input",
+      "by_source": {
+        "instancegm": {
+          "total": 31814,
+          "metadata_known": 31814,
+          "eligible": 3524
+        },
+        "knet": {
+          "total": 504,
+          "metadata_known": 504,
+          "eligible": 500
+        }
+      }
+    },
+    "noise_records_filtered": false,
+    "deployment_boundary": "Magnitude and source-station distance define the target population; they are unavailable at first-P station inference and are not model inputs."
+  },
+  "continuous_noise": {
+    "store": "workspace/data/domain_robust_v5_continuous_noise/windows.hdf5",
+    "catalog_screen": "workspace/data/domain_robust_v5_continuous_noise/catalog_screen_20260716/window_catalog_screen.csv",
+    "catalog_screen_sha256": "80b1dcad843287591f0a1f6f3b0d130fa99722d4275d0ef65d931a3f5f7bcf12",
+    "train_windows": 500,
+    "dev_windows": 200,
+    "catalog_excluded_train_windows": 528,
+    "catalog_excluded_dev_windows": 258,
+    "date_split": "2024 Jan-Mar train; 2024 May-Dec development calibration",
+    "selection": "prediction-independent QC-valid non-overlapping windows, then catalog-screened to presumed non-event status before negative supervision",
+    "claim_boundary": "Catalog-screened presumed non-event windows; absence from the assembled catalogs does not certify physical noise"
+  },
+  "reviewed_hard_negative_training": {
+    "manifest": "workspace/data/domain_robust_v9_reviewed_hard_negatives_catalog_screened/reviewed_hard_negative_manifest.csv",
+    "manifest_sha256": "12529c44406a6e2b2f05c124060dbbd1f9e31df16baa318520192d655d0e3e01",
+    "records": 22,
+    "supervised_packets": 550,
+    "scope": "training only; local packet masks around provisionally reviewed triggers; all rows also pass the catalog screen; not used as generic event noise beds; development and blind sets unchanged",
+    "sampler_effect": "a separate continuous-noise source group receives an equal share of the configured continuous noise-class mass"
+  },
+  "target_fdsn_actual_trigger_windows": {
+    "store": "workspace/data/domain_robust_v10_fdsn_trigger_windows_v2/windows.hdf5",
+    "store_sha256": "c4327c5b30b6023e013638078c3d92549d7477f20b3d07601bf21339824986fe",
+    "review_manifest": "workspace/data/domain_robust_v10_fdsn_trigger_windows_v2/review_manifest.csv",
+    "review_manifest_sha256": "f0439f705c4323793afe4ba42f6d8e7a71deb50af083f11c8acc0e4afc8068bb",
+    "catalog_screen": "workspace/data/domain_robust_v10_fdsn_trigger_windows_v2/catalog_screen.csv",
+    "catalog_screen_sha256": "b244e1210bae5324cda85892f6f554bfa9bb7d5d8c81a8fd7d02014025733579",
+    "training_windows": 1394,
+    "development_calibration_windows": 720,
+    "split": "2026-06-02/09 train; 2026-06-16 development calibration",
+    "supervision": "local masks around catalog-screened presumed non-event actual triggers; causal packet context receives no negative loss",
+    "operational_normalization_state_preserved": true,
+    "normalization_contract": "window-start causal EWMA state is restored when present; stores without state retain the legacy reset-at-window behavior",
+    "event_noise_bed_use": false,
+    "claim_boundary": "presumed non-event operational triggers, not certified physical noise"
+  },
+  "target_fdsn_background_event_mixing": {
+    "store": "workspace/data/domain_robust_v10_fdsn_background/windows.hdf5",
+    "store_sha256": "978a1b3cdbed67824a3a194655891c12612396c7af227f8c1e460497e2a0504f",
+    "catalog_screen": "workspace/data/domain_robust_v10_fdsn_background/catalog_screen.csv",
+    "catalog_screen_sha256": "ad09e41995d712c79bbeb7671388be8882b277ba757142d328d94908423d64de",
+    "training_windows": 562,
+    "development_calibration_windows": 288,
+    "record_sampling_mass": 0.0,
+    "event_noise_bed_use": true,
+    "split": "2026-06-02/09 train; 2026-06-16 development calibration",
+    "claim_boundary": "QC/catalog-screened presumed non-event target-domain backgrounds; used for event mixing, not independent evidence"
+  },
+  "knet_causal_raw_input": {
+    "protocol": "knet_raw_acceleration_strict_causal_input_v1",
+    "source_bson": "external/accelerogram.bson",
+    "source_bson_sha256": "ccaa8489ed7c9020e58c756ab04296bf70e856ce5fb3913aadf79faa22192511",
+    "source_metadata": "workspace/data/knet_accel/metadata.csv",
+    "trace_count": 21141,
+    "component_count": 63423,
+    "document_count": 66357,
+    "component_order": [
+      "UD",
+      "NS",
+      "EW"
+    ],
+    "output_order": [
+      "Z",
+      "N",
+      "E"
+    ],
+    "preprocessing": "none; raw acceleration values are stored exactly as decoded from BSON. DC removal and scale estimation occur causally per packet at runtime",
+    "forbidden_operations": [
+      "filtfilt",
+      "sosfiltfilt",
+      "whole-record detrending that uses post-arrival samples"
+    ],
+    "split_provenance": "event-disjoint split copied from the existing metadata; station-factorized subsets are applied later by the frozen training protocol",
+    "elapsed_seconds": 72.94429683685303
+  },
+  "protocol_id": "domain_robust_v5_engineering_20260715",
+  "architecture": "v27c",
+  "data_pipeline": "contiguous true-native event crops plus independent-noise assembly, seam-matched relocation for the synthetic branch, and 1 s local P-window excess-power SNR with nominal, constructed-achieved, and empirical values stored separately",
+  "label": "causal 2-packet candidate window and confirmation packets P+0 through P+3; no pre-P positives; arrival-age models regress causal elapsed time at each confirmation packet",
+  "snr_training_profile": "v7_operational",
+  "native_event_fraction": 0.5,
+  "native_event_policy": {
+    "definition": "contiguous crop from the original waveform with its original background; no relocation, background replacement, added noise, component augmentation, or injected artifact",
+    "requested_fraction": 0.5,
+    "eligibility": "requires enough original pre-P warmup and post-P guard inside the selected sequence; ineligible draws use the synthetic branch",
+    "replacement_sampler_nonce": "repeated draws of one training record receive deterministic distinct augmentation seeds; development draws remain fixed"
+  },
+  "data_selection_seed": 20260801,
+  "optimization_seed": 20261102,
+  "training_sequence_seconds": 48.0,
+  "sampler": "CSPP V25/V26/V27 freeze InstanceGM/K-NET/CWA-event/target-trigger/opened-continuous/other-noise mass at 0.40/0.15/0.10/0.20/0.10/0.05",
+  "checkpoint_selection": "highest geometric mean of native usable rate, native noise specificity, 0 dB usable rate, and +10 dB usable rate among thresholds meeting the minimum native-noise specificity constraint",
+  "hard_negative_loss": "separately weighted top probabilities on pure-noise records and on event records before P or after the three-packet response window",
+  "minimum_native_noise_specificity": 0.99,
+  "final_blind_test": "CWA _2021; prohibited during model and threshold development",
+  "packet_once_contract": {
+    "model_class": "CSPPCausalPickerV27C",
+    "state_mode": "unidirectional_gru",
+    "raw_packet_encoder_calls_per_packet": 1,
+    "old_temporal_tokens_recomputed_per_packet": 0,
+    "raw_replay_packets": 0,
+    "constant_size_stream_state": true,
+    "training_boundary_phase": "event P is relocated to a uniformly sampled integer sample, so all 50 packet phases are eligible independently in every epoch",
+    "streaming_equivalence_test": "full causal convolution, arbitrary blocked replay, and one-packet replay must agree within 1e-5",
+    "spectral_features": "fixed DFT band fractions, vertical fractions, entropy, and centroid from the fully received current packet only",
+    "training_initialization": "frozen V27 candidate with a newly initialized verifier",
+    "complete_packet_morphology": "the current 0.5-second packet is encoded once; dense phase interpolation never crosses a packet boundary",
+    "cross_packet_context": "unidirectional two-layer GRU plus previous-packet embedding; no future packet or raw replay",
+    "within_packet_dense_p_evidence": "50-sample P logits are supervised at the annotated sample and their peak and soft mass enter the candidate head",
+    "event_head_role": "detached nonlinear episode verifier with the none direct packet feature ablation",
+    "integrated_outputs": "candidate probability, auxiliary event evidence, causal P-arrival age, and within-packet P logits",
+    "within_packet_p_auxiliary_target": {
+      "samples": 50,
+      "loss_weight": 0.25,
+      "sigma_samples": 5.0
+    },
+    "architecture_change_scope": "preserve the frozen V27 candidate, timing, and dense phase branches; vary only direct verifier packet evidence",
+    "verifier_candidate_gated_loss": true,
+    "verifier_candidate_gate_threshold": 0.1,
+    "verifier_supervision_rule": "detached candidate support OR positive verifier label; retain all locally masked reviewed hard-negative packets",
+    "verifier_episode_objective": {
+      "enabled": false,
+      "positive_packets": 3,
+      "tail_fraction": 0.01,
+      "bce_weight": 1.0,
+      "tail_weight": 1.0,
+      "unit": null
+    },
+    "verifier_feature_mode": "none"
+  },
+  "selection_reference": {
+    "path": "work_artifacts/checkpoints/pilot_v27b_balanced_gated_seed20261101/selected_indices.npz",
+    "sha256": "72dab23b14f4da309ec04bbbcdb68c7088bbf8aba565024934c2be05c94893cd",
+    "arrays_verified": 22,
+    "status": "exact_match"
+  },
+  "train_record_groups": {
+    "event:instancegm": 1000,
+    "event:knet": 1000,
+    "noise:knet_prep_noise": 333,
+    "noise:instancegm_prep_noise": 167,
+    "event:cwa2020_opened_train_events": 500,
+    "noise:ci2024_continuous_train_noise": 500,
+    "noise:ci2024_continuous_hard_train_noise": 22,
+    "noise:target_fdsn_continuous_hard_train_noise": 1394,
+    "__group_mass_basis_points__": {
+      "event:instancegm": 4000,
+      "event:knet": 1500,
+      "event:cwa2020_opened_train_events": 1000,
+      "noise:target_fdsn_continuous_hard_train_noise": 2000,
+      "noise:ci2024_continuous_hard_train_noise": 500,
+      "noise:ci2024_continuous_train_noise": 500,
+      "noise:instancegm_prep_noise": 250,
+      "noise:knet_prep_noise": 250
+    }
+  },
+  "development_evaluation": {
+    "enabled": false,
+    "checkpoint_selection": "disabled; final epoch fixed before training",
+    "threshold_sweep": false,
+    "final_artifact": "final.pt copied from epoch_03.pt"
+  },
+  "v27_frozen_candidate": {
+    "checkpoint": "work_artifacts/checkpoints/pilot_v27a_seed20261101/best.pt",
+    "sha256": "c90241c759018e87cacb10c75e46c3b99ac410f439b312801c9bbbdb9dc6e813",
+    "model_class": "CSPPCausalPickerV27",
+    "candidate_timing_and_phase_trainable": false,
+    "verifier_trainable": true,
+    "verifier_hidden_dim": 64,
+    "verifier_feature_mode": "none",
+    "initial_probe_max_abs_difference": {
+      "candidate": 0.0,
+      "timing": 0.0,
+      "dense_phase": 0.0
+    }
+  },
+  "initialized_from": "work_artifacts/checkpoints/pilot_v27a_seed20261101/best.pt"
+}

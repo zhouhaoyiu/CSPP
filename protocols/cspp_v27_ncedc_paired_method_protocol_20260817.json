@@ -1,0 +1,94 @@
+{
+  "code_sha256": {
+    "scripts/evaluation/analyze_v27_ncedc_paired_method_differences.py": "7fe3f86ab3c7457e47947c95ee159d28abf9d692dc2bbf3ebe97ca155a2fe999",
+    "scripts/evaluation/freeze_v27_ncedc_paired_method_protocol.py": "8174e4848aea1de0ae13cbfb5b16741caf53997a77beb32984945574000c7dac"
+  },
+  "cohort": {
+    "coverage_rule": "all methods must contain exactly the CSPP cohort",
+    "events": 51,
+    "identity": "event_id plus station_key",
+    "records": 578,
+    "waveform_integrity": "public and classical per-record waveform SHA-256 values must agree"
+  },
+  "evidence_boundary": {
+    "all_model_outputs_opened_before_protocol_freeze": true,
+    "analysis_is_post_hoc": true,
+    "claim_scope": "paired uncertainty for the completed frozen NCSN event cohort",
+    "matched_retraining_claim_permitted": false,
+    "model_rerun_permitted": false,
+    "model_selection_permitted": false,
+    "public_models_are_released_direct_transfer_checkpoints": true,
+    "threshold_search_permitted": false
+  },
+  "execution": {
+    "output_root": "work_artifacts/ncedc_model_blind_20260817/evaluation/ncedc_paired_method_analysis_v1"
+  },
+  "frozen_at_utc": "2026-08-17T15:07:34.767019+00:00",
+  "inputs": {
+    "classical_result": {
+      "bytes": 15300,
+      "path": "work_artifacts/ncedc_model_blind_20260817/evaluation/ncedc_causal_classical_v1/result.json",
+      "sha256": "079ef0c506787a010b58378209ebc75f467b3b45adf307a107d0d3a3e5006ef5"
+    },
+    "cspp_event_result": {
+      "bytes": 8070,
+      "path": "work_artifacts/ncedc_model_blind_20260817/evaluation/ncedc_event_analysis_v1/result.json",
+      "sha256": "84b5fabf023812caef16eb721390c8818e11335dc3e92524964053cf63589a06"
+    },
+    "cspp_event_station_results": {
+      "bytes": 340812,
+      "path": "work_artifacts/ncedc_model_blind_20260817/evaluation/ncedc_event_analysis_v1/event_station_results.csv",
+      "sha256": "a01f048045ac2a374296d864861f436a27169b2dd5776a04a74c670aa8064684"
+    },
+    "eqtransformer_completion": {
+      "bytes": 15492,
+      "path": "work_artifacts/ncedc_model_blind_20260817/evaluation/ncedc_causal_public_baselines_v1/eqtransformer_original/completion.json",
+      "sha256": "9b54a072ec6dd713daeb5e00a174e0b365f45c81a446a5f34122657ded736b0f"
+    },
+    "phasenet_completion": {
+      "bytes": 15226,
+      "path": "work_artifacts/ncedc_model_blind_20260817/evaluation/ncedc_causal_public_baselines_v1/phasenet_instance/completion.json",
+      "sha256": "daac9cc4b4af325890e5ed769a5eafb31c7e5c120648d0b162d1c8c0cf9a1833"
+    },
+    "public_analysis_result": {
+      "bytes": 4008,
+      "path": "work_artifacts/ncedc_model_blind_20260817/evaluation/ncedc_causal_public_analysis_v1/result.json",
+      "sha256": "8c09f185a65171690376057a19a09d0a9d760fc2dcb1b9f6eef6beb7c8ae1a83"
+    }
+  },
+  "methods": {
+    "cspp": {
+      "model_key": "C0_seed20261101",
+      "role": "reference method"
+    },
+    "eqtransformer_original": {
+      "method_id": "eqtransformer_original_p_default",
+      "model_key": "eqtransformer_original"
+    },
+    "phasenet_instance": {
+      "method_id": "phasenet_instance_default",
+      "model_key": "phasenet_instance"
+    },
+    "recursive_sta_lta": {
+      "result_id": "cspp_v27_ncedc_causal_classical_v1"
+    }
+  },
+  "protocol_id": "cspp_v27_ncedc_paired_method_analysis_v1",
+  "statistics": {
+    "bootstrap_replicates": 5000,
+    "bootstrap_seed": 20260817,
+    "confidence_level": 0.95,
+    "contrast_direction": "CSPP minus comparator",
+    "dependence_sensitivity_resampling_unit": "station_key",
+    "paired_detection_test": "exact two-sided McNemar",
+    "primary_resampling_unit": "event_id",
+    "reported_differences": [
+      "recall",
+      "candidate_precision",
+      "f1",
+      "median_absolute_pick_error_seconds",
+      "median_availability_delay_seconds"
+    ]
+  },
+  "status": "post_hoc_protocol_frozen_after_all_model_outputs_and_before_paired_interval_computation"
+}

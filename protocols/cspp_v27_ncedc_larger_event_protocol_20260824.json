@@ -1,0 +1,72 @@
+{
+  "protocol_id": "cspp_v27_ncedc_larger_event_extension_v1",
+  "status": "frozen_before_target_period_metadata_or_waveform_access",
+  "frozen_at_utc": "2026-08-23T18:20:12Z",
+  "target": {
+    "network": "NC",
+    "start_utc": "2019-01-01T00:00:00Z",
+    "end_utc": "2024-01-01T00:00:00Z",
+    "minimum_preferred_magnitude": 4.5,
+    "maximum_epicentral_distance_km": 200.0,
+    "minimum_eligible_stations_per_event": 3,
+    "maximum_stations_per_event": 12,
+    "channels": [
+      "HNZ",
+      "HNN",
+      "HNE"
+    ],
+    "accepted_native_sample_rates_hz": [
+      100.0,
+      200.0
+    ],
+    "reference": "preferred-origin manual reviewed P arrival with positive time weight"
+  },
+  "selection": {
+    "station_order": "epicentral distance, network, station, location, channel list",
+    "waveform_amplitude_used": false,
+    "signal_to_noise_ratio_used": false,
+    "model_output_used": false,
+    "unavailable_requests_replaced": false
+  },
+  "inputs": {
+    "frozen_model_selection": {
+      "path": "workspace/experiments/cspp_v27_geonet_temporal_selection_freeze_20260729.json",
+      "bytes": 5526,
+      "sha256": "f86155159422fa1539751ed7eb2f388875f519990b4080f4e5d11af664e88f6f"
+    }
+  },
+  "code_sha256": {
+    "scripts/evaluation/build_v27_ncedc_event_manifest.py": "f327cc1a7c7acb121882688961e2b9135807bb0ed145a046afa28115134318b8",
+    "scripts/evaluation/build_v27_ncedc_larger_event_manifest.py": "21015f3ec7c8d6b3cb08d3ff61c30a0dfd4256388753fa32d897c5712e466d44"
+  },
+  "evaluation": {
+    "fixed_operating_point": {
+      "candidate_threshold": 0.1,
+      "event_threshold": 0.975,
+      "primary_seed": 20261101,
+      "replication_seeds": [
+        20261102,
+        20261103
+      ]
+    },
+    "match_tolerance_seconds": 1.5,
+    "local_p_snr_window_seconds": 1.0,
+    "primary_metrics": [
+      "recall",
+      "candidate precision",
+      "F1",
+      "pick residual",
+      "availability delay"
+    ],
+    "diagnostic_strata": [
+      "magnitude",
+      "local P-wave SNR"
+    ]
+  },
+  "evidence_boundary": {
+    "test_is_external_to_training_networks": true,
+    "same_network_as_primary_ncsn_test": true,
+    "threshold_or_model_adaptation_permitted": false,
+    "result_is_not_a_new_network_blind_test": true
+  }
+}

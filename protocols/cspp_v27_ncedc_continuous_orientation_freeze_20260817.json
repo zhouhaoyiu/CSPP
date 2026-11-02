@@ -1,0 +1,40 @@
+{
+  "code": {
+    "bytes": 9645,
+    "path": "workspace/scripts/evaluation/freeze_v27_ncedc_continuous_orientations.py",
+    "sha256": "ace4c6a5e3b4278cdd0b7b1b8f46ad7101952a7ad16ae9b1407409aa853b6228"
+  },
+  "continuous_manifest_freeze": {
+    "bytes": 5737,
+    "path": "workspace/experiments/cspp_v27_ncedc_continuous_manifest_freeze_20260817.json",
+    "sha256": "1839769549d78d0f756b2b2016a425cbe89bc6216e3a45bed1d0b16b3fcb47f6"
+  },
+  "counts": {
+    "maximum_orientation_condition_number": 1.0,
+    "orientation_rows": 2160,
+    "station_day_groups": 720
+  },
+  "evidence_boundary": {
+    "continuous_model_outputs_computed": false,
+    "target_waveforms_accessed": true,
+    "waveform_amplitudes_used_for_orientation_selection": false
+  },
+  "freeze_id": "cspp_v27_ncedc_continuous_orientation_freeze_v1",
+  "frozen_at_utc": "2026-08-17T13:44:57.384244+00:00",
+  "orientation_manifest": {
+    "bytes": 345644,
+    "path": "work_artifacts/ncedc_model_blind_20260817/metadata/manifests/continuous_station_day_orientations.csv",
+    "sha256": "6d62f4d6ce6617d75423a5a1d0e57f3078f782d46143a6aadd406b58d6d02a14"
+  },
+  "station_day_requests": {
+    "bytes": 80875,
+    "path": "work_artifacts/ncedc_model_blind_20260817/metadata/manifests/continuous_station_day_requests.csv",
+    "sha256": "2fda55727d31e80e9cddf4472964c8bd867ac8f7720218ca46d4e1bbc9398346"
+  },
+  "station_metadata": {
+    "bytes": 40299781,
+    "path": "work_artifacts/ncedc_model_blind_20260817/metadata/raw/ncsn_hn_response_2024_2025.xml",
+    "sha256": "526f2af2b50d8cbd811e6dcd410dc3edd938524dd6bf6f0200dcbc919ad4b5c1"
+  },
+  "status": "continuous_orientation_frozen_before_model_scoring"
+}

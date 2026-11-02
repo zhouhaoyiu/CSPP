@@ -1,0 +1,900 @@
+{
+  "artifacts": {
+    "event_results": {
+      "bytes": 2168,
+      "path": "work_artifacts/tx_external_event_validation_20260824/results/event_results.csv",
+      "sha256": "45169594f9c6c371a72464ab840784fae5fac8a86518a3e8c8d890085c5123f9"
+    },
+    "event_station_results": {
+      "bytes": 559076,
+      "path": "work_artifacts/tx_external_event_validation_20260824/results/event_station_results.csv",
+      "sha256": "09ece4a65aef16196c1bbeb3673bc122660fd68534601cbd162b6a04640779f7"
+    }
+  },
+  "completed_at_utc": "2026-08-23T22:45:27.079567+00:00",
+  "paper_or_submission_files_modified": false,
+  "primary_event_cluster_bootstrap95": {
+    "candidate_precision": [
+      0.8984348958333334,
+      0.9658703071672355
+    ],
+    "f1": [
+      0.8758061947811794,
+      0.9393945354409556
+    ],
+    "recall": [
+      0.8456968714510752,
+      0.925
+    ]
+  },
+  "primary_event_detection": {
+    "at_least_one_station": 65,
+    "at_least_three_stations": 64,
+    "events": 65
+  },
+  "primary_metrics": {
+    "availability_delay_median_seconds": 0.7452099323272705,
+    "availability_delay_p95_seconds": 1.1493242502212524,
+    "available_within_0_5_seconds_fraction": 0.16587677725118483,
+    "available_within_1_0_seconds_fraction": 0.7251184834123223,
+    "available_within_2_0_seconds_fraction": 0.8894154818325435,
+    "candidate_episodes": 602,
+    "candidate_precision": 0.9352159468438538,
+    "candidate_precision_wilson95": [
+      0.9126629467192937,
+      0.9522497996285653
+    ],
+    "f1": 0.9117408906882591,
+    "false_candidate_episodes": 39,
+    "false_negative_records": 70,
+    "matched_records": 563,
+    "pick_absolute_error_median_seconds": 0.12520718574523926,
+    "pick_absolute_error_p95_seconds": 0.3723962306976317,
+    "pick_error_median_seconds": 0.10100078582763672,
+    "recall": 0.8894154818325435,
+    "recall_wilson95": [
+      0.8625960497108608,
+      0.9115369674971264
+    ],
+    "records": 633
+  },
+  "primary_model_key": "C0_seed20261101",
+  "protocol": {
+    "bytes": 40233,
+    "path": "work_artifacts/tx_external_event_validation_20260824/protocol.json",
+    "sha256": "df79587c41c81f9eb85686eb2dd00504d0f6984d62d694268f64794869cdd3c3"
+  },
+  "replication_metrics": {
+    "C0_seed20261101": {
+      "availability_delay_median_seconds": 0.7452099323272705,
+      "availability_delay_p95_seconds": 1.1493242502212524,
+      "available_within_0_5_seconds_fraction": 0.16587677725118483,
+      "available_within_1_0_seconds_fraction": 0.7251184834123223,
+      "available_within_2_0_seconds_fraction": 0.8894154818325435,
+      "candidate_episodes": 602,
+      "candidate_precision": 0.9352159468438538,
+      "candidate_precision_wilson95": [
+        0.9126629467192937,
+        0.9522497996285653
+      ],
+      "f1": 0.9117408906882591,
+      "false_candidate_episodes": 39,
+      "false_negative_records": 70,
+      "matched_records": 563,
+      "pick_absolute_error_median_seconds": 0.12520718574523926,
+      "pick_absolute_error_p95_seconds": 0.3723962306976317,
+      "pick_error_median_seconds": 0.10100078582763672,
+      "recall": 0.8894154818325435,
+      "recall_wilson95": [
+        0.8625960497108608,
+        0.9115369674971264
+      ],
+      "records": 633
+    },
+    "C0_seed20261102": {
+      "availability_delay_median_seconds": 0.8362381458282471,
+      "availability_delay_p95_seconds": 1.2129024505615233,
+      "available_within_0_5_seconds_fraction": 0.08372827804107424,
+      "available_within_1_0_seconds_fraction": 0.6492890995260664,
+      "available_within_2_0_seconds_fraction": 0.8815165876777251,
+      "candidate_episodes": 588,
+      "candidate_precision": 0.9489795918367347,
+      "candidate_precision_wilson95": [
+        0.9281000413642572,
+        0.9640307685524648
+      ],
+      "f1": 0.914004914004914,
+      "false_candidate_episodes": 30,
+      "false_negative_records": 75,
+      "matched_records": 558,
+      "pick_absolute_error_median_seconds": 0.12867486476898193,
+      "pick_absolute_error_p95_seconds": 0.38093216419219966,
+      "pick_error_median_seconds": 0.1081763505935669,
+      "recall": 0.8815165876777251,
+      "recall_wilson95": [
+        0.8540098247482409,
+        0.9044206971816936
+      ],
+      "records": 633
+    },
+    "C0_seed20261103": {
+      "availability_delay_median_seconds": 0.8036928176879883,
+      "availability_delay_p95_seconds": 1.199869155883789,
+      "available_within_0_5_seconds_fraction": 0.11374407582938388,
+      "available_within_1_0_seconds_fraction": 0.6761453396524486,
+      "available_within_2_0_seconds_fraction": 0.8862559241706162,
+      "candidate_episodes": 595,
+      "candidate_precision": 0.9428571428571428,
+      "candidate_precision_wilson95": [
+        0.9212097778460305,
+        0.9588228121450292
+      ],
+      "f1": 0.9136807817589577,
+      "false_candidate_episodes": 34,
+      "false_negative_records": 72,
+      "matched_records": 561,
+      "pick_absolute_error_median_seconds": 0.12857723236083984,
+      "pick_absolute_error_p95_seconds": 0.3825700283050537,
+      "pick_error_median_seconds": 0.10596752166748047,
+      "recall": 0.8862559241706162,
+      "recall_wilson95": [
+        0.8591571298539522,
+        0.9086948892428139
+      ],
+      "records": 633
+    }
+  },
+  "requested_event_station_records": 717,
+  "requested_events": 65,
+  "scorable_event_station_records": 633,
+  "summary_id": "cspp_v27_tx_external_event_validation_v1",
+  "unscorable_event_station_records": [
+    {
+      "event_id": "tx2021fhjh",
+      "reason": "RuntimeError: No traces found for TX.PB09.00",
+      "station_key": "TX.PB09.00"
+    },
+    {
+      "event_id": "tx2021iflj",
+      "reason": "RuntimeError: No traces found for TX.PB09.00",
+      "station_key": "TX.PB09.00"
+    },
+    {
+      "event_id": "tx2021milw",
+      "reason": "RuntimeError: No traces found for TX.PB09.00",
+      "station_key": "TX.PB09.00"
+    },
+    {
+      "event_id": "tx2021oalq",
+      "reason": "RuntimeError: No traces found for TX.PB09.00",
+      "station_key": "TX.PB09.00"
+    },
+    {
+      "event_id": "tx2021oalq",
+      "reason": "RuntimeError: No traces found for TX.PB14.00",
+      "station_key": "TX.PB14.00"
+    },
+    {
+      "event_id": "tx2021orfg",
+      "reason": "RuntimeError: No traces found for TX.PB09.00",
+      "station_key": "TX.PB09.00"
+    },
+    {
+      "event_id": "tx2021rgbn",
+      "reason": "RuntimeError: No traces found for TX.PB09.00",
+      "station_key": "TX.PB09.00"
+    },
+    {
+      "event_id": "tx2021rqlj",
+      "reason": "RuntimeError: No traces found for TX.PB09.00",
+      "station_key": "TX.PB09.00"
+    },
+    {
+      "event_id": "tx2021tiop",
+      "reason": "RuntimeError: No traces found for TX.PB09.00",
+      "station_key": "TX.PB09.00"
+    },
+    {
+      "event_id": "tx2021ygfk",
+      "reason": "RuntimeError: No traces found for TX.PB09.00",
+      "station_key": "TX.PB09.00"
+    },
+    {
+      "event_id": "tx2021yope",
+      "reason": "RuntimeError: No traces found for TX.PB09.00",
+      "station_key": "TX.PB09.00"
+    },
+    {
+      "event_id": "tx2021zjsk",
+      "reason": "RuntimeError: No traces found for TX.MB11.00",
+      "station_key": "TX.MB11.00"
+    },
+    {
+      "event_id": "tx2022kras",
+      "reason": "RuntimeError: No traces found for TX.PB34.00",
+      "station_key": "TX.PB34.00"
+    },
+    {
+      "event_id": "tx2022krce",
+      "reason": "RuntimeError: No traces found for TX.PB34.00",
+      "station_key": "TX.PB34.00"
+    },
+    {
+      "event_id": "tx2022kzot",
+      "reason": "RuntimeError: No traces found for TX.PB34.00",
+      "station_key": "TX.PB34.00"
+    },
+    {
+      "event_id": "tx2022ldmr",
+      "reason": "RuntimeError: No traces found for TX.PB34.00",
+      "station_key": "TX.PB34.00"
+    },
+    {
+      "event_id": "tx2022oeha",
+      "reason": "RuntimeError: No traces found for TX.PB34.00",
+      "station_key": "TX.PB34.00"
+    },
+    {
+      "event_id": "tx2022orir",
+      "reason": "RuntimeError: No traces found for TX.PB34.00",
+      "station_key": "TX.PB34.00"
+    },
+    {
+      "event_id": "tx2022orir",
+      "reason": "RuntimeError: Missing native channel HNE",
+      "station_key": "TX.PCOS.00"
+    },
+    {
+      "event_id": "tx2022pqec",
+      "reason": "RuntimeError: No traces found for TX.PB35.00",
+      "station_key": "TX.PB35.00"
+    },
+    {
+      "event_id": "tx2022pqec",
+      "reason": "RuntimeError: No traces found for TX.PB38.00",
+      "station_key": "TX.PB38.00"
+    },
+    {
+      "event_id": "tx2022pqec",
+      "reason": "RuntimeError: No traces found for TX.PB34.00",
+      "station_key": "TX.PB34.00"
+    },
+    {
+      "event_id": "tx2022rdfr",
+      "reason": "RuntimeError: No traces found for TX.PB34.00",
+      "station_key": "TX.PB34.00"
+    },
+    {
+      "event_id": "tx2022rduz",
+      "reason": "RuntimeError: No traces found for TX.PB34.00",
+      "station_key": "TX.PB34.00"
+    },
+    {
+      "event_id": "tx2022wmmd",
+      "reason": "RuntimeError: No traces found for TX.PB34.00",
+      "station_key": "TX.PB34.00"
+    },
+    {
+      "event_id": "tx2022wmmd",
+      "reason": "RuntimeError: No traces found for TX.PB40.00",
+      "station_key": "TX.PB40.00"
+    },
+    {
+      "event_id": "tx2022wmmd",
+      "reason": "RuntimeError: No traces found for TX.PB43.00",
+      "station_key": "TX.PB43.00"
+    },
+    {
+      "event_id": "tx2022wmmd",
+      "reason": "RuntimeError: No traces found for TX.PB36.00",
+      "station_key": "TX.PB36.00"
+    },
+    {
+      "event_id": "tx2022wmmd",
+      "reason": "RuntimeError: No traces found for TX.PB35.00",
+      "station_key": "TX.PB35.00"
+    },
+    {
+      "event_id": "tx2022wmmd",
+      "reason": "RuntimeError: No traces found for TX.PB38.00",
+      "station_key": "TX.PB38.00"
+    },
+    {
+      "event_id": "tx2022wmog",
+      "reason": "RuntimeError: No traces found for TX.PB34.00",
+      "station_key": "TX.PB34.00"
+    },
+    {
+      "event_id": "tx2022wmog",
+      "reason": "RuntimeError: No traces found for TX.PB40.00",
+      "station_key": "TX.PB40.00"
+    },
+    {
+      "event_id": "tx2022wmog",
+      "reason": "RuntimeError: No traces found for TX.PB43.00",
+      "station_key": "TX.PB43.00"
+    },
+    {
+      "event_id": "tx2022wmog",
+      "reason": "RuntimeError: No traces found for TX.PB36.00",
+      "station_key": "TX.PB36.00"
+    },
+    {
+      "event_id": "tx2022wmog",
+      "reason": "RuntimeError: No traces found for TX.PB35.00",
+      "station_key": "TX.PB35.00"
+    },
+    {
+      "event_id": "tx2022wmog",
+      "reason": "RuntimeError: No traces found for TX.PB38.00",
+      "station_key": "TX.PB38.00"
+    },
+    {
+      "event_id": "tx2022wrbx",
+      "reason": "RuntimeError: No traces found for TX.PB34.00",
+      "station_key": "TX.PB34.00"
+    },
+    {
+      "event_id": "tx2022wrbx",
+      "reason": "RuntimeError: No traces found for TX.PB40.00",
+      "station_key": "TX.PB40.00"
+    },
+    {
+      "event_id": "tx2022wrbx",
+      "reason": "RuntimeError: No traces found for TX.PB43.00",
+      "station_key": "TX.PB43.00"
+    },
+    {
+      "event_id": "tx2022wrbx",
+      "reason": "RuntimeError: No traces found for TX.PB36.00",
+      "station_key": "TX.PB36.00"
+    },
+    {
+      "event_id": "tx2022wrbx",
+      "reason": "RuntimeError: No traces found for TX.PB35.00",
+      "station_key": "TX.PB35.00"
+    },
+    {
+      "event_id": "tx2022wrbx",
+      "reason": "RuntimeError: No traces found for TX.PB38.00",
+      "station_key": "TX.PB38.00"
+    },
+    {
+      "event_id": "tx2022xaxp",
+      "reason": "RuntimeError: No traces found for TX.PB40.00",
+      "station_key": "TX.PB40.00"
+    },
+    {
+      "event_id": "tx2022xaxp",
+      "reason": "RuntimeError: No traces found for TX.PB34.00",
+      "station_key": "TX.PB34.00"
+    },
+    {
+      "event_id": "tx2022xaxp",
+      "reason": "RuntimeError: No traces found for TX.PB43.00",
+      "station_key": "TX.PB43.00"
+    },
+    {
+      "event_id": "tx2022xaxp",
+      "reason": "RuntimeError: No traces found for TX.PB36.00",
+      "station_key": "TX.PB36.00"
+    },
+    {
+      "event_id": "tx2022xaxp",
+      "reason": "RuntimeError: No traces found for TX.PB35.00",
+      "station_key": "TX.PB35.00"
+    },
+    {
+      "event_id": "tx2022xaxp",
+      "reason": "RuntimeError: No traces found for TX.PB38.00",
+      "station_key": "TX.PB38.00"
+    },
+    {
+      "event_id": "tx2022xaxs",
+      "reason": "RuntimeError: No traces found for TX.PB34.00",
+      "station_key": "TX.PB34.00"
+    },
+    {
+      "event_id": "tx2022xaxs",
+      "reason": "RuntimeError: No traces found for TX.PB40.00",
+      "station_key": "TX.PB40.00"
+    },
+    {
+      "event_id": "tx2022xaxs",
+      "reason": "RuntimeError: No traces found for TX.PB43.00",
+      "station_key": "TX.PB43.00"
+    },
+    {
+      "event_id": "tx2022xaxs",
+      "reason": "RuntimeError: No traces found for TX.PB36.00",
+      "station_key": "TX.PB36.00"
+    },
+    {
+      "event_id": "tx2022xaxs",
+      "reason": "RuntimeError: No traces found for TX.PB35.00",
+      "station_key": "TX.PB35.00"
+    },
+    {
+      "event_id": "tx2022xaxs",
+      "reason": "RuntimeError: No traces found for TX.PB38.00",
+      "station_key": "TX.PB38.00"
+    },
+    {
+      "event_id": "tx2022yplg",
+      "reason": "RuntimeError: No traces found for TX.MB11.00",
+      "station_key": "TX.MB11.00"
+    },
+    {
+      "event_id": "tx2022yplg",
+      "reason": "RuntimeError: No traces found for TX.MB15.00",
+      "station_key": "TX.MB15.00"
+    },
+    {
+      "event_id": "tx2022yplg",
+      "reason": "RuntimeError: No traces found for TX.MB13.00",
+      "station_key": "TX.MB13.00"
+    },
+    {
+      "event_id": "tx2022yplg",
+      "reason": "RuntimeError: No traces found for TX.MB12.00",
+      "station_key": "TX.MB12.00"
+    },
+    {
+      "event_id": "tx2023dgvx",
+      "reason": "RuntimeError: No traces found for TX.MB12.00",
+      "station_key": "TX.MB12.00"
+    },
+    {
+      "event_id": "tx2023dgvx",
+      "reason": "RuntimeError: No traces found for TX.MB13.00",
+      "station_key": "TX.MB13.00"
+    },
+    {
+      "event_id": "tx2023dgvx",
+      "reason": "RuntimeError: No traces found for TX.MB11.00",
+      "station_key": "TX.MB11.00"
+    },
+    {
+      "event_id": "tx2023dgvx",
+      "reason": "RuntimeError: No traces found for TX.MB15.00",
+      "station_key": "TX.MB15.00"
+    },
+    {
+      "event_id": "tx2023dgvx",
+      "reason": "RuntimeError: No traces found for TX.MB16.00",
+      "station_key": "TX.MB16.00"
+    },
+    {
+      "event_id": "tx2023drpm",
+      "reason": "RuntimeError: No traces found for TX.PB35.00",
+      "station_key": "TX.PB35.00"
+    },
+    {
+      "event_id": "tx2023drpm",
+      "reason": "RuntimeError: No traces found for TX.PB38.00",
+      "station_key": "TX.PB38.00"
+    },
+    {
+      "event_id": "tx2023drpm",
+      "reason": "RuntimeError: No traces found for TX.PB34.00",
+      "station_key": "TX.PB34.00"
+    },
+    {
+      "event_id": "tx2023drpm",
+      "reason": "RuntimeError: No traces found for TX.PB40.00",
+      "station_key": "TX.PB40.00"
+    },
+    {
+      "event_id": "tx2023drpm",
+      "reason": "RuntimeError: No traces found for TX.PB43.00",
+      "station_key": "TX.PB43.00"
+    },
+    {
+      "event_id": "tx2023drrr",
+      "reason": "RuntimeError: No traces found for TX.PB35.00",
+      "station_key": "TX.PB35.00"
+    },
+    {
+      "event_id": "tx2023drrr",
+      "reason": "RuntimeError: No traces found for TX.PB38.00",
+      "station_key": "TX.PB38.00"
+    },
+    {
+      "event_id": "tx2023drrr",
+      "reason": "RuntimeError: No traces found for TX.PB34.00",
+      "station_key": "TX.PB34.00"
+    },
+    {
+      "event_id": "tx2023drrr",
+      "reason": "RuntimeError: No traces found for TX.PB40.00",
+      "station_key": "TX.PB40.00"
+    },
+    {
+      "event_id": "tx2023drrr",
+      "reason": "RuntimeError: No traces found for TX.PB43.00",
+      "station_key": "TX.PB43.00"
+    },
+    {
+      "event_id": "tx2023edto",
+      "reason": "RuntimeError: No traces found for TX.PB40.00",
+      "station_key": "TX.PB40.00"
+    },
+    {
+      "event_id": "tx2023edto",
+      "reason": "RuntimeError: No traces found for TX.PB34.00",
+      "station_key": "TX.PB34.00"
+    },
+    {
+      "event_id": "tx2023edto",
+      "reason": "RuntimeError: No traces found for TX.PB43.00",
+      "station_key": "TX.PB43.00"
+    },
+    {
+      "event_id": "tx2023edto",
+      "reason": "RuntimeError: No traces found for TX.PB35.00",
+      "station_key": "TX.PB35.00"
+    },
+    {
+      "event_id": "tx2023edto",
+      "reason": "RuntimeError: No traces found for TX.PB38.00",
+      "station_key": "TX.PB38.00"
+    },
+    {
+      "event_id": "tx2023qlls",
+      "reason": "RuntimeError: No traces found for TX.PB51.00",
+      "station_key": "TX.PB51.00"
+    },
+    {
+      "event_id": "tx2023vqsh",
+      "reason": "RuntimeError: No traces found for TX.MB08.01",
+      "station_key": "TX.MB08.01"
+    },
+    {
+      "event_id": "tx2023vqus",
+      "reason": "RuntimeError: No traces found for TX.MB08.01",
+      "station_key": "TX.MB08.01"
+    },
+    {
+      "event_id": "tx2024oizv",
+      "reason": "RuntimeError: No traces found for TX.MB08.01",
+      "station_key": "TX.MB08.01"
+    },
+    {
+      "event_id": "tx2024shcj",
+      "reason": "RuntimeError: No traces found for TX.MB08.01",
+      "station_key": "TX.MB08.01"
+    },
+    {
+      "event_id": "tx2025dkql",
+      "reason": "RuntimeError: No traces found for TX.PB54.00",
+      "station_key": "TX.PB54.00"
+    }
+  ],
+  "waveforms": {
+    "tx2021fhjh": {
+      "bytes": 2380800,
+      "path": "work_artifacts/tx_external_event_validation_20260824/waveforms/tx2021fhjh/waveforms.mseed",
+      "sha256": "dd8fcf4ac616e1b6f56e4ed58a750326d491b8dfadcac9f991c1def91dba1bb9"
+    },
+    "tx2021iflj": {
+      "bytes": 2088448,
+      "path": "work_artifacts/tx_external_event_validation_20260824/waveforms/tx2021iflj/waveforms.mseed",
+      "sha256": "e5a0e7ba8ee68c9ef728a3dc615a1a0536096113ae93cacedabab91a05a46528"
+    },
+    "tx2021milw": {
+      "bytes": 1947648,
+      "path": "work_artifacts/tx_external_event_validation_20260824/waveforms/tx2021milw/waveforms.mseed",
+      "sha256": "f70847133157259d1783afbb236bcbc896d4456912eaf1af7a53eb5a04d4dbf6"
+    },
+    "tx2021oalq": {
+      "bytes": 2087936,
+      "path": "work_artifacts/tx_external_event_validation_20260824/waveforms/tx2021oalq/waveforms.mseed",
+      "sha256": "7f485aa067609f9044aed79b612a39c80011460a7195571f52e2568dc38c8741"
+    },
+    "tx2021orfg": {
+      "bytes": 2150400,
+      "path": "work_artifacts/tx_external_event_validation_20260824/waveforms/tx2021orfg/waveforms.mseed",
+      "sha256": "db125d089d31193c4563faed1baa56d1f894e294c7807e7060e85e73602414f9"
+    },
+    "tx2021rgbn": {
+      "bytes": 2152448,
+      "path": "work_artifacts/tx_external_event_validation_20260824/waveforms/tx2021rgbn/waveforms.mseed",
+      "sha256": "6cea2ddd814f9b580fefa843c9f51063e85b22ddac252842fa8f6e40a178eb15"
+    },
+    "tx2021rqlj": {
+      "bytes": 2183680,
+      "path": "work_artifacts/tx_external_event_validation_20260824/waveforms/tx2021rqlj/waveforms.mseed",
+      "sha256": "b11002710cfe3b6b3391ec355f15972b6a2dbd0e773a6eef0a31ead6cf8f6c3a"
+    },
+    "tx2021sitf": {
+      "bytes": 2222080,
+      "path": "work_artifacts/tx_external_event_validation_20260824/waveforms/tx2021sitf/waveforms.mseed",
+      "sha256": "d10aa99540041477df2fe9bd506baea9bbff83f8a7ab035f07d5c1b7dcda1321"
+    },
+    "tx2021sqtx": {
+      "bytes": 2450432,
+      "path": "work_artifacts/tx_external_event_validation_20260824/waveforms/tx2021sqtx/waveforms.mseed",
+      "sha256": "fd6cc9616ff1028b38de9a5fbc38ab8e0420ea012371fc67bc0acd3b22091ec8"
+    },
+    "tx2021tbrx": {
+      "bytes": 2325504,
+      "path": "work_artifacts/tx_external_event_validation_20260824/waveforms/tx2021tbrx/waveforms.mseed",
+      "sha256": "1286c5286b03356b52e375a4442353ec1f1dfeb3f8244bbbbbb16e0a3b873b39"
+    },
+    "tx2021tiop": {
+      "bytes": 2204160,
+      "path": "work_artifacts/tx_external_event_validation_20260824/waveforms/tx2021tiop/waveforms.mseed",
+      "sha256": "680a39a8a3b6aa103c16aedfc8a5ac64a6de76b94d554b7ccb24e2dd3cecd007"
+    },
+    "tx2021ygfk": {
+      "bytes": 2056704,
+      "path": "work_artifacts/tx_external_event_validation_20260824/waveforms/tx2021ygfk/waveforms.mseed",
+      "sha256": "bf314a9595baad2e56a58df5cba11e580f7e9e886538f257725b967ace1fba34"
+    },
+    "tx2021yope": {
+      "bytes": 2235904,
+      "path": "work_artifacts/tx_external_event_validation_20260824/waveforms/tx2021yope/waveforms.mseed",
+      "sha256": "d4a05fe0e8f7121125072e528200efe65a45d21f0a4d7125e24f213b1a3eae70"
+    },
+    "tx2021zjsk": {
+      "bytes": 2254848,
+      "path": "work_artifacts/tx_external_event_validation_20260824/waveforms/tx2021zjsk/waveforms.mseed",
+      "sha256": "a6370ae9ff7968ae470eceb04daf4ea7d89587395b444835be4862f2ad1e711e"
+    },
+    "tx2022dbkm": {
+      "bytes": 2451968,
+      "path": "work_artifacts/tx_external_event_validation_20260824/waveforms/tx2022dbkm/waveforms.mseed",
+      "sha256": "9a2d88bdc323708f14da0f2bb0baf60a3cc6c3de7804971e4a39c44e983a9637"
+    },
+    "tx2022elfg": {
+      "bytes": 1714176,
+      "path": "work_artifacts/tx_external_event_validation_20260824/waveforms/tx2022elfg/waveforms.mseed",
+      "sha256": "1f8c5ac45e206749ebfd60a1baee580389fc56864b106b81f244a6ef6db40e61"
+    },
+    "tx2022futk": {
+      "bytes": 1738752,
+      "path": "work_artifacts/tx_external_event_validation_20260824/waveforms/tx2022futk/waveforms.mseed",
+      "sha256": "f54d9e0ce90442dec2efc2958605ba8a4a6acee75388decb6dde1f15e3a3892c"
+    },
+    "tx2022fvwu": {
+      "bytes": 2601984,
+      "path": "work_artifacts/tx_external_event_validation_20260824/waveforms/tx2022fvwu/waveforms.mseed",
+      "sha256": "4bfbf24ef186619677175ca85d14050ab5631a7f13022348b23acb7b63c33042"
+    },
+    "tx2022ifjt": {
+      "bytes": 2009600,
+      "path": "work_artifacts/tx_external_event_validation_20260824/waveforms/tx2022ifjt/waveforms.mseed",
+      "sha256": "8857597ef82982ce359a685ee7ca0a8c3653b636187d02a0046543289db3dcf5"
+    },
+    "tx2022ihbu": {
+      "bytes": 1873408,
+      "path": "work_artifacts/tx_external_event_validation_20260824/waveforms/tx2022ihbu/waveforms.mseed",
+      "sha256": "f35cfcca8c7ecf93039f89c9e088831a28e960ea992b58ad883e81204fdaee5b"
+    },
+    "tx2022kras": {
+      "bytes": 1775616,
+      "path": "work_artifacts/tx_external_event_validation_20260824/waveforms/tx2022kras/waveforms.mseed",
+      "sha256": "6b804e6b573f6c9f21c7ace7096c1f20b75634a9ad63c3cb69fca54c5a10b908"
+    },
+    "tx2022krce": {
+      "bytes": 2233344,
+      "path": "work_artifacts/tx_external_event_validation_20260824/waveforms/tx2022krce/waveforms.mseed",
+      "sha256": "b80968ff68c833e71d4b150ce2455636b8b0cace44a7951a56416b22c12c19b0"
+    },
+    "tx2022kzot": {
+      "bytes": 2207744,
+      "path": "work_artifacts/tx_external_event_validation_20260824/waveforms/tx2022kzot/waveforms.mseed",
+      "sha256": "6a100df1684a3d15d79328aadc4f9221e5d7abe118b8fb1e10b0051df9bb77e6"
+    },
+    "tx2022ldmr": {
+      "bytes": 2230784,
+      "path": "work_artifacts/tx_external_event_validation_20260824/waveforms/tx2022ldmr/waveforms.mseed",
+      "sha256": "8db5eacf1b2843f69798e49c3fd602bd525a1236ef4487b62da94cde2184d8c9"
+    },
+    "tx2022oeha": {
+      "bytes": 1832960,
+      "path": "work_artifacts/tx_external_event_validation_20260824/waveforms/tx2022oeha/waveforms.mseed",
+      "sha256": "b36627daaf63d2cd082d46b0be35fef87e601aa61b2be54bde7167d71beeeafe"
+    },
+    "tx2022orir": {
+      "bytes": 2234368,
+      "path": "work_artifacts/tx_external_event_validation_20260824/waveforms/tx2022orir/waveforms.mseed",
+      "sha256": "b15649f6d076783772cb0fd97981a17e37675d05a5ef126c7f1eb3193e03239e"
+    },
+    "tx2022pqec": {
+      "bytes": 1963520,
+      "path": "work_artifacts/tx_external_event_validation_20260824/waveforms/tx2022pqec/waveforms.mseed",
+      "sha256": "f42a6d83b841334946df91ecbd665ea93340acdde894ede0da044c0eb256c3a5"
+    },
+    "tx2022rdfr": {
+      "bytes": 1687040,
+      "path": "work_artifacts/tx_external_event_validation_20260824/waveforms/tx2022rdfr/waveforms.mseed",
+      "sha256": "59b94d1dc1c63346d405b4b40f4c453ab3364c623528a50926a1c134f5de483f"
+    },
+    "tx2022rduz": {
+      "bytes": 2215424,
+      "path": "work_artifacts/tx_external_event_validation_20260824/waveforms/tx2022rduz/waveforms.mseed",
+      "sha256": "cf0f7345aaa8e1cf535e5e1814ea5bc31ab333edad2e809c2badedb9d890ad8c"
+    },
+    "tx2022wmmd": {
+      "bytes": 1599488,
+      "path": "work_artifacts/tx_external_event_validation_20260824/waveforms/tx2022wmmd/waveforms.mseed",
+      "sha256": "8257ca4d3d6025ed34b9e5395848b79f8b59d37259535d670d008951e4fae7f9"
+    },
+    "tx2022wmog": {
+      "bytes": 1335296,
+      "path": "work_artifacts/tx_external_event_validation_20260824/waveforms/tx2022wmog/waveforms.mseed",
+      "sha256": "3da9c061ad3ac05cf38922307484ac9c14f6457fdf1145f3c3897e0e7edb1e05"
+    },
+    "tx2022wrbx": {
+      "bytes": 1317888,
+      "path": "work_artifacts/tx_external_event_validation_20260824/waveforms/tx2022wrbx/waveforms.mseed",
+      "sha256": "6e7670107c081b0a39d82766e1c9fab59d787508bc36ed34c10f273b8e1d89cd"
+    },
+    "tx2022xaxp": {
+      "bytes": 1433088,
+      "path": "work_artifacts/tx_external_event_validation_20260824/waveforms/tx2022xaxp/waveforms.mseed",
+      "sha256": "070728853a5c7fde1ffc242923fb552168474fa456b55378e915594517fa6a2a"
+    },
+    "tx2022xaxs": {
+      "bytes": 1479680,
+      "path": "work_artifacts/tx_external_event_validation_20260824/waveforms/tx2022xaxs/waveforms.mseed",
+      "sha256": "ba8b559d63cc194aded588a193bf5976a21fd1632560e41ebc6babb69565d741"
+    },
+    "tx2022yplg": {
+      "bytes": 1767424,
+      "path": "work_artifacts/tx_external_event_validation_20260824/waveforms/tx2022yplg/waveforms.mseed",
+      "sha256": "2157622f5047d724c991078e227cbfce60af49b62bf9e994f98dad260fdb4736"
+    },
+    "tx2023dgvx": {
+      "bytes": 1435136,
+      "path": "work_artifacts/tx_external_event_validation_20260824/waveforms/tx2023dgvx/waveforms.mseed",
+      "sha256": "8dd535905aec7dc52fcacc7731e6cbc768898b839edc108a1a1e8e3cd600a55b"
+    },
+    "tx2023drpm": {
+      "bytes": 1702400,
+      "path": "work_artifacts/tx_external_event_validation_20260824/waveforms/tx2023drpm/waveforms.mseed",
+      "sha256": "39d3b84c56484076c3d5bf831c14f5df89a3b197ae394106621db18d515990f9"
+    },
+    "tx2023drrr": {
+      "bytes": 1446912,
+      "path": "work_artifacts/tx_external_event_validation_20260824/waveforms/tx2023drrr/waveforms.mseed",
+      "sha256": "8e25eaf53e338b83e91ce76136974391ec8256a167c68d228fe771a1ab172ae8"
+    },
+    "tx2023edto": {
+      "bytes": 1606144,
+      "path": "work_artifacts/tx_external_event_validation_20260824/waveforms/tx2023edto/waveforms.mseed",
+      "sha256": "6793b22f126c175de717b3c599e74de5a8e4e93d54d33ff48a520983b7c5c760"
+    },
+    "tx2023qlls": {
+      "bytes": 2272768,
+      "path": "work_artifacts/tx_external_event_validation_20260824/waveforms/tx2023qlls/waveforms.mseed",
+      "sha256": "c798cceff52991381be20ccd9a01a099ef624bd0e6e9983b725fae2e56f29eab"
+    },
+    "tx2023vqsh": {
+      "bytes": 2172416,
+      "path": "work_artifacts/tx_external_event_validation_20260824/waveforms/tx2023vqsh/waveforms.mseed",
+      "sha256": "880ab7ff26db29cb710f8b64538b7d05075c609e89b83271e2e5610689863f65"
+    },
+    "tx2023vqus": {
+      "bytes": 2149376,
+      "path": "work_artifacts/tx_external_event_validation_20260824/waveforms/tx2023vqus/waveforms.mseed",
+      "sha256": "ccf2fa49c4f242843dbfe89d9fe907d60c8e72375fa07646d2b2966dc5f100f1"
+    },
+    "tx2023vxae": {
+      "bytes": 2826240,
+      "path": "work_artifacts/tx_external_event_validation_20260824/waveforms/tx2023vxae/waveforms.mseed",
+      "sha256": "cdc911eaee75a3145b2bc161893cb7bed634e3bbe0b487fcb6cc4396384cf2b4"
+    },
+    "tx2023wzka": {
+      "bytes": 2301440,
+      "path": "work_artifacts/tx_external_event_validation_20260824/waveforms/tx2023wzka/waveforms.mseed",
+      "sha256": "cfdabea851024db7857a98f396d651597a2cbf5fc1f758717161ed406bd2641b"
+    },
+    "tx2023xtoa": {
+      "bytes": 2329088,
+      "path": "work_artifacts/tx_external_event_validation_20260824/waveforms/tx2023xtoa/waveforms.mseed",
+      "sha256": "f8d2f7a2a13efd70968af7e670784ec1b4416a3659c7eea5bad55dc067d9cd22"
+    },
+    "tx2024dijf": {
+      "bytes": 844800,
+      "path": "work_artifacts/tx_external_event_validation_20260824/waveforms/tx2024dijf/waveforms.mseed",
+      "sha256": "bcdd9dee388ea573395effe6a24144a8a58195dfc1f594d05c9d8da333e02ea4"
+    },
+    "tx2024dijp": {
+      "bytes": 851968,
+      "path": "work_artifacts/tx_external_event_validation_20260824/waveforms/tx2024dijp/waveforms.mseed",
+      "sha256": "57226a6c0ca18bc89f95c9686a162707f37f2784e89fe3a8b1f1c84895c78811"
+    },
+    "tx2024hcdm": {
+      "bytes": 1671168,
+      "path": "work_artifacts/tx_external_event_validation_20260824/waveforms/tx2024hcdm/waveforms.mseed",
+      "sha256": "d1806358970f08020076f703365b0dfc120493548af5b3d1a3934bc595157208"
+    },
+    "tx2024klhx": {
+      "bytes": 2121216,
+      "path": "work_artifacts/tx_external_event_validation_20260824/waveforms/tx2024klhx/waveforms.mseed",
+      "sha256": "eb0783358f6d900d0c94031ada4c60f2003565f5847e7e7a485b48ce9da28704"
+    },
+    "tx2024oixr": {
+      "bytes": 2536448,
+      "path": "work_artifacts/tx_external_event_validation_20260824/waveforms/tx2024oixr/waveforms.mseed",
+      "sha256": "edd05cf911a2872c3849a5efe9f4956bb878931500175a0b829a3d3c7e6c0dcd"
+    },
+    "tx2024oizv": {
+      "bytes": 2361344,
+      "path": "work_artifacts/tx_external_event_validation_20260824/waveforms/tx2024oizv/waveforms.mseed",
+      "sha256": "13ba0b524eff51ff173db1237f2b516657471e2ca27130578f9985e116ea8b6c"
+    },
+    "tx2024ojad": {
+      "bytes": 2427392,
+      "path": "work_artifacts/tx_external_event_validation_20260824/waveforms/tx2024ojad/waveforms.mseed",
+      "sha256": "7f1122f375b6b63c704da0a800e578873887f3cc02bb32773b974ff70793978d"
+    },
+    "tx2024ompo": {
+      "bytes": 2314240,
+      "path": "work_artifacts/tx_external_event_validation_20260824/waveforms/tx2024ompo/waveforms.mseed",
+      "sha256": "97579bc814e6b2f13dbc3d5515da8003216558eab9401c56bcb83aa818d207b8"
+    },
+    "tx2024ophu": {
+      "bytes": 2784256,
+      "path": "work_artifacts/tx_external_event_validation_20260824/waveforms/tx2024ophu/waveforms.mseed",
+      "sha256": "7be5e977c6be00b798cd519cafaaa4a61e26ed45e9bc964e306f6e27425ee217"
+    },
+    "tx2024orqm": {
+      "bytes": 1837568,
+      "path": "work_artifacts/tx_external_event_validation_20260824/waveforms/tx2024orqm/waveforms.mseed",
+      "sha256": "9d5b9bcfac3efb4f8eba7c55743f28609d47ea73df4d9d963a277a56f84adabb"
+    },
+    "tx2024shcj": {
+      "bytes": 1505280,
+      "path": "work_artifacts/tx_external_event_validation_20260824/waveforms/tx2024shcj/waveforms.mseed",
+      "sha256": "779c30aba56e9bd14e676f9ffc4c72b2eb774ef64e08847c95f2f0eaa4610d69"
+    },
+    "tx2024vnfl": {
+      "bytes": 2466816,
+      "path": "work_artifacts/tx_external_event_validation_20260824/waveforms/tx2024vnfl/waveforms.mseed",
+      "sha256": "5957d2e2dd7adacab8128111e6f01b020a2652b0801bf5d9f3ab29ac2035097b"
+    },
+    "tx2024yxse": {
+      "bytes": 2410496,
+      "path": "work_artifacts/tx_external_event_validation_20260824/waveforms/tx2024yxse/waveforms.mseed",
+      "sha256": "ec80868e953859d2e5366a880a3e386fa41a5dc020a7bfa5948bd47737ad227a"
+    },
+    "tx2025aoxt": {
+      "bytes": 2528256,
+      "path": "work_artifacts/tx_external_event_validation_20260824/waveforms/tx2025aoxt/waveforms.mseed",
+      "sha256": "d9c5582570a3ffde15e9e3a683a338f268b7897a2610377cdc1c5f2c124327b1"
+    },
+    "tx2025deqh": {
+      "bytes": 3103232,
+      "path": "work_artifacts/tx_external_event_validation_20260824/waveforms/tx2025deqh/waveforms.mseed",
+      "sha256": "d4146353c435413dc5f509207f461d274b87d030824711ab93dc351212a9c313"
+    },
+    "tx2025dkql": {
+      "bytes": 2200064,
+      "path": "work_artifacts/tx_external_event_validation_20260824/waveforms/tx2025dkql/waveforms.mseed",
+      "sha256": "366c603e95790d15411f1be2627f6bf833786b5ad219269d714c77289b422c19"
+    },
+    "tx2025edml": {
+      "bytes": 1731072,
+      "path": "work_artifacts/tx_external_event_validation_20260824/waveforms/tx2025edml/waveforms.mseed",
+      "sha256": "37b234503aaeaf8d4cf2bc4631528db37a275c54139251181b780db7fda5a3b8"
+    },
+    "tx2025ehit": {
+      "bytes": 2839552,
+      "path": "work_artifacts/tx_external_event_validation_20260824/waveforms/tx2025ehit/waveforms.mseed",
+      "sha256": "16a62f4231cac9012ab4d5e93b38b58b2c9e04305fbd0db6c332d186dff1e5f1"
+    },
+    "tx2025iqwk": {
+      "bytes": 2950144,
+      "path": "work_artifacts/tx_external_event_validation_20260824/waveforms/tx2025iqwk/waveforms.mseed",
+      "sha256": "59ffd54cdc83c27abc5616b8e0d0fb7e87458136766e899a3b5d0d80eb317a59"
+    },
+    "tx2025ubulqx": {
+      "bytes": 1353728,
+      "path": "work_artifacts/tx_external_event_validation_20260824/waveforms/tx2025ubulqx/waveforms.mseed",
+      "sha256": "77c822902cfad3c73e3fff1509e6d5f13b74f64a4ace791f169127e80d55045d"
+    }
+  }
+}

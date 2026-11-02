@@ -1,0 +1,125 @@
+{
+  "code_sha256": {
+    "scripts/evaluation/analyze_v27_ncedc_event_scores.py": "32fcaf0a98b15898ec02a771a33fdd9abfd8d25b7fa35cddb2fc52daf5f57f45",
+    "scripts/evaluation/freeze_v27_ncedc_event_analysis_protocol.py": "2b50ee92d9dd40865bdfcc646bac64899e3dd7ba3b49123de9fee32e47420d58",
+    "src/cspp_v27_reused_core_score_cache.py": "a0301fccc341f7cd95bb01b6478904cc86bb731421867da47a7017f72a6aa0d2"
+  },
+  "evidence_boundary": {
+    "score_cache_generated": true,
+    "score_values_or_target_metrics_inspected_before_freeze": false,
+    "seed_selection_permitted": false,
+    "target_adaptation_permitted": false,
+    "threshold_sweep_permitted": false
+  },
+  "execution": {
+    "output_root": "work_artifacts/ncedc_model_blind_20260817/evaluation/ncedc_event_analysis_v1"
+  },
+  "frozen_at_utc": "2026-08-17T13:21:27.386301+00:00",
+  "inputs": {
+    "score_completion": {
+      "bytes": 13837,
+      "path": "work_artifacts/ncedc_model_blind_20260817/evaluation/ncedc_event_scores_v1/event_score_cache_complete.json",
+      "sha256": "697062bc4c30377b4481651b854ebe73b3a6a9971b9d18c60f327c57396c682c"
+    }
+  },
+  "metrics": {
+    "local_p_snr_window_seconds": 1.0,
+    "match_tolerance_seconds": 1.5,
+    "primary_label": "positive-weight manual reviewed preferred-origin P pick"
+  },
+  "models": {
+    "C0_seed20261101": {
+      "arm": "C0",
+      "bytes": 1369948,
+      "path": "work_artifacts/checkpoints/blind_v27c_C0_none_seed20261101/final.pt",
+      "seed": 20261101,
+      "sha256": "d27ce10351475dfa264b45406b601dbcfc64e15c92be7260fe54c1738d35586d",
+      "verifier_feature_mode": "none"
+    },
+    "C0_seed20261102": {
+      "arm": "C0",
+      "bytes": 1369948,
+      "path": "work_artifacts/checkpoints/blind_v27c_C0_none_seed20261102/final.pt",
+      "seed": 20261102,
+      "sha256": "fcc9a3123765e5a78c7a210086d31768a77f37556e1c2e1efc503342b39bf2f2",
+      "verifier_feature_mode": "none"
+    },
+    "C0_seed20261103": {
+      "arm": "C0",
+      "bytes": 1369948,
+      "path": "work_artifacts/checkpoints/blind_v27c_C0_none_seed20261103/final.pt",
+      "seed": 20261103,
+      "sha256": "02695f1827eac6bca218a8017ce3efb67f8ef2f693e113644d41b1423c0fea56",
+      "verifier_feature_mode": "none"
+    }
+  },
+  "network_confirmation": {
+    "minimum_stations": 3,
+    "role": "secondary event-level coincidence diagnostic",
+    "span_seconds": 10.0
+  },
+  "next_boundary": "The hash-verified analysis may now read score values once and report the fixed operating point for the primary and two replication seeds.",
+  "operating_point": {
+    "all_reported_seeds": [
+      20261101,
+      20261102,
+      20261103
+    ],
+    "candidate_threshold": 0.1,
+    "event_threshold": 0.975,
+    "primary_operational_seed": 20261101,
+    "seed_selection_permitted": false,
+    "selected_arm": "C0"
+  },
+  "protocol_id": "cspp_v27_ncedc_event_analysis_v1",
+  "runtime": {
+    "candidate_history_packets": 4,
+    "max_arrival_age_packets": 4.0,
+    "normalization": "per-channel causal EWMA demean and scale",
+    "packet_duration_seconds": 0.5,
+    "packet_samples": 50,
+    "quality_gate": "PacketQualityGateV5 frozen defaults",
+    "recurrent_state_reset": "every quality-invalid segment boundary",
+    "sample_rate_hz": 100.0,
+    "temporal_block_packets": 4096,
+    "warmup_packets": 20
+  },
+  "scoring_protocol": {
+    "bytes": 6586,
+    "path": "workspace/experiments/cspp_v27_ncedc_event_scoring_protocol_20260817.json",
+    "sha256": "9799f12a47ca39b80a09a8e5aaa3a62611da88ba0285af34dbfa7413004854b6"
+  },
+  "status": "frozen_after_score_generation_before_score_value_inspection",
+  "strata": {
+    "distance_km": [
+      "0_to_lt_50",
+      "50_to_lt_100",
+      "100_to_200"
+    ],
+    "local_p_snr_db": [
+      "lt_0",
+      "0_to_lt_10",
+      "ge_10",
+      "invalid"
+    ],
+    "magnitude": [
+      "4.0_to_lt_4.5",
+      "4.5_to_lt_5.0",
+      "ge_5.0"
+    ],
+    "native_sample_rate_hz": [
+      100.0,
+      200.0
+    ]
+  },
+  "uncertainty": {
+    "binomial_interval": "Wilson 95 percent",
+    "bootstrap_interval": [
+      0.025,
+      0.975
+    ],
+    "bootstrap_replicates": 5000,
+    "bootstrap_seed": 20260817,
+    "bootstrap_unit": "earthquake event"
+  }
+}

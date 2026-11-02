@@ -1,0 +1,20 @@
+{
+  "event_id": "75079016",
+  "station_key": "NC.KSM.03",
+  "checkpoint": "cspp_seed20261101.pt",
+  "packets": 480,
+  "valid_packets": 480,
+  "candidate_allowed_packets": 461,
+  "candidate_count": 1,
+  "reference_p_seconds": 80.02,
+  "picks": [
+    {
+      "episode_index": 1,
+      "episode_start_packet": 161,
+      "available_epoch": 81.0,
+      "estimated_p_epoch": 80.25799816846848,
+      "pick_error_seconds": 0.23799816846847932,
+      "output_delay_seconds": 0.980000000000004
+    }
+  ]
+}

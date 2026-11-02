@@ -1,0 +1,76 @@
+{
+  "code": {
+    "bytes": 22112,
+    "path": "workspace/scripts/evaluation/build_v27_ncedc_event_manifest.py",
+    "sha256": "f327cc1a7c7acb121882688961e2b9135807bb0ed145a046afa28115134318b8"
+  },
+  "counts": {
+    "catalog_events": 134,
+    "event_selection_outcomes": {
+      "fewer_than_three_primary_eligible_stations": 99,
+      "selected": 35
+    },
+    "native_sample_rate_hz": {
+      "100.0": 349,
+      "200.0": 13
+    },
+    "selected_event_station_requests": 362,
+    "selected_events": 35,
+    "unique_selected_stations": 98
+  },
+  "deterministic_tie_breaks": {
+    "arrival": "descending arrival weight, ascending absolute residual, pick time, and pick identifier",
+    "channel_group": "ascending location code and sample rate",
+    "station": "ascending epicentral distance, network, station, location, and channel list"
+  },
+  "evidence_boundary": {
+    "model_outputs_computed": false,
+    "selection_uses_waveform_amplitude_or_model_output": false,
+    "target_metadata_accessed_after_protocol_freeze": true,
+    "target_waveforms_accessed": false,
+    "unavailable_requests_may_be_replaced": false
+  },
+  "freeze_id": "cspp_v27_ncedc_event_manifest_freeze_v1",
+  "frozen_at_utc": "2026-08-23T18:23:16.808344+00:00",
+  "manifests": {
+    "event_catalog_and_selection": {
+      "bytes": 18802,
+      "path": "work_artifacts/ncedc_larger_event_extension_20260824/metadata/manifests/event_catalog_and_selection.csv",
+      "sha256": "fbd11c9acbb4837e353b5fe899b2c27d83adc53d6be6f290f2b94aff63560c71"
+    },
+    "event_station_requests": {
+      "bytes": 104191,
+      "path": "work_artifacts/ncedc_larger_event_extension_20260824/metadata/manifests/event_station_requests.csv",
+      "sha256": "6cac0b709fed079b770b03d912efdb520029c11e08a78c5b593851f534b7bd5d"
+    }
+  },
+  "next_boundary": "Waveform acquisition may begin only after the downloader verifies this freeze. It must attempt every request exactly once per retry policy and preserve missing, partial, and rejected outcomes.",
+  "protocol": {
+    "bytes": 2153,
+    "path": "workspace/experiments/cspp_v27_ncedc_larger_event_protocol_20260824.json",
+    "sha256": "e22a7d9fa89358b760dcd3b6efc8ee9e2e424dd155c393b31561ec5f5eec7f73"
+  },
+  "source_metadata": {
+    "event_request": {
+      "bytes": 1261,
+      "path": "work_artifacts/ncedc_larger_event_extension_20260824/metadata/raw/ncedc_events_2024_2025_m4_arrivals.request.json",
+      "sha256": "b1ec03e60dc4d7488e162b438efebd1423ec7ea82072e853f58c41fd16bee35c"
+    },
+    "events": {
+      "bytes": 26042541,
+      "path": "work_artifacts/ncedc_larger_event_extension_20260824/metadata/raw/ncedc_events_2024_2025_m4_arrivals.xml",
+      "sha256": "f473f9f3ea2f61ff2e0170ad8ff6f39b4e86e061eccbfcd7123ce3c3f91b4472"
+    },
+    "station_request": {
+      "bytes": 1241,
+      "path": "work_artifacts/ncedc_larger_event_extension_20260824/metadata/raw/ncsn_hn_response_2024_2025.request.json",
+      "sha256": "63bb0855fea77d18500fca58b938ae260baf40f23a9808b1ec63ce963968b696"
+    },
+    "stations": {
+      "bytes": 42575954,
+      "path": "work_artifacts/ncedc_larger_event_extension_20260824/metadata/raw/ncsn_hn_response_2024_2025.xml",
+      "sha256": "5129cc8352f0360559551d206fb57b215e6ac802722ba4da95ebc1be34720587"
+    }
+  },
+  "status": "event_station_requests_frozen_before_waveform_access"
+}

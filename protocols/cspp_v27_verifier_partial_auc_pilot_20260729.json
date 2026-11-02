@@ -1,0 +1,47 @@
+{
+  "protocol_id": "cspp_v27a_verifier_partial_auc_pilot_v1",
+  "frozen_at": "2026-07-29",
+  "status": "frozen_before_execution",
+  "parent_protocol": "experiments/cspp_v27_from_scratch_protocol_20260729.json",
+  "parent_protocol_sha256": "6e88807ba635ecb09f988a2feabb5139c1b8cca1d5d22fc92c983d261684f314",
+  "question": "Can an independently trained low-false-alarm verifier preserve the V27a high-recall candidate operating region?",
+  "control": {
+    "checkpoint": "work_artifacts/checkpoints/pilot_v27a_seed20261101/best.pt",
+    "checkpoint_sha256": "c90241c759018e87cacb10c75e46c3b99ac410f439b312801c9bbbdb9dc6e813",
+    "candidate_threshold_0_1_event_threshold_0_9": {
+      "native_usable_rate": 0.417,
+      "zero_db_usable_rate": 0.06,
+      "ten_db_usable_rate": 0.356,
+      "noise_specificity": 0.9803
+    }
+  },
+  "single_factor_change": {
+    "verifier_partial_auc_loss_weight": 1.0,
+    "verifier_partial_auc_negative_fraction": 0.25,
+    "verifier_partial_auc_margin": 1.0
+  },
+  "held_constant": {
+    "architecture": "v27",
+    "model_parameters": 312651,
+    "event_head_backbone_gradient": "detached",
+    "snr_training_profile": "v7_operational",
+    "curriculum_epoch_offset": 0,
+    "low_snr_event_weight": 3.0,
+    "record_selection": "identical limits and data seed to control",
+    "data_seed": 20260801,
+    "optimization_seed": 20261101,
+    "epochs": 3,
+    "batch_size": 8,
+    "distillation_loss_weight": 0.0
+  },
+  "acceptance": {
+    "candidate_threshold_maximum": 0.2,
+    "noise_specificity_minimum": 0.995,
+    "native_usable_rate_minimum": 0.75,
+    "zero_db_usable_rate_minimum": 0.15,
+    "ten_db_usable_rate_minimum": 0.65,
+    "p90_availability_delay_seconds_maximum": 1.5,
+    "policy": "accept only if one threshold pair satisfies every condition; otherwise replace the linear verifier head before full training"
+  },
+  "opened_test_boundary": "No retrospective fixed-test or final GeoNet candidate is used for selection."
+}

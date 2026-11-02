@@ -1,0 +1,32 @@
+{
+  "repository_version": "0.2.0",
+  "validation_date": "2026-11-02",
+  "python": "3.12.15",
+  "platform": "darwin",
+  "dependencies": {
+    "numpy": "2.2.6",
+    "torch": "2.13.0",
+    "pytest": "9.1.1",
+    "setuptools": "81.0.0"
+  },
+  "tests_passed": 32,
+  "saved_row_metrics_match": true,
+  "python_sources_syntax_checked": 172,
+  "relative_documentation_links_checked": 13,
+  "wheel_modules": 32,
+  "wheel_outside_repository_smoke_passed": true,
+  "synthetic_smoke": {
+    "packets": 80,
+    "valid_packets": 80,
+    "candidate_allowed_packets": 61,
+    "candidate_count": 0
+  },
+  "upstream_files_verified_unchanged": 280,
+  "original_models_results_and_manuscripts_modified": false,
+  "full_training_or_raw_waveform_experiments_rerun": false,
+  "matlab_and_plotting_sources_executed": false,
+  "github_actions_executed": false,
+  "remote_publication_performed": false,
+  "chinese_dataset_distributed": false,
+  "scientific_reference_provenance_retained": true
+}

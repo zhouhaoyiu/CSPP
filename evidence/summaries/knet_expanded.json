@@ -1,0 +1,35 @@
+{
+  "C0": {
+    "records": 2505,
+    "matched": 197,
+    "candidate_total": 2152,
+    "recall": 0.07864271457085828,
+    "precision": 0.09154275092936803,
+    "f1": 0.08460382220313506,
+    "median_absolute_pick_error_seconds": 0.7357416605949396,
+    "events": 104,
+    "event_hit_rate": 0.5480769230769231
+  },
+  "eqtransformer_original_eqtransformer_original_p_default": {
+    "records": 2505,
+    "matched": 241,
+    "candidate_total": 3447,
+    "recall": 0.09620758483033932,
+    "precision": 0.06991586887148245,
+    "f1": 0.08098118279569892,
+    "median_absolute_pick_error_seconds": 0.7300000000000004,
+    "events": 104,
+    "event_hit_rate": 0.5769230769230769
+  },
+  "phasenet_instance_phasenet_instance_default": {
+    "records": 2505,
+    "matched": 270,
+    "candidate_total": 3854,
+    "recall": 0.10778443113772455,
+    "precision": 0.0700570835495589,
+    "f1": 0.084919012423337,
+    "median_absolute_pick_error_seconds": 0.7200000000000033,
+    "events": 104,
+    "event_hit_rate": 0.5961538461538461
+  }
+}

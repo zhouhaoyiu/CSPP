@@ -1,0 +1,56 @@
+{
+  "protocol_id": "cspp_v27_ncedc_continuous_review_v1",
+  "status": "frozen_before_manual_waveform_classification",
+  "frozen_at_utc": "2026-08-23T18:02:08Z",
+  "code_sha256": {
+    "scripts/evaluation/build_v27_geonet_continuous_review_packet.py": "ceeef19e73a563f08ee9231742299aa31272a42e99ee889261e696a5593043ec",
+    "scripts/evaluation/build_v27_ncedc_continuous_review_packet.py": "768613206fab85543d1c3648b2b77a2c37209b2110f1cff54fdd7ead7da4ffe8"
+  },
+  "inputs": {
+    "catalog_adjudication_result": {
+      "path": "work_artifacts/ncedc_model_blind_20260817/evaluation/ncedc_continuous_catalog_adjudication_v1/result.json",
+      "bytes": 611,
+      "sha256": "12be21052982865936db44ff52341e64e08a09efd4d11006e49e4b0931879c7e"
+    },
+    "orientation_manifest": {
+      "path": "work_artifacts/submission/tgrs_v27_ncsn_20260824/evidence/ncsn/manifests/continuous_station_day_orientations.csv",
+      "bytes": 345644,
+      "sha256": "6d62f4d6ce6617d75423a5a1d0e57f3078f782d46143a6aadd406b58d6d02a14"
+    },
+    "screened_candidates": {
+      "path": "work_artifacts/ncedc_model_blind_20260817/evaluation/ncedc_continuous_catalog_adjudication_v1/candidates_catalog_screened.csv",
+      "bytes": 449526,
+      "sha256": "2c993993cdf0e277c7cc91c94a6bff02e0a096d4e6a41d46cf4f63d0e63e4399"
+    }
+  },
+  "waveforms": {
+    "root": "work_artifacts/ncedc_model_blind_20260817/waveforms/continuous",
+    "source_integrity": "Each station-day must retain its acquisition QC, recorded waveform size, and complete or explicitly partial status."
+  },
+  "selection": {
+    "catalog_class": "unresolved",
+    "expected_candidates": 294,
+    "review_order": "sha256(candidate_id)"
+  },
+  "manual_review": {
+    "pre_candidate_seconds": 10.0,
+    "post_candidate_seconds": 30.0,
+    "labels": [
+      "earthquake_phase",
+      "anthropogenic",
+      "instrument_or_communication",
+      "environmental_or_unknown"
+    ],
+    "independent_reviewers_required": 2,
+    "catalog_and_model_scores_hidden_by_default": true
+  },
+  "execution": {
+    "output_root": "work_artifacts/ncedc_model_blind_20260817/evaluation/ncedc_continuous_manual_review_v1",
+    "overwrite_permitted": false
+  },
+  "claim_boundary": {
+    "model_or_threshold_adaptation_permitted": false,
+    "unreviewed_candidates_are_not_false_alarms": true,
+    "packet_creation_is_not_expert_adjudication": true
+  }
+}
