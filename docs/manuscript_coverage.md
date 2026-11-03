@@ -32,8 +32,8 @@ frozen array implementation using synthetic inputs, including resets.
 
 `reproduction/manuscript_snapshot/` preserves the experiment scripts and recursively
 resolved local Python imports. Its inventory is
-`provenance/manuscript_source_exports.json`. Original and exported source hashes
-identify each file; private absolute path strings are sanitized. Scientific
+`provenance/manuscript_source_exports.json`. It identifies the source files;
+private absolute path strings are sanitized. Scientific
 calculations and attribution are not intentionally changed.
 
 These scripts retain historical names, directory layouts and some original device

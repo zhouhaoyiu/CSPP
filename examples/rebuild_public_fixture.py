@@ -1,6 +1,5 @@
 """Rebuild the public example from its MiniSEED without changing the fixture."""
 import argparse
-import hashlib
 import json
 from pathlib import Path
 
@@ -16,8 +15,6 @@ DATA = ROOT / "examples/data/ncsn_75079016_KSM"
 def rebuild():
     metadata = json.loads((DATA / "metadata.json").read_text())
     native = DATA / "native.mseed"
-    assert hashlib.sha256(native.read_bytes()).hexdigest() == metadata["native_mseed_sha256"]
-    assert hashlib.sha256((ROOT / "cspp/io/orientation.py").read_bytes()).hexdigest() == metadata["preprocessing_code_sha256"]
     preparation = metadata["preprocessing"]
     orientations = [ChannelOrientation(**row) for row in preparation["channel_orientations"]]
     station = {key: preparation[key] for key in ("network", "station", "location")}

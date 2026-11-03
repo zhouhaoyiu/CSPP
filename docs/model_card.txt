@@ -8,7 +8,7 @@ Architecture and input
 Packet convolutional encoder, physical descriptors, recurrent cross-packet memory, and detection, confirmation and arrival-time outputs. The model has 329423 parameters and a 320-scalar neural state. Input is prepared three-component ZNE acceleration at 100 Hz, 50 samples per component per non-overlapping 0.5-second packet. The public API does not perform telemetry, channel rotation, resampling or response correction.
 
 Operation and weights
-Default detection threshold 0.1 and confirmation threshold 0.975. Startup and invalid-data resets require 20 consecutive valid packets (10 seconds); this is not a 10-second wait after each P arrival. One picker/state is used per station. Primary checkpoint: models/cspp_seed20261101.pt; replication seeds: 20261102 and 20261103. Verify checksums against models/model_manifest.json. Expanded/full checkpoints are not substitutes.
+Default detection threshold 0.1 and confirmation threshold 0.975. Startup and invalid-data resets require 20 consecutive valid packets (10 seconds); this is not a 10-second wait after each P arrival. One picker/state is used per station. Primary checkpoint: models/cspp_seed20261101.pt; replication seeds: 20261102 and 20261103. Expanded/full checkpoints are not substitutes.
 
 Training and evaluation data
 Positive training data: 1000 InstanceGM, 1000 K-NET and 500 CWA three-component records; the manuscript reports 2416 negative-sample windows. GeoNet development uses 97 configuration-selection and 92 threshold-calibration events, plus continuous background data. External tests: NCSN 578 records/51 events and TexNet 633 records/65 events. A temporally separate GeoNet set has 491 manually reviewed records for ablations.

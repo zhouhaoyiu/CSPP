@@ -35,9 +35,9 @@ and installation times.
 ## Input Preparation
 
 The included `native.mseed` contains only this public three-component station
-record. `metadata.json` records the original archive hash, public provider,
-request URL, channel orientations and gains, reference pick, array hash, and
-frozen preprocessing-code hash. `waveform.npy` has shape `(3, 24000)`, in ZNE order
+record. `metadata.json` records the public provider, request URL, channel
+orientations and gains, reference pick, and preprocessing settings.
+`waveform.npy` has shape `(3, 24000)`, in ZNE order
 at 100 Hz. It uses the archived adapter's gain-equalized count-like acceleration:
 native counts divided by each channel gain and multiplied by their geometric
 mean gain. It is not SI acceleration or a display-normalized Figure 2 trace.
@@ -52,8 +52,8 @@ python -m pip install -e '.[waveforms]'
 python examples/rebuild_public_fixture.py --output runs/rebuilt_waveform.npy
 ```
 
-The rebuild checks the raw and preprocessing-code hashes, recomputes orientation
-and preparation using the unchanged adapter, and verifies every array sample.
+The rebuild recomputes orientation and preparation using the unchanged adapter
+and verifies every array sample.
 It does not overwrite the distributed fixture or access restricted data.
 For other data, obtain the correct orientation, response/gain and timing metadata
 from the provider and follow `DATA_ACCESS.md` and `docs/streaming.md`. The inference

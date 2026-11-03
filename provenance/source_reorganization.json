@@ -2,10 +2,8 @@
   "purpose": "Source reorganization regression; no new scientific performance claim",
   "checkpoint": {
     "path": "work_artifacts/checkpoints/blind_v27c_C0_none_seed20261101/final.pt",
-    "sha256": "d27ce10351475dfa264b45406b601dbcfc64e15c92be7260fe54c1738d35586d",
     "model_class": "CSPPCausalPickerV27C",
-    "parameters": 329423,
-    "shared_core_digest": "4a2b4bd3e5aae3ee5b05189aad561e93f87b5e58e06637e4c6531b9e36d1272c"
+    "parameters": 329423
   },
   "runtime": {
     "sample_rate_hz": 100.0,
@@ -17,7 +15,6 @@
     {
       "name": "synthetic_valid",
       "samples": 18000,
-      "input_array_sha256": "a8f53da1ebe947b13e6c6478e92b3884dd38ce396f64bcb00bf4da76c56fa185",
       "maximum_absolute_score_difference": 0.0,
       "candidate_counts_equal": {
         "0.1/0.975": 0,
@@ -29,7 +26,6 @@
     {
       "name": "synthetic_invalid_and_duplicate_packets",
       "samples": 18000,
-      "input_array_sha256": "f8e239ed95494167ee4a239d0de8287948f26932ad62d1452859b66aa26e66c3",
       "maximum_absolute_score_difference": 0.0,
       "candidate_counts_equal": {
         "0.1/0.975": 0,
@@ -41,7 +37,6 @@
     {
       "name": "bucket1001$110,:3,:6000",
       "samples": 6000,
-      "input_array_sha256": "bbf28b37c6d0a9302e9222c64e90e73972658c943928d9e021efcbf3d2c14efc",
       "maximum_absolute_score_difference": 0.0,
       "candidate_counts_equal": {
         "0.1/0.975": 1,
@@ -53,7 +48,6 @@
     {
       "name": "bucket561$68,:3,:6000",
       "samples": 6000,
-      "input_array_sha256": "47e840e8bc57759bf2a16653fe0f9d2da3fa6b90e41fa8a21295b589c63c245c",
       "maximum_absolute_score_difference": 0.0,
       "candidate_counts_equal": {
         "0.1/0.975": 0,
@@ -65,7 +59,6 @@
     {
       "name": "bucket999$951,:3,:6000",
       "samples": 6000,
-      "input_array_sha256": "c0679c5e5aa09a8defa33762e6156c9704556b72783175bc0bd73c4ed92601eb",
       "maximum_absolute_score_difference": 0.0,
       "candidate_counts_equal": {
         "0.1/0.975": 1,
@@ -75,37 +68,5 @@
       "quality_valid_packets": 120
     }
   ],
-  "all_equal": true,
-  "package_sha256": {
-    "cspp/__init__.py": "b13be7c406c35b1bac2e5d804db81d5862e54a0ab564ca6856a01f9261eced42",
-    "cspp/__main__.py": "e1f8faa1ac1b730cfae8d03b7766a22d38cf06b6369aa12272cef4ead4d47901",
-    "cspp/association/__init__.py": "5d1aeb5d089b2a598fe8897b8f383109674819fdd225102b1864ae9a99e7f831",
-    "cspp/association/causal_triplet.py": "05083525d9b9b94214b94afa167604e3eb436b8d3a8837e4b5d9ef29329c7415",
-    "cspp/association/connected_triplet.py": "afc33e49da976fa1ab592ea6286e02077ba26f710c875e5fb8f0b59a593dc7bf",
-    "cspp/association/delaunay.py": "f519141f1a4d7176a0de1fee016ccc5a2b6f8c69a0bcec98ebccb568224e6013",
-    "cspp/checkpoint.py": "bd4eaad3b07147c2abf0569c6ebdf096af2d51d9bf2a64ca17eef4bb0dacae74",
-    "cspp/evaluation/__init__.py": "134a8c021f4777d284302c58eeb5307cab1ccf251687f438ca31ea04d0eb2026",
-    "cspp/evaluation/network_replay.py": "2b4ab30118da789d111c134e1b425baaee071d79eaf457acf0f1632739219bca",
-    "cspp/evaluation/public_full_record.py": "7cbe423a2042a6099050a779305a858eb5b080c72e8fbddb3d74d6a405f2859f",
-    "cspp/evaluation/public_windows.py": "2cfe9440731f05e903a929870771467018117a7ab18a716bb6ce6a0296f7c3b1",
-    "cspp/evaluation/score_cache.py": "5885ba772a34b386fb6b66052a30bb0c3640756cf34fb6720660b99b4d21dd90",
-    "cspp/evaluation/snr.py": "1f74891438713699bd0900c69e66c99d846b7554858b1b6b1977716f7f093fbe",
-    "cspp/features/__init__.py": "a22d71145b808a8559435fe2e0706c33508a0c0a2733445c0f127a2504cb0571",
-    "cspp/features/layers.py": "22cef6d58fd6c7bc14f754f7fce90db91b1f740a350f8c4eb17a193db49d136e",
-    "cspp/features/physics.py": "195446c871dedec4bd73cc783729d03795f07decfbbec3159cba826468c2279b",
-    "cspp/features/spectrum.py": "07e174b4fe93b99a348e44b5366f83e12f88a144a10b577bd386d46b408309d7",
-    "cspp/io/__init__.py": "15522b8cd54b4310a72dcbdc14c7ed7f290900873c5bdb4cca5ba51dbab72e8f",
-    "cspp/io/dbt_packet.py": "4e85419285d0ac436b43e261a326cd855ce7349ea263e8bcd7f710d62d3138ee",
-    "cspp/io/dbt_triplet.py": "434e86639c8867502fe203831078883ccfec827f39ccc8303edf1e89a80c9171",
-    "cspp/io/decimation.py": "c2b5ce6b1eac54e9bea00e60691e267cc9f2740a28856935d16307123d259518",
-    "cspp/io/gaps.py": "f506c4f9690be2c5f68f85e9091ad4de7aeced299a2065ce291c0fe46a29f5bb",
-    "cspp/io/miniseed.py": "7c7b6c40fac73502dbe5d79c042deca8ca3230226771891e7db1d4a95df43d1a",
-    "cspp/io/orientation.py": "6458dd53831532c0b088f9286cf7eeaefc2e09aaf931d17d855bc054aca3803f",
-    "cspp/io/strong_motion.py": "c4c01a0b7c90ece8d4be6df13443c61c0c09a26eaf680d8210268a305af557c3",
-    "cspp/model.py": "2e6a3bf06f4f3b60934680658d60e244ad445d1adb9e931d7167a67afbafdf4c",
-    "cspp/streaming/__init__.py": "31cbede645e9903bb764ac8044c02d30ef5f9890290af0ded9feabccbf770074",
-    "cspp/streaming/candidate.py": "548071b86b345728b1bfe3c9b2a860bb08e5905cfa59316c268ac7ec7bcbb6e9",
-    "cspp/streaming/normalization.py": "2f0b05e982f7314f3f30488cb4ed12ce955d77a595788d20a149c815816a26a3",
-    "cspp/streaming/quality.py": "18381bca2b57b693cc3a7b8a060819cc709dcbbd0bad320f5c7b89b0883dd5f5"
-  }
+  "all_equal": true
 }

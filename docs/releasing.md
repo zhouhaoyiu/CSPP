@@ -3,11 +3,11 @@
 1. Review the data restrictions, third-party terms and manuscript coverage with
    all authors. Confirm the software citation authors separately from manuscript
    authors. Do not add nonexistent publication or archive identifiers.
-2. Run the tests and metric recalculation, and inspect the release manifest and
+2. Run the tests and metric recalculation, and inspect the file list and
    privacy audit. Keep manuscripts and the cover letter outside this repository.
 3. Create the intended GitHub repository under the authorized account. Review the
    file list before making it public; do not upload an entire workspace.
-4. Publish a versioned archive with the identical models and a SHA-256 manifest.
+4. Publish a versioned archive with the same models, source and documentation.
    An optional Zenodo record can provide a persistent version DOI. Update links
    only once the repository/record exists and access has been tested.
 5. Give editors access to the code archive. Explicitly disclose that the Chinese

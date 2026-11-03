@@ -7,10 +7,7 @@
   "checkpoints": [
     {
       "source": "work_artifacts/checkpoints/blind_v27c_C0_none_seed20261101/final.pt",
-      "source_sha256": "d27ce10351475dfa264b45406b601dbcfc64e15c92be7260fe54c1738d35586d",
       "public_path": "models/cspp_seed20261101.pt",
-      "public_sha256": "53905f8707ff4e1fa75305e442d037da49eb6ba5eda5e8bf66afe18ddb928b33",
-      "tensor_state_sha256": "617b49338e4ad4b348a71aa033872635d9b1e2b6316d27353faab292e829efb6",
       "tensors_bitwise_equal": true,
       "removed_metadata": [
         "training_config",
@@ -26,10 +23,7 @@
     },
     {
       "source": "work_artifacts/checkpoints/blind_v27c_C0_none_seed20261102/final.pt",
-      "source_sha256": "fcc9a3123765e5a78c7a210086d31768a77f37556e1c2e1efc503342b39bf2f2",
       "public_path": "models/cspp_seed20261102.pt",
-      "public_sha256": "4f23532b07c27ea24a0bdfa5015b3718dff66b33598dcf71e1bc4398e5d0f6ca",
-      "tensor_state_sha256": "e96fa5153eff9f3a5fdfa5629021ff85441ead8effbab9cb88293e265554148d",
       "tensors_bitwise_equal": true,
       "removed_metadata": [
         "training_config",
@@ -45,10 +39,7 @@
     },
     {
       "source": "work_artifacts/checkpoints/blind_v27c_C0_none_seed20261103/final.pt",
-      "source_sha256": "02695f1827eac6bca218a8017ce3efb67f8ef2f693e113644d41b1423c0fea56",
       "public_path": "models/cspp_seed20261103.pt",
-      "public_sha256": "c4725c8379c53c7e1ceaeddfbc9871a9a7cccf7a9297227c15593bb629a2f9bc",
-      "tensor_state_sha256": "b93653bc13d2c841d8ad19af0dd35bc840e666d3c7114242803ab88ac7ea4ade",
       "tensors_bitwise_equal": true,
       "removed_metadata": [
         "training_config",

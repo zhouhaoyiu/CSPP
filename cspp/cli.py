@@ -2,7 +2,6 @@
 
 import argparse
 from collections import Counter
-import hashlib
 import json
 from pathlib import Path
 
@@ -45,7 +44,7 @@ def main():
     payload = {
         "candidates": picks,
         "diagnostics": {**counts, "quality_reasons": dict(reasons)},
-        "checkpoint_sha256": hashlib.sha256(args.checkpoint.read_bytes()).hexdigest(),
+        "checkpoint": args.checkpoint.name,
         "sample_rate_hz": 100,
         "component_order": "ZNE",
         "packet_seconds": 0.5,

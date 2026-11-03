@@ -5,13 +5,10 @@
   "station_count_definition": "GeoNet counts physical network.station codes; NZ.PYZ.20 and NZ.PYZ.21 are two location IDs at one station. Record-level location codes are preserved.",
   "inputs": [
     {
-      "source": "selected_training_records.csv",
-      "sha256": "60d5274bf823f7cebff25cb47e0a8ee092559b91652b6ba26c82393234ec59f6",
-      "selection_npz_sha256": "72dab23b14f4da309ec04bbbcdb68c7088bbf8aba565024934c2be05c94893cd"
+      "source": "selected_training_records.csv"
     },
     {
       "source": "selected_records.csv (public cohort rows only)",
-      "sha256_of_restricted_mixed_original": "dc9d278d6bce508aec95dd97b2ed282612e643ded9a3705b1d79ea5955f5a80c",
       "public_cohorts_exported": [
         "geonet_arm",
         "geonet_calibration",
@@ -22,24 +19,19 @@
       "restricted_rows_exported": 0
     },
     {
-      "source": "ncsn_station_days_input.csv",
-      "sha256": "de297dce820512dc377b712cc6e24034714457562aa069ed399e83d85d161860"
+      "source": "ncsn_station_days_input.csv"
     },
     {
-      "source": "ncsn_station_summary.csv",
-      "sha256": "18da047da4b6cdeec5ef3519558078e69ac5e0848394272fba3a9e43a0b78c59"
+      "source": "ncsn_station_summary.csv"
     },
     {
-      "source": "geonet_station_days.csv",
-      "sha256": "6d50ac11be37f59722ee86218bc3afe5bd346b1b1e17574cf71d196e60aaa178"
+      "source": "geonet_station_days.csv"
     },
     {
-      "source": "geonet_station_summary.csv",
-      "sha256": "ff337352039d4fd9d505b195771a36c6f29f8f33ec19c46562721f0bfe1cc082"
+      "source": "geonet_station_summary.csv"
     }
   ],
   "checks": {
-    "recovered_supplement_data_zip_hash_verified": true,
     "recovered_inputs_crosschecked_against_zip": 51,
     "training": {
       "InstanceGM": {

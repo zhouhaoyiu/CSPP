@@ -158,7 +158,7 @@ def test_denominators_include_misses_and_extra_candidates():
     assert result["recall_available_within_0.5s"] == 0.5
 
 
-def test_manifest():
+def test_distribution_audit():
     assert verify() > 100
 
 

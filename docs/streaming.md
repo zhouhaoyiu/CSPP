@@ -59,7 +59,7 @@ quality, normalization and candidate states, not all preceding waveforms.
 `warmup_packets=0` explicitly disables startup gating. It changes output eligibility,
 not the model, and is not the manuscript's default setting. Threshold overrides
 must be reported with evaluation results. The CLI writes thresholds, warmup,
-checkpoint hash and clock convention into its output.
+checkpoint filename and clock convention into its output.
 
 Packet-end availability is not wall-clock delivery time. Telemetry, preprocessing,
 queueing, CPU execution and network confirmation are outside that timestamp.

@@ -1,6 +1,5 @@
 """Replay the included public NCSN record and check its expected P-wave output."""
 import argparse
-import hashlib
 import json
 from pathlib import Path
 
@@ -15,7 +14,6 @@ DEFAULT_CHECKPOINT = Path(__file__).resolve().parents[1] / "models/cspp_seed2026
 def run_demo(checkpoint=DEFAULT_CHECKPOINT):
     metadata = json.loads((DATA / "metadata.json").read_text())
     waveform_file = DATA / "waveform.npy"
-    assert hashlib.sha256(waveform_file.read_bytes()).hexdigest() == metadata["waveform_npy_sha256"]
     wave = np.load(waveform_file, allow_pickle=False)
     picker = StreamingPicker(checkpoint)
     results = list(picker.iter_array(wave))

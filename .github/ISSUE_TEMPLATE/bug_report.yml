@@ -5,7 +5,7 @@ body:
     id: environment
     attributes:
       label: Environment and checkpoint
-      description: Include Python, PyTorch, OS, CSPP version and model SHA-256.
+      description: Include Python, PyTorch, OS, CSPP version and checkpoint filename.
     validations:
       required: true
   - type: textarea

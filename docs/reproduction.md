@@ -39,18 +39,18 @@ Installation may require internet access to obtain third-party dependencies. Aft
 | `cspp/` | Current model, packet processing, evaluation, and association modules |
 | `models/` | Three tensor-identical exports of the frozen C0 checkpoints |
 | `tests/` | Independent CPU contract tests and a synthetic regression fixture |
-| `tools/` | Integrity check, row-level reaggregation, array inference, and optional STEAD replay |
+| `tools/` | Distribution audit, row-level reaggregation, array inference, and optional STEAD replay |
 | `evidence/event_windows/` | TexNet, Puerto Rico, original/extended NCSN, and GeoNet decisions |
 | `evidence/continuous/` | Eight original/expanded-model conditions, including misses and unmatched groups |
 | `evidence/stead/` | Full-test diagnostics and the 5,981-record exploratory comparison |
 | `evidence/summaries/` | 32 source summaries, including negative results and ablations |
 | `protocols/` | Frozen selection, baseline, evaluation, and data provenance records |
 | `reproduction/` | Training configurations, selected indices, initializer, and historical dependency snapshot |
-| `provenance/` | Source/export hashes, tensor checks, environment, and source reorganization audit |
+| `provenance/` | Source inventories, tensor checks, environment, and source reorganization audit |
 
 ## What Can Be Reproduced
 
-1. File integrity, checkpoint loading, packet causality, reset behavior, and regression outputs can be checked offline.
+1. Checkpoint loading, packet causality, reset behavior, and regression outputs can be checked offline.
 2. Saved-row TP/FP/FN, precision/recall/F1, timing metrics, and continuous-stream association counts can be recalculated offline. The script compares them with the recorded summaries and fails on disagreement.
 3. Waveform inference requires separately obtained data. A CPU STEAD replay command is provided in `DATA_ACCESS.md`; its validation covers a small real-waveform subset, not a fresh rerun of every experiment.
 4. Training provenance and a dependency-complete historical trainer are included. End-to-end data preparation and retraining were not rerun for this release. Prepared training stores and the original base-core training lineage remain prerequisites.
@@ -63,7 +63,7 @@ Event-window precision is conditional on the supplied event windows; it is not a
 
 STEAD's 5,981-record comparison contains original train/dev/test splits, fixed P labels at 10 s, raw counts, and cold starts. Full-cohort threshold selection is exploratory. Dev-selected thresholds are also evaluated on the original 600 test records; event/station isolation has not been established. Original EQTransformer used STEAD for training. Window-fill latency is separate from compute time.
 
-The expanded-training continuous replay is retained even when it performs worse. `evidence/summaries/` also contains historical diagnostic results whose complete waveform reruns are outside this release's validation scope. A hash or passing software test does not establish scientific generalization or journal readiness.
+The expanded-training continuous replay is retained even when it performs worse. `evidence/summaries/` also contains historical diagnostic results whose complete waveform reruns are outside this release's validation scope. Passing software tests does not establish scientific generalization or journal readiness.
 
 No raw waveforms, third-party pretrained weights, manuscript, private notes, local environment, or submission metadata are distributed. The package is a code/model/evidence supplement; manuscript consistency and venue-specific submission requirements need a separate check.
 

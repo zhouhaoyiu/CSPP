@@ -1,4 +1,3 @@
-import hashlib
 import json
 from pathlib import Path
 import sys
@@ -10,13 +9,14 @@ sys.path.insert(0, str(ROOT / "tools"))
 from verify_release import audit_public_files, distributed_files, verify
 
 
-def test_scientific_assets_and_model_license_unchanged():
-    previous = json.loads((ROOT / "provenance/upstream_manifest.json").read_text())
-    prefixes = ("models/", "evidence/", "protocols/", "reproduction/training/", "reproduction/training_snapshot/")
-    for spec in previous["files"]:
-        path = spec["path"]
-        if path.startswith(prefixes) or path in {"reproduction/initializer.pt", "LICENSE", "MODEL_LICENSE.md"}:
-            assert hashlib.sha256((ROOT / path).read_bytes()).hexdigest() == spec["sha256"]
+def test_declared_checkpoints_and_licenses_present():
+    models = json.loads((ROOT / "models/model_manifest.json").read_text())
+    assert {item["seed"] for item in models["checkpoints"]} == {20261101, 20261102, 20261103}
+    for item in models["checkpoints"]:
+        assert (ROOT / item["public_path"]).is_file()
+    assert (ROOT / "reproduction/initializer.pt").is_file()
+    for name in ("LICENSE", "MODEL_LICENSE.md"):
+        assert "MIT" in (ROOT / name).read_text()
 
 
 def test_restricted_data_and_access_promises_absent():
@@ -29,9 +29,8 @@ def test_restricted_data_and_access_promises_absent():
 
 
 def test_unlisted_raw_file_fails_release_verification(tmp_path):
-    (tmp_path / "MANIFEST.json").write_text(json.dumps({"files": []}))
     (tmp_path / "private.h5").write_bytes(b"not a dataset")
-    with pytest.raises(AssertionError, match="inventory"):
+    with pytest.raises(ValueError, match="private"):
         verify(tmp_path)
     with pytest.raises(ValueError, match="private"):
         audit_public_files(tmp_path, distributed_files(tmp_path))

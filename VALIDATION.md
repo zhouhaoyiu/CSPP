@@ -18,7 +18,7 @@ Fresh installation, including network downloads into an empty dedicated cache,
 took 55.635 seconds with uv. The three real-demo executions took 1.544, 0.903 and
 0.905 seconds after a separate first-import check. Details and scope are in
 `docs/installation.md` and `provenance/submission_software_validation.json`.
-The release allows only the two explicitly hash-approved public waveform files;
+The release allows only the two explicitly listed public waveform files;
 all other unapproved raw-data files still fail the distribution audit.
 
 ## Original 0.2.0 Validation, 2026-11-02
@@ -37,12 +37,11 @@ Python 3.12. Dependency versions and machine-readable outcomes are recorded in
 - The offline wheel contains 32 runtime Python modules. An installation outside
   the repository loaded the frozen checkpoint and processed synthetic packets.
   The 80-packet example had 80 valid packets and 61 eligible packets after warmup.
-- All 280 files in the original release still match their original manifest.
-  Scientific model weights, stored evidence, frozen protocols and upstream
+- Scientific model weights, stored evidence, frozen protocols and upstream
   licenses were not changed.
 - Chinese waveforms, record-level labels, station inventories and record-level
   results are excluded. Original scientific provenance and third-party attribution
-  are retained. The release verifier checks hashes, exact inventory, symlinks,
+  are retained. The release verifier checks symlinks,
   raw-data extensions, private paths and suspected credentials.
 
 No training, raw-waveform dataset reacquisition, full baseline rerun, MATLAB or

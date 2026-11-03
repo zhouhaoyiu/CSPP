@@ -13,12 +13,10 @@ versions and a documented evaluation protocol. Keep unfavorable results and
 denominators in evaluation exports.
 
 For bug reports, include the package version, Python/PyTorch versions, operating
-system, checkpoint SHA-256, settings and a minimal synthetic reproducer. Never
+system, checkpoint filename, settings and a minimal synthetic reproducer. Never
 upload restricted data, credentials or private station information. The issue
 template is usable after a remote repository is created; no remote is configured
 by this local package.
 
-The release manifest is immutable evidence for a distributed archive. Maintainers
-regenerate it for a new release only after reviewing changes, using
-`python tools/build_manifest.py`. A changed development tree is expected to differ
-from the previous release's checksums.
+Before distributing a release, run `python tools/verify_release.py` to check for
+restricted data, private paths and credentials.

@@ -108,6 +108,10 @@ def test_cli_records_settings_and_refuses_overwrite(tmp_path, wave):
     result = subprocess.run(command, capture_output=True, text=True, timeout=60)
     assert result.returncode == 0, result.stderr
     payload = json.loads(destination.read_text())
+    assert payload["checkpoint"] == CHECKPOINT.name
+    assert set(payload) == {"candidates", "diagnostics", "checkpoint", "sample_rate_hz",
+                            "component_order", "packet_seconds", "start_seconds",
+                            "candidate_threshold", "event_threshold", "warmup_packets", "time_basis"}
     assert payload["warmup_packets"] == 20
     assert payload["event_threshold"] == 0.975
     assert payload["diagnostics"]["packets"] == 120

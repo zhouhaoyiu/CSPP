@@ -13,7 +13,7 @@ this repository. These restrictions must be disclosed at journal submission.
 
 ## Public-Source Data
 
-Raw data are not bundled. `protocols/` and per-experiment evidence retain event/station IDs, windows, split definitions, source hashes, preprocessing settings, and exclusions when present in the original artifacts. Sanitized `workspace/`, `work_artifacts/`, and `external_data/` strings identify original artifact roles; they are not installed paths. Source hashes inside original protocols refer to the pre-export artifacts. `MANIFEST.json` records the exported files.
+Raw data are not bundled. `protocols/` and per-experiment evidence retain event/station IDs, windows, split definitions, source identities, preprocessing settings, and exclusions when present in the original artifacts. Sanitized `workspace/`, `work_artifacts/`, and `external_data/` strings identify original artifact roles; they are not installed paths. Original experiment protocols retain the input identities needed by the historical code.
 
 Official source entry points:
 
@@ -43,13 +43,13 @@ python tools/replay_stead.py --waveforms /path/to/stead/waveforms.hdf5 --output-
 python tools/replay_stead.py --waveforms /path/to/stead/waveforms.hdf5 --output-dir runs/stead_default
 ```
 
-The default replay uses q=0.1/e=0.975 and the saved 5,981-record cohort. Match tolerance is +/-1.5 s; choose the smallest absolute pick error, break ties by earliest availability, and count at most one TP per record. Use `--split test` for the original test subset. Overrides are explicit CLI arguments and must be reported. PhaseNet/EQTransformer weights are not redistributed; their original protocols and hashes are retained for separate retrieval. Their waveform reruns and the full threshold-grid scan are not covered by this portable command.
+The default replay uses q=0.1/e=0.975 and the saved 5,981-record cohort. Match tolerance is +/-1.5 s; choose the smallest absolute pick error, break ties by earliest availability, and count at most one TP per record. Use `--split test` for the original test subset. Overrides are explicit CLI arguments and must be reported. PhaseNet/EQTransformer weights are not redistributed; their original protocols identify the models for separate retrieval. Their waveform reruns and the full threshold-grid scan are not covered by this portable command.
 
 ## Training
 
 `reproduction/training/seed*/` contains each final training configuration, history, protocol, and selected row indices. The shared pretrained candidate-core initializer is in `reproduction/initializer.pt`. Its tensors are unchanged by metadata sanitization. This enables reconstruction of the final verifier-training stage once all prepared stores are supplied; it does not reproduce the initializer from scratch.
 
-`reproduction/training_snapshot/` is the current on-disk historical trainer and its recursively resolved local imports. It retains historical version names to preserve the training implementation; new inference uses `cspp/`. This snapshot was not asserted to be the exact July training-time source because no complete immutable source snapshot is established here. The source/export hashes identify what is actually supplied.
+`reproduction/training_snapshot/` is the current on-disk historical trainer and its recursively resolved local imports. It retains historical version names to preserve the training implementation; new inference uses `cspp/`. This snapshot was not asserted to be the exact July training-time source because no complete immutable source snapshot is established here. The source inventories identify what is actually supplied.
 
 Install the `training` optional dependencies before using the historical trainer. `python tools/train_stage.py` lists required external data keys without opening datasets or starting training. Put their local paths in a JSON object, then run:
 

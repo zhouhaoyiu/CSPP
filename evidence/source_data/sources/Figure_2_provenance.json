@@ -3,40 +3,21 @@
   "selection_rule": "Within the high-SNR matched, 0-to-10-dB matched, and below-0-dB unmatched/no-candidate strata, select the record nearest the stratum median SNR; break ties by event and station identifier.",
   "claim_boundary": "Illustrative examples; no inferential metric is computed from selected records.",
   "archive": "04_main_project_source_and_research_history_22.tar.gz",
-  "archive_sha256": "7160ded67ff16b6e5105f7b353af070f7471d8186f48f38b2abf28f3cd125941",
-  "historical_provenance_sha256": "c18786367412cb22296dbefa6017eb91ec6ea599a6edba1458d6531d45d736e9",
-  "matlab_source_sha256": "50aae2262ee56aebcc06effdac3bc48253d9ac927aeb8e91ea71be934e4efa07",
-  "source_csv_sha256": "e83ced28f4463852cc636f8800e04c5f71eb7b0260c5c29c08453cdb3a3615fc",
   "selected_records": [
     {
       "event_id": "75079016",
       "station_key": "NC.KSM.03",
-      "selection_role": "high",
-      "input_sha256": {
-        "summary": "b0ebf5cfbc6ed0f8065c69f5dd1198ae4b625d444b707fef9447347684e25ccb",
-        "score_cache": "0965674572b901d3edadd30611c3ece1f5900d6155d69b4d40304c495b38daf2",
-        "waveform": "72f9044624cd2f0d3ce42dd9ca5936540b20838a715663eac818faf67083d4f3"
-      }
+      "selection_role": "high"
     },
     {
       "event_id": "75094936",
       "station_key": "NC.KBU.01",
-      "selection_role": "intermediate",
-      "input_sha256": {
-        "summary": "54cad399e87bc9eb1e2cfdf3d26a7472be0fa549e1c224bb8dc1678bb071c0d1",
-        "score_cache": "26a400a5a989150cc4a12ba3346064acfa9242050982d98f01dc4c315339674e",
-        "waveform": "45ea68562c7cf8d4a922bee4ac3fc212f49c377978c2e60a0b66381ca5fc18a3"
-      }
+      "selection_role": "intermediate"
     },
     {
       "event_id": "75097076",
       "station_key": "NC.KMR.",
-      "selection_role": "low",
-      "input_sha256": {
-        "summary": "48f9d78213fb0a18e87c09775f112a0dbe74d3fba279d8d4c888924341910865",
-        "score_cache": "66d58a4f7b82383263c9081659786c151d17eb51902b8a77a6cc16317153022f",
-        "waveform": "aa4bc9425ddfec8cb0d7ab6aaa5b7eaf12a8e134715e0354f841f5dca0248987"
-      }
+      "selection_role": "low"
     }
   ],
   "export_note": "Waveforms are the stored display-scaled traces, not raw physical-unit acceleration. Blank scores denote stored NaN, not zero. All 480 stored packet scores per record retained; plotting range is marked. No new inference."

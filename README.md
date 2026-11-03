@@ -88,8 +88,8 @@ after every P arrival. [Streaming API and output fields](docs/streaming.md).
 | `models/cspp_seed20261102.pt` | Replication seed |
 | `models/cspp_seed20261103.pt` | Replication seed |
 
-All three models have 329,423 parameters and a 320-scalar neural state. Checksums
-are in [the model manifest](models/model_manifest.json). The later expanded/full
+All three models have 329,423 parameters and a 320-scalar neural state. Checkpoint
+seeds and settings are in [the model inventory](models/model_manifest.json). The later expanded/full
 models are not interchangeable with these manuscript checkpoints.
 
 Saved primary-model event-window results:
@@ -135,7 +135,7 @@ derived record-level caches are included.
 | Location | Contents |
 |---|---|
 | `cspp/` | Model, streaming API, preprocessing helpers and evaluation primitives |
-| `models/` | Frozen weights and checksums |
+| `models/` | Frozen weights, seeds and settings |
 | `examples/` | Synthetic API example and real public NCSN P-wave example |
 | `docs/` | Installation, API, reproduction and release guidance |
 | `tests/` | Causality, parity, reset, checkpoint and metric tests |
@@ -143,7 +143,7 @@ derived record-level caches are included.
 | `evidence/` | Public-source saved decisions, figure source data and historical summaries |
 | `protocols/` | Frozen evaluation definitions and data provenance |
 | `reproduction/` | Training configurations, selected indices and historical code |
-| `provenance/` | Original/export checksums and validation records |
+| `provenance/` | Source inventories and validation records |
 
 ## Citation and Contact
 

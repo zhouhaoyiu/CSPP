@@ -33,7 +33,7 @@ Pass an explicit checkpoint path; loading never downloads a model automatically.
 Do not run `pip install cspp` expecting this local release to be on PyPI.
 
 For offline use, install dependencies first and retain a local wheel cache. Only
-load checkpoints from a trusted release and verify their SHA-256 checksums.
+load checkpoints from a trusted source.
 
 ## Measured Installation and Demo Time
 
