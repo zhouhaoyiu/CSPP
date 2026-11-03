@@ -52,7 +52,7 @@
     {
       "path": "README.md",
       "bytes": 7560,
-      "sha256": "6469194c92fcb3a39999a3f3d38a7b224e5a5b60a32a6c00c8f58284e0735e22"
+      "sha256": "ba9590e9c08948fbb76d8ed848ea7b8884daa5bf506dc1ffb0fb0b96fa59c71a"
     },
     {
       "path": "RELEASE_NOTES.md",
@@ -242,7 +242,7 @@
     {
       "path": "docs/model_card.txt",
       "bytes": 3048,
-      "sha256": "6ded5fd0dbb2fd6635883692705c68254784a601f0e6d01853f49f6c6bd75d80"
+      "sha256": "12a1c2831eaa84da9eeaf1cf02a97ba791fae7cdc8415559f18968019a1dba79"
     },
     {
       "path": "docs/public_demo.md",

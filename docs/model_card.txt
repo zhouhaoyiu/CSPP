@@ -2,7 +2,7 @@ CSPP Model Card
 Prepared 2026-11-03
 
 Identity and intended use
-CSPP C0, distributed in software version 0.2.0, is a station-level causal P-wave detector and arrival-time picker for research on continuous strong-motion streams. It is not a complete network earthquake-warning system, S-wave picker or validated public-warning service. Authors: Haoyu Zhou, Qiang Ma, Jiang Wang and Shiliang Zhang. Contact: zsl@iem.ac.cn; ORCID 0000-0002-3151-1909.
+CSPP C0, distributed in software version 0.2.0, is a station-level causal P-wave detector and arrival-time picker for research on continuous strong-motion streams. It is not a complete network earthquake-warning system, S-wave picker or validated public-warning service. Authors: Haoyu Zhou, Qiang Ma, Shiliang Zhang and Jiang Wang. Contact: zsl@iem.ac.cn; ORCID 0000-0002-3151-1909.
 
 Architecture and input
 Packet convolutional encoder, physical descriptors, recurrent cross-packet memory, and detection, confirmation and arrival-time outputs. The model has 329423 parameters and a 320-scalar neural state. Input is prepared three-component ZNE acceleration at 100 Hz, 50 samples per component per non-overlapping 0.5-second packet. The public API does not perform telemetry, channel rotation, resampling or response correction.

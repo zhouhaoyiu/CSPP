@@ -147,7 +147,7 @@ derived record-level caches are included.
 
 ## Citation and Contact
 
-Manuscript authors: Haoyu Zhou, Qiang Ma, Jiang Wang and Shiliang Zhang.
+Manuscript authors: Haoyu Zhou, Qiang Ma, Shiliang Zhang and Jiang Wang.
 Correspondence: Shiliang Zhang, [zsl@iem.ac.cn](mailto:zsl@iem.ac.cn),
 [ORCID 0000-0002-3151-1909](https://orcid.org/0000-0002-3151-1909).
 The manuscript has no publication DOI in this repository. Software citation
